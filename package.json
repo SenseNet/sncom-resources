@@ -1,0 +1,32 @@
+{
+  "name": "sensenet.github.io",
+  "version": "1.0.0",
+  "description": "Sense/Net Community Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SenseNet/sensenet.github.io.git"
+  },
+  "keywords": [
+    "sensenet",
+    "ecm",
+    "community"
+  ],
+  "author": "Sense/Net <snteam@sensenet.com> (http://sensenet.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SenseNet/sensenet.github.io/issues"
+  },
+  "homepage": "sensenet.github.io",
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.0.0"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  }
+}

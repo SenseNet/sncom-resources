@@ -1,1 +1,23 @@
+title: 'Sense/Net Community'
+description: 'Sense/Net ECM Community Website'
+twitter_username: sensenet
+github_username: SenseNet
 theme: jekyll-theme-cayman
+exclude:
+    - node_modules
+    - README.md
+    - LICENSE.md
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - package.json
+    - script
+include:
+    - _pages
+twitter:
+    username: sensenet
+port: 4001
+repository: sensenet.github.io
+sass:
+    sass_dir: _sass
+    style: compressed
