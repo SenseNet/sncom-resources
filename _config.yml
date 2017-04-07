@@ -1,8 +1,22 @@
 title: 'Sense/Net Community'
+email: snteam@sensenet.com
 description: 'Sense/Net ECM Community Website'
 twitter_username: sensenet
 github_username: SenseNet
-theme: jekyll-theme-cayman
+future: true
+excerpt_separator: '---'
+gems:
+    - jekyll-redirect-from
+    - jekyll-sitemap
+    - jekyll-seo-tag
+    - jekyll-feed
+    - jemoji
+collections:
+    docs: {output: true, permalink: '/docs/:path/'}
+defaults:
+    - {scope: {type: docs}, values: {layout: docs}}
+    - {scope: {type: posts}, values: {layout: post, permalink: '/blog/:year/:month/:day/:title'}}
+    - {scope: {path: ""}, values: {image: {path: /images/opengraph.png, width: 1200, height: 630}}}
 exclude:
     - node_modules
     - README.md
@@ -17,7 +31,8 @@ include:
 twitter:
     username: sensenet
 port: 4001
-repository: sensenet.github.io
+repository: SenseNet/sensenet.github.io
 sass:
     sass_dir: _sass
     style: compressed
+encoding: utf-8

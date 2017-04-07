@@ -4,5 +4,14 @@
 
 @import "variables";
 @import "base";
-@import "home";
+@import "icons";
+
+//Base components
+@import "header";
 @import "menu";
+
+//Pages
+@import "home";
+@import "contact";
+@import "blog";
+@import "post";
