@@ -1,0 +1,93 @@
+[
+  {
+    "name": "sensenet",
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/SenseNet/sensenet/releases/5893716",
+        "assets_url": "https://api.github.com/repos/SenseNet/sensenet/releases/5893716/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sensenet/releases/5893716/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sensenet/releases/tag/v7.0.0-beta",
+        "id": 5893716,
+        "tag_name": "v7.0.0-beta",
+        "target_commitish": "master",
+        "name": "Initial release",
+        "draft": false,
+        "prerelease": true,
+        "created_at": "2017-03-28T12:14:43Z",
+        "published_at": "2017-03-28T12:55:54Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sensenet/tarball/v7.0.0-beta",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sensenet/zipball/v7.0.0-beta",
+        "body": "## Introducing Sense/Net Services 7.0.0 beta\r\nSense/Net Services is the base component of the [Sense/Net ECM platform](https://github.com/SenseNet/sensenet) that all other components will build on. \r\n\r\n### Installation\r\nTo get started, install the following NuGet package. Please follow the instructions in the [Getting started section](https://github.com/SenseNet/sensenet#GettingStarted) of the main readme.\r\n\r\n[![NuGet](https://img.shields.io/nuget/v/SenseNet.Services.svg)](https://www.nuget.org/packages/SenseNet.Services)\r\n\r\n### Known issues\r\nThere are a couple of known issues with the beta release. We plan to solve these before releasing the stable version:\r\n\r\n- Open in Office feature is [currently not available](/SenseNet/sensenet/issues/10) in the beta release.\r\n- There is a single Services NuGet package that contains _both dlls and install content files_. If you install the package into _multiple projects_, all the install files (e.g. web.config additions) will be added to all those projects. In the future we will publish two different NuGet packages: one containing only dlls and one for install files.",
+        "version": "7.0.0-beta"
+      }
+    ]
+  },
+  {
+    "name": "sn-client-js",
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/5462029",
+        "assets_url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/5462029/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sn-client-js/releases/5462029/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sn-client-js/releases/tag/1.1.0-beta.1",
+        "id": 5462029,
+        "tag_name": "1.1.0-beta.1",
+        "target_commitish": "master",
+        "name": "1.1.0-beta.1",
+        "draft": false,
+        "prerelease": true,
+        "created_at": "2017-02-15T08:47:16Z",
+        "published_at": "2017-02-15T09:15:39Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sn-client-js/tarball/1.1.0-beta.1",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sn-client-js/zipball/1.1.0-beta.1",
+        "body": "### 1.1.0-beta.1 (2017-02-15)\n\n#### Bug Fixes\n- Change the portal url setting process and the related actions ([d0a4675d](https://github.com/SenseNet/sn-client-js/commit/d0a4675dea5d5ad4412e6f985ec6093ed30747ab))\n- Siteurl related fixes ([3bb9327f](https://github.com/SenseNet/sn-client-js/commit/3bb9327f92fba22f09625aa51dd1639270f50c99))\n- **common:** Login and logout methods are binded to the new actions in the odataapi module ([c259371b](hhttps://github.com/SenseNet/sn-client-js/commit/c259371b0566a1e3d8dc35d594d0518900befb98))\n\n#### Features\n- Add sn generated default ts files and their tests ([80e04abc](https://github.com/SenseNet/sn-client-js/commit/80e04abc96d1b7ff9e404cd96ac43a633b68f223))\n- Add odata service token setting and login/logout actions ([b87e1f23](https://github.com/SenseNet/sn-client-js/commit/b87e1f2318552924fade39adcb806e7baa3e18ea))\n",
+        "version": "1.1.0-beta.1"
+      },
+      {
+        "url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/4832461",
+        "assets_url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/4832461/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sn-client-js/releases/4832461/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sn-client-js/releases/tag/v1.0.2",
+        "id": 4832461,
+        "tag_name": "v1.0.2",
+        "target_commitish": "6b2a4cdca9404e14efc9293b252c62d81fe73f3d",
+        "name": "1.0.2-beta.5",
+        "draft": false,
+        "prerelease": true,
+        "created_at": "2016-12-01T11:57:55Z",
+        "published_at": "2016-12-05T12:04:50Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sn-client-js/tarball/v1.0.2",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sn-client-js/zipball/v1.0.2",
+        "body": "### 1.0.2-beta.5 (2016-12-05)\r\n\r\n#### Bug Fixes\r\n- ODataAPIActionObservables' name is changed to ODataApiActionObservables ([6b2a4cdc](https://github.com/SenseNet/sn-client-js/commit/6b2a4cdc))\r\n- **actionobservables:** Change jquery ajax calls to fetch ([b7a2e490](https://github.com/SenseNet/sn-client-js/commit/b7a2e490))\r\n- **import:** Add missing index.js file ([762dd7d1](https://github.com/SenseNet/sn-client-js/commit/762dd7d1))\r\n\r\n#### Features\r\n- **app:** Adding the sn-client-js library ([98a74a23](https://github.com/SenseNet/sn-client-js/commit/98a74a23))\r\n- **location:** Related sn portal can be configured in a config file ([dc91f6cd](https://github.com/SenseNet/sn-client-js/commit/dc91f6cd))\r\n",
+        "version": "1.0.2"
+      }
+    ]
+  },
+  {
+    "name": "sn-client-dotnet",
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/SenseNet/sn-client-dotnet/releases/4742372",
+        "assets_url": "https://api.github.com/repos/SenseNet/sn-client-dotnet/releases/4742372/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sn-client-dotnet/releases/4742372/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sn-client-dotnet/releases/tag/v1.1",
+        "id": 4742372,
+        "tag_name": "v1.1",
+        "target_commitish": "master",
+        "name": "Initial release",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2016-11-23T15:24:40Z",
+        "published_at": "2016-11-23T15:26:36Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sn-client-dotnet/tarball/v1.1",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sn-client-dotnet/zipball/v1.1",
+        "body": "## Introducing Sense/Net Client for .Net\n\nA .Net client for Sense/Net ECM that makes it easy to use the REST API of the Content Repository.\n\n### Binaries\n\nIf you want to reference this library in your project, please do it by installing the NuGet package.\n\n[![NuGet](https://img.shields.io/nuget/v/SenseNet.Client.svg)](https://www.nuget.org/packages/SenseNet.Client)\n",
+        "version": "1.1"
+      }
+    ]
+  },
+  {
+    "name": "sn-webpages",
+    "releases": []
+  }
+]

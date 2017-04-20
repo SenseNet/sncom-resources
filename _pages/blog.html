@@ -1,5 +1,36 @@
+--- 
+title: Blog 
+permalink: /blog/ 
+layout: default 
 ---
-title: Blog
-permalink: /blog/
-layout: default
----
+
+<div class='subtron'>
+    <div class='container-narrow'>
+        <h1>Sensenet Blog</h1>
+        <p class="lead">
+            Subscribe to the <a href="{{ site.baseurl }}/feed.xml"> RSS feed</a>
+        </p>
+    </div>
+</div>
+
+<section class='page-section'>
+  <div class='container-narrow'>
+    <ul class="blog-index">
+      {% for post in site.posts %}
+        <li class="blog-post">
+          <h2>
+            <a class="blog-index-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+
+            <div class="who-when">
+              <i class="fa fa-calendar"></i><time class="blog-index-time">{{ post.date | date: '%B %d, %Y' }}</time>
+              <a href="https://github.com/{{ post.author }}" class="author-link"><img src="https://github.com/{{ post.author }}.png?size=36" alt="{{ post.author }}" class="avatar mr-2">{{ post.author }}</a>
+            </div>
+          </h2>
+
+          {{ post.excerpt }}
+          <p><a href="{{ post.url | prepend: site.baseurl }}" class="read-more-link">Read more <i class="fa fa-angle-right"></i></a></p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

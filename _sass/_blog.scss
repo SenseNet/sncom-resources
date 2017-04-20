@@ -1,0 +1,62 @@
+ul.blog-index {
+    margin: 0;
+    padding: 0;
+}
+
+ul.blog-index li {
+    list-style-type: none;
+}
+
+ul.blog-index li h2 > a {
+    text-decoration: none;
+    color: $h2-color;
+}
+
+.subtron .lead {
+    text-align: center;
+    color: #fff;
+}
+
+.subtron .lead a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.who-when {
+    color: #7c9398;
+    font-size: 16px;
+    margin-top: 5px;
+    font-family: $font-raleway-regular;
+}
+
+.who-when a {
+    color: #7c9398;
+    text-decoration: none;
+}
+
+.who-when time {
+    margin-left: 5px;
+}
+
+.author-link {
+    color: #7c9398;
+}
+
+.author-link .avatar {
+    position: relative;
+    top: 4px;
+    border-radius: 2px;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+}
+
+.read-more-link {
+    color: $h2-color;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.read-more-link i {
+    font-size: 10px;
+}

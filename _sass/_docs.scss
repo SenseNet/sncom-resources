@@ -1,0 +1,180 @@
+.docs-breadcrumbs, .docs-breadcrumbs a {
+color: #fff;
+}
+
+.docs h1, .docs h1 a {
+    text-decoration: none;
+    color: #13a5ad;
+    font-size: 55px;
+    line-height: 60px;
+    text-transform: none;
+    font-family: "Gotham Light";
+    margin-bottom: 5px;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.docs p {
+    margin: 0 0 1em;
+    line-height: 2;
+    text-align: justify;
+}
+
+.docs p li {
+    margin-bottom: 0.5em;
+}
+
+.docs p a {
+    color: #13a5ad;
+    text-decoration: none;
+}
+
+.docs p a:hover {
+    text-decoration: underline;
+}
+
+.docs h2 {
+    font-size: 35px;
+    color: #444;
+}
+
+.docs h3, h4 {
+    font-family: "Gotham";
+}
+
+.docs .post-contact {
+    background: #f9f9f9;
+    border: solid 1px #dddddd;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+.docs .post-contact p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.docs-tags {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.docs-tags li {
+    list-style-type: none;
+    display: inline-block;
+    background: rgba(9, 157, 203,0.15);
+    padding: .2rem .5rem;
+    margin-right: .5rem;
+    border-radius: 4px;
+    color: #13a5ad;
+    font-size: 90%;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    line-height: 1.5;
+}
+
+.docs-tags li a {
+    color: #13a5ad;
+    text-decoration: none;
+}
+
+.docs-tags li i::before {
+    padding-right: .5em;
+}
+
+.highlighter-rouge pre {
+    padding: 12px;
+    overflow: auto;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.highlight {
+    margin: 0 0 12px;
+    border-radius: 4px;
+    background-color: #2d2d2d;
+}
+
+.docs p img {
+    display: block;
+    margin: 0 auto;
+}
+
+.docs p img+em {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.docs p code+em {
+    display: block;
+}
+
+.docs p em+br {
+    display: none;
+}
+
+.docs p br+code {
+    display: inline-block;
+}
+
+.docs-contact {
+    background: #f9f9f9;
+    border: solid 1px #dddddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.docs-contact p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.documentation h2,
+.documentation h2 a {
+    text-decoration: none;
+    font-size: 35px;
+    color: #444;
+    font-family: "Gotham Light";
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.documentation h3 {
+    margin-top: 0;
+}
+
+.documentation li {
+    list-style-type: none;
+}
+
+.documentation .docs-list {
+    margin: 0;
+    padding: 0;
+}
+
+.documentation .docs-list a {
+    text-decoration: none;
+    color: #13a5ad;
+    font-family: "Gotham Light";
+}
+
+.documentation .docs-list a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    padding: 0 1em;
+    color: #13a5ad;
+    background: rgba(9,157,203,0.15);
+    border-left: 0.25em solid #13a5ad;
+    font-size: 90%;
+}
+
+.docs th {
+    padding: 5px;
+}

@@ -1,5 +1,64 @@
----
-title: Documentation
-permalink: /docs/
-layout: default
----
+--- 
+version: 7.0 
+title: Documentation 
+permalink: /docs/ 
+layout: default 
+--- 
+
+{% assign docs = site.docs | sort: 'title' %}
+
+<div class='subtron'>
+  <div class='container-narrow'>
+    <h1>Documentation</h1>
+  </div>
+</div>
+
+<section class='page-section documentation'>
+  <div class='container'>
+    <div class="grid">
+      <div class="row">
+
+        <div class="col-ms-12 col-lg-4">
+          <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/guides/">Guides</a></h2>
+          <ul class="docs-list">
+            {% for doc in docs %} {% if doc.category == 'Guides' %}
+            <li>
+              <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+              <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
+            </li>
+            {% endif %} {% endfor %}
+          </ul>
+        </div>
+
+        <div class="col-ms-12 col-lg-4">
+          <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/development/">Development</a></h2>
+          <ul class="docs-list">
+            {% for doc in docs %} {% if doc.category == 'Development' %}
+            <li>
+              <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+              <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
+            </li>
+            {% endif %} {% endfor %}
+          </ul>
+        </div>
+
+        <div class="col-ms-12 col-lg-4">
+          <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/api/">API Reference</a></h2>
+          <h3>SN Client JS</h3>
+          <ul class="docs-list">
+            {% for doc in docs %} {% if doc.category == 'API' and doc.subcategory == 'sn-client-js' %}
+            <li>
+              <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+            </li>
+            {% endif %} {% endfor %}
+          </ul>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    {% include tagcloud.html %}
+
+  </div>
+</section>

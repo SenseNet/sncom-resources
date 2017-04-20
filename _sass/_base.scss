@@ -1,23 +1,167 @@
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot'); 
-  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), 
-       url('../fonts/fontawesome-webfont.woff2') format('woff2'),
-       url('../fonts/fontawesome-webfont.woff') format('woff'),
-       url('../fonts/fontawesome-webfont.ttf')  format('truetype'), 
-       url('../fonts/fontawesome-webfont.svg#svgFontName') format('svg'); 
-}
-
 body {
     color: $main-color;
-    font-family: $font-stack;
+    font-family: $font-raleway-regular;
+    padding: 0;
+    margin: 0;
 }
 
 .fa {
-    font-family: 'FontAwesome';
+    font-family: $font-fontawesome;
     display: inline-block;
     font-size: inherit;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
 }
+
+.container, .container-narrow {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 980px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-narrow {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 800px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-gotham-light;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: $font-gotham-light;
+    font-size: $h1-size;
+    color: $h1-color;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-size: $h2-size;
+    color: $h2-color;
+    line-height: 50px;
+}
+
+h3 {
+    margin-top: 1.75em;
+    font-weight: 300;
+    -webkit-font-smoothing: initial;
+    font-family: "Raleway Medium";
+}
+
+code, pre {
+    font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    font-size: 12px;
+}
+
+pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    font: 12px Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+pre {
+    overflow: auto;
+}
+
+code {
+    color: #999;
+    background-color: #f1f3f4;
+}
+
+code {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 3px;
+    line-height: 1.5;
+}
+
+code.highlighter-rouge:before, code.highlighter-rouge:after {
+    letter-spacing: -0.2em;
+    content: "\00a0";
+}
+
+.subtron  {
+    position: relative;
+    background-image: url(/img/header-pattern.png);
+    padding: 10px;
+}
+
+.subtron:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #099dcb;
+    background: -moz-linear-gradient(left, #099dcb 0%, #207cca 0%, #099dcb 0%, #38cc73 100%);
+    background: -webkit-linear-gradient(left, #099dcb 0%,#207cca 0%,#099dcb 0%,#38cc73 100%);
+    background: linear-gradient(to right, #099dcb 0%,#207cca 0%,#099dcb 0%,#38cc73 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#099dcb', endColorstr='#38cc73',GradientType=1 );
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (min-width: 544px)
+{
+.container {
+    max-width: 576px;
+}}
+
+@media (min-width: 768px)
+{
+.container {
+    max-width: 800px;
+}}
+
+@media (min-width: 992px)
+{
+.container {
+    max-width: 980px;
+}
+.col-lg-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 30.33333%;
+}
+}
+
+@media (min-width: 1300px)
+{
+.container {
+    max-width: 1260px;
+}}

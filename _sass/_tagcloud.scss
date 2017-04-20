@@ -1,0 +1,16 @@
+.tagcloud {
+    margin: 30px 0 10px;
+    background: #f9f9f9;
+    border: solid 1px #dddddd;
+    padding: 10px;
+}
+
+.tagcloud li {
+    display: inline;
+    font-family: "Gotham";
+}
+
+.tagcloud li a {
+    color: #13a5ad;
+    text-decoration: none;
+}
