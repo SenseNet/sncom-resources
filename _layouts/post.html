@@ -5,6 +5,7 @@ layout: default
 <section class='page-section blog-post strong-headers'>
   <div class='container-narrow'>
     <aside class="blog-menu-side">
+      <h3>Recent posts</h3>
       <nav class="blog-menu">
         <ul>
           {% for post in site.posts limit:10 %}
@@ -12,7 +13,7 @@ layout: default
           {% endfor %}
         </ul>
       </nav>
-      <span class="all-posts"><a href="/blog.html">All posts</a></span>
+      <span class="all-posts"><a href="/blog">All posts</a></span>
     </aside>
     <article>
       <h1>{{ page.title }}</h1>
@@ -30,7 +31,7 @@ layout: default
 
       {{ content }}
 
-      <div class="bg-shade p-4 rounded-1 mt-6 mt-lg-8">
+      <div class="post-contact">
         <p>Have feedback on this post? Let <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>          know on Twitter.</p>
         <p>Need help or found a bug? <a target="_blank" href="{{ site.baseurl }}/contact">Contact us</a>.</p>
       </div>

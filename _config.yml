@@ -28,6 +28,7 @@ exclude:
     - script
 include:
     - _pages
+    - _docs
 twitter:
     username: sensenet
 port: 4001

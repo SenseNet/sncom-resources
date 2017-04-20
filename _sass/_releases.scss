@@ -1,0 +1,73 @@
+.releases-sub {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.releases {
+    position: relative;
+}
+
+
+.releases .tabs {
+    position: absolute;
+    top: -110px;
+    z-index: 10;
+    padding: 0;
+}
+
+.releases .tab {
+    display: inline-block;
+    list-style-type: none;    
+    padding: 15px 20px;
+    color: #fff;
+    cursor: pointer;    
+    font-family: "Gotham Light";
+}
+
+.releases .tab.active {
+    background: #fff;
+    color: #13a5ad;
+}
+
+.releases .item {
+    display: none;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.releases .item.show {
+    display: block;
+}
+
+.releases .item > li {
+    list-style-type: none;
+}
+
+.item {
+    line-height: 1.5;
+}
+
+.item h3:first-of-type {
+    font-size: 14px;
+}
+
+.item h3:first-of-type a, .item a {
+    color: #13a5ad;
+    text-decoration: none;
+}
+
+.item h3:first-of-type a:before {
+    content: "\f02b";
+    font-family: $font-fontawesome;
+    display: inline-block;
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.item h2 {
+    margin-top: 10px;
+    color: #666;
+}

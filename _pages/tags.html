@@ -1,0 +1,17 @@
+---
+title: Tags
+permalink: /tags/
+layout: default
+---
+
+{% assign tags =  site.docs | map: 'tags' | join: ','  | split: ',' | uniq %}
+{% for tag in tags %}
+  <h3>{{ tag }}</h3>
+  <ul>
+  {% for docs in site.docs %}
+    {% if docs.tags contains tag %}
+    <li><a href="{{ site.baseurl }}{{ docs.url }}">{{ docs.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %}

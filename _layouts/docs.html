@@ -1,0 +1,49 @@
+---
+layout: default 
+---
+
+<div class='subtron text-left'>
+  <div class='container-narrow'>
+    <h1><span class="mr-3 mr-lg-4">Documentation</span><span class="docs-version">{{ site.data.releases[0].version }}</span></h1>
+
+    <h4 class="docs-breadcrumbs">
+      <a href='{{ site.baseurl }}/docs/'>Docs</a> {% if page.category != 'ignore' %}
+      <span class="docs-breadcrumbs-divider">/</span>
+      <a href='{{ site.baseurl }}/docs/{{ page.category | downcase }}/'>{{ page.category }}</a> {% endif %} {% if page.title
+      != 'README' %}
+      <span class="docs-breadcrumbs-divider">/</span> {% if page.breadcrumb %} {{ page.breadcrumb }} {% else %} {{ page.title
+      }} {% endif %}
+      <!-- <a class="ml-4" href='{{ page.source_url }}'><span class="octicon octicon-pencil"></span> Edit source</a> -->
+      {% endif %}
+    </h4>
+  </div>
+</div>
+
+{% if page.category == 'API' %}
+<div>
+  <div class="container-narrow position-relative">
+    <ul>
+      <li>{{ site.data.processes[page.title] }}</li>
+    </ul>
+  </div>
+</div>
+{% endif %}
+
+<section class='page-section docs strong-headers'>
+  <div class='container-narrow'>
+
+    <ul class="docs-tags">
+      {% for tag in page.tags %}
+      <li class="docs-tag"><i class="fa fa-tag"></i><a href="/tags#{{ tag }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+
+    {{ content }} {% if page.category != 'ignore' %}
+
+    <div class="docs-contact">
+      <p>Is something missing? See something that needs fixing? Propose a change <a target="_blank" href='{{ page.source_url }}'><strong>here</strong></a>.</p>
+    </div>
+    {% endif %}
+
+  </div>
+</section>

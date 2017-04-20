@@ -1,0 +1,87 @@
+.blog-post .container-narrow {
+    position: relative;
+}
+.blog-post aside {
+    vertical-align: top;
+    width: 275px;
+    position: absolute;
+    left: -300px;
+    margin-top: 40px;
+}
+.blog-post aside h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Gotham";
+    margin-top: 0;
+}
+.blog-post aside ul {
+    margin: 0;
+    padding: 0;
+}
+.blog-post aside li {
+    list-style-type: none;
+    margin: 0 0 15px 0;
+    padding: 0;    
+    line-height: 20px; 
+}
+.blog-post aside a {
+    color: #13a5ad;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.blog-post aside a:hover {
+    text-decoration: underline;
+}
+
+.blog-post aside .all-posts a {
+    color: #444;
+}
+.blog-post article {
+    vertical-align: top;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 800px;
+}
+.blog-post h1, .blog-post h1 a {
+    text-decoration: none;
+    color: #13a5ad;
+    font-size: 55px;
+    line-height: 60px;
+    text-transform: none;
+    font-family: "Gotham Light";
+    margin-bottom: 5px;
+    text-align: left;
+    margin-top: 60px;
+}
+.blog-post hr:first-of-type {
+    display: none;
+}
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.blog-post p img {
+    max-width: 800px;
+}
+.blog-post p a {
+    color: #13a5ad;
+}
+.blog-post h2 {
+    font-size: 35px;
+    color: #444;
+}
+
+.blog-post .post-contact {
+    background: #f9f9f9;
+    border: solid 1px #dddddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-post .post-contact p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 2;
+}

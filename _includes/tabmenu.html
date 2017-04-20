@@ -1,0 +1,5 @@
+<ul class="tabs">
+    {% for repository in site.data.releases %}
+        <li class="tab{% if forloop.index == 1 %} active{% endif %}" id="tab-{{forloop.index}}">{{repository.name}}</li>
+    {% endfor releases %}
+</ul>

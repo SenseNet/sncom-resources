@@ -253,6 +253,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   github-pages
+  kramdown (>= 1.13.2)
   sass-rails (>= 3.2)
   wdm (>= 0.1.0)
 

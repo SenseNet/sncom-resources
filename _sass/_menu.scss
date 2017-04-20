@@ -1,0 +1,23 @@
+.site-header .container nav {
+    display: table;
+    margin-top: 10px;
+}
+
+.site-header .container nav a {
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #777;
+    font-family: "Raleway Medium";
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.site-header .container nav a:hover,
+.site-header .container nav a.active {
+    color: #13a5ad;
+}
+
+.site-header .container nav a:last-of-type {
+    font-size: 35px;
+}

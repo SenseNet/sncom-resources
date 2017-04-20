@@ -1,14 +1,12 @@
 ---
 title:  "Redesigning sensenet.com: find the SN7 story of yours"
 author: ildika
-categories: ui ux design
+tags: ui ux design
 ---
 
 We've been working on restructuring SenseNet ECMS as a product for a while; now it's time to change the way we connect with people.
 
 ---
-
-# [Redesigning sensenet.com: find the SN7 story of yours](/blog/2016/10/27/redesigning-sn)
 
 Hello again! We've been working on restructuring SenseNet ECMS as a product for a while; now it's time to change the way we connect with people.  
 The next milestone on our roadmap is to redesign our website in order to make it more streamlined and transparent for you. Our most important aim with the redesign is to provide you all the information you might need when looking for the open source, .NET based ecms that would fit your business needs and still provide a pleasant user experience.
