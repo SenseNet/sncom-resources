@@ -1,0 +1,151 @@
+[
+  {
+    "name": "SN Core",
+    "href": "https://github.com/SenseNet/sensenet",
+    "description": "The first Open Source Enterprise Content Management platform for .NET.",
+    "category": "main_project"
+  },
+  {
+    "name": "SN Installer",
+    "href": "https://github.com/SenseNet/sn-installer",
+    "description": "A desktop application for installing Sense/Net ECM from scratch, or executing upgrade packages. ",
+    "category": "main_project"
+  },
+  {
+    "name": "SN Admin",
+    "href": "https://github.com/SenseNet/sn-admin",
+    "description": "Upgrade and package executor tool for Sense/Net ECM.",
+    "category": "main_project"
+  },
+  {
+    "name": "SN Tools",
+    "href": "https://github.com/SenseNet/sn-tools",
+    "description": "General .Net tools that can be used even in Sense/Net-independent projects.",
+    "category": "components"
+  },
+  {
+    "name": "SN Taskmanager",
+    "href": "https://github.com/SenseNet/sn-taskmanagement",
+    "description": "A standalone .Net component for managing long-running background tasks in any application.",
+    "category": "components"
+  },
+  {
+    "name": "SN Security",
+    "href": "https://github.com/SenseNet/sn-security",
+    "description": "A powerful .Net component for managing permission entries in content repositories.",
+    "category": "components"
+  },
+  {
+    "name": "SN Client .NET",
+    "href": "https://github.com/SenseNet/sn-client-dotnet",
+    "description": "A .Net client for Sense/Net ECM that makes it easy to use the REST API of the Content Repository.",
+    "category": "components"
+  },
+  {
+    "name": "SN Client JS",
+    "href": "https://github.com/SenseNet/sn-client-js",
+    "description": "A JavaScript client for Sense/Net ECM that makes it easy to use the REST API of the Content Repository.",
+    "category": "components"
+  },
+  {
+    "name": "SN Redux",
+    "href": "https://github.com/SenseNet/sn-redux",
+    "description": "A set of redux actions, reducers and redux-ovbservable epics for Sense/Net ECM.",
+    "category": "components"
+  },
+  {
+    "name": "SN Benchmark",
+    "href": "https://github.com/SenseNet/sn-benchmark",
+    "description": "A benchmark tool to measure the performance of a Sense/Net ECM instance across changes.",
+    "category": "tools"
+  },
+  {
+    "name": "SenseNet Filesize Report Generator",
+    "href": "https://github.com/marosvolgyiz/SenseNet-File-Size-Report-Generator",
+    "description": "This is a tool which generates reports about the file sizes in the SenseNet ECM.",
+    "category": "tools"
+  },
+  {
+    "name": "SenseNet Project Installer",
+    "href": "https://github.com/VargaJoe/SenseNet-Project-Installer",
+    "description": "Dev project installer for Sense/Net ECMS.",
+    "category": "tools"
+  },
+  {
+    "name": "SenseNet Subtree Lucene Fixer",
+    "href": "https://github.com/VargaJoe/SenseNet-SubTree-Lucene-Fixer",
+    "description": "Custom ContentCollection view to compare repository content structure and lucene index structure of a subtree, and try to fix any differences.",
+    "category": "tools"
+  },
+  {
+    "name": "SenseNet Preview Cleaner",
+    "href": "https://github.com/VargaJoe/SenseNet-Preview-Cleaner",
+    "description": "Tool cleaning preview images.",
+    "category": "tools"
+  },
+  {
+    "name": "SenseNet Wiki",
+    "href": "http://wiki.sensenet.com",
+    "category": "documentation"
+  },
+  {
+    "name": "SN Client JS API References",
+    "href": "http://www.sensenet.com/documentation/sn-client-js/index.html",
+    "category": "documentation"
+  },
+  {
+    "name": "SN Redux API References",
+    "href": "http://www.sensenet.com/documentation/sn-redux/index.html",
+    "category": "documentation"
+  },
+  {
+    "name": "Todo App with React, Redux and Sense/Net ECM",
+    "href": "https://github.com/SenseNet/sn-react-redux-todo-app",
+    "category": "examples"
+  },
+  {
+    "name": "Todo App with Angular, Redux and Sense/Net ECM",
+    "href": "https://github.com/blaskodaniel/sn-angular-redux-todo-app",
+    "category": "examples"
+  },
+  {
+    "name": "Todo App with Angular2, Redux and Sense/Net ECM",
+    "href": "https://github.com/SenseNet/sn-angular2-redux-todo-app",
+    "category": "examples"
+  },
+  {
+    "name": "Todo App with Aurelia, Redux and Sense/Net ECM",
+    "href": "https://github.com/B3zo0/sn7-aurelia-redux-todo-app",
+    "category": "examples"
+  },
+  {
+    "name": "Todo App with Vue, Redux and Sense/Net ECM",
+    "href": "https://github.com/SenseNet/sn-vue-redux-todo-app",
+    "category": "examples"
+  },
+  {
+    "name": "Stack Overflow",
+    "href": "http://stackoverflow.com/questions/tagged/sensenet",
+    "category": "community"
+  },
+  {
+    "name": "Facebook",
+    "href": "https://www.facebook.com/sensenetcms",
+    "category": "community"
+  },
+  {
+    "name": "Twitter",
+    "href": "https://twitter.com/sensenet",
+    "category": "community"
+  },
+  {
+    "name": "Slack",
+    "href": "https://sensenetecm.slack.com",
+    "category": "community"
+  },
+  {
+    "name": "Gitter",
+    "href": "https://gitter.im/SenseNet",
+    "category": "community"
+  }
+]
