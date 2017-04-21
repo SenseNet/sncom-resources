@@ -24,6 +24,10 @@ body {
     max-width: 980px;
 }
 
+.container-narrow h1 {
+    line-height: 1;
+}
+
 .container::after {
     content: "";
     display: table;
