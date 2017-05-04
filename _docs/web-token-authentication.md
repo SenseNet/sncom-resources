@@ -59,7 +59,11 @@ _Steps of a token refresh process from the clients' point of view:_
 
 All the communication are sent through SSL (https). The used cookies are all HtmlOnly and Secure. There are two types of communication: header marked and uri marked (without header mark). Either of them can be choosen freely by a client developer. However the two could be mixed, but we advice to choose one and stick to it.
 
-![web token authentication protocol](https://raw.githubusercontent.com/SenseNet/sensenet/jwt/docs/images/SenseNetTokenAuthentication.png) _figure 1: web token authentication protocol_
+<div style="text-align: center;">
+  <img src="/docs/img/jwt/jwt-protocol.png" alt="web token authentication protocol" width="600" border="0" />
+</div>
+
+_figure 1:web token authentication protocol_
 
 **LoginRequest with header mark:**  
 _uri:_
