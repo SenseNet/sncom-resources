@@ -91,8 +91,8 @@ _body:_
 _uri:_  
 `https://<yourhost>/<contentpath>` 
 headers:  
-`X-Authentication-Type: Token```  
-`X-Refresh-Data: <refreshHeadAndPayload>`  
+`X-Authentication-Type: Token`  
+`X-Access-Data: <accessHeadAndPayload>`  
 _cookies:_  
 Cookie: rs=`<refreshSignature>`
 Cookie: as=`<accessSignature>`
