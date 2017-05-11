@@ -8,7 +8,7 @@ tags: sn7 enterprise blob
 Overview
 ========
 
-By default **sensenet ECM** stores binaries (files) in its SQL database. If you want to store binaries in an external [Blob provider](https://github.com/SenseNet/sensenet/docs/blob-provider.md "sensenet blob provider") instead of the main [Content Repository](Content_Repository "wikilink") database, we offer a feature for our *Enterprise* customers that can store binaries in [Azure Blob Storage](https://azure.microsoft.com/en-gb/services/storage/blobs/) so that operators have more flexibility when installing and maintaining Sense/Net ECM. We deliver our Enterprise customer an *Enterprise Azure Blob Package* that contains all the binaries needed to make it work.
+By default **sensenet ECM** stores binaries (files) in its SQL database. If you want to store binaries in an external [Blob provider](https://github.com/SenseNet/sensenet/docs/blob-provider.md "sensenet blob provider") instead of the main [Content Repository](Content_Repository "wikilink") database, we offer a feature for our *Enterprise* customers that can store binaries in [Azure Blob Storage](https://azure.microsoft.com/en-gb/services/storage/blobs/) so that operators have more flexibility when installing and maintaining sensenet ECM. We deliver our Enterprise customer an *Enterprise Azure Blob Package* that contains all the binaries needed to make it work.
 
 Details
 =======
@@ -66,6 +66,9 @@ Configure the tools if you use them. Modify all relevant configurations in the t
 
 Backup
 ------
+
+If you intend to implement a backup policy, you can do it easily with the use of [asynchronous copy blob](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-asynchronous-cross-account-copy-blob/), that is a built-in feature of Azure:
+
 
 Migration
 ---------
