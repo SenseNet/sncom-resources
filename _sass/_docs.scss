@@ -125,7 +125,7 @@ color: #fff;
     background: #f9f9f9;
     border: solid 1px #dddddd;
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 20px 0;
 }
 
 .docs-contact p{
@@ -142,6 +142,11 @@ color: #fff;
     font-family: "Gotham Light";
     font-weight: normal;
     margin: 30px 0 20px;
+}
+
+.documentation.tutorials h2,
+.documentation.tutorials h2 a {
+    font-size: 32px;
 }
 
 .documentation h3 {

@@ -1,5 +1,62 @@
----
-title: Tutorials
-permalink: /tutorials/
-layout: default
----
+--- 
+version: 7.0 
+title: Tutorials 
+permalink: /tutorials/ 
+redirect_from:
+  - /docs/tutorials/
+layout: default 
+--- 
+
+{% assign docs = site.docs | sort: 'title' %}
+
+<div class='subtron'>
+  <div class='container-narrow'>
+    <h1>Tutorials</h1>
+  </div>
+</div>
+
+<section class='page-section documentation tutorials'>
+  <div class='container'>
+    <div class="grid">
+      <div class="row">
+
+        <div class="col-ms-12 col-lg-4">
+          <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/backend">Backend dev how-tos</a></h2>
+          <ul class="docs-list">
+            {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'backend' %}
+            <li>
+              <a href="{{ site.baseurl }}{{ tutorial.url }}">{{ tutorial.title }}</a>
+            </li>
+            {% endif %} {% endfor %}
+          </ul>
+        </div>
+
+        <div class="col-ms-12 col-lg-4">
+          <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/frontend">Frontend dev how-tos</a></h2>
+          <ul class="docs-list">
+            {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'frontend' %}
+            <li>
+              <a href="{{ site.baseurl }}{{ tutorial.url }}">{{ tutorial.title }}</a>
+            </li>
+            {% endif %} {% endfor %}
+          </ul>
+        </div>
+
+        <div class="col-ms-12 col-lg-4">
+          <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/operator">Sysop how-tos</a></h2>
+          <ul class="docs-list">
+            {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'operator' %}
+            <li>
+              <a href="{{ site.baseurl }}{{ tutorial.url }}">{{ tutorial.title }}</a>
+            </li>
+            {% endif %} {% endfor %}
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    {% include tutorial-tagcloud.html %}
+
+  </div>
+</section>

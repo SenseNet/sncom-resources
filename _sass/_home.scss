@@ -1,0 +1,155 @@
+.home h1 {
+    color: #13a5ad;
+    font-size: 55px;
+    margin-bottom: 20px;
+    font-family: "Gotham";
+    line-height: 60px;
+}
+
+.home h2 {
+    color: #666; 
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.home .intro {
+    text-align: center;
+}
+
+.home .intro h2 {
+    font-size: 35px;
+    margin: 0;
+    opacity: .8;
+}
+
+.home ul {
+    margin: 0;
+    padding: 0;
+}
+
+.home li {
+    list-style-type: none;
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.targets {
+    margin: 100px 0 80px;
+}
+
+.targets li {
+    width: 32%;
+    text-align: center;
+}
+
+.targets li .fa {
+    font-size: 60px;
+    opacity: .65;
+    color: #13a5ad;
+    margin-bottom: 20px;
+}
+
+.targets li .fa:hover {
+    opacity: 1;
+}
+
+.targets li h3, .targets li p {
+    margin: 10px 10px 20px;
+}
+
+.components {
+    margin-bottom: 100px;
+}
+
+.components ul {
+    margin-bottom: 80px;    
+    text-align: center;
+}
+
+.components li {
+    width: 24%;
+    text-align: center;
+}
+
+// .install li {
+//     width: 19%;
+//     text-align: center;
+// }
+
+.components span {
+    display: block;
+}
+
+.components a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.components .fa {
+    font-size: 60px;
+    opacity: .65;
+    color: #666;
+    margin-bottom: 20px;
+    color: #13a5ad;
+}
+
+.components .fa:hover {
+    opacity: .65;
+}
+
+.components span:last-of-type {
+    color: #666;
+    font-family: "Raleway Medium";
+    font-size: 14px;
+}
+
+.install {
+    margin-bottom: 100px;
+}
+
+.install li {
+    text-align: center;
+}
+
+.install a {
+    color: #666;
+    text-decoration: none;
+}
+
+.install img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.install .fa, .install img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.more-api, .ready-to-create {
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 100px;
+}
+
+.more-api a, .ready-to-create a {
+    color: #13a5ad;
+    font-family: "Raleway Bold";
+    text-decoration: none;
+}
+
+.more-api h4, .ready-to-create h4 {
+    font-size: 20px;
+}
+
+.examples {
+    margin-bottom: 100px;
+}
+
+.examples p {
+    text-align: center;
+    line-height: 25px;
+}
