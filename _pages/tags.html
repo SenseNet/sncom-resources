@@ -4,6 +4,7 @@ permalink: /tags/
 layout: default
 ---
 
+
 {% assign tags =  site.docs | map: 'tags' | join: ','  | split: ',' | uniq %}
 {% for tag in tags %}
   <h3>{{ tag }}</h3>

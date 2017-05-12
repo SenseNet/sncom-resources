@@ -47,10 +47,14 @@ layout: default
 
     {{ content }} {% if page.category != 'ignore' %}
 
+    {% include relateddocs.html %}
+
     <div class="docs-contact">
       <p>Is something missing? See something that needs fixing? Propose a change <a target="_blank" href='{{ page.source_url }}'><strong>here</strong></a>.</p>
     </div>
     {% endif %}
+
+    
 
   </div>
 </section>

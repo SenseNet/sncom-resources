@@ -1,6 +1,6 @@
 ---
 title:  "How to create a custom Scenario"
-source_url: 'https://github.com/SenseNet/sensenet.github.io/docs/tutorials/how-to-create-a-custom-scenario.md'
+source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tutorials/how-to-create-a-custom-scenario.md'
 category: Tutorials
 version: v6.1.2
 tags: [sn6, action, application, scenario, smart application model, backend]
