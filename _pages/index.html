@@ -14,19 +14,19 @@ layout: default
         <div class="targets">
             <ul>
                 <li class="column">
-                    <span class="fa fa-list-alt"></span>
+                    <span class="icon icon-lightbulb"></span>
                     <h3>Modern web technologies</h3>
-                    <p>OData, Client JS, Redux, React, Aurelia</p>
+                    <p>Do not worry about the backend! Use the client side technology of your choice (for example <strong>React</strong> or <strong>Aurelia</strong> with <strong>Redux</strong>) to build your UI and business logic on top of our Content Repository <strong>REST API</strong> using the sensenet ECM <strong>JavaScript SDK</strong>.</p>
                 </li>
                 <li class="column">
-                    <span class="fa fa-code"></span>
+                    <span class="icon icon-rename"></span>
                     <h3>Flexible back-end</h3>
-                    <p>c# devs, asp.net, mvc projects, clien .net stb</p>
+                    <p>Use or extend our wide server-side <strong>.Net API</strong>, integrate sensenet ECM into your <strong>MVC</strong> web application, or even replace one of our <strong>pluggable components</strong> with your own <strong>custom provider</strong>!</p>
                 </li>
                 <li class="column">
-                    <span class="fa fa-puzzle-piece"></span>
+                    <span class="icon icon-star"></span>
                     <h3>Growing widget stock</h3>
-                    <p>community driven, even for old versions 6.5, etc, even for endusers, demos</p>
+                    <p>You are not alone! Our community builds <strong>plugins</strong> for the many extensibility points of sensenet ECM. Use them or build your own <strong>components</strong> for the benefit of your clients or the community.</p>
                 </li>
             </ul>
         </div>
@@ -35,26 +35,26 @@ layout: default
             <h2>Pre-built components</h2>
             <ul>
                 <li class="column">
-                    <a href="">
-                            <span class="fa fa-cube"></span>
+                    <a href="/docs/content-repository">
+                            <span class="icon icon-cube"></span>
                             <span>Content Repository</span>
                     </a>
                 </li>
                 <li class="column">
-                    <a href="">
-                        <span class="fa fa-shield"></span>
+                    <a href="/docs/security-component">
+                        <span class="icon icon-shield"></span>
                         <span>Security Component</span>
                     </a>
                 </li>
                 <li class="column">
-                    <a href="">
-                        <span class="fa fa-map-signs"></span>
+                    <a href="/docs/task-management">
+                        <span class="icon icon-layers"></span>
                         <span>Task Management</span>
                     </a>
                 </li>
                 <li class="column">
-                    <a href="">
-                        <span class="fa fa-file-o"></span>
+                    <a href="/docs/document-viewer">
+                        <span class="icon icon-book"></span>
                         <span>Document Viewer</span>
                     </a>
                 </li>
@@ -62,13 +62,46 @@ layout: default
         </div>
 
         <div class="install">
-            <h2>Installing sensenet ECM</h2>
+            <h2>Where to start?</h2>
             <ul>
-                <li class=""><a href="">install 7.* with nuget package</a></li>
-                <li class=""><a href="">create a new js web app with sn cli</a></li>
-                <li class=""><a href="">install with sn installer</a></li>
-                <li class=""><a href="">install 6.* from source</a></li>
-                <li class=""><a href="">install 6.* with WebPI</a></li>
+                <li class="install-type half">
+                    <h3>Integrate</h3>
+                    <span class="icon icon-blocks"></span>
+                    <p>
+                        sensenet ECM 7.0 into your solution directly in Visual Studio!
+                    </p>
+                    <a href="/docs/install-sn-from-nuget">Install sensenet ECM 7.0 from NuGet</a>
+                </li>
+                <li class="install-type half">
+                    <h3>Build your own user interface</h3>
+                    <span class="icon icon-palette"></span>
+                    <p>
+                        and business logic in JavaScript or TypeScript using the JS Client API!
+                    </p>
+                    <a href="/docs/create-a-client-app-with-sn-cli">Create a JavaScript web app using the sn cli</a>
+                </li>
+                <li class="install-type half">
+                    <h3>Standalone installer</h3>
+                    <sub>(coming soon)</sub>
+                    <span class="icon icon-close"></span>
+                    <p>
+                        installer desktop application that creates a sensenet ECM web application from scratch.
+                    </p>
+                    <a href="/docs/install-sn-using-installer">Install sensenet ECM 7.0 using the Installer</a>
+                </li>
+                <li class="install-type half">
+                    <h3>Do you need a full ECMS</h3>
+                    <span class="icon icon-page"></span>
+                    <p>
+                        with a predefined user interface and tons of features? Then sensenet ECM 6.5 is the right choice!
+                    </p>
+                    <a href="/docs/how-to-install-sn6-from-webpi">Install sensenet ECM 6.5 from a WebPI package</a>
+                </li>
+                <li class="install-type half full">
+                    <h3>Developers who want to look under the hood</h3>
+                    <span class="icon icon-funnel"></span>
+                    <a href="/docs/how-to-install-sn6-from-source">Install sensenet ECM 6.5 from source package</a>
+                </li>
             </ul>
         </div>
 
@@ -86,3 +119,15 @@ layout: default
 
     </div>
 </section>
+
+<script>
+    $(function(){
+        $('.targets li, .components li, .install li').hover(
+            function() {
+                $(this).find('.icon').addClass("hovered");
+            }, function() {
+                $(this).find('.icon').removeClass("hovered");
+            }
+        );
+    });
+</script>
