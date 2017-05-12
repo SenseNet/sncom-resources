@@ -1,0 +1,28 @@
+.error {
+    text-align: center;
+}
+
+.error h1 {
+    color: #e74c3c;
+    font-family: "Gotham";
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.error p {
+    font-size: 30px;
+}
+
+.error p a {
+    color: #13a5ad;
+    text-decoration: none;
+}
+
+.error p a:hover {
+    color: #e74c3c;
+}
+
+.error span {
+    font-size: 150px;
+    font-family: "Gotham";
+}

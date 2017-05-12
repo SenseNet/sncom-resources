@@ -68,6 +68,16 @@
     url('/fonts/gotham-light.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+    font-family: 'icons';
+    src: url('/fonts/icons.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/icons.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/fonts/icons.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/fonts/icons.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/fonts/icons.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/icons.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 $font-gotham: 'Gotham';
 $font-gotham-light: 'Gotham Light';
 $font-raleway-medium: 'Raleway Medium';
@@ -75,6 +85,7 @@ $font-raleway-regular: 'Raleway Regular';
 $font-raleway-bold: 'Raleway Bold';
 $font-raleway-extrabold: 'Raleway Extrabold';
 $font-fontawesome: 'FontAwesome';
+$font-icons: 'icons';
 $main-color: hsl(0, 0%, 40%);
 $h1-color: #fff;
 $h2-color: #13a5ad;
