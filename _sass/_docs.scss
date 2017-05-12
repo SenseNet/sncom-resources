@@ -183,3 +183,17 @@ blockquote {
 .docs th {
     padding: 5px;
 }
+
+.related-docs {
+    margin-bottom: 40px;
+}
+
+.related-docs, .related-docs a {
+    color: #13a5ad;
+    text-decoration: none;
+    font-family: $font-raleway-medium;
+}
+
+.related-docs h3 {
+    color: #666;
+}
