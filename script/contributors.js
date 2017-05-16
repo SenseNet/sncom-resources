@@ -1,7 +1,7 @@
 const fs = require('fs')
 const request = require('request')
 const semver = require('semver')
-const token = '4995b85331a043301cab62210c287036c5548bb0'
+const token = 'ca4e5c70afe175a7b19f6cd8c910d2b2e265907c' //regenerate token every time before running get-releases script
 const ignoredRepos = ['sn-surveyeditor', 'lucenenet', 'hpop', 'jquery-toss-values', 'input-machinator']
 const urls = []
 const awesome = JSON.parse(fs.readFileSync('_data/awesome-sensenet.json', 'utf8'));

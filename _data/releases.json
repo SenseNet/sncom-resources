@@ -26,6 +26,24 @@
     "name": "sn-client-js",
     "releases": [
       {
+        "url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6386844",
+        "assets_url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6386844/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sn-client-js/releases/6386844/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sn-client-js/releases/tag/2.0.0-RC.1",
+        "id": 6386844,
+        "tag_name": "2.0.0-RC.1",
+        "target_commitish": "master",
+        "name": "2.0.0 Release Candidate 1",
+        "draft": false,
+        "prerelease": true,
+        "created_at": "2017-05-15T12:05:04Z",
+        "published_at": "2017-05-15T12:26:53Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sn-client-js/tarball/2.0.0-RC.1",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sn-client-js/zipball/2.0.0-RC.1",
+        "body": "## Breaking changes\r\n - *SetSiteUrl* and *SetServiceToken* won't be available any longer. These settings can be specified during Repository instance instantiation\r\n - *OData Api methods* won't be available at the Global scope, you can use them through **Repository.Contents**\r\n\r\n## New Fetatures\r\n - Introduced **Repository** class as the main, configurable entry point to the sense NET API\r\n - **JWT Token Authentication** implementation\r\n - Improved type safety for OData Operations",
+        "version": "2.0.0-RC.1"
+      },
+      {
         "url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/5462029",
         "assets_url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/5462029/assets",
         "upload_url": "https://uploads.github.com/repos/SenseNet/sn-client-js/releases/5462029/assets{?name,label}",
