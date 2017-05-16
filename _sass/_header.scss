@@ -11,7 +11,12 @@
     vertical-align: middle;
 }
 
-.site-header .container nav {
+.site-header .container .right {
     float: right;
+    vertical-align: middle;
+}
+
+.site-header .container .right > * {
+    display: inline-block;
     vertical-align: middle;
 }

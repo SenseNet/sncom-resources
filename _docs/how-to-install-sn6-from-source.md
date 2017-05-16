@@ -6,8 +6,6 @@ version: v6.0.0
 tags: sn6 install source
 ---
 
-## Overview
-
 In this document we would like to guide you through the installation process of sensenet ECM from a source package. We hope that you will encounter no complications during installation, or later on while working with sensenet ECM. If you come across a bug by any chance, or have questions concerning our product, feel free to contact us at on
 [gitter](https://gitter.im/SenseNet/sensenet), [slack](https://sensenetecm.slack.com) or [stackoverflow](http://stackoverflow.com/questions/tagged/sensenet).
 
