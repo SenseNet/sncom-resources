@@ -26,6 +26,24 @@
     "name": "sn-client-js",
     "releases": [
       {
+        "url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6398518",
+        "assets_url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6398518/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sn-client-js/releases/6398518/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sn-client-js/releases/tag/2.0.0-RC.2",
+        "id": 6398518,
+        "tag_name": "2.0.0-RC.2",
+        "target_commitish": "master",
+        "name": "2.0.0 Release Candidate 2",
+        "draft": false,
+        "prerelease": true,
+        "created_at": "2017-05-16T08:48:50Z",
+        "published_at": "2017-05-16T08:51:47Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sn-client-js/tarball/2.0.0-RC.2",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sn-client-js/zipball/2.0.0-RC.2",
+        "body": "## Breaking changes\r\n - Fixed typo, renamed **Repository.Contents** references to **Repository.Content**",
+        "version": "2.0.0-RC.2"
+      },
+      {
         "url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6386844",
         "assets_url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6386844/assets",
         "upload_url": "https://uploads.github.com/repos/SenseNet/sn-client-js/releases/6386844/assets{?name,label}",
@@ -106,6 +124,10 @@
   },
   {
     "name": "sn-webpages",
+    "releases": []
+  },
+  {
+    "name": "sn-client-cli",
     "releases": []
   }
 ]
