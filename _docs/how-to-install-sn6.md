@@ -6,8 +6,6 @@ version: v6.0.0
 tags: sn6 install troubleshooting requirements
 ---
 
-## Overview
-
 **sensenet** can be easily installed on any Windows based system (check the requirements section).
 You can install **sensenet** using various methods:
 - install from package, using the `Web deployment tool`
