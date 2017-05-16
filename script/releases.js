@@ -1,7 +1,7 @@
 const fs = require('fs')
 const request = require('request')
 const semver = require('semver')
-const token = '6bd310a2c0c4377db0da37a463a49e7105fcafca'
+const token = 'ca4e5c70afe175a7b19f6cd8c910d2b2e265907c' //regenerate token every time before running get-releases script
 
 const repos = ['sensenet', 'sn-client-js', 'sn-client-dotnet', 'sn-webpages']
 const releaseArr = [];
