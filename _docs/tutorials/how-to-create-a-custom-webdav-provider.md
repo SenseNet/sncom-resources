@@ -3,7 +3,7 @@ title:  "How to create a custom WebDav provider"
 source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tutorials/how-to-create-a-custom-webdav-provider.md'
 category: Tutorials
 version: v6.3.2
-tags: [sn6, webdav, provider, content repository, backend]
+tags: [webdav, provider, content repository, sn6, backend]
 ---
 
 # How to create a custom WebDav provider

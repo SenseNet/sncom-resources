@@ -13,7 +13,7 @@
                     {% if page.title == doc.title %}
                     {% else %}
                         {% unless related contains doc_title %}
-                            <li><a href="{{ site.baseurl }}{{ docs.url }}">{{doc.title}}</a></li>
+                            <li><a href="{{ site.baseurl }}{{ doc.url }}">{{doc.title}}</a></li>
                             {% assign current_count = current_count | plus: 1 %}
                             {% assign related = related | append: doc_title %}
                         {% endunless %}

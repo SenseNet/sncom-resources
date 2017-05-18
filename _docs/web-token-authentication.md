@@ -3,7 +3,7 @@ title:  "Configuration of Web Token Authentication"
 source_url: 'https://github.com/SenseNet/sensenet/blob/jwt/docs/web-token-authentication.md'
 category: Development
 version: v7.0.0
-tags: webtoken jwt authentication
+tags: webtoken jwt authentication sn7
 ---
 
 # Configuration of Web Token Authentication #

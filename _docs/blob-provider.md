@@ -1,17 +1,22 @@
-Overview
-========
+---
+title: "Blob provider"
+source_url: 'https://github.com/SenseNet/sensenet/docs/blob-provider.md'
+category: Development
+version: v7.0.0
+tags: enterprise blob storage provider sn7
+---
+
+# Blob provider
 
 In **sensenet ECM** all files are stored in the main [Content Repository](Content_Repository "wikilink") database by default. All binaries, along with their metadata. In larger projects this can lead to a *huge database*, which requires a *large data storage* and sometimes additional *server licences*. sensenet allows you to store binaries outside of the database, in an external storage. This article describes the concept of our blob storage and the customization options. Available blob providers for the *Enterprise Edition*:
 
 -   [MongoDB blob provider](MongoDB_blob_provider "wikilink") *(soon to be released)*
 
-Blob storage concept
-====================
+## Blob storage concept
 
 Sensenet ECM is a lot more than a simple document storage. We offer a rich set of additional features like storing different metadata for different types of content and indexing binaries to aid field-specific or full-text search. All this additional data will have to remain in the main database (and in our index), but wanted to let customers have the option to store their binaries outside of the database. The sensenet **blob storage** has a very simple purpose: storing binary data that can be linked to our records in the main database. No additional, high-level features, no custom metadata, only raw binaries, so that we can keep 3rd party implementations **simple**.
 
-Blob providers
---------------
+## Blob providers
 
 A blob provider is the component in sensenet that is responsible for all binary operations. The **built-in blob provider** stores binaries in the database. We offer a simple interface for developers to implement external blob providers. These providers may store binaries in a completely different environment - e.g. in a file system or in a nosql solution (like MongoDB).
 
@@ -19,28 +24,23 @@ Currently there is a simple **selector algorithm** for choosing the appropriate 
 
 Upper layers do not know anything about the underlying storage: the Content binary API is unified, regardless of the blob provider currently in use.
 
-Migration
----------
+### Migration
 
 By default everything is stored in the database. When you create a custom external blob provider (and define it in the configuration), from than on *new files* will be saved into that external storage. If you want your old files to be moved to the new storage, you either have to wait for them to be migrated when their binary is saved again, or you'll have to create a tool that iterates through the files and saves them programmatically.
 
-Backup
-------
+### Backup
 
 Backup strategy depends on the characteristics of the custom external provider, but it is advisable to create a backup mechanism that synchronizes the backup of the index, the main database and the blob storage so that everything remains in sync.
 
-Writing chunks
---------------
+### Writing chunks
 
 One of the few important capabilities of blob providers is that they have to support **writing binaries in chunks**. This means it is possible to write a huge file in chunks into the storage in **random order, even in parallel** requests to speed up the process.
 
-Multiple web servers
---------------------
+### Multiple web servers
 
 An external blob provider has to support **NLB** environments, when multiple web servers are accessing the same storage at the same time for read and write operations.
 
-Accessing binaries
-------------------
+### Accessing binaries
 
 The blob storage should not allow read and write operations outside of the sensenet API. All modifications should be performed through the **blob storage API** that we publish (e.g. users must not modify files stored in the file system *manually*).
 
@@ -48,13 +48,11 @@ If you are working in the context of the sensenet Content Repository, you do not
 
 -   [How to access the blob storage directly](How_to_access_the_blob_storage_directly "wikilink")
 
-Built-in blob provider
-======================
+## Built-in blob provider
 
 The built-in blob provider will always be there as a fallback. Currently it supports storing files in the database either in a regular *varbinary* column or in a [FILESTREAM](filestream "How to enable FILESTREAM in sensenet ECM") column.
 
-Custom blob provider
-====================
+## Custom blob provider
 
 To create a custom blob provider, you have to
 
@@ -71,8 +69,7 @@ To create a custom blob provider, you have to
 
 -   implement the following interface
 
-Blob provider interface
------------------------
+### Blob provider interface
 
 Implement this to create an external blob provider that stores binaries outside of the Content Repository (e.g. in the file system).
 
@@ -146,8 +143,7 @@ For a sample implementation (a local file storage provider) check the following 
 
 -   [How to create an external blob provider](How_to_create_an_external_blob_provider "wikilink")
 
-Configuration
--------------
+### Configuration
 
 When defining a custom provider you have to provide two values in the configuration:
 
@@ -157,18 +153,3 @@ When defining a custom provider you have to provide two values in the configurat
 ```
 
 The *BlobProvider* value defines the single external provider that is used when the file size is bigger than the value defined as the *MinimumSizeForBlobProviderKB*. The default minimum size is 500 kbytes.
-
-Related links
-=============
-
--   [How to create an external blob provider](How_to_create_an_external_blob_provider "wikilink")
--   [How to access the blob storage directly](How_to_access_the_blob_storage_directly "wikilink")
--   [Content Repository](Content_Repository "wikilink")
--   [Database structure](Database_structure "wikilink")
-
-References
-==========
-
-There are no external references for this article.
-
-<Category:Features> <Category:Developers> [Category:System operators](Category:System_operators "wikilink")

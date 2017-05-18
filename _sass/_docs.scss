@@ -157,6 +157,11 @@ color: #fff;
     margin-top: 0;
 }
 
+.docs h5 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
 .documentation li {
     list-style-type: none;
 }
@@ -196,8 +201,17 @@ blockquote {
 }
 
 .docs li {
-    line-height: 20px;
+    line-height: 25px;
     margin-bottom: 10px;
+}
+
+.docs li a {
+    color: #13a5ad;
+    text-decoration: none;
+}
+
+.docs li a:hover {
+    text-decoration: underline;
 }
 
 .related-docs {
@@ -212,4 +226,8 @@ blockquote {
 
 .related-docs h3 {
     color: #666;
+}
+
+.docs table td {
+    padding: 5px;
 }

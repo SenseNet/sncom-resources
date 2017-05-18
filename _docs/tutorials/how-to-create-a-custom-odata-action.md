@@ -3,7 +3,7 @@ title:  "How to create a custom OData action"
 source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tutorials/how-to-create-a-custom-odata-action.md'
 category: Tutorials
 version: v6.3
-tags: [sn6, action, application, odata, smart application model, ajax, backend]
+tags: [action, application, odata, smart application model, ajax, sn6, backend]
 ---
 
 # How to create a custom OData action
