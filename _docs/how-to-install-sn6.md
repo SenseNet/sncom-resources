@@ -1,10 +1,12 @@
 ---
-title:  "How to install sensenet 6.5"
+title:  "Install sensenet 6.5"
 source_url: 'https://github.com/SenseNet/sensenet/docs/how-to-install-sn6-from-source.md'
 category: Guides
 version: v6.0.0
-tags: sn6 install troubleshooting requirements
+tags: install troubleshooting requirements sn6
 ---
+
+# How to install sensenet 6.5
 
 **sensenet** can be easily installed on any Windows based system (check the requirements section).
 You can install **sensenet** using various methods:

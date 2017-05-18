@@ -1,10 +1,12 @@
 ---
-title:  "How to install sensenet 6.5 from source package"
+title:  "Install sensenet 6.5 from source package"
 source_url: 'https://github.com/SenseNet/sensenet/docs/how-to-install-sn6-from-source.md'
 category: Guides
 version: v6.0.0
-tags: sn6 install source
+tags: install source sn6
 ---
+
+# How to install sensenet 6.5 from source package
 
 In this document we would like to guide you through the installation process of sensenet ECM from a source package. We hope that you will encounter no complications during installation, or later on while working with sensenet ECM. If you come across a bug by any chance, or have questions concerning our product, feel free to contact us at on
 [gitter](https://gitter.im/SenseNet/sensenet), [slack](https://sensenetecm.slack.com) or [stackoverflow](http://stackoverflow.com/questions/tagged/sensenet).

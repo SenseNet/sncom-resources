@@ -3,7 +3,7 @@ title:  "How to create a custom Action"
 source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tutorials/how-to-create-a-custom-action.md'
 category: Tutorials
 version: v6.0
-tags: [sn6, action, application, backend]
+tags: [action, application, sn6, backend]
 ---
 
 # How to create a custom Action
