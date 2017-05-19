@@ -8,7 +8,7 @@ tags: [sn7, sn-client-js, jwt, authentication, frontend]
 
 # JWT Authentication in sn-client-js
 
-With version 7.0 sensenet ECM has a powerful feature to authenticate users using [JSON Web Tokens](/docs/web-token-authentication), whitch is supported by [sn-client-js](https://www.npmjs.com/package/sn-client-js) an [sn-redux](https://www.npmjs.com/package/sn-redux) as well. 
+With version 7.0 sensenet ECM has a powerful feature to authenticate users using [JSON Web Tokens](/docs/web-token-authentication), wich is supported by [sn-client-js](https://www.npmjs.com/package/sn-client-js) an [sn-redux](https://www.npmjs.com/package/sn-redux) as well. 
 
 
 > **What is a JSON Web Token?** JSON Web Token is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that defines a compact, self-contained way for securely transmitting data between parties as a JSON object. The information can be verified and trusted because it's signed digitally The most common scenarios of JWT are *authentication* and *secure data exchange*.
@@ -36,7 +36,7 @@ JWT Authentication is available only with HTTPS connection. To continue with IIS
 
 ### Getting started
 From version 2.0.0 *sn-client-js* and *sn-redux* have APIs to manage and check login states and handle authenticated requests easily. 
-In this tutorial we will start with the official Aurelia skeleton with Typescript and Webpack, whitch you can clone from **[here](https://github.com/aurelia/skeleton-navigation)**.
+In this tutorial we will start with the official Aurelia skeleton with Typescript and Webpack, wich you can clone from **[here](https://github.com/aurelia/skeleton-navigation)**.
 Select the corresponding directory (it's **skeleton-typescript-webpack**) and install the project dependencies and sn-client-js from command line 
 ```bash
 npm install
@@ -150,11 +150,11 @@ class SnClientAuthorizeStep implements PipelineStep {
 
 ```
 
-As you can see, we've injected a ``Repository.BaseRepository`` service into our component and pipeline step and we've added an additional route for **login**, whitch will be a new component and extended the existing routes with a **settings** field, whitch contains a list of roles and a boolean value that indicates if the route has to be shown on the navigation bar.
+As you can see, we've injected a ``Repository.BaseRepository`` service into our component and pipeline step and we've added an additional route for **login**, wich will be a new component and extended the existing routes with a **settings** field, wich contains a list of roles and a boolean value that indicates if the route has to be shown on the navigation bar.
 
 We've added a new pipeline step called ``SnClientAuthorizeStep``, at the moment it works based on the current login state and a list of predefined *roles* that are specified per route. We check *ROLE_LOGGED_IN* and *ROLE_VISITOR_ONLY* routes for now.
 
-We've also implemented the **attached** [lifecycle event](http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/creating-components/3), this will kick in right after the routes has been configured. There's a public API called ``Repository.Authenticatoin.State`` in *sn-client-js*, whitch is an [*RxJs Observable*](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html), that will be updated on each login state change. We will use it for hiding and showing the navbar menus as the login state changes. To do that, we have to extend the navbar list template in ``./src/nav-bar.html``
+We've also implemented the **attached** [lifecycle event](http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/creating-components/3), this will kick in right after the routes has been configured. There's a public API called ``Repository.Authenticatoin.State`` in *sn-client-js*, wich is an [*RxJs Observable*](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html), that will be updated on each login state change. We will use it for hiding and showing the navbar menus as the login state changes. To do that, we have to extend the navbar list template in ``./src/nav-bar.html``
 
 ```html
       <ul class="nav navbar-nav">
@@ -224,7 +224,7 @@ For the template, create the file ``./src/login.html`` with the following conten
     </section>
 </template>
 ```
-This component will use a public API called ``Repository.Authentication.Login(userName, password)``, whitch will send the login request, takes care about storing the JWT tokens and updates the login state (so the navbar will be also updated).
+This component will use a public API called ``Repository.Authentication.Login(userName, password)``, wich will send the login request, takes care about storing the JWT tokens and updates the login state (so the navbar will be also updated).
 
 After running ``npm run start`` your application should be available by default at [http://localhost:8081](http://localhost:8081) and you should be able to log in under the **Login** menu (The default username / password is *admin/admin*), after that you will see and can use the **GitHub Users** and **Child Router** routes. **Child Router** will be broken because of there isn't any *settings* defined, you can fix that in the ``./src/child-router.ts`` by defining the settings field with a role list
 
@@ -301,8 +301,8 @@ We use two token types: The **access token** and the **refresh token**. They bot
 
 To make authenticated HTTP calls, a valid *access token payload info* has to be added to the requests's header. This is done by *sn-client-js* internally, if you use the appropriate *Repository* endpoint.
 
-We have an expiration property on each token. Basically, the maximum session lifetime is the refresh token lifetime, whitch can [configured](/docs/web-token-authentication) in the web.config.
-On the client, we can limit this interval to *user sessions*, whitch means that both tokens will be deleted, when the user closes the browser. This can be done during constructing a *Repository*, in our case, in *./src/main.ts*. The option is called **JwtTokenPersit** and the valid values are **expiration** (whitch refers to the refresh token expiration) and **session**.
+We have an expiration property on each token. Basically, the maximum session lifetime is the refresh token lifetime, wich can [configured](/docs/web-token-authentication) in the web.config.
+On the client, we can limit this interval to *user sessions*, wich means that both tokens will be deleted, when the user closes the browser. This can be done during constructing a *Repository*, in our case, in *./src/main.ts*. The option is called **JwtTokenPersit** and the valid values are **expiration** (wich refers to the refresh token expiration) and **session**.
 
 ```ts
 aurelia.container.registerSingleton(Repository.BaseRepository, () => new Repository.SnRepository({
