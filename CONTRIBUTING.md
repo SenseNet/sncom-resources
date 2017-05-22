@@ -4,14 +4,17 @@ In this article we collect the best practices we use for creating and editing do
 ### Where are the documents?
 
 #### Original repository
-The [components of sensenet ECM](/docs/sensenet-components) are stored in many repositories. Articles related to a single feature should be created and maintained in the **repository of the component it is related to**. We update articles here in the github.io repository in batch from time-to-time, so please do not change anything here, but in the original location.
+The [components of sensenet ECM](/docs/sensenet-components) are stored in many repositories. Articles related to a single feature should be created and maintained in the **repository of the component it is related to**. We update articles here in the github.io repository in batch from time-to-time, so please do not change anything here, but in the original location. You can find the original location of a document in the following places:
+
+- at the bottom of every document there is a link to the original md file
+- in the markdown file's hidden header there is the same source link as above
 
 In this article we refer to the repository the documentation comes from as the *original repository*.
 
 For a list of sensenet-related repositories, visit the [main organization](https://github.com/SenseNet).
 
 #### General articles, tutorials
-There are several topics than cover a broader range than a single component, or they are maybe about an enterprise feature that does not have a public repository. The same goes for 'How-to' articles. These types of documents are created here, in the github.io repository in the following subfolder:
+There are several topics that cover a broader range of features than a single component, or they are maybe about an enterprise feature that does not have a public repository. The same goes for 'How-to' articles. These types of documents are created and stored here, in the github.io repository in the following subfolder (and do not have an original location):
 - /docs/tutorials
  
 ### Naming documents
@@ -35,5 +38,6 @@ When you reference a document from the same repository, use a relative url:
 
 ### Linked document in a different repo
 A linked document that lives in a different repo than the original one has to be referenced by its absolute url:
-- https://github.com/SenseNet/sn-webpages/blob/master/docs/install-webpages-from-nuget.md
+- **Simple doc**: https://github.com/SenseNet/sn-webpages/blob/master/docs/install-webpages-from-nuget.md
+- **Tutorial**: http://community.sensenet.com/docs/tutorials/snadmin-create-custom-step
 >Don't worry, our batch update script will remove the prefix so that the link points to the final article (that is stored here in the github.io repo), this is only needed to be sure that the article is usable in the original location too.
