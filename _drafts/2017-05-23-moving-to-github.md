@@ -39,6 +39,5 @@ Over the past years we used a plethora of tools for managing our development pro
 We are also in the process of moving our [community codebase](https://github.com/SenseNet/sensenet) from TFS hoping to achieve better time-to-market and happier users who'll get our hotfixes and new features considerably faster.
 
 So there. Now it is all out there in the open, waiting for you to [take part][00d572b0].
-https://www.fry-wagner.com/wp-content/uploads/2016/07/Friends-Boxes.gif
 
   [00d572b0]: https://github.com/SenseNet/sn-client-dotnet/issues/4 "Waiting for you to commit!"
