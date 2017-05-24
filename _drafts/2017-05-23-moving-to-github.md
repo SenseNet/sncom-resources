@@ -13,7 +13,7 @@ Finally. Okay, we've been moving to these platforms for almost a year, but still
 So why did we suddenly drop Codeplex and our own Forum (and blog) in favor of external services?
 
 ## Visibility,  visibility, visibility
-We can be [the best .NET Open Source Enterprise Content Management System in the Universe][e68b21b6] if noone knows about it, right? And the World has moved a lot since we set up the tools we have been using since.
+We can be [the best .NET Open Source Enterprise Content Management System in the Universe][e68b21b6] if no one knows about it, right? And the World has moved a lot since we set up the tools we have been using since.
 
   [e68b21b6]: https://www.sensenet.com/product?utm_source=blog&utm_medium=link "sensenet ECM"
 
