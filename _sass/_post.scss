@@ -85,3 +85,15 @@
     font-size: 14px;
     line-height: 2;
 }
+
+.blog-post .author-link {
+    margin-left: 10px;
+}
+
+.blog-post .author-link label:hover {
+    text-decoration: underline;
+}
+
+.blog-post  li a {
+    color: #13a5ad;
+}
