@@ -1,5 +1,5 @@
 ---
-title:  "Pack your things, Susan, we are moving - Sensenet ECM is on GitHub now."
+title:  "Pack your things, Susan, we are moving - sensenet ECM is on GitHub now."
 author: borsi
 tags: [git, github, stack overflow, codeplex, gitter, community, blog]
 ---
