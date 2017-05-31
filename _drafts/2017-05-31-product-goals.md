@@ -3,11 +3,10 @@ title:  "Product goals for 2017"
 author: borsi
 tags: [goals, community, roadmap, redesign, statistics]
 ---
-![You pass butter](../img/purpose.png)
-
 ## Everybody needs goals
 
 Us, too. In fact we need better goals, than *"making more money"* or *"creating good stuff"*. So last year we decided to be [SMART][bb699076] about it and set high-level product goals for ourselves and for our community. All in all, we want to be the best ECM development platform for a large community of developers. But how de we get there?
+![You pass butter](../img/purpose.png)
 
   [bb699076]: https://en.wikipedia.org/wiki/SMART_criteria "SMART goals"
 
