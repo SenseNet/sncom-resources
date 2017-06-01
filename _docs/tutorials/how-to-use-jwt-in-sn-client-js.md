@@ -54,12 +54,14 @@ To avoid CORS issues, we will redirect OData and Session Management requests fro
           "target": "https://sn-local/",    // This should point to your sensenet ECM site. Please also note that is has to be use HTTPS
           "secure": false,
           "changeOrigin": true,
+          "ignorePath": true,
           "logLevel": "debug"        
       },
       "/sn-token": {
           "target": "https://sn-local/",    // Should point to the same as above
           "secure": false,
           "changeOrigin": true,
+          "ignorePath": true,
           "logLevel": "debug"        
       }
     }
