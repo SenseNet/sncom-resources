@@ -46,7 +46,7 @@ The team wanted to know if we were developing the right features for the right s
 Follow us on [Twitter][0c3b4e3a], like us on [Facebook][b175e3d7], or [clone the repository][bebd2231] and we'll need to check on our stats. We'll hate that (not really, so please, be a good champ).
 
 #### Become a more accessible development platform
-Developers like to use tools that make their lives easier. The team is determined to deliver a product that is modular, easy to understand, well documented and augmented with tools that make you [feel like flying][2fc61619] when creating a company intranet for a client. This can only be done if we have a community of developers who can tell us what they think. Why don't **you** tell us, what you think? Hop on [gitter][71fe2b44] and say hi. [Try out][f482c883] sensenet ECM and tell us what you think!
+Developers like to use tools that make their lives easier. The team is determined to deliver a product that is modular, easy to understand, well documented and augmented with tools that make you [feel like flying][2fc61619] when creating a company intranet for a client. This can only be done if we have a community of developers who can tell us what they think. Why don't **you** tell us, what you think? Hop on [gitter][71fe2b44] and say hi. [Try out][f482c883] sensenet ECM and share your thoughts!
 
   [71fe2b44]: https://gitter.im/SenseNet/sensenet "Sensenet Gitter Channel"
   [f482c883]: https://www.sensenet.com/try-it "Try sensenet ECM"
