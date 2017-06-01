@@ -51,7 +51,7 @@ To avoid CORS issues, we will redirect OData and Session Management requests fro
     // ...
     proxy: {
       "/odata.svc": {
-          "target": "https://sn-local/",    // This should point to your sensenet ECM site. Please also note that is has to be use HTTPS
+          "target": "https://sn-local/",    // This should point to your sensenet ECM site. Please also note that is has to use HTTPS
           "secure": false,
           "changeOrigin": true,
           "ignorePath": true,
@@ -83,7 +83,7 @@ aurelia.container.registerSingleton(Repository.BaseRepository, () => new Reposit
 > User session tracking is scoped to *Repository instances*, so it is possible to connect to multiple repositories with multiple sessions from one client app, however it is **strongly recommended to create only one Repository instance for a particular *sensenet ECM repository* per application** in a separate singleton service or in a very top level *module / component* to avoid login state concurrency issues. In this example, Repository will act as a singleton and as we are working with only one repository in this tutorial, we can use Aurelia's *DI* framework to inject as a ``Repository.BaseRepository`` into particular components.
 
 ### Authenticate the routing and updating the navbar
-We can continue with [authenticate our routing](http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/securing-your-app/2). It's a common scenario to make frontend routes only available to registered users, and that's we're gonna do now. 
+We can continue with [authenticating our routing](http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/securing-your-app/2). It's a common scenario to make frontend routes only available to registered users, and that's we're gonna do now. 
 Our root component can be found at *./src/app.ts*, we will configure the routing there. We will make our existing **users** and **child-router** routes availale only for logged in users, create a Pipeline Step for checking login states and add a new route called **login**.
 
 ```ts
@@ -156,7 +156,7 @@ As you can see, we've injected a ``Repository.BaseRepository`` service into our 
 
 We've added a new pipeline step called ``SnClientAuthorizeStep``, at the moment it works based on the current login state and a list of predefined *roles* that are specified per route. We check *ROLE_LOGGED_IN* and *ROLE_VISITOR_ONLY* routes for now.
 
-We've also implemented the **attached** [lifecycle event](http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/creating-components/3), this will kick in right after the routes has been configured. There's a public API called ``Repository.Authenticatoin.State`` in *sn-client-js*, which is an [*RxJs Observable*](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html), that will be updated on each login state change. We will use it for hiding and showing the navbar menus as the login state changes. To do that, we have to extend the navbar list template in ``./src/nav-bar.html``
+We've also implemented the **attached** [lifecycle event](http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/creating-components/3), this will kick in right after the routes have been configured. There's a public API called ``Repository.Authenticatoin.State`` in *sn-client-js*, which is an [*RxJs Observable*](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html), that will be updated on each login state change. We will use it for hiding and showing the navbar menus as the login state changes. To do that, we have to extend the navbar list template in ``./src/nav-bar.html``
 
 ```html
       <ul class="nav navbar-nav">
