@@ -1,7 +1,7 @@
 ---
 title: "Improving the Portlet Structure in SN7"
 author: ildika
-tags: Documentation, Feature, GUI, 
+tags: [ux, research, portlet structure, navigation, card sorting]
 ---
 
 As the part of rebuilding the information architecture in SN7 we were highly motivated to redress the Portlet-structure to make its usage more handy

@@ -1,7 +1,7 @@
 ---
 title: "Sense/Net 6.5.3 Community Edition"
-author: molnark
-tags: Announcement, 
+author: augusztino
+tags: [release, community edition, new features]
 ---
 
 A new public Community Edition is available for Sense/Net ECM! As always, we offer new features and many bug fixes

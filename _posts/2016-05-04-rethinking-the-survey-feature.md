@@ -1,7 +1,7 @@
 ---
 title: "Rethinking the survey feature"
 author: ildika
-tags: Enterpise Portal, Feature, GUI, 
+tags: [survey, ui]
 ---
 
 To fulfill an important need of Sense/Net users that were reported towards us several times recently, we have been developing a brand new, nice and easy-to-use feature in the Product

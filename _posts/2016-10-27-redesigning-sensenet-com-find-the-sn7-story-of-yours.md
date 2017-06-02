@@ -1,7 +1,7 @@
 ---
 title: "Redesigning sensenet.com: find the SN7 story of yours"
 author: ildika
-tags: Documentation, GUI, 
+tags: [sensenet.com, ux, design, ui, persona]
 ---
 
 Hello again! We've been working on restructuring SenseNet ECMS as a product for a while; now it's time to change the way we connect with people
