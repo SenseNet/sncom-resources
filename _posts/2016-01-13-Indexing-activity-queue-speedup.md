@@ -1,7 +1,7 @@
 ---
 title: "Indexing activity queue speedup"
 author: tusmester
-tags: Enterprise Content Management, 
+tags: [enterprise content management, indexing, speedup]
 ---
 
 In Sense/Net ECM we rely heavily on our Lucene indexing and search engine: every content modification involves re-indexing the data

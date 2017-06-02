@@ -1,7 +1,7 @@
 ---
 title: "Enchancing the copy experience in SN7"
 author: ildika
-tags: Documentation, Feature, GUI, 
+tags: [copy, content picker, gui]
 ---
 
 As the result of the competitor analysis we prepared the redesign of the new, skinnable Picker for SN7

@@ -1,7 +1,7 @@
 ---
 title: "3 things you will love in Sense/Net smartphone app"
-author: huszarcs
-tags: mobile app, 
+author: csaba8472
+tags: [mobile, app, ios, android] 
 ---
 
 Sense/Net has always been an innovative and open-minded company, with focus on the latest-greatest things

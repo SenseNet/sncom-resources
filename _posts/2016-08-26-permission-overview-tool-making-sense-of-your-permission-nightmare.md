@@ -1,7 +1,7 @@
 ---
 title: "Permission Overview Tool: Making Sense of Your Permission Nightmare"
 author: ildika
-tags: Documentation, Enterpise Portal, Enterprise Content Management, Feature, GUI, security, Sense/Net Content Repository, 
+tags: [persmissions, permission overview, content repository]
 ---
 
 Have you ever wanted to know the permissions of a certain user, not just for a single content but in the whole system? We had a permission setting page for a long time but that did not give administrators the full picture
