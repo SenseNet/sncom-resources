@@ -137,6 +137,24 @@ code.highlighter-rouge:before, code.highlighter-rouge:after {
     clear: both;
 }
 
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #aaa;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #aaa;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #aaa;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #aaa;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #aaa;
+}
+
 @media (min-width: 544px)
 {
 .container {

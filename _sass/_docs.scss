@@ -125,7 +125,7 @@ color: #fff;
     background: #f9f9f9;
     border: solid 1px #dddddd;
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 20px 0;
 }
 
 .docs-contact p{
@@ -144,8 +144,22 @@ color: #fff;
     margin: 30px 0 20px;
 }
 
+.documentation.tutorials h2,
+.documentation.tutorials h2 a {
+    font-size: 32px;
+}
+
+.documentation.tutorials h2 {
+    border-bottom: solid 1px #d9eff1;
+}
+
 .documentation h3 {
     margin-top: 0;
+}
+
+.docs h5 {
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .documentation li {
@@ -160,7 +174,9 @@ color: #fff;
 .documentation .docs-list a {
     text-decoration: none;
     color: #13a5ad;
-    font-family: "Gotham Light";
+    font-family: "Raleway Medium";
+    font-size: 15px;
+    line-height: 30px;
 }
 
 .documentation .docs-list a:hover {
@@ -173,8 +189,49 @@ blockquote {
     background: rgba(9,157,203,0.15);
     border-left: 0.25em solid #13a5ad;
     font-size: 90%;
+    margin: 10px 0;
+}
+
+.language-diff .highlight {
+    margin: 10px 0;
 }
 
 .docs th {
     padding: 5px;
+}
+
+.docs li {
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.docs li a {
+    color: #13a5ad;
+    text-decoration: none;
+}
+
+.docs li a:hover {
+    text-decoration: underline;
+}
+
+.related-docs {
+    margin-bottom: 40px;
+}
+
+.related-docs, .related-docs a {
+    color: #13a5ad;
+    text-decoration: none;
+    font-family: $font-raleway-medium;
+}
+
+.related-docs h3 {
+    color: #666;
+}
+
+.docs table td {
+    padding: 5px;
+}
+
+.docs img {
+    max-width: 800px;
 }

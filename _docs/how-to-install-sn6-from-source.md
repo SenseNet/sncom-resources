@@ -1,14 +1,14 @@
 ---
-title:  "How to install SenseNet from source package"
+title:  "Install sensenet 6.5 from source package"
 source_url: 'https://github.com/SenseNet/sensenet/docs/how-to-install-sn6-from-source.md'
 category: Guides
 version: v6.0.0
-tags: sn6 install source
+tags: install source sn6
 ---
 
-## Overview
+# How to install sensenet 6.5 from source package
 
-In this document we would like to guide you through the installation process of SenseNet ECM from a source package. We hope that you will encounter no complications during installation, or later on while working with SenseNet ECM. If you come across a bug by any chance, or have questions concerning our product, feel free to contact us at on
+In this document we would like to guide you through the installation process of sensenet ECM from a source package. We hope that you will encounter no complications during installation, or later on while working with sensenet ECM. If you come across a bug by any chance, or have questions concerning our product, feel free to contact us at on
 [gitter](https://gitter.im/SenseNet/sensenet), [slack](https://sensenetecm.slack.com) or [stackoverflow](http://stackoverflow.com/questions/tagged/sensenet).
 
 > This document describes the steps of installing SenseNet ECM on machines with IIS 7.0 or higher version.
@@ -17,10 +17,10 @@ In this document we would like to guide you through the installation process of 
 
 > In case you are an Enterprise customer and want to use the `Task Management` feature in SenseNet ECM (e.g. you want to have preview images for your documents), please install the `Task Management` component first.
 
-### 1. Download Sense/Net ECM
+### 1. Download sensenet ECM
 
 Download the SenseNet ECM source package. The latest version of this package is available on our [CodePlex page](http://sensenet.codeplex.com/).
->The public CodePlex page above offers **SenseNet ECM Community Edition**. Customers who have access to the Enterprise Edition should use that source package. For differences between the two editions, please visit the following article: [Differences between Community and Enterprise editions]()
+>The public CodePlex page above offers **sensenet ECM Community Edition**. Customers who have access to the Enterprise Edition should use that source package. For differences between the two editions, please visit the following article: [Differences between Community and Enterprise editions]()
 
 #### Install MSBuild Extension Pack ####
 

@@ -37,3 +37,113 @@
 .fa-tag:before {
     content: "\f02b";
 }
+
+.fa-list-alt:before {
+    content: "\f022";
+}
+
+.fa-code:before {
+    content: "\f121";
+}
+
+.fa-puzzle-piece:before {
+    content: "\f12e";
+}
+
+.fa-cube:before {
+    content: "\f1b2";
+}
+
+.fa-shield:before {
+    content: "\f132";
+}
+
+.fa-map-signs:before {
+    content: "\f277";
+}
+
+.fa-file-o:before {
+    content: "\f016";
+}
+
+.fa-globe:before {
+    content: "\f0ac";
+}
+
+.fa-rss-square:before {
+    content: "\f143";
+}
+
+.icon {
+    font-family: $font-icons;
+    display: block;
+}
+
+.icon-lightbulb:before {
+    content: '\e604';
+}
+
+.icon-rename:before {
+    content: '\e61e';
+}
+
+.icon-star:before {
+    content: '\e617';
+}
+
+.icon-cube:before {
+    content: '\e619';
+}
+
+.icon-shield:before {
+    content: '\e625';
+}
+
+.icon-layers:before {
+    content: '\e624';
+}
+
+.icon-book:before {
+    content: '\e60a';
+}
+
+.icon-blocks:before {
+    content: '\e60c';
+}
+
+.icon-palette:before {
+    content: '\e621';
+}
+
+.icon-close:before {
+    content: '\e616';
+}
+
+.icon-page:before {
+    content: '\e613';
+}
+
+.icon-funnel:before {
+    content: '\e60d';
+}
+
+.icon.hovered {
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}

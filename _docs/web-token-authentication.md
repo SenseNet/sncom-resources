@@ -3,7 +3,7 @@ title:  "Configuration of Web Token Authentication"
 source_url: 'https://github.com/SenseNet/sensenet/blob/jwt/docs/web-token-authentication.md'
 category: Development
 version: v7.0.0
-tags: webtoken jwt authentication
+tags: webtoken jwt authentication sn7
 ---
 
 # Configuration of Web Token Authentication #
@@ -59,7 +59,11 @@ _Steps of a token refresh process from the clients' point of view:_
 
 All the communication are sent through SSL (https). The used cookies are all HtmlOnly and Secure. There are two types of communication: header marked and uri marked (without header mark). Either of them can be choosen freely by a client developer. However the two could be mixed, but we advice to choose one and stick to it.
 
-![web token authentication protocol](https://raw.githubusercontent.com/SenseNet/sensenet/jwt/docs/images/SenseNetTokenAuthentication.png) _figure 1: web token authentication protocol_
+<div style="text-align: center;">
+  <img src="/docs/img/jwt/jwt-protocol.png" alt="web token authentication protocol" width="600" border="0" />
+</div>
+
+_figure 1:web token authentication protocol_
 
 **LoginRequest with header mark:**  
 _uri:_
@@ -87,8 +91,8 @@ _body:_
 _uri:_  
 `https://<yourhost>/<contentpath>` 
 headers:  
-`X-Authentication-Type: Token```  
-`X-Refresh-Data: <refreshHeadAndPayload>`  
+`X-Authentication-Type: Token`  
+`X-Access-Data: <accessHeadAndPayload>`  
 _cookies:_  
 Cookie: rs=`<refreshSignature>`
 Cookie: as=`<accessSignature>`
@@ -187,3 +191,5 @@ The `iss, sub, aud` claims can be configured and remains the same unless you cha
 ## Considerations for client developers ##
 
 Once the client application has got the access token and the refresh token, it has to persist them preferably in some local browser storage for later usage. However the refresh token also contains the same claims as the access token, its claims - at least `iat, nbf` and `exp` - have different values. It happens because of their different use. An access token will be immediately valid and accepted after its creation, but the refresh token is not. The refresh token will be valid and accepted by the service only when the access token is expired. Therefore the client should extract the expiration time of the tokens into an application lifetime variable and constantly check it when the client try to access a content. Content access request have to include the access token into the according HTTP header (specified as `AuthenticatedServiceRequest` earlier). In case when the access tokens expiration check results true the client must check the refresh token's expiration. If this results false, the client have to send a `RefreshRequest` (specified earlier) to the service. A `RefreshRequest` will reply with a new access token, that must replace the old one. If the check results true, the client cannot access protected content unless sending a new `LoginRequest` to the service with the username and password of the user. Because of the sensitive nature of user's credentials, we do not recommend the client to persist them. As the lifetime of both tokens can be changed in the service's configuration, it is very important to choose them wisely to support the fluent communication between the two part. Wrong settings can disrupt efficiency of turn arounds and slow down the whole system.
+
+You can learn more about how you can use Web Token Authentication in sn-client-js from the [following tutorial](/docs/tutorials/how-to-use-jwt-in-sn-client-js.md).

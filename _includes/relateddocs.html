@@ -1,0 +1,25 @@
+{% assign max_count = 5 %}
+{% assign current_count = 0 %}
+{% assign related = '' %}
+{% assign current_doc_title = page.title %}
+
+<div class="related-docs">
+    <h3>Related</h3>
+    <ul>
+        {% for tag in page.tags %} 
+            {% for doc in site.docs %} 
+                {% assign doc_title = doc.title | replace: ' ', '' %}
+                {% if doc.tags contains tag and current_count < max_count %}
+                    {% if page.title == doc.title %}
+                    {% else %}
+                        {% unless related contains doc_title %}
+                            <li><a href="{{ site.baseurl }}{{ doc.url }}">{{doc.title}}</a></li>
+                            {% assign current_count = current_count | plus: 1 %}
+                            {% assign related = related | append: doc_title %}
+                        {% endunless %}
+                    {% endif %}
+                {% endif %} 
+            {% endfor %} 
+        {% endfor %}
+    </ul>
+</div>

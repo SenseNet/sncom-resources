@@ -11,6 +11,7 @@ gems:
     - jekyll-seo-tag
     - jekyll-feed
     - jemoji
+    - algoliasearch-jekyll
 collections:
     docs: {output: true, permalink: '/docs/:path/'}
 defaults:
@@ -37,3 +38,4 @@ sass:
     sass_dir: _sass
     style: compressed
 encoding: utf-8
+plugins_dir: _plugins

@@ -1,22 +1,22 @@
 ---
-title:  "How to install SenseNet"
+title:  "Install sensenet 6.5"
 source_url: 'https://github.com/SenseNet/sensenet/docs/how-to-install-sn6-from-source.md'
 category: Guides
 version: v6.0.0
-tags: sn6 install troubleshooting requirements
+tags: install troubleshooting requirements sn6
 ---
 
-## Overview
+# How to install sensenet 6.5
 
-**SenseNet** can be easily installed on any Windows based system (check the requirements section).
-You can install **SenseNet** using various methods:
+**sensenet** can be easily installed on any Windows based system (check the requirements section).
+You can install **sensenet** using various methods:
 - install from package, using the `Web deployment tool`
 - install from source package
 In the bottom of this article, you can find step-by-step tutorials for each installation method.
 
 ## Supported platforms ##
 
-**SenseNet Enterprise Content Management System** runs on the most relevant Microsoft platforms. The following tables show the operating systems and web servers that SenseNet supports.
+**sensenet Enterprise Content Management System** runs on the most relevant Microsoft platforms. The following tables show the operating systems and web servers that sensenet supports.
 
 | **Environment**                                                                            | **Runs** | **Installable with Web Platform Installer or Web Deployment Tool**  |
 | ------------------------------------------------------------------------------------------ |:--------:| -----:|
@@ -51,9 +51,9 @@ In the bottom of this article, you can find step-by-step tutorials for each inst
 * IIS 8
 * IIS 7.5
 * IIS 7.0
-* SenseNet will require 100MB of free space. The database of a production environment will likely consume much more space, depending on its purpose and how it is used. Provide sufficient hard disk space for the database.
+* sensenet will require 100MB of free space. The database of a production environment will likely consume much more space, depending on its purpose and how it is used. Provide sufficient hard disk space for the database.
 
-**Please read the following page when installing Sense/Net to live production environments:**
+**Please read the following page when installing sensenet to live production environments:**
 [Configuration for Production Environment](#)
 
 ## Hardware requirements ##
@@ -70,8 +70,8 @@ You can download the latest version of SenseNet Community Edition from our [Code
 
 ## Howtos ##
 
-[How to install Sense/Net from web deployment package]()
-[How to install Sense/Net from source package]()
+[How to install sensenet 6.5 from web deployment package]()
+[How to install sensenet 6.5 from source package]()
 
 ## Troubleshooting ##
 
@@ -108,7 +108,7 @@ Your application development features might not be turned on in Windows. To reso
 3. In the features window, click _Internet Information Services_
 4. Click: _World Wide Web Services_
 5. Click: _Application Development Features_
-6. Click to enable features (`ASP` and `CGI` are not needed for SenseNet).
+6. Click to enable features (`ASP` and `CGI` are not needed for sensenet).
 
 ### Error 500 - Internal server error ###
 
