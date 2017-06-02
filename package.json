@@ -8,7 +8,8 @@
     "commit": "git-cz",
     "releases": "node script/releases.js",
     "awesome": "node script/awesome.js",
-    "contributors": "node script/contributors.js"
+    "contributors": "node script/contributors.js",
+    "latestblogposts": "node script/latestblogposts.js"
   },
   "repository": {
     "type": "git",
