@@ -4,15 +4,29 @@ permalink: /tags/
 layout: default
 ---
 
-
 {% assign tags =  site.docs | map: 'tags' | join: ','  | split: ',' | uniq %}
 {% for tag in tags %}
-  <h3>{{ tag }}</h3>
-  <ul>
+  <div style="display: none" id="{{ tag }}">
+    <div class='subtron'>
+    <div class='container-narrow tags'>
+      <h1>Tags/ {{ tag }}</h1>
+    </div>
+  </div>
+  <ul class="taglist-container">
   {% for docs in site.docs %}
     {% if docs.tags contains tag %}
     <li><a href="{{ site.baseurl }}{{ docs.url }}">{{ docs.title }}</a></li>
     {% endif %}
   {% endfor %}
   </ul>
+</div> 
 {% endfor %}
+
+<script>
+  $(function(){
+    var url = window.location.href;
+    var tag = url.split('#')[1];
+    
+    $('#' + tag).show();
+  })
+</script>
