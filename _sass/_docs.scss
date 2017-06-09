@@ -235,3 +235,28 @@ blockquote {
 .docs img {
     max-width: 800px;
 }
+
+.tags h1 {
+    font-size: 45px;
+}
+
+.taglist-container {
+    max-width: 980px;
+    margin: 40px auto;
+}
+
+.taglist-container li {
+    list-style-type: none;
+}
+
+.taglist-container li a {
+        text-decoration: none;
+    color: #13a5ad;
+    font-family: "Raleway Medium";
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.taglist-container li a:hover {
+    text-decoration: underline;
+}
