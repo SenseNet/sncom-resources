@@ -6,6 +6,7 @@ tags: [goals, community, roadmap, redesign, statistics]
 ## Everybody needs goals
 
 Us, too. In fact we need better goals, than *"making more money"* or *"creating better stuff"*. So last year we decided to be [SMART][bb699076] about it and set high-level product goals for ourselves and for our community. After all, we want to be the best ECM development platform for a large community of developers. But how do we get there?
+---
 
 ![Smart goals](../img/SMART-goals.png)
 
