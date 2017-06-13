@@ -35,7 +35,7 @@ Working on repetitive business solutions can become demotivating after a while. 
 
 #### No Empowerment
 
-It is good to feel a project _really_ yours. You will work on your little project all the time (at home, at night, in the morning), because it is your brainchild. It is your responsibility. Our developers are our cleverest people in our company. Some of them have pretty good ideas on what should we be working on so the our organization benefit the most of the work done. So why not let them?
+It is a good feeling to _really_ own a project. If it is _yours_, you'll work on it all the time (at home, at night, in the morning), because it is your brainchild. It is your responsibility. Our developers are our cleverest people in our company. Some of them have pretty good ideas on what should we be working on, so our organization would benefit the most of the work done. So why not let them?
 
 ### The possible solution
 
@@ -45,10 +45,10 @@ Let them come up with ideas and realize them during work hours. Let them form te
 
 #### The rules
 
-To help start this endeavor, all parties (Executives, managers, PO's, Scrum Masters, developers) needed to agree on the rules of the game. These rules are:
+To help start this endeavor, all parties (executives, managers, PO's, scrum masters, developers) needed to agree on the rules of the game. These rules are:
 
 - The time is "sacred"
-> That is, first of all it is important that "free-friday" time is sacred time: otherwise, the 10 or 20% can be overwritten by any enthusiastic PO so "we can just fix one more bug this friday afternoon" or "we can just add this one more feature here please".
+> That is, first of all it is important that "free-friday" time is sacred time: otherwise, the 10 or 20% can be overwritten by any enthusiastic PO so "we can just fix one more bug this friday afternoon" or "can we just add this one more feature here please".
 
 - Working in these projects is not *mandatory*
 > You can continue working on anything work-related during 'free-friday'.
@@ -60,7 +60,7 @@ To help start this endeavor, all parties (Executives, managers, PO's, Scrum Mast
 > If you think it's a tool, or a new module for the platform, it's great. If you think the thing you'll build will help us communicating the awesomeness of us, it's great too! Tell us all about your ideas and on how you plan on implementing them.
 
 - Transparency is key
-> Don't hide in your team-cave with your new found team-friends for 6 months. You need to get out and tell us about what you're going through. Every month, we use a TGIF so you can tell us the hardships of forming a team and communicating an idea. You can show everyone, how you conquered a problem or how you failed (which happens all the time, and is okay most of the time if we learn from them).
+> Don't hide in your team-cave with your new found team-friends for 6 months. You need to get out and tell us about what you're going through. Every month, we use a TGIF so you can tell everybody about the hardships of forming a team and communicating an idea. You can show everyone, how you conquered a problem or how you failed (which happens all the time, and is okay most of the time if we learn from our mistakes).
 
 #### It's happening
 
