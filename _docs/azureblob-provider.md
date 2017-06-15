@@ -73,3 +73,4 @@ If you intend to implement a backup policy, you can do it easily with the use of
 Currently there is no migration tool that moves existing binaries from the SQL database to Azure Blob Storage. However after you install this provider, the system will save new files to it and old files will also be moved as you save them.
 
 -   [Blob provider migration](blob-provider.md#Migration "Migration")
+ - [Back to blob provider](/_docs/blob-provider.md)
