@@ -1,8 +1,12 @@
-title: 'Sense/Net Community'
+title: 'sensenet Community'
 email: snteam@sensenet.com
-description: 'Sense/Net ECM Community Website'
-twitter_username: sensenet
+description: 'sensenet ECM Community Website'
+twitter:
+    username: sensenet
+facebook:
+    facebook: sensenetcms
 github_username: SenseNet
+author: SenseNet
 future: true
 excerpt_separator: '---'
 gems:
@@ -32,6 +36,17 @@ include:
     - _docs
 twitter:
     username: sensenet
+logo: /img/sensenet-logo.png
+social:
+    name: Sense/Net
+    links:
+        - https://twitter.com/sensenet
+        - https://www.facebook.com/sensenetcms
+        - https://www.linkedin.com/company/sense-net-inc
+        - https://plus.google.com/+Sensenet
+        - https://github.com/SenseNet
+        - http://stackoverflow.com/tags/sensenet/info
+        - https://www.instagram.com/sensenetinside/
 port: 4001
 repository: SenseNet/sensenet.github.io
 sass:
