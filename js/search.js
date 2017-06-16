@@ -7,9 +7,13 @@
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
+
         appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
+
         var desc = removeTitleFromHtml(item.content);
+        desc = desc.replace(/<a\b[^>]*>(.*?)<\/a>/i,"")
         appendString += '<p>' + desc.substring(0, 180) + '...</p></li>';
+
       }
 
       searchResults.innerHTML = appendString;
