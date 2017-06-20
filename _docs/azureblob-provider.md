@@ -28,12 +28,13 @@ You need to change the configuration file for your content repository and for to
 
 For a first step, check the components. The following files must be copied from your Enterprise Azure Blob package into \[yourwebsite\]\\bin and \[yourwebsite\]\\tools:
 
--   Microsoft.WindowsAzure.Storage.dll
--   Microsoft.Data.Services.Client.dll
--   Microsoft.Data.OData.dll
--   Microsoft.Data.Edm.dll
 -   Microsoft.Azure.KeyVault.Core.dll
+-   Microsoft.Data.Edm.dll
+-   Microsoft.Data.OData.dll
+-   Microsoft.Data.Services.Client.dll
+-   Microsoft.WindowsAzure.Storage.dll
 -   SenseNet.AzureBlobStorage.dll
+-   System.Spatial.dll
 
 > It is important that you keep all the configurations in sync for the different components in sensenet ECM - otherwise you won't be able to save or read binaries correctly.
 
@@ -72,3 +73,4 @@ If you intend to implement a backup policy, you can do it easily with the use of
 Currently there is no migration tool that moves existing binaries from the SQL database to Azure Blob Storage. However after you install this provider, the system will save new files to it and old files will also be moved as you save them.
 
 -   [Blob provider migration](blob-provider.md#Migration "Migration")
+ - [Back to blob provider](/_docs/blob-provider.md)
