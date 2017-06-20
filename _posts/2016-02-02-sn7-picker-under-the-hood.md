@@ -1,10 +1,11 @@
 ---
 title: "SN7 picker under the hood"
 author: herflis
+image: "/img/posts/engine.jpg"
 tags: [document management, content picker]
 ---
 
-Based on our former experience with the pickers in Sense/Net and on our UX researches, it was clear that the picker should be revamped in terms of both usability and customizability, to give developers a configurable and maintainable tool
+Based on our former experience with the pickers in Sense/Net and on our UX researches, it was clear that the picker should be revamped in terms of both usability and customizability, to give developers a configurable and maintainable tool.
 
 ---
 

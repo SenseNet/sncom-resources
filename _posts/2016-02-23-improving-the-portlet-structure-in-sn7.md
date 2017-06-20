@@ -1,6 +1,7 @@
 ---
 title: "Improving the Portlet Structure in SN7"
 author: ildika
+image: "/img/posts/steps.jpg"
 tags: [ux, research, portlet structure, navigation, card sorting]
 ---
 

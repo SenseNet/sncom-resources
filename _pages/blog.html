@@ -20,13 +20,14 @@ layout: default
         <li class="blog-post">
           <h2>
             <a class="blog-index-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-
-            <div class="who-when">
+          </h2>
+          <div class="who-when">
               <i class="fa fa-calendar"></i><time class="blog-index-time">{{ post.date | date: '%B %d, %Y' }}</time>
               <a href="https://github.com/{{ post.author }}" class="author-link"><img src="https://github.com/{{ post.author }}.png?size=36" alt="{{ post.author }}" class="avatar mr-2">{{ post.author }}</a>
             </div>
-          </h2>
-
+          {% if post.image  != '' %}
+          <img src="{{post.image}}" class="post-image" />
+          {% endif %}
           {{ post.excerpt }}
           <p><a href="{{ post.url | prepend: site.baseurl }}" class="read-more-link">Read more <i class="fa fa-angle-right"></i></a></p>
         </li>

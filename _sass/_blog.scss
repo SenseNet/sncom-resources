@@ -5,6 +5,9 @@ ul.blog-index {
 
 ul.blog-index li {
     list-style-type: none;
+    border-bottom: solid 1px #eee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 ul.blog-index li h2 > a {
@@ -24,9 +27,10 @@ ul.blog-index li h2 > a {
 
 .who-when {
     color: #7c9398;
-    font-size: 16px;
-    margin-top: 5px;
+    font-size: 15px;
+    margin-top: 0px;
     font-family: $font-raleway-regular;
+    margin-left: 3px;
 }
 
 .who-when a {
@@ -64,4 +68,17 @@ ul.blog-index li h2 > a {
 .blog-post p img {
     display: block;
     margin: 0 auto;
+}
+
+.post-image {
+    max-width: 800px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.blog-index .blog-post h2 {
+    font-family: 'Gotham';
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 5px;
 }

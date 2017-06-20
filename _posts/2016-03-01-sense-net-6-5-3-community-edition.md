@@ -1,6 +1,7 @@
 ---
 title: "Sense/Net 6.5.3 Community Edition"
 author: augusztino
+image: "/img/posts/light.jpg"
 tags: [release, community edition, new features]
 ---
 

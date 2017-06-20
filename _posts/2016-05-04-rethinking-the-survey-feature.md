@@ -1,10 +1,11 @@
 ---
 title: "Rethinking the survey feature"
 author: ildika
+image: "/img/posts/rethinking.jpg"
 tags: [survey, ui]
 ---
 
-To fulfill an important need of Sense/Net users that were reported towards us several times recently, we have been developing a brand new, nice and easy-to-use feature in the Product
+To fulfill an important need of Sense/Net users that were reported towards us several times recently, we have been developing a brand new, nice and easy-to-use feature in the Product. This is a Survey-editor application, which is being built to be fully customizable and extendable via the templated structure.
 
 ---
 
