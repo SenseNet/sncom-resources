@@ -1,19 +1,20 @@
 ---
 title:  "Product goals for 2017"
 author: borsi
+image: "/img/posts/goals.jpg"
 tags: [goals, community, roadmap, redesign, statistics]
 ---
-## Everybody needs goals ##
+### Everybody needs goals ###
 
 Us, too. In fact we need better goals, than *"making more money"* or *"creating better stuff"*. So last year we decided to be [SMART][bb699076] about it and set high-level product goals for ourselves and for our community. After all, we want to be the best ECM development platform for a large community of developers. But how do we get there?
 
 ---
 
-![Smart goals](/img/SMART-goals.png)
+![Smart goals](/img/posts/SMART-goals.png)
 
   [bb699076]: https://en.wikipedia.org/wiki/SMART_criteria "SMART goals"
 
-## What goals?
+### What goals?
 #### Agility boost
 We realized that our time to market is too slow. One reason behind this was that the product was too monolithic to begin with. It is the pitfall of legacy code everywhere. The team was battling bugs and new feature requests without refactoring for a while, so it is now time for a big overhaul.
 If you look closely at our [repositories][ce0fc2d5], you may see that componentization has already started. What was one big chunk of code in the old sensenet ECM, now consists of 2 separate packages. There are at least 4 more to come (Workspaces, Worklows, Notifications and the DocViewer with the Preview Generator). Once we're done, we'll aim to release hotfixes every other week and have feature releases at least once in a quarter (depending on the size of the feature).

@@ -1,6 +1,7 @@
 ---
 title:  "Pack your things, Susan, we are moving - sensenet ECM is on GitHub now."
 author: borsi
+image: "/img/posts/tw_sn_github.png"
 tags: [git, github, stack overflow, codeplex, gitter, community, blog]
 ---
 

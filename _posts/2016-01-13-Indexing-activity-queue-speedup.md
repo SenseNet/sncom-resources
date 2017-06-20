@@ -1,10 +1,12 @@
 ---
 title: "Indexing activity queue speedup"
 author: tusmester
+image: "/img/posts/speed.jpg"
 tags: [enterprise content management, indexing, speedup]
 ---
 
-In Sense/Net ECM we rely heavily on our Lucene indexing and search engine: every content modification involves re-indexing the data
+In Sense/Net ECM we rely heavily on our Lucene indexing and search engine: every content modification involves re-indexing the data. This means our indexing subsystem sometimes must handle a really heavy load when many users create or modify content at the same time.
+In an environment where there are multiple web servers (both generating new indexing activities as users work) things tend to get more complicated and vulnerable to concurrency errors. Indeed we found out that there was a possibility of executing indexing activities in a reversed order.
 
 ---
 

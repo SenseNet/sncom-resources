@@ -1,10 +1,11 @@
 ---
 title: "Card Sorting results – the new structure of portlets in SN7"
 author: ildika
+image: "/img/posts/puzzle.jpg"
 tags: [ux, card sorting, test results, portlet structure]
 ---
 
-First of all, thank you guys for taking your time and completing our test! The result was quite instructive for us
+Thank you guys for taking your time and completing our test! The result was quite instructive for us. It provided us a solid starting point for us to design the new architecture of the portlet system in SN7.
 
 ---
 
