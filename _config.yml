@@ -21,7 +21,6 @@ collections:
 defaults:
     - {scope: {type: docs}, values: {layout: docs}}
     - {scope: {type: posts}, values: {layout: post, permalink: '/blog/:year/:month/:day/:title'}}
-    - {scope: {path: ""}, values: {image: {path: /img/sensenet-logo.png, width: 1200, height: 630}}}
 exclude:
     - node_modules
     - README.md
@@ -36,7 +35,7 @@ include:
     - _docs
 twitter:
     username: sensenet
-logo: /img/sensenet-logo.png
+logo: '/img/sensenet-logo.png'
 social:
     name: Sense/Net
     links:
