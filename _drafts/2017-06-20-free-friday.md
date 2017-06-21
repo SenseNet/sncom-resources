@@ -81,7 +81,7 @@ All three pilot projects are progressing reasonably since our kickoff presentati
 
 ### But is it any good for **the company**?
 
-Definitely. It wasn't possible to allocate resources for either a knowledgebase or a community site project. The knowledgebase serves as our internal repository of thoughts and resources and helps keeping together our company-hivemind. This community site since became of strategic importance. We need it for external communication, for storing our documentation and for community building. The reposync tool, which boosts business solution teams' productivity tremendously.
+Definitely. It wasn't possible to allocate resources for either a knowledgebase or a community site project. The knowledgebase serves as our internal repository of thoughts and resources and helps keeping together our company-hivemind. This community site since became of strategic importance. We need it for external communication, for storing our documentation and for community building. There's also the reposync tool, which boosts business solution teams' productivity tremendously.
 
 ### What's next?
 
