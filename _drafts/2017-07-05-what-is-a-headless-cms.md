@@ -60,7 +60,7 @@ In the same time, you can either start writing your own library to latch on the 
 
   [de7f7b73]: https://github.com/SenseNet/sn-client-js "Sn-client-js"
 
-In the end, what you get is something like this<sup><a name="footnote1">1</a></sup>:
+In the end, what you get is something like this <sup>[1](#footnote1)</sup>:
 
 **After installing our library from npm, you can import it** and connect to your sensenet ECM instance.
 ```javascript
@@ -95,6 +95,6 @@ As simple as that. We are at the beginning of our roadmap and we need your feedb
   [e3d316af]: http://i.imgur.com/yldRjme.gif "His name is Károly."
 
 ***
-<sup>[1](#footnote1)</sup>: You can achieve a similar experience using the [.NET client for sensenet ECM.][55d8492d]
+<a name="footnote1">1</a>: You can achieve a similar experience using the [.NET client for sensenet ECM.][55d8492d]
 
   [55d8492d]: https://github.com/SenseNet/sn-client-dotnet "Sn-client-dotnet"
