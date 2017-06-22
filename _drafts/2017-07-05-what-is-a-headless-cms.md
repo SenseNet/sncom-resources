@@ -42,7 +42,7 @@ This is why you could do something like this in [sensenet 6.x][9f950a61], or usi
 In a headless CMS (or ECMS for that matter), though, the backend does not care about how the content is displayed. It just returns with the data needed for the frontend through a RESTful API.
 
 <p align="center">
-![Headless vs Coupled](../img/posts/headless cms.png)
+![Headless vs Coupled](../img/posts/headless-cms.png)
 
 *fig 2. ~ Traditional (coupled or monolithic CMS) model vs. Headless CMS*
 </p>
