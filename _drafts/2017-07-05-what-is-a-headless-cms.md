@@ -33,7 +33,7 @@ This is why you could do something like this in [sensenet 6.x][9f950a61], or usi
 </div>
 ```
 <p align="center">
-_fig 1. ~ The template is tightly coupled with the data it needs to present._
+*fig 1. ~ The template is tightly coupled with the data it needs to present.*
 </p>
 
   [46ac6b1f]: https://github.com/SenseNet/sn-webpages "Sn-webpages"
@@ -43,7 +43,8 @@ In a headless CMS (or ECMS for that matter), though, the backend does not care a
 
 <p align="center">
 ![Headless vs Coupled](/img/posts/headless cms.png)
-_fig 2. ~ Traditional (coupled or monolithic CMS) model vs. Headless CMS_
+
+*fig 2. ~ Traditional (coupled or monolithic CMS) model vs. Headless CMS*
 </p>
 
 ## So is sensenet ECM a headless or a coupled CMS?
@@ -76,7 +77,7 @@ let repository = new Repository.SnRepository({
         });
 ```
 <p align="center">
-_fig 3. ~ Configuring the repository object._
+*fig 3. ~ Configuring the repository object.*
 </p>
 
 
@@ -87,7 +88,7 @@ repository.Content.Create('Root/Path', {
 }, SN.ContentTypes.Folder);
 ```
 <p align="center">
-_fig 4. ~ Creating a Folder content in the repository from afar._
+*fig 4. ~ Creating a Folder content in the repository from afar.*
 </p>
 
 As simple as that. We are at the beginning of our roadmap and we need your feedback in making a better ECMS development platform. So feel free to chime in either through [e-mail][1e51c7fb], [gitter][bd86dc61] or by sending a [homing pigeon][e3d316af]. We are (I, especially) eager to hear your voice.
