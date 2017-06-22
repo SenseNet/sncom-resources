@@ -10,7 +10,7 @@ The term 'headless cms' has been rising in popularity for a while now. But why t
 First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress or Drupal are usually included in this category. This means that the modal layer is tightly coupled with the view, and the creators of the platform provide you with a templating engine with which you can implement your frontend. So in this model you'd have:
 
 - a Database at the "bottom", where you store your content
-- an App, with a UI that lets you [Create, Replicate, Update and Delete][25358749] this content
+- an App, with a UI that lets you [Create, Read, Update and Delete][25358749] this content
 - and a View layer which displays the content (usually by using templates)
 
   [25358749]: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete "CRUD"
@@ -67,10 +67,7 @@ In the end, what you get is something like this <sup>[1](#footnote1)</sup>:
 import { Repository, Config } from 'sn-client-js';
 
 let repository = new Repository.SnRepository({
-            RepositoryUrl: 'https://my-sensenet-site.com',
-            ODataToken: 'OData.svc',
-            JwtTokenKeyTemplate: 'my-${tokenName}-token-for-${siteName}',
-            JwtTokenPersist: 'expiration'
+            RepositoryUrl: 'https://my-sensenet-site.com'
         });
 ```
 <p align="center">
@@ -95,6 +92,6 @@ As simple as that. We are at the beginning of our roadmap and we need your feedb
   [e3d316af]: http://i.imgur.com/yldRjme.gif "His name is Károly."
 
 ***
-<a name="footnote1">1</a>: You can achieve a similar experience using the [.NET client for sensenet ECM.][55d8492d]
+<a id="footnote1">1</a>: You can achieve a similar experience using the [.NET client for sensenet ECM.][55d8492d]
 
   [55d8492d]: https://github.com/SenseNet/sn-client-dotnet "Sn-client-dotnet"
