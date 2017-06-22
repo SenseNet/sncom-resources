@@ -10,7 +10,7 @@ The term 'headless cms' has been rising in popularity for a while now. But why t
 First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress or Drupal are usually included in this category. This means that the modal layer is tightly coupled with the view, and the creators of the platform provide you with a templating engine with which you can implement your frontend. So in this model you'd have:
 
 - a Database at the "bottom", where you store your content
-- an App, with a UI that lets you [Create, Replicate, Update and Delete][25358749] this content
+- an App, with a UI that lets you [Create, Read, Update and Delete][25358749] this content
 - and a View layer which displays the content (usually by using templates)
 
   [25358749]: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete "CRUD"
