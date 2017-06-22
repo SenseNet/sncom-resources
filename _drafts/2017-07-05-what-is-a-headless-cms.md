@@ -98,4 +98,6 @@ As simple as that. We are at the beginning of our roadmap and we need your feedb
   [e3d316af]: http://i.imgur.com/yldRjme.gif "His name is Károly."
 
 ***
-<sup>[1](#footnote1)</sup>: You can achieve a similar experience using the .NET client for sensenet ECM.
+<sup>[1](#footnote1)</sup>: You can achieve a similar experience using the [.NET client for sensenet ECM.][55d8492d]
+
+  [55d8492d]: https://github.com/SenseNet/sn-client-dotnet "Sn-client-dotnet"
