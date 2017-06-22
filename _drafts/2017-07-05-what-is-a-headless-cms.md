@@ -88,7 +88,7 @@ repository.Content.Create('Root/Path', {
 *fig 4. ~ Creating a Folder content in the repository from afar.*
 </p>
 
-As simple as that. We are at the beginning of our roadmap and we need your feedback in making a better ECMS development platform. So feel free to chime in either through [e-mail][1e51c7fb], [gitter][bd86dc61] or by sending a [homing pigeon][e3d316af]. We are (I, especially) eager to hear your voice.
+As simple as that. We are at the beginning of our roadmap and we need your feedback in making a better ECMS development platform. So feel free to chime in either through [e-mail][1e51c7fb], [gitter][bd86dc61] or by sending a [homing pigeon][e3d316af]. We are eager to hear your voice.
 
   [1e51c7fb]: helloATsensenetDOTcom "Say hello!"
   [bd86dc61]: https://gitter.im/SenseNet/sensenet "Chat with us!"
