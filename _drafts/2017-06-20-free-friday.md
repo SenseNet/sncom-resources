@@ -13,7 +13,7 @@ Nonetheless, we wanted to empower our people so we decided to give it - or at le
 
 > We encourage our employees, in addition to their regular projects, to spend 20% of their time working on what they think will most benefit Google. This empowers them to be more creative and innovative. Many of our significant advances have happened in this manner. For example, AdSense for content and Google News were both prototyped in “20% time.” Most risky projects fizzle, often teaching us something. Others succeed and become attractive businesses.
 
-They wrote. It almost sounds too good to be true: our people do what they think is best for us, and it truly gets better. It is always important to remind ourselves before getting overly excited about things like this, that _[we are not Google][bfca94a4]_. So before rushing to the solution, we need to think about our on corporate structure, and problems we need to be solved.
+They wrote. It almost sounds too good to be true: our people do what they think is best for us, and it truly gets better. It is always important to remind ourselves before getting overly excited about things like this, that _[we are not Google][bfca94a4]_. So before rushing to the solution, we need to think about our own corporate structure, and problems we need to be solved.
 
   [bfca94a4]: https://blog.bradfieldcs.com/you-are-not-google-84912cf44afb "You are not google - Ozan Onay"
 
@@ -55,7 +55,7 @@ To help start this endeavor, all parties (executives, managers, PO's, scrum mast
 > You can continue working on anything work-related during 'free-friday'.
 
 - Anyone can create a team
-> You just need to be more than one person. One of the goals is to make communication better - you know yourself, no you may get to know other people. If the other ones are from different teams, it is all for the better.
+> You just need to be more than one person. One of the goals is to make communication better - you know yourself, now you may get to know other people. If the other ones are from different teams, it is all for the better.
 
 - You will need a project you think is most beneficial for Sense/Net, the company
 > If you think it's a tool, or a new module for the platform, it's great. If you think the thing you'll build will help us communicating the awesomeness of us, it's great too! Tell us all about your ideas and on how you plan on implementing them.
@@ -67,7 +67,7 @@ To help start this endeavor, all parties (executives, managers, PO's, scrum mast
 
 We started this project with a kickoff presentation, where we gave people time to come up with project ideas. This was not very hard, since practically everyone has a long-cherished brainchild in the back room of their mind.
 
-After vetting these ideas, there were 3, that had enough people and reasonable planning behind (we are a small company after all :) ).
+After vetting these ideas, there were 3 that had enough people and reasonable planning behind (we are a small company after all :) ).
 
 ![It's-a-happening](https://media.giphy.com/media/rl0FOxdz7CcxO/giphy.gif)
 
@@ -77,7 +77,7 @@ These three (a knowledge base for our company, a reposync tool for making our de
 
 ## Is it any good?
 
-All three pilot projects are progressing reasonably since our kickoff presentation. We have and internal virtual scrum master, who helps these teams gel and work more efficiently. The first two project status TGIF's were also promising and it seems that developers like the authority they get in their side projects.
+All three pilot projects are progressing reasonably since our kickoff presentation. We have an internal virtual scrum master, who helps these teams gel and work more efficiently. The first two project status TGIF's were also promising and it seems that developers like the authority they get in their side projects.
 
 ### But is it any good for **the company**?
 
