@@ -22,8 +22,8 @@ First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress 
  Thus, the 'E' in ECM is for Enterprise.
 
   [ed1adc41]: https://www.sensenet.com/product "Sensenet ECM Product features"
-  [a19fba28]: http://wiki.sensenet.com/Versioning_and_approval "Versioning and approval"
-  [206457f6]: http://wiki.sensenet.com/Workspace "Workspaces in sensenet ECM"
+  [a19fba28]: http://community.sensenet.com/docs/versioning-and-approval "Versioning and approval"
+  [206457f6]: http://community.sensenet.com/docs/workspace "Workspaces in sensenet ECM"
 
 This is why you could do something like this in [sensenet 6.x][9f950a61], or using [sn-webpages 7.x][46ac6b1f]:
 
