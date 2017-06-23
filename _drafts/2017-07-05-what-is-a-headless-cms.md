@@ -4,7 +4,9 @@ author: borsi
 image: "/img/posts/headless-cover.jpg"
 tags: [enterprise content management, headless cms, api, restful]
 ---
+
 The term 'headless cms' has been rising in popularity for a while now. But why the hype and what is it all about?
+
 ---
 ## What is a headless CMS?
 First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress or Drupal are usually included in this category. This means that the modal layer is tightly coupled with the view, and the creators of the platform provide you with a templating engine with which you can implement your frontend. So in this model you'd have:
@@ -24,12 +26,24 @@ First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress 
   [206457f6]: http://wiki.sensenet.com/Workspace "Workspaces in sensenet ECM"
 
 This is why you could do something like this in [sensenet 6.x][9f950a61], or using [sn-webpages 7.x][46ac6b1f]:
+
 ```html
-<div class="sn-layout-head-left">
-  <div class="sn-logo">
-    <a href="/" title='<%=HttpContext.GetGlobalResourceObject("Portal", "SenseNetDemoSiteTitle")%>' class="snPortalengine">
-    </a>
-  </div>      
+<div class="sn-article-list sn-article-list-shortdetail">
+    <%foreach (var content in this.Model.Items)
+      { %>
+    <div class="sn-article-list-item">
+        <% if (Security.IsInRole("Editors"))
+           { %>
+        <div class="sn-content-actions"><%= Actions.ActionMenu(content.Path, HttpContext.GetGlobalResourceObject("Portal", "ManageContent") as string, "ListItem")%></div>
+        <% } %>
+        <h2 class="sn-article-title"><a href="<%=Actions.BrowseUrl(content)%>"><%=HttpUtility.HtmlEncode(content.DisplayName) %></a></h2>
+        <small class="sn-article-info"><%=GetGlobalResourceObject("Renderers", "PublishedBy")%> <%= HttpUtility.HtmlEncode(content["Author"]) %> on 
+                <span class='<%= "sn-date-" + content["Id"] %>'><%= content["ModificationDate"]%></span></small>
+        <div class="sn-article-lead">
+            <%=content["Lead"] %>
+        </div>
+    </div>
+    <%} %>
 </div>
 ```
 <p align="center">
