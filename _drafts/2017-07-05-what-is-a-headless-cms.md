@@ -85,22 +85,85 @@ In the end, what you get is something like this <sup>[1](#footnote1)</sup>:
 import { Repository, Config } from 'sn-client-js';
 
 let repository = new Repository.SnRepository({
-            RepositoryUrl: 'https://my-sensenet-site.com'
-        });
+	RepositoryUrl: 'https://my-sensenet-site.com'
+});
 ```
 <p align="center">
 *fig 3. ~ Configuring the repository object.*
 </p>
 
-
-**Once done, you can start doing stuff with content.**
+**Once done, you can start working with content** e.g. fetching them for using the results as a sn-client-js Collection
 ```javascript
-repository.Content.Create('Root/Path', {
-	Name: 'MyFolderName',
-}, SN.ContentTypes.Folder);
+
+import * as SN from 'sn-client-js';
+
+let collection = new SN.Collection([], repository.Content);
+
+var options = new SN.ODataApi.ODataParams({ 
+	select: ["Id", "DisplayName", "BrowseUrl", "Author", "ModificationDate", "Lead"], 
+	orderby: 'ModificationDate', 
+	metadata: 'no' });
+
+let fetchContent = collection.Read('/NewsDemo/External', options);
+
+fetchContent
+	.map(response => response.d.results)
+	.subscribe({
+		next: response => {
+			//pass response to your view component
+		},
+		error: error => console.error('something wrong occurred: ' + error),
+		complete: () => console.log('done'),
+	});
+```
+
+<p align="center">
+*fig 4. ~ Configuring and creating a Collection object and fetching data with its read method.*
+</p>
+
+**The collection is ready, so you can start working with your favourite framework to render the article list.**
+```javascript
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
+
+ReactDOM.render(
+  <ArticleList content={articles} />,
+  document.getElementById('root')
+);
+
+class ArticleList extends React.Component<{ content }, {}> { 
+  const articles = this.props.content;
+
+  render(){
+	  return (
+	    <div class="sn-article-list">
+	    {
+	    	articles.map((article) =>
+		    <div class="sn-article-list-item">
+			<h2 class="sn-article-title">
+				<a href="{ article.BrowseUrl }">
+					{ article.DisplayName }
+				</a>
+			</h2>
+			<small class="sn-article-info">
+				PublishedBy: { article.Author } on 
+				<span class="{{ 'sn-date' + article.Id }}">
+					{ article.ModificationDate }
+				</span>
+			</small>
+			<div class="sn-article-lead">
+			    { article.Lead }
+			</div>
+		    </div>
+	    }
+	    </div>
+	  );
+  }
+}
+
 ```
 <p align="center">
-*fig 4. ~ Creating a Folder content in the repository from afar.*
+*fig 5. ~ Rendering article list with a <a href="https://facebook.github.io/react/">Reactjs</a> component.*
 </p>
 
 As simple as that. We are at the beginning of our roadmap and we need your feedback in making a better ECMS development platform. So feel free to chime in either through [e-mail][1e51c7fb], [gitter][bd86dc61] or by sending a [homing pigeon][e3d316af]. We are eager to hear your voice.
