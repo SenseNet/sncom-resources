@@ -26,7 +26,7 @@ Some description of this method are found on this link: [https://www.scrumallian
 
 After creating the story mapping we usually start to write a backlog – together with the client. We use the story mapping table, where the top functions are copied and start to write the details.
 
-It&#39;s the same google spreadsheet, so you have to mark only one URL. (Side note: our JIRA system is under upgrading, in the future we will handle the backlog there – so really waiting for that upgrading. )
+It&#39;s the same google spreadsheet, so you have to mark only one URL. (Side note: our JIRA system is under upgrading, in the future we will handle the backlog there – so really waiting for that upgrading :) )
 
 In the spreadsheet there are just a few columns in one row:
 - Function ID number (from the contract)
@@ -41,7 +41,7 @@ In the spreadsheet there are just a few columns in one row:
 
 If we have enough story, we organize an inner meeting with the SCRUM team, and refine the stories: collect questions, estimate story points, split stories.
 
-This meeting – write stories with the client and refine these by the SCRUM team – goes every week till the project goes. That is the time for &quot;soft&quot; debates where client and SCRUM team try to convince each other 
+This meeting – write stories with the client and refine these by the SCRUM team – goes every week till the project goes. That is the time for &quot;soft&quot; debates where client and SCRUM team try to convince each other :).
 
 If we have story points for every task we create a release burnup chart to estimate the future: it contains the future sprint numbers, the actual story points in the backlog, and calculate a forecast for the future based on the velocity. If we have 300 story points in the backlog, and 20 story point/sprint can be done we will finish the whole backlog in 15 sprints – that&#39;s a usually forecast. But it&#39;s important to calculate a best case and a worst case forecast too, we usually multiply the velocity with 1,1 and 0,9: in the worst case just 18 SP-s in one sprint can be done, so we will finish just in 17 sprints.
 
@@ -74,8 +74,6 @@ After checking all items in the NFR list we must define what means &quot;Done&qu
 The stories about the projects can be continued but that&#39;s enough for today  We&#39;ve learnt from the past to set up the expectations with the clients at the beginning to have fruitful relationship without too many unmanageable debates. Honest and professional conversations lead us to a successful project and it gives the smile to our clients&#39; face 
 
 Sense/Net Inc. teaches the partners for the same value and commitment towards our common customers.
-
-## CALL TO ACTION
 
 I hope you like this post and please share your thoughts.
 
