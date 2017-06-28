@@ -44,6 +44,24 @@
     "name": "sn-client-js",
     "releases": [
       {
+        "url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6691542",
+        "assets_url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6691542/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sn-client-js/releases/6691542/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sn-client-js/releases/tag/2.0.0-RC.4",
+        "id": 6691542,
+        "tag_name": "2.0.0-RC.4",
+        "target_commitish": "master",
+        "name": "2.0.0 Release Candidate 4",
+        "draft": false,
+        "prerelease": true,
+        "created_at": "2017-06-13T07:41:29Z",
+        "published_at": "2017-06-13T07:47:53Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sn-client-js/tarball/2.0.0-RC.4",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sn-client-js/zipball/2.0.0-RC.4",
+        "body": "### Changes\r\n - Added **ControlMapper** feature\r\n - Implemented **Retrier**",
+        "version": "2.0.0-RC.4"
+      },
+      {
         "url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6398518",
         "assets_url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6398518/assets",
         "upload_url": "https://uploads.github.com/repos/SenseNet/sn-client-js/releases/6398518/assets{?name,label}",
@@ -166,6 +184,24 @@
   {
     "name": "sn-client-cli",
     "releases": [
+      {
+        "url": "https://api.github.com/repos/SenseNet/sn-client-cli/releases/6461113",
+        "assets_url": "https://api.github.com/repos/SenseNet/sn-client-cli/releases/6461113/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sn-client-cli/releases/6461113/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sn-client-cli/releases/tag/2.0.0-RC.3",
+        "id": 6461113,
+        "tag_name": "2.0.0-RC.3",
+        "target_commitish": "master",
+        "name": "Release Candidate 3",
+        "draft": false,
+        "prerelease": true,
+        "created_at": "2017-05-22T10:30:02Z",
+        "published_at": "2017-05-22T10:36:40Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sn-client-cli/tarball/2.0.0-RC.3",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sn-client-cli/zipball/2.0.0-RC.3",
+        "body": "## Fix\r\n - NPM Dependency to *'fs-extra'* package",
+        "version": "2.0.0-RC.3"
+      },
       {
         "url": "https://api.github.com/repos/SenseNet/sn-client-cli/releases/6401319",
         "assets_url": "https://api.github.com/repos/SenseNet/sn-client-cli/releases/6401319/assets",
