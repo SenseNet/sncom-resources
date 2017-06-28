@@ -4,7 +4,9 @@ author: borsi
 image: '/img/posts/team-work.jpg'
 tags: [community, developers, communication, company culture, freefriday]
 ---
+
 In their [2004 IPO letter][64bbc0a2], founders Larry Page and Sergey Brin highlighted their idea of the famous "Google 20%". A lot of time has passed since then and the legend faded too: is it really 20% of their time, or is it more like "Google 120%"?
+
 ---
 
 [64bbc0a2]: https://abc.xyz/investor/founders-letters/2004/ipo-letter.html "Google IPO letter"
@@ -32,7 +34,7 @@ This all comes down to communication. As a small company, communication _should_
 ### Fading Motivation
 
 Working on repetitive business solutions can become demotivating after a while. Software development supposed to be a _creative_ craft, so solving client problems day after day can make Jack a dull boy.
-![All work and no play makes Jaca dyll boy](../img/all_work_and_no_play.png)
+![All work and no play makes Jaca dyll boy](/img/posts/all_work_and_no_play.png)
 
 ### No Empowerment
 
