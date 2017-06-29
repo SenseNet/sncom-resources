@@ -20,3 +20,60 @@
     display: inline-block;
     vertical-align: middle;
 }
+
+@media (max-width: 800px)
+{
+    .site-header .container .logo {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .site-header .right {
+        float: none;
+    }
+
+    .site-header .container nav a {
+        display: inline-block;
+    }
+
+    .home h1 {
+        font-size: 45px;
+    }
+
+    .targets {
+        margin: 50px 0;
+    }
+
+    .targets li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .components {
+        margin-bottom: 0px;
+    }
+
+    .components li {
+        width: 49%;
+        margin-bottom: 40px;
+    }
+
+    .install li.half {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    footer .footer-logo {
+        margin-left: -28px;
+    }
+
+    footer nav section {
+        width: 100%;
+    }
+
+    .copyright-and-stuff .stuff > * {
+        display: block !important;
+        margin-bottom: 10px !important;
+    }
+}
