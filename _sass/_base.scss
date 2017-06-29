@@ -187,3 +187,84 @@ code.highlighter-rouge:before, code.highlighter-rouge:after {
 .container {
     max-width: 1260px;
 }}
+
+@media (max-width: 800px)
+{
+    .site-header .container .logo {
+        float: none !important;
+        margin: 0 auto !important;
+    }
+
+    .site-header .right {
+        float: none !important;
+    }
+
+    .site-header .container nav a {
+        display: inline-block !important;
+    }
+
+    .home h1 {
+        font-size: 45px !important;
+    }
+
+    .targets {
+        margin: 50px 0 !important;
+    }
+
+    .targets li {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+
+    .components {
+        margin-bottom: 0px !important;
+    }
+
+    .components ul {
+        margin-bottom: 0 !important;
+    }
+
+    .components li {
+        width: 49% !important;
+        margin-bottom: 40px !important;
+    }
+
+    .install h2 {
+        margin-bottom: 20px !important;
+    }
+
+    .install li.half {
+        width: 100% !important;
+        margin-bottom: 30px !important;
+        margin-top: 0 !important;
+    }
+
+    footer .footer-logo {
+        margin-left: -28px !important;
+    }
+
+    footer nav section {
+        width: 100% !important;
+    }
+
+    .copyright-and-stuff .stuff > iframe {
+        display: block !important;
+        margin: 0 auto;
+    }
+
+    .more-api, .ready-to-create {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media (max-width: 800px)
+{ 
+    .subtron .container-narrow h1 {
+        font-size: 8vw !important;
+    }   
+
+    h6 {
+        font-size: 5vw !important;
+        margin: 10px 0 !important;
+    }
+}
