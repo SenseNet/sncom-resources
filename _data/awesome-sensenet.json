@@ -1,6 +1,6 @@
 [
   {
-    "name": "SN Core",
+    "name": "SN Services",
     "href": "https://github.com/SenseNet/sensenet",
     "description": "The first Open Source Enterprise Content Management platform for .NET.",
     "category": "main_project"
@@ -8,19 +8,19 @@
   {
     "name": "SN Installer",
     "href": "https://github.com/SenseNet/sn-installer",
-    "description": "A desktop application for installing Sense/Net ECM from scratch, or executing upgrade packages. ",
-    "category": "main_project"
+    "description": "A desktop application for installing sensenet ECM from scratch, or executing upgrade packages. ",
+    "category": "components"
   },
   {
     "name": "SN Admin",
     "href": "https://github.com/SenseNet/sn-admin",
-    "description": "Upgrade and package executor tool for Sense/Net ECM.",
-    "category": "main_project"
+    "description": "Upgrade and package executor tool for sensenet ECM.",
+    "category": "components"
   },
   {
     "name": "SN Tools",
     "href": "https://github.com/SenseNet/sn-tools",
-    "description": "General .Net tools that can be used even in Sense/Net-independent projects.",
+    "description": "General .Net tools that can be used even in sensenet ECM-independent projects.",
     "category": "components"
   },
   {
@@ -36,27 +36,63 @@
     "category": "components"
   },
   {
+    "name": "SN Webpages",
+    "href": "https://github.com/SenseNet/sn-webpages",
+    "description": "UI layer for the sensenet ECM platform built using ASP.NET pages, webparts and controls.",
+    "category": "components"
+  },
+  {
+    "name": "SN Workflow",
+    "href": "https://github.com/SenseNet/sn-workflow",
+    "description": "Workflow component for the sensenet ECM platform, based on Windows Workflow Foundation 4.5",
+    "category": "components"
+  },
+  {
+    "name": "SN Workspaces",
+    "href": "https://github.com/SenseNet/sn-workspaces",
+    "description": "Workspace-related content for the sensenet ECM platform.",
+    "category": "components"
+  },
+  {
     "name": "SN Client .NET",
     "href": "https://github.com/SenseNet/sn-client-dotnet",
-    "description": "A .Net client for Sense/Net ECM that makes it easy to use the REST API of the Content Repository.",
+    "description": "A .Net client for sensenet ECM that makes it easy to use the REST API of the Content Repository.",
     "category": "components"
   },
   {
     "name": "SN Client JS",
     "href": "https://github.com/SenseNet/sn-client-js",
-    "description": "A JavaScript client for Sense/Net ECM that makes it easy to use the REST API of the Content Repository.",
+    "description": "A JavaScript client for sensenet ECM that makes it easy to use the REST API of the Content Repository.",
+    "category": "components"
+  },
+  {
+    "name": "SN Client CLI",
+    "href": "https://github.com/SenseNet/sn-client-cli",
+    "description": "Command line tool for the sensenet Platform's Client Library",
     "category": "components"
   },
   {
     "name": "SN Redux",
     "href": "https://github.com/SenseNet/sn-redux",
-    "description": "A set of redux actions, reducers and redux-ovbservable epics for Sense/Net ECM.",
+    "description": "A set of redux actions, reducers and redux-ovbservable epics for sensenet ECM.",
+    "category": "components"
+  },
+  {
+    "name": "SN Controls Aurelia",
+    "href": "https://github.com/SenseNet/sn-controls-aurelia",
+    "description": "Aurelia controls for sensenet ECM",
+    "category": "components"
+  },
+  {
+    "name": "SN Controls React",
+    "href": "https://github.com/SenseNet/sn-controls-react",
+    "description": "React controls for sensenet ECM",
     "category": "components"
   },
   {
     "name": "SN Benchmark",
     "href": "https://github.com/SenseNet/sn-benchmark",
-    "description": "A benchmark tool to measure the performance of a Sense/Net ECM instance across changes.",
+    "description": "A benchmark tool to measure the performance of a sensenet ECM instance across changes.",
     "category": "tools"
   },
   {
@@ -68,7 +104,7 @@
   {
     "name": "SenseNet Project Installer",
     "href": "https://github.com/VargaJoe/SenseNet-Project-Installer",
-    "description": "Dev project installer for Sense/Net ECMS.",
+    "description": "Dev project installer for sensenet ECMS.",
     "category": "tools"
   },
   {
@@ -81,6 +117,12 @@
     "name": "SenseNet Preview Cleaner",
     "href": "https://github.com/VargaJoe/SenseNet-Preview-Cleaner",
     "description": "Tool cleaning preview images.",
+    "category": "tools"
+  },
+  {
+    "name": "RepoSync",
+    "href": "https://github.com/marosvolgyiz/RepoSync",
+    "description": " A framework to let you syncronize sensenet content between sensenet ECM and other systems.",
     "category": "tools"
   },
   {
@@ -99,29 +141,39 @@
     "category": "documentation"
   },
   {
-    "name": "Todo App with React, Redux and Sense/Net ECM",
+    "name": "Todo App with React, Redux and sensenet ECM",
     "href": "https://github.com/SenseNet/sn-react-redux-todo-app",
     "category": "examples"
   },
   {
-    "name": "Todo App with Angular, Redux and Sense/Net ECM",
+    "name": "Todo App with Angular, Redux and sensenet ECM",
     "href": "https://github.com/blaskodaniel/sn-angular-redux-todo-app",
     "category": "examples"
   },
   {
-    "name": "Todo App with Angular2, Redux and Sense/Net ECM",
+    "name": "Todo App with Angular2, Redux and sensenet ECM",
     "href": "https://github.com/SenseNet/sn-angular2-redux-todo-app",
     "category": "examples"
   },
   {
-    "name": "Todo App with Aurelia, Redux and Sense/Net ECM",
+    "name": "Todo App with Aurelia, Redux and sensenet ECM",
     "href": "https://github.com/B3zo0/sn7-aurelia-redux-todo-app",
     "category": "examples"
   },
   {
-    "name": "Todo App with Vue, Redux and Sense/Net ECM",
+    "name": "Todo App with Vue, Redux and sensenet ECM",
     "href": "https://github.com/SenseNet/sn-vue-redux-todo-app",
     "category": "examples"
+  },
+  {
+    "name": "Community site",
+    "href": "http://community.sensenet.com",
+    "category": "community"
+  },
+  {
+    "name": "sensenet Blog",
+    "href": "http://community.sensenet.com/blog/",
+    "category": "community"
   },
   {
     "name": "Stack Overflow",
@@ -139,13 +191,20 @@
     "category": "community"
   },
   {
-    "name": "Slack",
-    "href": "https://sensenetecm.slack.com",
-    "category": "community"
-  },
-  {
     "name": "Gitter",
     "href": "https://gitter.im/SenseNet",
     "category": "community"
+  },
+  {
+    "name": "sensenet.github.io",
+    "href": "https://github.com/SenseNet/sensenet.github.io",
+    "description": "Source code for the community website of sensenet ECM developers. It's made with Jekyll, hosted on GitHub Pages.",
+    "category": "other"
+  },
+  {
+    "name": "SN Resources",
+    "href": "https://github.com/SenseNet/sn-resources",
+    "description": "The place of sensenet ECM related downloadable resources.",
+    "category": "other"
   }
 ]
