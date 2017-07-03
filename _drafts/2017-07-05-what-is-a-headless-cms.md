@@ -38,7 +38,7 @@ This is why you could do something like this in [sensenet 6.x][9f950a61], or usi
 		</a>
 	</h2>
         <small class="sn-article-info">
-		PublishedBy: <%= content["Author"] %> on 
+		PublishedBy: <%= content["Author"] %> on
                 <span class='<%= "sn-date-" + content["Id"] %>'>
 			<%= content["ModificationDate"]%>
 		</span>
@@ -74,7 +74,7 @@ As mentioned earlier, using sn-webpages, you can have a full-featured ECMS solut
   [b3358601]: https://github.com/SenseNet/sn-controls-react "React controls for sensenet ECM"
   [b56bd31b]: https://github.com/SenseNet/sn-controls-aurelia "Aurelia controls for sensenet ECM"
 
-In the same time, you can either start writing your own library to latch on the OData endpoints of a sensenet ECM at hand, **or** you can try out our [fabulous and open source sn-client-js, the javascript client library for sensenet][de7f7b73].
+In the meantime, you can either start writing your own library to latch on the OData endpoints of a sensenet ECM instance at hand, **or** you can try out our [fabulous and open source sn-client-js, the javascript client library for sensenet][de7f7b73].
 
   [de7f7b73]: https://github.com/SenseNet/sn-client-js "Sn-client-js"
 
@@ -99,9 +99,9 @@ import * as SN from 'sn-client-js';
 
 let collection = new SN.Collection([], repository.Content);
 
-var options = new SN.ODataApi.ODataParams({ 
-	select: ["Id", "DisplayName", "BrowseUrl", "Author", "ModificationDate", "Lead"], 
-	orderby: 'ModificationDate', 
+var options = new SN.ODataApi.ODataParams({
+	select: ["Id", "DisplayName", "BrowseUrl", "Author", "ModificationDate", "Lead"],
+	orderby: 'ModificationDate',
 	metadata: 'no' });
 
 let fetchContent = collection.Read('/NewsDemo/External', options);
@@ -131,7 +131,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-class ArticleList extends React.Component<{ content }, {}> { 
+class ArticleList extends React.Component<{ content }, {}> {
   const articles = this.props.content;
 
   render(){
@@ -146,7 +146,7 @@ class ArticleList extends React.Component<{ content }, {}> {
 				</a>
 			</h2>
 			<small class="sn-article-info">
-				PublishedBy: { article.Author } on 
+				PublishedBy: { article.Author } on
 				<span class="{{ 'sn-date' + article.Id }}">
 					{ article.ModificationDate }
 				</span>
@@ -175,4 +175,8 @@ As simple as that. We are at the beginning of our roadmap and we need your feedb
 ***
 <a id="footnote1">1</a>: You can achieve a similar experience using the [.NET client for sensenet ECM.][55d8492d]
 
+Disclaimer: Since I am not a developer, my initial code examples were not as fabulous as they are now. Many thanks to @[tusmester][8cd0cdf0] and @[herflis][b71828da] for providing me with meaningful snippets.
+
   [55d8492d]: https://github.com/SenseNet/sn-client-dotnet "Sn-client-dotnet"
+  [8cd0cdf0]: https://github.com/tusmester "Tusmester's github profile"
+  [b71828da]: https://github.com/herflis "Herflis's github profile"
