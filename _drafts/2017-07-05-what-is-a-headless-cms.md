@@ -9,7 +9,7 @@ The term 'headless cms' has been rising in popularity for a while now. But why t
 
 ---
 ## What is a headless CMS?
-First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress or Drupal are usually included in this category. This means that the modal layer is tightly coupled with the view, and the creators of the platform provide you with a templating engine with which you can implement your frontend. So in this model you'd have:
+First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress or Drupal are usually included in this category. At monolithic cms's the modal layer is tightly coupled with the view, and the creators of the platform provide you with a templating engine with which you can implement your frontend. So in this model you'd have:
 
 - a Database at the "bottom", where you store your content
 - an App, with a UI that lets you [Create, Read, Update and Delete][25358749] this content
@@ -19,7 +19,7 @@ First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress 
 
 
  Older versions of [sensenet ECM][ed1adc41] are also following this philosophy, although the platform is more geared towards enterprise features, such as [content versioning][a19fba28] and [collaboration][206457f6].
- Thus, the 'E' in ECM is for Enterprise.
+ Thus, the 'E' in ECM is for **Enterprise**.
 
   [ed1adc41]: https://www.sensenet.com/product "Sensenet ECM Product features"
   [a19fba28]: http://community.sensenet.com/docs/versioning-and-approval "Versioning and approval"
