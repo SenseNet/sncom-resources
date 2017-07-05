@@ -1,7 +1,7 @@
 ---
 title: "How do we work with a customer?"
 author: swacsa
-image: ''
+image: '/img/posts/draft_stock-work-with-client.jpg'
 tags: [project, scrum, document management, agile]
 ---
 # See how Sense/Net Inc project team work with one of our clients directly
