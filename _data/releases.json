@@ -62,6 +62,24 @@
     "name": "sn-client-js",
     "releases": [
       {
+        "url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6936073",
+        "assets_url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6936073/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sn-client-js/releases/6936073/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sn-client-js/releases/tag/2.0.0",
+        "id": 6936073,
+        "tag_name": "2.0.0",
+        "target_commitish": "master",
+        "name": "2.0.0",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2017-07-05T11:06:39Z",
+        "published_at": "2017-07-05T11:26:13Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sn-client-js/tarball/2.0.0",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sn-client-js/zipball/2.0.0",
+        "body": "### New features\r\n - **Content** lifecycle tracking with the Content API\r\n    - Added *IsDirty*, *IsSaved*, *IsValid* and *SavedFields* properties\r\n    - Added *GetChanges()* method for change detection\r\n    - Updated *Save()* method to work without parameters based on the change detection and the Content state\r\n - Optimized the generated *Schemas* structure\r\n - Typescript 2.4.1 Support\r\n\r\n### Breaking changes\r\n - All content fields will be optional during the component creation. You can use the *IsValid* property to check required fields.\r\n - DateTime field types has changed from **Date** to **string** due timezone conversion issues.\r\n",
+        "version": "2.0.0"
+      },
+      {
         "url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6691542",
         "assets_url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6691542/assets",
         "upload_url": "https://uploads.github.com/repos/SenseNet/sn-client-js/releases/6691542/assets{?name,label}",
@@ -179,6 +197,24 @@
   {
     "name": "sn-webpages",
     "releases": [
+      {
+        "url": "https://api.github.com/repos/SenseNet/sn-webpages/releases/6936193",
+        "assets_url": "https://api.github.com/repos/SenseNet/sn-webpages/releases/6936193/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sn-webpages/releases/6936193/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sn-webpages/releases/tag/untagged-d36bc34859f58b3297e7",
+        "id": 6936193,
+        "tag_name": "v7.0.0-beta2",
+        "target_commitish": "master",
+        "name": "sensenet ECM WebPages 7.0.0 beta2",
+        "draft": true,
+        "prerelease": true,
+        "created_at": "2017-07-05T11:40:08Z",
+        "published_at": null,
+        "tarball_url": null,
+        "zipball_url": null,
+        "body": "## New features\r\n- Add more content types, views and controls: _Article_, _ArticleSection_, _HTMLContent_, _WebContent_ CTDs and _TagList_ control.\r\n\r\n## Bug fixes\r\n- EditField and MoveField apps added to make contentlist field editing possible on the UI.\r\n- ContextBound portlet logs the path information when a binding error occurs.\r\n- Add missing string resources.\r\n\r\n## Installation\r\n>**Prerequisites**: you have to install [sensenet ECM Services](https://github.com/SenseNet/sensenet) before you can install WebPages (Services 7.0.0 *beta* is not enough, WebPages needs at least *Services 7.0.0 beta2*).\r\n\r\nYou can install the sensenet ECM WebPages component in Visual Studio as a NuGet package. Please follow the steps in the the following article:\r\n\r\n- [Install WebPages from NuGet](https://github.com/SenseNet/sn-webpages/blob/master/docs/install-webpages-from-nuget.md)\r\n\r\n## Upgrade from previous versions\r\n> There is no in-place upgrade for this version, the new dlls would not work with the old database.\r\n> In the future there will be official *upgrade patches* for subsequent releases.\r\nPlease reinstall the underlying Services component before installing this new version.",
+        "version": "7.0.0-beta2"
+      },
       {
         "url": "https://api.github.com/repos/SenseNet/sn-webpages/releases/6425809",
         "assets_url": "https://api.github.com/repos/SenseNet/sn-webpages/releases/6425809/assets",
