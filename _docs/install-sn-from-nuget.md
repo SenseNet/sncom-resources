@@ -46,7 +46,9 @@ This is why we decided to publish two types of packages for our components:
 
 #### In the web app
 
-[![NuGet](https://img.shields.io/nuget/v/SenseNet.Services.Install.svg)](https://www.nuget.org/packages/SenseNet.Services.Install)
+<div style="text-align: left">
+<a href="https://www.nuget.org/packages/SenseNet.Services.Install"><img src="https://img.shields.io/nuget/v/SenseNet.Services.Install.svg" /></a>
+</div>
 
 > `Install-Package SenseNet.Services.Install -Pre`
 
@@ -54,7 +56,9 @@ This is why we decided to publish two types of packages for our components:
 
 #### In other projects
 
-[![NuGet](https://img.shields.io/nuget/v/SenseNet.Services.svg)](https://www.nuget.org/packages/SenseNet.Services)
+<div style="text-align: left">
+<a href="https://www.nuget.org/packages/SenseNet.Services"><img src="https://img.shields.io/nuget/v/SenseNet.Services.svg" /></a>
+</div>
 
 > `Install-Package SenseNet.Services -Pre`
 

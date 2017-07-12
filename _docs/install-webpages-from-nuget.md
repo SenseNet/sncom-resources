@@ -1,5 +1,5 @@
 ---
-title: "Install sensenet ECM 7.0 from NuGet"
+title: "Install sensenet WebPages from NuGet"
 source_url: 'https://github.com/SenseNet/sn-webpages/blob/master/docs/install-webpages-from-nuget.md'
 category: Guides
 version: v7.0
@@ -22,7 +22,9 @@ This article is **for developers** about installing the ASP.NET WebForms-based U
 #### In the web app
 Contains installation artifacts (content files, content types, etc).
 
-[![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.Install.svg)](https://www.nuget.org/packages/SenseNet.WebPages.Install)
+<div style="text-align: left">
+<a href="https://www.nuget.org/packages/SenseNet.WebPages.Install"><img src="https://img.shields.io/nuget/v/SenseNet.WebPages.Install.svg" /></a>
+</div>
 
 > `Install-Package SenseNet.WebPages.Install -Pre`
 
@@ -31,7 +33,9 @@ Contains installation artifacts (content files, content types, etc).
 #### In other projects
 A dll-only package.
 
-[![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.svg)](https://www.nuget.org/packages/SenseNet.WebPages)
+<div style="text-align: left">
+<a href="https://www.nuget.org/packages/SenseNet.WebPages"><img src="https://img.shields.io/nuget/v/SenseNet.WebPages.svg" /></a>
+</div>
 
 > `Install-Package SenseNet.WebPages -Pre`
 

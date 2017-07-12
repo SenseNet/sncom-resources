@@ -1,5 +1,5 @@
 ---
-title: "Install sensenet ECM 7.0 from NuGet"
+title: "Install sensenet Workspaces from NuGet"
 source_url: 'https://github.com/SenseNet/sn-workspaces/blob/master/docs/install-workspaces-from-nuget.md'
 category: Guides
 version: v7.0
@@ -18,7 +18,9 @@ To get started, stop your web site and install the workspaces package the usual 
 1. Open your web application that already contains the *Services* component installed in *Visual Studio*.
 2. Install the following NuGet package (either in the Package Manager console or the Manage NuGet Packages window)
 
-[![NuGet](https://img.shields.io/nuget/v/SenseNet.Workspaces.Install.svg)](https://www.nuget.org/packages/SenseNet.Workspaces.Install)
+<div style="text-align: left">
+<a href="https://www.nuget.org/packages/SenseNet.Workspaces.Install"><img src="https://img.shields.io/nuget/v/SenseNet.Workspaces.Install.svg" /></a>
+</div>
 
 > `Install-Package SenseNet.Workspaces.Install -Pre`
 
