@@ -1,9 +1,9 @@
 ---
 title: "Install sensenet ECM 7.0 from NuGet"
-source_url: 'https://github.com/SenseNet/sensenet/docs/install-sn-from-nuget'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/install-sn-from-nuget.md'
 category: Guides
 version: v7.0
-tags: [install, nuget, packages, servives, sn7]
+tags: [install, nuget, packages, services, sn7]
 ---
 
 # Install sensenet ECM 7.0 from NuGet
@@ -46,7 +46,9 @@ This is why we decided to publish two types of packages for our components:
 
 #### In the web app
 
-[![NuGet](https://img.shields.io/nuget/v/SenseNet.Services.Install.svg)](https://www.nuget.org/packages/SenseNet.Services.Install)
+<div style="text-align: left">
+<a href="https://www.nuget.org/packages/SenseNet.Services.Install"><img src="https://img.shields.io/nuget/v/SenseNet.Services.Install.svg" /></a>
+</div>
 
 > `Install-Package SenseNet.Services.Install -Pre`
 
@@ -54,22 +56,20 @@ This is why we decided to publish two types of packages for our components:
 
 #### In other projects
 
-[![NuGet](https://img.shields.io/nuget/v/SenseNet.Services.svg)](https://www.nuget.org/packages/SenseNet.Services)
+<div style="text-align: left">
+<a href="https://www.nuget.org/packages/SenseNet.Services"><img src="https://img.shields.io/nuget/v/SenseNet.Services.svg" /></a>
+</div>
 
 > `Install-Package SenseNet.Services -Pre`
 
 ### Web app changes
 > The install process described below is the same that you will see in the _readme.txt_ that appears in *Visual Studio* after adding the install package. 
 
-1. Please copy the contents of the **runtime** section from your *Web.config* to the *[web]\Tools\SnAdminRuntime.exe.config* file.
-      
-> See the placeholder comment at the end of SnAdminRuntime.exe.config.
-
-2. Change the *Global.asax* **markup** file's (not the cs file's) first line to contain a new parent type:
+1. Change the *Global.asax* **markup** file's (not the cs file's) first line to contain a new parent type:
 
 `Inherits="SenseNet.Portal.Global"`
 
-3. Change the *Global.asax.cs* **codebehind** (the c# class):
+2. Change the *Global.asax.cs* **codebehind** (the c# class):
 
 - the application class should inherit from **SenseNet.Services.SenseNetGlobal**
 - change the *Application_Start* **method header** and call the **base method** before all generated and custom method calls:
@@ -85,7 +85,7 @@ This is why we decided to publish two types of packages for our components:
 
 Please do not override the whole method (!), just the header, and add the base method call as seen above.
 
-4. Optional: update your **Razor views** (you can do this later at any time).
+3. Optional: update your **Razor views** (you can do this later at any time).
 
    If you use the built-in *@Html.ActionLink* method to render actions (as it is the case with the default project templates), you have to replace those calls in your *.cshtml* files with a new extension method added by this package:
 
@@ -93,7 +93,7 @@ Please do not override the whole method (!), just the header, and add the base m
 
    (the parameters are the same, only the method name changes)
 
-5. **Build your solution**, make sure that there are no build errors.
+4. **Build your solution**, make sure that there are no build errors.
 
 ### Create the database
 Before installing the sensenet ECM Content Repository database, please make sure that you have access to a *SQL database server*.
