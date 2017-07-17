@@ -1,7 +1,7 @@
 ---
 title:  "How to make your life infinitely better - sensenet CTD's"
 author: herflis
-image: "/img/posts/goals.jpg"
+image: "/img/posts/amusement.jpg"
 tags: [content, content type, content type definition, CTD, aspect, content list, expando fields, document management]
 ---
 
