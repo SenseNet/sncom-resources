@@ -3,6 +3,24 @@
     "name": "sensenet",
     "releases": [
       {
+        "url": "https://api.github.com/repos/SenseNet/sensenet/releases/7121018",
+        "assets_url": "https://api.github.com/repos/SenseNet/sensenet/releases/7121018/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sensenet/releases/7121018/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sensenet/releases/tag/v7.0.0-beta4",
+        "id": 7121018,
+        "tag_name": "v7.0.0-beta4",
+        "target_commitish": "master",
+        "name": "sensenet ECM Services 7.0.0 beta4",
+        "draft": false,
+        "prerelease": true,
+        "created_at": "2017-07-21T12:42:39Z",
+        "published_at": "2017-07-21T14:00:35Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sensenet/tarball/v7.0.0-beta4",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sensenet/zipball/v7.0.0-beta4",
+        "body": "## New features\r\n### TypeScript 2.4 updates\r\n- generated TypeScript classes take advantage of string-based enums\r\n### New packaging steps for SnAdmin\r\n- **SetField**, **AddReference**, **RemoveReference**: new steps for setting or modifying field values during a patch or installation, without importing.\r\n### New SnAdmin tool\r\n- **delete**: it is possible to delete a content from the repository by its path from the command line, you do not have to use the REST or C# api for that.\r\n\r\n## Bug fixes\r\n- added a missing package reference for the _OpenPop_ library\r\n- added a few missing string resources\r\n\r\n## Installation\r\nTo get started please follow the instructions in the [Install sensenet ECM from NuGet article](http://community.sensenet.com/docs/install-sn-from-nuget).\r\n\r\n## Upgrade from previous versions\r\nPlease export your custom content and perform a clean install, there is no upgrade patch for previous versions for this release.",
+        "version": "7.0.0-beta4"
+      },
+      {
         "url": "https://api.github.com/repos/SenseNet/sensenet/releases/6865303",
         "assets_url": "https://api.github.com/repos/SenseNet/sensenet/releases/6865303/assets",
         "upload_url": "https://uploads.github.com/repos/SenseNet/sensenet/releases/6865303/assets{?name,label}",
@@ -61,6 +79,24 @@
   {
     "name": "sn-client-js",
     "releases": [
+      {
+        "url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/7012052",
+        "assets_url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/7012052/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sn-client-js/releases/7012052/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sn-client-js/releases/tag/2.0.1",
+        "id": 7012052,
+        "tag_name": "2.0.1",
+        "target_commitish": "master",
+        "name": "2.0.1",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2017-07-12T11:05:49Z",
+        "published_at": "2017-07-12T11:13:56Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sn-client-js/tarball/2.0.1",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sn-client-js/zipball/2.0.1",
+        "body": "### Fixes\r\n - RxAjaxHttpProvider - Fixed observable error for successful requests with no response body (e.g. OData DELETE)\r\n - Content.Children() will respect the optional OData options parameter",
+        "version": "2.0.1"
+      },
       {
         "url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6936073",
         "assets_url": "https://api.github.com/repos/SenseNet/sn-client-js/releases/6936073/assets",
