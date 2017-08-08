@@ -1,7 +1,7 @@
 ---
 title: "Internal knowledge sharing - is it the base of the company brain?"
 author: balazskeszei
-image: "img/posts/companybrain1.png"
+image: "/img/posts/companybrain1.png"
 tags: [enterprise content management, knowledge sharing, information management]
 ---
 
