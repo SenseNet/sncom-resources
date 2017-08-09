@@ -57,13 +57,14 @@
 .blog-post hr:first-of-type {
     display: none;
 }
-.blog-post p {
-    font-size: 16px;
+.blog-post p, .blog-post li {
+    font-size: 17px;
     line-height: 1.5;
     text-align: justify;
 }
 .blog-post p img {
-    max-width: 800px;
+    max-width: 100%;
+    width: auto;
 }
 .blog-post p a {
     color: #13a5ad;

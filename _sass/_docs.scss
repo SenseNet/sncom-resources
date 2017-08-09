@@ -100,6 +100,8 @@ color: #fff;
 .docs p img {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+    width: auto;
 }
 
 .docs p img+em {
@@ -233,7 +235,8 @@ blockquote {
 }
 
 .docs img {
-    max-width: 800px;
+    max-width: 100%;
+    width: auto;
 }
 
 .tags h1 {
@@ -259,4 +262,11 @@ blockquote {
 
 .taglist-container li a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 800px)
+{ 
+    .documentation .col-ms-12 {
+        text-align: center  !important;
+    }   
 }

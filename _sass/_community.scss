@@ -42,3 +42,10 @@
     color: #13a5ad;
     text-decoration: none;
 }
+
+@media (max-width: 800px)
+{ 
+    .contributors ul {
+        text-align: center  !important;
+    }   
+}

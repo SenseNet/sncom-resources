@@ -19,3 +19,10 @@
 .contact a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 800px)
+{ 
+    .contact ul {
+        padding: 0 10px  !important;
+    }   
+}

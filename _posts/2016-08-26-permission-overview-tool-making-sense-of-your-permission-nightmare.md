@@ -1,6 +1,7 @@
 ---
 title: "Permission Overview Tool: Making Sense of Your Permission Nightmare"
 author: ildika
+image: "/img/posts/zen.jpg"
 tags: [persmissions, permission overview, content repository]
 ---
 
