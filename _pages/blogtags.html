@@ -1,0 +1,36 @@
+---
+title: sensenet ECM Document Tags
+permalink: /blogtags/
+layout: default
+---
+
+{% assign tags =  site.posts | map: 'tags' | join: ','  | split: ',' | uniq %}
+{% for tag in tags %}
+  <div style="display: none" id="{{ tag }}">
+    <div class='subtron'>
+    <div class='container-narrow tags'>
+      <h1>Tags/ {{ tag }}</h1>
+    </div>
+  </div>
+  <ul class="taglist-container">
+  {% for post in site.posts %}
+    {% if post.tags contains tag %}
+    <li><a href="{{ site.baseurl }}{{ docs.url }}">{{ post.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div> 
+{% endfor %}
+
+<div class="taglist-container">
+{% include blog-tagcloud.html %}
+</div>
+
+<script>
+  $(function(){
+    var url = window.location.href;
+    var tag = url.split('#')[1];
+    
+    $('#' + tag).show();
+  })
+</script>
