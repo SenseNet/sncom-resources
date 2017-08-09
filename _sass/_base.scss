@@ -24,7 +24,7 @@ body {
     max-width: 980px;
 }
 
-.container-narrow h1 {
+.container-narrow h1, .container-narrow .heading {
     line-height: 1;
 }
 
@@ -47,13 +47,17 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
-h1 {
+h1, .subtron .container-narrow .heading {
     font-family: $font-gotham-light;
     font-size: $h1-size;
     color: $h1-color;
     line-height: 50px;
     text-transform: uppercase;
     text-align: center;
+}
+
+.container-narrow .heading { 
+    margin: 44px 0;
 }
 
 h2 {
@@ -259,7 +263,7 @@ code.highlighter-rouge:before, code.highlighter-rouge:after {
 
 @media (max-width: 800px)
 { 
-    .subtron .container-narrow h1 {
+    .subtron .container-narrow h1, .subtron .container-narrow .heading {
         font-size: 8vw !important;
     }   
 
