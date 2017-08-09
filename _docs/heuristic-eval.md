@@ -41,7 +41,7 @@ In the algorithmic version the benchmark tool uses a noise filter on the req/sec
 
 The graph of the differential function indicates the direction of the main function changes in every point. When the growing stops, the differential function goes through zero from the positive values. At this point the benchmark measuring result is the value of the active profile count (190 in this case).
 
-![alt text]https://raw.githubusercontent.com/sensenet/sensenet.github.io/master/_docs(/img/benchmark/5-avg-diff-trigger.png "all of them put together")
+![alt text](https://raw.githubusercontent.com/sensenet/sensenet.github.io/master/_docs/img/benchmark/5-avg-diff-trigger.png "all of them put together")
 
 Color codes on all graphs:
   - green: number of parallel profiles.
