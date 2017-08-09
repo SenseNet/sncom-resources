@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tu
 category: Tutorials
 version: v7.0
 tags: [jwt, authentication, sn-client-js, frontend, sn7]
+description: This article describes how to use jwt in sn-client-js.
 ---
 
 # JWT Authentication in sn-client-js

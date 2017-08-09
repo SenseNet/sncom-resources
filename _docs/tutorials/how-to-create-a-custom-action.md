@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tu
 category: Tutorials
 version: v6.0
 tags: [action, application, sn6, backend]
+description: This article describes the way for developers to create a custom action that is able to execute custom initialization code or behave differently than the built-in ones.
 ---
 
 # How to create a custom Action

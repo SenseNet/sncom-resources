@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tu
 category: Tutorials
 version: v6.1.2
 tags: [action, application, scenario, smart application model, sn6, backend]
+description: This article describes the way for developers to create a custom scenario that uses a different algorithm for collecting actions.
 ---
 
 # How to create a custom Scenario

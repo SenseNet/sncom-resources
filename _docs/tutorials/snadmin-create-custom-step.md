@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet.github.io/docs/tutorials/snadm
 category: Tutorials
 version: v6.3.1
 tags: [snadmin, upgrade, package, step, backend]
+description: In this article **developers** can learn how to create custom install steps for the packaging infrastructure, if none of the built-in steps are sufficient for a particular goal.
 ---
 
 # How to create a custom SnAdmin step

@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tu
 category: Tutorials
 version: v6.3.2
 tags: [webdav, provider, content repository, sn6, backend]
+description: This article describes how developers can customize the way we serve and manage content through the WebDav interface.
 ---
 
 # How to create a custom WebDav provider

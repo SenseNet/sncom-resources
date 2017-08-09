@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tu
 category: Tutorials
 version: v6.3
 tags: [action, application, odata, smart application model, ajax, sn6, backend]
+description: This article describes the way for developers to create a custom action that is accessible through the OData API of sensenet ECM.
 ---
 
 # How to create a custom OData action
