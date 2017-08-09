@@ -41,8 +41,4 @@ This is how the unified content management system brings out the most of the dig
 
 There are different kind of content management system you can choose. Do it wisely because it will dramatically influence your digital experience in the short run :simple_smile:
 
-If you have more questions about sensenet ECM system, do not hesitate to 
-
-[contact us]: https://www.sensenet.com/contact	"contact"
-
-contact us, we will be happy to answer your questions!
+If you have more questions about sensenet ECM system, do not hesitate to [contact us](https://www.sensenet.com/contact), we will be happy to answer your questions!
