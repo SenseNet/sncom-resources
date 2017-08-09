@@ -3,10 +3,20 @@
 }
 .blog-post aside {
     vertical-align: top;
-    width: 275px;
     position: absolute;
-    left: -300px;
+    
     margin-top: 40px;
+    @media screen and (max-width: 1300px) {
+        left: -200px;
+        width: 200px;
+    }
+    @media screen and (min-width: 1300px) {
+        left: -300px;
+        width: 275px;
+    }
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 }
 .blog-post aside h3 {
     text-transform: uppercase;
