@@ -1,0 +1,12 @@
+{% assign tags =  site.posts | map: 'tags' | join: ','  | split: ',' | uniq %}
+<ul class="tagcloud">
+{% for tag in tags %}
+    {% assign num = 0 %}
+  {% for post in site.posts %}
+    {% if post.tags contains tag %}
+        {% capture num %}{{ num | plus:1 }}{% endcapture %}
+    {% endif %}
+  {% endfor %}
+    <li class="tag"><a href="/tags#{{ tag }}" style="font-size: {{ num | times: 4 | plus: 80  }}%">{{ tag }}</a></li>
+{% endfor %}
+</ul>

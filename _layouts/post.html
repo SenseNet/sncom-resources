@@ -30,6 +30,12 @@
         </a>
       </div>
 
+      <ul class="docs-tags">
+      {% for tag in page.tags %}
+      <li class="docs-tag"><i class="fa fa-tag"></i><a href="/tags#{{ tag }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+
       {{ content }}
 
       <div class="post-contact">
