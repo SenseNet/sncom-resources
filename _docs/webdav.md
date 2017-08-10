@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/webdav.md'
 category: Development
 version: v6.0.1
 tags: [webdav, document management, mapping, office, sn6, sn7]
+description: sensenet ECM provides a way to access your content via WebDAV, allowing Microsoft Office, Windows Explorer, Total Commander, Visual Studio, etc to open and edit content residing in a sensenet ECM Content Repository.
 ---
 
 # WebDAV

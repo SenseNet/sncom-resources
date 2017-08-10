@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/action.md'
 category: Development
 version: v6.0
 tags: [action, application, smart application model, sn6, sn7]
+description: In this article we go through action types and look at their common use cases.
 ---
 
 # Action

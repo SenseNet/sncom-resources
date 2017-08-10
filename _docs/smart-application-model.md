@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/smart-application-model.m
 category: Development
 version: v6.0
 tags: [action, application, smart application model, context, binding, portlet, sn6, sn7]
+description: The Smart Application Model is a feature of sensenet ECM for defining both REST API endpoints and frontend templates to display and manipulate data in the Content Repository. It enables portal builders to create a unique look and feel across content items while also saving time.
 ---
 
 # Smart Application Model

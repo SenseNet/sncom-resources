@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sn-workspaces/docs/workspace.md'
 category: Concepts
 version: v6.0
 tags: [workspace, collaboration, sn6, sn7]
+description: sensenet ECM allows individuals in an organization to easily create and manage their own collaborative sites, called workspaces.
 ---
 
 # Workspace

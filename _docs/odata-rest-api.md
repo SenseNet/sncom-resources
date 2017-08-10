@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/odata-rest-api.md'
 category: Development
 version: v6.2
 tags: [odata, REST, api, json, ajax, action, content repository, sn6, sn7]
+description: Beginning from version 6.2 sensenet ECM Content Repository is an OData producer. Your applications can consume our OData service to create web apps on PCs and mobile devices (e.g. with KendoUI), mobile apps (OData is supported on all major smartphone platforms) or any other type of content based applications. We support CRUD operations on the repository, properties, binary streams, paging options and custom queries.
 ---
 
 # OData REST API

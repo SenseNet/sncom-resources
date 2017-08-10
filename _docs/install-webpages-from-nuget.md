@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sn-webpages/blob/master/docs/install-we
 category: Guides
 version: v7.0
 tags: [install, nuget, packages, webpages, sn7]
+description: This article is for developers about installing the ASP.NET WebForms-based UI layer of sensenet ECM from NuGet. Before you can do that, please install the core layer, sensenet Services, which is a prerequisite of this component.
 ---
 
 # Install sensenet WebPages from NuGet

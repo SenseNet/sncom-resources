@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/content.md'
 category: Development
 version: v6.0
 tags: [content, content repository, content type, sn6, sn7]
+description: A Content is the basic block for storing information in sensenet ECM. A Content can be any kind of data - for example users, documents, memos, tasks, text files, etc. are all referred to as content in the portal.
 ---
 
 # Content

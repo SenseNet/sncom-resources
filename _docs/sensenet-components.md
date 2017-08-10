@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/sensenet-components.md'
 category: Concepts
 version: v7.0
 tags: [component, componentization, module, modularization, core, packages, client, sdk, sn7]
+description: This article is meant to help you understand the structure of our components and help you answer the first question that arises when starting to work with sensenet ECM.
 ---
 
 # sensenet ECM 7.0 components

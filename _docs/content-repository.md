@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/content-repository.md'
 category: Development
 version: v6.0
 tags: [content, content repository, content type, content explorer, smart application model, trash, sn6, sn7]
+description: A content repository is a store of digital content with an associated set of data management, search and access methods allowing application-independent access to the content rather like a digital library, but with the ability to store and modify content in addition to searching and retrieving.
 ---
 
 # Content Repository

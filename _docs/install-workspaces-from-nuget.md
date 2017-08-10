@@ -4,6 +4,8 @@ source_url: 'https://github.com/SenseNet/sn-workspaces/blob/master/docs/install-
 category: Guides
 version: v7.0
 tags: [install, nuget, packages, workspaces, sn7]
+description: This article is for developers about installing the **Workspaces** component for sensenet ECM from NuGet. Before you can do that, please install at least the core layer, sensenet Services, which is a prerequisite of this component.
+
 ---
 
 # Install sensenet Workspaces from NuGet

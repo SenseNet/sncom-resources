@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/snadmin-tools.md'
 category: Development
 version: v6.5.5
 tags: [snadmin, upgrade, tool, package, index, export, import, sn6, sn7]
+description: SnAdmin is the command line tool in sensenet ECM for executing upgrade or custom packages. It also helps you with common operations related to the Content Repository or web folder files of the sensenet ECM web application. This article is about the latter - the SnAdmin tools.
 ---
 
 # SnAdmin tools

@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/application'
 category: Development
 version: v6.0
 tags: [application, action, smart application model, sn6, sn7]
+description: Applications are the basic building blocks of the Smart Application Model that define the way specific Content are presented and processed when addressed.
 ---
 
 # Application

@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/reference-field.md'
 category: Development
 version: v6.0
 tags: [field, reference, content type, ctd, reference grid, sn6, sn7]
+description: The Reference Field is used for defining references to other content. When a content holds references pointing to other content (for example a group references users in its Members field) it is done using a Reference Field.
 ---
 
 # Reference Field

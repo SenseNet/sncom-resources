@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/blob-provider.md'
 category: Development
 version: v7.0.0
 tags: enterprise blob storage provider sn7
+description: This article describes the concept of our blob storage and the customization options.
 ---
 
 # Blob provider

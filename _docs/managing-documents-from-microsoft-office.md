@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/managing-documents-from-m
 category: Development
 version: v6.0.4
 tags: [document management, office, sn6, sn7]
+description: Using sensenet ECM you are able to create, modify or delete documents within Office. Editing and publishing documents into a workspace is as easy as managing tasks or links as well. There's no need to learn how to upload documents or other files into sensenet workspaces manually, it's done automatically while you're using Office.
 ---
 
 # Managing Documents from Microsoft Office

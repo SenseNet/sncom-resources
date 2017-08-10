@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/cors.md'
 category: Development
 version: v7.0
 tags: [CORS, authentication, jwt, login, origin, http headers, preflight, OData, REST]
+description: In this article operators and developers may learn about CORS settings in sensenet ECM and how we prevent cross-domain attacks.
 ---
 
 # Cross-origin resource sharing

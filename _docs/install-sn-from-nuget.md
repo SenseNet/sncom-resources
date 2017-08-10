@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/install-sn-fr
 category: Guides
 version: v7.0
 tags: [install, nuget, packages, services, sn7]
+description: This article is for developers about installing the core layer, sensenet Services, but before getting into that, please take a look at the concept of our install method.
 ---
 
 # Install sensenet ECM 7.0 from NuGet

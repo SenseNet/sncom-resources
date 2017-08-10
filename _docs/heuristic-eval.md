@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/sn-benchmark'
 category: Benchmark
 version: v7.0.0
 tags: [benchmark, theory, sn7]
+description: The sensenet ECM server environment reaches its maximum performance (for whatever reason) when the served request count cannot increase, even if the received requests are growing. This expectation outlines a prerequisite to the algorithm to work - after having reached the maximum performance, during an increasing load we must see a constant served request per second plateau that follows the increasing phase.
 ---
 # sensenet ECM benchmark behind the scenes
 

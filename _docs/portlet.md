@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/portlet.md'
 category: Development
 version: v6.0
 tags: [portlet, page, context, cache, sn6, sn7]
+description: A Portlet is an *ASP.NET web control* that appears as a box on pages. Portlets can display custom layouts and implement custom application logic. The most simple portlets are used to present a single Content or Content Collections.
 ---
 
 # Portlet

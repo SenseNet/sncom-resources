@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/azureblob-provider.md'
 category: Development
 version: v7.0.0
 tags: enterprise blob azure storage provider sn7
+description: We deliver our Enterprise customer an Enterprise Azure Blob Package that contains all the binaries needed to make it work.
 ---
 
 # Azure Blob Storage blob provider

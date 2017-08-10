@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/snadmin-builtin-steps.md'
 category: Development
 version: v6.3.1
 tags: [snadmin, upgrade, package, step, sn6, sn7]
+description: This article lists all the available built-in SnAdmin steps that are shipped with the product and can be used to build a package.
 ---
 
 # Built-in SnAdmin steps

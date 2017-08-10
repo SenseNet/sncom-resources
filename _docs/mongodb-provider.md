@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/mongodb-provider.md'
 category: Development
 version: v6.5.5
 tags: enterprise blob provider sn6 sn7
+description: This article is about an external blob provider we offer for our Enterprise customers.
 ---
 
 # MongoDB blob provider

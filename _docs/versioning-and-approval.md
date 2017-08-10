@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/versioning-and-approval.m
 category: Concepts
 version: v6.0
 tags: [versioning, approval, document management, sn6, sn7]
+description: The versioning system of sensenet ECM also provides mechanisms for keeping the published version of a document under heavy editing visible to outside users, while you continue to work on the latest, draft version.
 ---
 
 # Versioning and approval
