@@ -1,7 +1,7 @@
-.blog-post .container-narrow {
+.blog-post .container-narrow, .docs .container-narrow {
     position: relative;
 }
-.blog-post aside {
+.blog-post aside, .docs aside {
     vertical-align: top;
     position: absolute;
     
@@ -18,29 +18,29 @@
         display: none;
     }
 }
-.blog-post aside h3 {
+.blog-post aside h3, .docs aside h3 {
     text-transform: uppercase;
     font-size: 16px;
     font-family: "Gotham";
     margin-top: 0;
 }
-.blog-post aside ul {
+.blog-post aside ul, .docs aside ul {
     margin: 0;
     padding: 0;
 }
-.blog-post aside li {
+.blog-post aside li, .docs aside li {
     list-style-type: none;
     margin: 0 0 15px 0;
     padding: 0;    
     line-height: 20px; 
 }
-.blog-post aside a {
+.blog-post aside a, .docs aside a {
     color: #13a5ad;
     text-decoration: none;
     font-size: 14px;
 }
 
-.blog-post aside a:hover {
+.blog-post aside a:hover, .docs aside a:hover {
     text-decoration: underline;
 }
 

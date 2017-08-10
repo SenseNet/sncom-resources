@@ -4,6 +4,7 @@ layout: default
 
 <div class='subtron text-left'>
   <div class='container-narrow'>
+   
     <div class="heading"><span class="mr-3 mr-lg-4">
       {% if page.category == 'Tutorials' %}
       Tutorials
@@ -27,18 +28,20 @@ layout: default
 </div>
 
 {% if page.category == 'API' %}
-<div>
+<section class='page-section doc strong-headers'>
   <div class="container-narrow position-relative">
     <ul>
       <li>{{ site.data.processes[page.title] }}</li>
     </ul>
   </div>
-</div>
+</section>
 {% endif %}
 
 <section class='page-section docs strong-headers'>
   <div class='container-narrow'>
-
+    <aside class="blog-menu-side">
+      {% include relateddocs.html %}
+    </aside>
     <ul class="docs-tags">
       {% for tag in page.tags %}
       <li class="docs-tag"><i class="fa fa-tag"></i><a href="/tags#{{ tag }}">{{ tag }}</a></li>
