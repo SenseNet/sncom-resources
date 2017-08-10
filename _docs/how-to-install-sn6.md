@@ -4,6 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/docs/how-to-install-sn6-from-s
 category: Guides
 version: v6.0.0
 tags: install troubleshooting requirements sn6
+description: In this document we would like to guide you through the installation process of sensenet ECM from a source package.
 ---
 
 # How to install sensenet 6.5
