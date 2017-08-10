@@ -38,7 +38,7 @@ If approval is required for a certain Content, after changes has been made to th
 
 This method provides an extra line of defense for keeping mission critical content error free.
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/approval/approving-approve.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/approval/approving-approve.png" alt="Approving" style="margin: 20px auto" />
 
 ### Public visibility
 
@@ -79,7 +79,7 @@ You may have already had trouble with scenarios where both you and a colleague w
 
 Before making changes to a Content, you can - and indeed, should, if you are working in a multi-user, production environment - *Check* the Content *out*. This acts as a write lock, enabling other users to access it for reading, but not for modifications.
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/approval/versioning-checkout.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/approval/versioning-checkout.png" alt="Versioning check-out" style="margin: 20px auto" />
 
 You may save several times during work, and *Check in* when you are done, lifting the lock.
 
@@ -91,7 +91,7 @@ If you checked out a content, edited it, but decide to drop your changes, you ca
 
 Administrators can have a *Force undo changes* permission. This means they can drop changes to a locked content made by any other user. This is useful when somebody checked out a content and she cannot check it in for some reason, but the content needs to be edited by somebody else.
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/approval/versioning-checkin.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/approval/versioning-checkin.png" alt="Versioning check-in" style="margin: 20px auto" />
 
 #### Taking over the lock - from version 6.3.1 patch1
 
@@ -128,10 +128,10 @@ The following tables summarizes the actions you can perform in a particular stat
 
 You can change versioning or approving mode on any folder or other container type. If you visit the edit page of the folder you'll find the versioning and approving settings among the advanced fields.
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/approval/versioning-change.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/approval/versioning-change.png" alt="Versioning change" style="margin: 20px auto" />
 
 ### Example/Tutorials
 
 In this section you can see examples of how content version numbers changing if you work with the content. If you want to see the actions you can perform in particular state of a content, check [Enabled versioning actions](#enable).
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/approval/versioning-tutorial.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/approval/versioning-tutorial.png" alt="Versioning tutorial" style="margin: 20px auto" />

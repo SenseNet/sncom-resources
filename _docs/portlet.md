@@ -23,7 +23,7 @@ There are many pre-defined portlets in the portal. These include the most basic 
 
 Portlets can easily be added to pages after editing the page and clicking on the _Add portlet_ link placed at the top side of the different portlet zones. When clicked, a Content Picker will pop up and the portlet can be selected from pre-defined categories.
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/reference-wiki-portlet3.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/reference-wiki-portlet3.png" alt="Add portlet" style="margin: 20px auto" />
 
 Added portlets are only visible to the public when the page has been *checked-in* (and in case versioning or approval of the page is switched on, it is also have to be *published/approved*). Pages can be edited using the Portal Remote Control (PRC). After they are added, the properties of portlets can be set to customize their look and behavior.
 
@@ -31,7 +31,7 @@ Added portlets are only visible to the public when the page has been *checked-in
 
 Portlets can be customized via their properties. Properties can be accessed and set in the portlet properties dialog displayed after clicking _Edit_ in the dropdown box that appear at the top right corner of the portlets when the page containing the portlet is in _Edit_ mode. In the portlet properties dialog properties are organized into tabs along function categories.
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/reference-wiki-portlet1.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/reference-wiki-portlet1.png" alt="Portlet property dialog" style="margin: 20px auto" />
 
 Common properties include the ones displayed on the above screenshot:
 
@@ -86,4 +86,4 @@ Every Portlet has a content that represents it in the _/Root/Portlets_ folder, o
 
 Only those portlets are visible in the _add portlet_ dialog that are available in the Portlet inventory. Therefore when a new Portlet is created and added in the webfolder in the form of a dll file, it has to be installed to the [Content Repository](/docs/content-repository). This can be done either by manually creating a new Portlet Content under the _/Root/Portlets_ folder in the appropriate Category folder, or automatically, using the *Synchronize* action. The latter is defined as a link on the _/Root/Portlets_ folder in Content Explorer.
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/reference-wiki-portlet2.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/reference-wiki-portlet2.png" alt="Syncronize portlets" style="margin: 20px auto" />

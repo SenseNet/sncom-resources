@@ -56,7 +56,7 @@ Choose a name for your site (**Site name**).
 Set your **Physical path** to: %sourceroot%\Source\SenseNet\WebSite
 
 <div style="text-align: center;">
-  <img src="/docs/img/install/AddWS.png" width="500" border="0" />
+  <img src="/docs/img/install/AddWS.png" alt="Add website" width="500" border="0" />
 </div>
 
 ### 4. Check application pool settings ###
@@ -75,7 +75,7 @@ To edit application pool settings, you should follow the steps below:
 By clicking on _Application pool_ in the upper left corner you will get the list of available application pools. If the settings of your site's application pool doesn't match the recommended settints (See table 1) you have to change it.
 
 <div style="text-align: center;">
-  <img src="/docs/img/install/Bwapppools.png" width="600" border="0" />
+  <img src="/docs/img/install/Bwapppools.png" alt="Application pool" width="600" border="0" />
 </div>
 
 #### 4.2 Select the appropriate version ####
@@ -83,7 +83,7 @@ By clicking on _Application pool_ in the upper left corner you will get the list
 Double-click on the _application pool_ of your site, then select the appropriate version of .NET Framework from the _.NET Framework version_ dropdown.
 
 <div style="text-align: center;">
-  <img src="/docs/img/install/Setapppver.png" width="300" border="0" />
+  <img src="/docs/img/install/Setapppver.png" alt="Set application pool version" width="300" border="0" />
 </div>
 
 ### 5. Set up database connection ###
@@ -95,13 +95,13 @@ The easiest way to set up database connection is creating an Alias in your SQL S
 #### 5.2. Right Click on Aliases, then select New Alias ####
 
 <div style="text-align: center;">
-  <img src="/docs/img/install/CreateNewAlias.png" width="600" border="0" />
+  <img src="/docs/img/install/CreateNewAlias.png" alt="Create new alias" width="600" border="0" />
 </div>
 
 #### 5.3. Set up the new Alias ####
 
 <div style="text-align: center;">
-  <img src="/docs/img/install/AliasProperties.png" width="400" border="0" />
+  <img src="/docs/img/install/AliasProperties.png" alt="Alias properties" width="400" border="0" />
 </div>
 
 Use the values from the following table (you have to replace DB_SERVER_NAME to the name of your sql server instance)

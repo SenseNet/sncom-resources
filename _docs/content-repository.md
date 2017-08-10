@@ -31,7 +31,7 @@ The Content Repository provides services to end users for managing content. It h
 The Content Repository is basically a tree structure of the various stored content. A specific content is identified by a **unique id** and also by its **path** in SNCR. The root of SNCR is at the /Root path, all other content is placed somewhere under this root content - for example the login page for the default site is placed at /Root/Sites/Default_Site/login. The default structure is organized as follows (only the main folder structure is listed here):
 
 <div style="display: inline-block;vertical-align: top; padding-right: 20px; width: 260px;">
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/content-repository1.png" /> 
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/content-repository1.png" alt="Content Repository tree" /> 
 </div>
 
 {::options parse_block_html="true" /}

@@ -35,7 +35,7 @@ Make sure you don't have WebDAV publishing installed, as it may interfere with s
 
 Managing documents in a workspace using Microsoft Office is a common feature of Enterprise Content Management Systems. Using sensenet ECM you are able to create, open or edit documents within Office. Opening and saving documents is also done using the WebDAV protocol. To open a document click the **Edit in Microsoft Office** action on the document:
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/webdav2.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/webdav2.png" alt="Edit in Microsoft Office" style="margin: 20px auto" />
 
 > The UI above is available only if you installed the [WebPages](https://github.com/SenseNet/sn-webpages) component. If you do not have that, you can still put an action link onto your custom UI that lets your users open Office documents - please check the details on the link below.
 
@@ -47,15 +47,15 @@ For more info on managing Office documents in the sensenet ECM Content Repositor
 
 It is also possible to map the full sensenet [Content Repository](/docs/content-repository) to a network drive. To do this first click the **Map network drive...** link in the context menu of *This PC* in Windows Explorer:
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/webdav3.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/webdav3.png" alt="Map network drive" style="margin: 20px auto" />
 
 Select a suitable drive letter and enter the web address of your sensenet site:
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/webdav4.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/webdav4.png" alt="Map network drive" style="margin: 20px auto" />
 
 After clicking Finish the [Content Repository](/docs/content-repository) should appear in Windows Explorer:
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/webdav5.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/webdav5.png" alt="Windows Explorer" style="margin: 20px auto" />
 
 From here onwards you can use this drive to manage your [Content Repository](/docs/content-repository): uploading, editing, deleting, renaming content can be done just like using a normal file system.
 

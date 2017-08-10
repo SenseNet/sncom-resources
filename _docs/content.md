@@ -27,15 +27,15 @@ A single Content can be presented in many forms:
 
 You can visually see the content when they are enlisted in a list or in a tree, for example in [Content Explorer](/docs/content-explorer), the administrative surface of the portal.
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/content1.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/content1.png" alt="Content tree" style="margin: 20px auto" />
 
 Also, the individual content can be edited, in this case mostly you will be presented a surface where you can edit the content's fields.
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/content2.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/content2.png" alt="Content fields" style="margin: 20px auto" />
 
 Besides, the content can be presented in any visual form with the aid of [Content Views](/docs/content-view) or [XSLT Renderers](/docs/xslt-renderer).
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/content3.png" style="margin: 20px auto" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/content3.png" alt="Content view" style="margin: 20px auto" />
 
 The way a content looks like mainly depends on the scenario it is used in (a folder for example is used to contain other content, so it shows the list of its children, whereas an article represents some kind of textual information and pictures so it shows the visually formatted text and contained images), but the look of any kind of content can be fully customized.
 
