@@ -26,7 +26,7 @@ layout: default
               <a href="https://github.com/{{ post.author }}" class="author-link"><img src="https://github.com/{{ post.author }}.png?size=36" alt="{{ post.author }}" class="avatar mr-2">{{ post.author }}</a>
             </div>
           {% if post.image  != '' %}
-          <img src="{{post.image}}" class="post-image" />
+          <img src="{{post.image}}" alt="{{post.title}}" class="post-image" />
           {% endif %}
           {{ post.excerpt }}
           <p><a href="{{ post.url | prepend: site.baseurl }}" class="read-more-link">Read more <i class="fa fa-angle-right"></i></a></p>

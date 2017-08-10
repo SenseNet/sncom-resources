@@ -32,7 +32,7 @@ For example, the List Portlet is able to display any kind of content stored in a
 
 In Sense/Net 6 all these functions were achievable through four tabs on the editor-surface of the Portlet. So, to display a Calendar with the ListPortlet, you needed to set up the basic layout of the Portlet, and beside the ViewFrame, you also needed to pick the ListView as "Default view" from a Content Picker, which offered all Views in the Solution.
 
-![Portlets in Sense/Net](http://wiki.sensenet.com/images/4/48/ContentListPortlet-props.png)
+![Portlets in Sense/Net](http://wiki.sensenet.com/images/4/48/ContentListPortlet-props.png "Portlets in Sense/Net")
 
 By redesigning Portlets, besides the existing use of Portlets for developers, we wanted to facilitate the use of built-in Widgets. These are inherited from Portlets with predefined UI components, for specialized use cases, with an easy-to-use interface for non-developers. The Calendar Widget in the future SN7 will have the CalendarView defined by default, no further setup will be required for the UI.
 
@@ -48,5 +48,5 @@ To deliver ready-made solutions to end-users, SN7 will sport pre-configured Widg
 
 Adding a Widget like this to a Portlet Page will not require any coding- or Portal Builder-knowledge, only the name of the Widget and the data source needs to be given and there it is, a ready-made webpart inlayed to the selected Zone of the Page.
 
-![Widget wireframe](http://download.sensenet.com/BlogPostImages/CardSorting/widget-wireframe.jpg)
+![Widget wireframe](http://download.sensenet.com/BlogPostImages/CardSorting/widget-wireframe.jpg "Widget wireframe")
 

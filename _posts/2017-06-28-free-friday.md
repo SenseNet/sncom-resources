@@ -34,7 +34,7 @@ This all comes down to communication. As a small company, communication _should_
 ### Fading Motivation
 
 Working on repetitive business solutions can become demotivating after a while. Software development supposed to be a _creative_ craft, so solving client problems day after day can make Jack a dull boy.
-![All work and no play makes Jaca dyll boy](/img/posts/all_work_and_no_play.png)
+![All work and no play makes Jaca dyll boy](/img/posts/all_work_and_no_play.png "All work and no play makes Jaca dyll boy")
 
 ### No Empowerment
 
@@ -71,7 +71,7 @@ We started this project with a kickoff presentation, where we gave people time t
 
 After vetting these ideas, there were 3 that had enough people and reasonable planning behind (we are a small company after all :) ).
 
-![It's-a-happening](https://media.giphy.com/media/rl0FOxdz7CcxO/giphy.gif)
+![It's-a-happening](https://media.giphy.com/media/rl0FOxdz7CcxO/giphy.gif "It's-a-happening")
 
 These three (a knowledge base for our company, a reposync tool for making our developers' lives easier, and our new [community site][232da02d]) are progressing quite well. Since "Transparency is key", I'm sure you'll hear about them soon enough. :)
 

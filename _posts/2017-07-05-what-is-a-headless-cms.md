@@ -59,13 +59,13 @@ This is why you could do something like this in [sensenet 6.x][9f950a61], or usi
 
 In a headless CMS (or ECMS for that matter), though, the backend does not care about how the content is displayed. It just returns with the data needed for the frontend through a RESTful API.
 
-![Headless vs Coupled](/img/posts/headless-cms.png)
+![Headless vs Coupled](/img/posts/headless-cms.png "Headless vs Coupled")
 <p align="center">
 *fig 2. ~ Traditional (coupled or monolithic CMS) model vs. Headless CMS*
 </p>
 
 ## So is sensenet ECM a headless or a coupled CMS?
-![Why not both?](http://i.imgur.com/KgXtawP.gif)
+![Why not both?](http://i.imgur.com/KgXtawP.gif "Why not both?")
 
 As mentioned earlier, using sn-webpages, you can have a full-featured ECMS solution, complete with a built-in UI. We are also working on a **new** UI, using [React][b3358601] and [Aurelia][b56bd31b] while fully utilizing [sensenet ECM's OData layer][71579091], which provides a complete, flexible and extendable [RESTful API][f9c00a93].
 

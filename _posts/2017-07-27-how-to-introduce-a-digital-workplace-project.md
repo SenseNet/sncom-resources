@@ -13,7 +13,7 @@ Thus, there are definite reasons why digital workplace is useful for employees. 
 
 The focus is on the employee, not on the device.  Employees today are frequently on the go, so they themselves and their work must not be restricted by the device. They move from meeting to meeting, travel inland or abroad, work from home offices or from any other remote workplaces, or simply go home after business hours, and might need to continue working at home. Their work, however, must be seamless everywhere, and time shall not be wasted when changing devices. With the digital workplace the work will be employee-centered, not device-centered.
 
-![Focus on people not on device](/img/posts/peoplenotdevice.jpg)
+![Focus on people not on device](/img/posts/peoplenotdevice.jpg "Focus on people not on device")
 
 - It is usable right-away. No long trainings or courses needed to be able to use the digital workplace environment. When the employees look at the environment, they can use them intuitively right-away. Even a basic document management system has to be intuitive and easy to use.
 
@@ -21,11 +21,11 @@ The focus is on the employee, not on the device.  Employees today are frequently
 
 - It supports progressive cooperation. Knowledge workers often have to work in teams, cooperating with other teams and team-members. This collaboration can be difficult, because employees are often not at the same place at the same time, or sometimes they are just not using the same types of devices or programs. Yet, they have to work together continuously, without interruptions, and they must have a good user experience from this type of cooperation to encourage them to do it bravely and frequently enough. Digital workplace also helps in collaborating with an expert or a supervisor more seamlessly.
 
-![progressive cooperation](/img/posts/cooperation.jpg)
+![progressive cooperation](/img/posts/cooperation.jpg "progressive cooperation")
 
 - It helps to access up-to-date information more easily. Using up-to-date information is essential in the competitive era. If employees neglect updating and work with outdated information, it means a loss of profit not only for the company, but for the employees themselves. They might end up doing extra work by correcting the mistakes, if they fail to address the changes at the right time. Information is vital: not only to get access to, but also to be used proactively for the tasks, even in cooperation. Digital workplace enables using up-to-date data and information.
 
-![access to digital workplace information](/img/posts/accessinformation.jpg)
+![access to digital workplace information](/img/posts/accessinformation.jpg "access to digital workplace information")
 
 - It may also be helpful to understand that digital workplace is not only a new working environment, but it also requires a new way of thinking and problem solving. The so-called design-thinking can be considered as an innovation by itself. It involves employees in the problem-solving process, that is how it makes the work process itself more coherent. By doing it right it can take us from “Have we solved the problem?" to “Are we solving the right problem?"
 

@@ -147,7 +147,7 @@ As I mentioned before, the main purpose of rewriting the picker was to provide d
 
 As you could have read in [previous blog posts](https://blog.sensenet.com/admin/post/2015/11/27/skin-system-revamp-in-sn7.aspx "previous blog posts"), we’re working hard to make everything skinnable in SN7. With the new picker you’ll be able to define your own modal window which allows you to use Bootstrap’s or Foundation’s modal widget. You can set your modal object as the $modal parameter of the picker plugin and use its open and close actions on picker callbacks. With the templates and buttons section you can add the framework related classes and markup to the parts of the picker to make it styleable with bootstrap or foundation or other ui libraries.
 
-![](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletfoundationgrid.png)
+![Foundation grid on tablet](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletfoundationgrid.png "Foundation grid on tablet")
 
 
 
@@ -155,7 +155,7 @@ As you could have read in [previous blog posts](https://blog.sensenet.com/admin/
 
 As long as we build in KendoUI plugins into the picker, we’re able to use its templating in them. This allows you to customize the markup of a grid row or a thumbnail item through plugins ’templates’ config section. For now, there’re some limitations related to these templates because the grid and the thumbnail view uses and displays a limited number of Fields. Later, we will allow you to list the fields that you want to display and then you will able to add fully custom templates with KendoUI’s templating syntax. Now you’re only able to add some additional classes and change the markup in a way you keep the Kendo variables.
 
-![](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletbootstrapthumb.png)
+![Bootstrap grid on tablet](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletbootstrapthumb.png "Bootstrap grid on tablet")
 
 
 

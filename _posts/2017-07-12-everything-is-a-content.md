@@ -21,12 +21,12 @@ If there is a new feature, it can be enabled for all kinds of content immediatel
 
 This goes for your custom actions too! You can define new features and enable them for all kinds of content – or just for the types you need them for.
 
-![Content actions](/img/posts/content-actions.png)
+![Content actions](/img/posts/content-actions.png "Content actions")
  
 ### Content management in a central place
 If everything is a content, why not store and manage them in a central place? You'll find every single item in the Content Repository in our huge content tree! Combined with a powerful search engine this makes content discovery a no-brainer.
 
-![Content tree](/img/posts/content-tree.png)
+![Content tree](/img/posts/content-tree.png "Content tree")
  
 The built-in Content Explorer, our admin UI lets you browse, edit and manage content – the whole tree – in a familiar, rich environment.
 
@@ -42,12 +42,12 @@ A unified content infrastructure lets you define custom metadata fields on a hig
 ### Presentation
 It is just a single step from storing data in a unified way to displaying it using predefined UI building blocks. Create and re-use field controls and content views, and speed up your development process by assembling skins, pages and page templates – which are also content themselves ;-).
  
-![Content view](/img/posts/content-view.png)
+![Content view](/img/posts/content-view.png "Content view")
 
 ### Version history
 It takes only a few clicks to enable versioning – not just for files, but for any kind of content! Want to keep old versions of a Memo or a Task? Choose from the available versioning modes, and you're good to go! You can switch this on in a library, a workspace, or any level in the Content Repository.
 
-![Content versions](/img/posts/content-versions.png)
+![Content versions](/img/posts/content-versions.png "Content versions")
  
 ### Approval
 Collaborate with others on documents, specifications, tasks! The built-in simple approval process that can be enabled for any kind of content makes the usually cumbersome and time-consuming process super-easy and fast in sensenet ECM.

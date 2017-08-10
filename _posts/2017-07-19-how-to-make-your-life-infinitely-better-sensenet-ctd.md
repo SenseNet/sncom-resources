@@ -9,7 +9,7 @@ Dynamic Content Type system sounds amazing, but what does it actually mean? This
 
 ---
 
-![Content, content everywhere](/img/posts/content-everywhere.jpg)
+![Content, content everywhere](/img/posts/content-everywhere.jpg "Content, content everywhere")
 
 [Everything is a content](/blog/2017/07/12/everything-is-a-content), not only in sensenet ECM but in our everyday work. Tasks, documents, memos, invoices, emails, contacts, etc. However digitalized content could make our life easier, these content items can be so diverse that they are usually placed in separate systems. So if we're searching for a contact, we have to check the company's CRM system and login to our intranet site in the same time to share it with our collegues. Why are these things usually stored in separate systems? On the one hand, due to the different metadata, on the other hand because they need custom care, custom functionality. 
 
@@ -25,7 +25,7 @@ Why are Content Types the key of managing content? To oversimplify somewhat it i
 
 ### The Content Type tree
 
-![Content Type Tree](/img/posts/content-type-tree.png)
+![Content Type Tree](/img/posts/content-type-tree.png "Content Type Tree")
 
 Tree srtucture helps us to understand the hierarchy, the connection between Content Types and lets us take advantage of inheriting and overriding. If you're familiar with Object-oriented programming it is quite easy to get it but if you're not, think about it as cat breeds and their similiarities and differencies. All of them are cats eventually, they have four legs, they are sleeping and purring all the time, but they can have a different colour or type of fur and different nutritional or caring needs. So if you have a custom document type, for example for contracts you can easily inherit it from the built-in File type. So that it will have all the built-in fields that are defined on the File type (e.g. Name, Size, Binary), but can have custom ones too (e.g. Reponsible Person, Date of signature). Basically the contracts will be handled as Files in the system but in addition you can define custom logic behind them to complete the built-in one.
 
@@ -39,7 +39,7 @@ Since managing content is based on defining fields in Content Types and configur
 
 What if you have different kind of contracts for each organization in your company with different metadata and different workflows in the background. You also want to let your non-dev colleagues managing the contract types because they can only be accessed by the members of the organization. Creating a custom Content Type for all the different contracts does not worth it because you would create tons of Content Type Definitions and only use them once. On the other hand the organization members are maybe not qualified enough to create custom Content Types and they also don't have the permissions to do that. In this case expando fields provided by sensenet ECM are a great solution. You only have to create a new List and add and customize new columns as fields by a few click. These expando fields are not persisted on Content Types, so they can be used only locally on a list.
 
-![Expando fields](/img/posts/expando-fields.png)
+![Expando fields](/img/posts/expando-fields.png "Expando fields")
 
 #### Aspects
 

@@ -10,7 +10,7 @@ Us, too. In fact we need better goals, than *"making more money"* or *"creating 
 
 ---
 
-![Smart goals](/img/posts/SMART-goals.png)
+![Smart goals](/img/posts/SMART-goals.png "Smart goals")
 
   [bb699076]: https://en.wikipedia.org/wiki/SMART_criteria "SMART goals"
 
@@ -18,7 +18,7 @@ Us, too. In fact we need better goals, than *"making more money"* or *"creating 
 #### Agility boost
 We realized that our time to market is too slow. One reason behind this was that the product was too monolithic to begin with. It is the pitfall of legacy code everywhere. The team was battling bugs and new feature requests without refactoring for a while, so it is now time for a big overhaul.
 If you look closely at our [repositories][ce0fc2d5], you may see that componentization has already started. What was one big chunk of code in the old sensenet ECM, now consists of 2 separate packages. There are at least 4 more to come (Workspaces, Worklows, Notifications and the DocViewer with the Preview Generator). Once we're done, we'll aim to release hotfixes every other week and have feature releases at least once in a quarter (depending on the size of the feature).
-![Sensenet Components](https://github.com/SenseNet/sn-resources/raw/master/images/sn-components/sn-components_services.png)
+![Sensenet Components](https://github.com/SenseNet/sn-resources/raw/master/images/sn-components/sn-components_services.png "Sensenet Components")
 
   [ce0fc2d5]: https://github.com/SenseNet/ "Sensenet"
 

@@ -13,7 +13,7 @@ The next milestone on our roadmap is to redesign our website in order to make it
 Hello again! We've been working on restructuring SenseNet ECMS as a product for a while; now it's time to change the way we connect with people. 
 The next milestone on our roadmap is to redesign our website in order to make it more streamlined and transparent for you. Our most important aim with the redesign is to provide you all the information you might need when looking for the open source, .NET based ecms that would fit your business needs and still provide a pleasant user experience.
 
-![sn users' stories](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/snuserstory.png)
+![sn users' stories](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/snuserstory.png "sn users' stories")
 
 [Designed by Freepik](http://www.freepik.com/free-vector/user-with-geometric-web-experience-icons_847150.htm "Designed by Freepik")
 
@@ -35,26 +35,26 @@ We want to make you the hero of our story. Who are you? - at first this is what 
 
 > _Our first hero is the **Developer...**_
 
-![developer](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/developer-sidious.png)
+![developer](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/developer-sidious.png "developer")
 
 ...who is looking for a super modern coding platform to build up-to-date business solutions. Who wants to find a well-designed architecture and enterprise-grade technical details even under the hood. Who wants to hand over great and long-lasting IT solutions to their customers.
 
 > _Our hero is the **Partner...**_
 
-![partner](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/salesman-han.png)
+![partner](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/salesman-han.png "partner")
 
 ...who wants an extendable platform with a transparent licensing and pricing system. Who is looking for an affordable solution and wants to get in touch with our sales department easily and quickly.
 
 > _Our hero is the **Customer...**_
 
-![customer](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/manager-lea.png)
+![customer](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/manager-lea.png "customer")
 ...who wants to buy an all-in-one solution for their company. Who wants to find all details about buying and running a SenseNet solution. Who wants to make sure that they get an easy-to-maintain IT solution.
 
 ## Visual and structural narrative in the Information Architecture
 
 What we needed is to bring creativity into the story. This is what will transform the experience from a simple repetitive navigation into the emotionally driven behavior that governs the users’ actions.
 
-![narrative redesign](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/narrativeredesign.jpg)
+![narrative redesign](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/narrativeredesign.jpg "narrative redesign")
 
 [Designed by Freepik](http://www.freepik.com/free-vector/great-isometric-user-experience_851898.htm "Designed by Freepik")
 
@@ -73,7 +73,7 @@ We wanted to find out what motivations may lead to any of the several possible o
 -   What is the destination they are looking for?
 -   How can we help them reaching it?
 
-![userflow on whiteboard](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/userflow.jpg)
+![userflow on whiteboard](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/userflow.jpg "userflow on whiteboard")
 
 Working through these steps our goal was to resolve conflicts instead of creating new ones. We learned that the further we can minimize the friction and optimize the offered solutions on each point of the visitors’ trip, the more smoothly and painlessly will they be led to a solution they want.
 

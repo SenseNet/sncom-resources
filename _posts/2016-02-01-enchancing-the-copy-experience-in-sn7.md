@@ -37,13 +37,13 @@ A config file is placed in the solution, including a javascript configuration mo
 
 The currently active element in the breadcrumb is highlighted, so the content of this node is displayed in a grid, where downward navigation is possible by tapping on the selected title. Navigation upwards in the tree will be executed by tapping the previous elements in the breadcrumb. Deleting is also possible on the selected item in grid- or thumbnail, by tapping the delete icon. Delete action needs to be confirmed in order to avoid unintentional loss of data.
 
-![Delete from gridview on mobile](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/mobilegriddelete.png)  ![Delete from thumbnailview on mobile](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/mobilethumbdelete.png)
+![Delete from gridview on mobile](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/mobilegriddelete.png "Delete from gridview on mobile")  ![Delete from thumbnailview on mobile](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/mobilethumbdelete.png "Delete from thumbnailview on mobile")
 
 ### Create New Container
 
 By tapping the &bdquo;add-icon” in the end of the breadcrumb, an overlay modal opens to add a new container. From a dropdown, expendable items can be selected as allowed content-types from the configuration. In our prototype &bdquo;Folder” or &bdquo;Document Library” ContentTypes are allowed. In the text-input the name will be added to the item, which is &bdquo;New ContentType name” by default.
 
-![Create new folder on mobile](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/mobilecreatenew.png)
+![Create new folder on mobile](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/mobilecreatenew.png "Create new folder on mobile")
 
 ## Skinnable layout for mobile devices
 
@@ -52,7 +52,7 @@ In the header of the modal-dialog a breadcrumb-bar helps navigation, and the add
 
 _**Copy-picker with grid-view displayed by Bootstrap and Foundation:**_
 
-_**  ![Gridview with Bootstrap for mobile](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/mobilebootstrapgrid.png)  ![Gridview with Foundation for mobile](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/mobilefoundationgrid.png)**_
+_**  ![Gridview with Bootstrap for mobile](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/mobilebootstrapgrid.png "Gridview with Bootstrap for mobile")  ![Gridview with Foundation for mobile](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/mobilefoundationgrid.png "Gridview with Foundation for mobile")**_
 
 Views can be chosen in the configuration. In our prototype grid or thumbnail views can be selected. Configuration also provides an opportunity to choose a tree-only view.
 
@@ -62,13 +62,13 @@ Depending on the screen-size and resolution, we used the Bootstrap and Foundatio
 
 _**Picker with thumbnail-view for tablet built with Bootstrap**_
 
-![Copypicker built from Bootstrap for desktop](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletbootstrapthumb.png)
+![Copypicker built from Bootstrap for desktop](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletbootstrapthumb.png "Copypicker built from Bootstrap for desktop")
 
 _**Picker with grid-view for desktop built with Foundation**_
 
-![Copypicker view built with Foundation](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletfoundationgrid.png)
+![Copypicker view built with Foundation](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletfoundationgrid.png "Copypicker view built with Foundation")
 
 _**Tree-only view on iPad with Bootstrap**_
 
-![Tree-only view for copy picker](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletbootstraptree.png)
+![Tree-only view for copy picker](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletbootstraptree.png "Tree-only view for copy picker")
 

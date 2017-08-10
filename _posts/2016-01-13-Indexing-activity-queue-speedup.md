@@ -28,7 +28,7 @@ Activities depend on each other in the following cases:
 
 Imagine an office with a couple of windows and many customers arriving in a short time frame. The customers already have their number but they can arrive in a different order. The doorman puts them into a preliminary queue based on their number. The Guide determines whether there is a free window available and whether there are customers that the one who just arrived should wait for. When (for a particular customer) there are no more dependencies, she can get to a free window and arrange her case. When the case is finished, all other customers that were waiting for her will be notified.
 
-[![2016-01-12 - IAQ - administration]({{ site.url }}/img/posts/indexing1.png "2016-01-12 - IAQ - administration")](../../image.axd?picture)
+[![IAQ - administration]({{ site.url }}/img/posts/indexing1.png "IAQ - administration")](../../image.axd?picture)
 
 The example above is not perfect as in Sense/Net ECM the number of windows will vary based on the number of available threads, but you get the idea.
 
@@ -77,7 +77,7 @@ To simulate a non-deterministic environment, we added the activities to the queu
    
 Take a look at the diagram of the test execution. X axis shows the elapsed time in milliseconds, Y axis contains the activities as they were added from bottom to top.
 
-[![2016-01-12 - IAQ - execution]({{ site.url }}/img/posts/indexing2.png "2016-01-12 - IAQ - execution")](../../image.axd?picture)
+[![IAQ - execution]({{ site.url }}/img/posts/indexing2.png "IAQ - execution")](../../image.axd?picture)
 
 You can see that in the first subtree there is a strictly serialized execution (A1, A2, A3, A4), without overlap. In the other subtree (where the users uploaded the documents) 5 independent activities are executed almost immediately, than A10 and A11.
 
