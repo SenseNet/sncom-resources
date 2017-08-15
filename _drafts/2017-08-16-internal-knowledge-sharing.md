@@ -5,8 +5,7 @@ image: "../img/posts/knowledge.jpg"
 tags: [enterprise content management, knowledge sharing, information management]
 ---
 
-## Why is it important to document information?
-The answer is fairly simple: documented company knowledge is easily transmitted, multiplied or updated, and it can be stored securely. Yet, many people still think that the constant documenting slows down creative work, thus decreases productivity. This is however a mistaken thought and as such it does not show forward thinking.
+Why is it important to document information? The answer is fairly simple: documented company knowledge is easily transmitted, multiplied or updated, and it can be stored securely. Yet, many people still think that the constant documenting slows down creative work, thus decreases productivity. This is however a mistaken thought and as such it does not show forward thinking.
 
 ---
 
