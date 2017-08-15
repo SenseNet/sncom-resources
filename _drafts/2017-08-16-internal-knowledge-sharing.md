@@ -1,7 +1,7 @@
 ---
 title: "Internal knowledge sharing - is it the base of the company brain?"
 author: balazskeszei
-image: "../img/posts/companybrain1.png"
+image: "../img/posts/knowledge.jpg"
 tags: [enterprise content management, knowledge sharing, information management]
 ---
 
@@ -13,7 +13,8 @@ The answer is fairly simple: documented company knowledge is easily transmitted,
 From the 80’s flexibility and innovation is the building block of companies. It is especially true for small and medium-sized businesses as in these areas they can be competitive with multinational corporations with million dollar budgets. The basis of innovation is the development of ‘traditional knowledge’, the striving to acquire and distribute ‘new knowledge’. Reaching this is impossible without appropriate company content handling.
 
 Organizing and managing ever-growing structured and unstructured data and transfer of corporate knowledge is impossible, if the important information, the software used by the company and the colleagues themselves are not connected.
-![document information](../img/posts/knowledge.jpg)
+
+![document information](/img/posts/knowledgebase.jpg)
 
 ## In what form does it happen?
 Knowledge, that is useful from the viewpoint of innovative processes, can come from several sources. Information necessary for operation is usually provided by the leadership. The company can however get valuable knowledge from its consumers, employees or from information derived from the behavior of the competition.
@@ -26,7 +27,7 @@ The format of the material you work with does not matter. Whether it is an elect
 
 Your only task is to assign employees different authorities, lists or libraries and they can easily access knowledge relevant to them.
 
-![educate new employees](../img/posts/learn.jpg)
+![educate new employees](/img/posts/learn.jpg)
 
 ## How is this supported by a well-organized IT system
 In most companies, probably in yours as well, archiving and organizing documents is the biggest problem. In our example sensenet ECM system handles problems related to storage, security settings, title management, version control, software integration, sharing and formatting at the same time. The data stored in this way can also be retrieved easily with integrating the metadata indexing opportunities.
