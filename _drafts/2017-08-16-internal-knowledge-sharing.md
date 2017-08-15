@@ -9,7 +9,7 @@ Why is it important to document information? The answer is fairly simple: docume
 
 ---
 
-From the 80’s flexibility and innovation is the building block of companies. It is especially true for small and medium-sized businesses as in these areas they can be competitive with multinational corporations with million dollar budgets. The basis of innovation is the development of ‘traditional knowledge’, the striving to acquire and distribute ‘new knowledge’. Reaching this is impossible without appropriate company content handling.
+From the 80’s flexibility and innovation are the building blocks of companies. It is especially true for small and medium-sized businesses as in these areas they can be competitive with multinational corporations with million dollar budgets. The basis of innovation is the development of ‘traditional knowledge’, the striving to acquire and distribute ‘new knowledge’. Reaching this is impossible without appropriate company content handling.
 
 Organizing and managing ever-growing structured and unstructured data and transfer of corporate knowledge is impossible, if the important information, the software used by the company and the colleagues themselves are not connected.
 
