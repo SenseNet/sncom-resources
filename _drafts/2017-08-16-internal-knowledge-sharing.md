@@ -39,6 +39,6 @@ This is how a unified content management system brings out the most of the digit
 -	Document library title management: you can assign work processes to lists and libraries and you can assign users with different permissions to them;
 -	Check-in / check-out function: no more data loss while you are working on a draft.
 
-There are different kinds of content management system you can choose from. Do it wisely because it will dramatically influence your digital experience in the short run :simple_smile:
+There are different kinds of content management systems you can choose from. Do it wisely, because it will dramatically influence your digital experience in the short run :simple_smile:
 
 If you have more questions about sensenet ECM, do not hesitate to [contact us](https://www.sensenet.com/contact), we will be happy to answer your questions!
