@@ -4,11 +4,12 @@ author: balazskeszei
 image: "../img/posts/what-marketing-wont-tellyou-cover.jpg"
 tags: [digital workplace, change management, employees, involvement]
 ---
-## What is digital workplace?
 
 Our consumer habits and everyday way of life went through significant changes during the last decades. The most prominent development was shown in the field of IT. Services provided by the industry no longer influence only free time activities. Different software, enabling work on-the-go developed for end users are widely used by multinational corporations and small businesses as well.
 
 ---
+
+## What is digital workplace?
 
 The [digital workplace](https://www.sensenet.com/for-customers/use-cases/digital-workplace) means a workplace that does not exist in physical space to which the work group members can connect from any part of the world. This is usually the result of several work stations connected through servers, however the work group members can access the network even by using home computers. Thus the digital workplace primarily consists of workers, hardware and software and online work processes. 
 
