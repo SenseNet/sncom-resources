@@ -9,7 +9,8 @@
     "releases": "node script/releases.js",
     "awesome": "node script/awesome.js",
     "contributors": "node script/contributors.js",
-    "latestblogposts": "node script/latestblogposts.js"
+    "latestblogposts": "node script/latestblogposts.js",
+    "start": "bundle exec jekyll serve --incremental"
   },
   "repository": {
     "type": "git",
