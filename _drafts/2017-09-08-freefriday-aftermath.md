@@ -1,11 +1,9 @@
-```
 ---
 title:  "We gave 10% of their time for realizing their ideas to our developers, and this is what we've learned so far."
 author: borsi
 image: "/img/posts/"
 tags: [company culture, freefriday, community, developers, communication, postmortem]
 ---
-```
 
 Six months have passed since we started our *very own* 'Sense/Net 10%' program, where any employee could assemble a team and work on a precious side-project in 10 percent of their time. We had our project closing TGIF presentation last Friday where every team talked about their experiences - and you wouldn't believe what happened next!
 
@@ -15,7 +13,7 @@ Setting aside the subtle clickbait at the end of the intro, we learned *a ton* i
 
 - Create more vibrant **company culture** by incentivizing cross-team communication.
 - Fire up developer **motivation** by letting them work on projects they love and by taking a breath of fresh air from the daily grind.
-- **Empower** people. Let them *own* their projects and with them, our company culture, mission, and values.
+- **Empower** people. Let them *own* their projects and with them, our company culture, mission and values.
 
 ## Well, did we succeed?
 
