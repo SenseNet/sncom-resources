@@ -55,8 +55,11 @@ layout: default
 
         <div class="col-ms-12 col-lg-4">
           <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/api/">API Reference</a></h2>
-          <h3>SN Client JS</h3>
+          <!-- <h3>SN Client JS</h3> -->
           <ul class="docs-list">
+            <li>
+              <a href="/api/sn-client-js">sn-client-js</a>
+            </li>
             {% for doc in docs %} {% if doc.category == 'API' and doc.subcategory == 'sn-client-js' %}
             <li>
               <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
