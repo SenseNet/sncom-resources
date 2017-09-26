@@ -1,6 +1,6 @@
 ---
 ​---
-title: "Entering the new era - the new, componentized SN7"
+title: "Entering the new era - The componentized SN7"
 author: borsi 
 image: "../img/posts/components.jpg"
 tags: [sn7, components, componentization]
