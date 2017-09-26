@@ -117,7 +117,7 @@ Since we're talking about a Javascript library, instead of NuGet, you can instal
 
 There are several related packages that are in development and that will let you build applications in an even more productive fashion. These are:
 
-- sn-controls-aurelia](https://github.com/SenseNet/sn-controls-aurelia)
+- [sn-controls-aurelia](https://github.com/SenseNet/sn-controls-aurelia)
 
 - [sn-controls-react](https://github.com/SenseNet/sn-controls-react)
 - [sn-redux](https://github.com/SenseNet/sn-redux)
