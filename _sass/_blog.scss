@@ -70,6 +70,11 @@ ul.blog-index li h2 > a {
     margin: 0 auto;
 }
 
+.blog-post p a img {
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
 .post-image {
     max-width: 800px;
     width: 100%;
