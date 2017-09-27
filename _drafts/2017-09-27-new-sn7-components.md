@@ -65,9 +65,7 @@ To summarize, when you install WebPages, you'll have:
 
 Current NuGet package: [![NuGet](https://img.shields.io/nuget/v/SenseNet.Workspaces.Install.svg)](https://www.nuget.org/packages/SenseNet.Workspaces.Install)
 
-Workspaces is a functional component for sensenet ECM, it contains predefined content types for workspaces, you can use for various scenarios. If you only have Services installed (because for whatever reason you don't want to use WebPages or build your UI using [ASP.NET](http://ASP.NET) WebForms), you'll only get the
-
-workspace types. If, however, you have WebPages, you'll also get the related content templates and the whole UI package for Workspaces - build entirely in [ASP.NET](http://ASP.NET) WebForms.
+Workspaces is a functional component for sensenet ECM, it contains predefined content types for workspaces, you can use for various scenarios. If you only have Services installed (because for whatever reason you don't want to use WebPages or build your UI using [ASP.NET](http://ASP.NET) WebForms), you'll only get the workspace types. If, however, you have WebPages, you'll also get the related content templates and the whole UI package for Workspaces - build entirely in [ASP.NET](http://ASP.NET) WebForms.
 
 > For detailed install steps, please check [this article](http://community.sensenet.com/docs/install-workspaces-from-nuget/).
 
@@ -75,7 +73,7 @@ workspace types. If, however, you have WebPages, you'll also get the related con
 
 Current NuGet package: [![NuGet](https://img.shields.io/nuget/v/SenseNet.Workflow.Install.svg)](https://www.nuget.org/packages/SenseNet.Workflow.Install)
 
-This component integrates the powerful Windows Workflow Foundation into your sensenet ECM. You can use it to build powerful content driven workflows, such as the built-in Approval workflow.
+This component integrates the powerful Windows Workflow Foundation into your sensenet ECM. You can use it to build content driven workflows, such as the built-in Approval workflow.
 
 If you want to build complex business scenarios and processes, Workflow is your go-to component.
 
