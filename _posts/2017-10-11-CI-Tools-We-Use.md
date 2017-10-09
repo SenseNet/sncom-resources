@@ -14,7 +14,7 @@ CI means you have to merge small changes continuously instead of working with la
 
 ### Before you dive in
 
-We use GitHub nowdays and we work with pull requests. These pull requests are playing a key role in the terms of CI tooling, most of the tools are working with [pull request status checks](https://developer.github.com/v3/repos/statuses/). This means when you create a pull request, the tools will check if the branch is up to date, it can be built, the tests are OK, etc...
+We use GitHub nowadays and we work with pull requests. These pull requests are playing a key role in the terms of CI tooling, most of the tools are working with [pull request status checks](https://developer.github.com/v3/repos/statuses/). This means when you create a pull request, the tools will check if the branch is up to date, it can be built, the tests are OK, etc...
 
 ### Front-end and Node.JS tools
 
@@ -26,13 +26,13 @@ We have several NPM packages and the goal is the same. We want to know if the ch
 
 #### Keeping things green
 
-If I had to choose two CI tools, it would be Travis and [GreenKeeper](https://greenkeeper.io/). This guy helps to avoid the *dependency hell*. Really. It scans the NPM repository and if a new version of one of your project dependencies is published, it will create a feature branch for that and runs the other CI tools. If the new version is *covered by your version range* and the checks fails, it will raise an issue, otherwise it just deletes the branch. If the new version is not covered but the tests are OK, it will create a *pull request* and you will be sure that the dependency won't break your build. Just take a look at the screenshot from this morning and think about it if you had to do it manually :) 
+If I had to choose two CI tools, it would be Travis and [GreenKeeper](https://greenkeeper.io/). Greenkeeper helps to avoid the *dependency hell*. Really. It scans the NPM repository and if a new version of one of your project dependencies is published, it will create a feature branch for that and runs the other CI tools. If the new version is *covered by your version range* and the checks fails, it will raise an issue, otherwise it just deletes the branch. If the new version is not covered but the tests are OK, it will create a *pull request* and you will be sure that the dependency won't break your build. Just take a look at the screenshot from this morning and think about it if you had to do it manually :) 
 ![ci_tools_greenkeeper](/img/posts/ci_tools_greenkeeper.png)
 
 
 #### Covering code
 
-We use [Codecov](https://codecov.io/) to measure our code coverage rate and check it per pull request. You can monitor coverage historically, compare between branches, even browse in annotated files. It's clean, simple, and it's ease to use with Travis.
+We use [Codecov](https://codecov.io/) to measure our code coverage rate and check it per pull request. You can monitor coverage historically, compare between branches, even browse in annotated files. It's clean, simple, and it's easy to use with Travis.
 
 #### Codacy
 
