@@ -30,6 +30,28 @@ In case of sensenet ECM practically everything happens in the context of a "runn
 
 We created a *Providers* API for bringing all these replaceable parts together. This is a gradual process, we will bring old and new features under this umbrella as needed. We also extended the **repository start process** by letting developers **inject** their own provider implementations instead of using the configured ones.
 
-[repo start sample here]
+```csharp
+var dbProvider = new InMemoryDataProvider();
+var securityDbProvider = new MemoryDataProvider(DatabaseStorage.CreateEmpty());
+var searchEngine = new InMemorySearchEngine();
+var accessProvider = new DesktopAccessProvider();
+
+var repoBuilder = new RepositoryBuilder()
+    .UseDataProvider(dbProvider)
+    .UseSecurityDataProvider(securityDbProvider)
+    .UseSearchEngine(searchEngine)
+    .UseAccessProvider(accessProvider)
+    .StartWorkflowEngine(false);
+
+using (var repo = Repository.Start(repoBuilder))
+{
+    // Load and save content here - then check the results.
+}
+```
+
+The sample above is taken from one of the test methods. Many of them start a repository instance of their own and make changes in those sandboxes instead of a real database. This makes initialization and execution *100 times faster* than before. It also clears the way for future improvements.
 
 ## What's next?
+Currently you cannot do *everything* using this method, for example binary handling is not implemented yet in the in-memory db. When during testing we encounter such a blocker issue, we will add the missing providers to this api gradually.
+
+The current architecture still has some *static* elements that prevent us from running tests *in parallel* - so they are executed sequentially for now, otherwise tests would interfere in each others' environment. We plan to make every provider and module accessible through *instances* that can co-exist, so we can execute tests in multiple independent environments.
