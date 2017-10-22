@@ -16,7 +16,9 @@ That is not how a modern test environment should work, because of many reasons: 
 
 In the core repository (that contains the main component, [sensenet Services](https://github.com/SenseNet/sensenet)) we started small. Added a few real unit tests (and moved some from the old test project) that covered only a certain class or method and did not require the whole repository to run.
 
-After that we started investigating the possibility of writing new unit tests for modules that needed the repository - but without actually starting it. We realised that it would require a thremendous amount of refactoring to make the codebase 100% unit test friendly with classes that support dependency injection in a natural way. It would take too much time and break so many existing apis that it was not a option.
+After that we started investigating the possibility of writing new unit tests for modules that needed the repository - but without actually starting it. We realised that it would require a thremendous amount of refactoring to make the codebase 100% unit test friendly with classes that support dependency injection in a natural way. It would take too much time and break so many existing apis that it was not an option.
+
+![Testing an ECM product](/img/posts/inmemory_database.png)
 
 ## A whole database in memory
 In sensenet ECM you cannot load a content or execute a query without a running index and an accessible database - and this is somewhat important in case of a system that is designed around content and queries :).
