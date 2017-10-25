@@ -10,7 +10,7 @@ tags: [test, database]
 ## Testing a complete ECM platform in memory
 In the previous version of sensenet ECM we had many tests, 1400+. They covered most of the codebase, but unfortunately only some of them were real unit tests. Most of them were integration tests, involving multiple layers of the product, and as such, in many cases they required a fully installed sensenet ECM database in place.
 
-That is not how a modern test environment should work, because of many reasons: speed, maintainability, flexibility.
+That is not how a modern test environment should work because of many reasons, mainly speed, maintainability, flexibility.
 
 > So we started over.
 
