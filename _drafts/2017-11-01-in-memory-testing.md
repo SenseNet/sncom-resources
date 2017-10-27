@@ -25,7 +25,7 @@ In sensenet ECM you cannot load a content or execute a query without a running i
 
 > Even if an API does not indicate a content operation, it may involve accessing and modifying data in the background.
 
-We started to experiment with simulating the database in memory and implementing load and save operations on top of that. It turned out that @kavics was able to construct an in-memory db in just a few days. The trick was that it was not a fully operational data provider - he just implemented the parts that were essential for covering the test scenarios we needed.
+We started to experiment with simulating the database in memory and implementing load and save operations on top of that. It turned out that [@kavics](https://github.com/kavics) was able to construct an in-memory db in just a few days. The trick was that it was not a fully operational data provider - he just implemented the parts that were essential for covering the test scenarios we needed.
 
 ## Providers, providers, providers
 In case of sensenet ECM practically everything happens in the context of a "running repository". You cannot do much before all the managers, services and providers are started properly. So the next problem to solve was to be able to replace these real-life providers with mock ones so that the tests can concentrate on a single feature. Luckily most of these providers were already replaceable, it was just hidden in many different parts of the api.
