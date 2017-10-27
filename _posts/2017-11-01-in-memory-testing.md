@@ -2,7 +2,7 @@
 
 title: "In-memory testing in sensenet ECM"
 author: tusmester
-image: "../img/posts/inmemory_testing.png"
+image: "../img/posts/inmemory_testing.jpg"
 tags: [test, database]
 
 ---
