@@ -81,8 +81,6 @@ const repository = new Repository.SnRepository({
   RepositoryUrl: 'https://mysensenetsite.com'
 });
 
-repository.Config
-
 ReactDOM.render(
   <App />,
   document.getElementById('root') as HTMLElement
