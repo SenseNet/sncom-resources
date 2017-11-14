@@ -23,7 +23,13 @@ layout: default
           </h2>
           <div class="who-when">
               <i class="fa fa-calendar"></i><time class="blog-index-time">{{ post.date | date: '%B %d, %Y' }}</time>
-              <a href="https://github.com/{{ post.author }}" class="author-link"><img src="https://github.com/{{ post.author }}.png?size=36" alt="{{ post.author }}" class="avatar mr-2">{{ post.author }}</a>
+              {% if post.author[1] %}
+                {% for author in post.author %}
+                  <a href="https://github.com/{{ author }}" class="author-link"><img src="https://github.com/{{ author }}.png?size=36" alt="{{ author }}" class="avatar mr-2">{{ author }}</a>
+                {% endfor %}
+              {% else %}
+                <a href="https://github.com/{{ post.author }}" class="author-link"><img src="https://github.com/{{ post.author }}.png?size=36" alt="{{ post.author }}" class="avatar mr-2">{{ post.author }}</a>              
+              {% endif %}
             </div>
           {% if post.image  != '' %}
           <img src="{{post.image}}" alt="{{post.title}}" class="post-image" />
