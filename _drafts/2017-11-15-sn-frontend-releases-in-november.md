@@ -45,6 +45,13 @@ Learn more about the batch operations in [sn-redux](https://github.com/SenseNet/
 
 ### OAuth
 
-## What's next
+Since the needed provider was ready both on the backend and in sn-client-js it was a must to add an action to handle login (and registration) with Google account in sn-redux too. However the after-login process is the same a new epic called ```userLoginGoogleEpic``` is created. This new epic is subscribed to the new login request action but if it was responded successfully or if it was failed it dispatches the same actions that are used in the simple login process. 
+
+## What's next?
 
 ![Got stuff to do, can't talk now](/img/posts/busy.gif)
+
+- ContentTypes vs. Schemas
+- CTD improvements (grouping, ordering, icons, etc)
+- Localization
+- scoped npm packages
