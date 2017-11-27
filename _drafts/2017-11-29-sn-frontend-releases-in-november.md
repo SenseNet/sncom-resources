@@ -13,7 +13,7 @@ Busy weeks behind us at the frontend division of the sensenet team. New features
 
 ## sn-client-js 3.0.0
 
-[sn-client-js](https://github.com/SenseNet/sn-client-js) is the core - and a main entry point - of our client side packages. It contains logic about interacting a Repository, authentication, querying and  has the built-in content types bundled.
+[sn-client-js](https://github.com/SenseNet/sn-client-js) is the core - and a main entry point - of our client side packages. It contains logic about interacting with a Repository, authentication, querying and has the built-in content types bundled.
 
 ### Cleaning up the concepts of a Content Type
 
@@ -31,8 +31,8 @@ Now we've extracted our *Content* (now *ContentInternal*) class from the inherit
 
 ### Repository bound schemas
 
-ContentTypes and Schemas both describes content. At the moment Schemas are used for dynamic form generation and validation. Schemas - unlike ContentTypes - can change at runtime. Right after you change a Content Type Definition (e.g. add a new required field in the old Explore, or maybe in one of the future release of our admin GUI ;)) you will expect that the next content you create will pick up the change.
-At the moment Schemas are generated as well, but from now they are used only as *defaults*. Repository instances have their own *Schema stores* and their content can be *replaced*. We plan to add a live Schema reload feature in an upcoming release.
+ContentTypes and Schemas both describe content. At the moment Schemas are used for dynamic form generation and validation. Schemas - unlike ContentTypes - can change at runtime. Right after you change a Content Type Definition (e.g. add a new required field in the old Explore, or maybe in one of the future release of our admin GUI ;)) you will expect that the next content you create will pick up the change.
+At the moment Schemas are generated as well, but from now on they are used only as *defaults*. Repository instances have their own *Schema stores* and their content can be *replaced*. We plan to add a live Schema reload feature in an upcoming release.
 
 ### Upload
 
@@ -41,7 +41,7 @@ Upload options has been extended with additional OData parameters in this releas
 
 ### Batch actions
 
-Batch actions (copy, move and delete) has been improved on both back- and frontend. Now the client will receive a verbose response - per operation - and can trigger exactly the same repository events as for single operations. Let's take a look at the example *batch copy* operation response.
+Batch actions (copy, move and delete) have been improved on both back- and frontend. Now the client will receive a verbose response - per operation - and can trigger exactly the same repository events as for single operations. Let's take a look at the example *batch copy* operation response.
 ```json
 {
    "d": {
@@ -67,7 +67,7 @@ Batch actions (copy, move and delete) has been improved on both back- and fronte
      }
 }
 ```
-The following operation will publish two **repository.Events.OnContentCreated** events and an additional **repository.Events.OnContentCreateFailed** for a single HTTP request.
+The operation above will fire two **repository.Events.OnContentCreated** events and an additional **repository.Events.OnContentCreateFailed** for a single HTTP request.
 
 But what can you do with batch operations and [repository events](/api/sn-client-js/classes/repository.repositoryeventhub.html)?
 
@@ -78,7 +78,7 @@ Imagine some separate components (e.g. a *tree*, a *content list* and a *breadcr
 // an array to store the actual subscriptions
 private Subscriptions: Subscription[] = [];
 
-// once the component is attached, load it's data once than update it incrementally
+// once the component is attached, load it's data once then update it incrementally
 async attached(){
     await this.LoadInitialData();
     const events = this.Repository.Events;
@@ -105,7 +105,7 @@ We've added OAuth provider support for the JWT Authentication service. This mean
 
 ## sn-client-auth-google 1.0.0
 
-This package is our first official client-side OAuth provider. It requires sensenet ^7.0.0 with an installed SN7 OAuth provider and a [Google API Console project](https://developers.google.com/identity/sign-in/web/devconsole-project). You can use it with or without the official [Google Platform Library](https://developers.google.com/identity/sign-in/web/sign-in) or any third party component that can retrieve an *id_token*.
+This package is our first official client-side OAuth provider. It requires sensenet ^7.0.0 with an installed SN7 [OAuth provider](https://github.com/SenseNet/sn-oauth-google) and a [Google API Console project](https://developers.google.com/identity/sign-in/web/devconsole-project). You can use it with or without the official [Google Platform Library](https://developers.google.com/identity/sign-in/web/sign-in) or any third party component that can retrieve an *id_token*.
 
 We've focused on keeping this library straightforward and easy-to-use, hopefully you can integrate it within a few minutes - after checking an example in the [readme](https://github.com/SenseNet/sn-client-auth-google).
 ![Simple and straightforward OAuth login with sensenet ECM and Google](/img/posts/sn-client-300-google-oauth2.gif "Simple and straightforward OAuth login with sensenet ECM and Google")
@@ -113,11 +113,11 @@ We've focused on keeping this library straightforward and easy-to-use, hopefully
 
 ## sn-redux 3.4.0
 
-[sn-redux](https://github.com/SenseNet/sn-redux) always keeps an eye on [sn-client-js](https://github.com/SenseNet/sn-client-js), we're working mostly in paralell and this is how it happened this time. Learn how the new features was added and what and how you can achieve with them.
+[sn-redux](https://github.com/SenseNet/sn-redux) always keeps an eye on [sn-client-js](https://github.com/SenseNet/sn-client-js), we're working mostly in paralell and this is how it happened this time. Learn how the new features were added and what and how you can achieve with them.
 
 ### Upload
 
-There're three new actions to handle the upload related stuff. One for an upload request (can only handle one file at once), one for handling if a file was uploaded successfully and one for the upload failure. The upload functionality is implemented in the related reducers too, so if a new file was uploaded, its id is added to the ```ids``` array and the ```entities``` object will contain the new content. Of course there's a new [redux-observable](https://redux-observable.js.org/) epic handling the ajax request in the background, so to have the upload functionality you have to call the upload action simply:
+There're three new actions to handle the upload related stuff. One for an upload request (can only handle one file at once), one for handling if a file was uploaded successfully and one for the upload failure. The upload functionality is implemented in the related reducers too, so if a new file was uploaded, its id is added to the ```ids``` array and the ```entities``` object will contain the new content. Of course there's a new [redux-observable](https://redux-observable.js.org/) epic handling the ajax request in the background, so to have the upload functionality you simply have to call the upload action:
 
 ```typescript
 Actions.UploadRequest(content, file)
