@@ -26,7 +26,7 @@ Now we've extracted our *Content* (now *ContentInternal*) class from the inherit
  - We coluld remove *all* logics from the generated Content Type Definitions. That means roughly 1000 lines of code :)
  - Using your own custom Content Types will be much easier. You only have to define a new Typescript class that implements IContent and you can use it
 
- ![Using a custom Content Type cannot be more simple](/img/posts/sn-client-300-batchmove.gif "Using a custom Content Type cannot be more simple")
+ ![Using a custom Content Type cannot be more simple](/img/posts/sn-client-300-custom-content-types.gif "Using a custom Content Type cannot be more simple")
 
 
 ### Repository bound schemas
