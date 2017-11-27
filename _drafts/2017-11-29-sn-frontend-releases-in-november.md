@@ -141,7 +141,13 @@ Since the needed provider was ready both on the backend and in sn-client-js it w
 
 ![Got stuff to do, can't talk now](/img/posts/busy.gif)
 
-- ContentTypes vs. Schemas
-- CTD improvements (grouping, ordering, icons, etc)
-- Localization
-- scoped npm packages
+Let's see in a few words what is in our backlog for the winter:
+
+#### Scoped npm packages
+As [sn-client-js](https://github.com/SenseNet/sn-client-js) started to grow too fast it will be a good idea to divide it into multiple packages. We should change our naming conventions with our NPM packages and introduce package scoping for @sensenet specific packages just like [@Material](https://github.com/material), [@angular](https://github.com/angular), [@aurelia](https://github.com/aurelia) or [@ReactiveX](https://github.com/reactivex) did it.
+#### ContentTypes vs. Schemas
+Since ```ContentTypes``` and ```Schemas``` as auto-generated classes are bundled together and tightly coupled with the ```Repository``` object, we cannot extend or add content types from different packages (sensenet Services, Webpages, etc). So we should distribute ContentTypes in a separate package in the future to allow adding Content types and Schemas without changing [sn-client-js](https://github.com/SenseNet/sn-client-js).
+#### CTD improvements 
+Sensenet's Content Type Definitions are awesome but they need a facelift from time to time. This time it means some major improvements like adding solutions for field grouping, ordering and some changes around Icon property to handle font-icon libraries like [Material icons](https://material.io/icons/) or [Font awesome](http://fontawesome.io/)
+#### Localization
+String resources were enable on the client-side through [sensenet's built-in bundling and dependency handling mechanism](http://wiki.sensenet.com/How_to_internationalize_javascripts). Since we build separate applications with communicating through OData We have to figure out how localized string resources can be distributed from sensenet ECM to the client.
