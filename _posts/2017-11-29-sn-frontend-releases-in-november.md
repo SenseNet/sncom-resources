@@ -23,7 +23,7 @@ Content **&rarr;** GenericContent **&rarr;** User
 
 Now we've extracted our *Content* (now *ContentInternal*) class from the inheritance chain and created a Type Alias called 'Content<T>' - this one is an Union Type of *ContentInternal* and the specified Type. There are some of the many benefits of this change
  - If you are using plain JavaScript, you don't even have to care about Content Types (except when creating a Content)
- - We coluld remove *all* logics from the generated Content Type Definitions. That means roughly 1000 lines of code :)
+ - We could remove *all* logics from the generated Content Type Definitions. That means roughly 1000 lines of code :)
  - Using your own custom Content Types will be much easier. You only have to define a new Typescript class that implements IContent and you can use it
 
  ![Using a custom Content Type cannot be more simple](/img/posts/sn-client-300-custom-content-types.gif "Using a custom Content Type cannot be more simple")
