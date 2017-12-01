@@ -11,7 +11,7 @@ sensenet EMC's new version is full of possibilites. One of them is the capabilit
 
 ---
 
-## Prerequisits
+## Prerequisites
 
 First of all you need a sensenet ECM instance installed. Following project will get and set data from the Content Repository through OData REST API so it would be enough to install [sensenet services](https://github.com/SenseNet/sensenet), but since sensenet 7 is under development and it has not got its own admin surface yet probably your life will be easier if you install [sn-webpages](https://github.com/SenseNet/sn-webpages) too. With sn-webpages you can reach the good old Content Explorer with the control over all the users, permissions, settings, content types and many more.
 
