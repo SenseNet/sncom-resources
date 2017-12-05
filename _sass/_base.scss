@@ -39,7 +39,19 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    width: 50%;
     max-width: 800px;
+    
+    @media screen and (max-width: 1100px) and (min-width: 800px) {
+        margin-right: 0;
+        margin-left: 25%;
+        width: 70%
+    }
+    @media screen and (max-width: 800px) {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
