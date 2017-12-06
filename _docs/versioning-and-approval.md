@@ -1,6 +1,6 @@
 ---
 title: "Versioning and approval"
-source_url: 'https://github.com/SenseNet/sensenet/docs/versioning-and-approval.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/versioning-and-approval.md'
 category: Concepts
 version: v6.0
 tags: [versioning, approval, document management, sn6, sn7]

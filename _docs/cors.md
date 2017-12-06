@@ -1,6 +1,6 @@
 ---
 title: "Cross-origin resource sharing"
-source_url: 'https://github.com/SenseNet/sensenet/docs/cors.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/cors.md'
 category: Development
 version: v7.0
 tags: [CORS, authentication, jwt, login, origin, http headers, preflight, OData, REST]

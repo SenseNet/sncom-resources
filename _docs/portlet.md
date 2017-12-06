@@ -1,6 +1,6 @@
 ---
 title: "Portlet"
-source_url: 'https://github.com/SenseNet/sensenet/docs/portlet.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/portlet.md'
 category: Development
 version: v6.0
 tags: [portlet, page, context, cache, sn6, sn7]

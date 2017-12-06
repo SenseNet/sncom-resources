@@ -1,6 +1,6 @@
 ---
 title: "Action"
-source_url: 'https://github.com/SenseNet/sensenet/docs/action.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/action.md'
 category: Development
 version: v6.0
 tags: [action, application, smart application model, sn6, sn7]

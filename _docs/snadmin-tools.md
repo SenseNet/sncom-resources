@@ -1,6 +1,6 @@
 ---
 title: "SnAdmin tools"
-source_url: 'https://github.com/SenseNet/sensenet/docs/snadmin-tools.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-tools.md'
 category: Development
 version: v6.5.5
 tags: [snadmin, upgrade, tool, package, index, export, import, sn6, sn7]
@@ -52,6 +52,26 @@ SnAdmin export source:"/Root/Sites/MySite/articles" target:"c:\localrepo"
 Exporting only selected (filtered) content items using the [Content Query syntax](/docs/content-query-syntax):
 ``` text
 SnAdmin export source:"/Root/Sites/MySite/articles" target:"c:\localrepo" filter:"+TypeIs:Article +CreationDate:<@@CurrentDate+3days@@"
+```
+
+## delete
+Deletes a content from the repository.
+
+``` text
+SnAdmin delete path:/Root/MyFolder/MyContent
+```
+
+## seturl
+Setting a url on the default site:
+
+``` text
+SnAdmin seturl url:demo.example.com
+```
+
+A more complex scenario:
+
+``` text
+SnAdmin seturl url:demo.example.com site:MySite authenticationType:Windows
 ```
 
 ## index

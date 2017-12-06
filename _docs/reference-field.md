@@ -1,6 +1,6 @@
 ---
 title: "Reference Field"
-source_url: 'https://github.com/SenseNet/sensenet/docs/reference-field.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/reference-field.md'
 category: Development
 version: v6.0
 tags: [field, reference, content type, ctd, reference grid, sn6, sn7]

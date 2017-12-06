@@ -1,6 +1,6 @@
 ---
 title: "Built-in SnAdmin steps"
-source_url: 'https://github.com/SenseNet/sensenet/docs/snadmin-builtin-steps.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-builtin-steps.md'
 category: Development
 version: v6.3.1
 tags: [snadmin, upgrade, package, step, sn6, sn7]
@@ -9,6 +9,10 @@ description: This article lists all the available built-in SnAdmin steps that ar
 
 # Built-in SnAdmin steps
 **sensenet ECM** evolves constantly and we release new versions of the product from time to time. To make the upgrade easier we offer **upgrade packages** for *Enterprise* customers. *Community* customers can take advantage of this packaging framework also, to create their own upgrade packages or aid their **build processes**. This article lists all the available built-in steps that are shipped with the product and can be used to build a package.
+
+>To learn more about the tool we use to execute these packages, please check out the [SnAdmin](https://github.com/SenseNet/sn-admin) repository.
+> 
+>Developers may create their own [custom steps](http://community.sensenet.com/docs/tutorials/snadmin-create-custom-step) to extend the built-in API.
 
 ## Basic steps
 ### Assign
@@ -237,6 +241,70 @@ If the “import” directory contains a content “MyContent”, after the exec
 ### ImportSchema
 >This step is deprecated, use the more generic **Import** step to import all kinds of content, even content types to the repository.
 
+### SetField
+- Full name: `SenseNet.Packaging.Steps.SetField`
+- Default property: `Value`
+- Additional properties: `Content, Name, Fields, Overwrite`
+
+> This step can be placed in ForEach steps' Block sections.
+
+Sets one or more field values on the provided content. By default the field values will be overwritten unconditionally, but if you set the *overwrite* property to false, fields that already contain a value will be skipped.
+
+```xml
+<SetField name="Description" content="/Root/MyContent"><![CDATA[New description]]></SetField>
+
+<SetField name="IncomingEmailWorkflow" content="/Root/ContentTemplates/DocumentLibrary/Document_Library" overwrite="@overwrite">
+   <Value>
+      <Path>/Root/System/Schema/ContentTypes/GenericContent/Workflow/MailProcessorWorkflow</Path>
+   </Value>
+</SetField>
+
+<SetField content="/Root/ContentTemplates/EventList/Calendar" overwrite="@overwrite">
+   <Fields>
+      <Field name="IncomingEmailWorkflow">
+         <Value>
+            <Path>/Root/System/Schema/ContentTypes/GenericContent/Workflow/MailProcessorWorkflow</Path>
+         </Value>
+      </Field>
+   </Fields>   	
+</SetField>
+```
+
+### AddReference
+- Full name: `SenseNet.Packaging.Steps.AddReference`
+- Default property: -
+- Additional properties: `Content, Name, Value, Fields`
+
+> This step can be placed in ForEach steps' Block sections.
+
+Adds one or more content as a reference to a reference field. Previous list is preserved, this is an addition. Both path and id work.
+
+```xml
+<AddReference name="Members" content="/Root/IMS/BuiltIn/Portal/HR">
+   <Value>
+      <Path>/Root/IMS/BuiltIn/johnsmiths</Path>
+      <Id>12345</Id>
+   </Value>
+</AddReference>
+```
+
+### RemoveReference
+- Full name: `SenseNet.Packaging.Steps.RemoveReference`
+- Default property: -
+- Additional properties: `Content, Name, Value, Fields`
+
+> This step can be placed in ForEach steps' Block sections.
+
+Removes one or more content from a reference field. All other referenced values remain untouched. Both path and id work.
+
+```xml
+<RemoveReference name="Members" content="/Root/IMS/BuiltIn/Portal/HR">
+   <Value>
+      <Path>/Root/IMS/BuiltIn/johnsmiths</Path>
+   </Value>
+</RemoveReference>
+```
+
 ### Rename
 -   Full name: `SenseNet.Packaging.Steps.Rename`
 -   Default property: `NewName`
@@ -273,6 +341,21 @@ Loads a content or a text file defined by the Path property (on all configured w
 If the Path is a Content Repository path, than you can define a Field (optionally) to target any content field.
 
 You can define either the *Template* or the *Regex* property for searching replaceable text, but **not both of them**.
+
+### SetUrl
+- Full name: `SenseNet.Packaging.Steps.SetUrl`
+- Default property: `Url`
+- Additional properties: `Site, AuthenticationType` 
+
+Sets a url on a site content in the Content Repository. If the url is already assigned to another site, this step will fail.
+
+>Please make sure that a **StartRepository** step precedes this one to make sure that the repository is started.
+
+```xml
+<SetUrl site="sitename">url</SetUrl>
+```
+
+>There is predefined SnAdmin [tool package](/docs/snadmin-tools) that contains this step, you can execute it from the command line.
 
 ## JSON text
 ### EditJson
@@ -413,6 +496,75 @@ Target XML after execution:
 <testxml>
   <element attr="Forty two"/>
   <element attr="43"/>
+</testxml>
+```
+### MoveXmlElement
+- Full name: `SenseNet.Packaging.Steps.MoveXmlElement`
+- Default property: -
+- Additional properties: `Xpath, TargetXpath, TargetParentXpath, TargetName, File, Content, Field`
+
+Moves the given xml elements (selected by the Xpath property) as child elements under the xml element determined by the TargetXpath property. The xml can be in the file system (usually a .config file) or in the Content Repository (a field value of a content).
+
+If the target element does not exist, you can configure this step to create it by providing an xpath value of the *parent* element of the target (using the TargetParentXpath property) and the name of the target (TargetName property).
+
+>If the target is a content, please make sure that a **StartRepository** step precedes this one to make sure that the repository is started.
+
+For example we want to modify the “test.xml” file in the App\_Data directory. First here is the package step:
+``` xml
+<MoveXmlElement file="App_Data\test.xml" xpath="/testxml/oldsection/myElement" targetXpath="/testxml/target" />
+```
+The target XML before execution:
+``` xml
+<?xml version="1.0" encoding="utf-8"?>
+<testxml>
+  <target></target>
+  <oldsection>
+    <myElement key="abc" />
+    <nestedElement />
+  </oldsection>
+</testxml>
+```
+Target XML after execution:
+``` xml
+<?xml version="1.0" encoding="utf-8"?>
+<testxml>
+  <target>
+    <myElement key="abc" />
+  </target>
+  <oldsection>
+    <nestedElement />
+  </oldsection>
+</testxml>
+```
+
+Moving multiple elements to a new section:
+``` xml
+<MoveXmlElement file="App_Data\test.xml" xpath="/testxml/oldsection/myElement[contains(@key, 'abc')]" targetXpath="/testxml/target" targetParentXpath="/testxml" targetName="target" />
+```
+The target XML before execution:
+``` xml
+<?xml version="1.0" encoding="utf-8"?>
+<testxml>
+  <oldsection>
+    <myElement key="abc1" />
+    <myElement key="abc2" />
+    <myElement key="def" />
+    <nestedElement />
+  </oldsection>
+</testxml>
+```
+Target XML after execution:
+``` xml
+<?xml version="1.0" encoding="utf-8"?>
+<testxml>
+  <oldsection>
+    <myElement key="def" />
+    <nestedElement />
+  </oldsection>
+  <target>
+    <myElement key="abc1" />
+    <myElement key="abc2" />
+  </target>
 </testxml>
 ```
 
@@ -1072,25 +1224,25 @@ In the opposite case, when an error is detected in the environment and any furth
 ```
 
 ### CreateEventLog
-- Full name: `vSenseNet.Packaging.Steps.CreateEventLog`
+- Full name: `SenseNet.Packaging.Steps.CreateEventLog`
 - Default property: -
 - Additional properties: `LogName, Machine, Sources`
 
 System step for creating the provided log and source in Windows Event log.
 
->There is predefined SnAdmin [tool package](snadmin-tools) that contains this step, you can execute it from the command line.
+>There is predefined SnAdmin [tool package](/docs/snadmin-tools) that contains this step, you can execute it from the command line.
 
 ```xml
 <CreateEventLog LogName="@logName" Machine="@machine" Sources="@sources" />
 ```
-##x DeleteEventLog
-- Full name: `SenseNet.Packaging.Steps.CreateEventLog`
+### DeleteEventLog
+- Full name: `SenseNet.Packaging.Steps.DeleteEventLog`
 - Default property: -
 - Additional properties: `LogName, Machine, Sources`
 
 System step for deleting the provided log and source from the Windows Event log.
 
->There is predefined SnAdmin [tool package](snadmin-tools) that contains this step, you can execute it from the command line.
+>There is predefined SnAdmin [tool package](/docs/snadmin-tools) that contains this step, you can execute it from the command line.
 
 ```xml
 <DeleteEventLog LogName="@logName" Machine="@machine" Sources="@sources" />
