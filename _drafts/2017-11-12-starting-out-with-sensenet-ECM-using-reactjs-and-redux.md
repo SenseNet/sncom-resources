@@ -13,12 +13,12 @@ sensenet EMC's new version is full of possibilites. One of them is the capabilit
 
 ## Prerequisites
 
-First of all you need a sensenet ECM instance installed. Following project will get and set data from the Content Repository through OData REST API so it would be enough to install [sensenet services](https://github.com/SenseNet/sensenet), but since sensenet 7 is under development and it has not got its own admin surface yet probably your life will be easier if you install [sn-webpages](https://github.com/SenseNet/sn-webpages) too. With sn-webpages you can reach the good old Content Explorer with the control over all the users, permissions, settings, content types and many more.
+First of all you need a sensenet ECM instance installed. The following project will get and set data from the Content Repository through OData REST API so it would be enough to install [sensenet Services](https://github.com/SenseNet/sensenet), but since sensenet 7 has not got its own admin surface yet probably your life will be easier if you install [sensenet Webpages](https://github.com/SenseNet/sn-webpages) too. With sn-webpages you can access the good old Content Explorer with the control over all the users, permissions, settings, content types and many more.
 
 
 ## Avoid the pitfalls
 
-Maybe you are already familiar with [create-react-app](https://github.com/facebookincubator/create-react-app) which is an awesome tool that helps you creating React apps without ANY build configuration. Since we at sensenet write our code in TypeScript we use the forked TypeScript version [create-react-app-typescript](https://github.com/wmonk/create-react-app-typescript) of it but it's not a mandatory of course. To have a running basic React application, all you have to do is:
+Maybe you are already familiar with [create-react-app](https://github.com/facebookincubator/create-react-app) which is an awesome tool that helps you creating React apps without ANY build configuration. Since we at sensenet write our code in TypeScript we use the forked TypeScript version [create-react-app-typescript](https://github.com/wmonk/create-react-app-typescript) of it but it's not mandatory of course. To have a running basic React application, all you have to do is:
 
 1. Install create-react-app with npm:
 
@@ -45,7 +45,7 @@ And voila, your app is running in the browser :)
 
 ## Connect to sensenet ECM
  
-To let your app communicate with the sensenet instance you have to allow its domain as the origin of [CORS](http://wiki.sensenet.com/Cross-origin_resource_sharing) requests. The easiest way to do this if you open the Content Explorer and add your apps url to the ```AllowedOriginDomains``` list in the PortalSettings.setting (/Root/System/Settings/Portal.settings)
+To let your app communicate with the sensenet instance you have to allow its domain as the origin of [CORS](http://wiki.sensenet.com/Cross-origin_resource_sharing) requests. The easiest way to do this if you open the Content Explorer and add your apps url to the ```AllowedOriginDomains``` list in the Portal settings file (*/Root/System/Settings/Portal.settings*)
 
 ```xml
 ...
@@ -66,7 +66,7 @@ npm install --save-dev sn-client-js
 
  > If you are interested more in client repostory and how to take advantage of sn-client-js check its [API references](https://community.sensenet.com/api/sn-client-js/).
 
-Import it into your React applications ```index.tsx``` as a dependency and create a new ```SnRepository``` with the url of your sensenet ECM instance
+Import it into your React application's ```index.tsx``` as a dependency and create a new ```SnRepository``` with the url of your sensenet ECM instance
 
 ```typescript
 import * as React from 'react';
@@ -90,9 +90,9 @@ registerServiceWorker();
 
 ## sensenet state tree with Redux
 
-To manage our applications state we use [Redux](https://redux.js.org/) and to make your life even more easy to work on this stack, we've created [sn-redux](https://github.com/SenseNet/sn-redux) that is a set of redux actions, reducers and redux-ovbservable epics for sensenet ECM. In sn-redux we've implemented the main sensenet content operations so all you have to do is dispatch them and get everything from the state tree through predefined reducers. If you're intrested - and why would you not - how sensenet EMC's redux store is built up, check [Diving deeper into sensenet ECM's Redux store](https://community.sensenet.com/blog/2017/09/20/refactoring-sensenet-redux-store). 
+To manage our application's state we use [Redux](https://redux.js.org/) and to make your life even more easy to work on this stack, we've created [sn-redux](https://github.com/SenseNet/sn-redux) that is a set of redux actions, reducers and redux-ovbservable epics for sensenet ECM. In sn-redux we've implemented the main sensenet content operations so all you have to do is dispatch them and get everything from the state tree through predefined reducers. If you're intrested - and why would you not - how sensenet EMC's redux store is built up, check [Diving deeper into sensenet ECM's Redux store](https://community.sensenet.com/blog/2017/09/20/refactoring-sensenet-redux-store). 
 
-To create and configure your applications state container:
+To create and configure your application's state container:
 
 1. Install sn-redux
 
@@ -107,7 +107,7 @@ import { combineReducers } from 'redux'
 import { Store, Actions, Reducers } from 'sn-redux'
 ```
 
-3. Create your apps top reducer ```sensenet```
+3. Create your app's top reducer ```sensenet```
 
 ```typescript
 const sensenet = Reducers.sensenet;
@@ -148,7 +148,7 @@ ReactDOM.render(
 ...
 ```
 
-Now you are able to dispatch the predefined actions on the store, and connecting the store to your Reactjs components you can subscribe on the changes, use and display anything that can be found in the state tree.
+Now you are able to dispatch the predefined actions on the store, and connecting the store to your Reactjs components you can subscribe to the changes, use and display anything that can be found in the state tree.
 
 > See the available actions in the [sn-redux API references](https://www.sensenet.com/Root/Sites/sensenet.com/documentation/sn-redux/modules/_actions_.actions.html).
 
@@ -220,7 +220,7 @@ export default connect(mapStateToProps, {
 })(List);
 ```
 
-As you can see the component is connected to the Redux store this way we are able to dispatch the above listed actions (```UserLogout``` and ```RequestContent```) and get some properties (fetched children items and the array with their id's) from the state tree through Reducers predefined in sn-redux.
+As you can see the component is connected to the Redux store. This way we are able to dispatch the actions listed above (```UserLogout``` and ```RequestContent```) and get some properties (fetched child items and the array containing their ids) from the state tree through Reducers predefined in sn-redux.
 
 #### Create a login component:
 
@@ -248,7 +248,7 @@ export const Login = ({ formSubmit }) => {
   };
 ```
 
-The login component is a simple stateless component. It is a tiny form with two input fields to let user give her name and password. After submit it pass the name and password to a function defined in the parent component which function will dispatch the login action.
+The login component is a simple stateless component. It is a tiny form with two input fields to let the user give her name and password. After submit it passes the name and password to a function defined in the parent component which will dispatch the login action.
 
 #### Finalize the App component
 
@@ -330,7 +330,7 @@ export default withRouter(connect(
   })(App));
 ```
 
-The App component is completed with routing to handle the redirect to the content list when the user is logged in and to the login form if she is not. This component is also connected to the store to get the users current login state - which helps the app where the it should be redirected - and to get the login action itself.
+The App component is completed with routing to handle the redirect to the content list when the user is logged in and to the login form if she is not. This component is also connected to the store to get the user's current login state - which helps the app where it should be redirected - and to get the login action itself.
 
 ![login](/img/posts/react-app-login.png)
 
