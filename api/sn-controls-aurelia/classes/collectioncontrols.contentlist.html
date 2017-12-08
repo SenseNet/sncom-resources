@@ -1,0 +1,1179 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ContentList | sn-controls-aurelia</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">sn-controls-aurelia</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/collectioncontrols.html">CollectionControls</a>
+				</li>
+				<li>
+					<a href="collectioncontrols.contentlist.html">ContentList</a>
+				</li>
+			</ul>
+			<h1>Class ContentList</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Component that lets you display and work with a simple Content Collection</p>
+					</div>
+					<p>Usage example:</p>
+					<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">content-list</span> <span class="hljs-attr">scope.bind</span>=<span class="hljs-string">"Scope"</span>
+     <span class="hljs-attr">get-items.call</span>=<span class="hljs-string">"GetSelectedChildren(scope, query)"</span>
+     <span class="hljs-attr">on-activate.call</span>=<span class="hljs-string">"Select(content)"</span>
+     <span class="hljs-attr">on-drop-files.call</span>=<span class="hljs-string">"FilesDropped(event, files)"</span>
+     <span class="hljs-attr">on-drop-content.call</span>=<span class="hljs-string">"ContentDropped(content)"</span>
+     <span class="hljs-attr">on-drop-content-list.call</span>=<span class="hljs-string">"ContentListDropped(contentList)"</span>
+     <span class="hljs-attr">on-drop-content-on-item.call</span>=<span class="hljs-string">"ContentDroppedOnItem(content, item)"</span>
+     <span class="hljs-attr">on-drop-content-list-on-item.call</span>=<span class="hljs-string">"ContentListDroppedOnItem(contentList, item)"</span>
+     <span class="hljs-attr">view-type.bind</span>=<span class="hljs-string">"ViewType"</span>
+     <span class="hljs-attr">query.bind</span>=<span class="hljs-string">'query'</span>
+     <span class="hljs-attr">selection.two-way</span>=<span class="hljs-string">"SelectedContent"</span>
+     <span class="hljs-attr">actions.bind</span>=<span class="hljs-string">"exploreActions"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">content-list</span>&gt;</span>
+</code></pre>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ContentList</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#actions" class="tsd-kind-icon">Actions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#enableselection" class="tsd-kind-icon">Enable<wbr>Selection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#getitems" class="tsd-kind-icon">Get<wbr>Items</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#isloading" class="tsd-kind-icon">Is<wbr>Loading</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#items" class="tsd-kind-icon">Items</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#multiselect" class="tsd-kind-icon">Multi<wbr>Select</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#onactivate" class="tsd-kind-icon">On<wbr>Activate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#query" class="tsd-kind-icon">Query</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#scope" class="tsd-kind-icon">Scope</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#selection" class="tsd-kind-icon">Selection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#showscope" class="tsd-kind-icon">Show<wbr>Scope</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#viewtype" class="tsd-kind-icon">View<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="collectioncontrols.contentlist.html#selectionchangedsignalkey" class="tsd-kind-icon">selection<wbr>Changed<wbr>Signal<wbr>Key</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#repository" class="tsd-kind-icon">Repository</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#hasscope" class="tsd-kind-icon">has<wbr>Scope</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#ondropcontent" class="tsd-kind-icon">On<wbr>Drop<wbr>Content</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#ondropcontentlist" class="tsd-kind-icon">On<wbr>Drop<wbr>Content<wbr>List</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#ondropcontentlistonitem" class="tsd-kind-icon">On<wbr>Drop<wbr>Content<wbr>List<wbr>OnItem</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#ondropcontentonitem" class="tsd-kind-icon">On<wbr>Drop<wbr>Content<wbr>OnItem</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#ondropfiles" class="tsd-kind-icon">On<wbr>Drop<wbr>Files</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#ondropfilesonitem" class="tsd-kind-icon">On<wbr>Drop<wbr>Files<wbr>OnItem</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#querychanged" class="tsd-kind-icon">Query<wbr>Changed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#reinitialize" class="tsd-kind-icon">Reinitialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#reloadoncontentchange" class="tsd-kind-icon">Reload<wbr>OnContent<wbr>Change</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#scopechanged" class="tsd-kind-icon">Scope<wbr>Changed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#activateitem" class="tsd-kind-icon">activate<wbr>Item</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#clearsubscriptions" class="tsd-kind-icon">clear<wbr>Subscriptions</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#detached" class="tsd-kind-icon">detached</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#dropcontent" class="tsd-kind-icon">drop<wbr>Content</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#dropcontentonitem" class="tsd-kind-icon">drop<wbr>Content<wbr>OnItem</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#handlecontentchanges" class="tsd-kind-icon">handle<wbr>Content<wbr>Changes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#isselected" class="tsd-kind-icon">is<wbr>Selected</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#selectitem" class="tsd-kind-icon">select<wbr>Item</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#toggleselection" class="tsd-kind-icon">toggle<wbr>Selection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="collectioncontrols.contentlist.html#triggeraction" class="tsd-kind-icon">trigger<wbr>Action</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Content<wbr>List<span class="tsd-signature-symbol">(</span>bindingSignaler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BindingSignaler</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="collectioncontrols.contentlist.html" class="tsd-signature-type">ContentList</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:42</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bindingSignaler: <span class="tsd-signature-type">BindingSignaler</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="collectioncontrols.contentlist.html" class="tsd-signature-type">ContentList</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="actions" class="tsd-anchor"></a>
+					<h3>Actions</h3>
+					<div class="tsd-signature tsd-kind-icon">Actions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in collectioncontrols/ContentList.ts:90</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="enableselection" class="tsd-anchor"></a>
+					<h3>Enable<wbr>Selection</h3>
+					<div class="tsd-signature tsd-kind-icon">Enable<wbr>Selection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in collectioncontrols/ContentList.ts:145</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="getitems" class="tsd-anchor"></a>
+					<h3>Get<wbr>Items</h3>
+					<div class="tsd-signature tsd-kind-icon">Get<wbr>Items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in collectioncontrols/ContentList.ts:84</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>params: <span class="tsd-signature-type">object</span></h5>
+												<ul class="tsd-parameters">
+													<li class="tsd-parameter">
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> query<span class="tsd-signature-symbol">?: </span><a href="collectioncontrols.contentlist.html#query" class="tsd-signature-type">Query</a></h5>
+													</li>
+													<li class="tsd-parameter">
+														<h5>scope<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+													</li>
+												</ul>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="isloading" class="tsd-anchor"></a>
+					<h3>Is<wbr>Loading</h3>
+					<div class="tsd-signature tsd-kind-icon">Is<wbr>Loading<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in collectioncontrols/ContentList.ts:49</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="items" class="tsd-anchor"></a>
+					<h3>Items</h3>
+					<div class="tsd-signature tsd-kind-icon">Items<span class="tsd-signature-symbol">:</span> <a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in collectioncontrols/ContentList.ts:249</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="multiselect" class="tsd-anchor"></a>
+					<h3>Multi<wbr>Select</h3>
+					<div class="tsd-signature tsd-kind-icon">Multi<wbr>Select<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in collectioncontrols/ContentList.ts:142</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="onactivate" class="tsd-anchor"></a>
+					<h3>On<wbr>Activate</h3>
+					<div class="tsd-signature tsd-kind-icon">On<wbr>Activate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in collectioncontrols/ContentList.ts:87</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>params: <span class="tsd-signature-type">object</span></h5>
+												<ul class="tsd-parameters">
+													<li class="tsd-parameter">
+														<h5>content<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+													</li>
+												</ul>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="query" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> Query</h3>
+					<div class="tsd-signature tsd-kind-icon">Query<span class="tsd-signature-symbol">:</span> <a href="collectioncontrols.contentlist.html#query" class="tsd-signature-type">Query</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in collectioncontrols/ContentList.ts:63</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="scope" class="tsd-anchor"></a>
+					<h3>Scope</h3>
+					<div class="tsd-signature tsd-kind-icon">Scope<span class="tsd-signature-symbol">:</span> <a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in collectioncontrols/ContentList.ts:52</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="selection" class="tsd-anchor"></a>
+					<h3>Selection</h3>
+					<div class="tsd-signature tsd-kind-icon">Selection<span class="tsd-signature-symbol">:</span> <a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in collectioncontrols/ContentList.ts:55</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="showscope" class="tsd-anchor"></a>
+					<h3>Show<wbr>Scope</h3>
+					<div class="tsd-signature tsd-kind-icon">Show<wbr>Scope<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in collectioncontrols/ContentList.ts:139</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="viewtype" class="tsd-anchor"></a>
+					<h3>View<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">View<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/collectioncontrols.collectionview.html" class="tsd-signature-type">CollectionView</a><span class="tsd-signature-symbol"> =&nbsp;CollectionView.List</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in collectioncontrols/ContentList.ts:136</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="selectionchangedsignalkey" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> selection<wbr>Changed<wbr>Signal<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">selection<wbr>Changed<wbr>Signal<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"content-list-selection-changed"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;content-list-selection-changed&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in collectioncontrols/ContentList.ts:42</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="repository" class="tsd-anchor"></a>
+					<h3>Repository</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> Repository<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BaseRepository</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:68</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">BaseRepository</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="hasscope" class="tsd-anchor"></a>
+					<h3>has<wbr>Scope</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> hasScope<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:58</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondropcontent" class="tsd-anchor"></a>
+					<h3>On<wbr>Drop<wbr>Content</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">On<wbr>Drop<wbr>Content<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:97</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>content<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondropcontentlist" class="tsd-anchor"></a>
+					<h3>On<wbr>Drop<wbr>Content<wbr>List</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">On<wbr>Drop<wbr>Content<wbr>List<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:112</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>content<wbr>List<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">[]</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondropcontentlistonitem" class="tsd-anchor"></a>
+					<h3>On<wbr>Drop<wbr>Content<wbr>List<wbr>OnItem</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">On<wbr>Drop<wbr>Content<wbr>List<wbr>OnItem<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:124</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>content<wbr>List<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">[]</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>item<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondropcontentonitem" class="tsd-anchor"></a>
+					<h3>On<wbr>Drop<wbr>Content<wbr>OnItem</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">On<wbr>Drop<wbr>Content<wbr>OnItem<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:105</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>content<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>item<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondropfiles" class="tsd-anchor"></a>
+					<h3>On<wbr>Drop<wbr>Files</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">On<wbr>Drop<wbr>Files<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:93</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileList</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondropfilesonitem" class="tsd-anchor"></a>
+					<h3>On<wbr>Drop<wbr>Files<wbr>OnItem</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">On<wbr>Drop<wbr>Files<wbr>OnItem<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:118</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileList</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>item<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="querychanged" class="tsd-anchor"></a>
+					<h3>Query<wbr>Changed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Query<wbr>Changed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:244</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="reinitialize" class="tsd-anchor"></a>
+					<h3>Reinitialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Reinitialize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:214</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="reloadoncontentchange" class="tsd-anchor"></a>
+					<h3>Reload<wbr>OnContent<wbr>Change</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Reload<wbr>OnContent<wbr>Change<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:252</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>content: <a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IContent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">true</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="scopechanged" class="tsd-anchor"></a>
+					<h3>Scope<wbr>Changed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Scope<wbr>Changed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:240</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="activateitem" class="tsd-anchor"></a>
+					<h3>activate<wbr>Item</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">activate<wbr>Item<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:147</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>content: <a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clearsubscriptions" class="tsd-anchor"></a>
+					<h3>clear<wbr>Subscriptions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clear<wbr>Subscriptions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:72</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="detached" class="tsd-anchor"></a>
+					<h3>detached</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">detached<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:79</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dropcontent" class="tsd-anchor"></a>
+					<h3>drop<wbr>Content</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">drop<wbr>Content<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span>, stringifiedContent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, stringifiedContentList<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, files<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">FileList</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:269</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">DragEvent</span></h5>
+								</li>
+								<li>
+									<h5>stringifiedContent: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> stringifiedContentList: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> files: <span class="tsd-signature-type">FileList</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dropcontentonitem" class="tsd-anchor"></a>
+					<h3>drop<wbr>Content<wbr>OnItem</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">drop<wbr>Content<wbr>OnItem<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span>, item<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a>, stringifiedContent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, stringifiedContentList<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, files<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">FileList</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:284</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">DragEvent</span></h5>
+								</li>
+								<li>
+									<h5>item: <a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> stringifiedContent: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> stringifiedContentList: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> files: <span class="tsd-signature-type">FileList</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="handlecontentchanges" class="tsd-anchor"></a>
+					<h3>handle<wbr>Content<wbr>Changes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Content<wbr>Changes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>changes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:259</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>changes: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isselected" class="tsd-anchor"></a>
+					<h3>is<wbr>Selected</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Selected<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:210</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>content: <a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="selectitem" class="tsd-anchor"></a>
+					<h3>select<wbr>Item</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">select<wbr>Item<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span>, content<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:151</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">MouseEvent</span></h5>
+								</li>
+								<li>
+									<h5>content: <a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="toggleselection" class="tsd-anchor"></a>
+					<h3>toggle<wbr>Selection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Selection<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span>, content<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:187</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">MouseEvent</span></h5>
+								</li>
+								<li>
+									<h5>content: <a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="triggeraction" class="tsd-anchor"></a>
+					<h3>trigger<wbr>Action</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">trigger<wbr>Action<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span>, action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, item<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in collectioncontrols/ContentList.ts:130</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">MouseEvent</span></h5>
+								</li>
+								<li>
+									<h5>action: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>item: <a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>item: <a href="../enums/_enums_.dragtypes.html#content" class="tsd-signature-type">Content</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_enums_.html">"<wbr>Enums"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/attributes.html">Attributes</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/collectioncontrols.html">Collection<wbr>Controls</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/fieldcontrols.html">Field<wbr>Controls</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/navigationcontrols.html">Navigation<wbr>Controls</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/services.html">Services</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/viewcontrols.html">View<wbr>Controls</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/sn_controls_aurelia.html">sn-<wbr>controls-<wbr>aurelia</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/collectioncontrols.collectionview.html" class="tsd-kind-icon">Collection<wbr>View</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="collectioncontrols.contentlist.html" class="tsd-kind-icon">Content<wbr>List</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#actions" class="tsd-kind-icon">Actions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#enableselection" class="tsd-kind-icon">Enable<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#getitems" class="tsd-kind-icon">Get<wbr>Items</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#isloading" class="tsd-kind-icon">Is<wbr>Loading</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#items" class="tsd-kind-icon">Items</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#multiselect" class="tsd-kind-icon">Multi<wbr>Select</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#onactivate" class="tsd-kind-icon">On<wbr>Activate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#query" class="tsd-kind-icon">Query</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#scope" class="tsd-kind-icon">Scope</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#selection" class="tsd-kind-icon">Selection</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#showscope" class="tsd-kind-icon">Show<wbr>Scope</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#viewtype" class="tsd-kind-icon">View<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="collectioncontrols.contentlist.html#selectionchangedsignalkey" class="tsd-kind-icon">selection<wbr>Changed<wbr>Signal<wbr>Key</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#repository" class="tsd-kind-icon">Repository</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#hasscope" class="tsd-kind-icon">has<wbr>Scope</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#ondropcontent" class="tsd-kind-icon">On<wbr>Drop<wbr>Content</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#ondropcontentlist" class="tsd-kind-icon">On<wbr>Drop<wbr>Content<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#ondropcontentlistonitem" class="tsd-kind-icon">On<wbr>Drop<wbr>Content<wbr>List<wbr>OnItem</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#ondropcontentonitem" class="tsd-kind-icon">On<wbr>Drop<wbr>Content<wbr>OnItem</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#ondropfiles" class="tsd-kind-icon">On<wbr>Drop<wbr>Files</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#ondropfilesonitem" class="tsd-kind-icon">On<wbr>Drop<wbr>Files<wbr>OnItem</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#querychanged" class="tsd-kind-icon">Query<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#reinitialize" class="tsd-kind-icon">Reinitialize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#reloadoncontentchange" class="tsd-kind-icon">Reload<wbr>OnContent<wbr>Change</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#scopechanged" class="tsd-kind-icon">Scope<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#activateitem" class="tsd-kind-icon">activate<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#clearsubscriptions" class="tsd-kind-icon">clear<wbr>Subscriptions</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#detached" class="tsd-kind-icon">detached</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#dropcontent" class="tsd-kind-icon">drop<wbr>Content</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#dropcontentonitem" class="tsd-kind-icon">drop<wbr>Content<wbr>OnItem</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#handlecontentchanges" class="tsd-kind-icon">handle<wbr>Content<wbr>Changes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#isselected" class="tsd-kind-icon">is<wbr>Selected</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#selectitem" class="tsd-kind-icon">select<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#toggleselection" class="tsd-kind-icon">toggle<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="collectioncontrols.contentlist.html#triggeraction" class="tsd-kind-icon">trigger<wbr>Action</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
