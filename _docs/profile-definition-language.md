@@ -1,6 +1,6 @@
 ---
 title: "Benchmark Profile Definition Language"
-source_url: 'https://github.com/SenseNet/sensenet/docs/sn-benchmark'
+source_url: 'https://github.com/SenseNet/sn-benchmark/blob/master/docs/profile-definition-language.md'
 category: Benchmark
 version: v7.0.0
 tags: [benchmark, profile, language, sn7]

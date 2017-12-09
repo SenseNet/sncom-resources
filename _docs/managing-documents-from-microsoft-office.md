@@ -1,6 +1,6 @@
 ---
 title: "Managing Documents from Microsoft Office"
-source_url: 'https://github.com/SenseNet/sensenet/docs/managing-documents-from-microsoft-office.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/managing-documents-from-microsoft-office.md'
 category: Development
 version: v6.0.4
 tags: [document management, office, sn6, sn7]

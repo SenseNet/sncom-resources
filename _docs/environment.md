@@ -1,6 +1,6 @@
 ---
 title: "Preparation of benchmark environment"
-source_url: 'https://github.com/SenseNet/sensenet/docs/sn-benchmark'
+source_url: 'https://github.com/SenseNet/sn-benchmark/blob/master/docs/environment.md'
 category: Benchmark
 version: v7.0.0
 tags: [benchmark, preparation, environment, sn7, mongo, azure]

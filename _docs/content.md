@@ -1,6 +1,6 @@
 ---
 title: "Content"
-source_url: 'https://github.com/SenseNet/sensenet/docs/content.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/content.md'
 category: Development
 version: v6.0
 tags: [content, content repository, content type, sn6, sn7]

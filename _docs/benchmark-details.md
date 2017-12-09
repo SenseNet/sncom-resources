@@ -1,6 +1,6 @@
 ---
 title: "Benchmark details"
-source_url: 'https://github.com/SenseNet/sensenet/docs/sn-benchmark'
+source_url: 'https://github.com/SenseNet/sn-benchmark/blob/master/docs/benchmark-details.md'
 category: Benchmark
 version: v7.0.0
 tags: [benchmark, details, parameters, sn7]

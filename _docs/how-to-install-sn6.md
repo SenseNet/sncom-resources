@@ -1,6 +1,6 @@
 ---
 title:  "Install sensenet 6.5"
-source_url: 'https://github.com/SenseNet/sensenet/docs/how-to-install-sn6-from-source.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/how-to-install-sn6-from-source.md'
 category: Guides
 version: v6.0.0
 tags: install troubleshooting requirements sn6

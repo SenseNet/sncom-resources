@@ -38,7 +38,7 @@ This is why we decided to publish two types of packages for our components:
 <a name="InstallPackage"></a>
 ## Installing sensenet Services
 
-![Sense/Net Services](https://github.com/SenseNet/sn-resources/raw/master/images/sn-components/sn-components_services.png "Sense/Net Services")
+![sensenet Services](https://github.com/SenseNet/sn-resources/raw/master/images/sn-components/sn-components_services.png "sensenet Services")
 
 ### Create a web project and pull in the package(s)
 
@@ -51,7 +51,7 @@ This is why we decided to publish two types of packages for our components:
 <a href="https://www.nuget.org/packages/SenseNet.Services.Install"><img src="https://img.shields.io/nuget/v/SenseNet.Services.Install.svg" /></a>
 </div>
 
-> `Install-Package SenseNet.Services.Install -Pre`
+> `Install-Package SenseNet.Services.Install`
 
 (this will install the other one too, no need to pull that in manually)
 
@@ -61,7 +61,7 @@ This is why we decided to publish two types of packages for our components:
 <a href="https://www.nuget.org/packages/SenseNet.Services"><img src="https://img.shields.io/nuget/v/SenseNet.Services.svg" /></a>
 </div>
 
-> `Install-Package SenseNet.Services -Pre`
+> `Install-Package SenseNet.Services`
 
 ### Web app changes
 > The install process described below is the same that you will see in the _readme.txt_ that appears in *Visual Studio* after adding the install package. 
@@ -183,7 +183,7 @@ $.ajax({
 });
 ````
 
-For detailed examples, please visit the [REST API article](/docs/OData_REST_API).
+For detailed examples, please visit the [REST API article](/docs/odata-rest-api).
 
 <a name="Troubleshooting"></a>
 ## Troubleshooting

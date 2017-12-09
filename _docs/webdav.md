@@ -1,6 +1,6 @@
 ---
 title: "WebDAV"
-source_url: 'https://github.com/SenseNet/sensenet/docs/webdav.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/webdav.md'
 category: Development
 version: v6.0.1
 tags: [webdav, document management, mapping, office, sn6, sn7]

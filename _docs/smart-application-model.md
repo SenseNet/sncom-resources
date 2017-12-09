@@ -1,6 +1,6 @@
 ---
 title: "Smart Application Model"
-source_url: 'https://github.com/SenseNet/sensenet/docs/smart-application-model.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/smart-application-model.md'
 category: Development
 version: v6.0
 tags: [action, application, smart application model, context, binding, portlet, sn6, sn7]

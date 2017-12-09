@@ -1,6 +1,6 @@
 ---
 title: "Built-in OData actions and functions"
-source_url: 'https://github.com/SenseNet/sensenet/docs/built-in-odata-actions-and-functions.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/built-in-odata-actions-and-functions.md'
 category: Development
 version: v6.2.1
 tags: [odata, action, function, javascript, json, ajax, sn6, sn7]

@@ -1,6 +1,6 @@
 ---
 title: "MongoDB blob provider"
-source_url: 'https://github.com/SenseNet/sensenet/docs/mongodb-provider.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/mongodb-provider.md'
 category: Development
 version: v6.5.5
 tags: enterprise blob provider sn6 sn7

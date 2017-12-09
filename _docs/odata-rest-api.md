@@ -1,6 +1,6 @@
 ---
 title: "OData REST API"
-source_url: 'https://github.com/SenseNet/sensenet/docs/odata-rest-api.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/odata-rest-api.md'
 category: Development
 version: v6.2
 tags: [odata, REST, api, json, ajax, action, content repository, sn6, sn7]

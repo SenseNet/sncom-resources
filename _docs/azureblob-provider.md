@@ -1,6 +1,6 @@
 ---
 title: "Azure Blob Storage blob provider"
-source_url: 'https://github.com/SenseNet/sensenet/docs/azureblob-provider.md'
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/azureblob-provider.md'
 category: Development
 version: v7.0.0
 tags: enterprise blob azure storage provider sn7
