@@ -42,19 +42,19 @@ If you are using [sn-client-js](https://github.com/SenseNet/sn-client-js) and/or
 
 ### sn-client-js
 
-We've added OAuth provider support in version 3.0.0. This means that you can implement and add your own client side OAuth provider - just like we did it in [sn-client-auth-google](https://github.com/SenseNet/sn-client-auth-google).
+We've added OAuth provider support in version 3.0.0. This means that you can implement and add your own client side OAuth provider - just like we did in [sn-client-auth-google](https://github.com/SenseNet/sn-client-auth-google).
 
 ### sn-client-auth-google 1.0.0
 
-This is our first official client-side OAuth provider. It requires sensenet ^7.0.0 with configured JWT authentication, an installed SN7 [OAuth provider](https://github.com/SenseNet/sn-oauth-google) and a [Google API Console project](https://developers.google.com/identity/sign-in/web/devconsole-project). You can use it with or without the official [Google Platform Library](https://developers.google.com/identity/sign-in/web/sign-in) or any third party component that can retrieve an *id_token*.
+This is our first official client-side OAuth provider. It requires sensenet ECM ^7.0.0 with configured JWT authentication, an installed SN7 [OAuth provider](https://github.com/SenseNet/sn-oauth-google) and a [Google API Console project](https://developers.google.com/identity/sign-in/web/devconsole-project). You can use it with or without the official [Google Platform Library](https://developers.google.com/identity/sign-in/web/sign-in) or any third party component that can retrieve an *id_token*.
 
 We've focused on keeping this library straightforward and easy-to-use, hopefully you can integrate it within a few minutes - after checking an example in the [readme](https://github.com/SenseNet/sn-client-auth-google).
 
 ### sn-redux
 
-Since the needed provider was ready both on the backend and in [sn-client-js](https://github.com/SenseNet/sn-client-js) it was a must to add an action to handle login (and registration) with Google account in sn-redux too. However the after-login process is the same a new epic called ```userLoginGoogleEpic``` is created. This new epic is subscribed to the new login request action but if it was responded successfully or if it was failed it dispatches the same actions that are used in the simple login process. 
+Since the needed provider was ready both on the backend and in [sn-client-js](https://github.com/SenseNet/sn-client-js) it was a must to add an action to handle login (and registration) with Google account in sn-redux too. However the after-login process is the same: a new epic called ```userLoginGoogleEpic``` is created. This new epic is subscribed to the new login request action, but regardless of the success of the result, it dispatches the same actions that are used in the simple login process. 
 
-### demo
+### Example
 
 Let us demonstrate how easy you can add the above to your app through the steps that were made adding Google authentication to our DMS Demo.
 
@@ -78,7 +78,7 @@ Let us demonstrate how easy you can add the above to your app through the steps 
         ...
     ```
 
-3. Create your custom button or link component, import ```Actions``` from [sn-redux](https://github.com/SenseNet/sn-redux) and now you're able to reach the ```UserLoginGoogle``` and you can dispatch it in the event handler where it is neeeded.
+3. Create your custom button or link component, import ```Actions``` from [sn-redux](https://github.com/SenseNet/sn-redux) and now you're able to access the ```UserLoginGoogle``` function and you can dispatch it in the event handler where it is neeeded.
 
     ```ts
         ...
