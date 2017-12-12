@@ -97,14 +97,14 @@ To create and configure your application's state container:
 1. Install sn-redux
 
 ```
-npm i --save-dev sn-redux
+npm i --save-dev sn-redux sn-client-auth-google
 ```
 
 2. Import the following things to your ```index.tsx```
 
 ```typescript
-import { combineReducers } from 'redux'
-import { Store, Actions, Reducers } from 'sn-redux'
+import { combineReducers } from 'redux';
+import { Store, Actions, Reducers } from 'sn-redux';
 ```
 
 3. Create your app's top reducer ```sensenet```
@@ -119,9 +119,11 @@ const myReducer = combineReducers({
 4. Create and configure your application's store
 
 ```typescript
-const store = Store.configureStore(myReducer, undefined, undefined, {}, repository)
-store.dispatch(Actions.InitSensenetStore('/Root/Sites/Default_Site', { select: 'all' }))
+const store = Store.configureStore(myReducer, undefined, undefined, {}, repository);
+store.dispatch(Actions.InitSensenetStore('/Root/Sites/Default_Site', { select: 'all' }));
 ```
+
+> There're some configuration changes that should be made in the ```tsconfig.json```. First add the following intto the compilereOptions ```"types": ["jest","node"]```. This is needed because create-react-app uses [jest](https://facebook.github.io/jest/) for testing but some of the dependencies like sn-redux using [mocha](https://mochajs.org/), both have a variable named ```describe``` and it causes a conflict in the build process. Another thing to change is to set ```noImplicitAny``` and ```strictNullChecks``` to false in the tsconfig.json and set ```no-any``` to false in ```tslin.json```.
 
 Now if you restart the application and check the dev toolbar you can see, that the Redux store of your application is initialized and some basic actions are already dispatched on it. We built redux-logger in [sn-redux](https://github.com/SenseNet/sn-redux), so you can check the state tree in depth before and after every action.
 
@@ -172,7 +174,7 @@ interface ListProps {
 }
 
 class List extends React.Component<ListProps, {}> {
-    constructor(props) {
+    constructor(props: any) {
         super(props);
         this.handleLogoutClick = this.handleLogoutClick.bind(this);
     }
@@ -254,6 +256,10 @@ The login component is a simple stateless component. It is a tiny form with two 
 
 *App.tsx*
 
+Install [react-router-dom](https://reacttraining.com/react-router/web) and import it into your App.tsx
+
+```npm install --save react-router-dom```
+
 ```typescript
 import * as React from 'react';
 import {
@@ -267,8 +273,6 @@ import { Actions, Reducers } from 'sn-redux';
 import './App.css';
 import List from './List';
 import { Login } from './Login';
-
-const logo = require('./logo.svg');
 
 const styles = {
   container: {
@@ -331,6 +335,27 @@ export default withRouter(connect(
 ```
 
 The App component is completed with routing to handle the redirect to the content list when the user is logged in and to the login form if she is not. This component is also connected to the store to get the user's current login state - which helps the app where it should be redirected - and to get the login action itself.
+
+#### Add router to index.tsx
+
+*index.tsx*
+
+```typescript
+...
+import {
+  HashRouter as Router
+} from 'react-router-dom';
+...
+ReactDOM.render(
+  <Provider store={store}>
+    <Router basename="/">
+      <App store={store} />
+    </Router>
+  </Provider>,
+  document.getElementById('root') as HTMLElement
+);
+...
+```
 
 ![login](/img/posts/react-app-login.png)
 
