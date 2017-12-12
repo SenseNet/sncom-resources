@@ -7,99 +7,34 @@ tags: [authentication, oauth, google, javascript, redux]
 
 ---
 
-[OAuth 2.0](https://oauth.net/2/) is the industry-standard protocol for authorization. In [sensenet ECM](https://github.com/SenseNet/sensenet) we use it as an extension to our [web token authentication](https://community.sensenet.com/docs/web-token-authentication) to let users authenticate using well-known services (such as Google or Facebook). The benefit is that users are able to sign in to a sensenet ECM application with a single click, without manual registration. Following post gives you an insight on how OAuth is implemented on the server side, shows how the sensenet client libraries support it and quickly demonstrates how you can build it into your app.
+Identifying users is one of the most important features in an ECM solution. In [sensenet ECM](https://github.com/SenseNet/sensenet) we try to support a wide range of possibilities in this field, this is why we made this a lot easier by extending our [web token authentication](https://community.sensenet.com/docs/web-token-authentication): from now on it is possible to integrate a 3rd party authentication service, for example [Google Sign-in](https://developers.google.com/identity/sign-in/web/sign-in) into your sensenet ECM solution.
 
 ---
 
-## Server side
+[OAuth 2.0](https://oauth.net/2/) is the industry-standard protocol for authorization. In sensenet ECM we use it as an extension to our JWT authentication to let users **authenticate** using well-known services (such as Google or Facebook). The benefit is that users are able to sign in to a sensenet ECM application with a single click, **without manual registration**. This post gives you an insight on how OAuth is implemented on the server side, shows how the sensenet client libraries support it and quickly demonstrates how you can build it into your app.
 
-When new users come to the site, they will be able to sign in by clicking the Google or Facebook button (or a similar custom experience implemented by the developer). The workflow is the following:
+> In the first iteration we only implemented *Google Sing-in*, but you can add other services (like Facebook) if you follow the steps and links in this post. If you do that, please consider sharing it with the [community](https://community.sensenet.com/) so that others can use it too!
 
-- User signs in to the 3rd party service.
-- User authorizes the application with the service (e.g. let the application access basic user data like name and email). This is usually a click of a button in the Google or Facebook popup window.
-- The client receives a token from the service.
-- The client sends the token to the sensenet ECM server, where the appropriate OAuth provider verifies the token.
-- If the token has been verified, we load or create the corresponding User content in the Content Repository. User content items are connected to the 3rd party service by storing the unique user identifier in a provider-specific separate field (e.g. GoogleUserId).
-- sensenet ECM asssembles a JWT token for the client and consideres the user as correctly signed in.
+## How it works
 
-From that point on the user will be able to use the application as a regular user.
+When new users come to the site, they will be able to sign in by clicking the Google button (or a similar custom experience implemented by the developer). The workflow is the following:
 
-### Configuration
+1. The user signs in to the 3rd party service.
+2. The user authorizes the application with the service (e.g. lets the application access basic user data like name and email). This is usually a click of a button in the Google or Facebook popup window.
+3. The client receives a **token** from the service.
+4. The client sends the token to the sensenet ECM server, where the appropriate OAuth provider **verifies** the token (note that this way it is not possible to send an invalid or expired token, because it is verified with the 3rd party service).
+5. If the token has been verified, we **load or create** the corresponding User content in the Content Repository. User content items are connected to the 3rd party service by storing the unique user identifier in a provider-specific separate field (e.g. *GoogleUserId*).
+6. sensenet ECM asssembles a JWT token for the client and considers the user as correctly signed in.
 
-You can specify where new users are created and their content type using the OAuth settings content in the usual global *Settings* folder.
+From that point on the user will be able to use the application as a regular user and there is no further connection with the 3rd party service or its token. We use our own JWT token to identify the user in subsequent requests.
 
-```json
-{
-   UserType: "User",
-   Domain: "Public"
-}
-```
+## Server-side providers
 
-New users are created under the domain above separated into organizational units named by the provider.
+A sensenet ECM OAuth provider is a small .Net plugin that is designed to verify a token using a particular service. Out of the box we offer only the [Google OAuth provider](https://github.com/SenseNet/sn-oauth-google) which is available as a NuGet package.
 
-### 'Built-in' providers
+[![NuGet](https://img.shields.io/nuget/v/SenseNet.OAuth.Google.svg)](https://www.nuget.org/packages/SenseNet.OAuth.Google)
 
-A sensenet ECM OAuth provider is a small plugin that is designed to verify a token using a particular service. Out of the box we offer now only the [Google OAuth provider](https://github.com/SenseNet/sn-oauth-google) for sensenet ECM. This provider is available as nuget package on the server side.
-
-### Custom provider
-
-The OAuth provider feature is extendable by design, so developers may create a custom provider for any 3rd party service by implementing a simple api.
-
-```csharp
-public class CustomOAuthProvider : OAuthProvider
-{
-    public override string IdentifierFieldName { get; } = "CustomUserId";
-    public override string ProviderName { get; } = "myservicename";
-
-    public override IOAuthIdentity GetUserData(object tokenData)
-    {
-        return tokenData as OAuthIdentity;
-    }
-
-    public override string VerifyToken(HttpRequestBase request, out object tokenData)
-    {
-        dynamic userData;
-
-        try
-        {
-            userData = GetUserDataFromToken(request);
-        }
-        catch (Exception)
-        {
-            throw new InvalidOperationException("OAuth error: cannot parse user data from the request.");
-        }
-
-        tokenData = new OAuthIdentity
-        {
-            Identifier = userData.sub,
-            Email = userData.email,
-            Username = userData.sub,
-            FullName = userData.name
-        };
-
-        return userData.sub;
-    }
-
-    private static dynamic GetUserDataFromToken(HttpRequestBase request)
-    {
-        string body;
-        using (var reader = new StreamReader(request.InputStream))
-        {
-            body = reader.ReadToEnd();
-        }
-
-        dynamic requestBody = JsonConvert.DeserializeObject(body);
-        string token = requestBody.token;
-
-        //TODO: verify token and extract basic user data
-        // return userData        
-    }
-}
-``` 
-
-The example above assumes that there is a field on the User content type called CustomUserId. Registering this field is the responsibility of the provider install process.
-
-To start using your custom provider you only have to add a reference to your provider library and sensenet ECM will automatically discover and register your class.
+> In the future we will add more options (like Facebook Login), but you can also [integrate any 3rd party service](https://community.sensenet.com/docs/oauth/).
 
 ## Client-side
 
@@ -167,5 +102,12 @@ Let us demonstrate how easy you can add the above to your app through the steps 
         })(myButton)
     ```
 
-## known issues, missing features
-## feedback is needed
+## Next steps
+
+As this is only the first iteration, we deliberately made this release very small. For example:
+
+- we do not sync custom properties, like user avatar
+- the Google provider on the server verifies the token using the public *http Google API*, which means the server has to have access to that API. In the future this may be changed to local token verification using the Google SDK.
+- Facebook, Microsoft and GitHub login options are not available yet
+
+Do you feel the power to help the [community](https://community.sensenet.com/) with extending the platform with your ideas? Please [contact us](https://community.sensenet.com/contact/), participate in the conversation and help us make tools for the benefit of other developers!
