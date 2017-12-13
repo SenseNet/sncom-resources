@@ -20,19 +20,19 @@ First of all you need a sensenet ECM instance installed. The following project w
 
 Maybe you are already familiar with [create-react-app](https://github.com/facebookincubator/create-react-app) which is an awesome tool that helps you creating React apps without ANY build configuration. Since we at sensenet write our code in TypeScript we use the forked TypeScript version [create-react-app-typescript](https://github.com/wmonk/create-react-app-typescript) of it but it's not mandatory of course. To have a running basic React application, all you have to do is:
 
-1. Install create-react-app with npm:
+### 1. Install create-react-app with npm:
 
 ```
 npm install -g create-react-app
 ```
 
-2. Create your app
+### 2. Create your app
 
 ```
 create-react-app my-sn-app --scripts-version=react-scripts-ts
 ```
 
-3. Browse the newly created project's folder and execute the start script
+### 3. Browse the newly created project's folder and execute the start script
 
 ```
 cd my-sn-app/
@@ -94,20 +94,20 @@ To manage our application's state we use [Redux](https://redux.js.org/) and to m
 
 To create and configure your application's state container:
 
-1. Install sn-redux
+### 1. Install sn-redux
 
 ```
 npm i --save-dev sn-redux sn-client-auth-google
 ```
 
-2. Import the following things to your ```index.tsx```
+### 2. Import the following things to your ```index.tsx```
 
 ```typescript
 import { combineReducers } from 'redux';
 import { Store, Actions, Reducers } from 'sn-redux';
 ```
 
-3. Create your app's top reducer ```sensenet```
+### 3. Create your app's top reducer ```sensenet```
 
 ```typescript
 const sensenet = Reducers.sensenet;
@@ -116,7 +116,7 @@ const myReducer = combineReducers({
 });
 ```
 
-4. Create and configure your application's store
+### 4. Create and configure your application's store
 
 ```typescript
 const store = Store.configureStore(myReducer, undefined, undefined, {}, repository);
@@ -129,7 +129,7 @@ Now if you restart the application and check the dev toolbar you can see, that t
 
 ![redux state tree](/img/posts/sn-app-reduxstore.png)
 
-5. Connect the redux store to your application
+### 5. Connect the redux store to your application
 
 Install [react-redux](https://github.com/reactjs/react-redux) and import it into your index.tsx
 
@@ -258,7 +258,9 @@ The login component is a simple stateless component. It is a tiny form with two 
 
 Install [react-router-dom](https://reacttraining.com/react-router/web) and import it into your App.tsx
 
-```npm install --save react-router-dom```
+```
+npm install --save react-router-dom
+```
 
 ```typescript
 import * as React from 'react';
