@@ -1,21 +1,21 @@
 ---
 
-title: "Starting out with sensenet ECM using Aurelia Framework"
+title: "Getting started with sensenet ECM using Aurelia Framework"
 author: gallayl
-image: "../img/posts/sensenetecm-react-redux.png"
-tags: [aurelia, typescript, es6, javascript, typescript, getting started]
+image: "../img/posts/getting-started-with-aurelia.jpg"
+tags: [aurelia, typescript, authentication, sn-client-js, getting started]
 
 ---
 
-heading - todo
+There was a lot of development in the frontent frameworks ecosystem over the last couple of years - and you can use a wide rande of them with the latest version of *sensenet ECM*. The following step by step tutorial will guide you how to put it all together - this time with [Aurelia](http://aurelia.io/) and [Typescript](https://www.typescriptlang.org/)
 
 ---
 
-# Prerequisites
+## Prerequisites
 
 First or all, you'll need [sensenet Services](https://community.sensenet.com/docs/install-sn-from-nuget/) installed and configured [JWT Authentication](https://community.sensenet.com/docs/web-token-authentication/). [Webpages installation](https://community.sensenet.com/docs/install-webpages-from-nuget/) is not a requirement but also recommended.
 
-You'll also have to deal with the [CORS](https://community.sensenet.com/docs/cors/) settings. You have to allow CORS for *localhost* origin. Add the following setting to your *Portal.settings* file that can be found in */Root/System/Settings/Portal.settings* (You can use the Content Explorer, or re-import the modified file) :
+You'll also have to deal with the [CORS](https://community.sensenet.com/docs/cors/) settings. You have to allow CORS for **localhost** origin. Add the following setting to your **Portal.settings** file that can be found in **/Root/System/Settings/Portal.settings** (You can use the *Content Explorer* if you have WebPages installed, or just re-import the modified file) :
 
 ```json
 ...
@@ -25,22 +25,20 @@ You'll also have to deal with the [CORS](https://community.sensenet.com/docs/cor
 ...
 ```
 
-# Creating the application skeleton with aurelia-cli
+## Creating the app with aurelia-cli
 
-## Installing CLI
+Aurelia has a great CLI tool called that allows us to create custom elements, value converters or even an entire preconfigured Aurelia project with simple commands You can install it globally from NPM
 
 ```
 npm install -g aurelia-cli
 ```
-
-## Creating an application
 
 You can set up and create a new Aurelia application with the following CLI command:
 ```
 au new
 ```
 
-Create your project using the *custom settings*, my setup looks like the following:
+Create your project using the **custom settings**, my setup looks like the following:
  - Name: **my-sensenet-app**
  - Platform: **Web**
  - Bundler: **Webpack**
@@ -52,7 +50,9 @@ Create your project using the *custom settings*, my setup looks like the followi
  - Integration Test Runner: **Protractor**
  - Editor: **Visual Studio Code**
 
-Once the setup is done, you'll can install the dependencies (or do it later with the ```npm install`` command).
+You can change the CSS preprocessor or test runners, we won't use them for now.
+
+Once the setup is done, you'll can install the dependencies (or do it later with the ```npm install``` command).
 
 You can run your Aurelia app with the following command
 ```
@@ -61,9 +61,9 @@ au run
 ```
 After a quick build process you can open up your browser and check the default *Hello World!* message at [http://localhost:8080](http://localhost:8080)
 
-# Getting started with sn-client-js
+## Getting started with sn-client-js
 
-## Install 
+### Install 
 
 To work with sensenet ECM, the first thing you have to do is to install the [sn-client-js](https://www.npmjs.com/package/sn-client-js) package with the following command:
 
@@ -71,7 +71,7 @@ To work with sensenet ECM, the first thing you have to do is to install the [sn-
 npm install sn-client-js
 ```
 
-## Configuring dependency injection
+### Configuring dependency injection
 
 In this example we will use the a *Repository* from sn-client-js as a main entry point to interact with sensenet ECM. In order to inject a preconfigured *repository* as a singleton, we have to configure Aurelia's main *DI container*.
 
@@ -83,20 +83,21 @@ import { Repository } from 'sn-client-js';
 
 and before the aurelia.start()... statement:
 ```ts
-  aurelia.container.registerSingleton(Repository.SnRepository, () => new Repository.SnRepository(
+  aurelia.container.registerSingleton(Repository.BaseRepository, () => new Repository.SnRepository(
     {
-      JwtTokenPersist: 'expiration',
-      RepositoryUrl: 'https://sensenet7-local',
+      RepositoryUrl: 'https://sensenet7-local', // Change this URL to your sensenet 7 Repository
     })
   );
 ```
 
-## Creating a custom element
+## Login and Logout
+
+### Creating a custom element with CLI
 
 Now we will create a *custom element* called **sn-login**. This will have similar functionality as the *LoginPortlet*, it will display a simple login form for unauthenticated users and a welcome message with a Logout button if you are logged in. We can create the element with the following CLI command:
 
 ```
-au generate element
+au generate element sn-login
 ```
 
 The CLI will create a view-model and a HTML template in *./src/resources/*. To register our element as a *global resource* open **./src/resources/index.ts** and update:
@@ -110,7 +111,7 @@ export function configure(config: FrameworkConfiguration) {
 }
 ```
 
-To display our new element we have to edit the main application template that can be found in **./src/app.html**. Let's remove the static *Hello World!* header and add an sn-login *custom element*:
+To display our new element we have to edit the main application template that can be found in **./src/app.html**. Let's remove the static *Hello World!* header and add our new sn-login *custom element*:
 
 ```html
 <template>
@@ -118,32 +119,53 @@ To display our new element we have to edit the main application template that ca
 </template>
 ```
 
-## Working with authentication
+### Basic login/logout implementation
 
-**./src/resources/elements/sn-login.ts**
+To edit *sn-login* element's view model, we have to open the generated **./src/resources/elements/sn-login.ts** file. We can remove the example bindable *value* and its *valueChanged* method.
 
-remove the default bindable *value* and its *valueChanged* method
+First we will need an SnRepository instance. We will inject it using Aurelia's *autoInject* decorator.
 
-injecting *SnRepository*
+```ts
+import { bindable, autoinject } from 'aurelia-framework';
+import { Repository } from 'sn-client-js';
 
-create *subscriptions* array
-add *attached method*
+@autoinject
+export class SnLogin {
+  constructor(private repository: Repository.BaseRepository) {  }
+}
 
-add a bindable *loginState*
-subscribe to login state
-modify template
+```
 
-```html
-<template>
-  <p>
-    The login state is <strong>${loginState}</strong>
-  </p>
-</template>
-```html
+From now, we can use the *repository* in our custom element. We will use two [RxJs observables](http://reactivex.io/documentation/observable.html) in this component, one to track the login state and another one to track the current user.
 
-add a bindable *user*
-subscribe to user changes
-modify template
+We will create two *subscriptions* and store their current value in two *bindable properties*. We will subscribe in the *attached* component event and unsubscribe in the *detached*.
+
+You can add the following code to your view-model:
+```ts
+  @bindable 
+  currentUser: Content<User>
+
+  @bindable
+  loginState: LoginState
+
+  subscriptions: Subscription[] = [];
+
+  attached(){
+    this.subscriptions.push(
+      this.repository.Authentication.State.subscribe(state=>{
+        this.loginState = state;
+      }),
+      this.repository.GetCurrentUser().subscribe(user => {
+        this.currentUser = user;
+      })
+    )
+  }
+  detached(){
+    this.subscriptions.forEach(s => s.unsubscribe());
+  }
+```
+
+Once the coding is done, we will modify the *template* that can be found in **./src/resources/elements/sn-login.html**. First, we can display the login state and the current user's DisplayName.
 
 ```html
 <template>
@@ -152,11 +174,18 @@ modify template
     The login state is <strong>${loginState}</strong>
   </p>
 </template>
-```html
+```
 
-## Creating a basic login and logout form
+If you start the project now with ```au start``` and open the page, you will see a 'Hello **Visitor**!' message and the login state will be **Unauthenticated**.
 
-modify template
+### Creating a basic login and logout form
+
+Now we know the user and the login state, we can improve the element template a bit. We will display the followings:
+ - If the *loginState* is **Unauthenticated** the user will get a login form with username and password fields
+ - If the state is **Authenticated**, a welcome message and a Logout button
+ - If the login state is **Pending**, well... a message for now, you can replace it with your favourite loader later :)
+
+ Now the template will look like this:
 ```html
 <template>
   <form if.bind="loginState === 'Unauthenticated'" submit.delegate="login()">
@@ -175,18 +204,16 @@ modify template
 </template>
 ```
 
-add bindable values to loginUserName and loginPassword
+We will add two properties into the view-model called *loginUserName* and *loginPassword*, the form values will be bound to this properties.
 
 ```ts
-
   @bindable
   loginUserName: string;
   @bindable
   loginPassword: string;
-
 ```
 
-implement login() and logout() methods
+And we have to implement the actions for *login()* and *logout()* - they will simply call the corresponding endpoints on the Repository.
 
 ```ts
 login(){
@@ -199,4 +226,127 @@ logout(){
 }
 ```
 
+Once we've got it up and running we will be able to log in and out and display the user name.
 
+ ![Login, logout with sn7 and Aurelia](/img/posts/getting-started-with-aurelia-login-logout.gif "Login, logout with sn7 and Aurelia")
+
+## Content list component
+
+### Creating and setting up the component
+
+In the next example we will create another custom element that *list* content from the repository. To do that, we will create another custom element with the ```au generate element content-list``` command and add it as a global resource in **./src/resources/index.ts** just like the *sn-login* element.
+
+We have to add it into our main *app* component, it will be available if the user is *authenticated*. 
+Open **./src/app.html** and add the new component:
+```html
+<template>
+  <sn-login></sn-login>
+  <content-list if.bind="loginState === 'Authenticated'"></content-list>
+</template>
+```
+Now open **./src/app.ts** and subscribe to the login state just like we did it in the Login component. At this time we don't need to *unsubscribe* because *app* is our main component - it will be attached right after Aurelia's bootstrap process and will be detached on window close.
+
+Update the *app.ts* file with the followings:
+
+```ts
+import { Repository } from "sn-client-js";
+import { LoginState } from "sn-client-js/dist/src/Authentication";
+import { bindable, autoinject } from "aurelia-framework";
+
+@autoinject
+export class App {
+  constructor(private repository: Repository.BaseRepository) {  }
+
+  @bindable
+  loginState: LoginState
+
+  attached(){
+    this.repository.Authentication.State.subscribe(state=>{
+      this.loginState = state;
+    });
+  }
+}
+```
+
+> If you have unit tests enabled the one that tests the app component will now fail because we've modified the constructor and it will have a required argument. You can disable unit testing for now or fix the failed test in *./test/unit/app.spec.ts* file.
+
+### The view model
+
+The component list will have a two bindable properties:
+ - ```currentContent: Content<GenericContent>``` will store the *current* tree level
+ - ```children: Content<GenericContent>[]``` will store currentContent's children. These will be displayed into the current view
+
+ And will have the following methods:
+ - ``currentContentChanged()`` is called by Aurelia when a new value is set to currentContent. We will load its children there
+ - ```navigate(content: Content<GenericContent>)``` will be called when clicking on a tree node (navigating a level below)
+ - ```navigateUp()``` will set the current content to the current content's parent and navigating a level up
+ - ```attached()``` will initialize the component and sets the current content to the *Portal Root*
+
+```ts
+import { bindable, autoinject } from 'aurelia-framework';
+import { Content } from 'sn-client-js';
+import { GenericContent } from 'sn-client-js/dist/src/ContentTypes';
+import { BaseRepository } from 'sn-client-js/dist/src/Repository';
+
+@autoinject
+export class ContentList {
+  constructor(private repository: BaseRepository) {  }
+
+  attached(){
+    this.repository.Load(2) // Get the PortalRoot by Id
+    .subscribe(root=>{
+      this.currentContent = root;
+    });
+  }
+  
+  @bindable
+  currentContent: Content<GenericContent>;
+
+  @bindable
+  children: Content<GenericContent>[] = []
+
+  currentContentChanged(newValue) {
+    this.currentContent.Children().subscribe(c=>{
+      this.children = c;
+    })
+  }
+
+  navigate(content: Content){
+    this.currentContent = content;
+  }
+
+  navigateUp(){
+    this.repository.Load(this.currentContent.ParentPath)
+      .subscribe(parent=>{
+        this.currentContent = parent;
+      });
+  }
+}
+
+```
+
+### The template
+The template will be quite simple, we will have a read-only input that will show the current Path and an unordered list with the children.
+
+```html
+<template>
+  <div>
+    <input readonly value.bind="currentContent.Path" />
+    <ul>
+      <li>
+        <a click.delegate="navigateUp()">[..]</a>
+      </li>
+      <li repeat.for="child of children">
+        <a click.delegate='navigate(child)'>${child.DisplayName || child.Name}</a>
+      </li>
+    </ul>
+  </div>
+</template>
+```
+ 
+![Browsing with Aurelia](/img/posts/getting-started-with-aurelia-browser.gif "Browsing with Aurelia")
+
+## Next steps
+
+Now that you have an idea how to log in and load content you can find more examples about updating, deleting, querying at the [sn-client-js](https://github.com/SenseNet/sn-client-js) readme or you can take a look at our [Aurelia control library](https://github.com/SenseNet/sn-controls-aurelia).
+And - as always - we are looking forward to your thoughts and feedback :)
