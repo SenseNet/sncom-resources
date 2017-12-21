@@ -1,10 +1,13 @@
 ---
 title: "Getting started with sensenet ECM using MVC"
+source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tutorials/starting-out-with-mvc.md'
 category: Tutorials
 version: v7.0
 tags: [mvc, getting started, controller, view, backend]
 description: Step-by-step tutorial creating your first basic Asp.Net MVC app with sensenet ECM.
 ---
+
+# Getting started with sensenet ECM and MVC
 
 When you build a site with sensenet ECM, you have many options when it comes to choosing a technology. This article is a part of a series about the different client and server-side technologies and architectures when designing your first app.
 
@@ -18,7 +21,7 @@ This MVC sample application will be a very simple CRUD app: it will display a da
 
 This architecture means a web application with custom code added on the **server side in C# and cshtml**. For a Javascript single page application example please visit one of the links above.
 
-![Dashboard](/img/posts/mvc-sample-dashboard.png)
+![Dashboard](https://raw.githubusercontent.com/SenseNet/sensenet.github.io/master/img/posts/mvc-sample-dashboard.png)
 
 When completing this short excercise, please try to focus on the sensenet-related parts - for example the way we search for content items and load them from the Content Repository, the way we create and modify content. We tried to keep everything else minimal so you can focus on the new stuff and not on the usual MVC-related parts.
 
@@ -47,7 +50,7 @@ After the steps above, you will have an MVC application with sensenet ECM 7.0 in
 
 > It is important to make sure when working with a sensenet ECM web application that you shut down the application properly when you update the server code. This means stopping the IIS Express site so that sensenet ECM can release the index write lock correctly - otherwise you would have to delete that file manually when you start the app next time.
 
-![IISExpress sites](/img/posts/mvc-sample-iisexpress.png)
+![IISExpress sites](https://raw.githubusercontent.com/SenseNet/sensenet.github.io/master/img/posts/mvc-sample-iisexpress.png)
 
 ## Authentication
 To demonstrate a use case for different users, this sample is designed to display Tasks for the current user and (in a different list) tasks for others. Asp.Net MVC authentication however is *not the scope of this guide*, so we will use the old built-in WebForms-based UI for signing in and possibly create new users for testing purposes.
@@ -570,7 +573,7 @@ The Create action receives a task view model filled with the data from the clien
 
 The new task's fields are filled from the model and the new content is saved into the Content Repository. All **database operations**, **indexing** and **security checks** will happen under the hood, you do not have to do anything else, just fill the fields and call the Save method.
 
-![Create a task](/img/posts/mvc-sample-create.png)
+![Create a task](https://raw.githubusercontent.com/SenseNet/sensenet.github.io/master/img/posts/mvc-sample-create.png)
 
 The *DeletePost* method (note that we had to name it differently to avoid a name collision) is simple: it deletes the content with the provided id - it does not even have to load it from the db.
 
