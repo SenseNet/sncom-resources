@@ -1,17 +1,14 @@
 ---
-
 title: "Getting started with sensenet ECM using MVC"
-author: tusmester
-image: "../img/posts/sensenetecm-mvc.png"
-tags: [mvc, getting started, controller, view]
-
+category: Tutorials
+version: v7.0
+tags: [mvc, getting started, controller, view, backend]
+description: Step-by-step tutorial creating your first basic Asp.Net MVC app with sensenet ECM.
 ---
 
-When you build a site with sensenet ECM, you have many options when it comes to choosing a technology. This post is a part of a series about the different client and server-side technologies and architectures when designing your first app.
+When you build a site with sensenet ECM, you have many options when it comes to choosing a technology. This article is a part of a series about the different client and server-side technologies and architectures when designing your first app.
 
----
-
-This post walks you through a few easy steps to create your first **Asp.Net MVC** app with sensenet ECM 7.0. For other possibilities please take a look at the following articles:
+This article walks you through a few easy steps to create your first **Asp.Net MVC** app with sensenet ECM 7.0. For other possibilities please take a look at the following articles:
 
 - [Starting out with ReactJs and Redux](https://community.sensenet.com/blog/2017/12/12/starting-out-with-sensenet-ECM-using-reactjs-and-redux)
 - [Starting out with Aurelia](https://community.sensenet.com/blog/2017/12/27/starting-out-with-sensenet-ECM-using-aurelia)
@@ -25,7 +22,8 @@ This architecture means a web application with custom code added on the **server
 
 When completing this short excercise, please try to focus on the sensenet-related parts - for example the way we search for content items and load them from the Content Repository, the way we create and modify content. We tried to keep everything else minimal so you can focus on the new stuff and not on the usual MVC-related parts.
 
-> All the sensenet ECM Content-related operations are performed using the **permissions of the currently logged in user** - except when switching to the administrator for technical purposes, as we explain below. This means for example that the user will not be able to create or delete anything that he or she does not have permissions for.
+#### Security out of the box
+All the sensenet ECM Content-related operations (like content Save or Load) are performed using the **permissions of the currently logged in user** - except when switching to the administrator for technical purposes, as we explain below. This means that the user will not be able to create or delete anything that he or she does not have permissions for.
 
 ## Prerequisites
 You will need a basic MVC project to begin with and install one or more sensenet ECM components. 
@@ -45,7 +43,7 @@ There are two options here:
         snadmin install-webpages
         ```
 
-After the steps above, you will have an MVC application with sensenet ECM 7.0 integrated. The remaining part of this post is about how to add a basic CRUD functionality for content items in Visual Studio.
+After the steps above, you will have an MVC application with sensenet ECM 7.0 integrated. The remaining part of this article is about how to add a basic CRUD functionality for content items in Visual Studio.
 
 > It is important to make sure when working with a sensenet ECM web application that you shut down the application properly when you update the server code. This means stopping the IIS Express site so that sensenet ECM can release the index write lock correctly - otherwise you would have to delete that file manually when you start the app next time.
 
@@ -113,6 +111,8 @@ public ActionResult LogOff()
 }
 ```
 
+> The *AuthenticationHelper* class above provides methods for logging in and out, you can use them in your custom code too.
+
 ## Task view model
 Our goal is to display tasks on the UI. For that we need a model for task items. Please create a new class named *TaskViewModel* in the *Models* folder in VS and fill it with the following class:
 
@@ -146,7 +146,7 @@ namespace SnWebApplication.Models
 }
 ```
 
-The model above takes a sensenet ECM Task instance in the constructor and exposes a few properties. 
+The model above takes a sensenet ECM Task instance in the constructor and exposes a few properties. There are several built-in strongly typed properties like DisplayName, and there is an extensive api for accessing dynamic properties - for example the *GetReference* method lets you load referenced content items, in this case the assignee user.
 
 > Note that there are several other ways to create a model on top of sensenet ECM content items - for example you can create a model that wraps a *Content* object instead of a strongly-typed business object like Task above (that will let you work with the field layer instead of strongly typed properties). Or you can even use these types (Task or Content) *as your model*, without creating a model class.
 
@@ -568,7 +568,7 @@ namespace SnWebApplication.Controllers
 
 The Create action receives a task view model filled with the data from the client. It makes sure that the **parent container (the Task List) exists** before adding a new task.
 
-The new task's fields are filled from the model and the new content is saved into the Content Repository.
+The new task's fields are filled from the model and the new content is saved into the Content Repository. All **database operations**, **indexing** and **security checks** will happen under the hood, you do not have to do anything else, just fill the fields and call the Save method.
 
 ![Create a task](/img/posts/mvc-sample-create.png)
 
