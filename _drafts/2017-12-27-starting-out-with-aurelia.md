@@ -27,7 +27,7 @@ You'll also have to deal with the [CORS](https://community.sensenet.com/docs/cor
 
 ## Creating the app with aurelia-cli
 
-Aurelia has a great CLI tool called that allows us to create custom elements, value converters or even an entire preconfigured Aurelia project with simple commands You can install it globally from NPM
+Aurelia has a great CLI tool called that allows us to create custom elements, value converters or even an entire preconfigured Aurelia project with simple commands You can install it globally from NPM:
 
 ```
 npm install -g aurelia-cli
@@ -54,7 +54,8 @@ You can change the CSS preprocessor or test runners, we won't use them for now.
 
 Once the setup is done, you'll can install the dependencies (or do it later with the ```npm install``` command).
 
-You can run your Aurelia app with the following command
+You can run your Aurelia app with the following command:
+
 ```
 cd my-sensenet-app
 au run
@@ -75,7 +76,7 @@ npm install sn-client-js
 
 In this example we will use the a *Repository* from sn-client-js as a main entry point to interact with sensenet ECM. In order to inject a preconfigured *repository* as a singleton, we have to configure Aurelia's main *DI container*.
 
-Open **./src/main.ts** and add the following import
+Open **./src/main.ts** and add the following import:
 
 ```ts
 import { Repository } from 'sn-client-js';
@@ -127,7 +128,8 @@ First we will need an SnRepository instance. We will inject it using Aurelia's *
 
 ```ts
 import { bindable, autoinject } from 'aurelia-framework';
-import { Repository } from 'sn-client-js';
+import { Repository, Content, ContentTypes, Authentication } from 'sn-client-js';
+import { Subscription } from 'rxjs';
 
 @autoinject
 export class SnLogin {
@@ -136,17 +138,17 @@ export class SnLogin {
 
 ```
 
-From now, we can use the *repository* in our custom element. We will use two [RxJs observables](http://reactivex.io/documentation/observable.html) in this component, one to track the login state and another one to track the current user.
+From now on, we can use the *repository* in our custom element. We will use two [RxJs observables](http://reactivex.io/documentation/observable.html) in this component, one to track the login state and another one to track the current user.
 
-We will create two *subscriptions* and store their current value in two *bindable properties*. We will subscribe in the *attached* component event and unsubscribe in the *detached*.
+We will create two *subscriptions* and store their current value in two *bindable properties*. We will subscribe in *attached* component event and unsubscribe in *detached*.
 
 You can add the following code to your view-model:
 ```ts
   @bindable 
-  currentUser: Content<User>
+  currentUser: Content<ContentTypes.User>
 
   @bindable
-  loginState: LoginState
+  loginState: Authentication.LoginState
 
   subscriptions: Subscription[] = [];
 
@@ -183,7 +185,7 @@ If you start the project now with ```au start``` and open the page, you will see
 Now we know the user and the login state, we can improve the element template a bit. We will display the followings:
  - If the *loginState* is **Unauthenticated** the user will get a login form with username and password fields
  - If the state is **Authenticated**, a welcome message and a Logout button
- - If the login state is **Pending**, well... a message for now, you can replace it with your favourite loader later :)
+ - If the login state is **Pending**, well... a message for now and you can replace it with your favourite loader later :)
 
  Now the template will look like this:
 ```html
