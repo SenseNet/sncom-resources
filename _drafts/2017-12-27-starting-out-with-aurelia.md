@@ -38,7 +38,7 @@ You can set up and create a new Aurelia application with the following CLI comma
 au new
 ```
 
-Create your project using the **custom settings**, my setup looks like the following:
+Create your project choosing the **custom settings**, my setup looks like the following:
  - Name: **my-sensenet-app**
  - Platform: **Web**
  - Bundler: **Webpack**
@@ -59,7 +59,7 @@ You can run your Aurelia app with the following command
 cd my-sensenet-app
 au run
 ```
-After a quick build process you can open up your browser and check the default *Hello World!* message at [http://localhost:8080](http://localhost:8080)
+After a quick build process you will see the development server's URL on the console (is [http://localhost:8080](http://localhost:8080) by default), open in your browser and check the default *Hello World!* message. 
 
 ## Getting started with sn-client-js
 
