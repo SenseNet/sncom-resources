@@ -7,13 +7,13 @@ tags: [aurelia, typescript, authentication, sn-client-js, getting started]
 
 ---
 
-There was a lot of development in the frontent frameworks ecosystem over the last couple of years - and you can use a wide rande of them with the latest version of *sensenet ECM*. The following step by step tutorial will guide you how to put it all together - this time with [Aurelia](http://aurelia.io/) and [Typescript](https://www.typescriptlang.org/)
+There was a lot of development in the frontent frameworks ecosystem over the last couple of years - and you can use a wide range of them with the latest version of *sensenet ECM*. The following step by step tutorial will guide you how to put it all together - this time with [Aurelia](http://aurelia.io/) and [Typescript](https://www.typescriptlang.org/).
 
 ---
 
 ## Prerequisites
 
-First or all, you'll need [sensenet Services](https://community.sensenet.com/docs/install-sn-from-nuget/) installed and configured [JWT Authentication](https://community.sensenet.com/docs/web-token-authentication/). [Webpages installation](https://community.sensenet.com/docs/install-webpages-from-nuget/) is not a requirement but also recommended.
+First of all, you'll need [sensenet Services](https://community.sensenet.com/docs/install-sn-from-nuget/) installed and configured [JWT Authentication](https://community.sensenet.com/docs/web-token-authentication/). [Webpages installation](https://community.sensenet.com/docs/install-webpages-from-nuget/) is not a requirement but also recommended.
 
 You'll also have to deal with the [CORS](https://community.sensenet.com/docs/cors/) settings. You have to allow CORS for **localhost** origin. Add the following setting to your **Portal.settings** file that can be found in **/Root/System/Settings/Portal.settings** (You can use the *Content Explorer* if you have WebPages installed, or just re-import the modified file) :
 
@@ -27,7 +27,7 @@ You'll also have to deal with the [CORS](https://community.sensenet.com/docs/cor
 
 ## Creating the app with aurelia-cli
 
-Aurelia has a great CLI tool called that allows us to create custom elements, value converters or even an entire preconfigured Aurelia project with simple commands You can install it globally from NPM:
+Aurelia has a great CLI tool that allows us to create custom elements, value converters or even an entire preconfigured Aurelia project with simple commands. You can install it globally from NPM:
 
 ```
 npm install -g aurelia-cli
@@ -52,7 +52,7 @@ Create your project choosing the **custom settings**, my setup looks like the fo
 
 You can change the CSS preprocessor or test runners, we won't use them for now.
 
-Once the setup is done, you'll can install the dependencies (or do it later with the ```npm install``` command).
+Once the setup is done, you can install the dependencies (or do it later with the ```npm install``` command).
 
 You can run your Aurelia app with the following command:
 
@@ -60,7 +60,7 @@ You can run your Aurelia app with the following command:
 cd my-sensenet-app
 au run
 ```
-After a quick build process you will see the development server's URL on the console (is [http://localhost:8080](http://localhost:8080) by default), open in your browser and check the default *Hello World!* message. 
+After a quick build process you will see the development server's URL on the console (it is [http://localhost:8080](http://localhost:8080) by default). Open it in your browser and check the default *Hello World!* message. 
 
 ## Getting started with sn-client-js
 
@@ -74,7 +74,7 @@ npm install sn-client-js
 
 ### Configuring dependency injection
 
-In this example we will use the a *Repository* from sn-client-js as a main entry point to interact with sensenet ECM. In order to inject a preconfigured *repository* as a singleton, we have to configure Aurelia's main *DI container*.
+In this example we will use the *Repository* from sn-client-js as a main entry point to interact with sensenet ECM. In order to inject a preconfigured *repository* as a singleton, we have to configure Aurelia's main *DI container*.
 
 Open **./src/main.ts** and add the following import:
 
@@ -206,7 +206,7 @@ Now we know the user and the login state, we can improve the element template a 
 </template>
 ```
 
-We will add two properties into the view-model called *loginUserName* and *loginPassword*, the form values will be bound to this properties.
+We will add two properties into the view-model called *loginUserName* and *loginPassword*, the form values will be bound to these properties.
 
 ```ts
   @bindable
@@ -274,12 +274,12 @@ export class App {
 
 ### The view model
 
-The component list will have a two bindable properties:
+The component list will have two bindable properties:
  - ```currentContent: Content<GenericContent>``` will store the *current* tree level
- - ```children: Content<GenericContent>[]``` will store currentContent's children. These will be displayed into the current view
+ - ```children: Content<GenericContent>[]``` will store currentContent's children. These will be displayed in the current view.
 
  And will have the following methods:
- - ``currentContentChanged()`` is called by Aurelia when a new value is set to currentContent. We will load its children there
+ - ``currentContentChanged()`` is called by Aurelia when a new value is set to currentContent. We will load its children there.
  - ```navigate(content: Content<GenericContent>)``` will be called when clicking on a tree node (navigating a level below)
  - ```navigateUp()``` will set the current content to the current content's parent and navigating a level up
  - ```attached()``` will initialize the component and sets the current content to the *Portal Root*
@@ -351,4 +351,4 @@ The template will be quite simple, we will have a read-only input that will show
 ## Next steps
 
 Now that you have an idea how to log in and load content you can find more examples about updating, deleting, querying at the [sn-client-js](https://github.com/SenseNet/sn-client-js) readme or you can take a look at our [Aurelia control library](https://github.com/SenseNet/sn-controls-aurelia).
-And - as always - we are looking forward to your thoughts and feedback :)
+And - as always - we are looking forward to your thoughts and feedback :).
