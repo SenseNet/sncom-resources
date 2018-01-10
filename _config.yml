@@ -9,7 +9,7 @@ github_username: SenseNet
 author: SenseNet
 future: true
 excerpt_separator: '---'
-gems:
+plugins:
     - jekyll-redirect-from
     - jekyll-sitemap
     - jekyll-seo-tag
