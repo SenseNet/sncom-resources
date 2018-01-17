@@ -1,6 +1,6 @@
 ---
 title:  "Install sensenet 6.5 from source package"
-source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/how-to-install-sn6-from-source.md'
+source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/how-to-install-sn6-from-source.md'
 category: Guides
 version: v6.0.0
 tags: install source sn6
@@ -145,9 +145,9 @@ Run the install script: %sourceroot%\Deployment\InstallSenseNet.bat
 -If the installation fails because of dll load errors (e.g. you see "Could not load library" on the 
 - console) than make sure that all dll files in the Tools, bin, and References folders are unblocked. 
 - You can unblock files in a single folder using the Unblock-File command in Windows PowerShell:
--dir "C:\SenseNet\References" | Unblock-File
--dir "C:\SenseNet\Source\SenseNet\Website\bin" | Unblock-File
--dir "C:\SenseNet\Source\SenseNet\Website\Tools" | Unblock-File
+dir "C:\SenseNet\References" | Unblock-File
+dir "C:\SenseNet\Source\SenseNet\Website\bin" | Unblock-File
+dir "C:\SenseNet\Source\SenseNet\Website\Tools" | Unblock-File
 ```
 
 ### 9. Set up permissions ###
