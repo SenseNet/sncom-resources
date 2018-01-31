@@ -16,6 +16,8 @@ This post will help you create your first **Asp.Net MVC** app with sensenet ECM 
 - [Starting out with ReactJs and Redux](/docs/tutorials/starting-out-with-reactjs)
 - [Starting out with Aurelia](/_posts/2018-01-10-starting-out-with-aurelia)
 
+> This post is based on a tutorial, you can find the latest version in [this article](/_docs/tutorials/starting-out-with-mvc).
+
 ## What will we build?
 This MVC sample application will be a very simple CRUD app: it will display a dashboard with tasks assigned to the current user and another list for other users' tasks. It will also let users create and delete tasks.
 
