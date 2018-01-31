@@ -661,3 +661,5 @@ If you successfully completed the steps above, you will be able to manage Tasks 
 The example above is very simple and limited. In the future we would like to add more helpers to simplify the creation of **route links** in cshtml files and new components for aiding **authentication**.
 
 Please experiment with the code, try to use your own MVC techniques and [contact us](https://community.sensenet.com/contact/) if you stuck at some point or need a new feature!
+
+Photo by [Cam Adams](https://unsplash.com/photos/imBSxksI7DA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/start?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
