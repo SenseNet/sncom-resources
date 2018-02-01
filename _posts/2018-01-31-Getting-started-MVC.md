@@ -14,7 +14,7 @@ When you build a site with sensenet ECM, you have many options when it comes to 
 This post will help you create your first **Asp.Net MVC** app with sensenet ECM 7.0. For other possibilities please take a look at the following articles:
 
 - [Starting out with ReactJs and Redux](/docs/tutorials/starting-out-with-reactjs)
-- [Starting out with Aurelia](/_posts/2018-01-10-starting-out-with-aurelia)
+- [Starting out with Aurelia](/blog/2018/01/10/starting-out-with-aurelia)
 
 > This post is based on a tutorial, you can find the latest version in [this article](/_docs/tutorials/starting-out-with-mvc).
 
