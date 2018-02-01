@@ -3,7 +3,7 @@
 title: "Autumn happenings in sensenet frontend-ville"
 author: [gallayl, herflis]
 image: "../img/posts/frontend-ville.jpg"
-tags: [javascript, typescript, frontend development, redux]
+tags: [javascript, typescript, frontend development, redux, roadmap]
 
 ---
 

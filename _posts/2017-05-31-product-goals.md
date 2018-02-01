@@ -2,7 +2,7 @@
 title:  "Product goals for 2017"
 author: borsi
 image: "/img/posts/goals.jpg"
-tags: [goals, community, roadmap, redesign, statistics]
+tags: [goals, community, roadmap, redesign, statistics, roadmap]
 ---
 ### Everybody needs goals ###
 
