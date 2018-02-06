@@ -2,7 +2,7 @@
 
 title:  "Installing a patch in sensenet ECM"
 author: iviczl
-image: "../img/posts/patch.jpg"
+image: "../img/posts/patch.png"
 tags: [install, patch, SN7]
 
 ---
