@@ -38,7 +38,7 @@ A dll-only package.
 <a href="https://www.nuget.org/packages/SenseNet.WebPages"><img src="https://img.shields.io/nuget/v/SenseNet.WebPages.svg" /></a>
 </div>
 
-> `Install-Package SenseNet.WebPages -Pre`
+> `Install-Package SenseNet.WebPages`
 
 ### Web app changes
 1. Change the Global.asax.cs codebehind: the application class should inherit from the following class: 
@@ -51,7 +51,26 @@ A dll-only package.
     public class MvcApplication : SenseNet.Portal.SenseNetGlobal    
 ````
 
-2. **Build your solution**, make sure that there are no build errors.
+2. Configure **SignalR**
+
+In your Startup class, please add the **app.MapSignalR()** call to the *Configuration* method so that SignalR hubs are configured correctly when the application starts.
+
+For example:
+
+```csharp
+    public partial class Startup
+    {
+        public void Configuration(IAppBuilder app)
+        {
+            ConfigureAuth(app);
+
+            // this is necessary for sensenet
+            app.MapSignalR();
+        }
+    }
+```
+
+3. **Build your solution**, make sure that there are no build errors.
 
 ### Install the sensenet ECM WebPages component
 Before installing the component, please make sure that you have access to the Content Repository *SQL database* where you want to install it. The SnAdmin tool will use the connection string in the *[web]\Tools\SnAdminRuntime.exe.config* file to access the db, please check that it contains the appropriate user credentials and server/database name.
