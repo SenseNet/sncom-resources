@@ -2,7 +2,7 @@
 
 title:  "Installing a patch in sensenet ECM"
 author: iviczl
-image: "../img/posts/patch.png"
+image: "../img/posts/fix.jpg"
 tags: [install, patch, SN7]
 
 ---
@@ -17,6 +17,8 @@ The **Services** component was the first to dwell on GitHub therefore it is quit
 
 > Although this post was written at the time of the first patch, the process will be very similar in case of subsequent patches in other components as well.
 
+![Patch](/img/posts/patch.gif "Patch")
+
 ### Find out if you need it
 The following conditions indicate that your sensenet ECM have to be upgraded with the patch:
 
@@ -28,6 +30,8 @@ The following conditions indicate that your sensenet ECM have to be upgraded wit
 ### Where can you find it?
 You can find the patch on the [release page](https://github.com/SenseNet/sensenet/releases)'s Assets paragraph, where you can download it from.
 
+![Upgrade](/img/posts/upgrade.png "Upgrade")
+
 ### How do you install it?
 Download the patch (a zip file indicating the base and the target versions) from the release page. In order to install it, you need to follow the next few steps:
 
@@ -36,7 +40,5 @@ Download the patch (a zip file indicating the base and the target versions) from
 
    `snadmin patch.zip`
 3. Update the **SenseNet.Services** and **SenseNet.Services.Install** packages from NuGet in Visual Studio so that next time you build your solution you get the new libraries.
-
-![Upgrade](/img/posts/upgrade.png "Upgrade")
 
 After you have finished the process you can start the site again and will find your Services component upgraded to the latest version. To make sure this happened, you may check the **VersionInfo** page on the Root console in Content Explorer.
