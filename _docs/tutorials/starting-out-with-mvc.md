@@ -131,7 +131,6 @@ namespace SnWebApplication.Models
     {
         public readonly Task Task;
 
-        private string _displayName;
         [Required]
         [Display(Name = "Short description")]
         public string DisplayName => Task?.DisplayName;
