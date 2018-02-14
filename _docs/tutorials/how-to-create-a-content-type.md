@@ -3,7 +3,7 @@ title:  "How to create a Content Type"
 source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tutorials/how-to-create-a-content-type.md'
 category: Tutorials
 version: v6.0
-tags: [content, content type, sn6, field]
+tags: [content, content type, sn6, field, frontend]
 description: This article describes the way for developers to create a custom Content Type.
 ---
 

@@ -3,7 +3,7 @@ title:  "How to create a Field Control"
 source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tutorials/how-to-create-a-field-control.md'
 category: Tutorials
 version: v6.0
-tags: [field, field control, content type, sn6]
+tags: [field, field control, content type, sn6, backend]
 description: This article describes the way for developers to create a custom Field Control.
 ---
 
