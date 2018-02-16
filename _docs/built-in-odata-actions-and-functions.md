@@ -276,7 +276,6 @@ In addition, subsequent request bodies should contain the uploaded file in chunk
 > For more information about how uploading works see the [Upload action](/docs/upload-action) article. You can find a C# source code example there that demonstrates the usage of the [Upload action](/docs/upload-action) from a **console application**.
 
 ### Restore action
-*(from version 6.3)*
 
 Restores a deleted content from the Trash. You can call this action only on a TrashBag content that contains the deleted content itself.
 
@@ -308,7 +307,6 @@ $.ajax({
 ```
 
 ### SaveQuery action
-*(from version 6.3)*
 
 Creates or modifies a Query content. Use this action instead of creating query content directly using the basic OData create method, because query content can be saved under a workspace or to the user's profile as a private query.
 
@@ -338,7 +336,7 @@ $.ajax({
 ```
 
 ### Approve action
-*(from version 6.3)*
+
 
 Performs an approve operation on a content, the equivalent of calling `Approve()` on the Content instance in .NET. Also checks whether the content handler of the subject content inherits GenericContent (otherwise it does not support this operation). This action has no parameters.
 
@@ -356,7 +354,6 @@ $.ajax({
 ```
 
 ### Reject action
-*(from version 6.3)*
 
 Performs a reject operation on a content, the equivalent of calling `Reject()` on the Content instance in .NET. Also checks whether the content handler of the subject content inherits `GenericContent` (otherwise it does not support this operation). The reject reason can be supplied in an optional parameter called `rejectReason`.
 
@@ -377,7 +374,7 @@ $.ajax({
 ```
 
 ### Publish action
-*(from version 6.3)*
+
 
 Performs a publish operation on a content, the equivalent of calling `Publish()` on the Content instance in .NET. Also checks whether the content handler of the subject content inherits GenericContent (otherwise it does not support this operation). This action has no parameters.
 
@@ -395,7 +392,7 @@ $.ajax({
 ```
 
 ### Check in action
-*(from version 6.3)*
+
 
 Performs a check in operation on a content, the equivalent of calling `CheckIn()` on the Content instance in .NET. This action enforces the check in comments mode of the content. Also checks whether the content handler of the subject content inherits GenericContent (otherwise it does not support this operation). The check-in comments can be supplied in an optional parameter called checkInComments.
 
@@ -416,7 +413,7 @@ $.ajax({
 ```
 
 ### Check out action
-*(from version 6.3)*
+
 
 Performs a check out operation on a content, the equivalent of calling `CheckOut()` on the Content instance in .NET. Also checks whether the content handler of the subject content inherits GenericContent (otherwise it does not support this operation). This action has no parameters.
 
@@ -434,7 +431,7 @@ $.ajax({
 ```
 
 ### Undo check out action
-*(from version 6.3)*
+
 
 Performs an undo check out operation on a content, the equivalent of calling `UndoCheckOut()` on the Content instance in .NET. Also checks whether the content handler of the subject content inherits GenericContent (otherwise it does not support this operation). This action has no parameters.
 
@@ -452,7 +449,7 @@ $.ajax({
 ```
 
 ### Force undo check out action
-*(from version 6.3)*
+
 
 Performs a force undo check out operation on a content, the equivalent of calling `ForceUndoCheckOut()` on the Content instance in .NET. Also checks whether the content handler of the subject content inherits GenericContent (otherwise it does not support this operation). This action has no parameters.
 
@@ -470,7 +467,6 @@ $.ajax({
 ```
 
 ### Restore version action
-*(from version 6.3)*
 
 Restores an old version of the content. Also checks whether the content handler of the subject content inherits GenericContent (otherwise it does not support this operation). This action has a single parameter called version where the caller can specify which old version to restore.
 
@@ -491,7 +487,6 @@ $.ajax({
 ```
 
 ### Finalize content action
-*(from version 6.3)*
 
 Closes a [Multistep saving](/docs/multistep-saving) operation and sets the saving state of a content to Finalized. Can be invoked only on content that are not already finalized.
 
@@ -837,7 +832,7 @@ $.ajax({
 > Please note that OData functions can be called with POST or GET request.
 
 ### GetQueries
-*(from version 6.3)*
+
 
 Gets Query content that are relevant in the current context. The result set will contain two types of content:
 
@@ -875,7 +870,6 @@ Permissions for the library for the current user:
 ```
 
 ### Permission queries
-*(from version 6.3)*
 
 There are a couple of OData functions that can be used for getting aggregated security information about a content subtree. These are the following:
 
@@ -883,13 +877,12 @@ There are a couple of OData functions that can be used for getting aggregated se
 - **GetRelatedItems**
 - **GetRelatedPermissions**
 - **GetRelatedItemsOneLevel**
-- **GetAllowedUsers** (from version 6.5.2)
-- **GetParentGroups** (from version 6.5.2)
+- **GetAllowedUsers**
+- **GetParentGroups**
 
 > For more details, please visit the [Permission queries](/docs/permission-queries) article.
 
 ### Get metadata
-*(from version 6.3)*
 
 OData function for collecting all fields of all types in the system. The content parameter (the resource you call it on, in this example the library) is ignored.
 
@@ -903,7 +896,7 @@ OData function for collecting all fields of all types in the system. The content
 ```
 
 ### Check allowed child types
-*(from version 6.3)*
+
 
 Checks all IFolder objects in the Content Repository and returns all paths where AllowedChildTypes is empty. Paths are categorized by content type names. This is a helper function that can be used to get an overview of your system.
 
