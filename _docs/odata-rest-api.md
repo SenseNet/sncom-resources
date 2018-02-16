@@ -87,8 +87,8 @@ It returns child content of _/Root/Sites/ExampleSite/workspaces_ as a **collecti
 
 - **__metadata**: contains the OData URI of the entity and the name of its Content Type
 - **Actions**: this property is deferred: a comma separated list of action names
-- **IsFile**: if its value is true, the content has a binary property named "Binary" (from version 6.2.1).
-- **IsFolder**: if its value is true, the content implements **IFolder** interface. Implementing IFolder interface does not mean that the content is inherited from the `Folder` class but it has public Children property (from version 6.2.1).
+- **IsFile**: if its value is true, the content has a binary property named "Binary".
+- **IsFolder**: if its value is true, the content implements **IFolder** interface. Implementing IFolder interface does not mean that the content is inherited from the `Folder` class but it has public Children property.
 - **Id**, **Name**, **DisplayName**, **Icon**, **CreationDate**, **ModificationDate**: common properties of type integer, number or datetime.
 - **CreatedBy** and **ModifiedBy**: deferred properties (see: [http://www.odata.org/documentation/json-format#DeferredContent](http://www.odata.org/documentation/json-format#DeferredContent)).
 
@@ -315,8 +315,6 @@ $.ajax({
 ```
 
 ### $filter query option
-
-_(from version 6.2.1)_
 
 Defines a subset of the Entries from the specified collection. See on [OData.org](http://www.odata.org/documentation/uri-conventions#FilterSystemQueryOption). The filter expression can contain some global functions according to the OData standard:
 
