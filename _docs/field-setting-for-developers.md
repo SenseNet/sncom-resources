@@ -21,7 +21,7 @@ public abstract class Field
 
 ## Field and FieldSetting
 
-The FieldSetting is an important extensibility point in the sensenet [Content Repository](/docs/content-repository.md). While the Field implements the usable .NET data type, the FieldSetting describes the type of the information stored in a semantic way. For example the IntegerField uses the System.Int32 type which is a technical type, whereas the IntegerFieldSetting can specify that the field's value must be between 1 and 80, which makes the field more suitable for storing lottery numbers.
+The FieldSetting is an important extensibility point in the sensenet [Content Repository](/docs/content-repository). While the Field implements the usable .NET data type, the FieldSetting describes the type of the information stored in a semantic way. For example the IntegerField uses the System.Int32 type which is a technical type, whereas the IntegerFieldSetting can specify that the field's value must be between 1 and 80, which makes the field more suitable for storing lottery numbers.
 
 ## Default FieldSetting for a Field
 
@@ -64,11 +64,11 @@ The following diagram shows the built-in field types of sensenet:
 
 For a list and description of common configuration elements please refer to the following article:
 
-- [CTD#Field definition](/docs/ctd.md)
+- [CTD#Field definition](/docs/ctd)
 
 ## Validation mechanism
 
-The FieldSetting not only specifies the type of information but it also validates according to its implementation. Validation can happen automatically on saving a content, or manually from code. The Field is able to store the validation status (valid, invalid, reason of error), thus if a validation has occurred the field will be revalidated if its data has changed or a previous validation has failed. When developing user interaction handling code we don't come across the validation mechanism, since it is done in the background. There are some properties however that indicate if a validation has failed or not. The following code snippet is an example for handling validation and other problems when using [content views](/docs/content-views.md):
+The FieldSetting not only specifies the type of information but it also validates according to its implementation. Validation can happen automatically on saving a content, or manually from code. The Field is able to store the validation status (valid, invalid, reason of error), thus if a validation has occurred the field will be revalidated if its data has changed or a previous validation has failed. When developing user interaction handling code we don't come across the validation mechanism, since it is done in the background. There are some properties however that indicate if a validation has failed or not. The following code snippet is an example for handling validation and other problems when using [content views](/docs/content-views):
 
 ```csharp
     contentView.UpdateContent();

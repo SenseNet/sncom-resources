@@ -105,7 +105,7 @@ As this action is very rare and used only in eceptional cases, it has a special 
 
 Developers can access the take over lock feature through the following APIs:
 
-- [TakeLockOver OData action](/docs/built-in-odata-actions-and-functions.md)
+- [TakeLockOver OData action](/docs/built-in-odata-actions-and-functions)
 - C# api:
 
 ```csharp

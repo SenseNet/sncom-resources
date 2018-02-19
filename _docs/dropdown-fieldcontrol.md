@@ -13,11 +13,11 @@ The DropDown Field Control displays a drop-down list for selecting an option fro
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/DropDown.png" style="margin: 20px auto" />
 
-When the underlying [Choice Field](/docs/choice-field.md) is configured to allow extra value an extra textbox is rendered next to the dropdown control.
+When the underlying [Choice Field](/docs/choice-field) is configured to allow extra value an extra textbox is rendered next to the dropdown control.
 
 ## Supported Field types
 
-- [Choice Field](/docs/choice-field.md)
+- [Choice Field](/docs/choice-field)
 
 ## Properties
 

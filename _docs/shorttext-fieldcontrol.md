@@ -9,7 +9,7 @@ description: The ShortText Field Control is a Field Control that handles ShortTe
 
 # ShortText Field Control
 
-The ShortText [Field Control](/docs/field-control.md) is a Field Control that handles [ShortText Fields](/docs/shorttext-field.md) and provides an interface to display/modify short text data.
+The ShortText [Field Control](/docs/field-control) is a Field Control that handles [ShortText Fields](/docs/shorttext-field) and provides an interface to display/modify short text data.
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/ShortTextFieldControl_editmode.png" style="margin: 20px auto" />
 
@@ -17,7 +17,7 @@ With ShortText field control textual data can be displayed or edited up to 450 c
 
 ## Supported Field types
 
-- [ShortText Field](/docs/shorttext-field.md)
+- [ShortText Field](/docs/shorttext-field)
 
 ## Templates
 

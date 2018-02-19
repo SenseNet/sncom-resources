@@ -9,7 +9,7 @@ description: The field control class is responsible for the data flow between us
 
 # Field Control
 
-**Field Contols** are the main building blocks of [Content views](/docs/content-view.md). They generate the HTML controls responsible for the input or output of the displayed [Content](/docs/content.md)'s fields. Field controls are implemented as ASP.NET controls, they can be used in the ascx source of the content views.
+**Field Contols** are the main building blocks of [Content views](/docs/content-view). They generate the HTML controls responsible for the input or output of the displayed [Content](/docs/content)'s fields. Field controls are implemented as ASP.NET controls, they can be used in the ascx source of the content views.
 
 The field control class is responsible for the data flow between user interface and appropriate Field of the viewed Content.
 
@@ -70,7 +70,7 @@ There are numerous built-in field controls you can use in content views out-of-t
 
 In addition to the standard properties every ASP.NET server control shares (e.g. *ID*, *runat*, etc.), field controls provide several other ways to control their behavior. The most important properties are the following:
 
-- **FieldName (*)** - Gets or sets the fieldname of the [Field Control](/docs/field-control.md). This is the name with which the control is mapped to a [Field](/docs/field.md) of the underlying [Content](/docs/content.md).
+- **FieldName (*)** - Gets or sets the fieldname of the [Field Control](/docs/field-control). This is the name with which the control is mapped to a [Field](/docs/field) of the underlying [Content](/docs/content).
 - **ControlMode (*)** - Gets or sets the control mode: Browse, Edit or None.
 - **FrameMode (*)** - Gets or sets the frame mode: NoFrame, ShowFrame or None.
 - **Field** - Gets or sets the underlying field.

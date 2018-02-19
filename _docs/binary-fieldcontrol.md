@@ -9,7 +9,7 @@ description: The Binary Field Control is a Field Control that handles Binary Fie
 
 # Binary Field Control
 
-The Binary Field Control is a Field Control that handles [Binary Fields](/docs/binary-field.md) and provides an interface to modify binary data of a Content.
+The Binary Field Control is a Field Control that handles [Binary Fields](/docs/binary-field) and provides an interface to modify binary data of a Content.
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/ReferenceWiki_BinaryFieldControl1.png" style="margin: 20px auto" />
 
@@ -17,12 +17,12 @@ With Binary Field Control the binary data of a Content can be added/modified. De
 
 - the displayed Content is a [Content Type](/docs/content-type,md),
 - the displayed Content has an extension that is included in the web.config's *EditSourceExtensions* entry of the <portalSettings> section,
-- otherwise when the *IsText* property in the underyling [Binary Field's](/docs/binary-field.md) [Field Setting](/docs/field-setting.md) is set to true.
+- otherwise when the *IsText* property in the underyling [Binary Field's](/docs/binary-field) [Field Setting](/docs/field-setting) is set to true.
 When a textarea is rendered it can be displayed as a highlighted editor of bigger size using the FullScreenText property.
 
 ## Supported Field types
 
-- [Binary Field](/docs/binary-field.md)
+- [Binary Field](/docs/binary-field)
 
 ## Properties
 

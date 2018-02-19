@@ -9,7 +9,7 @@ description: The Content Handler defines custom programmed logic of a Content Ty
 
 # Content Handler
 
-The Content Handler defines custom programmed logic of a Content Type implemented in .Net code (ie. C#). Attached business logic can be added to a [Content Type](/docs/content-type.md) by implementing a custom Content Handler. A Content Handler can also be used to create an instance of a specific [Content Type](/docs/content-type.md). Content Handlers can override mapping between object properties and [Content Repository](/docs/content-repository.md) fields, and they may also define properties that are not stored in the [Content Repository](/docs/content-repository.md) (properties that are either calculated or retrieved from another data source).
+The Content Handler defines custom programmed logic of a Content Type implemented in .Net code (ie. C#). Attached business logic can be added to a [Content Type](/docs/content-type) by implementing a custom Content Handler. A Content Handler can also be used to create an instance of a specific [Content Type](/docs/content-type). Content Handlers can override mapping between object properties and [Content Repository](/docs/content-repository) fields, and they may also define properties that are not stored in the [Content Repository](/docs/content-repository) (properties that are either calculated or retrieved from another data source).
 
 ## When to create a custom Content Handler
 
@@ -129,7 +129,7 @@ namespace MyNamespace
 
 ## Assigning a Content Handler to a content
 
-When you create a [Content Type Definition](/docs/ctd.md) you have to assign a Content Handler to the type so that the content will be saved, displayed, loaded in the appropriate manner. Here below is an extract from the Content Type Definition of the Car content type. As you can see the handler is assigned in the first line of the code.
+When you create a [Content Type Definition](/docs/ctd) you have to assign a Content Handler to the type so that the content will be saved, displayed, loaded in the appropriate manner. Here below is an extract from the Content Type Definition of the Car content type. As you can see the handler is assigned in the first line of the code.
 
 ```xml
 <ContentType name="Car" parentType="GenericContent"
@@ -139,11 +139,11 @@ When you create a [Content Type Definition](/docs/ctd.md) you have to assign a C
 </ContentType>
 ```
 
-As you can see, the *Car* Content Type is derived from the *GenericContent* [Content Type](/docs/content-type.md), and its Content Handler is *SenseNet.ContentRepository.GenericContent*. You may develop new handlers to any [Content Type](/docs/content-type.md), but if you don't, *GenericContent* Content Handler is capable of handling your type.
+As you can see, the *Car* Content Type is derived from the *GenericContent* [Content Type](/docs/content-type), and its Content Handler is *SenseNet.ContentRepository.GenericContent*. You may develop new handlers to any [Content Type](/docs/content-type), but if you don't, *GenericContent* Content Handler is capable of handling your type.
 
 ## Example
 
-The following xml is the [Content Type Definition](/docs/ctd.md) of the *Domain* [Content Type](/docs/content-type.md). As you can see a custom Content Handler is assigned to the type:
+The following xml is the [Content Type Definition](/docs/ctd) of the *Domain* [Content Type](/docs/content-type). As you can see a custom Content Handler is assigned to the type:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -219,17 +219,17 @@ namespace SenseNet.ContentRepository
 }
 ```
 
-The above code extends the [Content Type Definition](/docs/ctd.md) with the following logic:
+The above code extends the [Content Type Definition](/docs/ctd) with the following logic:
 
 - an extra derived property is added
 - various constructors are provided to allow easy instance creation
 - some string constants are defined
 
-> Please note that the Content Handler in the above example only extends the *Domain* [Content Type](/docs/content-type.md)'s default logic and does not override it. This means that the default behavior still applies to the *Domain* [Content Type](/docs/content-type.md) just as if no Content Handler was assigned:
+> Please note that the Content Handler in the above example only extends the *Domain* [Content Type](/docs/content-type)'s default logic and does not override it. This means that the default behavior still applies to the *Domain* [Content Type](/docs/content-type) just as if no Content Handler was assigned:
 
 - *Domain* content can be created and managed on the portal
-- *Domain* content fields can be set and are persisted to [Content Repository](/docs/content-repository.md)
-- every *Domain* content is a Folder (the *Domain* [Content Type](/docs/content-type.md) derives from *Folder*) so everything that applies to a *Folder* applies to a *Domain*, too (may contain child content, etc.)
+- *Domain* content fields can be set and are persisted to [Content Repository](/docs/content-repository)
+- every *Domain* content is a Folder (the *Domain* [Content Type](/docs/content-type) derives from *Folder*) so everything that applies to a *Folder* applies to a *Domain*, too (may contain child content, etc.)
 
 To use the above defined Content Handler to create a new *Domain* content the following code can be written in C#:
 

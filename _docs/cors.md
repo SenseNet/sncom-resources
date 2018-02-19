@@ -12,7 +12,7 @@ description: In this article operators and developers may learn about CORS setti
 
 > **sensenet ECM** supports CORS OData requests from **version 6.4** and CORS file download requests from **version 6.5.3**. In this article operators and developers may learn about CORS settings and how we prevent cross-domain attacks.}}
 
-All the information on this page refers to our [OData REST API](/docs/odata-rest-api.md), as that is the most important entry point for client developers to the repository.
+All the information on this page refers to our [OData REST API](/docs/odata-rest-api), as that is the most important entry point for client developers to the repository.
 
 ## CORS basics
 The CORS specification defines two kinds of cross-origin request protocols:
@@ -51,7 +51,7 @@ In case of cross-domain requests all modern browsers send the *Origin* header to
 > Unlike the old *Referer* header that contains the whole url, the *Origin* header contains only the domain and **it cannot be modified after the browser has sent the request**, meaning it is reliable.
 
 ## Settings
-You can manage CORS-related settings in the following [Settings](http://wiki.sensenet.com/Settings) content in the [Content Repository](/docs/content-repository.md)
+You can manage CORS-related settings in the following [Settings](http://wiki.sensenet.com/Settings) content in the [Content Repository](/docs/content-repository)
 - */Root/System/Settings/Portal.settings*
 
 ### Allowed origin domains

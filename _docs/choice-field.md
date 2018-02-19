@@ -55,9 +55,9 @@ Usage in CTD:
 
 ## Supported Field Controls
 
-- [DropDown Field Control](/docs/dropdown-fieldcontrol.md): a select box, which allows the user to choose one value from an option list.
-- [RadioButtonGroup Field Control](/docs/radiobuttongroup-fieldcontrol.md): group of selectable radiobuttons.
-- [CheckBoxGroup Field Control](/docs/checkboxgroup-fieldcontrol.md): group of selectable checkboxes.
+- [DropDown Field Control](/docs/dropdown-fieldcontrol): a select box, which allows the user to choose one value from an option list.
+- [RadioButtonGroup Field Control](/docs/radiobuttongroup-fieldcontrol): group of selectable radiobuttons.
+- [CheckBoxGroup Field Control](/docs/checkboxgroup-fieldcontrol): group of selectable checkboxes.
 
 ## Configuration
 

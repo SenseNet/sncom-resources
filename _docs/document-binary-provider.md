@@ -9,7 +9,7 @@ description: This article describes how can you customize the binary content bef
 
 # Document binary provider
 
-sensenet ECM is able to store huge amounts of documents in the [Content Repository](/docs/content-repository.md) and serve them to clients. In most cases these are simple files with one binary field - e.g. Office documents or PDF files. There are cases however when the stored binary is not enough or certain adjustments must be made on the binary before serving it. This article describes how can you customize the binary content before serving it to the client.
+sensenet ECM is able to store huge amounts of documents in the [Content Repository](/docs/content-repository) and serve them to clients. In most cases these are simple files with one binary field - e.g. Office documents or PDF files. There are cases however when the stored binary is not enough or certain adjustments must be made on the binary before serving it. This article describes how can you customize the binary content before serving it to the client.
 
 ## Document binary provider
 

@@ -9,16 +9,16 @@ description: sensenet ECM is a web application but it is a lot more complex than
 
 # SnAdmin
 **sensenet ECM** is a web application but it is a lot more complex than a simple web CMS. 
-**Patching, upgrading or executing batch operations** on the core product (or a custom solution built on it) is one of the most important tasks of developers and operators. This article introduces **SnAdmin** that is the tool that operators will use for these tasks in sensenet ECM. You can use this tool to execute patches, perform upgrades or simply import a few content. It can be considered as a **framework** also that is extendible by third party developers to [perform custom tasks](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-create-custom-step.md).
+**Patching, upgrading or executing batch operations** on the core product (or a custom solution built on it) is one of the most important tasks of developers and operators. This article introduces **SnAdmin** that is the tool that operators will use for these tasks in sensenet ECM. You can use this tool to execute patches, perform upgrades or simply import a few content. It can be considered as a **framework** also that is extendible by third party developers to [perform custom tasks](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-create-custom-step).
 
 > This article focuses on features that are available in SnAdmin **version 1.4+**, that is published alongside sensenet ECM 7.0+. To read about previous SnAdmin versions that work with sensenet ECM 6.5, please [follow this link](http://wiki.sensenet.com/SnAdmin).
 
-SnAdmin also offers a growing number of [built-in tools](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-tools.md) that will let you perform common operations like importing content items. 
+SnAdmin also offers a growing number of [built-in tools](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-tools) that will let you perform common operations like importing content items. 
 
 ### What is a package?
 The SnAdmin tool is a console application that executes a **package**. A package is a **zip file** that encapsulates *operations* and *data*. Portal builders and developers create these packages containing all the content and executables for a feature or a bugfix. A package should be executed on a dev machine or a test server first, minimizing the chance of installation errors in a production environment.
 
-SnAdmin checks **prerequisites** and [component dependencies](https://github.com/SenseNet/sensenet/blob/master/docs/sensenet-components.md), executes all the **steps** (similar to workflow activities) defined in the package **manifest**, registers the package and handles component versions. There are a couple of built-in steps in the system, the workflow is highly customizable and developers can write custom install steps in a few minutes.
+SnAdmin checks **prerequisites** and [component dependencies](https://github.com/SenseNet/sensenet/blob/master/docs/sensenet-components), executes all the **steps** (similar to workflow activities) defined in the package **manifest**, registers the package and handles component versions. There are a couple of built-in steps in the system, the workflow is highly customizable and developers can write custom install steps in a few minutes.
 
 The following list contains what a package can do.
 * manage content in the Content Repository (it has full access to the sensenet ECM .Net api)
@@ -250,16 +250,16 @@ It is possible to execute steps based on a condition. This means a step (or a li
    </Else>
 </IfFileExists>
 ```
-Please look for the [built-in conditional steps](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-builtin-steps.md), or create your own custom conditional step by inheriting from the following base class:
+Please look for the [built-in conditional steps](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-builtin-steps), or create your own custom conditional step by inheriting from the following base class:
 -   *SenseNet.Packaging.Steps.ConditionalStep*
 
 ### Built-in steps
 There are many built-in steps in the product that you can use to build your own packages. Please check the following article for the complete list:
-- [Built-in steps](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-builtin-steps.md)
+- [Built-in steps](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-builtin-steps)
 
 ### Custom Steps
 It is possible to create custom install steps for the packaging framework. That is the way to customize the install process for custom applications built on sensenet ECM, executing ad-hoc tools and hotfixes. Please visit the following article for details:
-- [How to create a custom install step](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-create-custom-step.md)
+- [How to create a custom install step](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-create-custom-step)
 
 ### Phases
 It is possible to define multiple lists of steps inside a package (in the manifest). These lists are called *Phases* and they serve only one purpose: you need to place steps that need a **different dll set** into separate phases. For example you need to perform a couple of tasks with the old dll set (e.g. export content using the old content handlers), then switch to the new dlls inside the package. In this case you put the first steps (including the copy step) into the first phase and put the rest to the next phase.
@@ -282,7 +282,7 @@ Phase example
 Each phase is independent during the SnAdmin execution. It means every phase is parsed and executed independently. This way it is possible to install or upgrade a class library with new step types and use these in a following phase in the same package. This execution model has only one disadvantage: if the manifest xml contains invalid parts in a later phase, an exception will be thrown only in the incorrect phase after the successful execution of the previous phases. In this case the package may leave unwanted elements in the database or the file system. To minimize the chance of these cases you always need to test the package on a test server before executing it on a production server.
 
 ### Directory structure in the package
-The package zip file should contain only one XML file in the root (the manifest), all additional content should be in subfolders. There is no naming convention for the subfolders - except [the one for developers](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-create-custom-step.md).
+The package zip file should contain only one XML file in the root (the manifest), all additional content should be in subfolders. There is no naming convention for the subfolders - except [the one for developers](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-create-custom-step).
 
 You can name your folders as you wish, but it is recommended to follow these rules:
 - provide content files to import in a separate folder (e.g. called *import*)

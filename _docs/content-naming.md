@@ -9,13 +9,13 @@ description: This article summarizes the connection between these two fields and
 
 # Content Naming
 
-In the sensenet [Content Repository](/docs/content-repository.md) every Content has a Name [Field](/docs/field.md) that together with its location identifies the Content. The Content Name is part of the Content Path, and since the path can be used to address the Content via url, there are certain restrictions against the Name. The Content in the Repository also have a DisplayName that is the user-friendly human readable name of Content and can contain any kind of characters without restrictions. This article summarizes the connection between these two fields and other common aspects of Content naming.
+In the sensenet [Content Repository](/docs/content-repository) every Content has a Name [Field](/docs/field) that together with its location identifies the Content. The Content Name is part of the Content Path, and since the path can be used to address the Content via url, there are certain restrictions against the Name. The Content in the Repository also have a DisplayName that is the user-friendly human readable name of Content and can contain any kind of characters without restrictions. This article summarizes the connection between these two fields and other common aspects of Content naming.
 
-> If you are interested in customizing how the name of a downloaded file looks like, please check out the [Document binary provider article](/docs/document-binary-provider.md) for developers.
+> If you are interested in customizing how the name of a downloaded file looks like, please check out the [Document binary provider article](/docs/document-binary-provider) for developers.
 
 ## Name and DisplayName
 
-All content in the sensenet [Content Repository](/docs/content-repository.md) is identified by the following [Fields](/docs/field.md):
+All content in the sensenet [Content Repository](/docs/content-repository) is identified by the following [Fields](/docs/field):
 
 |Field|Description|Example|
 |-----|-----------|-------|
@@ -23,9 +23,9 @@ All content in the sensenet [Content Repository](/docs/content-repository.md) is
 |**Path** (*Path Field*)|	link to the Content in Content Repository|/Root/DemoContents/Examples-tutorials.docx|
 |**Display Name** (*DisplayName Field*)|a legible name of the Content for better human readability|Examples & tutorials.docx|
 
-The **Name** is the main identifier of the [Content](/docs/content.md). Its value is also included in the Path property which acts as a permalink to the Content. Thus changing a Content's Name (aka. renaming a Content) also changes the Path and therefore renaming operations should be carried out carefully. A path change may result in a lengthy operation (paths of child content are also changed respectively) and may also result in broken links in the [Content Repository](/docs/content-repository.md) (if another content refers to the changed one through its path - e.g. an article containing a link in its text). These two properties are used when the Content is referred to via a url link and therefore may not contain special characters.
+The **Name** is the main identifier of the [Content](/docs/content). Its value is also included in the Path property which acts as a permalink to the Content. Thus changing a Content's Name (aka. renaming a Content) also changes the Path and therefore renaming operations should be carried out carefully. A path change may result in a lengthy operation (paths of child content are also changed respectively) and may also result in broken links in the [Content Repository](/docs/content-repository) (if another content refers to the changed one through its path - e.g. an article containing a link in its text). These two properties are used when the Content is referred to via a url link and therefore may not contain special characters.
 
-> Do not worry about [referenced content](/docs/reference-field.md): those are connected by content ids instead of paths, so renaming a referenced content will not brake reference fields.
+> Do not worry about [referenced content](/docs/reference-field): those are connected by content ids instead of paths, so renaming a referenced content will not brake reference fields.
 
 The **DisplayName** is the main display name of the Content. It acts as a legible, human readable name and may contain punctuations and accented characters as well. Generally, when a Content is displayed on the front-end of the portal, the value of the DisplayName property is shown. Changing the DisplayName is a simple operation and does not cause broken links (because changing DisplayName only does not change the Url Name).
 
@@ -73,7 +73,7 @@ Although all content types contain the 3 properties above there are some special
 
 ### Content naming on surface
 
-For the Name and DisplayName Fields come two special [Field Controls](/docs/field-control.md) that provide the users handy interfaces to set the Names and DisplayNames of Content: the [Name Field Control](/docs/name-field-control.md) and the [DisplayName Field Control](/docs/displayname-field-control.md). In situations where both or only the DisplayName is visible by default the Name is automatically generated from the DisplayName typed in by the user. The following screenshot shows the general layout of the two controls in a common scenario:
+For the Name and DisplayName Fields come two special [Field Controls](/docs/field-control) that provide the users handy interfaces to set the Names and DisplayNames of Content: the [Name Field Control](/docs/name-field-control) and the [DisplayName Field Control](/docs/displayname-field-control). In situations where both or only the DisplayName is visible by default the Name is automatically generated from the DisplayName typed in by the user. The following screenshot shows the general layout of the two controls in a common scenario:
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/NameAndDisplayNameControls.png" style="margin: 20px auto" />
 
@@ -83,20 +83,20 @@ The user always has the possibility to change the Name by clicking the pencil to
 
 ### Automatic name generation
 
-Since it can be very time consuming to provide a Name and a DisplayName for a Content at the same time - especially in cases when the Name can be derived from the DisplayName - sensenet provides automatic name generation mechanisms both on client and on server side. A Name can always be automatically generated from a given DisplayName by encoding or removing invalid characters. When the Content is created using a [Content View](/docs/content-view.md) name generation is done using two special Field Controls: the [Name Field Control](/docs/name-field-control.md) and the [DisplayName Field Control](/docs/displayname-field-control.md).
+Since it can be very time consuming to provide a Name and a DisplayName for a Content at the same time - especially in cases when the Name can be derived from the DisplayName - sensenet provides automatic name generation mechanisms both on client and on server side. A Name can always be automatically generated from a given DisplayName by encoding or removing invalid characters. When the Content is created using a [Content View](/docs/content-view) name generation is done using two special Field Controls: the [Name Field Control](/docs/name-field-control) and the [DisplayName Field Control](/docs/displayname-field-control).
 
-> Content naming behavior is customizable. Please check out the [ContentNamingProvider](content-naming-provider.md) article (for developers) that describe the built-in naming providers and other details.
+> Content naming behavior is customizable. Please check out the [ContentNamingProvider](content-naming-provider) article (for developers) that describe the built-in naming providers and other details.
 
 #### Autonaming on client side
 
-The [DisplayName Field Control](/docs/displayname-field-control.md) automatically fills the value of the [Name Field Control](/docs/name-field-control.md) visible in the same [Content View](/docs/content-view.md), from the value entered to the DisplayName Field Control. The entered DisplayName is processed so that invalid characters are encoded - the resulting string will be the automatically created Name for the Content. The Name however does not change automatically in the following cases:
+The [DisplayName Field Control](/docs/displayname-field-control) automatically fills the value of the [Name Field Control](/docs/name-field-control) visible in the same [Content View](/docs/content-view), from the value entered to the DisplayName Field Control. The entered DisplayName is processed so that invalid characters are encoded - the resulting string will be the automatically created Name for the Content. The Name however does not change automatically in the following cases:
 
 - the user edits the Name manually,
 - the underlyng Content already exists in the Content Repository, so it is not a new scenario but a rename scenario.
 
 #### Autonaming on server side
 
-In case no [Name Field Control](/docs/name-field-control.md) is visible in the same [Content View](/docs/content-view.md), the Name for the Content is automatically generated from the entered DisplayName on the server side, using the same algorithm to generate the Name as on client side.
+In case no [Name Field Control](/docs/name-field-control) is visible in the same [Content View](/docs/content-view), the Name for the Content is automatically generated from the entered DisplayName on the server side, using the same algorithm to generate the Name as on client side.
 
 #### Rename and autoname
 
@@ -121,7 +121,7 @@ Pattern must start with '[' and end with ']'. -->
     </contentNaming>
   </sensenet>
 ```
-- **InvalidNameCharsPattern**: a regular expression that defines the invalid characters a Content Name may not contain. These invalid characters are automatically encoded (or replaced) during converting a display name to a name, depending on the configured [ContentNamingProvider](/docs/content-naming-provider.md). If the Name is not autogenerated (for example for Files when DisplayName Field Control is not visible in the Content View) and the user inputs a name that contains invalid characters, an error message will be displayed upon trying to save the Content. The regular expression may contain characterset with a negating clause ([^...]) thus defining allowed characters instead of invalid ones, or define invalid characters simply ([...]). In both cases the regular expression MUST start with '[' and end with ']'.
+- **InvalidNameCharsPattern**: a regular expression that defines the invalid characters a Content Name may not contain. These invalid characters are automatically encoded (or replaced) during converting a display name to a name, depending on the configured [ContentNamingProvider](/docs/content-naming-provider). If the Name is not autogenerated (for example for Files when DisplayName Field Control is not visible in the Content View) and the user inputs a name that contains invalid characters, an error message will be displayed upon trying to save the Content. The regular expression may contain characterset with a negating clause ([^...]) thus defining allowed characters instead of invalid ones, or define invalid characters simply ([...]). In both cases the regular expression MUST start with '[' and end with ']'.
 - **UriPlaceholderChar** (only before version 6.3.1): defines the character used to replace the '%' escape character when encoding invalid characters.
 
 > Note that changing InvalidNameCharsPattern will affect path validation logic in the whole Content Repository. It is therefore desired to change validation messages when changing invalid characters pattern, see [#Invalid names and error messages](#invalid).
@@ -129,10 +129,10 @@ Pattern must start with '[' and end with ']'. -->
 #### Autonaming rules
 
 ```diff
-Please note that the automatic algorithm changes to lessen the possibility of name collisions: we provide a short list of invalid characters (see example below) that will be encoded or replaced (depending on the configured [ContentNamingProvider](content-naming-provider.md)) and everything else is allowed. You may still make the regular expression less permissive if you need to.
+Please note that the automatic algorithm changes to lessen the possibility of name collisions: we provide a short list of invalid characters (see example below) that will be encoded or replaced (depending on the configured [ContentNamingProvider](content-naming-provider)) and everything else is allowed. You may still make the regular expression less permissive if you need to.
 ```
 
-We opened our content naming API so that you can provide your own naming algorithm. See the default providers and customization options in the [ContentNamingProvider](/docs/content-naming-provider.md) article.
+We opened our content naming API so that you can provide your own naming algorithm. See the default providers and customization options in the [ContentNamingProvider](/docs/content-naming-provider) article.
 
 ## Invalid names and error messages
 
@@ -183,7 +183,7 @@ if another Content with the same name exists in the same Folder, an error messag
 
 if another Content with the same name exists in the same Folder, the Content is saved with the provided name suffixed with a number. Ie. *My-Content* will be saved as *My-Content(1)* if the Folder already contains a Content named *My-Content*. If *My-Content(1)* is also occupied, it will be saved as *My-Content(2)*, etc.
 
-> The incremental naming behavior is also customizable using the [ContentNamingProvider](/docs/content-naming-provider.md) feature.
+> The incremental naming behavior is also customizable using the [ContentNamingProvider](/docs/content-naming-provider) feature.
 
 ## Example
 

@@ -9,7 +9,7 @@ description: A field describes the represented data, defines its type, domain ra
 
 # Field
 
-[Content](/docs/content.md) in the sensenet [Content Repository](/docs/content-repository.md) are built up of fields. Everything is represented as a content and all of content data can be accessed via fields. Field in sensenet is the atomic data accessor, however it is more than a simple property. A field describes the represented data, defines its type, domain range and it is also able to validate data. The field specifies how its data is being indexed and is also responsible for data transformations between the storage layer, file system and the Lucene index. The field is one of the most important extensibility points in sensenet.
+[Content](/docs/content) in the sensenet [Content Repository](/docs/content-repository) are built up of fields. Everything is represented as a content and all of content data can be accessed via fields. Field in sensenet is the atomic data accessor, however it is more than a simple property. A field describes the represented data, defines its type, domain range and it is also able to validate data. The field specifies how its data is being indexed and is also responsible for data transformations between the storage layer, file system and the Lucene index. The field is one of the most important extensibility points in sensenet.
 
 ## Field definition in CTD
 
@@ -26,7 +26,7 @@ Fields of a content are defined in the content's content type definition. Any co
 </Field>
 ```
 
-For more info on field definition and the possible properties/settings, read [CTD#Field definition](/docs/ctd.md).
+For more info on field definition and the possible properties/settings, read [CTD#Field definition](/docs/ctd).
 
 ### Field type setting
 
@@ -49,7 +49,7 @@ The field type can also be defined with the *handler* attribute instead of the *
 
 The field configuration element can have a custom implementation, known as FieldSetting. You can read more about the FieldSetting object here:
 
-- [Field Setting - for Developers](/docs/field-setting-for-developers.md)
+- [Field Setting - for Developers](/docs/field-setting-for-developers)
 
 ## The Field class
 
@@ -168,12 +168,12 @@ We usually retrieve the Field object from the Field when we need its metadata:
 
 For details on field indexing refer to the following article:
 
-- [Field Indexing](/docs/field-indexing.md)
+- [Field Indexing](/docs/field-indexing)
 
 ## Field related extensibilities
 
 sensenet is highly extensible and customizable. Implementing custom fields is just one option among many possibilities - for most business problems you don't need to create custom fields and the solution can be reached with different techniques. Here are the most common cases when to and when not to develop a custom field:
 
 - If you need to use a new .NET data type in a content handler: implement a custom Field.
-- If you have a Field using the appropriate .NET type but you want to configure or validate it differently: implement a custom [FieldSetting](/docs/field-setting.md).
+- If you have a Field using the appropriate .NET type but you want to configure or validate it differently: implement a custom [FieldSetting](/docs/field-setting).
 - If you want to search in a Field's values differently: implement a custom [FieldIndexHandler](/docs/how-to-create).

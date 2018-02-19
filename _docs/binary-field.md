@@ -30,15 +30,15 @@ Usage in CTD:
 
 ## Supported Field Controls
 
-- [Binary Field Control](/docs/binary-fieldcontrol.md): a complex field control that provides interface to upload/download binary content or edit textual content in a textarea.
+- [Binary Field Control](/docs/binary-fieldcontrol): a complex field control that provides interface to upload/download binary content or edit textual content in a textarea.
 
 ## Configuration
 
-The following properties can be set in the Field's [Field Setting](/docs/field-setting.md) configuration:
+The following properties can be set in the Field's [Field Setting](/docs/field-setting) configuration:
 
-- **IsText**: a bool property that defines the way the binary is presented - when displayed with [Binary Field Control](/docs/binary-fieldcontrol.md). If set to true, the Field data can be inserted manually as a text, otherwise a file can be uploaded. In the former case a textarea, in the latter case a fileupload control is rendered.
+- **IsText**: a bool property that defines the way the binary is presented - when displayed with [Binary Field Control](/docs/binary-fieldcontrol). If set to true, the Field data can be inserted manually as a text, otherwise a file can be uploaded. In the former case a textarea, in the latter case a fileupload control is rendered.
 
-> The **IsText** configuration property value is only a hint and the [Binary Field Control](/docs/binary-fieldcontrol.md) displaying the control can override this setting in cases when the Content has a special extension or it is a Content Type.
+> The **IsText** configuration property value is only a hint and the [Binary Field Control](/docs/binary-fieldcontrol) displaying the control can override this setting in cases when the Content has a special extension or it is a Content Type.
 
 ## Example
 

@@ -19,17 +19,17 @@ As a developer you get an easy-to use Application Programming Interface (API) th
 
 ### End users
 
-If you want details on how to search for content on the portal, create simple or more sophisticated queries to collect content, see the [Query syntax](/docs/query-syntax.md) page.
+If you want details on how to search for content on the portal, create simple or more sophisticated queries to collect content, see the [Query syntax](/docs/query-syntax) page.
 
 ### Developers
 
-If you are a developer and want to extend your code with collecting and presenting content, see the [Query API](/docs/query-api.md) docs.
+If you are a developer and want to extend your code with collecting and presenting content, see the [Query API](/docs/query-api) docs.
 
 ## Examples
 
 In this section you will get some overview about where and how can you utilize the power of the Content Query.
 
-> Please check out [Query syntax](/docs/query-syntax.md) before proceeding!
+> Please check out [Query syntax](/docs/query-syntax) before proceeding!
 
 ### Getting articles
 
@@ -59,7 +59,7 @@ You can use query text in the following places:
 
 #### Search boxes
 
-When you search for a content on the main portal search, you can make a simple search for one word, but using the full [Query syntax](/docs/query-syntax.md) you can create more sophisticated searches.
+When you search for a content on the main portal search, you can make a simple search for one word, but using the full [Query syntax](/docs/query-syntax) you can create more sophisticated searches.
 
 ### Smart folders
 
@@ -77,4 +77,4 @@ In sensenet every portlet has a property window that you can use to customize th
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/QueryContentPicker.png" style="margin: 20px auto" />
 
-If you are editing a content that has a [Reference Field](/docs/reference-field.md) or you are editing the properties of a [portlet](/docs/portlet.md) you will come across the Content Picker. You can use it to search for content if you switch to Search mode and type a query text to the text box.
+If you are editing a content that has a [Reference Field](/docs/reference-field) or you are editing the properties of a [portlet](/docs/portlet) you will come across the Content Picker. You can use it to search for content if you switch to Search mode and type a query text to the text box.

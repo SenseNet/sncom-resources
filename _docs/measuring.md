@@ -8,8 +8,8 @@ description: This page discusses the sensenet ECM Benchmark Tool measuring proce
 ---
 # Benchmark measuring
 This page discusses the sensenet ECM Benchmark Tool measuring process. Further information about the needed environment or the measuring profiles are at the following pages:
- - [Environment preparation](/docs/environment.md)
- - [Profiles](/docs/profile-definition-language.md)
+ - [Environment preparation](/docs/environment)
+ - [Profiles](/docs/profile-definition-language)
 ## Steps before measuring
   - Make sure you have a clean database and prepared for measuring
   - Check that LuceneIndex is in sync on all sites
@@ -21,7 +21,7 @@ This page discusses the sensenet ECM Benchmark Tool measuring process. Further i
 	```
 	..BenchmarkTool\bin\SnBenchmark.exe -GROW:30 -ERRORS:10 -WARMUP:30 -SITE:"http://somehost.com,http://site01.com" -USR:admin -PWD:admin
 	```  
-Further explanation on parameters is in the [benchmark details documentation](/docs/benchmark-details.md).
+Further explanation on parameters is in the [benchmark details documentation](/docs/benchmark-details).
 If you would like reliable results, you should repeat it some 2-5 times. Between the iterations it is recommended to wait for your webservers to free the allocated resources.
 ## Steps after measuring
 The measuring makes .csv files from the measured data, but if there were errors .error files are also generated.

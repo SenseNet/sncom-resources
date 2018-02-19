@@ -19,7 +19,7 @@ All content naming operations are done through a content naming provider. The ba
 
 These features are called by system methods and can be customized by developers by simply inheriting from the base class. The active provider is selected in the configuration (see below).
 
-> If you are interested in customizing how the name of a downloaded file looks like, please check out the [Document binary provider](/docs/document-binary-provider.md) article.
+> If you are interested in customizing how the name of a downloaded file looks like, please check out the [Document binary provider](/docs/document-binary-provider) article.
 
 ## Built-in naming providers
 
@@ -29,7 +29,7 @@ We offer the following predefiend naming providers. You may choose either one of
 
 **This is the default naming provider.** Contains a customized *GenerateNameFromDisplayName* method that replaces invalid characters with a **single replacement character**. Invalid characters and the replacement character are configurable in the **sensenet/contentNaming** section in the web.config.
 
-- **InvalidNameCharsPattern** (see details in the [Content naming article](/docs/content-naming.md))
+- **InvalidNameCharsPattern** (see details in the [Content naming article](/docs/content-naming))
 - **ReplacementChar**: a single character that will be used as a replacement character
 
 Duplicated 'ReplacementChar' characters are replaced by a single character (so after the conversion the name may contain less characters than the display name). This conversion is very simple but there is a chance of non-unique name creation. The original file extension will be kept.
@@ -38,7 +38,7 @@ Duplicated 'ReplacementChar' characters are replaced by a single character (so a
 
 Contains a customized *GenerateNameFromDisplayName* method that encodes the display name. The encoding works with the standard UrlEncode .Net method, but the percent sign ('%') will be replaced with an underscore ('_') character. The names that are generated from unique names are guaranteed to remain unique. After the conversion the name may contain more characters than the input name. The original file extension will be kept. Invalid characters are configurable in the **sensenet/contentNaming** section in the web.config.
 
-- **InvalidNameCharsPattern** (see details in the [Content naming article](/docs/content-naming.md))
+- **InvalidNameCharsPattern** (see details in the [Content naming article](/docs/content-naming))
 
 ## Custom naming provider
 
@@ -54,7 +54,7 @@ protected virtual string GenerateNewName(string nameBase, ContentType contentTyp
 
 ### Conversion from displayname
 
-This is the only abstract method of the provider. Generates a valid name from a human readable display name. The generated name is only a hint, because the user may overwrite it on the UI. The conversion needs to be as fast as possible because the [DisplayName field control](/docs/displayname-field-control.md) uses it frequently from the client side.
+This is the only abstract method of the provider. Generates a valid name from a human readable display name. The generated name is only a hint, because the user may overwrite it on the UI. The conversion needs to be as fast as possible because the [DisplayName field control](/docs/displayname-field-control) uses it frequently from the client side.
 
 ```csharp
 protected abstract string GenerateNameFromDisplayName(string originalName, string displayName);
@@ -62,7 +62,7 @@ protected abstract string GenerateNameFromDisplayName(string originalName, strin
 
 ### Validating name
 
-When a content gets saved, this method is responsible for validating the content name. In our implementations this method checks the forbidden characters in the content's name and if finds one it throws an InvalidPathException. This check uses a regex pattern that is configured in the web.config (see the the main [Content naming article](/docs/content-naming.md) for examples). Inherited providers can customize this behavior in the following method:
+When a content gets saved, this method is responsible for validating the content name. In our implementations this method checks the forbidden characters in the content's name and if finds one it throws an InvalidPathException. This check uses a regex pattern that is configured in the web.config (see the the main [Content naming article](/docs/content-naming) for examples). Inherited providers can customize this behavior in the following method:
 
 ```csharp
 protected virtual void AssertNameIsValid(string name)
@@ -70,7 +70,7 @@ protected virtual void AssertNameIsValid(string name)
 
 ### Incremental suffix handling
 
-The provider can create and increment a numbered suffix in the name (e.g. MyContent(12).doc) in case the name is already taken (see [incremental naming](/docs/content-naming.md) for details. There are two customizable methods for this feature:
+The provider can create and increment a numbered suffix in the name (e.g. MyContent(12).doc) in case the name is already taken (see [incremental naming](/docs/content-naming) for details. There are two customizable methods for this feature:
 
 #### Getting name and suffix separately
 

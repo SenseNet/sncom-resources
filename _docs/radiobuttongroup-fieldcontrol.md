@@ -13,11 +13,11 @@ The RadioButtonGroup Field Control displays a list of radiobuttons for selecting
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/Radiobuttongroup.png" style="margin: 20px auto" />
 
-When the underlying [Choice Field](/docs/choice-field.md) is configured to allow extra value an extra textbox is rendered next to the radiobuttongroup control.
+When the underlying [Choice Field](/docs/choice-field) is configured to allow extra value an extra textbox is rendered next to the radiobuttongroup control.
 
 ## Supported Field types
 
-- [Choice Field](/docs/choice-field.md)
+- [Choice Field](/docs/choice-field)
 
 ## Properties
 

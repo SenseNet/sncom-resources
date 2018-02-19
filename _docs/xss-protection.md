@@ -15,7 +15,7 @@ XSS (or Cross-site scripting) is a common form of web attacks that exploit vulne
 
 ### Field Controls and Field Data
 
-Fields will always store data in the same format as received from input. The following applies when displaying Field data in [Field Controls](/docs/field-controls.md):
+Fields will always store data in the same format as received from input. The following applies when displaying Field data in [Field Controls](/docs/field-controls):
 
 - the following sanitization levels are defined in the system:
     - **Text**: the output is HTML encoded, so *script* tag will appear as a human readable *script* text in the output, and not as a processed html tag,
@@ -54,7 +54,7 @@ Here OutputMethod can be one of the following:
 
 ### ContentViews
 
-It is possible to display input data in [Content Views](/docs/content-views.md) using the *GetValue* function:
+It is possible to display input data in [Content Views](/docs/content-views) using the *GetValue* function:
 
 ```csharp
 <%= GetValue("FieldName") %>
@@ -114,7 +114,7 @@ The following is an excerpt from the CTD of the HTMLContent type:
  ...
 ```
 
-The above setting will instruct the CMS to use *Html* sanitization level if the data of the Field is displayed using the [LongText Field Control](/docs/long-text-fieldcontrol.md) in browse mode, since the default fieldcontroltemplate of the LongText Field Control is the following:
+The above setting will instruct the CMS to use *Html* sanitization level if the data of the Field is displayed using the [LongText Field Control](/docs/long-text-fieldcontrol) in browse mode, since the default fieldcontroltemplate of the LongText Field Control is the following:
 
 ```csharp
 <%@  Language="C#" %>

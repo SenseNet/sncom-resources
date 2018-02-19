@@ -15,9 +15,9 @@ The field has two modes depending on how the image is stored in relation to the 
 
 - **reference mode**
     - image data is stored as a node in Content Repository (under the content)
-    - the field acts as a [Reference Field](/docs/reference-field.md) referencing the image node
+    - the field acts as a [Reference Field](/docs/reference-field) referencing the image node
 - **binarydata mode**
-    - the field acts as a [Binary Field](/docs/binary-field.md) storing image data
+    - the field acts as a [Binary Field](/docs/binary-field) storing image data
     - image is therefore not visible in Content Repository
 
 Image can be uploaded and attached to a content using the Image Field Control. Switching between modes can also be done through the Image Field Control.
@@ -43,7 +43,7 @@ Usage in CTD:
     </Field>
 ```
 
-> Note that the Image field is a composite field and it embodies a [Reference Field](/docs/reference-field.md) and a [Binary Field](/docs/binary-field.md). These two fields are technical fields and do not have to be presented by contentviews.
+> Note that the Image field is a composite field and it embodies a [Reference Field](/docs/reference-field) and a [Binary Field](/docs/binary-field). These two fields are technical fields and do not have to be presented by contentviews.
 
 ## Supported Field Controls
 
@@ -51,7 +51,7 @@ Usage in CTD:
 
 ## Configuration
 
-- The Field does not have any special configuration settings in the [Content Type Definition](/docs/ctd.md).
+- The Field does not have any special configuration settings in the [Content Type Definition](/docs/ctd).
 
 ## Example
 

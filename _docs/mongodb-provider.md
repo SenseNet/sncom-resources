@@ -83,4 +83,4 @@ The MongoDB Blob Provider can be used in sharded environment. Of course if you u
 Currently there is no migration tool that moves existing binaries from the main database to MongoDB. However after you install this provider, the system will save new files to it and old files will also be moved as you save them.
 
 -   [Blob provider migration](Blob_provider#Migration "wikilink")
- - [Back to blob provider](/_docs/blob-provider.md)
+ - [Back to blob provider](/_docs/blob-provider)

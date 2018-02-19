@@ -129,7 +129,7 @@ public class ABCTextExtractor : TextExtractor
 
 ## Settings
 
-To add a new text extractor (like the custom one above) or override an existing one you will need to configure the file type and the extractor class in the following [settings content](/docs/settings.md).
+To add a new text extractor (like the custom one above) or override an existing one you will need to configure the file type and the extractor class in the following [settings content](/docs/settings).
 
 - */Root/System/Settings/Indexing.settings*
 

@@ -9,17 +9,17 @@ description: Field Controls provide user interfaces both for displaying and for 
 
 # Field Control
 
-Field Controls are ASP.Net controls that provide GUI for setting/modifying Field values of a [Content](/docs/content.md). Thus, Field Controls are the basic building blocks of [Content Views](/docs/content-view.md) - views that define the HTML layout of Content when presented.
+Field Controls are ASP.Net controls that provide GUI for setting/modifying Field values of a [Content](/docs/content). Thus, Field Controls are the basic building blocks of [Content Views](/docs/content-view) - views that define the HTML layout of Content when presented.
 
-[Content](/docs/content.md) build up of [Fields](/docs/field.md), and Fields are presented with Field Controls when Content are being presented with Content Views. Field Controls provide user interfaces both for displaying and for editing Field values.
+[Content](/docs/content) build up of [Fields](/docs/field), and Fields are presented with Field Controls when Content are being presented with Content Views. Field Controls provide user interfaces both for displaying and for editing Field values.
 
 ## Field Controls and Fields
 
-[Content Views](/docs/content-view.md) can be connected to Content using Portlets. You can connect Field Controls to Content Fields in the Content View, using the Field Controls common FieldName property. This allows different Field Controls to be used with a specific Field. Not any kind of Field Control can be used for a certain Field. There are pre-defined Field Controls for all available Fields in the system. 
+[Content Views](/docs/content-view) can be connected to Content using Portlets. You can connect Field Controls to Content Fields in the Content View, using the Field Controls common FieldName property. This allows different Field Controls to be used with a specific Field. Not any kind of Field Control can be used for a certain Field. There are pre-defined Field Controls for all available Fields in the system. 
 
 ## Generic Field Control
 
-Each Field defines a *default* Field Control in the Field implementation that can be used when the Field is displayed in a Content View. Moreover, this default setting given by the developer of the Field can be overridden and set in the [Field Setting](/docs/field-setting.md)'s ControlHint property. The [Generic Field Control](/docs/generic-field-control.md) is a special Field Control that relies upon the default control setting of the given Field and displays the appropriate control. This means that as a builder you don't necessarily have to search the docs for finding out what Field Controls can be used for the different Fields: simply use the Generic Field Control and the Field will be displayed with the appropriate Field Control.
+Each Field defines a *default* Field Control in the Field implementation that can be used when the Field is displayed in a Content View. Moreover, this default setting given by the developer of the Field can be overridden and set in the [Field Setting](/docs/field-setting)'s ControlHint property. The [Generic Field Control](/docs/generic-field-control) is a special Field Control that relies upon the default control setting of the given Field and displays the appropriate control. This means that as a builder you don't necessarily have to search the docs for finding out what Field Controls can be used for the different Fields: simply use the Generic Field Control and the Field will be displayed with the appropriate Field Control.
 
 ## Field Control modes
 
@@ -28,11 +28,11 @@ A Field Control can be rendered in several modes. There is switch that defines t
 - **FrameMode**: a Field Control can be rendered with a frame containing the *Name* and *Description* of the Field, or without it - just the control itself. When set to *ShowFrame* the frame containing Field metadata is rendered around the control, when set to *NoFrame* only the control itself is rendered.
 - **ControlMode**: this switch controls the behavior of the control: the Field Control can either provide a UI to allow modifications to the underlying Field's value, or it can render the Field value in browse mode simply to display the Field value without providing means to modify the value. When *ControlMode* is set to *Edit* the control is editable, when set to *Browse* it presents Field value in a browsable-only mode.
 
-The following table sums up the different Field Control modes on a [ShortText Field Control](/docs/shorttext-fieldcontrol.md) example:
+The following table sums up the different Field Control modes on a [ShortText Field Control](/docs/shorttext-fieldcontrol) example:
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/shorttext-fieldcontrol.png" style="margin: 20px auto" />
 
-When these properties are not explicitely set in a [Content View](/docs/content-view.md), these mode switches fall back to the corresponding properties of the containing Content View: *ViewControlFrameMode* and *ViewControlMode* for controlling the Field Control's FrameMode and ControlMode respectively. Read this section for a short explanation: [Content View#Content Views and Field Control modes](/docs/content-view.md).
+When these properties are not explicitely set in a [Content View](/docs/content-view), these mode switches fall back to the corresponding properties of the containing Content View: *ViewControlFrameMode* and *ViewControlMode* for controlling the Field Control's FrameMode and ControlMode respectively. Read this section for a short explanation: [Content View#Content Views and Field Control modes](/docs/content-view).
 
 ## Field Control Templates
 
@@ -40,7 +40,7 @@ The HTML layout generated by a Field Control is either defined by its implementa
 
 ## Validation errors
 
-Basic validation logic is handled by the underlying Field (checks input data against [Field Settings](/docs/field-settings.md), validates data type) but the Field Control can also contain validation logic. Any kind of validation error is displayed next to the Field Control (the *FrameTemplate.ascx* contains a placeholder label for error messages).
+Basic validation logic is handled by the underlying Field (checks input data against [Field Settings](/docs/field-settings), validates data type) but the Field Control can also contain validation logic. Any kind of validation error is displayed next to the Field Control (the *FrameTemplate.ascx* contains a placeholder label for error messages).
 
 ## Common properties
 

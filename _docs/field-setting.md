@@ -9,11 +9,11 @@ description: Fields can be configured to behave different ways. This is controll
 
 # Field Setting
 
-[Fields](/docs/field.md) can be configured to behave different ways. This is controlled by their configuration - or with other name: their Field Setting. The Field Setting of a Field contains properties that define the behavior of the Field - for example a Field can be configured as read only or compulsory to fill. The Field Setting of Fields can be adjusted in the [Content Type Definition](/docs/ctd.md), with the Configuration element.
+[Fields](/docs/field) can be configured to behave different ways. This is controlled by their configuration - or with other name: their Field Setting. The Field Setting of a Field contains properties that define the behavior of the Field - for example a Field can be configured as read only or compulsory to fill. The Field Setting of Fields can be adjusted in the [Content Type Definition](/docs/ctd), with the Configuration element.
 
-As [Fields](/docs/field.md) build up [Content](/docs/content.md), the set of contained Fields are defined when [Content Types](/docs/content-type.md) are defined. The [Content Type Definition (CTD)](/docs/ctd.md) for different Content Types holds the Field definition information besides a couple of Content Type-related configuration settings. When defining a Content Type the contained Fields can be defined in the CTD with XML fragments describing the type of the Field, metadata and Field Setting (aka Field configuration). The Field Setting is the part of the CTD Field Definition that is defined by the Configuration element.
+As [Fields](/docs/field) build up [Content](/docs/content), the set of contained Fields are defined when [Content Types](/docs/content-type) are defined. The [Content Type Definition (CTD)](/docs/ctd) for different Content Types holds the Field definition information besides a couple of Content Type-related configuration settings. When defining a Content Type the contained Fields can be defined in the CTD with XML fragments describing the type of the Field, metadata and Field Setting (aka Field configuration). The Field Setting is the part of the CTD Field Definition that is defined by the Configuration element.
 
 ### Field Setting and Field types
 
 Different Field types have different Field Settings.
-Besides Field type-specific settings there are a couple common settings that are available for all Fields. For a complete list of common Field Setting configuration properties see [CTD Field definition](/docs/ctd.md)
+Besides Field type-specific settings there are a couple common settings that are available for all Fields. For a complete list of common Field Setting configuration properties see [CTD Field definition](/docs/ctd)

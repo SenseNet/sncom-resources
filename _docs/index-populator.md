@@ -30,7 +30,7 @@ Do not use the -SOURCE parameter. This tool can work properly only in the full i
 ```
 
 ```diff
-If you have a huge Lucene index (the compressed folder is bigger than 500MB), you should consider switching off automatic index backup. In this case you should use the NOBACKUP parameter above to prevent the index populator to make a database backup. For index backup strategy for huge index, please visit the [Backup tool article](/docs/backup-tool.md).
+If you have a huge Lucene index (the compressed folder is bigger than 500MB), you should consider switching off automatic index backup. In this case you should use the NOBACKUP parameter above to prevent the index populator to make a database backup. For index backup strategy for huge index, please visit the [Backup tool article](/docs/backup-tool).
 ```
 
 ## How it works

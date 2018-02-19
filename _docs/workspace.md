@@ -19,7 +19,7 @@ With sensenet ECM Workspaces a team can create a collaborative web site with som
 - the access can be limited to the team (and other users they allow to participate),
 - on the workspace wall user posts and workspace updates are listed,
 - the team does not have to call IT to set up anything,
-- the team members can open and edit documents with [Microsoft Office from the browser](/docs/managing-documents-from-microsoft-office.md).
+- the team members can open and edit documents with [Microsoft Office from the browser](/docs/managing-documents-from-microsoft-office).
 
 Workspaces simplify how people find and share information across company boundaries and enable better informed decisions. They make the users' life simpler and more efficient.
 
