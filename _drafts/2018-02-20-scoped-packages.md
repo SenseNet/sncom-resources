@@ -109,21 +109,21 @@ One of the main goals was that our new packages should be small and lightweight.
 We've used an another package in our unit tests called *mocha-typescript* that enables unit test running with a nice decorator syntax - but it had [~59](http://npm.anvaka.com/#/view/2d/mocha-typescript) indirect dependencies, so we've also changed our unit tests to the plain mocha syntax.
 Now most of our packages doesn't even have any external dependency that you *have to install*.
 
-We've continued with reviewing our processes: We use [Typedoc](http://typedoc.org/) for API Docs generation - this is a greet tool however also adds about [60](http://npm.anvaka.com/#/view/2d/typedoc) package as indirect dependency. We also use commitizen for GIT commit message formatting, but it means about [134](http://npm.anvaka.com/#/view/2d/commitizen) indirect dependency. These two tools plays an important role in our internal processes but not during development - therefore we've decided to remove them even from our *devDependencies* and install them as global NPM packages.
+We've continued with reviewing our processes: We use [Typedoc](http://typedoc.org/) for API Docs generation - this is a great tool however also adds about [60](http://npm.anvaka.com/#/view/2d/typedoc) package as indirect dependency. We also use commitizen for GIT commit message formatting, but it means about [134](http://npm.anvaka.com/#/view/2d/commitizen) indirect dependencies. These two tools play an important role in our internal processes but not during development - therefore we've decided to remove them even from our *devDependencies* and install them as global NPM packages.
 
 We've started to optimize our NPM package sizes next. We've removed the coverage reports - you can still check them on [Codecov](https://codecov.io/) - and the generated API Docs. They will be published into our [community site](https://community.sensenet.com/docs/) soon.
 
-As the last step we've separated our **build** and **build:test** processes - the test artifacts will be compiled into a *temporary folder* and are excluded from the NPM package and the **dist** folder will contain only that artifacts that the package uses.
+As the last step we've separated our **build** and **build:test** processes - the test artifacts will be compiled into a *temporary folder* and will be excluded from the NPM package and the **dist** folder will contain only that artifacts that the package uses.
 
-The results: If you are using our the scoped packages in your NPM project, the current version - with JWT, Google Oauth, the Repository events and the control mapper will - take ~2MB of space (sn-client-js took nearly 20MB).
-Most of our scoped packages **won't install any third party package**. The exceptions will be that packages that will *rely* on a specific framework or library, like the *Aurelia-controls* or the Redux package.
+The results: If you are using the scoped packages in your NPM project, the current version - with JWT, Google Oauth, the Repository events and the control mapper will - take ~2MB of space (sn-client-js took nearly 20MB).
+Most of our scoped packages **won't install any third party package**. The only exceptions will be that packages that will *rely* on a specific framework or library, like the *Aurelia-controls* or the Redux package.
 
 If you are developing a scoped package and you install the *dev dependencies* as well it will take *less than a half of the size of sn-client-js* (~66 MB vs ~149 MB in size, ~7000 files vs ~20 000 files).
 The full build and unit testing time has also been improved - from about ~20sec to ~5sec.
 
 ## Changes
 
-As I mentioned earlier there are no internal namespaces in the scoped packages - therefore you can *import* exactly just that classes / methods that you will need. I've collected a some common examples 
+As I mentioned earlier there are no internal namespaces in the scoped packages - therefore you can *import* exactly just that classes / methods that you will need. I've collected a some common examples.
 
 ### Creating a Repository
 
@@ -162,8 +162,8 @@ const googleAuthProvider: GoogleOauthProvider = addGoogleAuth(jwtService, {
 
 ### Loading a content
 
-There are some major changes when it comes to content loading. The first that the packages uses *promises*, as mentioned above, so from now the operations can be *awaited*.
-The second one is that we've eliminated a lots of unneccessary data transformations, so you can work with the plain serialized data object from the response itself. This also means that you cannot use "instanceof"-type checks on these object, you can use the "Type" property at runtime and *generics* in Typescript during development.
+There are some major changes when it comes to content loading. The first one is that the packages uses *promises*, as mentioned above, so from now the operations can be *awaited*.
+The second one is that we've eliminated a lot of unneccessary data transformations, so you can work with the plain serialized data object from the response itself. This also means that you cannot use "instanceof"-type checks on these object, you can use the "Type" property at runtime and *generics* in Typescript during development.
 
 There are two methods - load and loadCollection - that can be used for loading single contents / one-to-one references and collections / on-to-many references.
 
