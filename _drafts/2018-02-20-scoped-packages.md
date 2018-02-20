@@ -45,7 +45,7 @@ We also wanted to take a look on our build, test and publish processes and - las
 
 
 ## The new packages
- - ToDo: dependency graph
+![NPM packages and dependencies](/img/posts/scoped-packages-dependencies.png "NPM packages and dependencies")
 
 ### [client-utils](https://www.npmjs.com/package/@sensenet/client-utils)
 
