@@ -91,7 +91,7 @@ Our Aurelia control package has been refactored. The main change here is that it
 
 The main change is that the Content API itself has been removed. Most of its responsibilities has been taken by the Repository - in the most cases this means that e.g. ``myContent.checkout();`` has been moved to ``repository.versioning.checkOut(myContent.Id);``.
 
-One another breaking chage is that in the future content creation and updates will be possible only on *repository instances* via the exposed **post/patch/put** methods. That means that ``myContent.save()`` will be changed to ``repository.patch({idOrPath: myContent.Id, content: myContent})``
+One another breaking chage is that in the future content creation and updates will be possible only on *repository instances* via the exposed **post/patch/put** methods. That means that ``myContent.save()`` will be changed to ``repository.patch({idOrPath: myContent.Id, content: myContent})``.
 
 ### Promises, fetch and disposables
 
@@ -158,8 +158,6 @@ const googleAuthProvider: GoogleOauthProvider = addGoogleAuth(jwtService, {
 })
 ```
 
-### Working with content data
-
 ### Loading a content
 
 There are some major changes when it comes to content loading. The first one is that the packages uses *promises*, as mentioned above, so from now the operations can be *awaited*.
@@ -206,8 +204,12 @@ const response: Promise<TReturns> = repo.executeAction<TPostBody, TReturns>({
 })
 ```
 
-## What's next?
+## Further goals
 
- - TypeDocs on the community site
- - Review Redux dependencies and async operations
- - Dynamic schema loading and CLI update
+Although the scoped packages has been published, we have still some tasks remaining: We have to publish the API documentation to the community site and update our tutorials.
+
+We've already started to update our Redux package, review its dependencies and improve the async operations - it will be also a scoped package. After that we can update our React controls package as well.
+
+We also plan to update our command line tool to allow developers fetching their content types from CTDs but before we do that we want to improve the *client-side schema loading*.
+
+We hope that sensenet ECM development will be simpler and more fun than ever with the new packages. If you have any questions or thoughts don't hesitate to share with us :)
