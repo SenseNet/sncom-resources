@@ -2,7 +2,7 @@
 
 title: "Scoped packages"
 author: gallayl
-image: "../img/posts/getting-started-with-aurelia.jpg"
+image: "../img/posts/scoped-packages.jpg"
 tags: [npm, node, typescript, javascript, client packages, odata, immutable]
 
 ---
