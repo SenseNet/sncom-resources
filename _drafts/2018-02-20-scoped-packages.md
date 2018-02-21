@@ -13,15 +13,15 @@ We've started 2018 with a huge package refactor: we have divided our base *sn-cl
 
 ## Why?
 
-The long story short: out all-in-one *sn-client-js* has started to grow too fast. The development started to getting slower and harder. The package contained some well-separable parts (like querying, default content types or repository events) that could be easily extracted into separate packages, it had some parts (like the Repository and Content API) that we had to think again and some parts (like internal modules or namespaces) that are no longer recommended to use.
+Long story short: our all-in-one *sn-client-js* has started to grow too fast. The development started to getting slower and harder. The package contained some well-separable parts (like querying, default content types or repository events) that could be easily extracted into separate packages. It had some parts (like the Repository and Content API) that we had to rethink and some parts (like internal modules or namespaces) that are no longer recommended to use.
 
 ### Immutable objects
 
-Redux - as many other libraries nowdays - uses *shallow equality checking* for change detection and therefore it needs to work with [immutable data](https://redux.js.org/docs/faq/ImmutableData.html). Our Content and Repository API-s were not fully prepared to work with immutable objects: our rich-domain-inspired Content API had its own change detection mechanism. We had to rethink the concepts of the client side repository and content API implementation in terms of immutability.
+Redux - as many other libraries nowadays - uses *shallow equality checking* for change detection and therefore it needs to work with [immutable data](https://redux.js.org/docs/faq/ImmutableData.html). Our Content and Repository API-s were not fully prepared to work with immutable objects: our rich-domain-inspired Content API had its own change detection mechanism. We had to rethink the concepts of the client side repository and content API implementation in terms of immutability.
 
 ### Internal modules and namespaces
 
-We've packed a lot of things in **sn-client-js**: default content type and schema definitions, logics for querying on OData, authentication logics, etc... They were organized into *internal modules and namespaces*. This approach is less and less recommended, nowdays namespacing is even considered as [needless](https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html) by Typescript. There were some modules (like the default Content Types) that was worth extracting into a separate package.
+We've packed a lot of things in **sn-client-js**: default content type and schema definitions, logics for querying on OData, authentication logics, etc... They were organized into *internal modules and namespaces*. This approach is less and less recommended, nowadays namespacing is even considered as [needless](https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html) by TypeScript. There were some modules (like the default Content Types) that were worth extracting into separate packages.
 
 ### The size of sn-client-js@^3.0.3 in numbers
 
@@ -38,11 +38,9 @@ The package contains about **~458** unit tests that isn't a problem itself: it t
 We wanted to divide our overgrown client side packages - especially our *base* package, *sn-client-js* - into smaller, lightweight ones. NPM offers [package scoping](https://docs.npmjs.com/misc/scope), so we've decided to publish the new packages within a **@sensenet** scope.
 
 We wanted some features - like repository events, mapping controls to schemas or even JWT authentication itself - to be fully optional.
-We wanted to review if that we can switch to some native APIs from external NPM libraries - for example in terms of RxJs and native promises with fetch API.
-We wanted to catch up with the industry standards in terms of immutability and standardize our linting settings.
+We wanted to review if we can switch to some native APIs from external NPM libraries - for example in terms of RxJs and native promises with fetch API. We wanted to catch up with the industry standards in terms of immutability and standardize our linting settings.
 
 We also wanted to take a look on our build, test and publish processes and - last but not least - the content of our NPM packages.
-
 
 ## The new packages
 ![NPM packages and dependencies](/img/posts/scoped-packages-dependencies.png "NPM packages and dependencies")
@@ -57,7 +55,7 @@ If you want to create typesafe content queries you can do that with this package
 
 ### [default-content-types](https://www.npmjs.com/package/@sensenet/default-content-types)
 
-We store the default generated content types, schema definitions, enums, etc... in this package. This package exceptionally doesn't contain any unit tests as it doesn't contain application logic - it can be used as a content type / schema library.
+We store the default generated content types, schema definitions, enums, etc... in this package. This package (unlike the others) doesn't contain any unit tests as it doesn't contain application logic - it can be used as a content type / schema library.
 
 ### [client-core](https://www.npmjs.com/package/@sensenet/client-core)
 
@@ -91,7 +89,7 @@ Our Aurelia control package has been refactored. The main change here is that it
 
 The main change is that the Content API itself has been removed. Most of its responsibilities has been taken by the Repository - in the most cases this means that e.g. ``myContent.checkout();`` has been moved to ``repository.versioning.checkOut(myContent.Id);``.
 
-One another breaking chage is that in the future content creation and updates will be possible only on *repository instances* via the exposed **post/patch/put** methods. That means that ``myContent.save()`` will be changed to ``repository.patch({idOrPath: myContent.Id, content: myContent})``.
+Another breaking chage is that in the future content creation and updates will be possible only on *repository instances* via the exposed **post/patch/put** methods. That means that ``myContent.save()`` will be changed to ``repository.patch({idOrPath: myContent.Id, content: myContent})``.
 
 ### Promises, fetch and disposables
 
@@ -106,7 +104,9 @@ We've reviewed and removed a lots of transformations in terms of odata requests,
 ## Package optimizations
 
 One of the main goals was that our new packages should be small and lightweight. We've started with a strict dependency review that included the indirect dependencies as well. We've started to change our scripts to NPM scripts from Gulp tasks earlier and now we didn't have any dependency on Gulp. As I've mentioned earlier we've switched to native promises and we could remove our dependency on RxJs that is a huge package itself.
-We've used an another package in our unit tests called *mocha-typescript* that enables unit test running with a nice decorator syntax - but it had [~59](http://npm.anvaka.com/#/view/2d/mocha-typescript) indirect dependencies, so we've also changed our unit tests to the plain mocha syntax.
+
+We've used another package in our unit tests called *mocha-typescript* that enables unit test running with a nice decorator syntax - but it had [~59](http://npm.anvaka.com/#/view/2d/mocha-typescript) indirect dependencies, so we've also changed our unit tests to the plain mocha syntax.
+
 Now most of our packages doesn't even have any external dependency that you *have to install*.
 
 We've continued with reviewing our processes: We use [Typedoc](http://typedoc.org/) for API Docs generation - this is a great tool however also adds about [60](http://npm.anvaka.com/#/view/2d/typedoc) package as indirect dependency. We also use commitizen for GIT commit message formatting, but it means about [134](http://npm.anvaka.com/#/view/2d/commitizen) indirect dependencies. These two tools play an important role in our internal processes but not during development - therefore we've decided to remove them even from our *devDependencies* and install them as global NPM packages.
@@ -115,15 +115,17 @@ We've started to optimize our NPM package sizes next. We've removed the coverage
 
 As the last step we've separated our **build** and **build:test** processes - the test artifacts will be compiled into a *temporary folder* and will be excluded from the NPM package and the **dist** folder will contain only that artifacts that the package uses.
 
-The results: If you are using the scoped packages in your NPM project, the current version - with JWT, Google Oauth, the Repository events and the control mapper will - take ~2MB of space (sn-client-js took nearly 20MB).
+The results: If you are using the scoped packages in your NPM project, the current version - with JWT, Google Oauth, the Repository events and the control mapper will - take **~2MB** of space (sn-client-js took nearly 20MB).
+
 Most of our scoped packages **won't install any third party package**. The only exceptions will be that packages that will *rely* on a specific framework or library, like the *Aurelia-controls* or the Redux package.
 
 If you are developing a scoped package and you install the *dev dependencies* as well it will take *less than a half of the size of sn-client-js* (~66 MB vs ~149 MB in size, ~7000 files vs ~20 000 files).
+
 The full build and unit testing time has also been improved - from about ~20sec to ~5sec.
 
 ## Changes
 
-As I mentioned earlier there are no internal namespaces in the scoped packages - therefore you can *import* exactly just that classes / methods that you will need. I've collected a some common examples.
+As I mentioned earlier there are no internal namespaces in the scoped packages - therefore you can *import* exactly just the classes / methods that you will need. I've collected a some common examples.
 
 ### Creating a Repository
 
@@ -160,10 +162,11 @@ const googleAuthProvider: GoogleOauthProvider = addGoogleAuth(jwtService, {
 
 ### Loading a content
 
-There are some major changes when it comes to content loading. The first one is that the packages uses *promises*, as mentioned above, so from now the operations can be *awaited*.
-The second one is that we've eliminated a lot of unneccessary data transformations, so you can work with the plain serialized data object from the response itself. This also means that you cannot use "instanceof"-type checks on these object, you can use the "Type" property at runtime and *generics* in Typescript during development.
+There are some major changes when it comes to content loading. The first one is that the packages use *promises*, as mentioned above, so from now on the operations can be *awaited*.
 
-There are two methods - load and loadCollection - that can be used for loading single contents / one-to-one references and collections / on-to-many references.
+The second one is that we've eliminated many unneccessary data transformations, so you can work with the plain serialized data object from the response itself. This also means that you cannot use "instanceof"-type checks on these object, you can use the "Type" property at runtime and *generics* in TypeScript during development.
+
+There are two methods - load and loadCollection - that can be used for loading single contents / one-to-one references and collections / one-to-many references.
 
 ```ts
 const portalUsers = await repo.loadCollection<User>({
@@ -176,7 +179,7 @@ console.log("Users: ", portalUsers.d.results);
 
 ### Updates
 
-There are also some breaking changes with the content creating / updating API: The POST/PUT/PATCH methods are now available directly on repository instances. You can also use Typescript generics.
+There are also some breaking changes with the content creating / updating API: The POST/PUT/PATCH methods are now available directly on repository instances. You can also use TypeScript generics.
 
 ```ts
 const response = await repository.patch<User>({
@@ -191,6 +194,7 @@ const response = await repository.patch<User>({
 ### Other actions
 
 The bacth actions (copy, move and delete) are also available on repository instances and you can also find the *security* and *versioning* under the corresponding namespace.
+
 If you have custom OData actions implemented, you can use the ``executeAction`` method as shown in the example above - or wrap them with strongly typed method calls like we did for the Security and Versioning related actions:
 
 ```ts
