@@ -49,11 +49,11 @@ We also wanted to take a look on our build, test and publish processes and - las
 
 ### [client-utils](https://www.npmjs.com/package/@sensenet/client-utils)
 
-This package contains some generic utilities - like helpers for disposable objects, a retrier, a method tracer and a simple value observer implementation - and *without and sensenet ECM dependency*, so they can be used in any project.
+This package contains some generic utilities - like helpers for disposable objects, a retrier, a method tracer and a simple value observer implementation - and *without any sensenet ECM dependencies*, so it can be used in any project.
 
 ### [query](https://www.npmjs.com/package/@sensenet/query)
 
-If you want to create type safe content queries you can do that with this package. It has a fluent API to create a query from a generic type argument.
+If you want to create typesafe content queries you can do that with this package. It has a fluent API to create a query from a generic type argument.
 
 ### [default-content-types](https://www.npmjs.com/package/@sensenet/default-content-types)
 
@@ -61,7 +61,7 @@ We store the default generated content types, schema definitions, enums, etc... 
 
 ### [client-core](https://www.npmjs.com/package/@sensenet/client-core)
 
-The *core* logic sits in this package, if you want to interact with sensenet ECM its a good starting point to install this package.
+The *core* logic sits in this package, if you want to interact with sensenet ECM its a good starting point to install it.
 It contains the refactored *Repository* object itself, you can load / modify / delete content and execute custom action from there.
 It also contains some predefined security and versioning related actions, response models, interfaces and abstracts.
 
@@ -105,7 +105,7 @@ We've reviewed and removed a lots of transformations in terms of odata requests,
 
 ## Package optimizations
 
-One of the main goals was that our new packages should be small and lightweight. We've startedd with a strict dependency review that included the indirect dependencies as well. We've started to change our scripts to NPM scripts from Gulp tasks earlier and now we didn't have any dependency on Gulp. As I've mentioned earlier we've switched to native promises and we could remove our dependency on RxJs that is a huge package itself.
+One of the main goals was that our new packages should be small and lightweight. We've started with a strict dependency review that included the indirect dependencies as well. We've started to change our scripts to NPM scripts from Gulp tasks earlier and now we didn't have any dependency on Gulp. As I've mentioned earlier we've switched to native promises and we could remove our dependency on RxJs that is a huge package itself.
 We've used an another package in our unit tests called *mocha-typescript* that enables unit test running with a nice decorator syntax - but it had [~59](http://npm.anvaka.com/#/view/2d/mocha-typescript) indirect dependencies, so we've also changed our unit tests to the plain mocha syntax.
 Now most of our packages doesn't even have any external dependency that you *have to install*.
 
