@@ -84,6 +84,11 @@ h3 {
     font-family: "Raleway Medium";
 }
 
+h3 a {
+    color: rgb(19, 165, 173);
+    text-decoration: 'none'
+}
+
 code, pre {
     font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
     font-size: 12px;
