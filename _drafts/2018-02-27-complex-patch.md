@@ -31,7 +31,11 @@ If you have to rebuild your libraries, please do the following:
 
 ## Extend the package
 
-There is a way for developers to **add custom libraries** to sensenet packages so that they are copied to the target directory **during patching**. The necessary steps are already there inside the patch in the appropriate place, so you **do not have modify the manifest** - only **put the libraries into the zip file** to the following subfolder:
+There is a way for developers to **add custom libraries** to sensenet packages so that they are copied to the target directory **during patching**. The necessary steps are already there inside the patch in the appropriate place, so you **do not have modify the manifest** - only **put the libraries into the zip file**.
+
+The reason behind this magic is that in complex patch cases we need to copy the new libraries in the middle of package execution - not earlier and not later. Steps before need to use the old libraries and steps after need the new ones.
+
+Please copy your libraries to the following subfolder inside the package:
 
 ```txt
 Customization\bin
@@ -39,7 +43,7 @@ Customization\bin
 
 Everything placed into the subfolder above will be copied to the *web\bin* folder of the target site.
 
-You can also put import content files to the package, they will also imported into the repository at the appropate time:
+You can also put import content files to the package, they will be imported into the repository at the appropate time:
 
 ```txt
 Customization\import
@@ -53,10 +57,12 @@ The content file structure will be imported under the *Root* content when we imp
 
 First you have to **restore the original, old environment**. Yes, that is correct - please restore old libraries and web folder. This is necessary because a complex package needs to start with the old environment - for example because it needs those old libraries to perform an operation before overwriting them with the new ones. It also expects that the web folder (for example configuration) is in the old state.
 
-After that you should be execute the patch (containing your updated libraries) without error the usual way. At the end you also have to update the NuGet packages again, so that you use the latest libraries in your development environment.
+After that you should be able to execute the patch (containing your updated libraries) without errors. At the end you also have to **update NuGet packages again**, so that you use the latest libraries in your development environment.
 
 ## Dependent packages
 
-Sometime there are **other sensenet components** (for example *WebPages* or *Workspaces*) that depend on the new API. If you installed them in your environment, you will also have to update those components too, because NuGet will get the latest libraries automatically, but your repository would contain the old component version. You'll know this when you try to start the portal the next time and receive an error message stating that there is a component in the database with an old version number that cannot run.
+Sometimes there are **other sensenet components** (for example *WebPages* or *Workspaces*) that depend on the new API. If you installed them in your environment, you will also have to update those components too, because NuGet will get the latest libraries automatically, but your repository would contain the old component version. You'll know this when you try to start the portal the next time and receive an error message stating that there is a component in the database with an old version number that cannot run.
+
+Please let us know how you manage to work with these patches and how can we improve the process!
 
 > Photo by [Denys Nevozhai](https://unsplash.com/photos/7nrsVjvALnA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/1577014/car?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
