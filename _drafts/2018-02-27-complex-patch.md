@@ -51,7 +51,7 @@ Customization\import
 
 The content file structure will be imported under the *Root* content when we import our own content files at the end of a patch.
 
-> Not all future patches will contain these copy/import steps - only when there was an API change that makes this necessary. If you think that a certain patch lacks these steps, or you encounter an error that cannot be handled this way, please contact us. **Modifying the manifest file inside the patch** is of course also possible, but please do that only if you absolutely know what you are doing.
+> Not all future patches will contain these copy/import steps - only when there was an API change that makes this necessary. If you think that a certain patch lacks these steps, or you encounter an error that cannot be handled this way, please contact us. **Modifying the manifest file inside the patch** is of course also possible, but please do that only if you are absolutely sure what you are doing.
 
 ## Execute the update package
 
@@ -61,7 +61,7 @@ After that you should be able to execute the patch (containing your updated libr
 
 ## Dependent packages
 
-Sometimes there are **other sensenet components** (for example *WebPages* or *Workspaces*) that depend on the new API. If you installed them in your environment, you will also have to update those components too, because NuGet will get the latest libraries automatically, but your repository would contain the old component version. You'll know this when you try to start the portal the next time and receive an error message stating that there is a component in the database with an old version number that cannot run.
+Sometimes there are **other sensenet components** (for example *WebPages* or *Workspaces*) that depend on the new API. If you installed them in your environment, you will also have to update those components too, because NuGet will get the latest libraries automatically, but your repository would contain the old component version. You'll notified about this when you try to start the portal next time and receive an error message stating that there is a component in the database with an old version number that cannot run.
 
 Please let us know how you manage to work with these patches and how can we improve the process!
 
