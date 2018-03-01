@@ -231,6 +231,15 @@ blockquote {
     color: #666;
 }
 
+.docs table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.docs table, .docs th, .docs td {
+    border: solid 1px #eee;
+}
+
 .docs table td {
     padding: 5px;
 }
