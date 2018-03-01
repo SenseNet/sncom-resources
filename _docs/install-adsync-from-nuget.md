@@ -3,7 +3,7 @@ title: "Install AD sync from NuGet"
 source_url: 'https://github.com/SenseNet/sn-adsync/blob/master/docs/install-adsync-from-nuget.md'
 category: Guides
 version: v7.0
-tags: [install, nuget, packages, ad, adsync, sn7]
+tags: [ad, adsync, install, nuget, packages, sn7]
 description: This article is for developers about installing the **AD sync** component for sensenet ECM from NuGet. Before you can do that, please install at least the core layer, sensenet Services, which is a prerequisite of this component.
 
 ---

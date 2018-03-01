@@ -3,7 +3,7 @@ title: "Sync Active Directory to the portal"
 source_url: 'https://github.com/SenseNet/sn-adsync/blob/master/docs/sync-ad-to-portal.md'
 category: Guides
 version: v7.0
-tags: [ad, sync, sn7]
+tags: [ad, adsync, sync, sn7]
 description: Active Directory Synchronization is about replicating LDAP or portal users, groups and other security-related entities in another server or repository. In case of 'AD to Portal' sync this means creating the same set of entities in the Content Repository as in in Active Directory (AD).
 
 ---

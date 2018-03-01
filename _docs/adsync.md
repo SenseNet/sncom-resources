@@ -3,7 +3,7 @@ title: "Active Directory Synchronization"
 source_url: 'https://github.com/SenseNet/sn-adsync/blob/master/docs/adsync.md'
 category: Guides
 version: v7.0
-tags: [install, nuget, packages, ad, adsync, sn7]
+tags: [ad, adsync, install, nuget, packages, sn7]
 description: At many companies users, groups and organization structure is stored and maintained in Active Directory - or in another storage, synced to AD. This is why sensenet ECM is capable of synchronizing AD objects into both directions, from AD to the portal or back.
 
 ---
