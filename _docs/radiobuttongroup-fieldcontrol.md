@@ -9,6 +9,8 @@ description: The RadioButtonGroup Field Control displays a list of radiobuttons 
 
 # RadioButtonGroup Field Control
 
+> Although this feature is supported in sensenet ECM 7, it is built on the old Web Forms technology that you **should not use for new projects**. We encourage you to use a more modern UI solution using our [client-side packages](https://www.npmjs.com/org/sensenet).
+
 The RadioButtonGroup Field Control displays a list of radiobuttons for selecting an option from a single-selection Choice field.
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/Radiobuttongroup.png" style="margin: 20px auto" />
@@ -26,7 +28,7 @@ When the underlying [Choice Field](/docs/choice-field) is configured to allow ex
 Example:
 
 ```html
-   <sn:RadioButtonGroup ID="RadioButtonGroup1" runat="server" FieldName="Style" SelectedValueType="Value" />
+<sn:RadioButtonGroup ID="RadioButtonGroup1" runat="server" FieldName="Style" SelectedValueType="Value" />
 ```
 
 ## Templates
@@ -53,16 +55,16 @@ The RadioButtonGroup Field Control renders a Label control in Browse mode and a 
 ### Simple example
 
 ```html
-   <sn:RadioButtonGroup ID="RadioButtonGroup1" runat="server" FieldName="Style" />
+<sn:RadioButtonGroup ID="RadioButtonGroup1" runat="server" FieldName="Style" />
 ```
 
 ### Templated example
 
 ```html
-   <sn:RadioButtonGroup ID="RadioButtonGroup1" runat="server" FieldName="Style">
-      <EditTemplate>
-         <asp:RadioButtonList ID="InnerControl" runat="server" />
-         <asp:TextBox ID="ExtraTextBox" runat="server" />
-      </EditTemplate>
-   </sn:RadioButtonGroup>
+<sn:RadioButtonGroup ID="RadioButtonGroup1" runat="server" FieldName="Style">
+   <EditTemplate>
+      <asp:RadioButtonList ID="InnerControl" runat="server" />
+      <asp:TextBox ID="ExtraTextBox" runat="server" />
+   </EditTemplate>
+</sn:RadioButtonGroup>
 ```
