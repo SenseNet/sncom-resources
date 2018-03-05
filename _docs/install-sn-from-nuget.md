@@ -37,6 +37,7 @@ This is why we decided to publish two types of packages for our components:
 
 <a name="InstallPackage"></a>
 ## Installing sensenet Services
+[Watch our video tutorial](https://youtu.be/640NYCFRuLk) where one of our developers guide you through the whole process.
 
 ![sensenet Services](https://github.com/SenseNet/sn-resources/raw/master/images/sn-components/sn-components_services.png "sensenet Services")
 
