@@ -3,6 +3,24 @@
     "name": "sensenet",
     "releases": [
       {
+        "url": "https://api.github.com/repos/SenseNet/sensenet/releases/9937686",
+        "assets_url": "https://api.github.com/repos/SenseNet/sensenet/releases/9937686/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sensenet/releases/9937686/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sensenet/releases/tag/v7.1.0",
+        "id": 9937686,
+        "tag_name": "v7.1.0",
+        "target_commitish": "master",
+        "name": "sensenet ECM Services 7.1",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-03-02T15:53:12Z",
+        "published_at": "2018-03-05T14:04:43Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sensenet/tarball/v7.1.0",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sensenet/zipball/v7.1.0",
+        "body": "## New features\r\n### Search module\r\nThis is a [major update](https://github.com/SenseNet/sensenet/issues/125) of the platform: we generalized indexing and querying so that the *Lucene* search engine can be refactored later to work as a *service* instead of as a *local index*. In this first phase nothing will actually change architecturally: the index folders will remain in the local web directory as before. But under the hood we decoupled the search module from the repository, which means we will be able to create and deploy a separate search service in the future, without changing the code in the main application.\r\n\r\n## Breaking changes\r\nThis version contains **API changes** that *may* break low-level search-related calls. We had to move a few classes to a different namespace (e.g. the base *TextExecutor* class) and a few enumerations too. If you encounter build or type load errors during or after the upgrade, please follow the suggestions in Visual Studio to update those calls or base classes. We do not expect to have many of these, but if you stuck with the upgrade please contact us for help.\r\n\r\n## Bug fixes\r\n- [SmtpClient instances](https://github.com/SenseNet/sensenet/issues/290) are created in a using block so that they got desposed properly to prevent connection leak.\r\n- [Logout action](https://github.com/SenseNet/sensenet/issues/295) can be called without providing the *ultimateLogout* optional parameter.\r\n- [Add initial *See* permission](https://github.com/SenseNet/sensenet/issues/248) for the *Identified Users* group to the Folder content type so that users see the folder creator action on the UI.\r\n\r\n## Installation\r\nTo get started please follow the instructions in the [Install sensenet ECM from NuGet article](http://community.sensenet.com/docs/install-sn-from-nuget).\r\n\r\n## Upgrade from previous version\r\nIf you already have sensenet ECM installed and want an **in-place upgrade** instead of re-creating the database, please run the **upgrade patch** (you'll find it above in the **Assets** list) in your dev, test and live environments to be up to date. The patch is an [SnAdmin](https://github.com/SenseNet/sn-admin) package.\r\n\r\n> This is a **major upgrade**, please check out [this article](https://community.sensenet.com/blog/2018/03/05/complex-patch) for details about performing a complex upgrade.\r\n\r\nThe patch above is a **cumulative package** that you may execute on versions from 7.0.0 to 7.0.2. This means you **do not have to** upgrade to 7.0.1 or 7.0.2 before executing this one.\r\n\r\n> Note that after executing the patch, you will have to update your sensenet Services **NuGet** packages to the same version. Please check your **connection strings** (web.config and Tools\\SnAdminRuntime.exe.config) after updating the packages, because NuGet may change those values based on the package contents.",
+        "version": "7.1.0"
+      },
+      {
         "url": "https://api.github.com/repos/SenseNet/sensenet/releases/9573371",
         "assets_url": "https://api.github.com/repos/SenseNet/sensenet/releases/9573371/assets",
         "upload_url": "https://uploads.github.com/repos/SenseNet/sensenet/releases/9573371/assets{?name,label}",
@@ -467,6 +485,24 @@
   {
     "name": "sn-webpages",
     "releases": [
+      {
+        "url": "https://api.github.com/repos/SenseNet/sn-webpages/releases/9940743",
+        "assets_url": "https://api.github.com/repos/SenseNet/sn-webpages/releases/9940743/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sn-webpages/releases/9940743/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sn-webpages/releases/tag/v7.1.0",
+        "id": 9940743,
+        "tag_name": "v7.1.0",
+        "target_commitish": "master",
+        "name": "sensenet ECM WebPages 7.1",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-03-05T13:13:05Z",
+        "published_at": "2018-03-05T14:11:48Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sn-webpages/tarball/v7.1.0",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sn-webpages/zipball/v7.1.0",
+        "body": "## New features\r\nThe main theme of this release is to update the package to support the Search module changes in sensenet Services 7.1. We updated the code and the content items to be compatible with the new search API.\r\n\r\n## Bug fixes\r\n- Add missing content\r\n   - spinner image\r\n   - global Search page\r\n- removed unnecessary doc viewer JavaScript files as they are available in the [Preview component](https://github.com/SenseNet/sn-preview).\r\n\r\n## Installation\r\n>**Prerequisites**: you have to install [sensenet ECM Services](https://github.com/SenseNet/sensenet) before you can install WebPages.\r\n\r\nYou can install the sensenet ECM WebPages component in Visual Studio as a NuGet package. Please follow the steps in the the following article:\r\n\r\n- [Install WebPages from NuGet](https://github.com/SenseNet/sn-webpages/blob/master/docs/install-webpages-from-nuget.md)\r\n\r\n## Upgrade from previous versions\r\nIf you already have sensenet ECM installed and want an **in-place upgrade** instead of re-creating the database, please run the **upgrade patch** (you'll find it above in the **Assets** list) in your dev, test and live environments to be up to date. The patch is an [SnAdmin](https://github.com/SenseNet/sn-admin) package.\r\n\r\n> This is a **complex patch**, please check out [this article](https://community.sensenet.com/blog/2018/03/05/complex-patch) for details about performing a complex upgrade.",
+        "version": "7.1.0"
+      },
       {
         "url": "https://api.github.com/repos/SenseNet/sn-webpages/releases/9007630",
         "assets_url": "https://api.github.com/repos/SenseNet/sn-webpages/releases/9007630/assets",
