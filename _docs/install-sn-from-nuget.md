@@ -36,9 +36,13 @@ This is why we decided to publish two types of packages for our components:
 > **Long story short**: install the *SenseNet.Whatever.Install* package into your *web application* and the basic library package to your other projects.
 
 <a name="InstallPackage"></a>
+
 ## Installing sensenet Services
 
 ![sensenet Services](https://github.com/SenseNet/sn-resources/raw/master/images/sn-components/sn-components_services.png "sensenet Services")
+
+Watch our video tutorial where one of our developers guide you through the whole process.
+<iframe style="margin:auto;width:100%" width="560" height="315" src="https://www.youtube.com/embed/640NYCFRuLk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 
 ### Create a web project and pull in the package(s)
 
