@@ -14,7 +14,11 @@ This article is about the specifics of the Lucene search engine component of sen
 ## Local search engine
 This is the default behavior of the Lucene search engine: index files are stored locally in the web folder and **every web folder has its own index**. When an indexing event occurs (e.g. a new document is uploaded) the engine performs the operation locally and *notifies all other web servers* through the messaging module to do the same.
 
-[![NuGet](https://img.shields.io/nuget/v/SenseNet.Search.Lucene29.Local.svg)](https://www.nuget.org/packages/SenseNet.Search.Lucene29.Local)
+<div style="text-align: left">
+<a href='https://www.nuget.org/packages/SenseNet.Search.Lucene29.Local'>
+<img src="https://img.shields.io/nuget/v/SenseNet.Search.Lucene29.Local.svg" />
+</a>
+</div>
 
 This solution fits on-premise sensenet installations perfectly as **query operations can be performed in-proc** inside the web application without external service requests, meaning super-fast.
 
