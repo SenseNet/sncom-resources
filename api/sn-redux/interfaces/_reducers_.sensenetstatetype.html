@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;sn-redux&quot; | sn-redux</title>
+	<title>SensenetStateType | @sensenet/redux</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">sn-redux</a>
+					<a href="../index.html" class="title">@sensenet/redux</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -38,6 +38,8 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -54,16 +56,104 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_sn_redux_.html">&quot;sn-redux&quot;</a>
+					<a href="../modules/_reducers_.html">&quot;Reducers&quot;</a>
+				</li>
+				<li>
+					<a href="_reducers_.sensenetstatetype.html">SensenetStateType</a>
 				</li>
 			</ul>
-			<h1>External module &quot;sn-redux&quot;</h1>
+			<h1>Interface SensenetStateType</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Interface to define state type for sensenet Reducer.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">SensenetStateType</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_reducers_.sensenetstatetype.html#batchresponses" class="tsd-kind-icon">batch<wbr>Responses</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_reducers_.sensenetstatetype.html#children" class="tsd-kind-icon">children</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_reducers_.sensenetstatetype.html#currentcontent" class="tsd-kind-icon">currentcontent</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_reducers_.sensenetstatetype.html#selected" class="tsd-kind-icon">selected</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_reducers_.sensenetstatetype.html#session" class="tsd-kind-icon">session</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="batchresponses" class="tsd-anchor"></a>
+					<h3>batch<wbr>Responses</h3>
+					<div class="tsd-signature tsd-kind-icon">batch<wbr>Responses<span class="tsd-signature-symbol">:</span> <a href="_reducers_.batchresponsestatetype.html" class="tsd-signature-type">BatchResponseStateType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Reducers.ts#L27">Reducers.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="children" class="tsd-anchor"></a>
+					<h3>children</h3>
+					<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Reducers.ts#L24">Reducers.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="currentcontent" class="tsd-anchor"></a>
+					<h3>currentcontent</h3>
+					<div class="tsd-signature tsd-kind-icon">currentcontent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Reducers.ts#L25">Reducers.ts:25</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="selected" class="tsd-anchor"></a>
+					<h3>selected</h3>
+					<div class="tsd-signature tsd-kind-icon">selected<span class="tsd-signature-symbol">:</span> <a href="_reducers_.selectstatetype.html" class="tsd-signature-type">SelectStateType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Reducers.ts#L26">Reducers.ts:26</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="session" class="tsd-anchor"></a>
+					<h3>session</h3>
+					<div class="tsd-signature tsd-kind-icon">session<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Reducers.ts#L23">Reducers.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
@@ -72,27 +162,45 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_actions_.html">"<wbr>Actions"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_epics_.html">"<wbr>Epics"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_reducers_.html">"<wbr>Reducers"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_schema_.html">"<wbr>Schema"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_store_.html">"<wbr>Store"</a>
+						<a href="../modules/_actions_.html">"<wbr>Actions"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_sn_redux_.html">"sn-<wbr>redux"</a>
+						<a href="../modules/_reducers_.html">"<wbr>Reducers"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_schema_.html">"<wbr>Schema"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_store_.html">"<wbr>Store"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_reducers_.sensenetstatetype.html" class="tsd-kind-icon">Sensenet<wbr>State<wbr>Type</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_reducers_.sensenetstatetype.html#batchresponses" class="tsd-kind-icon">batch<wbr>Responses</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_reducers_.sensenetstatetype.html#children" class="tsd-kind-icon">children</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_reducers_.sensenetstatetype.html#currentcontent" class="tsd-kind-icon">currentcontent</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_reducers_.sensenetstatetype.html#selected" class="tsd-kind-icon">selected</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_reducers_.sensenetstatetype.html#session" class="tsd-kind-icon">session</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
 				</ul>
 			</nav>
 		</div>

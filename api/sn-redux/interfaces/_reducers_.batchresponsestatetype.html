@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Schemas | sn-redux</title>
+	<title>BatchResponseStateType | @sensenet/redux</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">sn-redux</a>
+					<a href="../index.html" class="title">@sensenet/redux</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -38,6 +38,8 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 							<input type="checkbox" id="tsd-filter-only-exported" />
 							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
@@ -54,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_schema_.html">&quot;Schema&quot;</a>
+					<a href="../modules/_reducers_.html">&quot;Reducers&quot;</a>
 				</li>
 				<li>
-					<a href="_schema_.schemas.html">Schemas</a>
+					<a href="_reducers_.batchresponsestatetype.html">BatchResponseStateType</a>
 				</li>
 			</ul>
-			<h1>Module Schemas</h1>
+			<h1>Interface BatchResponseStateType</h1>
 		</div>
 	</div>
 </header>
@@ -70,85 +72,53 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>This module is for defining Content and Collection schemas to normalize nested JSON response data in redux state store.</p>
+						<p>Interface to define state type for batchResponse Reducer.</p>
 					</div>
-					<p>Normalizr takes JSON and a schema and replaces nested entities with their IDs, gathering all entities in dictionaries.</p>
-					<ul>
-						<li>Entities can be nested inside other entities, objects and arrays;</li>
-						<li>Combine entity schemas to express any kind of API response;</li>
-						<li>Entities with same IDs are automatically merged (with a warning if they differ);</li>
-						<li>Allows using a custom ID attribute (e.g. slug).</li>
-					</ul>
-					<p>Read more about normalizr <a href="https://github.com/paularmstrong/normalizr">here</a></p>
-					<p>Since everything is a Content in sensenet ECM we&#39;re working with Content and collection of Content in most of the cases. So the sn-redux Schemas module defines the two
-						neccessarry main schema, content and arrayofContent to work with. This two schemas help you to normalize your JSON responses so that you can create a pure and flexible
-					client-side datasource.</p>
-					<p>Example of normalizing the JSON response of a SenseNet OData Action for fetching Content as arrayOfContent schema which will create an entities object.</p>
-					<pre><code class="lang-ts"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> receiveContent = <span class="hljs-function">(<span class="hljs-params">response: Content[], params: <span class="hljs-built_in">string</span></span>) =&gt;</span>
- ({
-     <span class="hljs-keyword">type</span>: <span class="hljs-string">'FETCH_CONTENT_SUCCESS'</span>,
-     response: normalize(response, Schemas.arrayOfContent),
-     params
- })
-</code></pre>
-					<p><img src="http://download.sensenet.com/aniko/sn7/jsapidocs/img/normalized-collection.png" alt="Normalized collection"></p>
-					<p>Example of normalizing the JSON response of a SenseNet OData Action for creating Content as content schema.</p>
-					<pre><code class="lang-ts"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> createContentSuccess = <span class="hljs-function">(<span class="hljs-params">response: Content</span>) =&gt;</span>
- ({
-     <span class="hljs-keyword">type</span>: <span class="hljs-string">'CREATE_CONTENT_SUCCESS'</span>,
-     response: normalize(response, Schemas.content)
- });
-</code></pre>
-					<p><img src="http://download.sensenet.com/aniko/sn7/jsapidocs/img/normalized-content.png" alt="Normalized content"></p>
 				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">BatchResponseStateType</span>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Variables</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_schema_.schemas.html#arrayofcontent" class="tsd-kind-icon">array<wbr>OfContent</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_schema_.schemas.html#content" class="tsd-kind-icon">content</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_reducers_.batchresponsestatetype.html#error" class="tsd-kind-icon">error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_reducers_.batchresponsestatetype.html#response" class="tsd-kind-icon">response</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-					<a name="arrayofcontent" class="tsd-anchor"></a>
-					<h3>array<wbr>OfContent</h3>
-					<div class="tsd-signature tsd-kind-icon">array<wbr>OfContent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol"> =&nbsp;new schema.Array(content)</span></div>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="error" class="tsd-anchor"></a>
+					<h3>error</h3>
+					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Schema.ts:53</li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Reducers.ts#L17">Reducers.ts:17</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Schema of a Collection.</p>
-						</div>
-						<p>It represents the <code>children</code> object of the sn-redux store. It&#39;s a parent element of the Content items so it is defined as array of items with the schema content.</p>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-					<a name="content" class="tsd-anchor"></a>
-					<h3>content</h3>
-					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Entity</span><span class="tsd-signature-symbol"> =&nbsp;new schema.Entity(&#x27;entities&#x27;, {}, { idAttribute: &#x27;Id&#x27; })</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="response" class="tsd-anchor"></a>
+					<h3>response</h3>
+					<div class="tsd-signature tsd-kind-icon">response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IODataBatchResponse</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Schema.ts:47</li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Reducers.ts#L16">Reducers.ts:16</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Schema of a Content.</p>
-						</div>
-						<p>It represents an item in the entities Object of the sn-redux store. The items are identified by the attribute &#39;Id&#39;.</p>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -158,16 +128,37 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_actions_.html">"<wbr>Actions"</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_reducers_.html">"<wbr>Reducers"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_schema_.html">"<wbr>Schema"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_store_.html">"<wbr>Store"</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="_schema_.schemas.html#arrayofcontent" class="tsd-kind-icon">array<wbr>OfContent</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_reducers_.batchresponsestatetype.html" class="tsd-kind-icon">Batch<wbr>Response<wbr>State<wbr>Type</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_reducers_.batchresponsestatetype.html#error" class="tsd-kind-icon">error</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_reducers_.batchresponsestatetype.html#response" class="tsd-kind-icon">response</a>
+							</li>
+						</ul>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="_schema_.schemas.html#content" class="tsd-kind-icon">content</a>
-					</li>
+				</ul>
+				<ul class="after-current">
 				</ul>
 			</nav>
 		</div>
