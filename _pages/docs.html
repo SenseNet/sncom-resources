@@ -58,23 +58,25 @@ layout: default
           <!-- <h3>SN Client JS</h3> -->
           <ul class="docs-list">
             <li>
-              <a href="/api/sn-client-js">sn-client-js</a>
+              <a href="/api/sn-client-js/index.html">sn-client-js</a>
             </li>
             <li>
-              <a href="/api/sn-redux">sn-redux</a>
+              <a href="/api/sn-redux/index.html">@sensenet/redux</a>
             </li>
             <li>
-              <a href="/api/sn-client-auth-google">sn-client-auth-google</a>
+              <a href="/api/sn-client-auth-google/index.html">@sensenet/authentication-google</a>
             </li>
             <li>
-              <a href="/api/sn-controls-aurelia">sn-controls-aurelia</a>
-            </li>            
+              <a href="/api/sn-controls-aurelia/index.html">@sensenet/controls-aurelia</a>
+            </li>
+            <li>
+              <a href="/api/sn-redux-promise-middleware/index.html">@sensenet/redux-promise-middleware</a>
+            </li>
             {% for doc in docs %} {% if doc.category == 'API' and doc.subcategory == 'sn-client-js' %}
             <li>
               <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
             </li>
             {% endif %} {% endfor %}
-          </ul>
           </ul>
         </div>
 

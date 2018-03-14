@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>sn-redux</title>
+	<title>@sensenet/redux</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -13,48 +14,65 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
-					<div class="field">
-						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
-						<input id="tsd-search-field" type="text" />
-					</div>
-					<ul class="results">
-						<li class="state loading">Preparing search index...</li>
-						<li class="state failure">The search index is not available</li>
-					</ul>
-					<a href="index.html" class="title">sn-redux</a>
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js " data-base="
+				">
+				<div class="field">
+					<label class="fa fa-search tsd-widget search no-caption" for="tsd-search-field"></label>
+					<input id="tsd-search-field" type="text" />
 				</div>
-				<div class="table-cell" id="tsd-widgets">
-					<div id="tsd-filter">
-						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
-						<div class="tsd-filter-group">
-							<div class="tsd-select" id="tsd-filter-visibility">
-								<span class="tsd-select-label">All</span>
-								<ul class="tsd-select-list">
-									<li data-value="public">Public</li>
-									<li data-value="protected">Public/Protected</li>
-									<li data-value="private" class="selected">All</li>
-								</ul>
-							</div>
-							<input type="checkbox" id="tsd-filter-inherited" checked />
-							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+				<ul class="results">
+					<li class="state loading">Preparing search index...</li>
+					<li class="state failure">The search index is not available</li>
+				</ul>
+				<a href="index.html" class="title">
+					<img src="assets/images/sensenet-logo.png" alt="@sensenet/redux" />
+				</a>
+				<nav class="sn-menu">
+					<a class="site-header-nav-item active" href="../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../community">Community</a>
+					<a class="site-header-nav-item " href="../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../contact">Contact</a>
+					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
+						<i class="fa fa-github" aria-hidden="true"></i>
+					</a>
+				</nav>
+			</div>
+			<div class="table-cell" id="tsd-widgets">
+				<div id="tsd-filter">
+					<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+					<div class="tsd-filter-group">
+						<div class="tsd-select" id="tsd-filter-visibility">
+							<span class="tsd-select-label">All</span>
+							<ul class="tsd-select-list">
+								<li data-value="public">Public</li>
+								<li data-value="protected">Public/Protected</li>
+								<li data-value="private" class="selected">All</li>
+							</ul>
 						</div>
+						<input type="checkbox" id="tsd-filter-inherited" checked />
+						<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						<input type="checkbox" id="tsd-filter-externals" checked />
+						<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						<input type="checkbox" id="tsd-filter-only-exported" />
+						<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 					</div>
-					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
 				</div>
+				<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
 			</div>
 		</div>
 	</div>
+	</div>
 	<div class="tsd-page-title">
 		<div class="container">
+			<h1>  @sensenet/redux
+			</h1>
 			<ul class="tsd-breadcrumb">
 				<li>
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> sn-redux</h1>
 		</div>
 	</div>
 </header>
@@ -80,41 +98,50 @@
 					<li>action types: e.g. CREATE_CONTENT_SUCCESS</li>
 					<li>actions: e.g. updateContentSuccess, updateContentFailure</li>
 					<li>reducers: for the action types above e.g. updateContentSuccess</li>
-					<li>epics: for streams of actions that are related to the same process e.g. createContentEpic</li>
 				</ul>
 				<h2 id="installation-on-an-existing-sensenet-ecm-portal">Installation on an existing sensenet ECM portal</h2>
 				<p>Get the latest stable version with npm</p>
-				<pre><code>npm <span class="hljs-keyword">install</span> <span class="hljs-comment">--save sn-redux</span>
-</code></pre><p>or from the <a href="https://github.com/SenseNet/sn-redux">GitHub repository</a> and place the downloaded source into your project. If you want to use only the transpiled JavaScript
-				modules, you can find them in the dist/src folder and import them like</p>
-				<pre><code><span class="hljs-attribute">var SN</span> = require(<span class="hljs-string">'/pathtomodule/sn-redux'</span>);
-</code></pre><p>If you want to use the module types you can find them in the src folder. Import them the following way:</p>
-				<pre><code><span class="hljs-keyword">import</span> { Actions } from <span class="hljs-string">'sn-redux'</span>;
-<span class="hljs-keyword">import</span> { Content, ContentTypes, Repository } <span class="hljs-string">'sn-client-js'</span>;
+				<pre><code><span class="hljs-built_in">npm</span> install --save @sensenet/redux
+</code></pre><p>or from the <a href="https://github.com/SenseNet/sn-redux">GitHub repository</a> and place the downloaded source into your project. If you want to use only the transpiled </p>
+				<p>If you want to use the module types you can find them in the src folder. Import them the following way:</p>
+				<pre><code><span class="hljs-keyword">import</span> { <span class="hljs-type">Actions</span> } from '<span class="hljs-meta">@sensenet</span>/redux';
+<span class="hljs-keyword">import</span> { <span class="hljs-type">Repository</span> } '<span class="hljs-meta">@sensenet</span>/client-core';
+<span class="hljs-keyword">import</span> { <span class="hljs-type">Task</span> } from '<span class="hljs-meta">@sensenet</span>/<span class="hljs-keyword">default</span>-content-types;
 
-<span class="hljs-keyword">let</span> repository = new Repository.SnRepository({
-  RepositoryUrl: <span class="hljs-string">'http://path-to-your-portal.com'</span>,
+const repository = <span class="hljs-keyword">new</span> <span class="hljs-type">Repository</span>({
+  <span class="hljs-type">RepositoryUrl</span>: <span class="hljs-symbol">'http</span>:<span class="hljs-comment">//path-to-your-portal.com',</span>
 });
 
-const content = Content.Create({ Id: <span class="hljs-number">123</span> }, ContentTypes.Task, repository);
-store.dispatch(Actions.Delete(content, <span class="hljs-literal">false</span>));
+const repository = <span class="hljs-keyword">new</span> <span class="hljs-type">Repository</span>({
+  repositoryUrl: <span class="hljs-symbol">'http</span>:<span class="hljs-comment">//path-to-your-portal.com',</span>
+})
+
+store.dispatch(<span class="hljs-type">Actions</span>.deleteContent('/workspaces/<span class="hljs-type">MyWorkspace</span>/<span class="hljs-type">MyDocs</span>/mydoc.docx', <span class="hljs-literal">false</span>));
 </code></pre><h2 id="installation-into-an-external-app-with-node-and-npm">Installation into an external app with node and npm</h2>
 				<p>To install the latest stable version</p>
-				<pre><code>npm <span class="hljs-keyword">install</span> <span class="hljs-comment">--save sn-redux</span>
+				<pre><code><span class="hljs-built_in">npm</span> install --save @sensenet/redux
 </code></pre><p>Create your sensenet ECM portal Repository to use. You can configure your Store to use this repository, when calling Store.ConfigureStore</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> { Repository } <span class="hljs-keyword">from</span> <span class="hljs-string">'sn-client-js'</span>;
+				<pre><code class="lang-ts">import { Repository } from &#39;@sensenet/client-core&#39;;
+import { Reducers, Store } from &#39;@sensenet/redux;
+import { combineReducers } from &#39;redux&#39;
 
-<span class="hljs-keyword">let</span> repository = <span class="hljs-keyword">new</span> Repository.SnRepository({
-  RepositoryUrl: <span class="hljs-string">'http://path-to-your-portal.com'</span>,
-});
+const sensenet = Reducers.sensenet
 
-<span class="hljs-keyword">const</span> store = Store.configureStore(
-    myRootReducer,
-    myRootEpic,                   <span class="hljs-comment">// If not set, the default will be 'Epics.rootEpic'</span>
-    [middleware1, middleware2],   <span class="hljs-comment">// If not set, only the epicMiddleware will be used</span>
-    persistedState,               <span class="hljs-comment">// Optional</span>
-    repository                    <span class="hljs-comment">// Optional. If not provided, a Repository with default values will be used</span>
-    );
+const myReducer = combineReducers({
+  sensenet
+})
+
+const repository = new Repository({
+  repositoryUrl: &#39;http://path-to-your-portal.com&#39;,
+})
+
+const options = {
+  repository,
+  rootReducer: myReducer,
+} as Store.CreateStoreOptions
+
+
+const store = Store.createSensenetStore(options)
 </code></pre>
 				<p>To enable your external app to send request against your sensenet ECM portal change your <code>Portal.settings</code>. For further information about cross-origin resource sharing in sensenet ECM check <a href="http://wiki.sensenet.com/Cross-origin_resource_sharing#Origin_check">this</a> article.</p>
 				<p>Check your sensenet ECM portal&#39;s web.config and if the <code>ODataServiceToken</code> is set, you can pass to your Repository as a config value on client side.</p>
@@ -124,28 +151,13 @@ store.dispatch(Actions.Delete(content, <span class="hljs-literal">false</span>))
 });
 </code></pre>
 				<h2 id="import">Import</h2>
-				<h3 id="commonjs">CommonJS</h3>
-				<pre><code><span class="hljs-keyword">var</span> Content = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sn-client-js'</span>).Content;
-<span class="hljs-keyword">var</span> Repository = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sn-client-js'</span>).Repository;
-<span class="hljs-keyword">var</span> ContentTypes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sn-client-js'</span>).ContentTypes;
-<span class="hljs-keyword">var</span> Actions = <span class="hljs-built_in">require</span>(<span class="hljs-string">'sn-redux'</span>).Actions;
+				<pre><code><span class="hljs-keyword">import</span> { Actions } <span class="hljs-string">'@sensenet/redux'</span>;
+<span class="hljs-keyword">import</span> { Task } from <span class="hljs-string">'@sensenet/default-content-types'</span>
 
-<span class="hljs-keyword">let</span> repository = <span class="hljs-keyword">new</span> Repository.SnRepository({
-  <span class="hljs-attr">RepositoryUrl</span>: <span class="hljs-string">'http://path-to-your-portal.com'</span>,
-});
-
-<span class="hljs-keyword">var</span> content = Content.Create({ <span class="hljs-attr">Id</span>: <span class="hljs-number">123</span> }, ContentTypes.Task, repository);
-store.dispatch(Actions.Delete(<span class="hljs-number">123</span>, <span class="hljs-literal">false</span>));
-</code></pre><h2 id="typescript">Typescript</h2>
-				<pre><code><span class="hljs-keyword">import</span> { Actions } <span class="hljs-string">'sn-redux'</span>;
-<span class="hljs-keyword">import</span> { Content, ContentTypes, Repository } <span class="hljs-string">'sn-client-js'</span>;
-
-<span class="hljs-keyword">let</span> repository = new Repository.SnRepository({
-  RepositoryUrl: <span class="hljs-string">'http://path-to-your-portal.com'</span>,
-});
-
-const content = Content.Create({ Id: <span class="hljs-number">123</span> }, ContentTypes.Task, repository);
-store.dispatch(Actions.Delete(content, <span class="hljs-literal">false</span>));
+...
+const content = { Id: <span class="hljs-number">123</span> } <span class="hljs-keyword">as</span> Task;
+...
+store.dispatch(Actions.DeleteContent(content.Id, <span class="hljs-literal">false</span>));
 </code></pre><h2 id="building-sn-redux">Building sn-redux</h2>
 				<p>Building the project, running all the unit tests and the ts linter and get the code coverage report, use:</p>
 				<pre><code>npm <span class="hljs-keyword">run</span><span class="bash"> build</span>
@@ -155,7 +167,7 @@ store.dispatch(Actions.Delete(content, <span class="hljs-literal">false</span>))
 </code></pre><h2 id="examples">Examples</h2>
 				<h4 id="combine-custom-reducer-with-the-built-in-ones">Combine custom reducer with the built-in ones</h4>
 				<pre><code><span class="hljs-keyword">import</span> { combineReducers } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux'</span>;
-<span class="hljs-keyword">import</span> { Reducers } <span class="hljs-keyword">from</span>  <span class="hljs-string">'sn-redux'</span>;
+<span class="hljs-keyword">import</span> { Reducers } <span class="hljs-keyword">from</span>  <span class="hljs-string">'@sensenet/redux'</span>;
 
 <span class="hljs-keyword">const</span> sensenet = Reducers.sensenet;
 <span class="hljs-keyword">const</span> myReducer = combineReducers({
@@ -163,57 +175,56 @@ store.dispatch(Actions.Delete(content, <span class="hljs-literal">false</span>))
   listByFilter
 });
 </code></pre><h4 id="creating-a-store">Creating a store</h4>
-				<pre><code><span class="hljs-keyword">import</span> { Store } <span class="hljs-keyword">from</span>  <span class="hljs-string">'sn-redux'</span>;
-<span class="hljs-keyword">import</span> { Repository } <span class="hljs-keyword">from</span> <span class="hljs-string">'sn-client-js'</span>;
+				<pre><code><span class="hljs-keyword">import</span> { Store } <span class="hljs-keyword">from</span>  <span class="hljs-string">'@sensenet/redux'</span>;
+<span class="hljs-keyword">import</span> { Repository } <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/client-core'</span>;
 
-<span class="hljs-keyword">let</span> repository = <span class="hljs-keyword">new</span> Repository.SnRepository({
-  <span class="hljs-attr">RepositoryUrl</span>: <span class="hljs-string">'http://path-to-your-portal.com'</span>,
-});
+<span class="hljs-keyword">const</span> repository = <span class="hljs-keyword">new</span> Repository({
+  <span class="hljs-attr">repositoryUrl</span>: <span class="hljs-string">'http://path-to-your-portal.com'</span>,
+})
 
-<span class="hljs-keyword">const</span> store = Store.configureStore(
-    myRootReducer,
-    myRootEpic,                   <span class="hljs-comment">// If not set, the default will be 'Epics.rootEpic'</span>
-    [middleware1, middleware2],   <span class="hljs-comment">// If not set, only the epicMiddleware will be used</span>
-    persistedState,               <span class="hljs-comment">// Optional</span>
-    repository                    <span class="hljs-comment">// Optional. If not provided, a Repository with default values will be used</span>
-    );
+<span class="hljs-keyword">const</span> options = {
+  repository,
+  <span class="hljs-attr">rootReducer</span>: myReducer,
+} <span class="hljs-keyword">as</span> Store.CreateStoreOptions
+
+
+<span class="hljs-keyword">const</span> store = Store.createSensenetStore(options)
 </code></pre><h4 id="using-built-in-actions">Using built-in actions</h4>
-				<pre><code><span class="hljs-keyword">import</span> { Content, Repository, ContentTypes } <span class="hljs-keyword">from</span> <span class="hljs-string">'sn-client-js'</span>;
-<span class="hljs-keyword">import</span> { Actions } <span class="hljs-keyword">from</span> <span class="hljs-string">'sn-redux'</span>;
+				<pre><code><span class="hljs-keyword">import</span> { Repository } <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/client-core'</span>;
+<span class="hljs-keyword">import</span> { Task } <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/default-content-type'</span>
+<span class="hljs-keyword">import</span> { Actions } <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/redux'</span>;
 
-<span class="hljs-keyword">let</span> repository = <span class="hljs-keyword">new</span> Repository.SnRepository({
-  <span class="hljs-attr">RepositoryUrl</span>: <span class="hljs-string">'http://path-to-your-portal.com'</span>,
-});
+<span class="hljs-keyword">const</span> repository = <span class="hljs-keyword">new</span> Repository({
+  <span class="hljs-attr">repositoryUrl</span>: <span class="hljs-string">'http://path-to-your-portal.com'</span>,
+})
 
 <span class="hljs-keyword">const</span> parentPath = <span class="hljs-string">'/workspaces/Project/budapestprojectworkspace/tasks'</span>;
-<span class="hljs-keyword">const</span> content = Content.Create({
+<span class="hljs-keyword">const</span> content = {
+          <span class="hljs-attr">Id</span>: <span class="hljs-number">123</span>,
           <span class="hljs-attr">DisplayName</span>: <span class="hljs-string">'My first task'</span>
-      }, ContentTypes.Task, repository);
+      } <span class="hljs-keyword">as</span> Task);
 
-dispatch(Actions.CreateContent(content))
+dispatch(Actions.CreateContent(parentPath, content, <span class="hljs-string">'Task'</span>))
 </code></pre><h2 id="documentation">Documentation</h2>
 				<ul>
-					<li><a href="http://www.sensenet.com/documentation/sn-redux/index.html">sn-redux API Reference</a></li>
-					<li><a href="http://www.sensenet.com/documentation/sn-client-js/index.html">sn-client-js API reference</a></li>
+					<li><a href="https://community.sensenet.com/api/sn-redux/">sn-redux API Reference</a></li>
+					<li><a href="https://community.sensenet.com/api/sn-client-js/">sn-client-js API reference</a></li>
+					<li><a href="https://community.sensenet.com/api/sn-redux-promise-middleware/">sn-redux-promise-middleware API reference</a></li>
 					<li><a href="http://wiki.sensenet.com/OData_REST_API">About OData REST API in sensenet ECM</a></li>
 					<li><a href="http://wiki.sensenet.com/Built-in_OData_actions_and_functions">About Built-in OData Actions and Function in sensenet ECM</a></li>
-					<li><a href="http://www.sensenet.com/documentation/sn-react-todoapp/index.html">Todo App with React, Redux and sensenet ECM</a></li>
+					<li><a href="https://github.com/SenseNet/sn-react-redux-todo-app">Todo App with React, Redux and sensenet ECM</a></li>
 				</ul>
 				<h2 id="influences">Influences</h2>
 				<ul>
 					<li><a href="http://redux.js.org/">Redux</a></li>
 					<li><a href="https://egghead.io/courses/getting-started-with-redux">Getting started with Redux</a> - Awesome course from the creator of Redux, Dan Abramov.</li>
 					<li><a href="https://egghead.io/courses/building-react-applications-with-idiomatic-redux">Building React Applications with Idiomatic Redux</a> - Another great course of Dan Abramov about building apps with Redux.</li>
-					<li><a href="http://reactivex.io/rxjs/">rxjs</a></li>
-					<li><a href="https://redux-observable.js.org/">redux-observable</a></li>
+					<li><a href="https://github.com/pburtchaell/redux-promise-middleware">redux-promise-middleware</a></li>
 				</ul>
 				<h2 id="example-applications">Example applications</h2>
 				<ul>
 					<li><a href="https://github.com/SenseNet/sn-react-redux-todo-app">Using React</a></li>
-					<li><a href="https://github.com/blaskodaniel/sn-angular-redux-todo-app">Using Angular</a></li>
-					<li><a href="https://github.com/SenseNet/sn-angular2-redux-todo-app">Using Angular2</a></li>
-					<li><a href="https://github.com/SenseNet/sn-vue-redux-todo-app">Using Vue.js</a></li>
-					<li><a href="https://github.com/B3zo0/sn7-aurelia-redux-todo-app">Using Aurelia</a></li>
+					<li><a href="https://github.com/SenseNet/sn-dms-demo">Sensenet DMS Demo</a></li>
 				</ul>
 			</div>
 		</div>
@@ -224,22 +235,16 @@ dispatch(Actions.CreateContent(content))
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_actions_.html">"<wbr>Actions"</a>
+						<a href="modules/actions.html">Actions</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_epics_.html">"<wbr>Epics"</a>
+						<a href="modules/reducers.html">Reducers</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_reducers_.html">"<wbr>Reducers"</a>
+						<a href="modules/schema.html">Schema</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_schema_.html">"<wbr>Schema"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_store_.html">"<wbr>Store"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_sn_redux_.html">"sn-<wbr>redux"</a>
+						<a href="modules/store.html">Store</a>
 					</li>
 				</ul>
 			</nav>
@@ -262,6 +267,7 @@ dispatch(Actions.CreateContent(content))
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
