@@ -1,0 +1,3 @@
+ï»¿var typedoc = typedoc || {};
+            typedoc.search = typedoc.search || {};
+            typedoc.search.data = {"kinds":{"32":"Variable","64":"Function"},"rows":[{"id":0,"kind":64,"name":"isPromise","url":"globals.html#ispromise","classes":"tsd-kind-function"},{"id":1,"kind":32,"name":"suffixes","url":"globals.html#suffixes","classes":"tsd-kind-variable"},{"id":2,"kind":64,"name":"promiseMiddleware","url":"globals.html#promisemiddleware","classes":"tsd-kind-function"}]};
