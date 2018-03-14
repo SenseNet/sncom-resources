@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;Actions&quot; | @sensenet/redux</title>
+	<title>Actions | @sensenet/redux</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico"/>
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
@@ -13,59 +14,169 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
-					<div class="field">
-						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
-						<input id="tsd-search-field" type="text" />
-					</div>
-					<ul class="results">
-						<li class="state loading">Preparing search index...</li>
-						<li class="state failure">The search index is not available</li>
-					</ul>
-					<a href="../index.html" class="title">@sensenet/redux</a>
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js " data-base="../
+				">
+				<div class="field">
+					<label class="fa fa-search tsd-widget search no-caption" for="tsd-search-field"></label>
+					<input id="tsd-search-field" type="text" />
 				</div>
-				<div class="table-cell" id="tsd-widgets">
-					<div id="tsd-filter">
-						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
-						<div class="tsd-filter-group">
-							<div class="tsd-select" id="tsd-filter-visibility">
-								<span class="tsd-select-label">All</span>
-								<ul class="tsd-select-list">
-									<li data-value="public">Public</li>
-									<li data-value="protected">Public/Protected</li>
-									<li data-value="private" class="selected">All</li>
-								</ul>
-							</div>
-							<input type="checkbox" id="tsd-filter-inherited" checked />
-							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+				<ul class="results">
+					<li class="state loading">Preparing search index...</li>
+					<li class="state failure">The search index is not available</li>
+				</ul>
+				<a href="../index.html" class="title">
+					<img src="../assets/images/sensenet-logo.png" alt="@sensenet/redux" />
+				</a>
+				<nav class="sn-menu">
+					<a class="site-header-nav-item active" href="../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../contact">Contact</a>
+					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
+						<i class="fa fa-github" aria-hidden="true"></i>
+					</a>
+				</nav>
+			</div>
+			<div class="table-cell" id="tsd-widgets">
+				<div id="tsd-filter">
+					<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+					<div class="tsd-filter-group">
+						<div class="tsd-select" id="tsd-filter-visibility">
+							<span class="tsd-select-label">All</span>
+							<ul class="tsd-select-list">
+								<li data-value="public">Public</li>
+								<li data-value="protected">Public/Protected</li>
+								<li data-value="private" class="selected">All</li>
+							</ul>
 						</div>
+						<input type="checkbox" id="tsd-filter-inherited" checked />
+						<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						<input type="checkbox" id="tsd-filter-externals" checked />
+						<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						<input type="checkbox" id="tsd-filter-only-exported" />
+						<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 					</div>
-					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
 				</div>
+				<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
 			</div>
 		</div>
 	</div>
+	</div>
 	<div class="tsd-page-title">
 		<div class="container">
+			<h1>External module  Actions
+			</h1>
 			<ul class="tsd-breadcrumb">
 				<li>
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_actions_.html">&quot;Actions&quot;</a>
+					<span>Actions</span>
 				</li>
 			</ul>
-			<h1>External module &quot;Actions&quot;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dd><p>Module that contains the action creators.</p>
+							<p><em>Redux actions are payloads of information that send data from your application to your store. They are the only source of information for the store. You send them to the store using
+							<code>store.dispatch()</code>. Actions are plain JavaScript objects. Actions must have a type property that indicates the type of action being performed.</em></p>
+							<p>Learn more about Redux actions <a href="http://redux.js.org/docs/basics/Actions.html">here</a></p>
+							<p>Following are Redux actions but they&#39;re all related with a sensenet built-in action. Since this sensenet built-in actions are OData actions and functions and they get and set
+								data throught ajax request we have to handle the main steps of their process separately. There&#39;s a custom <a href="https://github.com/SenseNet/sn-redux-promise-middleware">middleware</a>
+								included automatically when you create a sensenet store with Store.createSensenetStore. So that we don&#39;t have to create separate redux actions for every state of the actions
+							only one for the main request.</p>
+							<p>All of the JSON responses with content or collection are normalized so you shouldn&#39;t care about how to handle nested data structure, normalizr takes JSON and a schema and replaces
+								nested entities with their Ids, gathering all entities in dictionaries.
+							For further information about normalizr check this <a href="https://github.com/paularmstrong/normalizr">link</a>.</p>
+							<pre><code>[{
+ Id: <span class="hljs-number">5145</span>,
+ DisplayName: <span class="hljs-symbol">'Some</span> Article',
+ Status: [<span class="hljs-symbol">'Active</span>']
+}, {
+ Id: <span class="hljs-number">5146</span>,
+ Displayname: <span class="hljs-symbol">'Other</span> Article',
+ Status: [<span class="hljs-symbol">'Completed</span>']
+}]
+</code></pre><p>is normalized to</p>
+							<pre><code><span class="hljs-attribute">results</span>: [<span class="hljs-number">5145</span>, <span class="hljs-number">5146</span>],
+<span class="hljs-attribute">entities</span>: {
+ <span class="hljs-attribute">collection</span>: {
+     <span class="hljs-number">5145</span>: {
+         <span class="hljs-attribute">Id</span>: <span class="hljs-number">5145</span>,
+         <span class="hljs-attribute">DisplayName</span>: <span class="hljs-string">'Some Article'</span>,
+         <span class="hljs-attribute">Status</span>: [<span class="hljs-string">'Active'</span>]
+     },
+     <span class="hljs-attribute">5146</span>: {
+         <span class="hljs-attribute">Id</span>: <span class="hljs-number">5146</span>,
+         <span class="hljs-attribute">Displayname</span>: <span class="hljs-string">'Other Article'</span>,
+         <span class="hljs-attribute">Status</span>: [<span class="hljs-string">'Completed'</span>]
+     }
+ }
+}
+</code></pre><h3 id="using-built-in-redux-actions-in-your-views">Using built-in redux actions in your views</h3>
+							<pre><code><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+<span class="hljs-keyword">import</span> { connect } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-redux'</span>
+<span class="hljs-keyword">import</span> { TextField } <span class="hljs-keyword">from</span> <span class="hljs-string">'material-ui/TextField'</span>;
+<span class="hljs-keyword">import</span> RaisedButton <span class="hljs-keyword">from</span> <span class="hljs-string">'material-ui/RaisedButton'</span>;
+<span class="hljs-keyword">import</span> { Actions } <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/redux'</span>;
+<span class="hljs-keyword">import</span> { Task } <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/default-content-types'</span>;
+
+let AddTodo = <span class="hljs-function"><span class="hljs-params">({ dispatch })</span> =&gt;</span> {
+  let input
+
+  <span class="hljs-keyword">return</span> (
+    &lt;div&gt;
+      &lt;form onSubmit={e =&gt; {
+        e.preventDefault()
+        <span class="hljs-keyword">if</span> (!input.value.trim()) {
+          <span class="hljs-keyword">return</span>
+        }
+        const content = {
+          Name: input.value,
+          Status: <span class="hljs-string">'active'</span>,
+         } <span class="hljs-keyword">as</span> Task
+
+        dispatch(Actions.createContent(content))
+        input.value = <span class="hljs-string">''</span>
+      } }&gt;
+        &lt;input className=<span class="hljs-string">"textField"</span> ref={node =&gt; {
+          input = node
+        } } /&gt;
+        &lt;RaisedButton type=<span class="hljs-string">"submit"</span> primary={<span class="hljs-literal">true</span>} label=<span class="hljs-string">"Add Todo"</span> /&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  )
+}
+</code></pre><h3 id="combining-your-custom-redux-reducers-with-sensenet-root-reducer-">Combining your custom redux reducers with sensenet root reducer.</h3>
+							<pre><code><span class="hljs-keyword">import</span> { combineReducers } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux'</span>;
+<span class="hljs-keyword">import</span> { Store, Reducers } <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/redux'</span>;
+<span class="hljs-keyword">import</span> { Repository } <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/client-core'</span>
+<span class="hljs-keyword">import</span> { Root } <span class="hljs-keyword">from</span> <span class="hljs-string">'./components/Root'</span>
+<span class="hljs-keyword">import</span> { listByFilter } <span class="hljs-keyword">from</span> <span class="hljs-string">'./reducers/filtering'</span>
+
+<span class="hljs-keyword">const</span> sensenet = Reducers.sensenet;
+<span class="hljs-keyword">const</span> myReducer = combineReducers({
+  sensenet,
+  listByFilter
+});
+<span class="hljs-keyword">const</span> repository = <span class="hljs-keyword">new</span> Repository({ repositoryUrl: <span class="hljs-string">'https://mySensenetSite.com'</span> }, <span class="hljs-keyword">async</span> () =&gt; ({ ok: <span class="hljs-literal">true</span> } <span class="hljs-keyword">as</span> <span class="hljs-built_in">any</span>))
+<span class="hljs-keyword">const</span> options = {
+repository,
+rootReducer: myReducer
+} <span class="hljs-keyword">as</span> Store.CreateStoreOptions
+<span class="hljs-keyword">const</span> store = Store.createSensenetStore(options);
+</code></pre></dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -73,35 +184,35 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_actions_.html#approve" class="tsd-kind-icon">approve</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_actions_.html#checkin" class="tsd-kind-icon">check<wbr>In</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#checkloginstate" class="tsd-kind-icon">check<wbr>Login<wbr>State</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_actions_.html#checkout" class="tsd-kind-icon">check<wbr>Out</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#clearselection" class="tsd-kind-icon">clear<wbr>Selection</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#copybatch" class="tsd-kind-icon">copy<wbr>Batch</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#copycontent" class="tsd-kind-icon">copy<wbr>Content</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_actions_.html#createcontent" class="tsd-kind-icon">create<wbr>Content</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#deselectcontent" class="tsd-kind-icon">de<wbr>Select<wbr>Content</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#deletebatch" class="tsd-kind-icon">delete<wbr>Batch</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#deletecontent" class="tsd-kind-icon">delete<wbr>Content</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_actions_.html#forceundocheckout" class="tsd-kind-icon">force<wbr>Undo<wbr>Checkout</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_actions_.html#loadcontent" class="tsd-kind-icon">load<wbr>Content</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#loadcontentactions" class="tsd-kind-icon">load<wbr>Content<wbr>Actions</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#loadrepository" class="tsd-kind-icon">load<wbr>Repository</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#movebatch" class="tsd-kind-icon">move<wbr>Batch</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#movecontent" class="tsd-kind-icon">move<wbr>Content</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_actions_.html#publish" class="tsd-kind-icon">publish</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_actions_.html#rejectcontent" class="tsd-kind-icon">reject<wbr>Content</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_actions_.html#requestcontent" class="tsd-kind-icon">request<wbr>Content</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_actions_.html#restoreversion" class="tsd-kind-icon">restore<wbr>Version</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#selectcontent" class="tsd-kind-icon">select<wbr>Content</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_actions_.html#undocheckout" class="tsd-kind-icon">undo<wbr>Checkout</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_actions_.html#updatecontent" class="tsd-kind-icon">update<wbr>Content</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_actions_.html#uploadrequest" class="tsd-kind-icon">upload<wbr>Request</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#userchanged" class="tsd-kind-icon">user<wbr>Changed</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#userlogin" class="tsd-kind-icon">user<wbr>Login</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#userlogingoogle" class="tsd-kind-icon">user<wbr>Login<wbr>Google</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_actions_.html#userlogout" class="tsd-kind-icon">user<wbr>Logout</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#approve" class="tsd-kind-icon">approve</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#checkin" class="tsd-kind-icon">check<wbr>In</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#checkloginstate" class="tsd-kind-icon">check<wbr>Login<wbr>State</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#checkout" class="tsd-kind-icon">check<wbr>Out</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#clearselection" class="tsd-kind-icon">clear<wbr>Selection</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#copybatch" class="tsd-kind-icon">copy<wbr>Batch</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#copycontent" class="tsd-kind-icon">copy<wbr>Content</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#createcontent" class="tsd-kind-icon">create<wbr>Content</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#deselectcontent" class="tsd-kind-icon">de<wbr>Select<wbr>Content</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#deletebatch" class="tsd-kind-icon">delete<wbr>Batch</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#deletecontent" class="tsd-kind-icon">delete<wbr>Content</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#forceundocheckout" class="tsd-kind-icon">force<wbr>Undo<wbr>Checkout</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#loadcontent" class="tsd-kind-icon">load<wbr>Content</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#loadcontentactions" class="tsd-kind-icon">load<wbr>Content<wbr>Actions</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#loadrepository" class="tsd-kind-icon">load<wbr>Repository</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#movebatch" class="tsd-kind-icon">move<wbr>Batch</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#movecontent" class="tsd-kind-icon">move<wbr>Content</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#publish" class="tsd-kind-icon">publish</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#rejectcontent" class="tsd-kind-icon">reject<wbr>Content</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#requestcontent" class="tsd-kind-icon">request<wbr>Content</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#restoreversion" class="tsd-kind-icon">restore<wbr>Version</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#selectcontent" class="tsd-kind-icon">select<wbr>Content</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#undocheckout" class="tsd-kind-icon">undo<wbr>Checkout</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#updatecontent" class="tsd-kind-icon">update<wbr>Content</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#uploadrequest" class="tsd-kind-icon">upload<wbr>Request</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#userchanged" class="tsd-kind-icon">user<wbr>Changed</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#userlogin" class="tsd-kind-icon">user<wbr>Login</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#userlogingoogle" class="tsd-kind-icon">user<wbr>Login<wbr>Google</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#userlogout" class="tsd-kind-icon">user<wbr>Logout</a></li>
 							</ul>
 						</section>
 					</div>
@@ -119,7 +230,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L325">Actions.ts:325</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L328">Actions.ts:328</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -167,7 +278,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L328">Actions.ts:328</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L331">Actions.ts:331</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -193,7 +304,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L297">Actions.ts:297</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L300">Actions.ts:300</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -249,7 +360,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L300">Actions.ts:300</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L303">Actions.ts:303</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -275,7 +386,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L395">Actions.ts:395</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L398">Actions.ts:398</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -303,7 +414,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L282">Actions.ts:282</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L285">Actions.ts:285</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -351,7 +462,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L285">Actions.ts:285</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L288">Actions.ts:288</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -377,7 +488,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L486">Actions.ts:486</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L489">Actions.ts:489</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -405,7 +516,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L240">Actions.ts:240</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L243">Actions.ts:243</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -442,7 +553,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L243">Actions.ts:243</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L246">Actions.ts:246</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -468,7 +579,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L226">Actions.ts:226</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L229">Actions.ts:229</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -510,7 +621,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L229">Actions.ts:229</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L232">Actions.ts:232</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -536,7 +647,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L170">Actions.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L173">Actions.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -592,7 +703,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L173">Actions.ts:173</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L176">Actions.ts:176</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -618,7 +729,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L478">Actions.ts:478</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L481">Actions.ts:481</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -655,7 +766,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L212">Actions.ts:212</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L215">Actions.ts:215</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -697,7 +808,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L215">Actions.ts:215</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L218">Actions.ts:218</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -723,7 +834,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L198">Actions.ts:198</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L201">Actions.ts:201</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -765,7 +876,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L201">Actions.ts:201</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L204">Actions.ts:204</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -791,7 +902,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L368">Actions.ts:368</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L371">Actions.ts:371</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -839,7 +950,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L371">Actions.ts:371</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L374">Actions.ts:374</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -865,7 +976,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L141">Actions.ts:141</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L144">Actions.ts:144</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -913,7 +1024,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L144">Actions.ts:144</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L147">Actions.ts:147</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -939,7 +1050,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L155">Actions.ts:155</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L158">Actions.ts:158</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -981,7 +1092,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L158">Actions.ts:158</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L161">Actions.ts:161</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1007,7 +1118,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L460">Actions.ts:460</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L463">Actions.ts:463</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1049,7 +1160,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L268">Actions.ts:268</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L271">Actions.ts:271</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1086,7 +1197,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L271">Actions.ts:271</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L274">Actions.ts:274</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1112,7 +1223,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L254">Actions.ts:254</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L257">Actions.ts:257</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1154,7 +1265,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L257">Actions.ts:257</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L260">Actions.ts:260</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1180,7 +1291,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L311">Actions.ts:311</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L314">Actions.ts:314</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1228,7 +1339,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L314">Actions.ts:314</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L317">Actions.ts:317</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1254,7 +1365,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L340">Actions.ts:340</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L343">Actions.ts:343</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1310,7 +1421,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L343">Actions.ts:343</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L346">Actions.ts:346</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1336,7 +1447,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L124">Actions.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L127">Actions.ts:127</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1384,7 +1495,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L127">Actions.ts:127</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L130">Actions.ts:130</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1410,7 +1521,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L383">Actions.ts:383</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L386">Actions.ts:386</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1466,7 +1577,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L386">Actions.ts:386</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L389">Actions.ts:389</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1492,7 +1603,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L469">Actions.ts:469</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L472">Actions.ts:472</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1529,7 +1640,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L354">Actions.ts:354</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L357">Actions.ts:357</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1577,7 +1688,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L357">Actions.ts:357</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L360">Actions.ts:360</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1603,7 +1714,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L184">Actions.ts:184</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L187">Actions.ts:187</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1651,7 +1762,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L187">Actions.ts:187</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L190">Actions.ts:190</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1677,7 +1788,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L499">Actions.ts:499</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L502">Actions.ts:502</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1732,7 +1843,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L502">Actions.ts:502</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L505">Actions.ts:505</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1758,7 +1869,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L403">Actions.ts:403</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L406">Actions.ts:406</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1800,7 +1911,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L413">Actions.ts:413</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L416">Actions.ts:416</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1842,7 +1953,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L416">Actions.ts:416</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L419">Actions.ts:419</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1868,7 +1979,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L440">Actions.ts:440</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L443">Actions.ts:443</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1896,7 +2007,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L447">Actions.ts:447</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L450">Actions.ts:450</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1919,7 +2030,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L450">Actions.ts:450</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/57332bd/src/Actions.ts#L453">Actions.ts:453</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1944,107 +2055,107 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_actions_.html">"<wbr>Actions"</a>
+						<a href="actions.html">Actions</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_reducers_.html">"<wbr>Reducers"</a>
+						<a href="reducers.html">Reducers</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_schema_.html">"<wbr>Schema"</a>
+						<a href="schema.html">Schema</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_store_.html">"<wbr>Store"</a>
+						<a href="store.html">Store</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_actions_.html#approve" class="tsd-kind-icon">approve</a>
+						<a href="actions.html#approve" class="tsd-kind-icon">approve</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_actions_.html#checkin" class="tsd-kind-icon">check<wbr>In</a>
+						<a href="actions.html#checkin" class="tsd-kind-icon">check<wbr>In</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#checkloginstate" class="tsd-kind-icon">check<wbr>Login<wbr>State</a>
+						<a href="actions.html#checkloginstate" class="tsd-kind-icon">check<wbr>Login<wbr>State</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_actions_.html#checkout" class="tsd-kind-icon">check<wbr>Out</a>
+						<a href="actions.html#checkout" class="tsd-kind-icon">check<wbr>Out</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#clearselection" class="tsd-kind-icon">clear<wbr>Selection</a>
+						<a href="actions.html#clearselection" class="tsd-kind-icon">clear<wbr>Selection</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#copybatch" class="tsd-kind-icon">copy<wbr>Batch</a>
+						<a href="actions.html#copybatch" class="tsd-kind-icon">copy<wbr>Batch</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#copycontent" class="tsd-kind-icon">copy<wbr>Content</a>
+						<a href="actions.html#copycontent" class="tsd-kind-icon">copy<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_actions_.html#createcontent" class="tsd-kind-icon">create<wbr>Content</a>
+						<a href="actions.html#createcontent" class="tsd-kind-icon">create<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#deselectcontent" class="tsd-kind-icon">de<wbr>Select<wbr>Content</a>
+						<a href="actions.html#deselectcontent" class="tsd-kind-icon">de<wbr>Select<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#deletebatch" class="tsd-kind-icon">delete<wbr>Batch</a>
+						<a href="actions.html#deletebatch" class="tsd-kind-icon">delete<wbr>Batch</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#deletecontent" class="tsd-kind-icon">delete<wbr>Content</a>
+						<a href="actions.html#deletecontent" class="tsd-kind-icon">delete<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_actions_.html#forceundocheckout" class="tsd-kind-icon">force<wbr>Undo<wbr>Checkout</a>
+						<a href="actions.html#forceundocheckout" class="tsd-kind-icon">force<wbr>Undo<wbr>Checkout</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_actions_.html#loadcontent" class="tsd-kind-icon">load<wbr>Content</a>
+						<a href="actions.html#loadcontent" class="tsd-kind-icon">load<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#loadcontentactions" class="tsd-kind-icon">load<wbr>Content<wbr>Actions</a>
+						<a href="actions.html#loadcontentactions" class="tsd-kind-icon">load<wbr>Content<wbr>Actions</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#loadrepository" class="tsd-kind-icon">load<wbr>Repository</a>
+						<a href="actions.html#loadrepository" class="tsd-kind-icon">load<wbr>Repository</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#movebatch" class="tsd-kind-icon">move<wbr>Batch</a>
+						<a href="actions.html#movebatch" class="tsd-kind-icon">move<wbr>Batch</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#movecontent" class="tsd-kind-icon">move<wbr>Content</a>
+						<a href="actions.html#movecontent" class="tsd-kind-icon">move<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_actions_.html#publish" class="tsd-kind-icon">publish</a>
+						<a href="actions.html#publish" class="tsd-kind-icon">publish</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_actions_.html#rejectcontent" class="tsd-kind-icon">reject<wbr>Content</a>
+						<a href="actions.html#rejectcontent" class="tsd-kind-icon">reject<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_actions_.html#requestcontent" class="tsd-kind-icon">request<wbr>Content</a>
+						<a href="actions.html#requestcontent" class="tsd-kind-icon">request<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_actions_.html#restoreversion" class="tsd-kind-icon">restore<wbr>Version</a>
+						<a href="actions.html#restoreversion" class="tsd-kind-icon">restore<wbr>Version</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#selectcontent" class="tsd-kind-icon">select<wbr>Content</a>
+						<a href="actions.html#selectcontent" class="tsd-kind-icon">select<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_actions_.html#undocheckout" class="tsd-kind-icon">undo<wbr>Checkout</a>
+						<a href="actions.html#undocheckout" class="tsd-kind-icon">undo<wbr>Checkout</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_actions_.html#updatecontent" class="tsd-kind-icon">update<wbr>Content</a>
+						<a href="actions.html#updatecontent" class="tsd-kind-icon">update<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_actions_.html#uploadrequest" class="tsd-kind-icon">upload<wbr>Request</a>
+						<a href="actions.html#uploadrequest" class="tsd-kind-icon">upload<wbr>Request</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#userchanged" class="tsd-kind-icon">user<wbr>Changed</a>
+						<a href="actions.html#userchanged" class="tsd-kind-icon">user<wbr>Changed</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#userlogin" class="tsd-kind-icon">user<wbr>Login</a>
+						<a href="actions.html#userlogin" class="tsd-kind-icon">user<wbr>Login</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#userlogingoogle" class="tsd-kind-icon">user<wbr>Login<wbr>Google</a>
+						<a href="actions.html#userlogingoogle" class="tsd-kind-icon">user<wbr>Login<wbr>Google</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_actions_.html#userlogout" class="tsd-kind-icon">user<wbr>Logout</a>
+						<a href="actions.html#userlogout" class="tsd-kind-icon">user<wbr>Logout</a>
 					</li>
 				</ul>
 			</nav>
@@ -2063,6 +2174,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
