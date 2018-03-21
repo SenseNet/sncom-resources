@@ -6,6 +6,8 @@ tags: [reactjs, redux, javascript, typescript, getting started, step by step, fr
 description: Step-by-step tutorial creating your first basic single page app with sensenet ECM, Reactjs and Redux.
 ---
 
+# Starting out with sensenet ECM using Reactjs and Redux
+
 ## Prerequisites
 
 First of all you need a sensenet ECM instance installed. The following project will get and set data from the Content Repository through OData REST API so it would be enough to install [sensenet Services](https://github.com/SenseNet/sensenet), but since sensenet 7 has not got its own admin surface yet probably your life will be easier if you install [sensenet Webpages](https://github.com/SenseNet/sn-webpages) too. With sn-webpages you can access the good old Content Explorer with the control over all the users, permissions, settings, content types and many more.
@@ -53,13 +55,13 @@ To let your app communicate with the sensenet instance you have to allow its dom
 
 ## sensenet client repository
 
-sensenet ECM 7 has a JavaScript library that lets you work with its Content Repository by providing client API for the main content operations. We will create the base of our application by creating a client repository with [sn-client-js](https://github.com/SenseNet/sn-client-js)
+sensenet ECM 7 has a JavaScript library that lets you work with its Content Repository by providing client API for the main content operations. We will create the base of our application by creating a client repository with [@sensenet/client-core](https://github.com/SenseNet/sn-client-core)
 
 ```
-npm install --save-dev sn-client-js
+npm install --save @sensenet/client-core
 ```
 
- > If you are interested more in client repostory and how to take advantage of sn-client-js check its [API references](https://community.sensenet.com/api/sn-client-js/).
+ > If you are interested more in client repostory and how to take advantage of sensenet client packages check the [API references](https://community.sensenet.com/api/).
 
 Import it into your React application's ```index.tsx``` as a dependency and create a new ```SnRepository``` with the url of your sensenet ECM instance
 
@@ -68,12 +70,11 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import { Repository } from 'sn-client-js';
+import { Repository } from '@sensenet/client-core'
 import './index.css';
-import 'rxjs';
 
-const repository = new Repository.SnRepository({
-  RepositoryUrl: 'https://mysensenetsite.com'
+const repository = new Repository({
+  repositoryUrl: 'https://mysensenetsite.com'
 });
 
 ReactDOM.render(
@@ -92,14 +93,14 @@ To create and configure your application's state container:
 ### 1. Install sn-redux
 
 ```
-npm i --save-dev sn-redux sn-client-auth-google
+npm i --save @sensenet/redux @sensenet/authentication-google
 ```
 
 ### 2. Import the following things to your ```index.tsx```
 
 ```typescript
 import { combineReducers } from 'redux';
-import { Store, Actions, Reducers } from 'sn-redux';
+import { Store, Reducers } from '@sensenet/redux';
 ```
 
 ### 3. Create your app's top reducer ```sensenet```
@@ -114,8 +115,11 @@ const myReducer = combineReducers({
 ### 4. Create and configure your application's store
 
 ```typescript
-const store = Store.configureStore(myReducer, undefined, undefined, {}, repository);
-store.dispatch(Actions.InitSensenetStore('/Root/Sites/Default_Site', { select: 'all' }));
+const storeOptions = {
+  repository,
+  rootReducer: myReducer
+} as Store.CreateStoreOptions;
+const store = Store.createSensenetStore(storeOptions);
 ```
 
 > There're some configuration changes that should be made in the ```tsconfig.json```. First add the following intto the compilereOptions ```"types": ["jest","node"]```. This is needed because create-react-app uses [jest](https://facebook.github.io/jest/) for testing but some of the dependencies like sn-redux using [mocha](https://mochajs.org/), both have a variable named ```describe``` and it causes a conflict in the build process. Another thing to change is to set ```noImplicitAny``` and ```strictNullChecks``` to false in the tsconfig.json and set ```no-any``` to false in ```tslin.json```.
@@ -138,7 +142,7 @@ import { Provider } from 'react-redux';
 ...
 ReactDOM.render(
   <Provider store={store}>
-      <App store={store} />
+      <App />
   </Provider>,
   document.getElementById('root') as HTMLElement
 );
@@ -147,7 +151,7 @@ ReactDOM.render(
 
 Now you are able to dispatch the predefined actions on the store, and connecting the store to your Reactjs components you can subscribe to the changes, use and display anything that can be found in the state tree.
 
-> See the available actions in the [sn-redux API references](https://www.sensenet.com/Root/Sites/sensenet.com/documentation/sn-redux/modules/_actions_.actions.html).
+> See the available actions in the [sn-redux API references](https://community.sensenet.com/api/sn-redux).
 
 ## Simple app with login, logout and with a list of some content
 
@@ -159,7 +163,7 @@ Now you are able to dispatch the predefined actions on the store, and connecting
 
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { Actions, Reducers } from 'sn-redux';
+import { Actions, Reducers } from '@sensenet/redux';
 
 interface ListProps {
     logout: Function;
@@ -212,8 +216,8 @@ const mapStateToProps = (state, match) => {
 };
 
 export default connect(mapStateToProps, {
-    logout: Actions.UserLogout,
-    fetch: Actions.RequestContent
+    logout: Actions.userLogout,
+    fetch: Actions.requestContent
 })(List);
 ```
 
@@ -265,8 +269,8 @@ import {
   withRouter
 } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { Authentication } from 'sn-client-js';
-import { Actions, Reducers } from 'sn-redux';
+import { LoginState } from '@sensenet/client-core';
+import { Actions, Reducers } from '@sensenet/redux';
 import './App.css';
 import List from './List';
 import { Login } from './Login';
@@ -279,7 +283,7 @@ const styles = {
 };
 
 interface AppProps {
-  loginState: Authentication.LoginState;
+  loginState: LoginState;
   login: Function;
 }
 
@@ -298,7 +302,7 @@ class App extends React.Component<AppProps, {}> {
           exact={true}
           path="/"
           render={routerProps => {
-            const status = this.props.loginState !== Authentication.LoginState.Authenticated;
+            const status = this.props.loginState !== LoginState.Authenticated;
             return status ?
               <Redirect key="login" to="/login" />
               : <List />;
@@ -307,7 +311,7 @@ class App extends React.Component<AppProps, {}> {
         <Route
           path="/login"
           render={routerProps => {
-            const status = this.props.loginState !== Authentication.LoginState.Authenticated;
+            const status = this.props.loginState !== LoginState.Authenticated;
             return status ?
               <Login formSubmit={this.formSubmit} />
               : <Redirect key="dashboard" to="/" />;
@@ -327,7 +331,7 @@ const mapStateToProps = (state, match) => {
 export default withRouter(connect(
   mapStateToProps,
   {
-    login: Actions.UserLogin,
+    login: Actions.userLogin,
   })(App));
 ```
 
@@ -346,11 +350,23 @@ import {
 ReactDOM.render(
   <Provider store={store}>
     <Router basename="/">
-      <App store={store} />
+      <App />
     </Router>
   </Provider>,
   document.getElementById('root') as HTMLElement
 );
+...
+```
+
+#### Add jwt authentication to the app
+
+*index.tsx*
+
+```typescript
+...
+import { JwtService } from '@sensenet/authentication-jwt'
+...
+const _jwtService = new JwtService(repository);
 ...
 ```
 
