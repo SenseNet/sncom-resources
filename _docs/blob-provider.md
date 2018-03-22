@@ -11,8 +11,8 @@ description: This article describes the concept of our blob storage and the cust
 
 In **sensenet ECM** all files are stored in the main [Content Repository](Content_Repository "wikilink") database by default. All binaries, along with their metadata. In larger projects this can lead to a *huge database*, which requires a *large data storage* and sometimes additional *server licences*. sensenet allows you to store binaries outside of the database, in an external storage. This article describes the concept of our blob storage and the customization options. Available blob providers for the *Enterprise Edition*:
 
--   [MongoDB blob provider](/_docs/mongodb-provider.md) *(soon to be released)*
--   [Azure blob provider](/_docs/azureblob-provider.md) *(soon to be released)*
+-   [MongoDB blob provider](/docs/mongodb-provider) *(soon to be released)*
+-   [Azure blob provider](/docs/azureblob-provider) *(soon to be released)*
 
 ## Blob storage concept
 
