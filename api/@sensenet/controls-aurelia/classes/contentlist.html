@@ -1,0 +1,1575 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ContentList | @sensenet/controls-aurelia</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico"/>
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js " data-base="../
+				">
+				<div class="field">
+					<label class="fa fa-search tsd-widget search no-caption" for="tsd-search-field"></label>
+					<input id="tsd-search-field" type="text" />
+				</div>
+				<ul class="results">
+					<li class="state loading">Preparing search index...</li>
+					<li class="state failure">The search index is not available</li>
+				</ul>
+				<a href="../index.html" class="title">
+					<img src="../assets/images/sensenet-logo.png" alt="@sensenet/controls-aurelia" />
+				</a>
+				<nav class="sn-menu">
+					<a class="site-header-nav-item active" href="../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../contact">Contact</a>
+					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
+						<i class="fa fa-github" aria-hidden="true"></i>
+					</a>
+				</nav>
+			</div>
+			<div class="table-cell" id="tsd-widgets">
+				<div id="tsd-filter">
+					<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+					<div class="tsd-filter-group">
+						<div class="tsd-select" id="tsd-filter-visibility">
+							<span class="tsd-select-label">All</span>
+							<ul class="tsd-select-list">
+								<li data-value="public">Public</li>
+								<li data-value="protected">Public/Protected</li>
+								<li data-value="private" class="selected">All</li>
+							</ul>
+						</div>
+						<input type="checkbox" id="tsd-filter-inherited" checked />
+						<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						<input type="checkbox" id="tsd-filter-externals" checked />
+						<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						<input type="checkbox" id="tsd-filter-only-exported" />
+						<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+					</div>
+				</div>
+				<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>Class  ContentList
+			</h1>
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<span>ContentList</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Component that lets you display and work with a simple Content Collection</p>
+					</div>
+					<p>Usage example:</p>
+					<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">content-list</span> <span class="hljs-attr">scope.bind</span>=<span class="hljs-string">"Scope"</span>
+     <span class="hljs-attr">get-items.call</span>=<span class="hljs-string">"GetSelectedChildren(scope, query)"</span>
+     <span class="hljs-attr">on-activate.call</span>=<span class="hljs-string">"Select(content)"</span>
+     <span class="hljs-attr">on-drop-files.call</span>=<span class="hljs-string">"FilesDropped(event, files)"</span>
+     <span class="hljs-attr">on-drop-content.call</span>=<span class="hljs-string">"ContentDropped(content)"</span>
+     <span class="hljs-attr">on-drop-content-list.call</span>=<span class="hljs-string">"ContentListDropped(contentList)"</span>
+     <span class="hljs-attr">on-drop-content-on-item.call</span>=<span class="hljs-string">"ContentDroppedOnItem(content, item)"</span>
+     <span class="hljs-attr">on-drop-content-list-on-item.call</span>=<span class="hljs-string">"ContentListDroppedOnItem(contentList, item)"</span>
+     <span class="hljs-attr">view-type.bind</span>=<span class="hljs-string">"ViewType"</span>
+     <span class="hljs-attr">query.bind</span>=<span class="hljs-string">'query'</span>
+     <span class="hljs-attr">selection.two-way</span>=<span class="hljs-string">"SelectedContent"</span>
+     <span class="hljs-attr">on-action.call</span>=<span class="hljs-string">"onAction(content, action)"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">content-list</span>&gt;</span>
+</code></pre>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ContentList</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="contentlist.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="contentlist.html#bindingsignaler" class="tsd-kind-icon">binding<wbr>Signaler</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#enableselection" class="tsd-kind-icon">enable<wbr>Selection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="contentlist.html#eventhub" class="tsd-kind-icon">event<wbr>Hub</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#getitems" class="tsd-kind-icon">get<wbr>Items</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#isloading" class="tsd-kind-icon">is<wbr>Loading</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#items" class="tsd-kind-icon">items</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#lastselectionindex" class="tsd-kind-icon">last<wbr>Selection<wbr>Index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#multiselect" class="tsd-kind-icon">multi<wbr>Select</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="contentlist.html#observers" class="tsd-kind-icon">observers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#onaction" class="tsd-kind-icon">on<wbr>Action</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#onactivate" class="tsd-kind-icon">on<wbr>Activate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#query" class="tsd-kind-icon">query</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="contentlist.html#repository" class="tsd-kind-icon">repository</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#scope" class="tsd-kind-icon">scope</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#scopehistory" class="tsd-kind-icon">scope<wbr>History</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#selection" class="tsd-kind-icon">selection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="contentlist.html#selectionchangedsignalkey" class="tsd-kind-icon">selection<wbr>Changed<wbr>Signal<wbr>Key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#showscope" class="tsd-kind-icon">show<wbr>Scope</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="contentlist.html#viewtype" class="tsd-kind-icon">view<wbr>Type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="contentlist.html#hasparent" class="tsd-kind-icon">has<wbr>Parent</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="contentlist.html#hasscope" class="tsd-kind-icon">has<wbr>Scope</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#activateitem" class="tsd-kind-icon">activate<wbr>Item</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#clearselection" class="tsd-kind-icon">clear<wbr>Selection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#detached" class="tsd-kind-icon">detached</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#disposeobservers" class="tsd-kind-icon">dispose<wbr>Observers</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#dropcontent" class="tsd-kind-icon">drop<wbr>Content</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#dropcontentonitem" class="tsd-kind-icon">drop<wbr>Content<wbr>OnItem</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#focusin" class="tsd-kind-icon">focus<wbr>In</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#focusout" class="tsd-kind-icon">focus<wbr>Out</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#getactions" class="tsd-kind-icon">get<wbr>Actions</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#handlecontentchanges" class="tsd-kind-icon">handle<wbr>Content<wbr>Changes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#handlekeypress" class="tsd-kind-icon">handle<wbr>Key<wbr>Press</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#isfocused" class="tsd-kind-icon">is<wbr>Focused</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#isselected" class="tsd-kind-icon">is<wbr>Selected</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#itemschanged" class="tsd-kind-icon">items<wbr>Changed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#ondropcontent" class="tsd-kind-icon">on<wbr>Drop<wbr>Content</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#ondropcontentlist" class="tsd-kind-icon">on<wbr>Drop<wbr>Content<wbr>List</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#ondropcontentlistonitem" class="tsd-kind-icon">on<wbr>Drop<wbr>Content<wbr>List<wbr>OnItem</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#ondropcontentonitem" class="tsd-kind-icon">on<wbr>Drop<wbr>Content<wbr>OnItem</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#ondropfiles" class="tsd-kind-icon">on<wbr>Drop<wbr>Files</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#ondropfilesonitem" class="tsd-kind-icon">on<wbr>Drop<wbr>Files<wbr>OnItem</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#querychanged" class="tsd-kind-icon">query<wbr>Changed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#reinitialize" class="tsd-kind-icon">reinitialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#reloadoncontentchange" class="tsd-kind-icon">reload<wbr>OnContent<wbr>Change</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#scopechanged" class="tsd-kind-icon">scope<wbr>Changed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#selectall" class="tsd-kind-icon">select<wbr>All</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#selectitem" class="tsd-kind-icon">select<wbr>Item</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#toggleselection" class="tsd-kind-icon">toggle<wbr>Selection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="contentlist.html#triggeraction" class="tsd-kind-icon">trigger<wbr>Action</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Content<wbr>List<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Repository</span>, bindingSignaler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BindingSignaler</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="contentlist.html" class="tsd-signature-type">ContentList</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L43">collectioncontrols/ContentList.ts:43</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>repository: <span class="tsd-signature-type">Repository</span></h5>
+								</li>
+								<li>
+									<h5>bindingSignaler: <span class="tsd-signature-type">BindingSignaler</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="contentlist.html" class="tsd-signature-type">ContentList</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="bindingsignaler" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> binding<wbr>Signaler</h3>
+					<div class="tsd-signature tsd-kind-icon">binding<wbr>Signaler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">BindingSignaler</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L46">collectioncontrols/ContentList.ts:46</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="enableselection" class="tsd-anchor"></a>
+					<h3>enable<wbr>Selection</h3>
+					<div class="tsd-signature tsd-kind-icon">enable<wbr>Selection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L156">collectioncontrols/ContentList.ts:156</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="eventhub" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> event<wbr>Hub</h3>
+					<div class="tsd-signature tsd-kind-icon">event<wbr>Hub<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventHub</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L43">collectioncontrols/ContentList.ts:43</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="getitems" class="tsd-anchor"></a>
+					<h3>get<wbr>Items</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L90">collectioncontrols/ContentList.ts:90</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>params: <span class="tsd-signature-type">object</span></h5>
+												<ul class="tsd-parameters">
+													<li class="tsd-parameter">
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> query<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Query</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">&gt;</span></h5>
+													</li>
+													<li class="tsd-parameter">
+														<h5>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span></h5>
+													</li>
+												</ul>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="isloading" class="tsd-anchor"></a>
+					<h3>is<wbr>Loading</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Loading<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L52">collectioncontrols/ContentList.ts:52</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="items" class="tsd-anchor"></a>
+					<h3>items</h3>
+					<div class="tsd-signature tsd-kind-icon">items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L271">collectioncontrols/ContentList.ts:271</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="lastselectionindex" class="tsd-anchor"></a>
+					<h3>last<wbr>Selection<wbr>Index</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Selection<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L159">collectioncontrols/ContentList.ts:159</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="multiselect" class="tsd-anchor"></a>
+					<h3>multi<wbr>Select</h3>
+					<div class="tsd-signature tsd-kind-icon">multi<wbr>Select<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L153">collectioncontrols/ContentList.ts:153</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="observers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> observers</h3>
+					<div class="tsd-signature tsd-kind-icon">observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IDisposable</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L76">collectioncontrols/ContentList.ts:76</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="onaction" class="tsd-anchor"></a>
+					<h3>on<wbr>Action</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L96">collectioncontrols/ContentList.ts:96</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>params: <span class="tsd-signature-type">object</span></h5>
+												<ul class="tsd-parameters">
+													<li class="tsd-parameter">
+														<h5>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IActionModel</span></h5>
+													</li>
+													<li class="tsd-parameter">
+														<h5>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span></h5>
+													</li>
+												</ul>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="onactivate" class="tsd-anchor"></a>
+					<h3>on<wbr>Activate</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Activate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L93">collectioncontrols/ContentList.ts:93</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>params: <span class="tsd-signature-type">object</span></h5>
+												<ul class="tsd-parameters">
+													<li class="tsd-parameter">
+														<h5>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span></h5>
+													</li>
+												</ul>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="query" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> query</h3>
+					<div class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Query</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L74">collectioncontrols/ContentList.ts:74</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="repository" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> repository</h3>
+					<div class="tsd-signature tsd-kind-icon">repository<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Repository</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L45">collectioncontrols/ContentList.ts:45</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="scope" class="tsd-anchor"></a>
+					<h3>scope</h3>
+					<div class="tsd-signature tsd-kind-icon">scope<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IContent</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L55">collectioncontrols/ContentList.ts:55</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="scopehistory" class="tsd-anchor"></a>
+					<h3>scope<wbr>History</h3>
+					<div class="tsd-signature tsd-kind-icon">scope<wbr>History<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L58">collectioncontrols/ContentList.ts:58</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="selection" class="tsd-anchor"></a>
+					<h3>selection</h3>
+					<div class="tsd-signature tsd-kind-icon">selection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L61">collectioncontrols/ContentList.ts:61</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="selectionchangedsignalkey" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> selection<wbr>Changed<wbr>Signal<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">selection<wbr>Changed<wbr>Signal<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"content-list-selection-changed"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;content-list-selection-changed&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L42">collectioncontrols/ContentList.ts:42</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="showscope" class="tsd-anchor"></a>
+					<h3>show<wbr>Scope</h3>
+					<div class="tsd-signature tsd-kind-icon">show<wbr>Scope<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L150">collectioncontrols/ContentList.ts:150</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="viewtype" class="tsd-anchor"></a>
+					<h3>view<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">view<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/collectionview.html" class="tsd-signature-type">CollectionView</a><span class="tsd-signature-symbol"> =&nbsp;CollectionView.List</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L147">collectioncontrols/ContentList.ts:147</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="hasparent" class="tsd-anchor"></a>
+					<h3>has<wbr>Parent</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> hasParent<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L69">collectioncontrols/ContentList.ts:69</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="hasscope" class="tsd-anchor"></a>
+					<h3>has<wbr>Scope</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> hasScope<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L64">collectioncontrols/ContentList.ts:64</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="activateitem" class="tsd-anchor"></a>
+					<h3>activate<wbr>Item</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">activate<wbr>Item<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L166">collectioncontrols/ContentList.ts:166</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>content: <span class="tsd-signature-type">IContent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clearselection" class="tsd-anchor"></a>
+					<h3>clear<wbr>Selection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clear<wbr>Selection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L350">collectioncontrols/ContentList.ts:350</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="detached" class="tsd-anchor"></a>
+					<h3>detached</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">detached<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L85">collectioncontrols/ContentList.ts:85</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="disposeobservers" class="tsd-anchor"></a>
+					<h3>dispose<wbr>Observers</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dispose<wbr>Observers<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L78">collectioncontrols/ContentList.ts:78</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dropcontent" class="tsd-anchor"></a>
+					<h3>drop<wbr>Content</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">drop<wbr>Content<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span>, stringifiedContent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, stringifiedContentList<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, files<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">FileList</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L303">collectioncontrols/ContentList.ts:303</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">DragEvent</span></h5>
+								</li>
+								<li>
+									<h5>stringifiedContent: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> stringifiedContentList: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> files: <span class="tsd-signature-type">FileList</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dropcontentonitem" class="tsd-anchor"></a>
+					<h3>drop<wbr>Content<wbr>OnItem</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">drop<wbr>Content<wbr>OnItem<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span>, item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span>, stringifiedContent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, stringifiedContentList<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, files<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">FileList</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L318">collectioncontrols/ContentList.ts:318</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">DragEvent</span></h5>
+								</li>
+								<li>
+									<h5>item: <span class="tsd-signature-type">IContent</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> stringifiedContent: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> stringifiedContentList: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> files: <span class="tsd-signature-type">FileList</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="focusin" class="tsd-anchor"></a>
+					<h3>focus<wbr>In</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">focus<wbr>In<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L337">collectioncontrols/ContentList.ts:337</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="focusout" class="tsd-anchor"></a>
+					<h3>focus<wbr>Out</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">focus<wbr>Out<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L341">collectioncontrols/ContentList.ts:341</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getactions" class="tsd-anchor"></a>
+					<h3>get<wbr>Actions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Actions<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L162">collectioncontrols/ContentList.ts:162</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="handlecontentchanges" class="tsd-anchor"></a>
+					<h3>handle<wbr>Content<wbr>Changes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Content<wbr>Changes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>changes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L293">collectioncontrols/ContentList.ts:293</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>changes: <span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="handlekeypress" class="tsd-anchor"></a>
+					<h3>handle<wbr>Key<wbr>Press</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Key<wbr>Press<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KeyboardEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L355">collectioncontrols/ContentList.ts:355</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">KeyboardEvent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isfocused" class="tsd-anchor"></a>
+					<h3>is<wbr>Focused</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Focused<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L333">collectioncontrols/ContentList.ts:333</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>content: <span class="tsd-signature-type">IContent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isselected" class="tsd-anchor"></a>
+					<h3>is<wbr>Selected</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Selected<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L230">collectioncontrols/ContentList.ts:230</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>content: <span class="tsd-signature-type">IContent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="itemschanged" class="tsd-anchor"></a>
+					<h3>items<wbr>Changed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">items<wbr>Changed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L273">collectioncontrols/ContentList.ts:273</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondropcontent" class="tsd-anchor"></a>
+					<h3>on<wbr>Drop<wbr>Content</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Drop<wbr>Content<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L104">collectioncontrols/ContentList.ts:104</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondropcontentlist" class="tsd-anchor"></a>
+					<h3>on<wbr>Drop<wbr>Content<wbr>List</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Drop<wbr>Content<wbr>List<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L124">collectioncontrols/ContentList.ts:124</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>content<wbr>List<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">[]</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondropcontentlistonitem" class="tsd-anchor"></a>
+					<h3>on<wbr>Drop<wbr>Content<wbr>List<wbr>OnItem</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Drop<wbr>Content<wbr>List<wbr>OnItem<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L135">collectioncontrols/ContentList.ts:135</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>content<wbr>List<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">[]</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondropcontentonitem" class="tsd-anchor"></a>
+					<h3>on<wbr>Drop<wbr>Content<wbr>OnItem</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Drop<wbr>Content<wbr>OnItem<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L114">collectioncontrols/ContentList.ts:114</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondropfiles" class="tsd-anchor"></a>
+					<h3>on<wbr>Drop<wbr>Files</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Drop<wbr>Files<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L99">collectioncontrols/ContentList.ts:99</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileList</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondropfilesonitem" class="tsd-anchor"></a>
+					<h3>on<wbr>Drop<wbr>Files<wbr>OnItem</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Drop<wbr>Files<wbr>OnItem<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L130">collectioncontrols/ContentList.ts:130</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DragEvent</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileList</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="querychanged" class="tsd-anchor"></a>
+					<h3>query<wbr>Changed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">query<wbr>Changed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L266">collectioncontrols/ContentList.ts:266</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="reinitialize" class="tsd-anchor"></a>
+					<h3>reinitialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reinitialize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L234">collectioncontrols/ContentList.ts:234</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="reloadoncontentchange" class="tsd-anchor"></a>
+					<h3>reload<wbr>OnContent<wbr>Change</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reload<wbr>OnContent<wbr>Change<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L286">collectioncontrols/ContentList.ts:286</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>content: <span class="tsd-signature-type">IContent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">true</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="scopechanged" class="tsd-anchor"></a>
+					<h3>scope<wbr>Changed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">scope<wbr>Changed<span class="tsd-signature-symbol">(</span>newScope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span>, lastScope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L261">collectioncontrols/ContentList.ts:261</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>newScope: <span class="tsd-signature-type">IContent</span></h5>
+								</li>
+								<li>
+									<h5>lastScope: <span class="tsd-signature-type">IContent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="selectall" class="tsd-anchor"></a>
+					<h3>select<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">select<wbr>All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L345">collectioncontrols/ContentList.ts:345</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="selectitem" class="tsd-anchor"></a>
+					<h3>select<wbr>Item</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">select<wbr>Item<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L170">collectioncontrols/ContentList.ts:170</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">MouseEvent</span></h5>
+								</li>
+								<li>
+									<h5>content: <span class="tsd-signature-type">IContent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="toggleselection" class="tsd-anchor"></a>
+					<h3>toggle<wbr>Selection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Selection<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L207">collectioncontrols/ContentList.ts:207</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">MouseEvent</span></h5>
+								</li>
+								<li>
+									<h5>content: <span class="tsd-signature-type">IContent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="triggeraction" class="tsd-anchor"></a>
+					<h3>trigger<wbr>Action</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">trigger<wbr>Action<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span>, action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IActionModel</span>, item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IContent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-controls-aurelia/blob/ee6b09a/src/collectioncontrols/ContentList.ts#L141">collectioncontrols/ContentList.ts:141</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">MouseEvent</span></h5>
+								</li>
+								<li>
+									<h5>action: <span class="tsd-signature-type">IActionModel</span></h5>
+								</li>
+								<li>
+									<h5>item: <span class="tsd-signature-type">IContent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/collectionview.html" class="tsd-kind-icon">Collection<wbr>View</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/dragtypes.html" class="tsd-kind-icon">Drag<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="addcontentdialog.html" class="tsd-kind-icon">Add<wbr>Content<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="breadcrumbs.html" class="tsd-kind-icon">Breadcrumbs</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="checkbox.html" class="tsd-kind-icon">Checkbox</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="choice.html" class="tsd-kind-icon">Choice</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="contentdragcustomattribute.html" class="tsd-kind-icon">Content<wbr>Drag<wbr>Custom<wbr>Attribute</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="contentdropcustomattribute.html" class="tsd-kind-icon">Content<wbr>Drop<wbr>Custom<wbr>Attribute</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="contentlist.html" class="tsd-kind-icon">Content<wbr>List</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="contentlist.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="contentlist.html#bindingsignaler" class="tsd-kind-icon">binding<wbr>Signaler</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#enableselection" class="tsd-kind-icon">enable<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="contentlist.html#eventhub" class="tsd-kind-icon">event<wbr>Hub</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#getitems" class="tsd-kind-icon">get<wbr>Items</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#isloading" class="tsd-kind-icon">is<wbr>Loading</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#items" class="tsd-kind-icon">items</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#lastselectionindex" class="tsd-kind-icon">last<wbr>Selection<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#multiselect" class="tsd-kind-icon">multi<wbr>Select</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="contentlist.html#observers" class="tsd-kind-icon">observers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#onaction" class="tsd-kind-icon">on<wbr>Action</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#onactivate" class="tsd-kind-icon">on<wbr>Activate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#query" class="tsd-kind-icon">query</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="contentlist.html#repository" class="tsd-kind-icon">repository</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#scope" class="tsd-kind-icon">scope</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#scopehistory" class="tsd-kind-icon">scope<wbr>History</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#selection" class="tsd-kind-icon">selection</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="contentlist.html#selectionchangedsignalkey" class="tsd-kind-icon">selection<wbr>Changed<wbr>Signal<wbr>Key</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#showscope" class="tsd-kind-icon">show<wbr>Scope</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="contentlist.html#viewtype" class="tsd-kind-icon">view<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="contentlist.html#hasparent" class="tsd-kind-icon">has<wbr>Parent</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="contentlist.html#hasscope" class="tsd-kind-icon">has<wbr>Scope</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#activateitem" class="tsd-kind-icon">activate<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#clearselection" class="tsd-kind-icon">clear<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#detached" class="tsd-kind-icon">detached</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#disposeobservers" class="tsd-kind-icon">dispose<wbr>Observers</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#dropcontent" class="tsd-kind-icon">drop<wbr>Content</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#dropcontentonitem" class="tsd-kind-icon">drop<wbr>Content<wbr>OnItem</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#focusin" class="tsd-kind-icon">focus<wbr>In</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#focusout" class="tsd-kind-icon">focus<wbr>Out</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#getactions" class="tsd-kind-icon">get<wbr>Actions</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#handlecontentchanges" class="tsd-kind-icon">handle<wbr>Content<wbr>Changes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#handlekeypress" class="tsd-kind-icon">handle<wbr>Key<wbr>Press</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#isfocused" class="tsd-kind-icon">is<wbr>Focused</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#isselected" class="tsd-kind-icon">is<wbr>Selected</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#itemschanged" class="tsd-kind-icon">items<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#ondropcontent" class="tsd-kind-icon">on<wbr>Drop<wbr>Content</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#ondropcontentlist" class="tsd-kind-icon">on<wbr>Drop<wbr>Content<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#ondropcontentlistonitem" class="tsd-kind-icon">on<wbr>Drop<wbr>Content<wbr>List<wbr>OnItem</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#ondropcontentonitem" class="tsd-kind-icon">on<wbr>Drop<wbr>Content<wbr>OnItem</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#ondropfiles" class="tsd-kind-icon">on<wbr>Drop<wbr>Files</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#ondropfilesonitem" class="tsd-kind-icon">on<wbr>Drop<wbr>Files<wbr>OnItem</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#querychanged" class="tsd-kind-icon">query<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#reinitialize" class="tsd-kind-icon">reinitialize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#reloadoncontentchange" class="tsd-kind-icon">reload<wbr>OnContent<wbr>Change</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#scopechanged" class="tsd-kind-icon">scope<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#selectall" class="tsd-kind-icon">select<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#selectitem" class="tsd-kind-icon">select<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#toggleselection" class="tsd-kind-icon">toggle<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="contentlist.html#triggeraction" class="tsd-kind-icon">trigger<wbr>Action</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="contentlistreference.html" class="tsd-kind-icon">Content<wbr>List<wbr>Reference</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="contentreference.html" class="tsd-kind-icon">Content<wbr>Reference</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="contentview.html" class="tsd-kind-icon">Content<wbr>View</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="controlmappingservice.html" class="tsd-kind-icon">Control<wbr>Mapping<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="controlnameresolverservice.html" class="tsd-kind-icon">Control<wbr>Name<wbr>Resolver<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="dateonly.html" class="tsd-kind-icon">Date<wbr>Only</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="datetime.html" class="tsd-kind-icon">Date<wbr>Time</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="deletecontent.html" class="tsd-kind-icon">Delete<wbr>Content</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="displayname.html" class="tsd-kind-icon">Display<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="dumpfield.html" class="tsd-kind-icon">Dump<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="editcontentdialog.html" class="tsd-kind-icon">Edit<wbr>Content<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="fieldbasecontrol.html" class="tsd-kind-icon">Field<wbr>Base<wbr>Control</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="genericview.html" class="tsd-kind-icon">Generic<wbr>View</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="icon.html" class="tsd-kind-icon">Icon</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="integer.html" class="tsd-kind-icon">Integer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="localeservice.html" class="tsd-kind-icon">Locale<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="longtext.html" class="tsd-kind-icon">Long<wbr>Text</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="namefield.html" class="tsd-kind-icon">Name<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="number.html" class="tsd-kind-icon">Number</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="password.html" class="tsd-kind-icon">Password</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="percentage.html" class="tsd-kind-icon">Percentage</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="richtext.html" class="tsd-kind-icon">Rich<wbr>Text</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="setpermissionsdialog.html" class="tsd-kind-icon">Set<wbr>Permissions<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="settingsvalidationcustomattribute.html" class="tsd-kind-icon">Settings<wbr>Validation<wbr>Custom<wbr>Attribute</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="shorttext.html" class="tsd-kind-icon">Short<wbr>Text</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="tree.html" class="tsd-kind-icon">Tree</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../globals.html#modules" class="tsd-kind-icon">modules</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#quill" class="tsd-kind-icon">quill</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#configure" class="tsd-kind-icon">configure</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
