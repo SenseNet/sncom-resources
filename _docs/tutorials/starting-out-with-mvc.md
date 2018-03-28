@@ -2,8 +2,9 @@
 title: "Getting started with sensenet ECM using MVC"
 source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tutorials/starting-out-with-mvc.md'
 category: Tutorials
+index: 0
 version: v7.0
-tags: [mvc, getting started, controller, view, backend]
+tags: [mvc, getting started, controller, view]
 description: Step-by-step tutorial creating your first basic Asp.Net MVC app with sensenet ECM.
 ---
 
