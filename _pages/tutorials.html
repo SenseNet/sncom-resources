@@ -7,7 +7,7 @@ redirect_from:
 layout: default 
 --- 
 
-{% assign docs = site.docs | sort: 'title' %}
+{% assign docs = site.docs | sort: 'index' %}
 
 <div class='subtron'>
   <div class='container-narrow'>
@@ -21,7 +21,15 @@ layout: default
       <div class="row">
 
         <div class="col-ms-12 col-lg-4">
-          <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/backend">Backend dev how-tos</a></h2>
+            <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/backend">MVC how-tos</a></h2>
+            <ul class="docs-list">
+              {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'mvc' %}
+              <li>
+                <a href="{{ site.baseurl }}{{ tutorial.url }}">{{ tutorial.title }}</a>
+              </li>
+              {% endif %} {% endfor %}
+            </ul>
+          <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/backend">Other backend dev how-tos</a></h2>
           <ul class="docs-list">
             {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'backend' %}
             <li>
@@ -32,7 +40,15 @@ layout: default
         </div>
 
         <div class="col-ms-12 col-lg-4">
-          <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/frontend">Frontend dev how-tos</a></h2>
+            <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/frontend">Reactjs how-tos</a></h2>
+            <ul class="docs-list">
+              {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'reactjs' %}
+              <li>
+                <a href="{{ site.baseurl }}{{ tutorial.url }}">{{ tutorial.title }}</a>
+              </li>
+              {% endif %} {% endfor %}
+            </ul>
+          <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/frontend">Other frontend dev how-tos</a></h2>
           <ul class="docs-list">
             {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'frontend' %}
             <li>
