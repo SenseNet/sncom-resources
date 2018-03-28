@@ -91,7 +91,7 @@
 					<a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat" alt="semantic-release"></a>
 					<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat" alt="Commitizen friendly"></a>
 				<a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/SenseNet/sn-redux.svg" alt="Greenkeeper badge"></a></p>
-				<p>sn-redux is a convention driven way of building sensenet ECM applications using Redux. It contains all the action types, actions and reducers for <a href="http://wiki.sensenet.com/Built-in_OData_actions_and_functions">built-in sensenet Actions
+				<p>sn-redux is a convention driven way of building sensenet applications using Redux. It contains all the action types, actions and reducers for <a href="http://wiki.sensenet.com/Built-in_OData_actions_and_functions">built-in sensenet Actions
 				and Functions</a>.</p>
 				<p>sn-redux gives you a standard set of:</p>
 				<ul>
@@ -99,7 +99,7 @@
 					<li>actions: e.g. updateContentSuccess, updateContentFailure</li>
 					<li>reducers: for the action types above e.g. updateContentSuccess</li>
 				</ul>
-				<h2 id="installation-on-an-existing-sensenet-ecm-portal">Installation on an existing sensenet ECM portal</h2>
+				<h2 id="installation-on-an-existing-sensenet-portal">Installation on an existing sensenet portal</h2>
 				<p>Get the latest stable version with npm</p>
 				<pre><code><span class="hljs-built_in">npm</span> install --save @sensenet/redux
 </code></pre><p>or from the <a href="https://github.com/SenseNet/sn-redux">GitHub repository</a> and place the downloaded source into your project. If you want to use only the transpiled </p>
@@ -120,7 +120,7 @@ store.dispatch(<span class="hljs-type">Actions</span>.deleteContent('/workspaces
 </code></pre><h2 id="installation-into-an-external-app-with-node-and-npm">Installation into an external app with node and npm</h2>
 				<p>To install the latest stable version</p>
 				<pre><code><span class="hljs-built_in">npm</span> install --save @sensenet/redux
-</code></pre><p>Create your sensenet ECM portal Repository to use. You can configure your Store to use this repository, when calling Store.ConfigureStore</p>
+</code></pre><p>Create your sensenet portal Repository to use. You can configure your Store to use this repository, when calling Store.ConfigureStore</p>
 				<pre><code class="lang-ts">import { Repository } from &#39;@sensenet/client-core&#39;;
 import { Reducers, Store } from &#39;@sensenet/redux;
 import { combineReducers } from &#39;redux&#39;
@@ -143,8 +143,8 @@ const options = {
 
 const store = Store.createSensenetStore(options)
 </code></pre>
-				<p>To enable your external app to send request against your sensenet ECM portal change your <code>Portal.settings</code>. For further information about cross-origin resource sharing in sensenet ECM check <a href="http://wiki.sensenet.com/Cross-origin_resource_sharing#Origin_check">this</a> article.</p>
-				<p>Check your sensenet ECM portal&#39;s web.config and if the <code>ODataServiceToken</code> is set, you can pass to your Repository as a config value on client side.</p>
+				<p>To enable your external app to send request against your sensenet portal change your <code>Portal.settings</code>. For further information about cross-origin resource sharing in sensenet check <a href="http://wiki.sensenet.com/Cross-origin_resource_sharing#Origin_check">this</a> article.</p>
+				<p>Check your sensenet portal&#39;s web.config and if the <code>ODataServiceToken</code> is set, you can pass to your Repository as a config value on client side.</p>
 				<pre><code class="lang-ts"><span class="hljs-keyword">let</span> repository = <span class="hljs-keyword">new</span> Repository.SnRepository({
   RepositoryUrl: <span class="hljs-string">'http://path-to-your-portal.com'</span>,
   ODataToken: <span class="hljs-string">'MyODataServiceToken'</span>
@@ -210,9 +210,9 @@ dispatch(Actions.CreateContent(parentPath, content, <span class="hljs-string">'T
 					<li><a href="https://community.sensenet.com/api/sn-redux/">sn-redux API Reference</a></li>
 					<li><a href="https://community.sensenet.com/api/sn-client-js/">sn-client-js API reference</a></li>
 					<li><a href="https://community.sensenet.com/api/sn-redux-promise-middleware/">sn-redux-promise-middleware API reference</a></li>
-					<li><a href="http://wiki.sensenet.com/OData_REST_API">About OData REST API in sensenet ECM</a></li>
-					<li><a href="http://wiki.sensenet.com/Built-in_OData_actions_and_functions">About Built-in OData Actions and Function in sensenet ECM</a></li>
-					<li><a href="https://github.com/SenseNet/sn-react-redux-todo-app">Todo App with React, Redux and sensenet ECM</a></li>
+					<li><a href="http://wiki.sensenet.com/OData_REST_API">About OData REST API in sensenet</a></li>
+					<li><a href="http://wiki.sensenet.com/Built-in_OData_actions_and_functions">About Built-in OData Actions and Function in sensenet</a></li>
+					<li><a href="https://github.com/SenseNet/sn-react-redux-todo-app">Todo App with React, Redux and sensenet</a></li>
 				</ul>
 				<h2 id="influences">Influences</h2>
 				<ul>
