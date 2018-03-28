@@ -143,7 +143,7 @@ import Button from 'material-ui/Button'
 
 ### 2. Adding deleteContent action to the content list
 
-Demonstrating how to add an built-in action to your app I chose delete. So the next tasks are adding a delete icon to every listitem, add a click event handler and execute delete action if the icon is clicked.
+Demonstrating how to add a built-in action to your app I chose delete. So the next tasks are adding a delete icon to every listitem, add a click event handler and execute delete action if the icon is clicked.
 
 First import ```ListItemSecondaryAction```, ```IconButton``` and ```DeleteIcon``` and place the icon into the ```ListItem```
 
@@ -202,7 +202,7 @@ So that you can call the delete action simply in the onclick event handler of th
 ...
 ```
 
-Create ```handleDeleteClick``` method and call the previosly added deleteContent action with the given Id. The second input param (```true```) means that the content will be immediately deleted, if it is not given or it is set to false the content will be moved to the trash instead.
+Create ```handleDeleteClick``` method and call the previously added deleteContent action with the given Id. The second input param (```true```) means that the content will be immediately deleted, if it is not given or it is set to false the content will be moved to the trash instead.
 
 ```tsx
 ...
@@ -214,7 +214,7 @@ handleDeleteClick(id: number) {
 
 Since this tutorial uses only basic content from the content repository (for example the listed content items are the children of the Default_site) we have to mention here that you have to check the permission settings of the user which is used in your app (e.g. to let the user delete a content she should have Delete permission set to allowed on the content). It is a tutorial so if you want to solve this problem quickly add the actual user to the Administrators group.
 
-If you click on the delete icons of one of the content now and check the log on the browser console you can see that ```DELETE_CONTENT``` and than ```DELETE_SUCCESS``` is dispatched and since the component is refreshed if the data is changed the list is automatically refreshed and the deleted content is gone.
+If you click on the delete icons of one of the content now and check the log on the browser console you can see that ```DELETE_CONTENT``` and then ```DELETE_SUCCESS``` is dispatched and since the component is refreshed if the data is changed the list is automatically refreshed and the deleted content is gone.
 
 <div style='text-align: center'>
 <img src="/img/posts/after-delete-log.png" alt="Log after delete" title="Log after delete" />
@@ -330,7 +330,7 @@ import Snackbar from 'material-ui/Snackbar';
 
 ```
 
-We will hold the information about the snackbar is opened or closed in the component state so define an interface with property ```snackbarOpen``` and set this interface as the MyList components state:
+We will hold the information if the snackbar is opened or closed in the component state so define an interface with property ```snackbarOpen``` and set this interface as the MyList components state:
 
 ```tsx
 interface ListState {
@@ -376,7 +376,7 @@ Add Snackbar component with the following configuration to the MyList component:
 </MuiThemeProvider>
 ```
 
-So the Snackbar will appear at the top in the center, will automatically hidden after 3000 ms and display a message that is now an empty string but we will fill it with the text saved in the state tree. We also have to add a method that handles closing event. Add the following to the component:
+So the Snackbar will appear at the top in the center, will be automatically hidden after 3000 ms and display a message that is now an empty string but we will fill it with the text saved in the state tree. We also have to add a method that handles closing event. Add the following to the component:
 
 ```tsx
 ...
@@ -417,7 +417,7 @@ const mapStateToProps = (state, match) => {
 };
 ```
 
-Than set ```message``` property as the value of the *message* attribute of the Snackbar:
+Then set ```message``` property as the value of the *message* attribute of the Snackbar:
 
 ```tsx
 <Snackbar
