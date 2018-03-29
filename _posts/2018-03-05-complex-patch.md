@@ -7,7 +7,7 @@ tags: [patch, upgrade, install, SN7]
 
 ---
 
-In most cases executing a [sensenet ECM patch](/_posts/2018-02-14-install-patch) is easy: download-execute-forget. There are cases however when because of API or content changes this requires a bit more attention. In this post we will go through a process like this.
+In most cases executing a [sensenet patch](/_posts/2018-02-14-install-patch) is easy: download-execute-forget. There are cases however when because of API or content changes this requires a bit more attention. In this post we will go through a process like this.
 
 ---
 

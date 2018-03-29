@@ -1,20 +1,20 @@
 ---
-title: "Diving deeper into sensenet ECM's Redux store"
+title: "Diving deeper into sensenet's Redux store"
 author: herflis
 image: "/img/posts/sn_plus_redux.png"
 tags: [Redux, sensenet, JavaScript, TypeScript, React]
 ---
 
-As you may already know [sensenet ECM](https://sensenet.com)'s UI is being fully rebuilt on a new stack including [Redux](http://redux.js.org/). Since sensenet is also a development platform with the possibility of building your own app upon its Redux store and actions, let me guide you through the current version of the state tree showing you how we organized data so far.
+As you may already know [sensenet](https://sensenet.com)'s UI is being fully rebuilt on a new stack including [Redux](http://redux.js.org/). Since sensenet is also a development platform with the possibility of building your own app upon its Redux store and actions, let me guide you through the current version of the state tree showing you how we organized data so far.
 
 ---
-In the last few months I've read a couple of posts about the Redux store of Twitter and I thought if it was interesting to dig into their state tree it will be useful to write an article like this about sensenet ECM's too. [Dissecting Twitter's Redux Store](https://medium.com/statuscode/dissecting-twitters-redux-store-d7280b62c6b1),  [Diving Deeper into Twitter’s Redux Store: Adventures in Minified Vendor Javascript](https://medium.com/@nuncamind/diving-deeper-into-twitters-redux-store-adventures-in-minified-vendor-javascript-67fbac5dc219) and other posts in this topic were not only guiding us analyzing sensenet ECM's Redux store the same way in a similar post, but also helped us to figure out how a state tree in a content-heavy application could be built-up, and how we should structure data in our next DMS MVP's Redux store.
+In the last few months I've read a couple of posts about the Redux store of Twitter and I thought if it was interesting to dig into their state tree it will be useful to write an article like this about sensenet's too. [Dissecting Twitter's Redux Store](https://medium.com/statuscode/dissecting-twitters-redux-store-d7280b62c6b1),  [Diving Deeper into Twitter’s Redux Store: Adventures in Minified Vendor Javascript](https://medium.com/@nuncamind/diving-deeper-into-twitters-redux-store-adventures-in-minified-vendor-javascript-67fbac5dc219) and other posts in this topic were not only guiding us analyzing sensenet's Redux store the same way in a similar post, but also helped us to figure out how a state tree in a content-heavy application could be built-up, and how we should structure data in our next DMS MVP's Redux store.
 
-To be honest we had a Redux store before, it was the basis of couple of Todo apps that we've made with different frameworks to try out sensenet 7's Javascript Client and the API. But these apps were (and are) only prototypes with reduced functionality and they required only a basic state tree with less data and actions. After we've decided to create a DMS MVP with sensenet 7 on the new stack we had to rethink the whole store, the available actions, reducers and epics not only because it requires more and structured data but also because we provide a development platform to create custom solutions upon sensenet ECM.
+To be honest we had a Redux store before, it was the basis of couple of Todo apps that we've made with different frameworks to try out sensenet 7's Javascript Client and the API. But these apps were (and are) only prototypes with reduced functionality and they required only a basic state tree with less data and actions. After we've decided to create a DMS MVP with sensenet 7 on the new stack we had to rethink the whole store, the available actions, reducers and epics not only because it requires more and structured data but also because we provide a development platform to create custom solutions upon sensenet.
 
 Btw [sn-redux](https://github.com/SenseNet/sn-redux) is a set of [Redux](http://redux.js.org/) actions, reducers and [redux-observable](https://redux-observable.js.org/) epics which means you get a package with 
 - an optimized state tree with normalized data, 
-- actions that can be dispatched related to the basic content, user and permission managment features of sensenet ECM,
+- actions that can be dispatched related to the basic content, user and permission managment features of sensenet,
 - reducers to define state changes required by the above mentioned actions,
 - epics to handle the sensenet OData actions and functions,
 - and of course you can complete it with your actions, reducers and epics if you implement a custom feature.
@@ -23,7 +23,7 @@ Old version of sn-redux contained only things that can be used in a simple todo 
 
 First of all we've checked what sort of solutions were made with sensenet in the past and what could we provide at this level to help to accomplish them. We came to the conclusion that the most important things related to an application built upon sensenet are the context, the content items by permissions, basic document management features, content manipulation and user information. So these things became the key parts of the new Redux store in [sn-redux](https://github.com/SenseNet/sn-redux).
 
-To let us now dig deeper in sensenet ECM's Redux store (and make our life easier in development time) we integrated [redux-logger](https://github.com/evgenyrodionov/redux-logger) so that we can check how our state tree changes by the dispatched actions and last but not least we can show you how the tree is built-up, you can open every branch and look into it. If you've installed [sn-redux](https://github.com/SenseNet/sn-redux) and configure a store, you're able to see the log in the browser console when you dispatch an action.
+To let us now dig deeper in sensenet's Redux store (and make our life easier in development time) we integrated [redux-logger](https://github.com/evgenyrodionov/redux-logger) so that we can check how our state tree changes by the dispatched actions and last but not least we can show you how the tree is built-up, you can open every branch and look into it. If you've installed [sn-redux](https://github.com/SenseNet/sn-redux) and configure a store, you're able to see the log in the browser console when you dispatch an action.
 
 ![redux-logger in browser console](/img/posts/redux-logger.png)
 
@@ -52,4 +52,4 @@ Last but not least the *repository* part contains the repository config, with th
 
 ![The future is bright](/img/posts/thefutureisbright.gif)
 
-Definitely not. While the DMS MVP and the admin surface of sensenet ECM 7 is in progress, the Redux store of sensenet and [sn-redux](https://github.com/SenseNet/sn-redux) itself will change and improve continuously for sure. But we have laid the foundations of it and the future is bright, so any comments are welcome, help us make it better and better. [Redux](http://redux.js.org/) is awesome and I believe that it can make development with sensenet ECM more fun then ever.
+Definitely not. While the DMS MVP and the admin surface of sensenet 7 is in progress, the Redux store of sensenet and [sn-redux](https://github.com/SenseNet/sn-redux) itself will change and improve continuously for sure. But we have laid the foundations of it and the future is bright, so any comments are welcome, help us make it better and better. [Redux](http://redux.js.org/) is awesome and I believe that it can make development with sensenet more fun then ever.
