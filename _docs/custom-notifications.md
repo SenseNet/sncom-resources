@@ -4,12 +4,12 @@ source_url: 'https://github.com/SenseNet/sn-notification/blob/master/docs/custom
 category: Development
 version: v7.0
 tags: [notification, api, sn7]
-description: sensenet ECM provides an easy-to-use Notification feature to allow users to subscribe to different events and receive mail messages about changes in the Content Repository. This article is for developers about customizing this feature.
+description: sensenet provides an easy-to-use Notification feature to allow users to subscribe to different events and receive mail messages about changes in the Content Repository. This article is for developers about customizing this feature.
 
 ---
 
 # Custom notifications
-sensenet ECM provides an easy-to-use [Notification](/docs/notification) feature to allow users to subscribe to different events and receive mail messages about changes in the [Content Repository](/docs/content-repository). 
+sensenet provides an easy-to-use [Notification](/docs/notification) feature to allow users to subscribe to different events and receive mail messages about changes in the [Content Repository](/docs/content-repository). 
 
 The process of mail generation can be fine tuned using *NotificationConfig* files.
 

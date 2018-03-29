@@ -4,15 +4,15 @@ source_url: 'https://github.com/SenseNet/sn-adsync/blob/master/docs/adsync.md'
 category: Guides
 version: v7.0
 tags: [ad, adsync, install, nuget, packages, sn7]
-description: At many companies users, groups and organization structure is stored and maintained in Active Directory - or in another storage, synced to AD. This is why sensenet ECM is capable of synchronizing AD objects into both directions, from AD to the portal or back.
+description: At many companies users, groups and organization structure is stored and maintained in Active Directory - or in another storage, synced to AD. This is why sensenet is capable of synchronizing AD objects into both directions, from AD to the portal or back.
 
 ---
 
 # Active Directory Synchronization
-At many companies users, groups and organization structure is stored and maintained in **Active Directory** - or in another storage, synced to AD. This is why sensenet ECM is capable of synchronizing AD objects into both directions:
+At many companies users, groups and organization structure is stored and maintained in **Active Directory** - or in another storage, synced to AD. This is why sensenet is capable of synchronizing AD objects into both directions:
 
 - [AD to Portal sync](/docs/sync-ad-to-portal): AD users can be synchronized to the portal
-- Portal to AD sync: portal users can be synchronized to AD servers (*this feature is not yet supported in sensenet ECM 7*).
+- Portal to AD sync: portal users can be synchronized to AD servers (*this feature is not yet supported in sensenet 7*).
 
 ![Active Directory](https://github.com/SenseNet/sn-adsync/raw/master/docs/images/adsync-adexplorer.png "Active Directory")
 
@@ -25,7 +25,7 @@ Some other Active Directory related features include the following:
 
 By setting up Active Directory synchronization users gain the following advantages:
 
-- When using both sensenet ECM and Active Directory server in an enterprise environment, user profiles need not to be maintained in both directories.
+- When using both sensenet and Active Directory server in an enterprise environment, user profiles need not to be maintained in both directories.
 - Installing a new sensenet portal with Forms authentication into an environment with already existing AD server containing many users is easily done by using AD sync and activating *Forms authentication from AD*.
 
 ### Basic concepts and features
@@ -110,7 +110,7 @@ Notes:
 There is a way to authenticate users against an Active Directory even when using **Forms authentication** (instead of using Windows Integrated authentication). This means that when a portal user logs in with Forms authentication, his/her password is checked against the user's password set in an Active Directory server and not against the one given on the portal.
 
 #### Configuration
-> This feature is not yet supported in sensenet ECM 7.
+> This feature is not yet supported in sensenet 7.
 
 The settings for *forms authentication from AD* be found in the ```sensenet/formsAuthenticationFromAD``` section of the web.config. Below you can see a fully featured skeleton of this configuration:
 
@@ -135,7 +135,7 @@ The following settings can be customized using the ```<authSetting>``` node abov
 
 - **domain**: the domain to be used with AD authentication.
 - **adServer**: address of Active Directory server.
-- **virtualADUser**: (*this feature is not available in sensenet ECM 7.0*) when this attribute is set to true AD users don't need to be synced to portal to log in - when an AD user logs into the portal a special user is loaded (```/Root/IMS/BuiltIn/Portal/VirtualADUser```) and user properties are synced instantaneously in-memory (but no user is created on the portal).
+- **virtualADUser**: (*this feature is not available in sensenet 7.0*) when this attribute is set to true AD users don't need to be synced to portal to log in - when an AD user logs into the portal a special user is loaded (```/Root/IMS/BuiltIn/Portal/VirtualADUser```) and user properties are synced instantaneously in-memory (but no user is created on the portal).
 - **customLoginProperty**: set it to the custom AD property used for authentication instead of login name (for example email) (*optional*).
 - **customADAdminAccountName**: this property holds information about the user having sufficient rights to retrieve information from AD (*optional*).
 - **customADAdminAccountPwd**: password of the previously defined *customADAdminAccountName* user (*optional*).

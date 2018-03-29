@@ -21,7 +21,7 @@ They wrote. It almost sounds too good to be true: our people do what they think 
 
 ## How Sense/Net Inc. works
 
-Sense/Net Inc. - the company behind sensenet ECM - has two products. One actual product (sensenet ECM) and a solution integrator service: since we know our product the best, we can create unique solutions for companies all around the world (we also do training and quite a lot of support, but let's just consider these parts of one or both of the products I just mentioned).
+Sense/Net Inc. - the company behind sensenet - has two products. One actual product (sensenet) and a solution integrator service: since we know our product the best, we can create unique solutions for companies all around the world (we also do training and quite a lot of support, but let's just consider these parts of one or both of the products I just mentioned).
 
 This results in teams that not just work on different projects, they do **different kinds of things**. In time, people end up with vastly different know-hows and knowledge levels. It is hard to admit, but _sometimes_ there are multiple solutions for the same problem. Or worse, there are the same solutions implemented several times for the same problem.
 

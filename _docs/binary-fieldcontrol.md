@@ -9,7 +9,7 @@ description: The Binary Field Control is a Field Control that handles Binary Fie
 
 # Binary Field Control
 
-> Although this feature is supported in sensenet ECM 7, it is built on the old Web Forms technology that you should not use for new projects. We encourage you to use a more modern UI solution using our [client-side packages](https://www.npmjs.com/org/sensenet).
+> Although this feature is supported in sensenet 7, it is built on the old Web Forms technology that you should not use for new projects. We encourage you to use a more modern UI solution using our [client-side packages](https://www.npmjs.com/org/sensenet).
 
 The Binary Field Control is a Field Control that handles [Binary Fields](/docs/binary-field) and provides an interface to modify binary data of a Content.
 

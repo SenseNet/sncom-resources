@@ -75,8 +75,8 @@
 					<a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat" alt="semantic-release"></a>
 					<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat" alt="Commitizen friendly"></a>
 				<a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/SenseNet/sn-client-js.svg" alt="Greenkeeper badge"></a></p>
-				<p>This component lets you work with the <a href="https://github.com/SenseNet">sensenet ECM</a> Content Repository (create or manage content, execute queries, etc.) by providing a JavaScript client API for the main content operations.
-					The library connects to a sensenet ECM portal&#39;s REST API, but hides the underlying HTTP requests. You can work with simple load or create Content operations in JavaScript, instead of
+				<p>This component lets you work with the <a href="https://github.com/SenseNet">sensenet</a> Content Repository (create or manage content, execute queries, etc.) by providing a JavaScript client API for the main content operations.
+					The library connects to a sensenet portal&#39;s REST API, but hides the underlying HTTP requests. You can work with simple load or create Content operations in JavaScript, instead of
 				having to construct ajax requests yourself.</p>
 				<p>It also provides you the full sensenet Content Type system hierarchy through Typescript classes with all the fields defined in the CTDs and the Content Type schemas with FieldSettings
 				so that you can manage Content easy on client-side knowing the related fields and their settings.</p>
@@ -137,7 +137,7 @@
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Task saved'</span>, task);
 }, <span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-built_in">console</span>.error);
 </code></pre>
-				<p>Once the Task has been saved, you can continue working <em>on the same object reference</em>, update fields and call <code>myTask.Save()</code> again, the content will be <strong>updated</strong> in the sensenet ECM Repository.</p>
+				<p>Once the Task has been saved, you can continue working <em>on the same object reference</em>, update fields and call <code>myTask.Save()</code> again, the content will be <strong>updated</strong> in the sensenet Repository.</p>
 				<p>If you want to update <strong>a specified field only</strong>, you can do that with an optional Save() parameter (other changed properties will be ignored):</p>
 				<pre><code class="lang-ts">myTask.Save({DisplayName: <span class="hljs-string">'Updated Task Displayname'</span>}).subscribe(<span class="hljs-function"><span class="hljs-params">task</span>=&gt;</span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Task saved'</span>, task);
@@ -206,7 +206,7 @@ myTask.Delete(permanently).subscribe(<span class="hljs-function"><span class="hl
 					</li>
 				</ul>
 				<h3 id="hierarchical-content-comparison">Hierarchical content comparison</h3>
-				<p>As sensenet ECM stores content in a tree-based repository, there are some methods for hierarchical comparison between content. These methods are:</p>
+				<p>As sensenet stores content in a tree-based repository, there are some methods for hierarchical comparison between content. These methods are:</p>
 				<ul>
 					<li>content.IsParentOf(childContent: Content): boolean</li>
 					<li>content.IsChildOf(parentContent: Content): boolean</li>

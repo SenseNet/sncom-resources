@@ -1,5 +1,5 @@
 ---
-title: sensenet ECM Releases
+title: sensenet Releases
 permalink: /releases/
 redirect_from: /releases.html
 layout: releases

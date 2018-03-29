@@ -4,41 +4,41 @@ source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/managing-docu
 category: Development
 version: v6.0.4
 tags: [document management, office, sn6, sn7]
-description: Using sensenet ECM you are able to create, modify or delete documents within Office. Editing and publishing documents into a workspace is as easy as managing tasks or links as well. There's no need to learn how to upload documents or other files into sensenet workspaces manually, it's done automatically while you're using Office.
+description: Using sensenet you are able to create, modify or delete documents within Office. Editing and publishing documents into a workspace is as easy as managing tasks or links as well. There's no need to learn how to upload documents or other files into sensenet workspaces manually, it's done automatically while you're using Office.
 ---
 
 # Managing Documents from Microsoft Office
 
-Managing workspace documents using Microsoft Office is a common feature of Enterprise Content Management Systems. Using sensenet ECM you are able to create, modify or delete documents within Office. Editing and publishing documents into a workspace is as easy as managing tasks or links as well. There's no need to learn how to upload documents or other files into sensenet workspaces manually, it's done automatically while you're using Office.
+Managing workspace documents using Microsoft Office is a common feature of Enterprise Content Management Systems. Using sensenet you are able to create, modify or delete documents within Office. Editing and publishing documents into a workspace is as easy as managing tasks or links as well. There's no need to learn how to upload documents or other files into sensenet workspaces manually, it's done automatically while you're using Office.
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/doc-management-msword2013.png" alt="Document management in MSWord 2013" style="margin: 20px auto; max-width: 600px" />
 
 This feature is fully compatible with Microsoft Office 2013, 2010 and 2007.
 
-> The feature has been tested with Microsoft Office Word 2013, Microsoft Office Word 2010, Microsoft Office Word 2007, Microsoft Office Excel 2013, Microsoft Office Excel 2010 and Microsoft Office Excel 2007. The following information is only valid for these versions of these two programs. Please note that Office 2013 support has been introduced in sensenet ECM 6.3, Office 2010 support in sensenet ECM 6.1, versions prior to this only support Office 2007.
+> The feature has been tested with Microsoft Office Word 2013, Microsoft Office Word 2010, Microsoft Office Word 2007, Microsoft Office Excel 2013, Microsoft Office Excel 2010 and Microsoft Office Excel 2007. The following information is only valid for these versions of these two programs. Please note that Office 2013 support has been introduced in sensenet 6.3, Office 2010 support in sensenet 6.1, versions prior to this only support Office 2007.
 
 ```diff
 - From the 1st of September 2015 Chrome does not support NPAPI plugins any more. 
-- This issue has been fixed in sensenet ECM 6.5 by using another technology, but the 
-- Edit in Microsoft Office feature will not work in Chrome in sensenet ECM versions prior to 6.5.
+- This issue has been fixed in sensenet 6.5 by using another technology, but the 
+- Edit in Microsoft Office feature will not work in Chrome in sensenet versions prior to 6.5.
 ```
 
 ### Configuration
 
 ##### Authentication
 
-sensenet ECM supports the following authentication schemes with Office integration:
+sensenet supports the following authentication schemes with Office integration:
 
 - **Windows authentication**
-  Set up both your sensenet ECM site content to use *Windows* authentication, and your IIS web site to allow Windows authentication. Make sure your AD user is present in the Content Repository under the appropriate domain. You will be able to access your fodlers and files in the Content Repository using your AD user and password.
+  Set up both your sensenet site content to use *Windows* authentication, and your IIS web site to allow Windows authentication. Make sure your AD user is present in the Content Repository under the appropriate domain. You will be able to access your fodlers and files in the Content Repository using your AD user and password.
 
 - **Basic authentication**
-  Set up your sensenet ECM Site to use *Forms* authentication, and your IIS web site to allow *Anonymous* authentication only (do not allow Windows in IIS and allowing Basic is not necessary). You will be able to access the Content Repository using your portal user and password. Please note that operations that use Basic authentication over a non-SSL HTTP connection are disabled by default by your operating system. To enable WebDAV for non-SSL sites with Basic authentication refer to the following article:  [http://support.microsoft.com/kb/2123563](http://support.microsoft.com/kb/2123563).
+  Set up your sensenet Site to use *Forms* authentication, and your IIS web site to allow *Anonymous* authentication only (do not allow Windows in IIS and allowing Basic is not necessary). You will be able to access the Content Repository using your portal user and password. Please note that operations that use Basic authentication over a non-SSL HTTP connection are disabled by default by your operating system. To enable WebDAV for non-SSL sites with Basic authentication refer to the following article:  [http://support.microsoft.com/kb/2123563](http://support.microsoft.com/kb/2123563).
 
-> Please note that support for Basic authentication has been introduced in sensenet ECM 6.1. Earlier versions must use Windows authentication for using WebDAV.
+> Please note that support for Basic authentication has been introduced in sensenet 6.1. Earlier versions must use Windows authentication for using WebDAV.
 
 ```diff
-- sensenet ECM requires Windows authentication or SSL HTTP connection in order to manage Office documents. 
+- sensenet requires Windows authentication or SSL HTTP connection in order to manage Office documents. 
 - Otherwise you will see a greyed out menu item in document action menus. 
 - To learn how to configure and create your own self signed certificates, click the following link:
 ```
@@ -53,13 +53,13 @@ Office may not allow you to open documents from sites that are not in the list o
 
 Only users with sufficient permissions are allowed to use Office protocol functionality. The system files that handle Office protocols are located under _/Root/System/WebRoot/DWS folder_. Add _See_ and _Open_ permissions to users in order that they can access document management functionality from Microsoft Office (see [WebRoot Folder](/docs/webroot-folder) for details and examples)! Also, sufficient permissions have to be granted to users on Content Repository Workspaces and Documents for them to be able to access and open documents, and to [Applications](/docs/application) for them to be able to invoke certain Office document management functionality via actions.
 
-### How to open a document from sensenet ECM UI
+### How to open a document from sensenet UI
 
->**Prerequisites**: this section is about a feature that requires the [SenseNet.WebPages](https://github.com/SenseNet/sn-webpages) component or the full sensenet ECM 6.5 application to be installed.
+>**Prerequisites**: this section is about a feature that requires the [SenseNet.WebPages](https://github.com/SenseNet/sn-webpages) component or the full sensenet 6.5 application to be installed.
 
 You can open a document from portal by clicking on the *Edit in Microsoft Office* action from the action list.
 
-<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/edit-in-microsoft-office-sn65.png" alt="Edit in Microsoft Office sensenet ECM 6.5" style="margin: 20px auto; max-width: 600px" />
+<img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/edit-in-microsoft-office-sn65.png" alt="Edit in Microsoft Office sensenet 6.5" style="margin: 20px auto; max-width: 600px" />
 
 The _Edit in Microsoft Office_ action appears only for File types of specific extensions. If you'd like to, you can expand the list of supported document types by editing the key **WebdavEditExtensions** under _sensenet/webdav_ section in Web.Config:
 
@@ -70,12 +70,12 @@ The _Edit in Microsoft Office_ action appears only for File types of specific ex
 > If you have Microsoft Office 2010 or Microsoft Office 2013 on your computer, you can open documents with 'Edit in Microsoft Office' action. It works in Internet Explorer, Firefox and Chrome. If you have Microsoft Office 2007, you can use this action only in Internet Explorer.
 
 ### How to open a document in Windows Explorer (WebDAV)
-Please check out the [WebDAV](/docs/webdav) article about configuring and using WebDAV with sensenet ECM. Opening a file by double-clicking it in a mapped network drive in Windows Explorer opens it automatically in Office the same way as you would open it from the UI.
+Please check out the [WebDAV](/docs/webdav) article about configuring and using WebDAV with sensenet. Opening a file by double-clicking it in a mapped network drive in Windows Explorer opens it automatically in Office the same way as you would open it from the UI.
 
 ### How to open a document from Word
 
 - First, open your Word instance, then click on the Office button and select Open
-- Type the url of the document server you want to work in into the _File name_ text box on the bottom then press enter. Now you should see a custom open sensenet ECM workspace dialog like below:
+- Type the url of the document server you want to work in into the _File name_ text box on the bottom then press enter. Now you should see a custom open sensenet workspace dialog like below:
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/word-open-file-dialog1.png" alt="Word open file dialog" style="margin: 20px auto; max-width: 600px" />
 
@@ -89,7 +89,7 @@ Please check out the [WebDAV](/docs/webdav) article about configuring and using 
 
 ### How to publish a new document to an existing workspace
 
-If you have opened a document from the [Content Repository](/docs/content-repository), you can simply save and checkin the document from Word, just like you used to with documents (see information on versioning and checking in/out documents later). In case you have created a new document and want to upload it to an existing sensenet ECM Workspace, or you want to publish an existing document to a different sensenet Workspace Document Library, you can publish the document right from Word:
+If you have opened a document from the [Content Repository](/docs/content-repository), you can simply save and checkin the document from Word, just like you used to with documents (see information on versioning and checking in/out documents later). In case you have created a new document and want to upload it to an existing sensenet Workspace, or you want to publish an existing document to a different sensenet Workspace Document Library, you can publish the document right from Word:
 
 - click on the _Office_ button then select _Save As_, or
 - click on the _Office_ button then select _Publish / Document Management Server_ like below:
@@ -100,7 +100,7 @@ If you have opened a document from the [Content Repository](/docs/content-reposi
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/edit-in-office-publishing.png" alt="Edit in Office publishing" style="margin: 20px auto; max-width: 600px" />
 
-In the _Save as_ dialog type the url of the document server into the File name text box then press enter. A custom sensenet ECM workspace window will appear where you can select the desired Document_Library folder you want to save your document in.
+In the _Save as_ dialog type the url of the document server into the File name text box then press enter. A custom sensenet workspace window will appear where you can select the desired Document_Library folder you want to save your document in.
 
 > You can use the _Save as_ dialog similarly as the _Open_ dialog: if you don't want to type the url of the server, you can store the address in the _Favorites_ folder. This option however is only available when selecting _Save As_, and is not present with the _Publish_ feature.
 
@@ -178,7 +178,7 @@ Any documents, associated to Office, in the Document Library folder of the curre
 
 ##### Links
 
-Links are also supported by sensenet ECM. Create, edit or delete links in the current workspace right within Office.
+Links are also supported by sensenet. Create, edit or delete links in the current workspace right within Office.
 In the following table you can find the proper mappings between the fields of Link Content Type and Office's properties:
 
 | **SN Link Field** | **Office property** |
@@ -203,7 +203,7 @@ When working with documents in sensenet [Content Repository](/docs/content-repos
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/word-checkin-sn65.png" alt="Word checkin sn 6.5" style="margin: 20px auto; max-width: 600px" />
 
-> You can configure sensenet ECM to automatically check out documents upon opening. This is handled by the `AutoCheckoutFiles` web.config key in the *sensenet/webdav* section. If you set it to true, documents will automatically be checked out to the current user when opened in Office and automatically checked in when closing Office.
+> You can configure sensenet to automatically check out documents upon opening. This is handled by the `AutoCheckoutFiles` web.config key in the *sensenet/webdav* section. If you set it to true, documents will automatically be checked out to the current user when opened in Office and automatically checked in when closing Office.
 
 ##### Check In
 
@@ -265,7 +265,7 @@ You can select any version from the list and
 - select _Compare_ to compare the contents of the latest version with the selected version,
 - select _Restore_ to restore the previous version. In this case a new version will be created with the contents of the selected version.
 
-The _Delete_ version operation is not supported in sensenet ECM.
+The _Delete_ version operation is not supported in sensenet.
 
 ### Examples/Tutorials
 

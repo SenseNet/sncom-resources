@@ -39,4 +39,4 @@ According to Miller, if anybody can work from anywhere at any time the work is g
 
 You certainly had the experience that the more software you use to conduct a project, the harder it is to control the work process. As in such a case you need to divide your attention, which on the long term is not effective. Not to mention how annoying it is when a project cannot be finished due to some project file compatibility problems.
 
-With [sensenet ECM](https://www.sensenet.com), which is an open source .Net ECM platform, you can build your own digital workplace according to your needs.
+With [sensenet](https://www.sensenet.com), which is an open source .Net ECM platform, you can build your own digital workplace according to your needs.
