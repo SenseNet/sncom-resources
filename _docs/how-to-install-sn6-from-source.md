@@ -4,28 +4,28 @@ source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/ho
 category: Guides
 version: v6.0.0
 tags: install source sn6
-description: In this document we would like to guide you through the installation process of sensenet ECM from a source package.
+description: In this document we would like to guide you through the installation process of sensenet from a source package.
 ---
 
 # How to install sensenet 6.5 from source package
 
-In this document we would like to guide you through the installation process of sensenet ECM from a source package. We hope that you will encounter no complications during installation, or later on while working with sensenet ECM. If you come across a bug by any chance, or have questions concerning our product, feel free to contact us at on
+In this document we would like to guide you through the installation process of sensenet from a source package. We hope that you will encounter no complications during installation, or later on while working with sensenet. If you come across a bug by any chance, or have questions concerning our product, feel free to contact us at on
 [gitter](https://gitter.im/SenseNet/sensenet), [slack](https://sensenetecm.slack.com) or [stackoverflow](http://stackoverflow.com/questions/tagged/sensenet).
 
-> This document describes the steps of installing SenseNet ECM on machines with IIS 7.0 or higher version.
+> This document describes the steps of installing sensenet on machines with IIS 7.0 or higher version.
 
 ## Steps
 
-> In case you are an Enterprise customer and want to use the `Task Management` feature in SenseNet ECM (e.g. you want to have preview images for your documents), please install the `Task Management` component first.
+> In case you are an Enterprise customer and want to use the `Task Management` feature in sensenet (e.g. you want to have preview images for your documents), please install the `Task Management` component first.
 
-### 1. Download sensenet ECM
+### 1. Download sensenet
 
-Download the SenseNet ECM source package. The latest version of this package is available on our [CodePlex page](http://sensenet.codeplex.com/).
->The public CodePlex page above offers **sensenet ECM Community Edition**. Customers who have access to the Enterprise Edition should use that source package. For differences between the two editions, please visit the following article: [Differences between Community and Enterprise editions]()
+Download the sensenet source package. The latest version of this package is available on our [CodePlex page](http://sensenet.codeplex.com/).
+>The public CodePlex page above offers **sensenet Community Edition**. Customers who have access to the Enterprise Edition should use that source package. For differences between the two editions, please visit the following article: [Differences between Community and Enterprise editions]()
 
 #### Install MSBuild Extension Pack ####
 
-If you did not install this package previously, please download and install it, as it is a prerequisite for building the SenseNet ECM solution.
+If you did not install this package previously, please download and install it, as it is a prerequisite for building the sensenet solution.
 [MSBuild Extension Pack](http://www.msbuildextensionpack.com/)
 
 ### 2. Extract the package ###

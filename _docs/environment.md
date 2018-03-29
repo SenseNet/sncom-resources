@@ -4,12 +4,12 @@ source_url: 'https://github.com/SenseNet/sn-benchmark/blob/master/docs/environme
 category: Benchmark
 version: v7.0.0
 tags: [benchmark, preparation, environment, sn7, mongo, azure]
-description: This paper describes how to prepare an environment for the sensenet ECM Benchmark Tool with alternative BLOB storages in an NLB environment.
+description: This paper describes how to prepare an environment for the sensenet Benchmark Tool with alternative BLOB storages in an NLB environment.
 ---
 
-# Preparation of sensenet ECM benchmark environment
+# Preparation of sensenet benchmark environment
 
-This paper describes how to prepare an environment for the sensenet ECM Benchmark Tool with alternative BLOB storages in an NLB environment.
+This paper describes how to prepare an environment for the sensenet Benchmark Tool with alternative BLOB storages in an NLB environment.
 ## Using MS SQL Server with external MongoDb BLOB storage
 
 
@@ -17,7 +17,7 @@ This paper describes how to prepare an environment for the sensenet ECM Benchmar
  - [sensenet Service 7.0.0 NuGet package](https://www.nuget.org/packages/SenseNet.Services/7.0.0-beta2 "SenseNet.Services")  
  - [Enterprise Mongo Package](http://community.sensenet.com/docs/mongodb-provider "MongoDB blob provider")
 
-After having installed the above packages, your sensenet ECM is able to use a MongoDb database to store BLOBs.
+After having installed the above packages, your sensenet is able to use a MongoDb database to store BLOBs.
 
 ### Preparing BLOB database
 Start Powershell
@@ -109,7 +109,7 @@ and copy your site file structure into the newly made \[site folder 1\]:
  - [sensenet Service 7.0.0 NuGet package](https://www.nuget.org/packages/SenseNet.Services/7.0.0-beta2 "SenseNet.Services")  
  - [Enterprise Azure Blob Package](http://community.sensenet.com/docs/azureblob-provider/ "Azure blob provider")
 
-After having installed the above packages, your sensenet ECM is able to use Azure to store BLOBs.
+After having installed the above packages, your sensenet is able to use Azure to store BLOBs.
 
 ### Creating the first website
  - Create a folder for the website (from now on it is \[site folder 1\])

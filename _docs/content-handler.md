@@ -11,7 +11,7 @@ description: The Content Handler defines custom programmed logic of a Content Ty
 
 The Content Handler defines custom "code behind" business logic of a [Content Type](/docs/content-type) implemented in .Net code (ie. C#). Content Handlers can override mapping between object properties and [Content Repository](/docs/content-repository) fields, and they may also define properties that are not stored in the Content Repository (properties that are either calculated or retrieved from another data source).
 
-> The Content Handler is considered to be on the lower layer of the sensenet ECM API. You may choose to work with the upper layer, represented by the unified [Content](/docs/content) class that you can use to work with all kinds of content stored in the Content Repository. In that case you will have access to [fields](/docs/field) (higher level metadata) but without the strongly typed properties of the Content Handler layer.
+> The Content Handler is considered to be on the lower layer of the sensenet API. You may choose to work with the upper layer, represented by the unified [Content](/docs/content) class that you can use to work with all kinds of content stored in the Content Repository. In that case you will have access to [fields](/docs/field) (higher level metadata) but without the strongly typed properties of the Content Handler layer.
 
 ## When to create a custom Content Handler
 

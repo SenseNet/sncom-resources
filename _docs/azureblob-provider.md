@@ -9,7 +9,7 @@ description: We deliver our Enterprise customer an Enterprise Azure Blob Package
 
 # Azure Blob Storage blob provider
 
-By default **sensenet ECM** stores binaries (files) in its SQL database. If you want to store binaries in an external [Blob provider](blob-provider.md "sensenet blob provider") instead of the main [Content Repository](Content_Repository "wikilink") database, we offer a feature for our *Enterprise* customers that can store binaries in [Azure Blob Storage](https://azure.microsoft.com/en-gb/services/storage/blobs/) so that operators have more flexibility when installing and maintaining sensenet ECM. We deliver our Enterprise customer an *Enterprise Azure Blob Package* that contains all the binaries needed to make it work.
+By default **sensenet** stores binaries (files) in its SQL database. If you want to store binaries in an external [Blob provider](blob-provider.md "sensenet blob provider") instead of the main [Content Repository](Content_Repository "wikilink") database, we offer a feature for our *Enterprise* customers that can store binaries in [Azure Blob Storage](https://azure.microsoft.com/en-gb/services/storage/blobs/) so that operators have more flexibility when installing and maintaining sensenet. We deliver our Enterprise customer an *Enterprise Azure Blob Package* that contains all the binaries needed to make it work.
 
 ## Details
 
@@ -37,7 +37,7 @@ For a first step, check the components. The following files must be copied from 
 -   SenseNet.AzureBlobStorage.dll
 -   System.Spatial.dll
 
-> It is important that you keep all the configurations in sync for the different components in sensenet ECM - otherwise you won't be able to save or read binaries correctly.
+> It is important that you keep all the configurations in sync for the different components in sensenet - otherwise you won't be able to save or read binaries correctly.
 
 #### sensenet web application
 

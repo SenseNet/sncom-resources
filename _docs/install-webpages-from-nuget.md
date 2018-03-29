@@ -4,11 +4,11 @@ source_url: 'https://github.com/SenseNet/sn-webpages/blob/master/docs/install-we
 category: Guides
 version: v7.0
 tags: [install, nuget, packages, webpages, sn7]
-description: This article is for developers about installing the ASP.NET WebForms-based UI layer of sensenet ECM from NuGet. Before you can do that, please install the core layer, sensenet Services, which is a prerequisite of this component.
+description: This article is for developers about installing the ASP.NET WebForms-based UI layer of sensenet from NuGet. Before you can do that, please install the core layer, sensenet Services, which is a prerequisite of this component.
 ---
 
 # Install sensenet WebPages from NuGet
-This article is **for developers** about installing the ASP.NET WebForms-based UI layer of [sensenet ECM](https://github.com/SenseNet) from *NuGet*. Before you can do that, please install the core layer, [sensenet Services](/docs/install-sn-from-nuget), which is a prerequisite of this component.
+This article is **for developers** about installing the ASP.NET WebForms-based UI layer of [sensenet](https://github.com/SenseNet) from *NuGet*. Before you can do that, please install the core layer, [sensenet Services](/docs/install-sn-from-nuget), which is a prerequisite of this component.
 
 >About choosing the components you need, take look at [this article](/docs/sensenet-components) that describes the main components briefly.
 
@@ -72,7 +72,7 @@ For example:
 
 3. **Build your solution**, make sure that there are no build errors.
 
-### Install the sensenet ECM WebPages component
+### Install the sensenet WebPages component
 Before installing the component, please make sure that you have access to the Content Repository *SQL database* where you want to install it. The SnAdmin tool will use the connection string in the *[web]\Tools\SnAdminRuntime.exe.config* file to access the db, please check that it contains the appropriate user credentials and server/database name.
 
 Open a **command line** and go to the *[web]\Admin\bin* folder.
@@ -83,7 +83,7 @@ Execute the **install-webpages** command with the [SnAdmin](https://github.com/S
 .\snadmin install-webpages
 ````
 
-If there were no errors, you are good to go! Hit F5 in Visual Studio and start experimenting with sensenet ECM WebPages!
+If there were no errors, you are good to go! Hit F5 in Visual Studio and start experimenting with sensenet WebPages!
 
 ## After installing sensenet WebPages
 After you installed this component, you will be able to log in on the main page and browse, edit or create content on the admin UI ([Content Explorer](http://wiki.sensenet.com/Content_Explorer)).

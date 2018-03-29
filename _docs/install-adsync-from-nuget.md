@@ -4,12 +4,12 @@ source_url: 'https://github.com/SenseNet/sn-adsync/blob/master/docs/install-adsy
 category: Guides
 version: v7.0
 tags: [ad, adsync, install, nuget, packages, sn7]
-description: This article is for developers about installing the **AD sync** component for sensenet ECM from NuGet. Before you can do that, please install at least the core layer, sensenet Services, which is a prerequisite of this component.
+description: This article is for developers about installing the **AD sync** component for sensenet from NuGet. Before you can do that, please install at least the core layer, sensenet Services, which is a prerequisite of this component.
 
 ---
 
 # Install AD sync from NuGet
-This article is **for developers** about installing the [AD sync](/docs/adsync) component for [sensenet ECM](https://github.com/SenseNet) from NuGet. Before you can do that, please install at least the core layer, [sensenet Services](/docs/install-sn-from-nuget), which is a prerequisite of this component.
+This article is **for developers** about installing the [AD sync](/docs/adsync) component for [sensenet](https://github.com/SenseNet) from NuGet. Before you can do that, please install at least the core layer, [sensenet Services](/docs/install-sn-from-nuget), which is a prerequisite of this component.
 
 > About choosing the components you need, take look at [this article](/docs/sensenet-components) that describes the main components and their relationships briefly.
 
@@ -17,7 +17,7 @@ This article is **for developers** about installing the [AD sync](/docs/adsync) 
 There are two packages - one for each sync direction:
 
 - Sync AD to Portal
-- Sync Portal to AD (*this feature is not yet supported in sensenet ECM 7*)
+- Sync Portal to AD (*this feature is not yet supported in sensenet 7*)
 
 You do not have to install both - only the one for the direction you plan to synchronize users and groups (*AD-to-portal* synchronization is used a lot more widely, because companies are used to managing their internal security structure in AD).
 
@@ -35,7 +35,7 @@ To get started, **stop your web site** and install the 'sync AD to portal' packa
 > `Install-Package SenseNet.SyncAD2Portal`
 
 ### Sync Portal to AD package
-> This feature is not yet supported in sensenet ECM 7.
+> This feature is not yet supported in sensenet 7.
 
 ## Installing the ad sync components in the repository
 To complete the install process, please execute the appropriate SnAdmin command as usual:
