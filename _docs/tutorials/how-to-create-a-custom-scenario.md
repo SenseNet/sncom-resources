@@ -9,7 +9,7 @@ description: This article describes the way for developers to create a custom sc
 
 # How to create a custom Scenario
 
-sensenet ECM has a powerful feature for defining and accessing content operations called the [Smart Application Model](/docs/smart-application-model). The basic building blocks of this model are actions and applications. Usually you want to provide users with a set of actions that they can choose from. This kind of action grouping can be done with a scenario. The previous articles contain information for portal builders on how to organize actions into scenarios using the built-in method. This article describes the way for developers to create a custom scenario that uses a different algorithm for collecting actions.
+sensenet has a powerful feature for defining and accessing content operations called the [Smart Application Model](/docs/smart-application-model). The basic building blocks of this model are actions and applications. Usually you want to provide users with a set of actions that they can choose from. This kind of action grouping can be done with a scenario. The previous articles contain information for portal builders on how to organize actions into scenarios using the built-in method. This article describes the way for developers to create a custom scenario that uses a different algorithm for collecting actions.
 
 ## Steps
 
@@ -29,7 +29,7 @@ Notice the `Scenario` attribute on the class. It is used for providing a name fo
 #### Upgrade from previous versions
 
 ```diff
-- Before sensenet ECM version 6.1.2, there was a possibility to override the Name property of the scenario. 
+- Before sensenet version 6.1.2, there was a possibility to override the Name property of the scenario. 
 - During upgrade from previous versions you need to take the following steps:
 - Remove the `Name` property override
 - Add the `Scenario` attribute to the class and provide the same name as you did in the Name property before.

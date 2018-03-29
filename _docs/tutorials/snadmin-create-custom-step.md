@@ -9,9 +9,9 @@ description: In this article **developers** can learn how to create custom insta
 
 # How to create a custom SnAdmin step
 
-**sensenet ECM** has a powerful [package installer infrastructure](https://github.com/SenseNet/sn-admin) that can be used by portal builders, developers and operators to patch and upgrade the core product or custom solution installations. In this article **developers** can learn how to create custom install steps for the packaging infrastructure, if none of the [built-in steps](/docs/snadmin-builtin-steps) are sufficient for a particular goal.
+**sensenet** has a powerful [package installer infrastructure](https://github.com/SenseNet/sn-admin) that can be used by portal builders, developers and operators to patch and upgrade the core product or custom solution installations. In this article **developers** can learn how to create custom install steps for the packaging infrastructure, if none of the [built-in steps](/docs/snadmin-builtin-steps) are sufficient for a particular goal.
 
-The packaging infrastructure in sensenet ECM allows developers to customize the package behavior by writing a **custom Step** class, built on the packaging API.
+The packaging infrastructure in sensenet allows developers to customize the package behavior by writing a **custom Step** class, built on the packaging API.
 
 When you want to use a custom step class in a package, you need to provide the codebehind for the *SnAdmin* tool. You can do that by placing your custom library in one of the following places:
 - the web\bin folder of the website (for custom steps that will be executed multiple times in subsequent packages)
@@ -90,7 +90,7 @@ It is possible to check if the repository is running: the *AssertRepositoryStart
 context.AssertRepositoryStarted();
 ```
 
-## Check sensenet ECM version
+## Check sensenet version
 It is possible to check for the current version of any of the installed components (including the core Services layer, which is a component itself). Here is an example for that:
 ``` csharp
 var version = RepositoryVersionInfo.Instance.Version;
