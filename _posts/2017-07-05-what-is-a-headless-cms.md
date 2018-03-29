@@ -18,12 +18,12 @@ First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress 
   [25358749]: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete "CRUD"
 
 
- Older versions of [sensenet ECM][ed1adc41] are also following this philosophy, although the platform is more geared towards enterprise features, such as [content versioning][a19fba28] and [collaboration][206457f6].
+ Older versions of [sensenet][ed1adc41] are also following this philosophy, although the platform is more geared towards enterprise features, such as [content versioning][a19fba28] and [collaboration][206457f6].
  Thus, the 'E' in ECM is for **Enterprise**.
 
-  [ed1adc41]: https://www.sensenet.com/product "Sensenet ECM Product features"
+  [ed1adc41]: https://www.sensenet.com/product "sensenet Product features"
   [a19fba28]: http://community.sensenet.com/docs/versioning-and-approval "Versioning and approval"
-  [206457f6]: http://community.sensenet.com/docs/workspace "Workspaces in sensenet ECM"
+  [206457f6]: http://community.sensenet.com/docs/workspace "Workspaces in sensenet"
 
 This is why you could do something like this in [sensenet 6.x][9f950a61], or using [sn-webpages 7.x][46ac6b1f]:
 
@@ -64,23 +64,23 @@ In a headless CMS (or ECMS for that matter), though, the backend does not care a
 *fig 2. ~ Traditional (coupled or monolithic CMS) model vs. Headless CMS*
 </p>
 
-## So is sensenet ECM a headless or a coupled CMS?
+## So is sensenet a headless or a coupled CMS?
 ![Why not both?](http://i.imgur.com/KgXtawP.gif "Why not both?")
 
-As mentioned earlier, using sn-webpages, you can have a full-featured ECMS solution, complete with a built-in UI. We are also working on a **new** UI, using [React][b3358601] and [Aurelia][b56bd31b] while fully utilizing [sensenet ECM's OData layer][71579091], which provides a complete, flexible and extendable [RESTful API][f9c00a93].
+As mentioned earlier, using sn-webpages, you can have a full-featured ECMS solution, complete with a built-in UI. We are also working on a **new** UI, using [React][b3358601] and [Aurelia][b56bd31b] while fully utilizing [sensenet's OData layer][71579091], which provides a complete, flexible and extendable [RESTful API][f9c00a93].
 
   [71579091]: http://community.sensenet.com/docs/built-in-odata-actions-and-functions/ "Built-in OData actions and functions"
   [f9c00a93]: http://community.sensenet.com/docs/odata-rest-api/ "OData REST API"
-  [b3358601]: https://github.com/SenseNet/sn-controls-react "React controls for sensenet ECM"
-  [b56bd31b]: https://github.com/SenseNet/sn-controls-aurelia "Aurelia controls for sensenet ECM"
+  [b3358601]: https://github.com/SenseNet/sn-controls-react "React controls for sensenet"
+  [b56bd31b]: https://github.com/SenseNet/sn-controls-aurelia "Aurelia controls for sensenet"
 
-In the meantime, you can either start writing your own library to latch on the OData endpoints of a sensenet ECM instance at hand, **or** you can try out our [fabulous and open source sn-client-js, the javascript client library for sensenet][de7f7b73].
+In the meantime, you can either start writing your own library to latch on the OData endpoints of a sensenet instance at hand, **or** you can try out our [fabulous and open source sn-client-js, the javascript client library for sensenet][de7f7b73].
 
   [de7f7b73]: https://github.com/SenseNet/sn-client-js "Sn-client-js"
 
 In the end, what you get is something like this <sup>[1](#footnote1)</sup>:
 
-**After installing our library from npm, you can import it** and connect to your sensenet ECM instance.
+**After installing our library from npm, you can import it** and connect to your sensenet instance.
 ```javascript
 import { Repository, Config } from 'sn-client-js';
 
@@ -173,7 +173,7 @@ As simple as that. We are at the beginning of our roadmap and we need your feedb
   [e3d316af]: http://i.imgur.com/yldRjme.gif "His name is Károly."
 
 ***
-<a id="footnote1">1</a>: You can achieve a similar experience using the [.NET client for sensenet ECM.][55d8492d]
+<a id="footnote1">1</a>: You can achieve a similar experience using the [.NET client for sensenet.][55d8492d]
 
 Disclaimer: Since I am not a developer, my initial code examples were not as fabulous as they are now. Many thanks to @[tusmester][8cd0cdf0] and @[herflis][b71828da] for providing me with meaningful snippets.
 

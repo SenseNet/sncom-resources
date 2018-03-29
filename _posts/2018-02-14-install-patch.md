@@ -1,13 +1,13 @@
 ---
 
-title:  "Installing a patch in sensenet ECM"
+title:  "Installing a patch in sensenet"
 author: iviczl
 image: "../img/posts/fix.jpg"
 tags: [install, patch, SN7]
 
 ---
 
-Sensenet ECM moved to GitHub in small parts. These parts are also maintainable, so need patches. Here is the first one, let's see what this means for developers.
+sensenet moved to GitHub in small parts. These parts are also maintainable, so need patches. Here is the first one, let's see what this means for developers.
 
 ---
 
@@ -20,9 +20,9 @@ The **Services** component was the first to dwell on GitHub therefore it is quit
 ![Patch](/img/posts/patch.gif "Patch")
 
 ### Find out if you need it
-The following conditions indicate that your sensenet ECM have to be upgraded with the patch:
+The following conditions indicate that your sensenet have to be upgraded with the patch:
 
-+ you have an installed sensenet ECM 7.0.0 site
++ you have an installed sensenet 7.0.0 site
 + you want an **in place upgrade**, which means you want to get the latest version **without dropping the database**.
 
 > If one of these criterias is not fit for your situation you will not need to install this patch. In a development and test environment where you **reinstall and reindex the whole database** every time, you can use the updated NuGet packages and continue working.

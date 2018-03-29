@@ -5,7 +5,7 @@ image: "/img/posts/components.jpg"
 tags: [sn7, components, componentization]
 ---
 
-It's been a long one year, but we're nearing the end of the componentization project for sensenet ECM. If you tried to keep up with the progress, what you could see, was a bunch of git repositories, NuGet and npm packages popping up now and again, but you may not be sure what each of them really does. You might be thinking "Okay, you tore the whole thing to pieces, but how the hell does it all fit together?" Fear not.
+It's been a long one year, but we're nearing the end of the componentization project for sensenet. If you tried to keep up with the progress, what you could see, was a bunch of git repositories, NuGet and npm packages popping up now and again, but you may not be sure what each of them really does. You might be thinking "Okay, you tore the whole thing to pieces, but how the hell does it all fit together?" Fear not.
 
 ---
 
@@ -23,7 +23,7 @@ If you're still here, fasten your seatbelts. It's going to be a long ride. So wh
 
 Current NuGet package: [![NuGet](https://img.shields.io/nuget/v/SenseNet.Services.Install.svg)](https://www.nuget.org/packages/SenseNet.Services.Install)
 
-At the very core of sensenet ECM, there’s Sensenet Services. Services is the "Mother of All Components": you'll need it, if you want to do anything with sensenet ECM, for it is the heart of the platform.
+At the very core of sensenet, there’s Sensenet Services. Services is the "Mother of All Components": you'll need it, if you want to do anything with sensenet, for it is the heart of the platform.
 
 It contains:
 
@@ -32,7 +32,7 @@ It contains:
 - Indexing and Search
 - Security
 - **SenseNet/sn-admin**
-  - This handy tool can be your best friend when developing on sensenet ECM. Be sure to get acquainted with each other.
+  - This handy tool can be your best friend when developing on sensenet. Be sure to get acquainted with each other.
 - **SenseNet/sn-tools**
   - When we face something more than once, it is nice to have a solution at hand the next time we encounter it. We collect our little tools in this repository.
 
@@ -65,7 +65,7 @@ To summarize, when you install WebPages, you'll have:
 
 Current NuGet package: [![NuGet](https://img.shields.io/nuget/v/SenseNet.Workspaces.Install.svg)](https://www.nuget.org/packages/SenseNet.Workspaces.Install)
 
-Workspaces is a functional component for sensenet ECM, it contains predefined content types for workspaces, you can use for various scenarios. If you only have Services installed (because for whatever reason you don't want to use WebPages or build your UI using [ASP.NET](http://ASP.NET) WebForms), you'll only get the workspace types. If, however, you have WebPages, you'll also get the related content templates and the whole UI package for Workspaces - build entirely in [ASP.NET](http://ASP.NET) WebForms.
+Workspaces is a functional component for sensenet, it contains predefined content types for workspaces, you can use for various scenarios. If you only have Services installed (because for whatever reason you don't want to use WebPages or build your UI using [ASP.NET](http://ASP.NET) WebForms), you'll only get the workspace types. If, however, you have WebPages, you'll also get the related content templates and the whole UI package for Workspaces - build entirely in [ASP.NET](http://ASP.NET) WebForms.
 
 > For detailed install steps, please check [this article](http://community.sensenet.com/docs/install-workspaces-from-nuget/).
 
@@ -73,7 +73,7 @@ Workspaces is a functional component for sensenet ECM, it contains predefined co
 
 Current NuGet package: [![NuGet](https://img.shields.io/nuget/v/SenseNet.Workflow.Install.svg)](https://www.nuget.org/packages/SenseNet.Workflow.Install)
 
-This component integrates the powerful Windows Workflow Foundation into your sensenet ECM. You can use it to build content driven workflows, such as the built-in Approval workflow.
+This component integrates the powerful Windows Workflow Foundation into your sensenet. You can use it to build content driven workflows, such as the built-in Approval workflow.
 
 If you want to build complex business scenarios and processes, Workflow is your go-to component.
 
@@ -93,7 +93,7 @@ Make sure you read the documentation for Task Management and discover it's full 
 
 ## Client libraries
 
-*Manipulate the Content Repository with the magic of client libraries. Build Single Page Applications, compelling UI's, or WPF desktop apps, all powered with sensenet ECM! Take your pick.*
+*Manipulate the Content Repository with the magic of client libraries. Build Single Page Applications, compelling UI's, or WPF desktop apps, all powered with sensenet! Take your pick.*
 
 ![Serve the client y'all!](/img/posts/serve-the-client-delish.jpg)
 
@@ -103,7 +103,7 @@ Current npm package: [![NPM version](https://img.shields.io/npm/v/sn-client-js.s
 
 This Javascript (it's really Typescript, "but who counts" nowadays) library lets you work with the Content Repository by providing a Javascript client API for the main content operations.
 
-Since we're talking about a Javascript library, instead of NuGet, you can install it from npm. Once you have a sensenet ECM Services running somewhere, set up CORS and you're ready to start developing a Single Page Application for example.
+Since we're talking about a Javascript library, instead of NuGet, you can install it from npm. Once you have a sensenet Services running somewhere, set up CORS and you're ready to start developing a Single Page Application for example.
 
 There are several related packages that are in development and that will let you build applications in an even more productive fashion. These are:
 
@@ -111,12 +111,12 @@ There are several related packages that are in development and that will let you
 - [sn-controls-react](https://github.com/SenseNet/sn-controls-react)
 - [sn-redux](https://github.com/SenseNet/sn-redux)
 
-The first library contains sensenet ECM UI controls implemented in Aurelia. The second does the same in React, with the exception that our React controls use Redux for a centralized state store, while our Aurelia controls don't. All of these libraries have the prerequisite of installing sn-client-js.
+The first library contains sensenet UI controls implemented in Aurelia. The second does the same in React, with the exception that our React controls use Redux for a centralized state store, while our Aurelia controls don't. All of these libraries have the prerequisite of installing sn-client-js.
 
 [**SenseNet/sn-client-dotnet**](https://github.com/SenseNet/sn-client-dotnet)
 
 Current NuGet package: [![NuGet](https://img.shields.io/nuget/v/SenseNet.Client.svg)](https://www.nuget.org/packages/SenseNet.Client)
 
-If you fancy using the Content Repository from your .NET application, you can easily do that using the .NET Client for sensenet ECM. The library connects to the REST API and wraps it into a neat C# API. Use it any way you can think of (we think you could build nice WPF apps with it for example)!
+If you fancy using the Content Repository from your .NET application, you can easily do that using the .NET Client for sensenet. The library connects to the REST API and wraps it into a neat C# API. Use it any way you can think of (we think you could build nice WPF apps with it for example)!
 
 If you have *any* questions, or feedback, talk to us. You can chat with us on [Gitter](http://gitter.im/SenseNet/sensenet), or send us [e-mails](http://hello%5Bat%5Dsensenet%5Bdot%5Dcom), like in the medieval times.

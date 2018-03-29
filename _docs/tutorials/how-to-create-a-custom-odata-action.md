@@ -4,14 +4,14 @@ source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/tu
 category: Tutorials
 version: v6.3
 tags: [action, application, odata, smart application model, ajax, sn6, backend]
-description: This article describes the way for developers to create a custom action that is accessible through the OData API of sensenet ECM.
+description: This article describes the way for developers to create a custom action that is accessible through the OData API of sensenet.
 ---
 
 # How to create a custom OData action
 
-sensenet ECM has a powerful feature for defining and accessing content operations called the [Smart Application Model](/docs/smart-application-model). The basic building blocks of this model are actions and applications. The previous articles contain information for portal builders on how to create actions and applications using the built-in method. There is another article for developers about how to create custom actions - it is recommended to read that first. This article describes the way for developers to create a custom action that is accessible through the [OData API of sensenet ECM](/docs/odata-rest-api).
+sensenet has a powerful feature for defining and accessing content operations called the [Smart Application Model](/docs/smart-application-model). The basic building blocks of this model are actions and applications. The previous articles contain information for portal builders on how to create actions and applications using the built-in method. There is another article for developers about how to create custom actions - it is recommended to read that first. This article describes the way for developers to create a custom action that is accessible through the [OData API of sensenet](/docs/odata-rest-api).
 
-sensenet ECMS is able to publish all of the content in the [Content Repository](/docs/content-repository) through the [OData REST API](/docs/odata-rest-api). In addition, it is possible to publish actions through this API - even custom actions you develop. This is essential for client-side developers: they will be able to access the full power of sensenet ECM through simple OData requests, and will be able to build a totally custom user interface above a robust repository.
+sensenetS is able to publish all of the content in the [Content Repository](/docs/content-repository) through the [OData REST API](/docs/odata-rest-api). In addition, it is possible to publish actions through this API - even custom actions you develop. This is essential for client-side developers: they will be able to access the full power of sensenet through simple OData requests, and will be able to build a totally custom user interface above a robust repository.
 
 For a list of built-in actions that are accessible through OData, see [this article](/docs/built-in-odata-actions-and-functions).
 
@@ -19,11 +19,11 @@ For a list of built-in actions that are accessible through OData, see [this arti
 - Before you create a custom action, consider using the [Generic sensenet OData action](/docs/generic-sensenet-odata-action), which lets you call a method without creating a custom action.
 ```
 
-> Please note that in sensenet ECM there is a restriction in the OData implementation: actions and functions can be invoked only on entities and not collections.
+> Please note that in sensenet there is a restriction in the OData implementation: actions and functions can be invoked only on entities and not collections.
 
 ## OData and HTML actions
 
-Actions in sensenet ECM can have two faces: they can be accessible through OData and may have a well-known HTML user interface, provided by an application content (e.g. a [Smart Page](/docs/smart-pages)). The custom action class must tell the system (through a couple of properties) which type of behavior it supports:
+Actions in sensenet can have two faces: they can be accessible through OData and may have a well-known HTML user interface, provided by an application content (e.g. a [Smart Page](/docs/smart-pages)). The custom action class must tell the system (through a couple of properties) which type of behavior it supports:
 
 - only HTML
 - only OData
@@ -138,7 +138,7 @@ We connect the application to the action by providing the name of our action in 
 
 #### Permissions
 
-The application created above lets you manage the accessibility of this action. This means you can control who can invoke this action using the regular permission system of sensenet ECM. Only users and groups with See/Open permissions for this application will be able to invoke the action through OData.
+The application created above lets you manage the accessibility of this action. This means you can control who can invoke this action using the regular permission system of sensenet. Only users and groups with See/Open permissions for this application will be able to invoke the action through OData.
 
 ### 4. Send an OData request
 

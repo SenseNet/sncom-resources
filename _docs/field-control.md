@@ -9,7 +9,7 @@ description: Field Controls provide user interfaces both for displaying and for 
 
 # Field Control
 
-> Although this feature is supported in sensenet ECM 7, it is built on the old Web Forms technology that you **should not use for new projects**. We encourage you to use a more modern UI solution using our [client-side packages](https://www.npmjs.com/org/sensenet).
+> Although this feature is supported in sensenet 7, it is built on the old Web Forms technology that you **should not use for new projects**. We encourage you to use a more modern UI solution using our [client-side packages](https://www.npmjs.com/org/sensenet).
 
 Field Controls are ASP.Net controls that provide GUI for setting/modifying Field values of a [Content](/docs/content). Thus, Field Controls are the basic building blocks of [Content Views](/docs/content-view) - views that define the HTML layout of Content when presented.
 

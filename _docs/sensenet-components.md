@@ -1,16 +1,16 @@
 ---
-title: "sensenet ECM 7.0 components"
+title: "sensenet 7.0 components"
 source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/sensenet-components.md'
 category: Concepts
 version: v7.0
 tags: [component, componentization, module, modularization, core, packages, client, sdk, sn7]
-description: This article is meant to help you understand the structure of our components and help you answer the first question that arises when starting to work with sensenet ECM.
+description: This article is meant to help you understand the structure of our components and help you answer the first question that arises when starting to work with sensenet.
 ---
 
-# sensenet ECM 7.0 components
-With sensenet ECM we offer a robust but modularized Enterprise Content Management system. The whole product consists of multiple packages that build on each other. Every package has the **Services** component as a prerequisite, because that is the core layer of sensenet ECM.
+# sensenet 7.0 components
+With sensenet we offer a robust but modularized Enterprise Content Management system. The whole product consists of multiple packages that build on each other. Every package has the **Services** component as a prerequisite, because that is the core layer of sensenet.
 
-This article is meant to help you understand the structure of our components and help you answer the first question that arises when starting to work with sensenet ECM:
+This article is meant to help you understand the structure of our components and help you answer the first question that arises when starting to work with sensenet:
 
 > Which components should I install?
 
@@ -21,20 +21,20 @@ This is a list of the main components we published so far. To see an expanded, c
 - [WebPages](#WebPages): admin UI and built-in building blocks for WebForms enthusiasts.
 
 ###### Feature packages
-- [Workspaces](#Workspaces): Workspace-related items (content types and templates, workspace dashboards and views) for sensenet ECM.
-- [Workflow](#Workflow): Windows Workflow Foundation (WWF 4.5) integration into sensenet ECM.
-- [Notification](#Notification): Email notification component for the sensenet ECM platform.
+- [Workspaces](#Workspaces): Workspace-related items (content types and templates, workspace dashboards and views) for sensenet.
+- [Workflow](#Workflow): Windows Workflow Foundation (WWF 4.5) integration into sensenet.
+- [Notification](#Notification): Email notification component for the sensenet platform.
 - ...and more!
 
 ###### Client SDKs
 - [JavaScript/TypeScript client](#ClientJs): a client API that can be used either in the browser or a mobile app.
 - [.Net client](#ClientDotNet): C# client API for tools and desktop applications.
 
-> Alternatively you can install [sensenet 6.5](/docs/how-to-install-sn6), which is the previous version of sensenet ECM and contains all the features in a single installation.
+> Alternatively you can install [sensenet 6.5](/docs/how-to-install-sn6), which is the previous version of sensenet and contains all the features in a single installation.
 
 <a name="Services"></a>
 ## Services
-The Services component lives in the [main repository](https://github.com/SenseNet/sensenet), as **it is the core layer of sensenet ECM**. Installing it is mandatory and it is the first step of working with sensenet.
+The Services component lives in the [main repository](https://github.com/SenseNet/sensenet), as **it is the core layer of sensenet**. Installing it is mandatory and it is the first step of working with sensenet.
 
 This is the only component you need if you have a web application, and are willing to build **your own custom UI** (views, controllers, etc.) on top of our Content Repository.
 
@@ -61,9 +61,9 @@ However you can **build pages** using the powerful [app model](/docs/smart-appli
 
 <a name="ClientJs"></a>
 ## JavaScript and TypeScript client
-The [JavaScript client component](https://github.com/SenseNet/sn-client-js) lets you work with the sensenet ECM Content Repository (create or manage content, execute queries, etc.) by providing a JavaScript client API for the main content operations.
+The [JavaScript client component](https://github.com/SenseNet/sn-client-js) lets you work with the sensenet Content Repository (create or manage content, execute queries, etc.) by providing a JavaScript client API for the main content operations.
 
-This library connects to the sensenet ECM REST API, but **hides the underlying HTTP requests**. You can work with simple load or create Content operations in JavaScript or TypeScript, instead of having to construct ajax requests yourself.
+This library connects to the sensenet REST API, but **hides the underlying HTTP requests**. You can work with simple load or create Content operations in JavaScript or TypeScript, instead of having to construct ajax requests yourself.
 
 Work with the JS client instead of native JavaScript to boost your productivity and make client-server interaction a lot easier.
 
@@ -71,9 +71,9 @@ Work with the JS client instead of native JavaScript to boost your productivity 
 
 <a name="ClientDotNet"></a>
 ## .Net client
-The [.Net client component](https://github.com/SenseNet/sn-client-dotnet) lets you work with the sensenet ECM Content Repository (create or manage content, execute queries, etc.) by providing a C# client API for the main content operations.
+The [.Net client component](https://github.com/SenseNet/sn-client-dotnet) lets you work with the sensenet Content Repository (create or manage content, execute queries, etc.) by providing a C# client API for the main content operations.
 
-This library connects to the sensenet ECM REST API (it is compatible with SN 6.5 and SN 7 too), and **hides the underlying HTTP requests**. You can work with simple load or create Content operations in C#, instead of having to construct web requests yourself.
+This library connects to the sensenet REST API (it is compatible with SN 6.5 and SN 7 too), and **hides the underlying HTTP requests**. You can work with simple load or create Content operations in C#, instead of having to construct web requests yourself.
 
 Speed up your development process and focus on your business logic (either in a custom import or migration tool, or a rich WPF desktop client)!
 
@@ -85,8 +85,8 @@ The [Workspaces component](https://github.com/SenseNet/sn-workspaces) is useful 
 
 <a name="Workflow"></a>
 ## Workflow
-Integrating **Windows Workflow Foundation (WWF 4.5)** into sensenet ECM provides many possibilities for creating content-driven workflows. The [Workflow component](https://github.com/SenseNet/sn-workflow) adds a robust and customizable workflow engine to sensenet ECM. 
+Integrating **Windows Workflow Foundation (WWF 4.5)** into sensenet provides many possibilities for creating content-driven workflows. The [Workflow component](https://github.com/SenseNet/sn-workflow) adds a robust and customizable workflow engine to sensenet. 
 
 <a name="Notification"></a>
 ## Notification
-[Email notification component](https://github.com/SenseNet/sn-notification) for the sensenet ECM platform. Lets users subscribe to content changes and receive emails either almost immediately or in an aggregated way periodically about changes in the repository.
+[Email notification component](https://github.com/SenseNet/sn-notification) for the sensenet platform. Lets users subscribe to content changes and receive emails either almost immediately or in an aggregated way periodically about changes in the repository.

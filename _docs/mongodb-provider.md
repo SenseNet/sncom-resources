@@ -9,7 +9,7 @@ description: This article is about an external blob provider we offer for our En
 
 # MongoDB blob provider
 
-By default **sensenet ECM** stores binaries (files) in the database. In enterprise environments it is not a suitable solution for various reasons (licensing and storage among them), so we offer an option to store binaries in an external [Blob provider](Blob_provider "wikilink") instead of the main [Content Repository](Content_Repository "wikilink") database. This article is about an external blob provider we offer for our *Enterprise* customers. It stores binaries in [MongoDB](https://www.mongodb.com) so that operators have more flexibility when installing and maintaining sensenet ECM. We deliver our Enterprise customer an *Enterprise Mongo Package* that contains all the binaries needed to make it work.
+By default **sensenet** stores binaries (files) in the database. In enterprise environments it is not a suitable solution for various reasons (licensing and storage among them), so we offer an option to store binaries in an external [Blob provider](Blob_provider "wikilink") instead of the main [Content Repository](Content_Repository "wikilink") database. This article is about an external blob provider we offer for our *Enterprise* customers. It stores binaries in [MongoDB](https://www.mongodb.com) so that operators have more flexibility when installing and maintaining sensenet. We deliver our Enterprise customer an *Enterprise Mongo Package* that contains all the binaries needed to make it work.
 
 ## Details
 -
@@ -34,7 +34,7 @@ For a first step, check the components. The following files must be copied from 
 -   MongoDB.Driver.dll
 -   SenseNet.MongoDbBlobStorage.dll
 
-> It is important that you keep all the configurations in sync for the different components in sensenet ECM - otherwise you won't be able to save or read binaries correctly.
+> It is important that you keep all the configurations in sync for the different components in sensenet - otherwise you won't be able to save or read binaries correctly.
 
 #### sensenet web application
 

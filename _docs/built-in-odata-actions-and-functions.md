@@ -9,9 +9,9 @@ description: This article lists the built-in actions and functions that are acce
 
 # Built-in OData actions and functions
 
-sensenet ECM has a powerful feature for defining and accessing content operations called the [Smart Application Model](/docs/smart-application-model). The basic building blocks of this model are [Actions](/docs/action) and [Applications](/docs/application). 
+sensenet has a powerful feature for defining and accessing content operations called the [Smart Application Model](/docs/smart-application-model). The basic building blocks of this model are [Actions](/docs/action) and [Applications](/docs/application). 
 
-The articles above contain an overview of the ideas behind the application model and how [Content](/docs/content) are displayed using application pages. In this article we are discussing actions in sensenet ECM that can be invoked through our [OData REST API](/docs/odata-rest-api), the most important service in sensenet ECM. 
+The articles above contain an overview of the ideas behind the application model and how [Content](/docs/content) are displayed using application pages. In this article we are discussing actions in sensenet that can be invoked through our [OData REST API](/docs/odata-rest-api), the most important service in sensenet. 
 
 This article lists the **built-in actions and functions** that are accessible through OData.
 
@@ -20,7 +20,7 @@ This article lists the **built-in actions and functions** that are accessible th
 
 If you want to build your own custom OData action or function, please visit [this tutorial](/docs/how-to-create-a-custom-odata-action). The following sections contain descriptions of our built-in operations with their parameters listed, and a couple of examples.
 
-> Please note that in sensenet ECM there is a restriction in the OData implementation: actions and functions can be invoked **only on entities** and not collections.
+> Please note that in sensenet there is a restriction in the OData implementation: actions and functions can be invoked **only on entities** and not collections.
 
 ## OData actions
 
@@ -638,7 +638,7 @@ $.ajax({
 It is possible to send authentication requests using this action. You provide the username and password and will get the User object as the response if the login operation was successful or HTTP 403 Forbidden message if it wasn’t. If the username does not contain a domain prefix, the configured default domain will be used. After you logged in the user successfully, you will receive a standard ASP.NET auth cookie which will make sure that your subsequent requests will be authorized correctly.
 
 ```diff
-- Before sensenet ECM version 6.5.4.9375 after you provide the username and password, you will get a response 
+- Before sensenet version 6.5.4.9375 after you provide the username and password, you will get a response 
 - of a boolean value depending on whether the login operation was successful or not.
 ```
 

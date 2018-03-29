@@ -9,11 +9,11 @@ description: In this article we go through action types and look at their common
 
 # Action
 
-Most of the operations done on [Content](/docs/content) in sensenet ECM is governed via Actions. An Action is basically a command, instructing the system to use a specific component, a so-called [Application](/docs/application), to display or modify the [Content](/docs/content) item addressed. To read more on the mechanisms and structure of [Applications](/docs/application), see the page on the [Smart Application Model](/docs/smart-application-model).
+Most of the operations done on [Content](/docs/content) in sensenet is governed via Actions. An Action is basically a command, instructing the system to use a specific component, a so-called [Application](/docs/application), to display or modify the [Content](/docs/content) item addressed. To read more on the mechanisms and structure of [Applications](/docs/application), see the page on the [Smart Application Model](/docs/smart-application-model).
 
->**Prerequisites**: some of the features described in this article (about displaying content using Pages) are available only if you have the sensenet ECM [WebPages](https://github.com/SenseNet/sn-webpages) component installed, but the underlying philosophy of arranging applications, security and url generation applies even if you only have the core [Services layer](https://github.com/SenseNet/sensenet).
+>**Prerequisites**: some of the features described in this article (about displaying content using Pages) are available only if you have the sensenet [WebPages](https://github.com/SenseNet/sn-webpages) component installed, but the underlying philosophy of arranging applications, security and url generation applies even if you only have the core [Services layer](https://github.com/SenseNet/sensenet).
 
-There are several kinds of actions in sensenet ECM: there are **HTML actions** that lead the user to an actual page (e.g. the Edit page of a content, where you can modify its properties); there are **client-side actions** that do something in *JavaScript* (e.g. display a popup dialog for picking a content); there are **service actions** that do something with the content and redirect you to a different page; and there are the **OData actions** that make the foundation of the [REST API](/docs/odata-rest-api) in sensenet ECM.
+There are several kinds of actions in sensenet: there are **HTML actions** that lead the user to an actual page (e.g. the Edit page of a content, where you can modify its properties); there are **client-side actions** that do something in *JavaScript* (e.g. display a popup dialog for picking a content); there are **service actions** that do something with the content and redirect you to a different page; and there are the **OData actions** that make the foundation of the [REST API](/docs/odata-rest-api) in sensenet.
 
 In this article we go through these action types and look at their common use cases.
 
@@ -25,7 +25,7 @@ The [Smart Application Model](/docs/smart-application-model) makes it possible t
 
 If a content item is requested without an action, it is equivalent to specifying the default action, which is **Browse**. Actions are more often referred to as the links that guide the user to the requested application page. An Action link is presented with an [ActionLinkButton](/docs/actionlinkbutton) control that is a simple HTML link also displaying the requested [Application's](/docs/application) link.
 
-> From version 6.3 sensenet ECM provides a [Client-side action framework](/docs/client-side-action-framework) for displaying actions in Javascript.
+> From version 6.3 sensenet provides a [Client-side action framework](/docs/client-side-action-framework) for displaying actions in Javascript.
 
 ### Actions and Applications
 
@@ -45,7 +45,7 @@ The type of rendered Action is controlled by the application it referes to. The 
 
 ### OData actions
 
-The [REST API](odata-rest-api) of sensenet ECM is built on OData actions, and you can create your own custom ones too to extend this API.
+The [REST API](odata-rest-api) of sensenet is built on OData actions, and you can create your own custom ones too to extend this API.
 
 #### Action classes and methods
 In most cases it is sufficient to implement a custom operation as a simple method, the same way as you would write an ASP.NET **Web API** method. After putting a placeholder **GenericODataApplication** application in the appropriate folder in the Content Repository, you can start creating your custom method in your project. For the details, please check this article:

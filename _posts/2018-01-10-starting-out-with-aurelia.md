@@ -1,13 +1,13 @@
 ---
 
-title: "Getting started with sensenet ECM using Aurelia Framework"
+title: "Getting started with sensenet using Aurelia Framework"
 author: gallayl
 image: "../img/posts/getting-started-with-aurelia.jpg"
 tags: [aurelia, typescript, authentication, sn-client-js, getting started]
 
 ---
 
-There was a lot of development in the frontent frameworks ecosystem over the last couple of years - and you can use a wide range of them with the latest version of *sensenet ECM*. The following step by step tutorial will guide you how to put it all together - this time with [Aurelia](http://aurelia.io/) and [Typescript](https://www.typescriptlang.org/).
+There was a lot of development in the frontent frameworks ecosystem over the last couple of years - and you can use a wide range of them with the latest version of *sensenet*. The following step by step tutorial will guide you how to put it all together - this time with [Aurelia](http://aurelia.io/) and [Typescript](https://www.typescriptlang.org/).
 
 ---
 
@@ -66,7 +66,7 @@ After a quick build process you will see the development server's URL on the con
 
 ### Install 
 
-To work with sensenet ECM, the first thing you have to do is to install the [sn-client-js](https://www.npmjs.com/package/sn-client-js) package with the following command:
+To work with sensenet, the first thing you have to do is to install the [sn-client-js](https://www.npmjs.com/package/sn-client-js) package with the following command:
 
 ```
 npm install sn-client-js
@@ -74,7 +74,7 @@ npm install sn-client-js
 
 ### Configuring dependency injection
 
-In this example we will use the *Repository* from sn-client-js as a main entry point to interact with sensenet ECM. In order to inject a preconfigured *repository* as a singleton, we have to configure Aurelia's main *DI container*.
+In this example we will use the *Repository* from sn-client-js as a main entry point to interact with sensenet. In order to inject a preconfigured *repository* as a singleton, we have to configure Aurelia's main *DI container*.
 
 Open **./src/main.ts** and add the following import:
 

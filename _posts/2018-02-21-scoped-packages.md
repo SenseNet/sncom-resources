@@ -47,7 +47,7 @@ We also wanted to take a look on our build, test and publish processes and - las
 
 ### [client-utils](https://www.npmjs.com/package/@sensenet/client-utils)
 
-This package contains some generic utilities - like helpers for disposable objects, a retrier, a method tracer and a simple value observer implementation - and *without any sensenet ECM dependencies*, so it can be used in any project.
+This package contains some generic utilities - like helpers for disposable objects, a retrier, a method tracer and a simple value observer implementation - and *without any sensenet dependencies*, so it can be used in any project.
 
 ### [query](https://www.npmjs.com/package/@sensenet/query)
 
@@ -59,7 +59,7 @@ We store the default generated content types, schema definitions, enums, etc... 
 
 ### [client-core](https://www.npmjs.com/package/@sensenet/client-core)
 
-The *core* logic sits in this package, if you want to interact with sensenet ECM its a good starting point to install it.
+The *core* logic sits in this package, if you want to interact with sensenet its a good starting point to install it.
 It contains the refactored *Repository* object itself, you can load / modify / delete content and execute custom action from there.
 It also contains some predefined security and versioning related actions, response models, interfaces and abstracts.
 
@@ -216,4 +216,4 @@ We've already started to update our Redux package, review its dependencies and i
 
 We also plan to update our command line tool to allow developers fetching their content types from CTDs but before we do that we want to improve the *client-side schema loading*.
 
-We hope that sensenet ECM development will be simpler and more fun than ever with the new packages. If you have any questions or thoughts don't hesitate to share with us :)
+We hope that sensenet development will be simpler and more fun than ever with the new packages. If you have any questions or thoughts don't hesitate to share with us :)
