@@ -1,0 +1,297 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@sensenet/client-utils</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js " data-base="
+				">
+				<div class="field">
+					<label class="fa fa-search tsd-widget search no-caption" for="tsd-search-field"></label>
+					<input id="tsd-search-field" type="text" />
+				</div>
+				<ul class="results">
+					<li class="state loading">Preparing search index...</li>
+					<li class="state failure">The search index is not available</li>
+				</ul>
+				<a href="index.html" class="title">
+					<img src="assets/images/sensenet-logo.png" alt="@sensenet/client-utils" />
+				</a>
+				<nav class="sn-menu">
+					<a class="site-header-nav-item active" href="../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../community">Community</a>
+					<a class="site-header-nav-item " href="../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../contact">Contact</a>
+					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
+						<i class="fa fa-github" aria-hidden="true"></i>
+					</a>
+				</nav>
+			</div>
+			<div class="table-cell" id="tsd-widgets">
+				<div id="tsd-filter">
+					<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+					<div class="tsd-filter-group">
+						<div class="tsd-select" id="tsd-filter-visibility">
+							<span class="tsd-select-label">All</span>
+							<ul class="tsd-select-list">
+								<li data-value="public">Public</li>
+								<li data-value="protected">Public/Protected</li>
+								<li data-value="private" class="selected">All</li>
+							</ul>
+						</div>
+						<input type="checkbox" id="tsd-filter-inherited" checked />
+						<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						<input type="checkbox" id="tsd-filter-externals" checked />
+						<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						<input type="checkbox" id="tsd-filter-only-exported" />
+						<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+					</div>
+				</div>
+				<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>  @sensenet/client-utils
+			</h1>
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<h1 id="sn-client-utils">sn-client-utils</h1>
+				<p>General sensenet ECM independent client side utilities</p>
+				<p><a href="https://gitter.im/SenseNet/SN7ClientAPI"><img src="https://img.shields.io/gitter/room/SenseNet/SN7ClientAPI.svg?style=flat" alt="Gitter chat"></a>
+					<a href="https://travis-ci.org/SenseNet/sn-client-utils"><img src="https://travis-ci.org/SenseNet/sn-client-utils.svg?branch=master" alt="Build Status"></a>
+					<a href="https://codecov.io/gh/SenseNet/sn-client-utils"><img src="https://codecov.io/gh/SenseNet/sn-client-utils/branch/master/graph/badge.svg" alt="codecov"></a>
+					<a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/SenseNet/sn-client-utils.svg" alt="Greenkeeper badge"></a>
+					<a href="https://www.npmjs.com/package/@sensenet/client-utils"><img src="https://img.shields.io/npm/v/@sensenet/client-utils.svg?style=flat" alt="NPM version"></a>
+					<a href="https://www.npmjs.com/package/@sensenet/client-utils"><img src="https://img.shields.io/npm/dt/@sensenet/client-utils.svg?style=flat" alt="NPM downloads"></a>
+					<a href="https://github.com/sn-client-utils/LICENSE.txt"><img src="https://img.shields.io/github/license/SenseNet/sn-client-js.svg?style=flat" alt="License"></a>
+				<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat" alt="Commitizen friendly"></a></p>
+				<h3 id="disposable">Disposable</h3>
+				<p>You can implement <em>disposable</em> resources and use them with a <em>using()</em> or <em>usingAsync()</em> syntax.
+				Example:</p>
+				<pre><code class="lang-ts"><span class="hljs-keyword">class</span> Resource <span class="hljs-keyword">implements</span> IDisposable{
+      dispose(){
+          <span class="hljs-comment">// cleanup logics</span>
+     }
+}
+
+using(<span class="hljs-keyword">new</span> Resource(), <span class="hljs-function">(<span class="hljs-params">resource</span>)=&gt;</span>{
+     <span class="hljs-comment">// do something with the resource</span>
+})
+
+usingAsync(<span class="hljs-keyword">new</span> Resource(), <span class="hljs-keyword">async</span> (resource)=&gt;{
+     <span class="hljs-comment">// do something with the resource, allows awaiting promises</span>
+})
+</code></pre>
+				<h3 id="observablevalue-and-valueobservers">ObservableValue and ValueObservers</h3>
+				<p>You can track value changes using with this simple Observable implementation.</p>
+				<p>Example:</p>
+				<pre><code class="lang-ts">
+<span class="hljs-keyword">const</span> observableValue = <span class="hljs-keyword">new</span> ObservableValue&lt;<span class="hljs-built_in">number</span>&gt;(<span class="hljs-number">0</span>);
+<span class="hljs-keyword">const</span> observer = observableValue.subscribe(<span class="hljs-function">(<span class="hljs-params">newValue</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Value changed:"</span>, newValue);
+});
+
+<span class="hljs-comment">// To update the value</span>
+observableValue.setValue(<span class="hljs-built_in">Math</span>.random());
+<span class="hljs-comment">// if you want to dispose a single observer</span>
+observer.dispose();
+<span class="hljs-comment">// if you want to dispose the whole observableValue with all of its observers:</span>
+observableValue.dispose();
+</code></pre>
+				<h3 id="pathhelper">PathHelper</h3>
+				<p>The class contains small helper methods for path transformation and manipulation.</p>
+				<h3 id="retrier">Retrier</h3>
+				<p>Retrier is a utility that can keep trying an operation until it succeeds, times out or reach a specified retry limit.</p>
+				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> funcToRetry: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">Promise</span>&lt;<span class="hljs-built_in">boolean</span>&gt; = <span class="hljs-keyword">async</span> () =&gt; {
+            <span class="hljs-keyword">const</span> hasSucceeded = <span class="hljs-literal">false</span>;
+            <span class="hljs-comment">// ...</span>
+            <span class="hljs-comment">// custom logic</span>
+            <span class="hljs-comment">// ...</span>
+            <span class="hljs-keyword">return</span> hasSucceeded;
+        };
+        <span class="hljs-keyword">const</span> retrierSuccess = <span class="hljs-keyword">await</span> Retrier.create(funcToRetry)
+            .setup({
+                Retries: <span class="hljs-number">3</span>,
+                RetryIntervalMs: <span class="hljs-number">1</span>,
+                timeoutMs: <span class="hljs-number">1000</span>,
+            })
+            .run();
+</code></pre>
+				<h3 id="trace">Trace</h3>
+				<p>Trace is an utility that can be used to track method calls, method returns and errors</p>
+				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> methodTracer: IDisposable = Trace.method({
+    object: myObjectInstance,           <span class="hljs-comment">// You can define an object constructor for static methods as well</span>
+    method: myObjectInstance.method,    <span class="hljs-comment">// The method to be tracked</span>
+    isAsync: <span class="hljs-literal">true</span>,                      <span class="hljs-comment">// if you set to async, method finished will be *await*-ed</span>
+    onCalled: <span class="hljs-function">(<span class="hljs-params">traceData</span>) =&gt;</span> {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Method called:"</span>, traceData)
+    },
+    onFinished: <span class="hljs-function">(<span class="hljs-params">traceData</span>) =&gt;</span> {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Method call finished:"</span>, traceData)
+    },
+    onError: <span class="hljs-function">(<span class="hljs-params">traceData</span>) =&gt;</span> {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Method throwed an error:"</span>, traceData)
+    }
+});
+
+<span class="hljs-comment">// if you want to stop receiving events</span>
+methodTracer.dispose();
+</code></pre>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/observablevalue.html" class="tsd-kind-icon">Observable<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/pathhelper.html" class="tsd-kind-icon">Path<wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/retrier.html" class="tsd-kind-icon">Retrier</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/retrieroptions.html" class="tsd-kind-icon">Retrier<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/trace.html" class="tsd-kind-icon">Trace</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/valueobserver.html" class="tsd-kind-icon">Value<wbr>Observer</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/idisposable.html" class="tsd-kind-icon">IDisposable</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/imethodmapping.html" class="tsd-kind-icon">IMethod<wbr>Mapping</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iobjecttrace.html" class="tsd-kind-icon">IObject<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/itracemethodcall.html" class="tsd-kind-icon">ITrace<wbr>Method<wbr>Call</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/itracemethoderror.html" class="tsd-kind-icon">ITrace<wbr>Method<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/itracemethodfinished.html" class="tsd-kind-icon">ITrace<wbr>Method<wbr>Finished</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/itracemethodoptions.html" class="tsd-kind-icon">ITrace<wbr>Method<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#valuechangecallback" class="tsd-kind-icon">Value<wbr>Change<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#using" class="tsd-kind-icon">using</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#usingasync" class="tsd-kind-icon">using<wbr>Async</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

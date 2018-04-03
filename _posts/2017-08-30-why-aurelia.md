@@ -5,13 +5,13 @@ image: "/img/posts/tw_sn_aurelia.png"
 tags: [ui, front-end, aurelia, controls, components, view controls, field controls, forms, responsive, typescript]
 ---
 
-It's a quite challengeing task to choose a front-end toolset nowadays, especially for a [development platform](/blog/2017/05/31/product-goals). Our concept with sensenet ECM 7+ is to support a wide range of front-end developers as far as possible with our [sn-client-js](https://github.com/SenseNet/sn-client-js) package that can be integrated into almost every [NPM](https://www.npmjs.com/) development pipeline. So far so good. But when it comes to build our new UI components we really had to choose between the modern libraries and frameworks. At this point we've decided to build on two of them for [SPA development](https://www.sensenet.com/for-customers/use-cases/single-page-application). I will explain why we've chosen [Aurelia](http://aurelia.io/) besides [React](https://facebook.github.io/react/).
+It's a quite challengeing task to choose a front-end toolset nowadays, especially for a [development platform](/blog/2017/05/31/product-goals). Our concept with sensenet 7+ is to support a wide range of front-end developers as far as possible with our [sn-client-js](https://github.com/SenseNet/sn-client-js) package that can be integrated into almost every [NPM](https://www.npmjs.com/) development pipeline. So far so good. But when it comes to build our new UI components we really had to choose between the modern libraries and frameworks. At this point we've decided to build on two of them for [SPA development](https://www.sensenet.com/for-customers/use-cases/single-page-application). I will explain why we've chosen [Aurelia](http://aurelia.io/) besides [React](https://facebook.github.io/react/).
 
 ---
 
 ### When we have to choose? Anyway, why? - Beyond the shared features
 
-We have quite so much sensenet ECM specific client side features that can be made *framework independent* like user session management, content operations, querying. They work well in the core of our front-end library called *sn-client-js*. Some features - like templating, data binding or routing - are implemented in each and every framework and they are based on different concepts. We have just started to develop our component packages that depend on templating and data binding, that's where and why we have to create the two new packages - [sn-controls-aurelia](https://github.com/SenseNet/sn-controls-aurelia) and [sn-controls-react](https://github.com/SenseNet/sn-controls-react). They will contain *Aurelia / React* specific components and will use the core functionality from *sn-client-js*.
+We have quite so much sensenet specific client side features that can be made *framework independent* like user session management, content operations, querying. They work well in the core of our front-end library called *sn-client-js*. Some features - like templating, data binding or routing - are implemented in each and every framework and they are based on different concepts. We have just started to develop our component packages that depend on templating and data binding, that's where and why we have to create the two new packages - [sn-controls-aurelia](https://github.com/SenseNet/sn-controls-aurelia) and [sn-controls-react](https://github.com/SenseNet/sn-controls-react). They will contain *Aurelia / React* specific components and will use the core functionality from *sn-client-js*.
 
 #### View- and Field Controls - The next layer of our building blocks
 
@@ -34,7 +34,7 @@ import { autoinject } from 'aurelia-framework';
 @autoinject
 export class HelloSnComponent{
     constructor(private readonly repository: Repository.SnRepository) {
-        console.log('Hi there, your injected sensenet ECM Repository is:', this.repository);
+        console.log('Hi there, your injected sensenet Repository is:', this.repository);
     }
 }
 ```

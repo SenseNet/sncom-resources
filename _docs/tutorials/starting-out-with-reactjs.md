@@ -1,17 +1,17 @@
 ---
-title:  "Starting out with sensenet ECM using Reactjs and Redux"
+title:  "Starting out with sensenet using Reactjs and Redux"
 category: Tutorials
 index: 0
 version: v7.0
-tags: [reactjs, redux, javascript, typescript, getting started, step by step]
-description: Step-by-step tutorial creating your first basic single page app with sensenet ECM, Reactjs and Redux.
+tags: [reactjs, redux, javascript, typescript, getting started, step by step, frontend]
+description: Step-by-step tutorial creating your first basic single page app with sensenet, Reactjs and Redux.
 ---
 
-# Starting out with sensenet ECM using Reactjs and Redux
+# Starting out with sensenet using Reactjs and Redux
 
 ## Prerequisites
 
-First of all you need a sensenet ECM instance installed. The following project will get and set data from the Content Repository through OData REST API so it would be enough to install [sensenet Services](https://github.com/SenseNet/sensenet), but since sensenet 7 has not got its own admin surface yet probably your life will be easier if you install [sensenet Webpages](https://github.com/SenseNet/sn-webpages) too. With sn-webpages you can access the good old Content Explorer with the control over all the users, permissions, settings, content types and many more.
+First of all you need a sensenet instance installed. The following project will get and set data from the Content Repository through OData REST API so it would be enough to install [sensenet Services](https://github.com/SenseNet/sensenet), but since sensenet 7 has not got its own admin surface yet probably your life will be easier if you install [sensenet Webpages](https://github.com/SenseNet/sn-webpages) too. With sn-webpages you can access the good old Content Explorer with the control over all the users, permissions, settings, content types and many more.
 
 
 ## Avoid the pitfalls
@@ -41,7 +41,7 @@ And voila, your app is running in the browser :)
 
 ![create-react-app mainpage](/img/posts/create-react-app-mainpage.png)
 
-## Connect to sensenet ECM
+## Connect to sensenet
  
 To let your app communicate with the sensenet instance you have to allow its domain as the origin of [CORS](http://wiki.sensenet.com/Cross-origin_resource_sharing) requests. The easiest way to do this if you open the Content Explorer and add your apps url to the ```AllowedOriginDomains``` list in the Portal settings file (*/Root/System/Settings/Portal.settings*)
 
@@ -56,7 +56,7 @@ To let your app communicate with the sensenet instance you have to allow its dom
 
 ## sensenet client repository
 
-sensenet ECM 7 has a JavaScript library that lets you work with its Content Repository by providing client API for the main content operations. We will create the base of our application by creating a client repository with [@sensenet/client-core](https://github.com/SenseNet/sn-client-core)
+sensenet 7 has a JavaScript library that lets you work with its Content Repository by providing client API for the main content operations. We will create the base of our application by creating a client repository with [@sensenet/client-core](https://github.com/SenseNet/sn-client-core)
 
 ```
 npm install --save @sensenet/client-core
@@ -64,7 +64,7 @@ npm install --save @sensenet/client-core
 
  > If you are interested more in client repostory and how to take advantage of sensenet client packages check the [API references](https://community.sensenet.com/api/).
 
-Import it into your React application's ```index.tsx``` as a dependency and create a new ```SnRepository``` with the url of your sensenet ECM instance
+Import it into your React application's ```index.tsx``` as a dependency and create a new ```SnRepository``` with the url of your sensenet instance
 
 ```typescript
 import * as React from 'react';
@@ -87,7 +87,7 @@ registerServiceWorker();
 
 ## sensenet state tree with Redux
 
-To manage our application's state we use [Redux](https://redux.js.org/) and to make your life even more easy to work on this stack, we've created [sn-redux](https://github.com/SenseNet/sn-redux) that is a set of redux actions, reducers and redux-ovbservable epics for sensenet ECM. In sn-redux we've implemented the main sensenet content operations so all you have to do is dispatch them and get everything from the state tree through predefined reducers. If you're intrested - and why would you not - how sensenet EMC's redux store is built up, check [Diving deeper into sensenet ECM's Redux store](https://community.sensenet.com/blog/2017/09/20/refactoring-sensenet-redux-store). 
+To manage our application's state we use [Redux](https://redux.js.org/) and to make your life even more easy to work on this stack, we've created [sn-redux](https://github.com/SenseNet/sn-redux) that is a set of redux actions, reducers and redux-ovbservable epics for sensenet. In sn-redux we've implemented the main sensenet content operations so all you have to do is dispatch them and get everything from the state tree through predefined reducers. If you're intrested - and why would you not - how sensenet EMC's redux store is built up, check [Diving deeper into sensenet's Redux store](https://community.sensenet.com/blog/2017/09/20/refactoring-sensenet-redux-store). 
 
 To create and configure your application's state container:
 

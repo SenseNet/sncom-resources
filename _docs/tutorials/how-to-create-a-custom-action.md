@@ -9,7 +9,7 @@ description: This article describes the way for developers to create a custom ac
 
 # How to create a custom Action
 
-sensenet ECM has a powerful feature for defining and accessing content operations called the [Smart Application Model](/docs/smart-application-model). The basic building blocks of this model are actions and applications. The previous articles contain information for portal builders on how to create actions and applications using the built-in method. This article describes the way for developers to create a custom action that is able to execute custom initialization code or behave differently than the built-in ones.
+sensenet has a powerful feature for defining and accessing content operations called the [Smart Application Model](/docs/smart-application-model). The basic building blocks of this model are actions and applications. The previous articles contain information for portal builders on how to create actions and applications using the built-in method. This article describes the way for developers to create a custom action that is able to execute custom initialization code or behave differently than the built-in ones.
 
 [Applications](/docs/application) can be viewed as the code that executes when the page renders the appropriate content (e.g. an _Edit_ page for an _Article_). However this article is about actions that are also classes, but the execution of an action takes place well before the application. An action code is executed when an action control (e.g. an [ActionLinkButton](/docs/actionlink-button) or [ActionMenu](/docs/action-menu)) displays the action (clicking on the link will navigate to the application). The initialization code may set the action _Forbidden_ (grey and unclickable) or even hide it. This is the place for executing custom permission checks or parameter handling.
 
@@ -18,7 +18,7 @@ sensenet ECM has a powerful feature for defining and accessing content operation
 ## Upgrade from previous versions
 
 ```diff
-- Before sensenet ECM version 6.1.2, there was a possibility to configure the actions in the web.config. 
+- Before sensenet version 6.1.2, there was a possibility to configure the actions in the web.config. 
 - During the upgrade from previous versions you may remove all the action and scenario type registrations 
 - from the unity section of the web.config and application configuration files, they are not needed anymore.
 ```
@@ -28,11 +28,11 @@ sensenet ECM has a powerful feature for defining and accessing content operation
 - **URL action**: most actions are URL actions. These actions navigate to a different page (the application) and responsible for generating the appropriate URL for this (e.g.: http://localhost/NewsDemo/External/Gitex?action%3dEdit)
 - **Client action**: these actions are not redirecting the page but execute client side JavaScript code defined by the developer.
 - **Open Picker action**: a special type of client action. It opens a Content Picker and lets the user select one or more content, than redirects the page to the appropriate application, defined by the developer of the action.
-- **OData action**: it is possible to create an action that is accessible through the OData API of sensenet ECM. See more in the [How to create a custom OData action article](how-to-create-a-custom-odata-action).
+- **OData action**: it is possible to create an action that is accessible through the OData API of sensenet. See more in the [How to create a custom OData action article](how-to-create-a-custom-odata-action).
 
 #### Default action type
 
-If the developer did not provide a custom action type name for an application, the default action will be instantiated. In sensenet ECM the built-in default action type is **UrlAction**. This can be changed using a Web.config setting.
+If the developer did not provide a custom action type name for an application, the default action will be instantiated. In sensenet the built-in default action type is **UrlAction**. This can be changed using a Web.config setting.
 
 ```xml
 <add key="DefaultActionType" value="MyCustomDefaultAction" />

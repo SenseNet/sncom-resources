@@ -9,13 +9,13 @@ description: This article describes how to use jwt in sn-client-js.
 
 # JWT Authentication in sn-client-js
 
-With version 7.0 sensenet ECM has a powerful feature to authenticate users using [JSON Web Tokens](/docs/web-token-authentication), which is supported by [sn-client-js](https://www.npmjs.com/package/sn-client-js) an [sn-redux](https://www.npmjs.com/package/sn-redux) as well. 
+With version 7.0 sensenet has a powerful feature to authenticate users using [JSON Web Tokens](/docs/web-token-authentication), which is supported by [sn-client-js](https://www.npmjs.com/package/sn-client-js) an [sn-redux](https://www.npmjs.com/package/sn-redux) as well. 
 
 
 > **What is a JSON Web Token?** JSON Web Token is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that defines a compact, self-contained way for securely transmitting data between parties as a JSON object. The information can be verified and trusted because it's signed digitally. The most common scenarios of JWT are *authentication* and *secure data exchange*.
 
 ## Backend prerequisites
-In order to use JWT you need a preconfigured installation of **sensenet ECM Services** backend.
+In order to use JWT you need a preconfigured installation of **sensenet Services** backend.
 
 You can start by creating a new ASP.NET Web Application. Grab the latest **[Sensenet.Services.Install](http://www.nuget.org/packages/SenseNet.Services.Install/)** package from NuGet and follow the installation instructions.
 
@@ -52,7 +52,7 @@ To avoid CORS issues, we will redirect OData and Session Management requests fro
     // ...
     proxy: {
       "/odata.svc": {
-          "target": "https://sn-local/",    // This should point to your sensenet ECM site. Please also note that is has to use HTTPS
+          "target": "https://sn-local/",    // This should point to your sensenet site. Please also note that is has to use HTTPS
           "secure": false,
           "changeOrigin": true,
           "ignorePath": true,
@@ -72,7 +72,7 @@ To avoid CORS issues, we will redirect OData and Session Management requests fro
 
 ### Using the Repository as an injectable service
 
-To interact with a sensenet ECM Repository, you have to use a *Repository* instance. There are predefined Repository configurations in the *sn-client-js* (like the default ``SnRepository`` that we will use, or ``Mocks.MockRepository`` for testing). If you want to write your components in a decoupled and testable way it's be a good idea to inject the *base* repository class, called ``Repository.BaseRepository`` into them.
+To interact with a sensenet Repository, you have to use a *Repository* instance. There are predefined Repository configurations in the *sn-client-js* (like the default ``SnRepository`` that we will use, or ``Mocks.MockRepository`` for testing). If you want to write your components in a decoupled and testable way it's be a good idea to inject the *base* repository class, called ``Repository.BaseRepository`` into them.
 Next we have to configure Aurelia's DI to inject the right Repository.BaseRepository implementation at runtime. Open ``./src/main.ts`` file, and insert the following code before ``aurelia.start()``
 
 ```ts
@@ -81,7 +81,7 @@ import { Repository } from "sn-client-js";
 aurelia.container.registerSingleton(Repository.BaseRepository, () => new Repository.SnRepository());
 ```
 
-> User session tracking is scoped to *Repository instances*, so it is possible to connect to multiple repositories with multiple sessions from one client app, however it is **strongly recommended to create only one Repository instance for a particular *sensenet ECM repository* per application** in a separate singleton service or in a very top level *module / component* to avoid login state concurrency issues. In this example, Repository will act as a singleton and as we are working with only one repository in this tutorial, we can use Aurelia's *DI* framework to inject as a ``Repository.BaseRepository`` into particular components.
+> User session tracking is scoped to *Repository instances*, so it is possible to connect to multiple repositories with multiple sessions from one client app, however it is **strongly recommended to create only one Repository instance for a particular *sensenet repository* per application** in a separate singleton service or in a very top level *module / component* to avoid login state concurrency issues. In this example, Repository will act as a singleton and as we are working with only one repository in this tutorial, we can use Aurelia's *DI* framework to inject as a ``Repository.BaseRepository`` into particular components.
 
 ### Authenticate the routing and updating the navbar
 We can continue with [authenticating our routing](http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/securing-your-app/2). It's a common scenario to make frontend routes only available to registered users, and that's we're gonna do now. 
@@ -188,7 +188,7 @@ import { Router } from "aurelia-router";
 
 @autoinject
 export class Login {
-    private readonly heading = "Login to sensenet ECM"
+    private readonly heading = "Login to sensenet"
     private userName: string = '';
     private password: string = '';
 
@@ -252,7 +252,7 @@ import { Router } from "aurelia-router";
 @autoinject
 export class Logout {
     
-    heading = "Log out from sensenet ECM";
+    heading = "Log out from sensenet";
     confirmText = "Really log out?";
     constructor(
         private snService: Repository.BaseRepository<any, any>,
@@ -293,7 +293,7 @@ After that, we should append our route configuration in ``./src/app.ts`` with th
 { route: 'logout', name: 'logout', moduleId: PLATFORM.moduleName('./logout'), title: 'Log out', settings: { show: true, roles: [ROLE_LOGGED_IN] },nav: true},
 ```
 
-Now, you have a sensenet ECM powered Aurelia application with full Login / Logout functionality and some authorized frontend routes.
+Now, you have a sensenet powered Aurelia application with full Login / Logout functionality and some authorized frontend routes.
 
 
 ## What's next?

@@ -17,7 +17,7 @@ Busy weeks behind us at the frontend division of the sensenet team. New features
 
 ### Cleaning up the concepts of a Content Type
 
-Typescript Content Types can be generated from the sensenet ECM Backend and are useful if you want to write *strongly typed Typescript* code. In the previous releases, Content Types was inherited from the Content class (which is a rich domain model driven representation of a Content instance). For Example, the User inheritance looked like:
+Typescript Content Types can be generated from the sensenet Backend and are useful if you want to write *strongly typed Typescript* code. In the previous releases, Content Types was inherited from the Content class (which is a rich domain model driven representation of a Content instance). For Example, the User inheritance looked like:
 
 Content **&rarr;** GenericContent **&rarr;** User
 
@@ -108,7 +108,7 @@ We've added OAuth provider support for the JWT Authentication service. This mean
 This package is our first official client-side OAuth provider. It requires sensenet ^7.0.0 with an installed SN7 [OAuth provider](https://github.com/SenseNet/sn-oauth-google) and a [Google API Console project](https://developers.google.com/identity/sign-in/web/devconsole-project). You can use it with or without the official [Google Platform Library](https://developers.google.com/identity/sign-in/web/sign-in) or any third party component that can retrieve an *id_token*.
 
 We've focused on keeping this library straightforward and easy-to-use, hopefully you can integrate it within a few minutes - after checking an example in the [readme](https://github.com/SenseNet/sn-client-auth-google).
-![Simple and straightforward OAuth login with sensenet ECM and Google](/img/posts/sn-client-300-google-oauth2.gif "Simple and straightforward OAuth login with sensenet ECM and Google")
+![Simple and straightforward OAuth login with sensenet and Google](/img/posts/sn-client-300-google-oauth2.gif "Simple and straightforward OAuth login with sensenet and Google")
 
 
 ## sn-redux 3.4.0
@@ -150,4 +150,4 @@ Since ```ContentTypes``` and ```Schemas``` as auto-generated classes are bundled
 #### CTD improvements 
 Sensenet's Content Type Definitions are awesome but they need a facelift from time to time. This time it means some major improvements like adding solutions for field grouping, ordering and some changes around Icon property to handle font-icon libraries like [Material icons](https://material.io/icons/) or [Font awesome](http://fontawesome.io/)
 #### Localization
-String resources were enable on the client-side through [sensenet's built-in bundling and dependency handling mechanism](http://wiki.sensenet.com/How_to_internationalize_javascripts). Since we build separate applications with communicating through OData We have to figure out how localized string resources can be distributed from sensenet ECM to the client.
+String resources were enable on the client-side through [sensenet's built-in bundling and dependency handling mechanism](http://wiki.sensenet.com/How_to_internationalize_javascripts). Since we build separate applications with communicating through OData We have to figure out how localized string resources can be distributed from sensenet to the client.
