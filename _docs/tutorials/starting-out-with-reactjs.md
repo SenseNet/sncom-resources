@@ -1,6 +1,7 @@
 ---
 title:  "Starting out with sensenet using Reactjs and Redux"
 category: Tutorials
+index: 0
 version: v7.0
 tags: [reactjs, redux, javascript, typescript, getting started, step by step, frontend]
 description: Step-by-step tutorial creating your first basic single page app with sensenet, Reactjs and Redux.
