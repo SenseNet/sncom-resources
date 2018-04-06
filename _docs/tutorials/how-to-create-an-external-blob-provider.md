@@ -20,14 +20,14 @@ The 10-byte chunk size is merely for testing purposes, it is highly recommended 
 ## Local disk blob storage provider
 The following sample implementation stores binary data as chunks in the file system.
 
-<script src="https://gist.github.com/tusmester/af62e7be1d29320542c3948ef6512ee2.js"></script>
+https://gist.github.com/tusmester/af62e7be1d29320542c3948ef6512ee2
 
 ### Chunk reader stream
 This sample reader stream helps serving chunks as a single stream from the file system.
 
-<script src="https://gist.github.com/tusmester/3ef183679975d15709935a08634a2fd8.js"></script>
+https://gist.github.com/tusmester/3ef183679975d15709935a08634a2fd8
 
 ### Chunk writer stream
 This sample writer stream helps writing chunks to the file system.
 
-<script src="https://gist.github.com/tusmester/65bcbc430cf449fd7c7092e170c493c9.js"></script>
+https://gist.github.com/tusmester/65bcbc430cf449fd7c7092e170c493c9
