@@ -58,7 +58,7 @@ You can run your Aurelia app with the following command:
 
 ```
 cd my-sensenet-app
-au run
+au run --watch
 ```
 After a quick build process you will see the development server's URL on the console (it is [http://localhost:8080](http://localhost:8080) by default). Open it in your browser and check the default *Hello World!* message. 
 
@@ -66,10 +66,10 @@ After a quick build process you will see the development server's URL on the con
 
 ### Install 
 
-To work with sensenet, the first thing you have to do is to install the [sn-client-js](https://www.npmjs.com/package/sn-client-js) package with the following command:
+To work with sensenet, the first thing you have to do is to install the [client-core](https://www.npmjs.com/package/@sensenet/client-core) and the [JWT authentication](https://www.npmjs.com/package/@sensenet/authentication-jwt) packages with the following command:
 
 ```
-npm install sn-client-js
+yarn add @sensenet/client-core @sensenet/authentication-jwt
 ```
 
 ### Configuring dependency injection
@@ -79,16 +79,19 @@ In this example we will use the *Repository* from sn-client-js as a main entry p
 Open **./src/main.ts** and add the following import:
 
 ```ts
-import { Repository } from 'sn-client-js';
+import { Repository } from '@sensenet/client-core';
 ```
 
 and before the aurelia.start()... statement:
 ```ts
-  aurelia.container.registerSingleton(Repository.BaseRepository, () => new Repository.SnRepository(
-    {
-      RepositoryUrl: 'https://sensenet7-local', // Change this URL to your sensenet 7 Repository
-    })
-  );
+  aurelia.container.registerSingleton(Repository, () => {
+    const repository = new Repository(
+      {
+        repositoryUrl: 'https://sensenet7-local', // Change this URL to your sensenet 7 Repository
+      })
+    new JwtService(repository);
+    return repository;
+  });
 ```
 
 ## Login and Logout
@@ -127,13 +130,15 @@ To edit *sn-login* element's view model, we have to open the generated **./src/r
 First we will need an SnRepository instance. We will inject it using Aurelia's *autoInject* decorator.
 
 ```ts
-import { bindable, autoinject } from 'aurelia-framework';
-import { Repository, Content, ContentTypes, Authentication } from 'sn-client-js';
-import { Subscription } from 'rxjs';
+
+import { autoinject, bindable } from 'aurelia-framework';
+import { Repository, LoginState } from '@sensenet/client-core';
+import { ValueObserver } from '@sensenet/client-utils';
+import { User } from '@sensenet/default-content-types';
 
 @autoinject
 export class SnLogin {
-  constructor(private repository: Repository.BaseRepository) {  }
+  constructor(private repository: Repository) {  }
 }
 
 ```
@@ -144,26 +149,26 @@ We will create two *subscriptions* and store their current value in two *bindabl
 
 You can add the following code to your view-model:
 ```ts
-  @bindable 
-  currentUser: Content<ContentTypes.User>
+ @bindable 
+  currentUser: User
 
   @bindable
-  loginState: Authentication.LoginState
+  loginState: LoginState
 
-  subscriptions: Subscription[] = [];
+  subscriptions: ValueObserver<any>[] = [];
 
   attached(){
     this.subscriptions.push(
-      this.repository.Authentication.State.subscribe(state=>{
+      this.repository.authentication.state.subscribe(state=>{
         this.loginState = state;
-      }),
-      this.repository.GetCurrentUser().subscribe(user => {
+      }, true),
+      this.repository.authentication.currentUser.subscribe(user => {
         this.currentUser = user;
-      })
+      }, true)
     )
   }
   detached(){
-    this.subscriptions.forEach(s => s.unsubscribe());
+    this.subscriptions.forEach(s => s.dispose());
   }
 ```
 
@@ -178,7 +183,7 @@ Once the coding is done, we will modify the *template* that can be found in **./
 </template>
 ```
 
-If you start the project now with ```au start``` and open the page, you will see a 'Hello **Visitor**!' message and the login state will be **Unauthenticated**.
+If you start the project now with ```au start``` and open the page, you will see a 'Hello **Visitor**' message and the login state will be **Unauthenticated**.
 
 ### Creating a basic login and logout form
 
@@ -219,12 +224,12 @@ And we have to implement the actions for *login()* and *logout()* - they will si
 
 ```ts
 login(){
-  this.repository.Authentication.Login(this.loginUserName, this.loginPassword);
+  this.repository.authentication.login(this.loginUserName, this.loginPassword);
   this.loginUserName = this.loginPassword = "";
 }
 
 logout(){
-  this.repository.Authentication.Logout();
+  this.repository.authentication.logout();
 }
 ```
 
@@ -251,21 +256,20 @@ Now open **./src/app.ts** and subscribe to the login state just like we did it i
 Update the *app.ts* file with the followings:
 
 ```ts
-import { Repository } from "sn-client-js";
-import { LoginState } from "sn-client-js/dist/src/Authentication";
+import { Repository, LoginState } from "@sensenet/client-core";
 import { bindable, autoinject } from "aurelia-framework";
 
 @autoinject
 export class App {
-  constructor(private repository: Repository.BaseRepository) {  }
+  constructor(private repository: Repository) {  }
 
   @bindable
   loginState: LoginState
 
   attached(){
-    this.repository.Authentication.State.subscribe(state=>{
+    this.repository.authentication.state.subscribe(state=>{
       this.loginState = state;
-    });
+    }, true);
   }
 }
 ```
@@ -275,8 +279,8 @@ export class App {
 ### The view model
 
 The component list will have two bindable properties:
- - ```currentContent: Content<GenericContent>``` will store the *current* tree level
- - ```children: Content<GenericContent>[]``` will store currentContent's children. These will be displayed in the current view.
+ - ```currentContent: GenericContent``` will store the *current* tree level
+ - ```children: GenericContent[]``` will store currentContent's children. These will be displayed in the current view.
 
  And will have the following methods:
  - ``currentContentChanged()`` is called by Aurelia when a new value is set to currentContent. We will load its children there.
@@ -286,42 +290,52 @@ The component list will have two bindable properties:
 
 ```ts
 import { bindable, autoinject } from 'aurelia-framework';
-import { Content } from 'sn-client-js';
-import { GenericContent } from 'sn-client-js/dist/src/ContentTypes';
-import { BaseRepository } from 'sn-client-js/dist/src/Repository';
+import { Repository, IODataParams } from '@sensenet/client-core';
+import { GenericContent, PortalRoot } from "@sensenet/default-content-types"
 
 @autoinject
 export class ContentList {
-  constructor(private repository: BaseRepository) {  }
 
-  attached(){
-    this.repository.Load(2) // Get the PortalRoot by Id
-    .subscribe(root=>{
-      this.currentContent = root;
-    });
+  private oDataOptions: IODataParams<GenericContent> = {
+    select: ['Id', 'Name', 'DisplayName', 'ParentId', 'Path']
+  }
+
+  constructor(private repository: Repository) {  }
+
+  async attached(){
+    // Get the PortalRoot by its Id
+    const rootResponse = await this.repository.load<GenericContent>({
+      idOrPath: 2,
+      oDataOptions: this.oDataOptions
+    })
+    this.currentContent = rootResponse.d;
+
   }
   
   @bindable
-  currentContent: Content<GenericContent>;
+  currentContent: GenericContent;
 
   @bindable
-  children: Content<GenericContent>[] = []
+  children: GenericContent[] = []
 
-  currentContentChanged(newValue) {
-    this.currentContent.Children().subscribe(c=>{
-      this.children = c;
+  async currentContentChanged(newValue) {
+    const childrenResponse = await this.repository.loadCollection<GenericContent>({
+      path: this.currentContent.Path,
+      oDataOptions: this.oDataOptions
     })
+    this.children = childrenResponse.d.results
   }
 
-  navigate(content: Content){
+  navigate(content: GenericContent){
     this.currentContent = content;
   }
 
-  navigateUp(){
-    this.repository.Load(this.currentContent.ParentPath)
-      .subscribe(parent=>{
-        this.currentContent = parent;
-      });
+  async navigateUp(){
+    const parentResponse = await this.repository.load({
+      idOrPath: this.currentContent.ParentId,
+      oDataOptions: this.oDataOptions
+    });
+    this.currentContent = parentResponse.d;
   }
 }
 
