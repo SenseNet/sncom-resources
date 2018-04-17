@@ -7,7 +7,7 @@ tags: [patch, upgrade, install, SN7]
 
 ---
 
-In most cases executing a [sensenet patch](/_posts/2018-02-14-install-patch) is easy: download-execute-forget. There are cases however when because of API or content changes this requires a bit more attention. In this post we will go through a process like this.
+In most cases executing a [sensenet patch](/blog/2018/02/14/install-patch) is easy: download-execute-forget. There are cases however when because of API or content changes this requires a bit more attention. In this post we will go through a process like this.
 
 ---
 
@@ -17,7 +17,7 @@ From time-to-time we have to change some parts of the API. Usually this happens 
 
 ## Optimistic approach
 
-The process always starts as usual, by downloading and trying to [execute the latest patch](/_posts/2018-02-14-install-patch). If it fails with a **type load error**, that is usually a sign that you are using an old API either directly in your code or through a 3rd party component. In that case you'll have to **rebuild or update** those libraries before executing the patch.
+The process always starts as usual, by downloading and trying to [execute the latest patch](/blog/2018/02/14/install-patch). If it fails with a **type load error**, that is usually a sign that you are using an old API either directly in your code or through a 3rd party component. In that case you'll have to **rebuild or update** those libraries before executing the patch.
 
 If there are type mismatch errors between the old and the new API and the package contains steps that need to be executed using the *new dll set* (for example updating pages or importing), there is no way to avoid adding your updated libraries to the package - see the details below.
 
