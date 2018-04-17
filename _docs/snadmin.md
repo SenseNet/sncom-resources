@@ -4,24 +4,24 @@ source_url: 'https://github.com/SenseNet/sn-admin/blob/master/docs/SnAdmin.md'
 category: Development
 version: v7.0
 tags: [snadmin, upgrade, package, sn6, sn7]
-description: sensenet ECM is a web application but it is a lot more complex than a simple web CMS. Patching, upgrading or executing batch operations on the core product (or a custom solution built on it) is one of the most important tasks of developers and operators. This article introduces SnAdmin that is the tool that operators will use for these tasks in sensenet ECM. You can use this tool to execute patches, perform upgrades or simply import a few content. It can be considered as a framework also that is extendible by third party developers to perform custom tasks.
+description: sensenet is a web application but it is a lot more complex than a simple web CMS. Patching, upgrading or executing batch operations on the core product (or a custom solution built on it) is one of the most important tasks of developers and operators. This article introduces SnAdmin that is the tool that operators will use for these tasks in sensenet. You can use this tool to execute patches, perform upgrades or simply import a few content. It can be considered as a framework also that is extendible by third party developers to perform custom tasks.
 ---
 
 # SnAdmin
-**sensenet ECM** is a web application but it is a lot more complex than a simple web CMS. 
-**Patching, upgrading or executing batch operations** on the core product (or a custom solution built on it) is one of the most important tasks of developers and operators. This article introduces **SnAdmin** that is the tool that operators will use for these tasks in sensenet ECM. You can use this tool to execute patches, perform upgrades or simply import a few content. It can be considered as a **framework** also that is extendible by third party developers to [perform custom tasks](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-create-custom-step.md).
+**sensenet** is a web application but it is a lot more complex than a simple web CMS. 
+**Patching, upgrading or executing batch operations** on the core product (or a custom solution built on it) is one of the most important tasks of developers and operators. This article introduces **SnAdmin** that is the tool that operators will use for these tasks in sensenet. You can use this tool to execute patches, perform upgrades or simply import a few content. It can be considered as a **framework** also that is extendible by third party developers to [perform custom tasks](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-create-custom-step).
 
-> This article focuses on features that are available in SnAdmin **version 1.4+**, that is published alongside sensenet ECM 7.0+. To read about previous SnAdmin versions that work with sensenet ECM 6.5, please [follow this link](http://wiki.sensenet.com/SnAdmin).
+> This article focuses on features that are available in SnAdmin **version 1.4+**, that is published alongside sensenet 7.0+. To read about previous SnAdmin versions that work with sensenet 6.5, please [follow this link](http://wiki.sensenet.com/SnAdmin).
 
-SnAdmin also offers a growing number of [built-in tools](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-tools.md) that will let you perform common operations like importing content items. 
+SnAdmin also offers a growing number of [built-in tools](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-tools) that will let you perform common operations like importing content items. 
 
 ### What is a package?
 The SnAdmin tool is a console application that executes a **package**. A package is a **zip file** that encapsulates *operations* and *data*. Portal builders and developers create these packages containing all the content and executables for a feature or a bugfix. A package should be executed on a dev machine or a test server first, minimizing the chance of installation errors in a production environment.
 
-SnAdmin checks **prerequisites** and [component dependencies](https://github.com/SenseNet/sensenet/blob/master/docs/sensenet-components.md), executes all the **steps** (similar to workflow activities) defined in the package **manifest**, registers the package and handles component versions. There are a couple of built-in steps in the system, the workflow is highly customizable and developers can write custom install steps in a few minutes.
+SnAdmin checks **prerequisites** and [component dependencies](https://github.com/SenseNet/sensenet/blob/master/docs/sensenet-components), executes all the **steps** (similar to workflow activities) defined in the package **manifest**, registers the package and handles component versions. There are a couple of built-in steps in the system, the workflow is highly customizable and developers can write custom install steps in a few minutes.
 
 The following list contains what a package can do.
-* manage content in the Content Repository (it has full access to the sensenet ECM .Net api)
+* manage content in the Content Repository (it has full access to the sensenet .Net api)
 * add or update libraries (e.g. in the web folder)
 * manage (copy, delete or edit) files in the file system
 * execute SQL scripts
@@ -35,14 +35,14 @@ SnAdmin.exe packagename [parameters]
 ```
 To learn more about package execution, jump to the [package execution details](#PackageExecution) section below.
 
-## SnAdmin and sensenet ECM instance
+## SnAdmin and sensenet instance
 During package execution the **web application must be stopped** because SnAdmin may modify the file structure under the web folder, may change the assembly set or execute database scripts (with schema modification).
 
 The package execution process can also use [Content Repository](http://wiki.sensenet.com/Content_Repository) services: SnAdmin can start and stop the Content Repository one or more times during the install process and the steps can manage content freely. In this case the SnAdmin tool is the host process.
 
 There is no way to undo a faulty execution so creating a backup is a must. To prevent execution errors in production environment, testing the package on test servers is also recommended.
 
->**WARNING!** The sensenet ECM web application **must be stopped on every web server** in the NLBS. Creating a backup of the database, the web folder (including the Lucene index) is strongly recommended.***
+>**WARNING!** The sensenet web application **must be stopped on every web server** in the NLBS. Creating a backup of the database, the web folder (including the Lucene index) is strongly recommended.***
 
 As you can see below in the configuration section, when working in an NLBS environment, you will need to provide all the network paths to the SnAdmin tool. This is necessary to keep all web applications in sync: every operation defined in the package that **manages file system entries** (e.g. a copy or delete) **will be executed on all of the configured web servers automatically** (at least in case of the built-in steps).
 
@@ -250,16 +250,16 @@ It is possible to execute steps based on a condition. This means a step (or a li
    </Else>
 </IfFileExists>
 ```
-Please look for the [built-in conditional steps](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-builtin-steps.md), or create your own custom conditional step by inheriting from the following base class:
+Please look for the [built-in conditional steps](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-builtin-steps), or create your own custom conditional step by inheriting from the following base class:
 -   *SenseNet.Packaging.Steps.ConditionalStep*
 
 ### Built-in steps
 There are many built-in steps in the product that you can use to build your own packages. Please check the following article for the complete list:
-- [Built-in steps](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-builtin-steps.md)
+- [Built-in steps](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-builtin-steps)
 
 ### Custom Steps
-It is possible to create custom install steps for the packaging framework. That is the way to customize the install process for custom applications built on sensenet ECM, executing ad-hoc tools and hotfixes. Please visit the following article for details:
-- [How to create a custom install step](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-create-custom-step.md)
+It is possible to create custom install steps for the packaging framework. That is the way to customize the install process for custom applications built on sensenet, executing ad-hoc tools and hotfixes. Please visit the following article for details:
+- [How to create a custom install step](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-create-custom-step)
 
 ### Phases
 It is possible to define multiple lists of steps inside a package (in the manifest). These lists are called *Phases* and they serve only one purpose: you need to place steps that need a **different dll set** into separate phases. For example you need to perform a couple of tasks with the old dll set (e.g. export content using the old content handlers), then switch to the new dlls inside the package. In this case you put the first steps (including the copy step) into the first phase and put the rest to the next phase.
@@ -282,7 +282,7 @@ Phase example
 Each phase is independent during the SnAdmin execution. It means every phase is parsed and executed independently. This way it is possible to install or upgrade a class library with new step types and use these in a following phase in the same package. This execution model has only one disadvantage: if the manifest xml contains invalid parts in a later phase, an exception will be thrown only in the incorrect phase after the successful execution of the previous phases. In this case the package may leave unwanted elements in the database or the file system. To minimize the chance of these cases you always need to test the package on a test server before executing it on a production server.
 
 ### Directory structure in the package
-The package zip file should contain only one XML file in the root (the manifest), all additional content should be in subfolders. There is no naming convention for the subfolders - except [the one for developers](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-create-custom-step.md).
+The package zip file should contain only one XML file in the root (the manifest), all additional content should be in subfolders. There is no naming convention for the subfolders - except [the one for developers](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-create-custom-step).
 
 You can name your folders as you wish, but it is recommended to follow these rules:
 - provide content files to import in a separate folder (e.g. called *import*)
@@ -375,7 +375,7 @@ SnAdmin[.exe] <package> [<target>] [LOGLEVEL:<loglevel>] [-HELP|-?] [-SCHEMA] [F
     - **File**: Package information will *not* be written to the database. The execution process will be written to a log file and to the console.
     - **Console**: Information will be written to the console only.
     - **Silent**: No feedback at all.
-- **FORCEDREINSTALL:true**: in case you install the core layer ([sensenet ECM Services](https://github.com/SenseNet/sensenet)) and the db already exists, you can instruct SnAdmin to skip initial component check and proceed with the db creation (note that there is *no dash* in front of this parameter!).
+- **FORCEDREINSTALL:true**: in case you install the core layer ([sensenet Services](https://github.com/SenseNet/sensenet)) and the db already exists, you can instruct SnAdmin to skip initial component check and proceed with the db creation (note that there is *no dash* in front of this parameter!).
 - **-HELP** or **-?**: Prints out all loaded assemblies and available step types and their parameters.
 - **-SCHEMA**: Generates the SenseNetPackage.xsd XML schema for the pakage and saves it to the &lt;WebSite>/Admin/bin directory. This schema can be used for code completion in the Visual Studio. The schema is instantly generated based on all available steps and their parameters and annotations.
 - **-WAIT**: Starts the SnAdmin.exe and waits for user interaction. This parameter is used for debugging sessions. The developer can attach the SnAdmin or SnAdminRuntime process, presses the &lt;enter> and the process runs away.
@@ -415,7 +415,7 @@ After executing a package and starting the site you can check the packages with 
 ``` text
 http://example.com/OData.svc('root')/GetVersionInfo
 ```
-This function returns a JSON object that contains all packaging information: installed sensenet ECM version, installed components, loaded assemblies, and all executed packages.
+This function returns a JSON object that contains all packaging information: installed sensenet version, installed components, loaded assemblies, and all executed packages.
 >If you have the [WebPages](https://github.com/SenseNet/sn-webpages) component installed, you get a page that displays this information in a human readable format.
 
 ### Package execution result
@@ -477,6 +477,6 @@ SnAdmin packagename -help
 ```
 
 ## Updating Task executors
-If you are using the [Task Management](https://github.com/SenseNet/sn-taskmanagement) component, you will have to update the task executors related to sensenet ECM (e.g. the *preview generator* or the *AD synchron* tools) **manually** after you executed a patch that contains a newer version of these executors. The reason behind this is that the Task Management component itself is a standalone application that is independent from sensenet ECM and the executors are deployed in a different environment (likely on a dedicated server) than the main sensenet ECM web application.
+If you are using the [Task Management](https://github.com/SenseNet/sn-taskmanagement) component, you will have to update the task executors related to sensenet (e.g. the *preview generator* or the *AD synchron* tools) **manually** after you executed a patch that contains a newer version of these executors. The reason behind this is that the Task Management component itself is a standalone application that is independent from sensenet and the executors are deployed in a different environment (likely on a dedicated server) than the main sensenet web application.
 
-As the latest executor tools are deployed in the *web\\TaskManagement* folder of sensenet ECM in the same structure as task management expects it, you only have to copy the latest files to your task management environment (agent machines). The only thing you have to take care of is *merging configuration files manually*.
+As the latest executor tools are deployed in the *web\\TaskManagement* folder of sensenet in the same structure as task management expects it, you only have to copy the latest files to your task management environment (agent machines). The only thing you have to take care of is *merging configuration files manually*.

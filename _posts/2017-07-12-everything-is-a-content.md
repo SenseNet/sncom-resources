@@ -5,7 +5,7 @@ image: '/img/posts/everything-is-a-content.jpg'
 tags: [content, tree, metadata]
 ---
 
-The foundation of sensenet ECM is the Content Repository, where documents, tasks, users, projects – everything is a Content. It is the fundamental building block of the system that makes content management easy and powerful at the same time.
+The foundation of sensenet is the Content Repository, where documents, tasks, users, projects – everything is a Content. It is the fundamental building block of the system that makes content management easy and powerful at the same time.
 
 ---
 
@@ -34,7 +34,7 @@ Do you have questions? [Contact us](http://community.sensenet.com/contact]) and 
 
 ## Got it, give me the features!
 
-Although it is virtually impossible to squeeze every important feature of a modern enterprise content management system into a single article, we wanted to give you a glimpse of what sensenet ECM is capable of when it comes to document management.
+Although it is virtually impossible to squeeze every important feature of a modern enterprise content management system into a single article, we wanted to give you a glimpse of what sensenet is capable of when it comes to document management.
 
 ### Custom metadata
 A unified content infrastructure lets you define custom metadata fields on a high level and use them on specific types. The Display name field for example is defined on the base Content Type called GenericContent – and that gives you a display name field for basically every content in the system!
@@ -50,10 +50,10 @@ It takes only a few clicks to enable versioning – not just for files, but for 
 ![Content versions](/img/posts/content-versions.png "Content versions")
  
 ### Approval
-Collaborate with others on documents, specifications, tasks! The built-in simple approval process that can be enabled for any kind of content makes the usually cumbersome and time-consuming process super-easy and fast in sensenet ECM.
+Collaborate with others on documents, specifications, tasks! The built-in simple approval process that can be enabled for any kind of content makes the usually cumbersome and time-consuming process super-easy and fast in sensenet.
 
 ### Permission on content level
-The security system that is built into the core layer of sensenet ECM lets you manage permissions on the level of your choice: it is easy to define them on a workspace or library, but if you need to, you can even control the accessibility of a single content – be it a document, a group or a JavaScript file.
+The security system that is built into the core layer of sensenet lets you manage permissions on the level of your choice: it is easy to define them on a workspace or library, but if you need to, you can even control the accessibility of a single content – be it a document, a group or a JavaScript file.
 
 ### Fast search by metadata
 A unified Content Repository extended with our Lucene search engine lets you find the content you need quickly. You can also create complex queries in an easy-to-master query language to build the flexible and rich user interface you imagined.
@@ -61,4 +61,4 @@ A unified Content Repository extended with our Lucene search engine lets you fin
 For more information please check the following pages:
 
 - [Try it](https://www.sensenet.com/try-it) – without installation
-- [Top use cases](https://www.sensenet.com/for-customers/use-cases) – how others use sensenet ECM
+- [Top use cases](https://www.sensenet.com/for-customers/use-cases) – how others use sensenet

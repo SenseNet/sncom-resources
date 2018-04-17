@@ -7,11 +7,11 @@ tags: [authentication, oauth, google, javascript, redux]
 
 ---
 
-Identifying users is one of the most important features in an ECM solution. In [sensenet ECM](https://github.com/SenseNet/sensenet) we try to support a wide range of possibilities in this field, this is why we made this a lot easier by extending our [web token authentication](https://community.sensenet.com/docs/web-token-authentication): from now on it is possible to integrate a 3rd party authentication service, for example [Google Sign-in](https://developers.google.com/identity/sign-in/web/sign-in) into your sensenet ECM solution.
+Identifying users is one of the most important features in an ECM solution. In [sensenet](https://github.com/SenseNet/sensenet) we try to support a wide range of possibilities in this field, this is why we made this a lot easier by extending our [web token authentication](https://community.sensenet.com/docs/web-token-authentication): from now on it is possible to integrate a 3rd party authentication service, for example [Google Sign-in](https://developers.google.com/identity/sign-in/web/sign-in) into your sensenet solution.
 
 ---
 
-[OAuth 2.0](https://oauth.net/2/) is the industry-standard protocol for authorization. In sensenet ECM we use it as an extension to our JWT authentication to let users **authenticate** using well-known services (such as Google or Facebook). The benefit is that users are able to sign in to a sensenet ECM application with a single click, **without manual registration**. This post gives you an insight on how OAuth is implemented on the server side, shows how the sensenet client libraries support it and quickly demonstrates how you can build it into your app.
+[OAuth 2.0](https://oauth.net/2/) is the industry-standard protocol for authorization. In sensenet we use it as an extension to our JWT authentication to let users **authenticate** using well-known services (such as Google or Facebook). The benefit is that users are able to sign in to a sensenet application with a single click, **without manual registration**. This post gives you an insight on how OAuth is implemented on the server side, shows how the sensenet client libraries support it and quickly demonstrates how you can build it into your app.
 
 > In the first iteration we only implemented *Google Sing-in*, but you can add other services (like Facebook) if you follow the steps and links in this post. If you do that, please consider sharing it with the [community](https://community.sensenet.com/) so that others can use it too!
 
@@ -22,15 +22,15 @@ When new users come to the site, they will be able to sign in by clicking the Go
 1. The user signs in to the 3rd party service.
 2. The user authorizes the application with the service (e.g. lets the application access basic user data like name and email). This is usually a click of a button in the Google or Facebook popup window.
 3. The client receives a **token** from the service.
-4. The client sends the token to the sensenet ECM server, where the appropriate OAuth provider **verifies** the token (note that this way it is not possible to send an invalid or expired token, because it is verified with the 3rd party service).
+4. The client sends the token to the sensenet server, where the appropriate OAuth provider **verifies** the token (note that this way it is not possible to send an invalid or expired token, because it is verified with the 3rd party service).
 5. If the token has been verified, we **load or create** the corresponding User content in the Content Repository. User content items are connected to the 3rd party service by storing the unique user identifier in a provider-specific separate field (e.g. *GoogleUserId*).
-6. sensenet ECM asssembles a JWT token for the client and considers the user as correctly signed in.
+6. sensenet asssembles a JWT token for the client and considers the user as correctly signed in.
 
 From that point on the user will be able to use the application as a regular user and there is no further connection with the 3rd party service or its token. We use our own JWT token to identify the user in subsequent requests.
 
 ## Server-side providers
 
-A sensenet ECM OAuth provider is a small .Net plugin that is designed to verify a token using a particular service. Out of the box we offer only the [Google OAuth provider](https://github.com/SenseNet/sn-oauth-google) which is available as a NuGet package.
+A sensenet OAuth provider is a small .Net plugin that is designed to verify a token using a particular service. Out of the box we offer only the [Google OAuth provider](https://github.com/SenseNet/sn-oauth-google) which is available as a NuGet package.
 
 [![NuGet](https://img.shields.io/nuget/v/SenseNet.OAuth.Google.svg)](https://www.nuget.org/packages/SenseNet.OAuth.Google)
 
@@ -46,7 +46,7 @@ We've added OAuth provider support in version 3.0.0. This means that you can imp
 
 ### sn-client-auth-google 1.0.0
 
-This is our first official client-side OAuth provider. It requires sensenet ECM ^7.0.0 with configured JWT authentication, an installed SN7 [OAuth provider](https://github.com/SenseNet/sn-oauth-google) and a [Google API Console project](https://developers.google.com/identity/sign-in/web/devconsole-project). You can use it with or without the official [Google Platform Library](https://developers.google.com/identity/sign-in/web/sign-in) or any third party component that can retrieve an *id_token*.
+This is our first official client-side OAuth provider. It requires sensenet ^7.0.0 with configured JWT authentication, an installed SN7 [OAuth provider](https://github.com/SenseNet/sn-oauth-google) and a [Google API Console project](https://developers.google.com/identity/sign-in/web/devconsole-project). You can use it with or without the official [Google Platform Library](https://developers.google.com/identity/sign-in/web/sign-in) or any third party component that can retrieve an *id_token*.
 
 We've focused on keeping this library straightforward and easy-to-use, hopefully you can integrate it within a few minutes - after checking an example in the [readme](https://github.com/SenseNet/sn-client-auth-google).
 

@@ -4,13 +4,13 @@ source_url: 'https://github.com/SenseNet/sn-notification/blob/master/docs/instal
 category: Guides
 version: v7.0
 tags: [install, nuget, packages, notification, sn7]
-description: This article is for developers about installing the **Notification** component for sensenet ECM from NuGet. Before you can do that, please install at least the core layer, sensenet Services, which is a prerequisite of this component.
+description: This article is for developers about installing the **Notification** component for sensenet from NuGet. Before you can do that, please install at least the core layer, sensenet Services, which is a prerequisite of this component.
 
 ---
 
 # Installing Notification from NuGet
 
-This article is **for developers** about installing the **Notification** component for [sensenet ECM](https://github.com/SenseNet) from NuGet. Before you can do that, please install at least the core layer, [sensenet Services](/docs/install-sn-from-nuget), which is a prerequisite of this component.
+This article is **for developers** about installing the **Notification** component for [sensenet](https://github.com/SenseNet) from NuGet. Before you can do that, please install at least the core layer, [sensenet Services](/docs/install-sn-from-nuget), which is a prerequisite of this component.
 
 > About choosing the components you need, take look at [this article](/docs/sensenet-components) that describes the main components and their relationships briefly.
 

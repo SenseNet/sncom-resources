@@ -9,14 +9,14 @@ description: This article describes the concept of our blob storage and the cust
 
 # Blob provider
 
-In **sensenet ECM** all files are stored in the main [Content Repository](Content_Repository "wikilink") database by default. All binaries, along with their metadata. In larger projects this can lead to a *huge database*, which requires a *large data storage* and sometimes additional *server licences*. sensenet allows you to store binaries outside of the database, in an external storage. This article describes the concept of our blob storage and the customization options. Available blob providers for the *Enterprise Edition*:
+In **sensenet** all files are stored in the main [Content Repository](Content_Repository "wikilink") database by default. All binaries, along with their metadata. In larger projects this can lead to a *huge database*, which requires a *large data storage* and sometimes additional *server licences*. sensenet allows you to store binaries outside of the database, in an external storage. This article describes the concept of our blob storage and the customization options. Available blob providers for the *Enterprise Edition*:
 
--   [MongoDB blob provider](/_docs/mongodb-provider.md) *(soon to be released)*
--   [Azure blob provider](/_docs/azureblob-provider.md) *(soon to be released)*
+-   [MongoDB blob provider](/docs/mongodb-provider) *(soon to be released)*
+-   [Azure blob provider](/docs/azureblob-provider) *(soon to be released)*
 
 ## Blob storage concept
 
-Sensenet ECM is a lot more than a simple document storage. We offer a rich set of additional features like storing different metadata for different types of content and indexing binaries to aid field-specific or full-text search. All this additional data will have to remain in the main database (and in our index), but wanted to let customers have the option to store their binaries outside of the database. The sensenet **blob storage** has a very simple purpose: storing binary data that can be linked to our records in the main database. No additional, high-level features, no custom metadata, only raw binaries, so that we can keep 3rd party implementations **simple**.
+sensenet is a lot more than a simple document storage. We offer a rich set of additional features like storing different metadata for different types of content and indexing binaries to aid field-specific or full-text search. All this additional data will have to remain in the main database (and in our index), but wanted to let customers have the option to store their binaries outside of the database. The sensenet **blob storage** has a very simple purpose: storing binary data that can be linked to our records in the main database. No additional, high-level features, no custom metadata, only raw binaries, so that we can keep 3rd party implementations **simple**.
 
 ## Blob providers
 
@@ -52,7 +52,7 @@ If you are working in the context of the sensenet Content Repository, you do not
 
 ## Built-in blob provider
 
-The built-in blob provider will always be there as a fallback. Currently it supports storing files in the database either in a regular *varbinary* column or in a [FILESTREAM](filestream "How to enable FILESTREAM in sensenet ECM") column.
+The built-in blob provider will always be there as a fallback. Currently it supports storing files in the database either in a regular *varbinary* column or in a [FILESTREAM](filestream "How to enable FILESTREAM in sensenet") column.
 
 ## Custom blob provider
 

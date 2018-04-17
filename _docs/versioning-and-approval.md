@@ -4,7 +4,7 @@ source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/versioning-an
 category: Concepts
 version: v6.0
 tags: [versioning, approval, document management, sn6, sn7]
-description: The versioning system of sensenet ECM also provides mechanisms for keeping the published version of a document under heavy editing visible to outside users, while you continue to work on the latest, draft version.
+description: The versioning system of sensenet also provides mechanisms for keeping the published version of a document under heavy editing visible to outside users, while you continue to work on the latest, draft version.
 ---
 
 # Versioning and approval
@@ -13,11 +13,11 @@ Versioning, also known as revision control, is the management of changes to docu
 
 The main goal of versioning is to prevent information from being overwritten or deleted during everyday work with documents. Changes are kept track of, and a mechanism is offered to restore a particular document to a previous version.
 
-The versioning system of **sensenet ECM** also provides mechanisms for keeping the published version of a document under heavy editing visible to outside users, while you continue to work on the latest, draft version.
+The versioning system of **sensenet** also provides mechanisms for keeping the published version of a document under heavy editing visible to outside users, while you continue to work on the latest, draft version.
 
-### Versioning in sensenet ECM
+### Versioning in sensenet
 
-In sensenet ECM, versioning is disabled by default. It can be enabled for folders or content lists, by setting the value of the Versioning Mode field. Subfolders inherit versioning settings by default.
+In sensenet, versioning is disabled by default. It can be enabled for folders or content lists, by setting the value of the Versioning Mode field. Subfolders inherit versioning settings by default.
 
 **Versioning Mode** settings for folders:
 
@@ -32,7 +32,7 @@ When a new Content is created in the Content Repository with versioning enabled,
 
 ### Approval
 
-sensenet ECM also introduces a basic approval functionality. Regardless of the versioning mode in use, approval can be enabled to control changes.
+sensenet also introduces a basic approval functionality. Regardless of the versioning mode in use, approval can be enabled to control changes.
 
 If approval is required for a certain Content, after changes has been made to the document, the system creates a version labeled ‘Pending for approval’. This version is visible only for administrators and users who have permission to *Approve* or *Reject* it. If the Content is approved, its version number is bumped according to the versioning mode, and gets the A ("*approved*") flag.
 
@@ -93,7 +93,7 @@ Administrators can have a *Force undo changes* permission. This means they can d
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/approval/versioning-checkin.png" alt="Versioning check-in" style="margin: 20px auto" />
 
-#### Taking over the lock - from version 6.3.1 patch1
+#### Taking over the lock
 
 There are cases when somebody checked out a document, but the user is no longer available (or does not have enough permissions anymore). If force undo changes is not sufficient (e.g. because you want to preserve the content modifications) then administrators are allowed to *take over the lock* on the content. The admin still needs to have *Force undo changes* permission on the content. It is also possible to *pass on the lock to another user*. That user does not have to have force undo changes permission though, only *Save*.
 
@@ -105,7 +105,7 @@ As this action is very rare and used only in eceptional cases, it has a special 
 
 Developers can access the take over lock feature through the following APIs:
 
-- [TakeLockOver OData action](/docs/built-in-odata-actions-and-functions.md)
+- [TakeLockOver OData action](/docs/built-in-odata-actions-and-functions)
 - C# api:
 
 ```csharp

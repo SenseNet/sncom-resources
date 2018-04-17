@@ -1,6 +1,6 @@
 --- 
 version: 7.0 
-title: sensenet ECM Documentation 
+title: sensenet Documentation 
 permalink: /docs/ 
 layout: default 
 --- 
@@ -58,23 +58,44 @@ layout: default
           <!-- <h3>SN Client JS</h3> -->
           <ul class="docs-list">
             <li>
-              <a href="/api/sn-client-js">sn-client-js</a>
+              <a href="/api/@sensenet/client-core/index.html">@sensenet/client-core</a>
             </li>
             <li>
-              <a href="/api/sn-redux">sn-redux</a>
+              <a href="/api/sn-redux/index.html">@sensenet/redux</a>
             </li>
             <li>
-              <a href="/api/sn-client-auth-google">sn-client-auth-google</a>
+              <a href="/api/sn-redux-promise-middleware/index.html">@sensenet/redux-promise-middleware</a>
             </li>
             <li>
-              <a href="/api/sn-controls-aurelia">sn-controls-aurelia</a>
-            </li>            
+              <a href="/api/@sensenet/authentication-jwt/index.html">@sensenet/authentication-jwt</a>
+            </li>
+            <li>
+              <a href="/api/@sensenet/authentication-google/index.html">@sensenet/authentication-google</a>
+            </li>
+            <li>
+              <a href="/api/@sensenet/controls-aurelia/index.html">@sensenet/controls-aurelia</a>
+            </li>
+            <li>
+              <a href="/api/@sensenet/query/index.html">@sensenet/query</a>
+            </li>
+            <li>
+              <a href="/api/@sensenet/repository-events/index.html">@sensenet/repository-events</a>
+            </li>
+            <li>
+              <a href="/api/@sensenet/client-utils/index.html">@sensenet/client-utils</a>
+            </li>
+            <li>
+              <a href="/api/@sensenet/default-content-types/index.html">@sensenet/default-content-types</a>
+            </li>
+            <li>
+              <a href="/api/@sensenet/control-mapper/index.html">@sensenet/control-mapper</a>
+            </li>
+
             {% for doc in docs %} {% if doc.category == 'API' and doc.subcategory == 'sn-client-js' %}
             <li>
               <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
             </li>
             {% endif %} {% endfor %}
-          </ul>
           </ul>
         </div>
 

@@ -1,19 +1,19 @@
 ---
 
-title: "Starting out with sensenet ECM using Reactjs and Redux"
+title: "Starting out with sensenet using Reactjs and Redux"
 author: herflis
 image: "../img/posts/sensenetecm-react-redux.png"
 tags: [reactjs, redux, javascript, typescript, getting started]
 
 ---
 
-sensenet ECM's new version is full of possibilites. One of them is the capability of being the base of your single-page-application with its Content Repository. If you are familiar with Reactjs, Redux or Aureliajs, sensenet can offer you even more with its toolkits, prebuilt control packs and many many more. In the following post we try to guide you with a step-by-step tutorial creating your first basic single page app with sensenet ECM, Reactjs and Redux.
+sensenet's new version is full of possibilites. One of them is the capability of being the base of your single-page-application with its Content Repository. If you are familiar with Reactjs, Redux or Aureliajs, sensenet can offer you even more with its toolkits, prebuilt control packs and many many more. In the following post we try to guide you with a step-by-step tutorial creating your first basic single page app with sensenet, Reactjs and Redux.
 
 ---
 
 ## Prerequisites
 
-First of all you need a sensenet ECM instance installed. The following project will get and set data from the Content Repository through OData REST API so it would be enough to install [sensenet Services](https://github.com/SenseNet/sensenet), but since sensenet 7 has not got its own admin surface yet probably your life will be easier if you install [sensenet Webpages](https://github.com/SenseNet/sn-webpages) too. With sn-webpages you can access the good old Content Explorer with the control over all the users, permissions, settings, content types and many more.
+First of all you need a sensenet instance installed. The following project will get and set data from the Content Repository through OData REST API so it would be enough to install [sensenet Services](https://github.com/SenseNet/sensenet), but since sensenet 7 has not got its own admin surface yet probably your life will be easier if you install [sensenet Webpages](https://github.com/SenseNet/sn-webpages) too. With sn-webpages you can access the good old Content Explorer with the control over all the users, permissions, settings, content types and many more.
 
 
 ## Avoid the pitfalls
@@ -43,7 +43,7 @@ And voila, your app is running in the browser :)
 
 ![create-react-app mainpage](/img/posts/create-react-app-mainpage.png)
 
-## Connect to sensenet ECM
+## Connect to sensenet
  
 To let your app communicate with the sensenet instance you have to allow its domain as the origin of [CORS](http://wiki.sensenet.com/Cross-origin_resource_sharing) requests. The easiest way to do this if you open the Content Explorer and add your apps url to the ```AllowedOriginDomains``` list in the Portal settings file (*/Root/System/Settings/Portal.settings*)
 
@@ -58,7 +58,7 @@ To let your app communicate with the sensenet instance you have to allow its dom
 
 ## sensenet client repository
 
-sensenet ECM 7 has a JavaScript library that lets you work with its Content Repository by providing client API for the main content operations. We will create the base of our application by creating a client repository with [sn-client-js](https://github.com/SenseNet/sn-client-js)
+sensenet 7 has a JavaScript library that lets you work with its Content Repository by providing client API for the main content operations. We will create the base of our application by creating a client repository with [sn-client-js](https://github.com/SenseNet/sn-client-js)
 
 ```
 npm install --save-dev sn-client-js
@@ -66,7 +66,7 @@ npm install --save-dev sn-client-js
 
  > If you are interested more in client repostory and how to take advantage of sn-client-js check its [API references](https://community.sensenet.com/api/sn-client-js/).
 
-Import it into your React application's ```index.tsx``` as a dependency and create a new ```SnRepository``` with the url of your sensenet ECM instance
+Import it into your React application's ```index.tsx``` as a dependency and create a new ```SnRepository``` with the url of your sensenet instance
 
 ```typescript
 import * as React from 'react';
@@ -90,7 +90,7 @@ registerServiceWorker();
 
 ## sensenet state tree with Redux
 
-To manage our application's state we use [Redux](https://redux.js.org/) and to make your life even more easy to work on this stack, we've created [sn-redux](https://github.com/SenseNet/sn-redux) that is a set of redux actions, reducers and redux-ovbservable epics for sensenet ECM. In sn-redux we've implemented the main sensenet content operations so all you have to do is dispatch them and get everything from the state tree through predefined reducers. If you're intrested - and why would you not - how sensenet ECM's redux store is built up, check [Diving deeper into sensenet ECM's Redux store](https://community.sensenet.com/blog/2017/09/20/refactoring-sensenet-redux-store). 
+To manage our application's state we use [Redux](https://redux.js.org/) and to make your life even more easy to work on this stack, we've created [sn-redux](https://github.com/SenseNet/sn-redux) that is a set of redux actions, reducers and redux-ovbservable epics for sensenet. In sn-redux we've implemented the main sensenet content operations so all you have to do is dispatch them and get everything from the state tree through predefined reducers. If you're intrested - and why would you not - how sensenet's redux store is built up, check [Diving deeper into sensenet's Redux store](https://community.sensenet.com/blog/2017/09/20/refactoring-sensenet-redux-store). 
 
 To create and configure your application's state container:
 
@@ -143,7 +143,7 @@ import { Provider } from 'react-redux';
 ...
 ReactDOM.render(
   <Provider store={store}>
-      <App store={store} />
+      <App />
   </Provider>,
   document.getElementById('root') as HTMLElement
 );
@@ -369,4 +369,4 @@ After restarting the project you can see that you have a not too stylish but wor
 
 If you are interested in more examples, we've created several todo apps not only with [Reactjs](https://github.com/SenseNet/sn-react-redux-todo-app), but with [Angularjs](https://github.com/SenseNet/sn-angular2-redux-todo-app), [Aureliajs](https://github.com/B3zo0/sn7-aurelia-redux-todo-app) and [Vuejs](https://github.com/SenseNet/sn-vue-redux-todo-app) too, and we are currently working on a [DMS MVP with Reactjs and Redux upon sensenet](http://dms.demo.sensenet.com).
 
-We are open and want to build a great community around sensenet ECM so your opinion is super important to us. Please try, review and comment our work and help us make the world a better place! 😻
+We are open and want to build a great community around sensenet so your opinion is super important to us. Please try, review and comment our work and help us make the world a better place! 😻

@@ -29,16 +29,16 @@ Your only task is to assign employees to different authorities, lists or librari
 ![educate new employees](/img/posts/learn.jpg)
 
 ## How is this supported by a well-organized IT system
-In most companies - probably in yours as well - archiving and organizing documents is one of the biggest problems. In our example **sensenet ECM** handles problems related to storing, security settings, title management, version control, software integration, sharing and formatting at the same time. The data stored this way can also be retrieved easily thanks to the metadata indexing capabilities.
+In most companies - probably in yours as well - archiving and organizing documents is one of the biggest problems. In our example **sensenet** handles problems related to storing, security settings, title management, version control, software integration, sharing and formatting at the same time. The data stored this way can also be retrieved easily thanks to the metadata indexing capabilities.
 
 This is how a unified content management system brings out the most of the digital working environment:
 
 -	Version control: preserving different versions of a document and retrieving an earlier version in case of an error;
--	Office integration: documents in sensenet ECM document libraries can be edited directly in Microsoft Office as well;
+-	Office integration: documents in sensenet document libraries can be edited directly in Microsoft Office as well;
 -	"Shared drive replacement": it is like opening a drive, the libraries in the content repository can be accessed from any kind of file manager (e.g. Windows Explorer or Total Commander) – you don't need to open them in the browser;
 -	Document library title management: you can assign work processes to lists and libraries and you can assign users with different permissions to them;
 -	Check-in / check-out function: no more data loss while you are working on a draft.
 
 There are different kinds of content management systems you can choose from. Do it wisely, because it will dramatically influence your digital experience in the short run 🙂
 
-If you have more questions about sensenet ECM, do not hesitate to [contact us](https://www.sensenet.com/contact), we will be happy to answer your questions!
+If you have more questions about sensenet, do not hesitate to [contact us](https://www.sensenet.com/contact), we will be happy to answer your questions!

@@ -9,7 +9,7 @@ description: This article describes how developers can customize the way we serv
 
 # How to create a custom WebDav provider
 
-sensenet ECM is able to expose the contents of the [Content Repository](/docs/content-repository) on multiple interfaces. For intranet users one of the most important interfaces is [Webdav](/docs/webdav). You can manage files and folders easily, directly in _Windows Explorer_. This article describes how developers can customize the way we serve and manage content through the WebDav interface.
+sensenet is able to expose the contents of the [Content Repository](/docs/content-repository) on multiple interfaces. For intranet users one of the most important interfaces is [Webdav](/docs/webdav). You can manage files and folders easily, directly in _Windows Explorer_. This article describes how developers can customize the way we serve and manage content through the WebDav interface.
 
 ## WebDav provider
 
@@ -27,7 +27,7 @@ Additionally to the basic WebDav protocol, there are methods that you can use to
 
 ## Built-in default WebDav provider
 
-sensenet ECM has a default WebDav provider which is sufficient in most cases. It lists all visible folders and files and throws no exceptions.
+sensenet has a default WebDav provider which is sufficient in most cases. It lists all visible folders and files and throws no exceptions.
 
 ## Custom WebDav provider
 
