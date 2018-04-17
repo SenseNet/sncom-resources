@@ -1,15 +1,15 @@
 ---
-
 title: "Getting started with sensenet using Aurelia Framework"
-author: gallayl
-image: "../img/posts/getting-started-with-aurelia.jpg"
-tags: [aurelia, typescript, authentication, sn-client-js, getting started]
-
+category: Tutorials
+index: 0
+version: v7.0
+tags: [aurelia, client packages, typescript, getting started, step by step, login, browse, frontend]
+description: Step-by-step tutorial to create a single page application with sensenet and aurelia using the client packages
 ---
+
+# Getting started with sensenet using Aurelia Framework
 
 There was a lot of development in the frontent frameworks ecosystem over the last couple of years - and you can use a wide range of them with the latest version of *sensenet*. The following step by step tutorial will guide you how to put it all together - this time with [Aurelia](http://aurelia.io/) and [Typescript](https://www.typescriptlang.org/).
-
----
 
 ## Prerequisites
 
