@@ -9,10 +9,10 @@ description: This article describes the concept of our blob storage and the cust
 
 # Blob provider
 
-In **sensenet** all files are stored in the main [Content Repository](content-repository.md) database by default. All binaries, along with their metadata. In larger projects this can lead to a huge database, which requires a *large data storage* and sometimes additional *server licences*. To aid this scenario sensenet allows you to **store binaries outside of the database**, in an external storage. This article describes the concept of our blob storage and the customization options. Available blob providers for the *Enterprise Edition*:
+In **sensenet** all files are stored in the main [Content Repository](/docs/content-repository.md) database by default. All binaries, along with their metadata. In larger projects this can lead to a huge database, which requires a *large data storage* and sometimes additional *server licences*. To aid this scenario sensenet allows you to **store binaries outside of the database**, in an external storage. This article describes the concept of our blob storage and the customization options. Available blob providers for the *Enterprise Edition*:
 
--   [MongoDB blob provider](https://community.sensenet.com/docs/mongodb-provider)
--   [Azure blob provider](https://community.sensenet.com/docs/azureblob-provider) *(soon to be released)*
+-   [MongoDB blob provider](/docs/mongodb-provider)
+-   [Azure blob provider](/docs/azureblob-provider) *(soon to be released)*
 
 ## Blob storage concept
 
@@ -48,7 +48,7 @@ The blob storage should not allow read and write operations outside of the sense
 
 If you are working in the context of the sensenet Content Repository, you do not have to think about binaries, we handle that in the background (e.g. when you create a File from code). But in case of external tools (e.g. a custom importer or synchronizer tool) developers may use the blob storage API to read and write binaries directly, without having to send them through the REST API of the portal. For details please check the following article:
 
-- [How to access the blob storage directly](https://community.sensenet.com/docs/tutorials/how-to-access-the-blob-storage-directly)
+- [How to access the blob storage directly](/docs/tutorials/how-to-access-the-blob-storage-directly)
 
 ## Built-in blob provider
 
@@ -58,7 +58,7 @@ The built-in blob provider will always be there as a fallback. Currently it supp
 
 It is possible to implement a custom blob storage provider that sends files to an externak storage. For a sample implementation (a local file storage provider) check the following article:
 
-- [How to create an external blob provider](https://community.sensenet.com/docs/tutorials/how-to-create-an-external-blob-provider)
+- [How to create an external blob provider](/docs/tutorials/how-to-create-an-external-blob-provider)
 
 ### Configuration
 
