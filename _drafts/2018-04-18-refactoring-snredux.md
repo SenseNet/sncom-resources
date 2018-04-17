@@ -120,3 +120,13 @@ const handler = new MessageBoxHandler(repository, store)
 Check your custom Reducers that are connected with built-in sn-redux actions.
 
 #### - Some actions have a different order or number of arguments. Please check the API docs 
+
+## What's next
+
+Since the API is ready we can update our React controls package as well.
+
+We also plan to update our command line tool to allow developers fetching their content types from CTDs but before we do that we want to improve the *client-side schema loading*.
+
+Meanwhile we're working on independent components like the [Document viewer](https://github.com/SenseNet/sn-document-viewer-react), creating demo apps like [sn-dms-demo](https://github.com/SenseNet/sn-dms-demo) and trying to provide you more and more docs and tutorials on [sensenet community site](https://community.sensenet.com).
+
+We are open and want to build a great community around sensenet so your opinion is super important to us. Please try, review and comment our work and help us make the world a better place! 😻
