@@ -820,8 +820,11 @@ The content type will be deleted anyway. Before the deletion all dependencies an
 - Content views
 - Allowed child types in all content type headers.
 - Allowed types in all contfigurations of the reference fields.
-#### WARNING
-Pay attention that this step can run very long time depending on the usages of the content type.
+
+>Please make sure that a **StartRepository** step precedes this one to make sure that the repository is started.
+
+>#### WARNING
+>Pay attention that this step can run very long time depending on the usages of the content type.
 
 ## Permissions and security
 Although it is possible to modify content permissions by importing .Content files containing security entries, sometimes it is easier to define permission changes using these specialized steps.
