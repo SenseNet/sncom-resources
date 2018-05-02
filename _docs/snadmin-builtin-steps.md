@@ -782,49 +782,49 @@ If you want to modify the **content handler** of the content type, use this step
 - Default property: *Name*
 - Additional properties: *Delete*
 
-Deletes a content type and its usages. The execution mode depends on the value of the *Delete* property. It can be: No, IfNotUsed, Force
+Deletes a content type and its usages. The execution mode depends on the value of the *Delete* property. Allowed values are:
 
-#### Delete="No"
+- No (default)
+- IfNotUsed
+- Force
+
+#### No
 This is the default execution mode so the following two steps are equal:
 ```xml
 <DeleteContentType name='ContenType1'/>
 <DeleteContentType name='ContenType1' delete='no'/>
 ```
-In this case the step only *simulates* the deletion. Discovers all usages and display them. The step in this mode is suitable for use as a standalone tool that name could be *ContentTypeUsage*.
+In this case the step only *simulates* the deletion, does not execute it. Discovers all usages and displays them.
 
-#### Delete="IfNotUsed"
+#### IfNotUsed
 ```xml
 <DeleteContentType name='ContenType1' delete='ifNotUsed'/>
 ```
-Deletes the content type if it is not used. The "not used" means it content type has "hard" dependencies:
-- There is no any content inherited from this content type.
-- There is no any content type inherited from this content type.
 
-If there is any "hard" dependency, the content type will not be deleted.
+Deletes the content type if it is not used. "Not used" means the content type does not have any "hard" dependencies:
 
-In other case the following usages will be removed before the content type deletion:
-- Content templates
-- Content views
-- Allowed child types in all content type headers.
-- Allowed types in all contfigurations of the reference fields.
-- Allowed child types in all content instances.
+- There are no instances of this type in the repository (except content templates).
+- There is no child content type inherited from this content type.
 
-#### Delete="Force"
+If a hard dependency exists, the content type will not be deleted and only a message will be written to the log.
+
+#### Force
 ```xml
 <DeleteContentType name='ContenType1' delete='force'/>
 ```
-The content type will be deleted anyway. Before the deletion all dependencies ans usages will be deleted:
+The content type will be deleted even if there are dependencies in the repository. Before the deletion all dependencies and usages will be deleted:
+
 - Inherited content types
 - Content instances
 - Content templates
 - Content views
 - Allowed child types in all content type headers.
-- Allowed types in all contfigurations of the reference fields.
+- Allowed types in all CTD contfigurations of reference fields.
+- Allowed child types in all content instances.
 
 >Please make sure that a **StartRepository** step precedes this one to make sure that the repository is started.
 
->#### WARNING
->Pay attention that this step can run very long time depending on the usages of the content type.
+> Please note that this step can take some time to complete depending on the usages of the content type.
 
 ## Permissions and security
 Although it is possible to modify content permissions by importing .Content files containing security entries, sometimes it is easier to define permission changes using these specialized steps.
