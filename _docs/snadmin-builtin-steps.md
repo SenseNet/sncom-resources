@@ -810,6 +810,9 @@ In other case the following usages will be removed before the content type delet
 - Allowed child types in all content instances.
 
 #### Delete="Force"
+```xml
+<DeleteContentType name='ContenType1' delete='force'/>
+```
 The content type will be deleted anyway. Before the deletion all dependencies ans usages will be deleted:
 - Inherited content types
 - Content instances
