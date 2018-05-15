@@ -11,7 +11,7 @@ description: This article describes the way for developers to create a custom ac
 
 sensenet has a powerful feature for defining and accessing content operations called the [Smart Application Model](/docs/smart-application-model). The basic building blocks of this model are actions and applications. The previous articles contain information for portal builders on how to create actions and applications using the built-in method. There is another article for developers about how to create custom actions - it is recommended to read that first. This article describes the way for developers to create a custom action that is accessible through the [OData API of sensenet](/docs/odata-rest-api).
 
-sensenetS is able to publish all of the content in the [Content Repository](/docs/content-repository) through the [OData REST API](/docs/odata-rest-api). In addition, it is possible to publish actions through this API - even custom actions you develop. This is essential for client-side developers: they will be able to access the full power of sensenet through simple OData requests, and will be able to build a totally custom user interface above a robust repository.
+sensenet is able to publish all of the content in the [Content Repository](/docs/content-repository) through the [OData REST API](/docs/odata-rest-api). In addition, it is possible to publish actions through this API - even custom actions you develop. This is essential for client-side developers: they will be able to access the full power of sensenet through simple OData requests, and will be able to build a totally custom user interface above a robust repository.
 
 For a list of built-in actions that are accessible through OData, see [this article](/docs/built-in-odata-actions-and-functions).
 
