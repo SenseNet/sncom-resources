@@ -63,4 +63,27 @@ The method will called when clicking in the delete button. It will ask for confi
 ## Calling custom OData action
 
 As sensenet is a highly customizable development platform, you can [create your own](https://community.sensenet.com/docs/tutorials/how-to-create-a-custom-odata-action/) custom OData actions
-An action usually have a name, a method type (GET or POST if it modifies data), a content in the repository as context, specified parameters and a specified *response type*.
+An action usually have a name, a method type (GET or POST if it modifies data), a content in the repository as context, specified *parameters* and a specified *response type*.
+
+There is an API endpoint for calling custom actions in the [core](https://www.npmjs.com/package/@sensenet/client-core) client package called [executeAction](https://community.sensenet.com/api/@sensenet/client-core/classes/repository.html#executeaction)
+
+If you are using Typescript you can call your actions using the generic parameters: ``TBodyType`` is the type definition for the data you should post and ``TReturns`` will be the response model.
+
+You can also create a wrapper method for your actions - that can be responsible for parameter parsing, content type tightening or just simplify an action call. The following example shows how you can wrap your custom action called "MyAction" that is accessible on User contents and returns a list of users.
+
+```ts
+interface MyActionBody {
+    myActionParameter: string
+}
+
+const myCustomUserAction = (user: User, myActionBody: MyActionBody, oDataOptions: IODataParams<User>) =>
+    myRepository.executeAction<MyActionBody, IODataCollectionResponse<User>>({
+        idOrPath: user.Id || user.Path,
+        method: 'GET',
+        name: 'MyAction',
+        body: myActionBody,
+        oDataOptions,
+    })
+```
+
+Now you can simply call and await the ``myCustomUserAction`` method to trigger your action.
