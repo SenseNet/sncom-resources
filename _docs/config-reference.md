@@ -1,4 +1,15 @@
+---
+title: "Configuration reference"
+source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/config-reference.md'
+category: Development
+version: v7.0.0
+tags: [configuration, sn7]
+description: This article contains a list of all configuration values available in sensenet.
+---
+
 # sensenet configuration reference
+
+This article aims to be a complete list of config values available in all sensenet components. If you need to know more about the features they belong to, please follow the details links next to descriptions if available.
 
 ## **appSettings** section
 ### ChunkSize
