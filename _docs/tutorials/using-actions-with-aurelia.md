@@ -59,11 +59,11 @@ The method will called when clicking in the delete button. It will ask for confi
 
 ## Calling custom OData action
 
-As sensenet is a highly customizable development platform, you can [create your own](https://community.sensenet.com/docs/tutorials/how-to-create-a-custom-odata-action/) custom OData actions.
+As sensenet is a highly customizable development platform, you can [create your own](/docs/tutorials/how-to-create-a-custom-odata-action/) custom OData actions.
 
 An action usually have a name, a method type (GET or POST if it modifies data), a content in the repository as context, specified *parameters* and a specified *response type*.
 
-There is an API endpoint for calling custom actions in the [core](https://www.npmjs.com/package/@sensenet/client-core) client package called [executeAction](https://community.sensenet.com/api/@sensenet/client-core/classes/repository.html#executeaction)
+There is an API endpoint for calling custom actions in the [core](https://www.npmjs.com/package/@sensenet/client-core) client package called [executeAction](/api/@sensenet/client-core/classes/repository.html#executeaction)
 
 If you are using Typescript you can call your actions using the generic parameters: ``TBodyType`` is the type definition for the data you should post and ``TReturns`` will be the response model.
 
@@ -88,6 +88,6 @@ Now you can simply call and await the ``myCustomUserAction`` method to trigger y
 
 ### Actions in the client packages
 
-The @sensenet/client-core package contains shortcuts for common actions like copy, move or delete, [security](https://community.sensenet.com/api/@sensenet/client-core/classes/security.ht) and [versioning](https://community.sensenet.com/api/@sensenet/client-core/classes/versioning.html) related actions.
+The @sensenet/client-core package contains shortcuts for common actions like copy, move or delete, [security](/api/@sensenet/client-core/classes/security.html) and [versioning](/api/@sensenet/client-core/classes/versioning.html) related actions.
 
 You can also use actions with React and Redux, there are already some post and tutorials [here](/blog/2017/09/20/refactoring-sensenet-redux-store) and [here](/docs/tutorials/working-with-actions-in-sensenet-using-reactjs/)
