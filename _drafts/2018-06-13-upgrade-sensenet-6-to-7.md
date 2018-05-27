@@ -26,6 +26,7 @@ Yes, there are some features that we could not take with us to the new platform 
 ### Not available
 - **Tagging**: it was no way for us to keep this feature as it relied on a direct reference to the underlying Lucene indexing implementation and it would not be possible to replace the built-in search provider with a different one
 - **Captcha**: please use one of the common solutions available online
+- **WebContentDemo** type: this content type has been retired. All instances will be converted to Articles during the upgrade, so no data will be lost, but if you have content items of this type *in the file system* (or source control), you have to convert them to articles before you can import them into sensenet 7.
 
 ### Available in a compatibility pack
 The compatibility pack is an API package that will be installed during the upgrade. It contains many retired APIs that will bring at least parts of removed features back. Sometimes they only let you access your data (e.g. tags), in other cases you will still be able to use the full feature.
@@ -69,10 +70,27 @@ In sensenet 7 projects the UI is created using modern technologies (like a one-p
 Let's see how you should approach the upgrade and go through the steps one after the other.
 
 #### Cleanup before the process
+You do not have to delete any built-in system content of course, but if you have unused or unnecessary custom content or custom features, please consider removing them beforehand, it will make the upgrade process faster.
+
 #### Backup everything
+Please make a backup of your **database** and **web folder** too. Not only because it makes sense, but because you will need *both old and new dlls* during the upgrade, as you'll see below.
+
 #### Get the new libraries
+In a sensenet 6 environment you have an old web project with many *manually referenced* libraries. To have a clean slate, please do the following:
+
 - create a new web project
-- install all sensenet component packages
+- install the following sensenet NuGet packages
+   - SenseNet.Services.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.Services.Install.svg)](https://www.nuget.org/packages/SenseNet.Services.Install)
+   - SenseNet.WebPages.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.Install.svg)](https://www.nuget.org/packages/SenseNet.WebPages.Install)
+   - SenseNet.Workspaces.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.Workspaces.Install.svg)](https://www.nuget.org/packages/SenseNet.Workspaces.Install)
+   - SenseNet.Workflow.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.Workflow.Install.svg)](https://www.nuget.org/packages/SenseNet.Workflow.Install)
+   - SenseNet.Notification.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.Notification.Install.svg)](https://www.nuget.org/packages/SenseNet.Notification.Install)
+   - SenseNet.Preview.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.Preview.Install.svg)](https://www.nuget.org/packages/SenseNet.Preview.Install)
+   - SenseNet.Preview.Aspose (for _Enterprise_ customers)
+
+
+> You **do not** have to execute the SnAdmin packages inside them, only install the NuGet packages in Visual Studio! You only need the libraries for now, not a new database.
+
 #### Update and compile your code
 - copy your old code elements to the new project
 - update your code with the API changes in sensenet
