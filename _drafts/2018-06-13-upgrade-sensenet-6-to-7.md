@@ -66,6 +66,11 @@ In sensenet 7 projects the UI is created using modern technologies (like a one-p
 
 > After upgrading please consider replacing your existing UI gradually with a new one built on newer technologies.
 
+### New recommendation for tools
+Previously we encouraged creating separate command line tools if you needed to access the repository and modify content items. In sensenet 7 it is more advisable to make use of [SnAdmin](/docs/snadmin) as the packaging tool that can be extended by custom steps deployed in .Net libraries. We also offer built-in [SnAdmin tools](/docs/snadmin-tools) (that are really just built-in one-line wrapper packages around snadmin steps) for the same operations as before: importing/exporting content or re-indexing the repository.
+
+> So please do not deploy command line tools into the `web\Tools` folder anymore. Create SnAdmin custom steps instead, as this simplifies starting the repository and configuring the environment.
+
 ## The upgrade process
 Let's see how you should approach the upgrade and go through the steps one after the other.
 
@@ -91,8 +96,51 @@ In a sensenet 6 environment you have an old web project with many *manually refe
 
 > You **do not** have to execute the SnAdmin packages inside them, only install the NuGet packages in Visual Studio! You only need the libraries for now, not a new database.
 
+If you have additional libraries (business logic in non-web projects), you should create new projects for every one of them too, and install the dll-only versions of the necessary sensenet NuGet packages. For example, if you need the main sensenet references in your library, you should install the `SenseNet.Services` package (and _not_ the SenseNet.Services._Install_ package, because that is needed only once, in the web project). If you need the Workflow dlls of sensenet, install the `SenseNet.Workflow` package - and so on.
+
 #### Update and compile your code
-- copy your old code elements to the new project
-- update your code with the API changes in sensenet
+- copy your old code (classes, etc., everything) to the new project
+- add the additional NuGet packages needed by your custom code
+- update your code with the API changes in sensenet (if you encounter changes that you cannot resolve, please contact us or query the community resources for advice)
+- compile your library and copy it to the `Customization\bin` subfolder of the **first package** (`sn-patch-6.5.4-7.1-part1.zip`).
+
+> Yes, you'll have to **modify the package by adding your libraries**. This is the easiest way to make sure that no old code remains in the web folder and the new version of your code gets copied there at the right time.
+
+Please make sure you do not copy or compile these new libraries into the working web folder, because the upgrade packages need the old environment, including old libraries.
+
 #### Execute the first package
+You'll have to execute the two packages in the **old web folder**. The new web project that you created in the previous step is just for compiling the new libraries, at least for now. Later you can move on to use it as the new web folder, but during the patch please work in the old one.
+
+> The reason behind having two packages is that the patch structure itself changed since version 6 and they are not compatible.
+
+- make sure that the `web\Tools\SnAdminRuntime.exe.config` file contains the correct connection string and (in case of an nlb environment all network targets - other web servers - are listed in the config)
+- copy the patch to the `web\Admin` folder
+- execute the patch using SnAdmin
+
+```txt
+snadmin sn-patch-6.5.4-7.1-part1.zip
+```
+
+Please review the execution logs in the `web\Admin\log` folder to make sure everything looks fine.
+
+- copy the new SnAdmin executable
+   - delete all files in the old `web\Admin\bin` folder
+   - copy the new SnAdmin executable and related files from the new web project's `web\Admin\bin` folder to the old one
+
+Now the environment is ready for executing the second package.
+
 #### Execute the second package
+
+- if possible, create a backup of this state (even though the portal is not usable at this point, you cannot start it as it is in a half-state)
+- execute the second patch using SnAdmin
+
+```txt
+snadmin sn-patch-6.5.4-7.1-part2.zip
+```
+
+Please review the execution logs in the `web\Admin\log` folder to make sure no errors occurred. At this point you should be able to start the site, but it is advisable to clean up the environment as the last step.
+
+#### Cleanup the solution
+As we created a new web project before, please copy the `web.config` and `web\Tools\SnAdminRuntime.exe.config` from the old web folder (where they were updated during the upgrade process!) to the new one.
+
+You should delete old projects and use the new web project from now on.
