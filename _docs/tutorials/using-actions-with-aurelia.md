@@ -9,11 +9,11 @@ description: Step-by-step tutorial with sensenet actions using the client packag
 
 # Using sensenet actions with the client packages and Aurelia Framework
 
-Custom OData actions can be useful if you want to execute a bulk action, implement transaction logic or want to use elevation. You can also execute them in an easy and straightforward way with the sensenet client packages.
+Custom OData actions can be useful if you want to execute a bulk action, implement transaction logic or want to use elevation. You can also execute them in an easy and straightforward way using the sensenet client packages.
 
 ## A simple example: deleting a content
 
-As we know [how to start working with sensenet on the frontend with the client packages and aurelia](/docs/tutorials/starting-out-with-aurelia/), we can continue our example application with calling a simple OData action - deleting a content.
+As we know [how to start working with sensenet on the frontend with the client packages and aurelia](/docs/tutorials/starting-out-with-aurelia/), we can continue improving our example application by calling a simple OData action - deleting a content.
 
 ### Updating a template
 
@@ -39,7 +39,7 @@ As the fist step we modify the template of the *content-list* component and add 
 
 ### Calling the Delete action
 
-Calling a sensenet action is easy: You have to call and *await* an async method. We can do that in the view-model of the *content-list* component, adding the following *delete()* method:
+Calling a sensenet action is easy: you have to call and *await* an async method. We can do that in the view-model of the *content-list* component, adding the following *delete()* method:
 
 ```ts
 async delete(item: GenericContent) {
@@ -55,7 +55,7 @@ async delete(item: GenericContent) {
     }
 }
 ```
-The method will be called by clicking the delete button. It will ask for confirmation, execute delete action and trigger a reload.
+The method will be called by clicking the delete button. It will ask for confirmation, execute the delete action and trigger a reload.
 
 ## Execute a custom OData action
 
@@ -90,4 +90,4 @@ Now you can simply call and await ``myCustomUserAction`` method to trigger your 
 
 The @sensenet/client-core package contains shortcuts for common actions like copy, move or delete, [security](/api/@sensenet/client-core/classes/security.html) and [versioning](/api/@sensenet/client-core/classes/versioning.html) related actions.
 
-You can also use actions with React and Redux, there are already some post and tutorials [here](/blog/2017/09/20/refactoring-sensenet-redux-store) and [here](/docs/tutorials/working-with-actions-in-sensenet-using-reactjs/) about this topic.
+You can also use actions with React and Redux, there are already some posts and tutorials [here](/blog/2017/09/20/refactoring-sensenet-redux-store) and [here](/docs/tutorials/working-with-actions-in-sensenet-using-reactjs/) about this topic.
