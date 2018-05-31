@@ -3,18 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@sensenet/redux</title>
+	<title>&quot;Schema&quot; | @sensenet/redux</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico"/>
+	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js " data-base="
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js " data-base="../
 				">
 				<div class="field">
 					<label class="fa fa-search tsd-widget search no-caption" for="tsd-search-field"></label>
@@ -24,16 +24,16 @@
 					<li class="state loading">Preparing search index...</li>
 					<li class="state failure">The search index is not available</li>
 				</ul>
-				<a href="index.html" class="title">
-					<img src="assets/images/sensenet-logo.png" alt="@sensenet/redux" />
+				<a href="../index.html" class="title">
+					<img src="../assets/images/sensenet-logo.png" alt="@sensenet/redux" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../community">Community</a>
-					<a class="site-header-nav-item " href="../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -66,11 +66,14 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<h1>  @sensenet/redux
+			<h1>External module  &quot;Schema&quot;
 			</h1>
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="globals.html">Globals</a>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<span>&quot;Schema&quot;</span>
 				</li>
 			</ul>
 		</div>
@@ -79,19 +82,85 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dd><p>Schema</p>
+						</dd>
+						<dd><p>This module is for defining Content and Collection schemas to normalize nested JSON response data in redux state store.</p>
+							<p>Normalizr takes JSON and a schema and replaces nested entities with their IDs, gathering all entities in dictionaries.</p>
+							<ul>
+								<li>Entities can be nested inside other entities, objects and arrays;</li>
+								<li>Combine entity schemas to express any kind of API response;</li>
+								<li>Entities with same IDs are automatically merged (with a warning if they differ);</li>
+								<li>Allows using a custom ID attribute (e.g. slug).</li>
+							</ul>
+							<p>Read more about normalizr <a href="https://github.com/paularmstrong/normalizr">here</a></p>
+							<p>Since everything is a Content in sensenet we&#39;re working with Content and collection of Content in most of the cases. So the sn-redux Schemas module defines the two
+								neccessarry main schema, content and arrayofContent to work with. This two schemas help you to normalize your JSON responses so that you can create a pure and flexible
+							client-side datasource.</p>
+							<p>Example of normalizing the JSON response of a SenseNet OData Action for fetching Content as arrayOfContent schema which will create an entities object.</p>
+							<pre><code class="lang-ts"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> requestContent = &lt;T <span class="hljs-keyword">extends</span> IContent = IContent&gt;<span class="hljs-function">(<span class="hljs-params">path: <span class="hljs-built_in">string</span>, options: IODataParams&lt;T&gt; = {}</span>) =&gt;</span> ({
+ <span class="hljs-keyword">type</span>: <span class="hljs-string">'FETCH_CONTENT'</span>,
+ <span class="hljs-keyword">async</span> payload(repository: Repository) {
+     <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> repository.loadCollection({
+         path,
+         oDataOptions: options,
+     })
+     <span class="hljs-keyword">return</span> normalize(data.d.results, Schemas.arrayOfContent)
+  },
+})
+</code></pre>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>External modules</h3>
+							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-external-module"><a href="modules/_actions_.html" class="tsd-kind-icon">"<wbr>Actions"</a></li>
-								<li class="tsd-kind-external-module"><a href="modules/_reducers_.html" class="tsd-kind-icon">"<wbr>Reducers"</a></li>
-								<li class="tsd-kind-external-module"><a href="modules/_schema_.html" class="tsd-kind-icon">"<wbr>Schema"</a></li>
-								<li class="tsd-kind-external-module"><a href="modules/_store_.html" class="tsd-kind-icon">"<wbr>Store"</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_schema_.html#arrayofcontent" class="tsd-kind-icon">array<wbr>OfContent</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_schema_.html#contentitem" class="tsd-kind-icon">content<wbr>Item</a></li>
 							</ul>
 						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="arrayofcontent" class="tsd-anchor"></a>
+					<h3>array<wbr>OfContent</h3>
+					<div class="tsd-signature tsd-kind-icon">array<wbr>OfContent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol"> =&nbsp;new schema.Array(contentItem)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Schema.ts#L46">Schema.ts:46</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Schema of a Collection.</p>
+						</div>
+						<p>It represents the <code>children</code> object of the sensenet redux store. It&#39;s a parent element of the Content items so it is defined as array of items with the schema content.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="contentitem" class="tsd-anchor"></a>
+					<h3>content<wbr>Item</h3>
+					<div class="tsd-signature tsd-kind-icon">content<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Entity</span><span class="tsd-signature-symbol"> =&nbsp;new schema.Entity(&#x27;entities&#x27;, {}, { idAttribute: &#x27;Id&#x27; })</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Schema.ts#L40">Schema.ts:40</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Schema of a Content.</p>
+						</div>
+						<p>It represents an item in the entities Object of the sensenet redux store. The items are identified by the attribute &#39;Id&#39;.</p>
 					</div>
 				</section>
 			</section>
@@ -99,25 +168,31 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals current ">
-						<a href="globals.html"><em>Globals</em></a>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_actions_.html">"<wbr>Actions"</a>
+						<a href="_actions_.html">"<wbr>Actions"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_reducers_.html">"<wbr>Reducers"</a>
+						<a href="_reducers_.html">"<wbr>Reducers"</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="_schema_.html">"<wbr>Schema"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_schema_.html">"<wbr>Schema"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_store_.html">"<wbr>Store"</a>
+						<a href="_store_.html">"<wbr>Store"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_schema_.html#arrayofcontent" class="tsd-kind-icon">array<wbr>OfContent</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_schema_.html#contentitem" class="tsd-kind-icon">content<wbr>Item</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -187,7 +262,7 @@
 	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>
