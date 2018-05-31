@@ -105,6 +105,7 @@
  Displayname: <span class="hljs-symbol">'Other</span> Article',
  Status: [<span class="hljs-symbol">'Completed</span>']
 }]
+
 </code></pre><p>is normalized to</p>
 							<pre><code><span class="hljs-attribute">results</span>: [<span class="hljs-number">5145</span>, <span class="hljs-number">5146</span>],
 <span class="hljs-attribute">entities</span>: {
@@ -185,6 +186,7 @@ rootReducer: myReducer
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#approve" class="tsd-kind-icon">approve</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#changefieldvalue" class="tsd-kind-icon">change<wbr>Field<wbr>Value</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#checkin" class="tsd-kind-icon">check<wbr>In</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#checkloginstate" class="tsd-kind-icon">check<wbr>Login<wbr>State</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#checkout" class="tsd-kind-icon">check<wbr>Out</a></li>
@@ -196,6 +198,7 @@ rootReducer: myReducer
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#deletebatch" class="tsd-kind-icon">delete<wbr>Batch</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#deletecontent" class="tsd-kind-icon">delete<wbr>Content</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#forceundocheckout" class="tsd-kind-icon">force<wbr>Undo<wbr>Checkout</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#getschema" class="tsd-kind-icon">get<wbr>Schema</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="actions.html#loadcontent" class="tsd-kind-icon">load<wbr>Content</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#loadcontentactions" class="tsd-kind-icon">load<wbr>Content<wbr>Actions</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="actions.html#loadrepository" class="tsd-kind-icon">load<wbr>Repository</a></li>
@@ -230,7 +233,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L328">Actions.ts:328</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L329">Actions.ts:329</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -278,7 +281,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L331">Actions.ts:331</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L332">Actions.ts:332</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -294,6 +297,58 @@ rootReducer: myReducer
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="changefieldvalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> change<wbr>Field<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">change<wbr>Field<wbr>Value<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L528">Actions.ts:528</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Action creator for changing a field value of a content</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Name of the field.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Value of the field.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="checkin" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>In</h3>
@@ -304,7 +359,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L300">Actions.ts:300</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L301">Actions.ts:301</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -360,7 +415,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L303">Actions.ts:303</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L304">Actions.ts:304</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -386,7 +441,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L398">Actions.ts:398</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L399">Actions.ts:399</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -414,7 +469,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L285">Actions.ts:285</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L286">Actions.ts:286</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -462,7 +517,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L288">Actions.ts:288</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L289">Actions.ts:289</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -488,7 +543,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L489">Actions.ts:489</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L494">Actions.ts:494</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -516,7 +571,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L243">Actions.ts:243</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L244">Actions.ts:244</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -553,7 +608,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L246">Actions.ts:246</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L247">Actions.ts:247</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -579,7 +634,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L229">Actions.ts:229</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L230">Actions.ts:230</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -621,7 +676,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L232">Actions.ts:232</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L233">Actions.ts:233</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -647,7 +702,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L173">Actions.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L174">Actions.ts:174</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -703,7 +758,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L176">Actions.ts:176</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L177">Actions.ts:177</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -729,7 +784,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L481">Actions.ts:481</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L486">Actions.ts:486</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -766,7 +821,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L215">Actions.ts:215</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L216">Actions.ts:216</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -808,7 +863,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L218">Actions.ts:218</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L219">Actions.ts:219</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -834,7 +889,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L201">Actions.ts:201</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L202">Actions.ts:202</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -876,7 +931,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L204">Actions.ts:204</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L205">Actions.ts:205</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -902,7 +957,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L371">Actions.ts:371</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L372">Actions.ts:372</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -950,7 +1005,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L374">Actions.ts:374</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L375">Actions.ts:375</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -960,6 +1015,65 @@ rootReducer: myReducer
 												</li>
 											</ul>
 											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IODataResponse</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+										</li>
+								</ul>        </li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getschema" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Schema</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Schema<span class="tsd-signature-symbol">(</span>typeName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L537">Actions.ts:537</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Action creator for loading schema of a given type</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>typeName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Name of the Content Type.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>payload<span class="tsd-signature-symbol">: </span>function</h5>
+									<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal tsd-is-not-exported">
+										<li class="tsd-signature tsd-kind-icon">payload<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Repository</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Schema</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<aside class="tsd-sources">
+												<ul>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L539">Actions.ts:539</a></li>
+												</ul>
+											</aside>
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>repository: <span class="tsd-signature-type">Repository</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Schema</span></h4>
 										</li>
 								</ul>        </li>
 							</ul>
@@ -976,7 +1090,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L144">Actions.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L145">Actions.ts:145</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1024,7 +1138,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L147">Actions.ts:147</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L148">Actions.ts:148</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1050,7 +1164,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L158">Actions.ts:158</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L159">Actions.ts:159</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1092,7 +1206,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L161">Actions.ts:161</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L162">Actions.ts:162</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1118,7 +1232,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L463">Actions.ts:463</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L468">Actions.ts:468</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1160,7 +1274,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L271">Actions.ts:271</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L272">Actions.ts:272</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1197,7 +1311,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L274">Actions.ts:274</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L275">Actions.ts:275</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1223,7 +1337,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L257">Actions.ts:257</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L258">Actions.ts:258</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1265,7 +1379,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L260">Actions.ts:260</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L261">Actions.ts:261</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1291,7 +1405,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L314">Actions.ts:314</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L315">Actions.ts:315</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1339,7 +1453,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L317">Actions.ts:317</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L318">Actions.ts:318</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1365,7 +1479,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L343">Actions.ts:343</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L344">Actions.ts:344</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1421,7 +1535,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L346">Actions.ts:346</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L347">Actions.ts:347</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1447,7 +1561,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L127">Actions.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L128">Actions.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1495,7 +1609,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L130">Actions.ts:130</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L131">Actions.ts:131</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1521,7 +1635,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L386">Actions.ts:386</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L387">Actions.ts:387</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1577,7 +1691,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L389">Actions.ts:389</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L390">Actions.ts:390</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1603,7 +1717,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L472">Actions.ts:472</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L477">Actions.ts:477</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1640,7 +1754,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L357">Actions.ts:357</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L358">Actions.ts:358</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1688,7 +1802,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L360">Actions.ts:360</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L361">Actions.ts:361</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1714,7 +1828,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L187">Actions.ts:187</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L188">Actions.ts:188</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1762,7 +1876,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L190">Actions.ts:190</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L191">Actions.ts:191</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1788,7 +1902,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L502">Actions.ts:502</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L507">Actions.ts:507</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1843,7 +1957,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L505">Actions.ts:505</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L510">Actions.ts:510</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1869,7 +1983,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L406">Actions.ts:406</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L407">Actions.ts:407</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1911,7 +2025,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L416">Actions.ts:416</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L417">Actions.ts:417</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1953,7 +2067,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L419">Actions.ts:419</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L420">Actions.ts:420</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1973,13 +2087,13 @@ rootReducer: myReducer
 					<a name="userlogingoogle" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> user<wbr>Login<wbr>Google</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">user<wbr>Login<wbr>Google<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+						<li class="tsd-signature tsd-kind-icon">user<wbr>Login<wbr>Google<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GoogleOauthProvider</span>, token<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L443">Actions.ts:443</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L444">Actions.ts:444</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1987,12 +2101,42 @@ rootReducer: myReducer
 									<p>Action creator for login a user to a sensenet portal with her google account.</p>
 								</div>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>provider: <span class="tsd-signature-type">GoogleOauthProvider</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> token: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
 							<p>Returns a redux action.</p>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter">
 									<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 								</li>
+								<li class="tsd-parameter">
+									<h5>payload<span class="tsd-signature-symbol">: </span>function</h5>
+									<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal tsd-is-not-exported">
+										<li class="tsd-signature tsd-kind-icon">payload<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Repository</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<aside class="tsd-sources">
+												<ul>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L446">Actions.ts:446</a></li>
+												</ul>
+											</aside>
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>repository: <span class="tsd-signature-type">Repository</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+										</li>
+								</ul>        </li>
 							</ul>
 						</li>
 					</ul>
@@ -2007,7 +2151,7 @@ rootReducer: myReducer
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L450">Actions.ts:450</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L455">Actions.ts:455</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2030,7 +2174,7 @@ rootReducer: myReducer
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/f13e0df/src/Actions.ts#L453">Actions.ts:453</a></li>
+													<li>Defined in <a href="https://github.com/SenseNet/sn-redux/blob/5b9956f/src/Actions.ts#L458">Actions.ts:458</a></li>
 												</ul>
 											</aside>
 											<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2073,6 +2217,9 @@ rootReducer: myReducer
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="actions.html#approve" class="tsd-kind-icon">approve</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="actions.html#changefieldvalue" class="tsd-kind-icon">change<wbr>Field<wbr>Value</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="actions.html#checkin" class="tsd-kind-icon">check<wbr>In</a>
 					</li>
@@ -2105,6 +2252,9 @@ rootReducer: myReducer
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="actions.html#forceundocheckout" class="tsd-kind-icon">force<wbr>Undo<wbr>Checkout</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="actions.html#getschema" class="tsd-kind-icon">get<wbr>Schema</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="actions.html#loadcontent" class="tsd-kind-icon">load<wbr>Content</a>
