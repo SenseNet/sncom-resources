@@ -2,18 +2,39 @@
 {% assign url_parts_size = url_parts | size %}
 {% assign rm = url_parts | last %}
 {% assign base_url = page.url | replace: rm %}
+{% assign guides = site.guides | sort: 'index' %}
+{% assign class = 'link' %}
 
 <div class="guide-tree-menu">
     <ul>
-        {% for node in site.docs %}
-          {% if node.url contains base_url %}
-            {% assign node_url_parts = node.url | split: '/' %}
+        {% for node in guides %}
+            {% assign node_url_parts = node.permalink | split: '/' %}
             {% assign node_url_parts_size = node_url_parts | size %}
             {% assign filename = node_url_parts | last %}
-            {% if url_parts_size == node_url_parts_size and filename != 'index.html' %}
-              <li><a href='{{node.url}}'>{{node.title}}</a></li>
+            {% if node_url_parts_size == 3 and filename != 'index.html' %}
+              {% if node.permalink == page.url %}
+                {% assign class = 'active' %}
+              {% else %}
+                {% assign class = 'link' %}
+              {% endif %}
+              <li><a href='{{node.url}}' class='{{class}}'>{{node.title}}</a>
+                <ul>
+                  {% for guide in guides %}
+                    {% assign guide_url_parts = guide.permalink | split: '/' %}
+                    {% assign guide_url_parts_size = guide_url_parts | size %}
+                    {% assign filename2 = guide_url_parts | last %}
+                    {% if guide.permalink == page.url %}
+                      {% assign class = 'active' %}
+                    {% else %}
+                      {% assign class = 'link' %}
+                    {% endif %}
+                    {% if guide_url_parts_size == 4 and guide_url_parts contains node_url_parts.last and filename2 != 'index.html' %}
+                      <li><a class='{{class}}' href='{{guide.url}}'>{{guide.title}}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              </li>
             {% endif %}
-          {% endif %}
         {% endfor %}
     </ul>
 </div>
