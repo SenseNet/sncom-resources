@@ -1,7 +1,7 @@
 <nav class="site-header-nav">
     {% capture first_segment %}{{ page.url | remove_first: "/" | split: "/" | first }}{% endcapture %}
     <a class="site-header-nav-item {% if first_segment == 'docs' %}active{% endif %}" href="{{ site.baseurl }}/docs/">Docs</a>
-    <a class="site-header-nav-item {% if first_segment == 'guide' %}active{% endif %}" href="{{ site.baseurl }}/guide/">Guide</a>
+    <a class="site-header-nav-item {% if first_segment == 'guides' %}active{% endif %}" href="{{ site.baseurl }}/guides/introduction">Guide</a>
     <a class="site-header-nav-item {% if first_segment == 'tutorials' %}active{% endif %}" href="{{ site.baseurl }}/tutorials/">Tutorials</a>
     <a class="site-header-nav-item {% if first_segment == 'blog' %}active{% endif %}" href="{{ site.baseurl }}/blog/">Blog</a>
     <a class="site-header-nav-item {% if first_segment == 'community' %}active{% endif %}" href="{{ site.baseurl }}/community/">Community</a>

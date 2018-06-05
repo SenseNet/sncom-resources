@@ -4,6 +4,11 @@
     text-align: center;
     background-color: #fff;
     border-bottom: 1px solid #e8e8e8;
+    height: 68px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
 }
 
 .site-header .container .logo {
