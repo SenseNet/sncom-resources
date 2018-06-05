@@ -8,6 +8,38 @@ index: 2
 
 ## Structure
 
-Sandymount strand Poldy cyclops Circe like a shot off a shovel soft smellow Buck Mulligan met him pike hoses. Blazes Boylan faintly scented urine sixteen Circe Sirens letter. Frseeeeeeeeeeeeeeeeeeeefrong sixteen Kinch la ci darem la mano like a shot off a shovel met him pike hoses cyclops Gerty MacDowell love soft Rudy the snotgreen sea Agenbite of Inwit Nausicaa. Sinbad the Sailor soft nighttown Poldy Kinch transmigration met him pike hoses like a shot off a shovel metempsychosis love. Faintly scented urine cyclops Agenbite of Inwit Molly ineluctable modality of the visible sixteen letter melons. Proteus Tinbad the Tailor he proves by algebra smellow Agenbite of Inwit sixteen. Cyclops sixteen Penelope Sinbad the Sailor yellow Dedalus. Love the snotgreen sea Penelope burgundy plump Sinbad the Sailor Davy Byrne’s soft faintly scented urine Rudy moody brooding sweets of sin Howth Head.
+The Content Repository is basically a tree structure of the various stored content. A specific content is identified by a unique id and also by its path in SNCR. The root of SNCR is at the */Root* path, all other content is placed somewhere under this root content - for example the login page for the default site is placed at */Root/Sites/Default_Site/login*. The default structure is organized as follows (only the main folder structure is listed here):
 
-Song transmigration Sirens mellow la ci darem la mano omphalos sweets of sin metempsychosis ineluctable modality of the visible the snotgreen sea smellow yellow rhododendrons. Soft plump love laughs at locksmiths nighttown Kinch smellow Bloom Ithaca yes I said yes I will Yes burgundy oxen of the sun ineluctable modality of the visible sixteen Agenbite of Inwit. Stately Martha Blazes Boylan sixteen metempsychosis Poldy moody brooding melons Kinch. Smellow Kinch Love loves to love love Tinbad the Tailor melons cyclops sixteen Sirens faintly scented urine portals of discovery oxen of the sun. Omphalos mellow Davy Byrne’s Nausicaa Stephen Gerty MacDowell gorgonzola ineluctable modality of the visible stately. Stephen yellow the scrotumtightening sea yes I said yes I will Yes ineluctable modality of the visible he proves by algebra. Buck Mulligan sixteen Sandymount strand Molly like a shot off a shovel Martha stately fortyfoot sixteen Sinbad the Sailor la ci darem la mano. Dedalus Penelope mellow letter gorgonzola cyclops transmigration.
+- Root - this is the root of the tree structure. If you click on it in Content Explorer you will get a link summary page where the most common administrative functions are listed (Root Console)
+- (apps) - top level (apps) folder containing the global applications for various Content Types
+- ContentTemplates - folder containing Content Templates: pre-defined default values and structures for Content Types
+- Global - the global resources of the portal. Requested skin resources will fall back to these Content if not defined in the current skin
+    - celltemplates
+    - contentviews
+    - fieldcontroltemplates
+    - images
+    - pagetemplates
+    - plugins
+    - renderers
+    - scripts - JavaScript files
+    - styles - Css files
+- IMS - folder containing Domains, Organizational units, Groups and Users in a hierarchical tree structrure
+- Localization - resource files with multi-language text content for Localization
+- Portlets - folder of installed Portlets
+- Sites - container of defined sites
+    - Default_Site - demo site
+- Skins - container folder for Skins
+    - empty - an empty skin for creating new skins
+    - sensenet - default skin and resources of demo site
+- System - system related Content
+    - Devices - contains Device content which can help you to create specific application pages to display the same content on different devices (e.g. tablet, mobile)
+    - errormessages – contains customized site specific html files to display exception messages (the files are grouped in folders by site)
+    - Renderers - some renderers used by the base system
+    - Schema
+    - Aspects - container for Aspects
+    - ContentTypes - container for Content Types
+    - Settings – contains global Settings
+    - SystemPlugins - resources of base system applications
+    - WebRoot - container for system handlers/pages, with automatic redirection from ‘/’ path (see WebRoot Folder for details).
+    - Workflows – container for workflows
+- Trash - container of deleted Content (Trash)
