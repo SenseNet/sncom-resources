@@ -1,0 +1,33 @@
+--- 
+layout: guideslayout 
+---
+
+<section class='page-section guides strong-headers'>
+  <div>
+    <aside class="guide-menu-side">
+      <div>
+        <input type="search" placeholder="Search in sensenet Guide" />
+      </div>
+      {% include guidemenu.html %}
+    </aside>
+    <!-- <ul class="docs-tags">
+      {% for tag in page.tags %}
+      <li class="docs-tag"><i class="fa fa-tag"></i><a href="/tags#{{ tag }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul> -->
+    <article>
+      <div class="article-inner">
+        {{ content }} {% if page.category != 'ignore' %}
+
+        <div class="guides-contact">
+          <p>Is something missing? See something that needs fixing? Propose a change
+            <a target="_blank" href='{{ page.source_url }}'>
+              <strong>here</strong>
+            </a>.</p>
+        </div>
+        {% endif %}
+      </div>
+
+    </article>
+  </div>
+</section>
