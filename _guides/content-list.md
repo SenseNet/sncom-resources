@@ -3,7 +3,7 @@ title:  "Content List"
 tags: [list, content list, content, expando field]
 description: Aspect
 permalink: /guides/content-type-system/content-list
-index: 6
+index: 7
 ---
 
 ## Content list
