@@ -40,11 +40,11 @@ We are currently in the middle of rewriting our activity queue to fulfill the re
 -   in a completely different subtree somebody uploads 5 documents, than renames their parent folder. This creates the **A5-A11** activities. A5-A9 are independent so they can be executed in parallel, but A10 and A11 have to wait for them.
 
 The execution time of our test activities vary and naturally the 'tree' activities take longer to execute. Here is the dependency list of the activities above:
->A2 waits for A1
->A3 waits for A1, A2
->A4 waits for A1, A2, A3
->A10 waits for A5, A6, A7, A8, A9
->A11 waits for A5, A6, A7, A8, A9, A10
+A2 waits for A1\s\s
+A3 waits for A1, A2\s\s
+A4 waits for A1, A2, A3\s\s
+A10 waits for A5, A6, A7, A8, A9\s\s
+A11 waits for A5, A6, A7, A8, A9, A10\s\s
 
 To simulate a non-deterministic environment, we added the activities to the queue in a different order than they were created.
 
