@@ -9,7 +9,7 @@ Based on our former experience with the pickers in Sense/Net and on our UX resea
 
 ---
 
-Based on our former experience with the pickers in Sense/Net and on our UX researches, it was clear that the picker should be revamped in terms of both usability and customizability, to give developers a configurable and maintainable tool. We decided to rewrite the whole plugin, change the different built-in third party stuff to KendoUI widgets, as this way we’re able to offer a more customizable but also more unified and clear solution to both developers and end-users in all use cases, such as Content, User or Portlet picking.
+We decided to rewrite the whole plugin, change the different built-in third party stuff to KendoUI widgets, as this way we’re able to offer a more customizable but also more unified and clear solution to both developers and end-users in all use cases, such as Content, User or Portlet picking.
 
 ## KendoUI based parts
 
