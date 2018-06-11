@@ -9,8 +9,6 @@ To fulfill an important need of Sense/Net users that were reported towards us se
 
 ---
 
-To fulfill an important need of Sense/Net users that were reported towards us several times recently, we have been developing a brand new, nice and easy-to-use feature in the Product. This is a Survey-editor application, which is being built to be fully customizable and extendable via the templated structure.
-
 ## Creating the UI
 
 With the use of this integrated app you can build your own Survey through a graphic user interface, with no coding skills. Solely by clicking, users can put together all necessary elements of their Survey, and configure them according to their actual needs.
