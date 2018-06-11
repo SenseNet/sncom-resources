@@ -5,11 +5,9 @@ image: "/img/posts/puzzle.jpg"
 tags: [ux, card sorting, test results, portlet structure]
 ---
 
-Thank you guys for taking your time and completing our test! The result was quite instructive for us. It provided us a solid starting point for us to design the new architecture of the portlet system in SN7.
+First of all, thank you guys for taking your time and completing our test! The result was quite instructive for us. It provided us a solid starting point to design the new architecture of the portlet system in SN7.
 
 ---
-
-First of all, thank you guys for taking your time and completing our test! The result was quite instructive for us. It provided us a solid starting point for us to design the new architecture of the portlet system in SN7.
 
 By analyzing the results of the Card sorting test, we learned a lot about how end users and developers are related to the portlets in Sense/Net, since both groups were represented as participants in the test.
 
