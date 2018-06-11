@@ -153,7 +153,7 @@ As you could have read in [previous blog posts](https://blog.sensenet.com/admin/
 
 ## Templating
 
-As long as we build in KendoUI plugins into the picker, we’re able to use its templating in them. This allows you to customize the markup of a grid row or a thumbnail item through plugins ’templates’ config section. For now, there’re some limitations related to these templates because the grid and the thumbnail view uses and displays a limited number of Fields. Later, we will allow you to list the fields that you want to display and then you will able to add fully custom templates with KendoUI’s templating syntax. Now you’re only able to add some additional classes and change the markup in a way you keep the Kendo variables.
+As long as we build in KendoUI plugins into the picker, we’re able to use its templating in them. This allows you to customize the markup of a grid row or a thumbnail item through plugins ’templates’ config section. For now, there’re some limitations related to these templates because the grid and the thumbnail view uses and displays a limited number of Fields. Later, we will allow you to list the fields that you want to display and then you will be able to add fully custom templates with KendoUI’s templating syntax. Now you’re only able to add some additional classes and change the markup in a way you keep the Kendo variables.
 
 ![Bootstrap grid on tablet](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletbootstrapthumb.png "Bootstrap grid on tablet")
 
