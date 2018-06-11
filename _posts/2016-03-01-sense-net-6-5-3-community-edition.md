@@ -25,13 +25,13 @@ This is a huge improvement for projects where there are many activities happenin
 
 Finally, developers get the chance to customize the behaviour of the system when a content name must be generated (e.g. from the display name or when you upload a document). We offer two built-in [content naming providers](http://wiki.sensenet.com/ContentNamingProvider) for you to choose from, but of course you can develop your own too.
 
--   [Content naming](http://wiki.sensenet.com/Content_naming>)
+-   [Content naming](http://wiki.sensenet.com/Content_naming)
 
 ## Login through OData
 
-This is a first step toward a more open content repository: now it is possible to log in to the portal through our [OData REST API](http://wiki.sensenet.com/OData_REST_API>). This is useful for custom mobile applications or 3rd party portals that want to access the Content Repository using [cross-origin ajax calls](http://wiki.sensenet.com/Cross-origin_resource_sharing>).
+This is a first step toward a more open content repository: now it is possible to log in to the portal through our [OData REST API](http://wiki.sensenet.com/OData_REST_API>). This is useful for custom mobile applications or 3rd party portals that want to access the Content Repository using [cross-origin ajax calls](http://wiki.sensenet.com/Cross-origin_resource_sharing).
 
--   [Login action](http://wiki.sensenet.com/Built-in_OData_actions_and_functions#Login_action_-_from_version_6.5.3>)
+-   [Login action](http://wiki.sensenet.com/Built-in_OData_actions_and_functions#Login_action_-_from_version_6.5.3)
 
 ## Give it a go!
 
