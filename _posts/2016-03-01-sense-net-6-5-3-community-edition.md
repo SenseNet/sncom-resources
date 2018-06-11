@@ -9,8 +9,6 @@ A new public Community Edition is available for Sense/Net ECM! As always, we off
 
 ---
 
-A new public Community Edition is available for Sense/Net ECM! As always, we offer new features and many bug fixes.
-
 Please review the changes and new features and give a feedback on [our forum](http://forum.sensenet.com/>)!
 
 ## Main new features
