@@ -28,7 +28,7 @@ As I mentioned before, the main purpose of rewriting the picker was to provide d
 -   **callbacks**: in the callbacks section of the configuration you can define your own functionality related to the picker callback e.g. opening, closing or errors.
 -   **templates**: in this section you can define your own HTML templates for the parts of the picker e.g. header, footer, gridrow etc.
 -   **buttons**: in this section you can list the buttons that you want to display and use on the picker with their text, css classes and the functions you want to call when the button is clicked
--   **selectionroot**: this parameter is also a legacy one which was also provided in the previous picker. You can list here the selection root paths that will displayed and can be choosen on the picker UI to change the picker trees root.
+-   **selectionroot**: this parameter is also a legacy one which was also provided in the previous picker. You can list here the selection root paths that will be displayed and can be choosen on the picker UI to change the picker trees root.
 
 ## Sample
 
