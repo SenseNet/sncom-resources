@@ -48,17 +48,6 @@ A11 waits for A5, A6, A7, A8, A9, A10
 
 To simulate a non-deterministic environment, we added the activities to the queue in a different order than they were created.
 
- | Tables   |      Are      |  Cool |
- |----------|:-------------:|------:|
- | col 1 is |  left-aligned | $1600 |
- | col 2 is |    centered   |   $12 |
- | col 3 is | right-aligned |    $1 |
- 
- Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
 | Activity | Wait time (msec) | Execution time (msec) | Type | Path |
 |-|:-:|-:|-:|-:|
 | A1 | 31,2576 | 2015,6672 | AddTreeActivity | /r/a |
