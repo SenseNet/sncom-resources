@@ -9,8 +9,6 @@ Have you ever wanted to know the permissions of a certain user, not just for a s
 
 ---
 
-Have you ever wanted to know the permissions of a certain user, not just for a single content but in the whole system? We had a permission setting page for a long time but that did not give administrators the full picture.
-
 From now on you can make use of our brand-new permission visualization tool, which provides an overview on any user’s permission structure over all contents through the Content Repository. With the use of a tree view, the tool will display the permission structure of all built-in permission types in the whole repository or in a chosen subtree. Each permission type is represented by an icon as it follows:
 
 ![Permission types in the content repository](http://download.sensenet.com/BlogPostImages/PermissionOverview/permissiontypes.png "Permission types in the content repository")
