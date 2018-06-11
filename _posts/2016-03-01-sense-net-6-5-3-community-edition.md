@@ -23,7 +23,7 @@ This is a huge improvement for projects where there are many activities happenin
 
 ## Customizable content naming
 
-Finally, developers get the chance to customize the behaviour of the system when a content name must be generated (e.g. from the display name or when you upload a document). We offer two built-in [content naming providers](http://wiki.sensenet.com/ContentNamingProvider>) for you to choose from, but of course you can develop your own too.
+Finally, developers get the chance to customize the behaviour of the system when a content name must be generated (e.g. from the display name or when you upload a document). We offer two built-in [content naming providers](http://wiki.sensenet.com/ContentNamingProvider) for you to choose from, but of course you can develop your own too.
 
 -   [Content naming](http://wiki.sensenet.com/Content_naming>)
 
