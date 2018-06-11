@@ -9,8 +9,6 @@ Sense/Net has always been an innovative and open-minded company, with focus on t
 
 ---
 
-Sense/Net has always been an innovative and open-minded company, with focus on the latest-greatest things. That’s why we decided to start working on a mobile app which makes our users' life easier.
-
  <img src="http://download.sensenet.com/BlogPostImages/mobileapp1/Screenshot_2016-02-17-16-44-20.png" alt="sensenet mobile app" style="width: 300px;"/>
 
 ### Here’s the list:
