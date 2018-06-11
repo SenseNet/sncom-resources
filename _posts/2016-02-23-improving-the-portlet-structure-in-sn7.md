@@ -25,7 +25,7 @@ Because of the number and location of participants, we used a remote, computer-b
 
 We applied Open Card Sort method, to learn about participants grouping conception, and enable them to create new Categories besides the predefined ones, in case they see the need. For learning the necessity of new Portlets, users are allowed to create new Cards in the test, as well.
 
-Based on the nature of the research we determined the test-conditions by the folowings:Based on the nature of the research we determined the test-conditions by the followings:
+Based on the nature of the research we determined the test-conditions by the followings:
 
 -   We ran Card Sorting with 83 cards (all Portlets we have in Sense/Net) and open to take up new ones, or exclude unnecessary ones, if deemed necessary
 -   The order of Cards are randomized
