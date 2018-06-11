@@ -21,7 +21,7 @@ As I mentioned before, the main purpose of rewriting the picker was to provide d
 
 -   **views**: in this parameter you can list the name of the views that you want provide to list content in the picker. Now, you’re able to choose list or thumbnail view or both, which means if you use both views you can switch between them on the UI. Later, the picker will allow developers to add their custom views also.
 -   **searcheable**: with this parameter you can switch search functionality on and off.
--   **expendable**: if you want to make enable users to add new Content through the picker, set this parameter to true. In addition, with this parameter on, you can specify which type of content can be added on the picker UI.
+-   **expandable**: if you want to enable users to add new Content through the picker, set this parameter to true. In addition, with this parameter on, you can specify which type of content can be added on the picker UI.
 -   **allowMultipleSelection**: if you used Sense/Net picker before you’ll be familiar with this parameter which allows you to put users to select multiple content or not.
 -   **treeOnly**: by setting this parameter to true only the tree will be displayed in the picker
 -   **$modal**: as mentioned before, developers can use their chosen framework or library to provide a modal window for the picker. In this parameter you have to add the modal windows jQuery object which will contain the picker.
