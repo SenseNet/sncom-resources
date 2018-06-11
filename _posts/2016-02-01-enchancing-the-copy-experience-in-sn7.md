@@ -9,7 +9,7 @@ As the result of the competitor analysis we prepared the redesign of the new, sk
 
 ---
 
-As the result of the competitor analysis we prepared the redesign of the new, skinnable Picker for SN7. We understood a lot of conceptual expectations from users by looking at our competitors’ solutions. These were all taken into consideration when developing custom solutions for individual picker-types in SN7. As the whole development cycle is quite complex, we decided to divide it into sections. In the first phase we implemented the most powerful functions:
+As the whole development cycle is quite complex, we decided to divide it into sections. In the first phase we implemented the most powerful functions:
 
 -   root-selection
 -   search under selected root
