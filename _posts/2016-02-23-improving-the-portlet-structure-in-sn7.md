@@ -9,8 +9,6 @@ As the part of rebuilding the information architecture in SN7 we were highly mot
 
 ---
 
-As the part of rebuilding the information architecture in SN7 we were highly motivated to redress the Portlet-structure to make its usage more handy.
-
 Since the purpose of this study was to improve navigation amongst Portlets, we decided to use the Card Sorting method, that facilitates the development process by involving users. This way we can map users' factual needs, as the essential base of building IA successfully by understanding users, their backgrounds, their goals, in an early stadium of product development.
 
 ## Good IA to good navigation
