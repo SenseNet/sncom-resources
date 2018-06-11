@@ -10,8 +10,7 @@ In an environment where there are multiple web servers (both generating new inde
 
 ---
 
-In Sense/Net ECM we rely heavily on our Lucene indexing and search engine: every content modification involves re-indexing the data. This means our indexing subsystem sometimes must handle a really heavy load when many users create or modify content at the same time.
-In an environment where there are multiple web servers (both generating new indexing activities as users work) things tend to get more complicated and vulnerable to concurrency errors. Indeed we found out that there was a possibility of executing indexing activities in a reversed order. In most cases this is not a problem (who cares in which order two documents are indexed), but in case of an 'update' and a 'delete' activity for the same content this is definitely unwanted (think delete first than update) as the index will still contain documents that should not be there.
+In most cases this is not a problem (who cares in which order two documents are indexed), but in case of an 'update' and a 'delete' activity for the same content this is definitely unwanted (think delete first than update) as the index will still contain documents that should not be there.
 To prevent these kinds of errors we decided to serialize the indexing activity execution - this is how our Indexing activity queue was born. An activity could be executed only if all activities that were created before it were finished.
 
 ## The current problem
