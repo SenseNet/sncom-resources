@@ -31,7 +31,7 @@ Tree structure helps us to understand the hierarchy, the connection between Cont
 
 ### Creating custom Forms or Surveys
 
-Since managing content is based on defining fields in Content Types and configure how they will be rendered and validated on the ui, this behaviour can be used as a base of custom form and survey building. If a user fills the form, actually she creates a new content, a form item. If you want to create a survey you only have to add a new a custom Content Type defining the fields of the form item. Incredibly easy, isn't it? Survey items will be saved as Content in the repository so they can be searched by their field values, evaluated easily or you can even build custom ui upon the results (lists, charts, etc).
+Since managing content is based on defining fields in Content Types and configure how they will be rendered and validated on the ui, this behaviour can be used as a base of custom form and survey building. If a user fills the form, actually she creates a new content, a form item. If you want to create a survey you only have to add a new custom Content Type defining the fields of the form item. Incredibly easy, isn't it? Survey items will be saved as Content in the repository so they can be searched by their field values, evaluated easily or you can even build custom ui upon the results (lists, charts, etc).
 
 ### If Content Types Definitions are not flexible enough
 
