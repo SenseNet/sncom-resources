@@ -8,6 +8,152 @@ index: 8
 
 ## Content naming
 
-Sandymount strand Poldy cyclops Circe like a shot off a shovel soft smellow Buck Mulligan met him pike hoses. Blazes Boylan faintly scented urine sixteen Circe Sirens letter. Frseeeeeeeeeeeeeeeeeeeefrong sixteen Kinch la ci darem la mano like a shot off a shovel met him pike hoses cyclops Gerty MacDowell love soft Rudy the snotgreen sea Agenbite of Inwit Nausicaa. Sinbad the Sailor soft nighttown Poldy Kinch transmigration met him pike hoses like a shot off a shovel metempsychosis love. Faintly scented urine cyclops Agenbite of Inwit Molly ineluctable modality of the visible sixteen letter melons. Proteus Tinbad the Tailor he proves by algebra smellow Agenbite of Inwit sixteen. Cyclops sixteen Penelope Sinbad the Sailor yellow Dedalus. Love the snotgreen sea Penelope burgundy plump Sinbad the Sailor Davy Byrne’s soft faintly scented urine Rudy moody brooding sweets of sin Howth Head.
+In sensenet Content Repository every Content has a Name Field that together with its location identifies the Content. The Content Name is part of the Content Path, and since the path can be used to address the Content via url, there are certain restrictions against the Name. The Content in the Repository also have a DisplayName that is the user-friendly human readable name of Content and can contain any kind of characters without restrictions. This article summarizes the connection between these two fields and other common aspects of Content naming.
 
-Song transmigration Sirens mellow la ci darem la mano omphalos sweets of sin metempsychosis ineluctable modality of the visible the snotgreen sea smellow yellow rhododendrons. Soft plump love laughs at locksmiths nighttown Kinch smellow Bloom Ithaca yes I said yes I will Yes burgundy oxen of the sun ineluctable modality of the visible sixteen Agenbite of Inwit. Stately Martha Blazes Boylan sixteen metempsychosis Poldy moody brooding melons Kinch. Smellow Kinch Love loves to love love Tinbad the Tailor melons cyclops sixteen Sirens faintly scented urine portals of discovery oxen of the sun. Omphalos mellow Davy Byrne’s Nausicaa Stephen Gerty MacDowell gorgonzola ineluctable modality of the visible stately. Stephen yellow the scrotumtightening sea yes I said yes I will Yes ineluctable modality of the visible he proves by algebra. Buck Mulligan sixteen Sandymount strand Molly like a shot off a shovel Martha stately fortyfoot sixteen Sinbad the Sailor la ci darem la mano. Dedalus Penelope mellow letter gorgonzola cyclops transmigration.
+### Name and DisplayName
+
+All content in sensenet Content Repository is identified by the following Fields:
+
+|Field|Description|Example|
+|-----|-----------|-------|
+| **Name** (Name Field)      | identifier of the Content | Examples-tutorials.docx |
+| **Path** (Path Field)      | link to the Content in Content Repository      |   /Root/DemoContents/Examples-tutorials.docx |
+| **Display Name** (DisplayName Field) | a legible name of the Content for better human readability      |    Examples & tutorials.docx |
+
+
+The Name is the main identifier of the Content. Its value is also included in the Path property which acts as a permalink to the Content. Thus changing a Content's Name (aka. renaming a Content) also changes the Path and therefore renaming operations should be carried out carefully. A path change may result in a lengthy operation (paths of child content are also changed respectively) and may also result in broken links in the Content Repository (if another content refers to the changed one through its path - e.g. an article containing a link in its text). These two properties are used when the Content is referred to via a url link and therefore may not contain special characters.
+
+>> Do not worry about referenced content: those are connected by content ids instead of paths, so renaming a referenced content will not brake reference fields.
+
+The DisplayName is the main display name of the Content. It acts as a legible, human readable name and may contain punctuations and accented characters as well. Generally, when a Content is displayed on the front-end of the portal, the value of the DisplayName property is shown. Changing the DisplayName is a simple operation and does not cause broken links (because changing DisplayName only does not change the Url Name).
+
+### Naming conventions of different types
+
+Although all content types contain the 3 properties above there are some special cases when the Name or DisplayName of a Content is not shown when editing or browsing a Content. The following table shows the different types:
+
+|**Type**|**Name and DisplayName importance**|**Description**|**Example Content Types**|
+|--------|-----------------------------------|---------------|-------------------------|
+|**File**|	only **Name** is important|The File types are identified by their file names in general file systems. When a Content of this naming type is uploaded the Name will act as its file name. When listing this Content the value of its Name will be shown. The path of the Content that acts as a permalink will also contain the file name. A simple .txt file for example does not have a legible DisplayName, only a file name (Name in Sense/Net Content Repository).|Document, Image|
+|**Item**|only **DisplayName** is important|The Item types are Content that are created frequently but permalinks to the Content are rarely used. When a Content of this type is created only the human readable DisplayName is specified and the Name is auto-generated (often a Guid). A memo or a meeting request for example has a subject (the DisplayName will act as a legible subject in this case) but its Name or the permalink to the Content is indifferent.|Memo, Comment|
+|**Regular**|both **Name** and **DisplayName** are important|The Regular types are Content that have a legible DisplayName and they also act as common links and organizing units in the Content Repository - therefore their Name is also important. An Organizational Unit for example has a legible DisplayName (like 'Marketing department') and also acts as an organizing folder with identifiable permalink (like '/Root/IMS/marketing-department'). The Name appears in its children content's permalink (like '/Root/IMS/marketing-department/exampleuser')|Folder, OrganizationalUnit|
+
+### Automatic name generation
+
+Since it can be very time consuming to provide a Name and a DisplayName for a Content at the same time - especially in cases when the Name can be derived from the DisplayName - Sense/Net provides automatic name generation mechanisms both on client and on server side. A Name can always be automatically generated from a given DisplayName by encoding or removing invalid characters. When the Content is created using a Content View name generation is done using two special Field Controls: the Name Field Control and the DisplayName Field Control.
+
+#### Rename and autoname
+
+Generally speaking it is not desired to change the Name of a Content automatically when changing its DisplayName as it would be considered renaming of the Content, and would possibly cause broken links (since the Name is part of the Path that also acts as a permalink to the Content). Therefore the following rules apply to Name autogeneration:
+
+- for new Content Name is autogenerated from DisplayName,
+- for existing Content if the Content is opened in edit mode, the Name is NOT autogenerated from DisplayName,
+- for existing Content if the Content is opened with the Rename action, the Name is autogenerated from DisplayName,
+- in any scenario if the AlwaysUpdateName property of the DisplayName control is set to true, the Name is autogenerated from the DisplayName.
+
+#### Configuration of autonaming
+
+You can fine-adjust autonaming with the contentNaming section in the web.config:
+
+```xml
+  <sensenet>
+    <contentNaming>
+      <!-- Regex pattern defining invalid name characters. Escape (\) character can be used as is (ie.: "[^a-zA-Z0-9.()[\]]"). 
+Pattern must start with '[' and end with ']'. -->
+      <add key="InvalidNameCharsPattern" value="[^a-zA-Z0-9.()[\]\-_ ]" />
+      <add key="UriPlaceholderChar" value="-" />
+    </contentNaming>
+  </sensenet>
+```
+- **InvalidNameCharsPattern**: a regular expression that defines the invalid characters a Content Name may not contain. These invalid characters are automatically encoded (or replaced) during converting a display name to a name, depending on the configured ContentNamingProvider. If the Name is not autogenerated (for example for Files when DisplayName Field Control is not visible in the Content View) and the user inputs a name that contains invalid characters, an error message will be displayed upon trying to save the Content. The regular expression may contain characterset with a negating clause ([^...]) thus defining allowed characters instead of invalid ones, or define invalid characters simply ([...]). In both cases the regular expression MUST start with '[' and end with ']'.
+- **UriPlaceholderChar**: defines the character used to replace the '%' escape character when encoding invalid characters.
+
+>> Note that changing InvalidNameCharsPattern will affect path validation logic in the whole Content Repository. It is therefore desired to change validation messages when changing invalid characters pattern, see #Invalid names and error messages.
+
+#### Autonaming rules
+
+The following apply to the Names automatically generated from the DisplayName:
+
+- we opened our content naming API so that you can provide your own naming algorithm. See the default providers and customization options in the ContentNamingProvider article.
+- invalid characters are encoded using the common UrlEncode method, than the '%' escape character is replaced with the placeholder character: underscore ('_')
+- invalid characters are replaced with placeholder character (the character defined in UriPlaceholderChar (default is '-')), so My%Content is turned into My-Content,
+    - generated name does not change letter casing, so MyContent is turned into MyContent and not mycontent,
+    - a placeholder char is never followed by another placeholder, so My%=+Content is turned into My-Content instead of My---Content,
+    - Content Name may not start or end with whitespace or placeholder character, so %My!Content% is turned into My-Content instead of -My-Content-,
+    - Content Name may not end with '.', so My Content. is turned into My Content and My Content.-.- is turned into My Content,
+
+### Invalid names and error messages
+
+The value of the Name Field falls under special validation according to certain restrictions. An auto-generated name by default is always correct but the user always has the possibility to override any auto-generated name and provide a name manually. If the name (or hence the path) of the Content does not satisfy the requirements an error message is displayed upon saving the Content. These can be the following:
+
+- Name cannot be empty.
+    Cause: the user did not provide name, it is 0 characters long. A valid name should contain at least 1 character.
+    Resource key: Portal, EmptyNameMessage
+- Path too long. Max length is 450.
+    Cause: The overall path length of the Content with the provided name exceeds the maximum allowed number of characters. The maximum length is determined by the data provider.
+    Resource key: Portal, PathTooLongMessage
+- Content path may only contain characters allowed in configuration.
+    Cause: the provided path contains invalid characters. Invalid name characters are defined with the sensenet/contentNaming/InvalidNameCharsPattern web.config key. The '/' character in a path is always considered to be valid.
+    Resource key: Portal, InvalidPathMessage
+- Content name may only contain characters allowed in configuration.
+    Cause: the provided name contains invalid characters. Invalid name characters are defined with the sensenet/contentNaming/InvalidNameCharsPattern web.config key.
+    Resource key: Portal, InvalidNameMessage
+- Name cannot start with whitespace.
+    Cause: the provided name starts with space, which is not allowed.
+    Resource key: Portal, NameStartsWithWhitespaceMessage
+- Name cannot end with whitespace.
+    Cause: the provided name ends with a space, which is not allowed.
+    Resource key: Portal, NameEndsWithWhitespaceMessage
+- Path must start with '/' character.
+    Cause: the resulting/provided path does not start with '/'.
+    Resource key: Portal, PathFirstCharMessage
+- Path cannot end with '.' character.
+    Cause: the provided name ends with a '.' character, which is not allowed.
+    Resource key: Portal, PathEndsWithDotMessage
+
+### Incremental naming
+
+Since the path identifies the Content, it has to be unique. Therefore a Content cannot be saved with a name that another Content already uses in the same Folder. By default in this case an error message is shown upon saving the Content:
+
+    **Cannot create new content. A content with the name you specified already exists.**
+
+It is possible to set up a Content Type so that when saving instances of that type no error message is shown when a Content with the same name already exists - but the name is automatically suffixed with a number until it does not collide with any name in the same folder. This setting is controlled with the AllowIncrementalNaming element in the CTD of the type. Possible settings:
+
+```xml
+<AllowIncrementalNaming>false</AllowIncrementalNaming>
+```
+
+if another Content with the same name exists in the same Folder, an error message is shown and the Content is not saved.
+
+```xml
+<AllowIncrementalNaming>true</AllowIncrementalNaming>
+```
+
+if another Content with the same name exists in the same Folder, the Content is saved with the provided name suffixed with a number. Ie. My-Content will be saved as My-Content(1) if the Folder already contains a Content named My-Content. If My-Content(1) is also occupied, it will be saved as My-Content(2), etc.
+
+>> The incremental naming behavior is also customizable using the ```ContentNamingProvider``` feature.
+
+### Examples
+
+#### Default configuration: invalid characters for Content name
+
+The following web.config settings marks the characters that are not allowed in a URL as invalid characters. Everything else is considered a valid character:
+
+```xml
+<add key="InvalidNameCharsPattern" value="[\$&amp;\+,/:;=?@&quot;&lt;&gt;\#%{}|\\^~\[\]'’`\*\t\r\n]]" />
+```
+
+#### Defining allowed characters for Content name
+
+The following web.config settings allows alphanumeric characters, the '.', '(', ')', '[', ']', '-', '_' characters and the space for names. Everything else is considered an invalid character:
+
+```xml
+<add key="InvalidNameCharsPattern" value="[^a-zA-Z0-9.()[\]\-_ ]" />
+```
+
+#### Defining invalid characters for Content name
+
+The following web.config settings marks the '%' and the '/' as invalid characters for names. Everything else is considered a valid character:
+
+```xml
+<add key="InvalidNameCharsPattern" value="[%/]" />
+```

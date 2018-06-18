@@ -1,13 +1,66 @@
 ---
 title:  "Trash"
 tags: [content, content repository, trash, purge, delete]
-description: Trash
+description: Trash Bin is a temporary storage for content that have been deleted. It is a central place for deleted documents where you can browse, restore or delete content permanently.
 permalink: /guide/content-repository/trash
 index: 7
 ---
 
 ## Trash
 
-Sandymount strand Poldy cyclops Circe like a shot off a shovel soft smellow Buck Mulligan met him pike hoses. Blazes Boylan faintly scented urine sixteen Circe Sirens letter. Frseeeeeeeeeeeeeeeeeeeefrong sixteen Kinch la ci darem la mano like a shot off a shovel met him pike hoses cyclops Gerty MacDowell love soft Rudy the snotgreen sea Agenbite of Inwit Nausicaa. Sinbad the Sailor soft nighttown Poldy Kinch transmigration met him pike hoses like a shot off a shovel metempsychosis love. Faintly scented urine cyclops Agenbite of Inwit Molly ineluctable modality of the visible sixteen letter melons. Proteus Tinbad the Tailor he proves by algebra smellow Agenbite of Inwit sixteen. Cyclops sixteen Penelope Sinbad the Sailor yellow Dedalus. Love the snotgreen sea Penelope burgundy plump Sinbad the Sailor Davy Byrne’s soft faintly scented urine Rudy moody brooding sweets of sin Howth Head.
+When you delete a document or a folder and the trash feature is enabled (in the default install, it is), it will not be deleted permanently. You can find it in the Trash Bin, and you can restore it.
 
-Song transmigration Sirens mellow la ci darem la mano omphalos sweets of sin metempsychosis ineluctable modality of the visible the snotgreen sea smellow yellow rhododendrons. Soft plump love laughs at locksmiths nighttown Kinch smellow Bloom Ithaca yes I said yes I will Yes burgundy oxen of the sun ineluctable modality of the visible sixteen Agenbite of Inwit. Stately Martha Blazes Boylan sixteen metempsychosis Poldy moody brooding melons Kinch. Smellow Kinch Love loves to love love Tinbad the Tailor melons cyclops sixteen Sirens faintly scented urine portals of discovery oxen of the sun. Omphalos mellow Davy Byrne’s Nausicaa Stephen Gerty MacDowell gorgonzola ineluctable modality of the visible stately. Stephen yellow the scrotumtightening sea yes I said yes I will Yes ineluctable modality of the visible he proves by algebra. Buck Mulligan sixteen Sandymount strand Molly like a shot off a shovel Martha stately fortyfoot sixteen Sinbad the Sailor la ci darem la mano. Dedalus Penelope mellow letter gorgonzola cyclops transmigration.
+The Trash Bin is a central place for deleted documents where you can browse, restore or delete content permanently. It is possible to provide a local (workspace-level) trash for users too. See the portal builder article below for more information.
+
+The size of the trash and the time frame while the contents can be recovered from the trash is set by the administrator. Trash feature can be switched on or off globally.
+
+When you delete something into the trash than the content will be wrapped into a special container called the Trash Bag, and will be moved to a central place called the Trash Bin. The path of the trash in the repository is */Root/Trash*.
+
+### Delete operation capabilities
+
+Delete operation allows users to transfer content (documents, folders or whole workspaces) into the Trash Bin - or delete them permanently.
+
+- You can delete content that go to the trash.
+- You can delete content permanently, without using trash.
+- You can enable or disable trash locally or globally.
+- You can enable or disable trash for a content type.
+
+### Workspace trash
+
+It is possible to provide a workspace-level trash for users. Deleted content in fact will still be moved to the global Trash (*/Root/Trash*) but users will be able to see content deleted from a particular workspace in a folder under that workspace. This functionality is practically a filter for the global Trash and can be accessed by creating a SmartFolder under the workspace. Place the SmartFolder anywhere under the workspace.
+
+Properties of the SmartFolder:
+
+- **Folder name**: anything - e.g. Workspace Trash
+- **Autofilters**: disable
+- **Query**: +InTree:'/Root/Trash' +TypeIs:TrashBag +WorkspaceId:@@CurrentWorkspace.Id@@
+- 
+All content deleted under the workspace will be visible here and can be restored or deleted permanently. The deleted content are still accessible and restorable from the global Trash and all size and date settings are still applied.
+
+### Configuring Trash
+
+#### Enable/disable the trash feature globally
+
+If the trash is enabled in the system, deleted content can be moved to the Trash Bin. You can find them on the path */Root/Trash*.
+
+If you disable the trash, previously deleted content won't disappear, you or the owner can restore them freely. Content deleted with disabled trash will be removed permanently from the database.
+
+#### Enable/disable the trash feature on a container
+
+You can enable or disable the trash feature on almost any container content. By default, the feature is enabled and deleted content go to the trash. You can change this editing any folder or list. This setting effects only the container (list, workspace) you edit, and not the child folders.
+
+#### Set the retention time of deleted contents
+
+The value set here is the days the content should stay in the trash before deleting it permanently. If the value is greater than 0, users (or any automatism) cannot remove the content from the trash before the expiration date. Changing this value does not effect previously deleted content.
+
+#### Set the size of the Trash Bin
+
+The size quota is the amount of content in megabytes that can be stored in the trash. This value is only a UI hint, it does not effect deleting content. If the size is exceeded the Trash Bin main page will display a message about how much space is used. The administrator should take care of purging content from the trash manually.
+
+#### Set Trash Bag capacity
+
+If you provide a number greater than 0 as the Trash Bag capacity, only containers having a smaller number of children can be moved to the trash at the same time. This setting effects only one delete operation. In case this setting prevents you to delete a big subtree you can still delete those content one-by-one.
+
+#### Empty the trash
+
+You can delete all the content stored in the trash permanently. On the Trash Bin main page you can see an Empty button in the header of the trashed items list. By pressing it, you get a dialogue page where you can dispose all the items.
