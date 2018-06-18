@@ -8,6 +8,16 @@ index: 0
 
 ## Content Type
 
-Sandymount strand Poldy cyclops Circe like a shot off a shovel soft smellow Buck Mulligan met him pike hoses. Blazes Boylan faintly scented urine sixteen Circe Sirens letter. Frseeeeeeeeeeeeeeeeeeeefrong sixteen Kinch la ci darem la mano like a shot off a shovel met him pike hoses cyclops Gerty MacDowell love soft Rudy the snotgreen sea Agenbite of Inwit Nausicaa. Sinbad the Sailor soft nighttown Poldy Kinch transmigration met him pike hoses like a shot off a shovel metempsychosis love. Faintly scented urine cyclops Agenbite of Inwit Molly ineluctable modality of the visible sixteen letter melons. Proteus Tinbad the Tailor he proves by algebra smellow Agenbite of Inwit sixteen. Cyclops sixteen Penelope Sinbad the Sailor yellow Dedalus. Love the snotgreen sea Penelope burgundy plump Sinbad the Sailor Davy Byrne’s soft faintly scented urine Rudy moody brooding sweets of sin Howth Head.
+The /docs/content-repository contains many different types of content. Content vary in structure and even in function. Different types of content contain different fields, are displayed with different views, and may also implement different business logic. The **fields**, **views** and **business logic** of a content is defined by its type - the **Content Type**.
 
-Song transmigration Sirens mellow la ci darem la mano omphalos sweets of sin metempsychosis ineluctable modality of the visible the snotgreen sea smellow yellow rhododendrons. Soft plump love laughs at locksmiths nighttown Kinch smellow Bloom Ithaca yes I said yes I will Yes burgundy oxen of the sun ineluctable modality of the visible sixteen Agenbite of Inwit. Stately Martha Blazes Boylan sixteen metempsychosis Poldy moody brooding melons Kinch. Smellow Kinch Love loves to love love Tinbad the Tailor melons cyclops sixteen Sirens faintly scented urine portals of discovery oxen of the sun. Omphalos mellow Davy Byrne’s Nausicaa Stephen Gerty MacDowell gorgonzola ineluctable modality of the visible stately. Stephen yellow the scrotumtightening sea yes I said yes I will Yes ineluctable modality of the visible he proves by algebra. Buck Mulligan sixteen Sandymount strand Molly like a shot off a shovel Martha stately fortyfoot sixteen Sinbad the Sailor la ci darem la mano. Dedalus Penelope mellow letter gorgonzola cyclops transmigration.
+Content Types are defined in a type hierarchy: a Content Type may be inherited from another Content Type - thus automatically inheriting its fields. Multiple inheritance is not allowed so Content Types are arranged in a simple tree.
+
+A Content Type is a special content in the Content Repository. Content Types define the structure and functioning of content:
+
+- name, description of content types and available set of fields are defined with an xml configuration (Content Type Definition or CTD),
+- optional custom business logic is implemented via a custom Content Handler/docs/content-handler, custom Fields/docs/field and custom Field Controls/docs/field-control.
+For example a User has a name, e-mail address, etc. - these fields of the User Content Type are defined by its Content Type Definition. When saving a User it can be synchronized into an Active Directory - this logic is implemented in its Content Handler.
+
+## Content Type hierarchy
+
+Content Types can inherit fields from their ancestors. For example a *Domain* type inherits all the fields of the basic *Folder* type. A Content Type may only inherit fields from a single type thus the Content Types are arranged in a simple tree hierarchy. Inherited field configuration can be overridden in derived types. Field inheritance and overriding is defined in the Content Type Definition/docs/ctd of the type.
