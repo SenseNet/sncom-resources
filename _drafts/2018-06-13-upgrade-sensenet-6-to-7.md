@@ -83,26 +83,30 @@ Please make a backup of your **database** and **web folder** too. Not only becau
 #### Get the new libraries
 In a sensenet 6 environment you have an old web project with many *manually referenced* libraries. To have a clean slate, please do the following:
 
-- create a new web project
+- create a new web project with the same name
 - install the following sensenet NuGet packages
    - SenseNet.Services.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.Services.Install.svg)](https://www.nuget.org/packages/SenseNet.Services.Install)
    - SenseNet.WebPages.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.Install.svg)](https://www.nuget.org/packages/SenseNet.WebPages.Install)
    - SenseNet.Workspaces.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.Workspaces.Install.svg)](https://www.nuget.org/packages/SenseNet.Workspaces.Install)
    - SenseNet.Workflow.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.Workflow.Install.svg)](https://www.nuget.org/packages/SenseNet.Workflow.Install)
+   - SenseNet.Workflow.Portlets [![NuGet](https://img.shields.io/nuget/v/SenseNet.Workflow.Portlets.svg)](https://www.nuget.org/packages/SenseNet.Workflow.Portlets)
    - SenseNet.Notification.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.Notification.Install.svg)](https://www.nuget.org/packages/SenseNet.Notification.Install)
+   - SenseNet.Notification.Portlets [![NuGet](https://img.shields.io/nuget/v/SenseNet.Notification.Portlets.svg)](https://www.nuget.org/packages/SenseNet.Notification.Portlets)
    - SenseNet.Preview.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.Preview.Install.svg)](https://www.nuget.org/packages/SenseNet.Preview.Install)
    - SenseNet.Preview.Aspose (for _Enterprise_ customers)
-
+   - SenseNet.Compatibility pack [![NuGet](https://img.shields.io/nuget/v/SenseNet.Compatibility.svg)](https://www.nuget.org/packages/SenseNet.Compatibility)
 
 > You **do not** have to execute the SnAdmin packages inside them, only install the NuGet packages in Visual Studio! You only need the libraries for now, not a new database.
 
 If you have additional libraries (business logic in non-web projects), you should create new projects for every one of them too, and install the dll-only versions of the necessary sensenet NuGet packages. For example, if you need the main sensenet references in your library, you should install the `SenseNet.Services` package (and _not_ the SenseNet.Services._Install_ package, because that is needed only once, in the web project). If you need the Workflow dlls of sensenet, install the `SenseNet.Workflow` package - and so on.
 
+> You may have to upgrade the `Microsoft.Owin` and `Microsoft.Owin.Security` NuGet packages at this point to a more recent version. The patch assumes you have `3.0.1`, but later versions should also work.
+
 #### Update and compile your code
-- copy your old code (classes, etc., everything) to the new project
+- copy your old code (classes, etc., everything) to the new project - note that the *name of the dll* the web project produces and the *namespaces* have to be the same as before! This is necessary for this new dll to be compatible with old elements in the database (e.g. pages, views).
 - add the additional NuGet packages needed by your custom code
 - update your code with the API changes in sensenet (if you encounter changes that you cannot resolve, please contact us or query the community resources for advice)
-- compile your library and copy it to the `Customization\bin` subfolder of the **first package** (`sn-patch-6.5.4-7.1-part1.zip`).
+- compile your new library and copy it to the `Customization\bin` subfolder of the **first package** (`sn-patch-6.5.4-7.1-part1.zip`).
 
 > Yes, you'll have to **modify the package by adding your libraries**. This is the easiest way to make sure that no old code remains in the web folder and the new version of your code gets copied there at the right time.
 
@@ -113,7 +117,7 @@ You'll have to execute the two packages in the **old web folder**. The new web p
 
 > The reason behind having two packages is that the patch structure itself changed since version 6 and they are not compatible.
 
-- make sure that the `web\Tools\SnAdminRuntime.exe.config` file contains the correct connection string and (in case of an nlb environment all network targets - other web servers - are listed in the config)
+- make sure that the `web\Tools\SnAdminRuntime.exe.config` file contains the correct **connection string** and in case of an nlb environment all network targets - other web servers - are listed in the config
 - copy the patch to the `web\Admin` folder
 - execute the patch using SnAdmin
 
@@ -138,9 +142,21 @@ Now the environment is ready for executing the second package.
 snadmin sn-patch-6.5.4-7.1-part2.zip
 ```
 
+> Note that the patch **re-indexes** the whole content repository and in case of large databases this may take some time.
+
 Please review the execution logs in the `web\Admin\log` folder to make sure no errors occurred. At this point you should be able to start the site, but it is advisable to clean up the environment as the last step.
 
-#### Cleanup the solution
-As we created a new web project before, please copy the `web.config` and `web\Tools\SnAdminRuntime.exe.config` from the old web folder (where they were updated during the upgrade process!) to the new one.
+#### Update configuration files
+As we created a new web project before, please copy the `web.config` and `web\Tools\SnAdminRuntime.exe.config` from the old web folder (where they were updated during the upgrade process) to the new one. Another possibility is to *merge* the necessary values from the old configs to the new ones, because your new web.config may also contain necessary sections added by the new Asp.Net project template.
 
+As we removed the reference to the `Microsoft.Web.Preview` library, it is not longer needed - unless you use it directly. If this is not the case, please remove all segments related to this library from your configuration (e.g. the ones in the `system.web/pages/controls` and the `system.web/compilation/assemblies` sections).
+
+#### Copy the index
+During the patch we update the local index in the web folder. Please copy the `web\App_Data\LocalIndex` folder to the new web folder.
+> Please note that the name of the index folder has changed from `LuceneIndex` to `LocalIndex` in sensenet 7 and the patch already renamed it for you.
+
+#### Cleanup the solution
 You should delete old projects and use the new web project from now on.
+
+### Troubleshooting
+If you encounter a `401 Access denied` error after executing the patch and starting the portal from Visual Studio, please try to mount the site in IIS (as opposed to start it F5 in Visual Studio and IIS Express).
