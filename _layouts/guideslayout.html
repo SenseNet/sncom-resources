@@ -12,7 +12,17 @@
     {{ content }}
     
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5943a8719f8890cf"></script>  
-
+  <script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.js"></script>
+    
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5943a8719f8890cf"></script>  
+  <script>
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json',
+      searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'
+    })
+    </script>
   </body>
 
 </html>

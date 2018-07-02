@@ -6,7 +6,9 @@ layout: guideslayout
   <div>
     <aside class="guide-menu-side">
       <div>
-        <input type="search" placeholder="Search in sensenet Guide" />
+        <input type="text" id="search-input" placeholder="Search in sensenet Guide" />
+        <br/>
+        <div id="results-container"></div>
       </div>
       {% include guidemenu.html %}
     </aside>

@@ -1,0 +1,14 @@
+---
+layout: null
+---
+[
+  {% for guide in site.guides %}
+    {
+      "title"    : "{{ guide.title | escape }}",
+      "category" : "{{ guide.category }}",
+      "tags"     : "{{ guide.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ guide.url }}",
+      "date"     : "{{ guide.date }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
