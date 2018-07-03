@@ -16,11 +16,11 @@
     width: 250px;
     position: fixed;
     left: 0;
-    top: 99px;
+    top: 89px;
     right: auto;
     bottom: 0;
     height: auto;
-    background: #ddd;
+    background: #eee;
 }
 
 .guides aside ul {
@@ -41,7 +41,7 @@
     text-decoration: none;
     color: #666;
     font-size: 14px;
-    text-transform: uppercase;
+    font-family: 'Raleway Bold';
     font-weight: bold;
 }
 
@@ -57,13 +57,14 @@
 .guides aside li li a {
     padding-left: 30px;
     text-transform: none;
+    font-family: 'Raleway Regular';
     font-weight: normal;
 }
 
 .guides article {
     width: auto;
     height: auto;
-    top: 99px;
+    top: 89px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -81,6 +82,7 @@
     margin: 0 auto;
     width: 80%;
     max-width: 800px;
+    line-height: 30px;
 }
 
 .guide-menu-side {
@@ -131,4 +133,27 @@
     border: solid 1px #dddddd;
     padding: 10px;
     margin: 20px 0;
+}
+
+.article-inner.guide h1 {
+    color: #666;
+    font-family: 'Gotham';
+    font-size: 45px;
+    text-align: left;
+    text-transform: none;
+}
+
+.article-inner.guide h2 {
+    font-size: 25px;
+    font-family: 'Gotham';
+    color: #666;
+    line-height: 40px;
+}
+
+.article-inner strong {
+    font-family: 'Raleway Bold';
+}
+
+aside #results-container {
+    padding: 10px 0 0 10px
 }

@@ -7,7 +7,6 @@ layout: guideslayout
     <aside class="guide-menu-side">
       <div>
         <input type="text" id="search-input" placeholder="Search in sensenet Guide" />
-        <br/>
         <div id="results-container"></div>
       </div>
       {% include guidemenu.html %}
@@ -18,7 +17,7 @@ layout: guideslayout
       {% endfor %}
     </ul> -->
     <article>
-      <div class="article-inner">
+      <div class="article-inner guide">
         {{ content }} {% if page.category != 'ignore' %}
 
         <div class="guides-contact">

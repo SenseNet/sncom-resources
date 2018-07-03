@@ -3,13 +3,12 @@ footer {
     border-top: 1px solid #ddd;
     padding: 50px;
     position: relative;
-    margin-top: 50px;
 }
 
 footer .footer-logo {
     position: absolute;
     left: 50%;
-    top: -32px;
+    top: -85px;
     margin-left: -38px;
 }
 
@@ -62,4 +61,9 @@ footer .copyright-and-stuff > div {
 footer .copyright-and-stuff > div a {
     color: #13a5ad;
     text-decoration: none;
+}
+
+footer .container-narrow {
+    padding-bottom: 0;
+    top: 0;
 }

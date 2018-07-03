@@ -4,7 +4,7 @@
     text-align: center;
     background-color: #fff;
     border-bottom: 1px solid #e8e8e8;
-    height: 58px;
+    height: 48px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -13,6 +13,21 @@
 
 .site-header .container .logo {
     float: left;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.site-header .container .logo img {
+    width: 40px;
+    vertical-align: middle;
+}
+
+.site-header .container .logo span {
+    text-decoration: none;
+    color: #666;
+    font-family: 'Raleway Bold';
+    font-size: 20px;
+    margin-left: 10px;
     vertical-align: middle;
 }
 
@@ -24,6 +39,10 @@
 .site-header .container .right > * {
     display: inline-block;
     vertical-align: middle;
+}
+
+.site-header-nav {
+    margin-top: 4px;
 }
 
 @media (max-width: 800px)
