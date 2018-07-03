@@ -2,34 +2,45 @@
 title:  "Introduction"
 tags: [intro, concepts, use cases, dms, intranet, document management]
 description: Introduction to sensenet
-permalink: /guides/introduction
+permalink: /guide/introduction
 index: 0
 ---
 
-## Introduction
+# Introduction
 
-### What is sensenet
+This is the guide for using sensenet, a flexible open-source development platform to deliver web based business applications.
 
-Sandymount strand Poldy cyclops Circe like a shot off a shovel soft smellow Buck Mulligan met him pike hoses. Blazes Boylan faintly scented urine sixteen Circe Sirens letter. Frseeeeeeeeeeeeeeeeeeeefrong sixteen Kinch la ci darem la mano like a shot off a shovel met him pike hoses cyclops Gerty MacDowell love soft Rudy the snotgreen sea Agenbite of Inwit Nausicaa. Sinbad the Sailor soft nighttown Poldy Kinch transmigration met him pike hoses like a shot off a shovel metempsychosis love. Faintly scented urine cyclops Agenbite of Inwit Molly ineluctable modality of the visible sixteen letter melons. Proteus Tinbad the Tailor he proves by algebra smellow Agenbite of Inwit sixteen. Cyclops sixteen Penelope Sinbad the Sailor yellow Dedalus. Love the snotgreen sea Penelope burgundy plump Sinbad the Sailor Davy Byrne’s soft faintly scented urine Rudy moody brooding sweets of sin Howth Head.
+## What is sensenet
 
-Song transmigration Sirens mellow la ci darem la mano omphalos sweets of sin metempsychosis ineluctable modality of the visible the snotgreen sea smellow yellow rhododendrons. Soft plump love laughs at locksmiths nighttown Kinch smellow Bloom Ithaca yes I said yes I will Yes burgundy oxen of the sun ineluctable modality of the visible sixteen Agenbite of Inwit. Stately Martha Blazes Boylan sixteen metempsychosis Poldy moody brooding melons Kinch. Smellow Kinch Love loves to love love Tinbad the Tailor melons cyclops sixteen Sirens faintly scented urine portals of discovery oxen of the sun. Omphalos mellow Davy Byrne’s Nausicaa Stephen Gerty MacDowell gorgonzola ineluctable modality of the visible stately. Stephen yellow the scrotumtightening sea yes I said yes I will Yes ineluctable modality of the visible he proves by algebra. Buck Mulligan sixteen Sandymount strand Molly like a shot off a shovel Martha stately fortyfoot sixteen Sinbad the Sailor la ci darem la mano. Dedalus Penelope mellow letter gorgonzola cyclops transmigration.
+sensenet is a <strong>central repository</strong> with an <strong>extendable API</strong> ready for integration. Enterprise grade <strong>security</strong> and <strong>permission system</strong> makes it a perfect core of any <strong>content management</strong> solution. The platform is highly <strong>modularized</strong> and ready to build your custom business solution and it also provides the possibility creating <strong>one page apps</strong> using your favourite JavaScript framework without a steep learning curve. You can find more about sensenet in general [here](/guide/introduction/what-is-sensenet).
 
-### Use cases
+## What is this guide
 
-Sandymount strand Poldy cyclops Circe like a shot off a shovel soft smellow Buck Mulligan met him pike hoses. Blazes Boylan faintly scented urine sixteen Circe Sirens letter. Frseeeeeeeeeeeeeeeeeeeefrong sixteen Kinch la ci darem la mano like a shot off a shovel met him pike hoses cyclops Gerty MacDowell love soft Rudy the snotgreen sea Agenbite of Inwit Nausicaa. Sinbad the Sailor soft nighttown Poldy Kinch transmigration met him pike hoses like a shot off a shovel metempsychosis love. Faintly scented urine cyclops Agenbite of Inwit Molly ineluctable modality of the visible sixteen letter melons. Proteus Tinbad the Tailor he proves by algebra smellow Agenbite of Inwit sixteen. Cyclops sixteen Penelope Sinbad the Sailor yellow Dedalus. Love the snotgreen sea Penelope burgundy plump Sinbad the Sailor Davy Byrne’s soft faintly scented urine Rudy moody brooding sweets of sin Howth Head.
+This is a set of articles trying to create a common mindset about development with sensenet. Our aim is to cover the <strong>core concepts</strong>, the underlying <strong>data structure</strong>, <strong>document management</strong> capabilities, components, tools and also to show the best practices in building custom user interfaces, deploying, patching and upgrading your sensenet app, not to mention the tips about <strong>testing</strong>, linting and styling your code.
 
-### Document Management
+The sensenet <strong>API references</strong> are available at the [docs page](/docs/) grouped by components.
 
-Sandymount strand Poldy cyclops Circe like a shot off a shovel soft smellow Buck Mulligan met him pike hoses. Blazes Boylan faintly scented urine sixteen Circe Sirens letter. Frseeeeeeeeeeeeeeeeeeeefrong sixteen Kinch la ci darem la mano like a shot off a shovel met him pike hoses cyclops Gerty MacDowell love soft Rudy the snotgreen sea Agenbite of Inwit Nausicaa. Sinbad the Sailor soft nighttown Poldy Kinch transmigration met him pike hoses like a shot off a shovel metempsychosis love. Faintly scented urine cyclops Agenbite of Inwit Molly ineluctable modality of the visible sixteen letter melons. Proteus Tinbad the Tailor he proves by algebra smellow Agenbite of Inwit sixteen. Cyclops sixteen Penelope Sinbad the Sailor yellow Dedalus. Love the snotgreen sea Penelope burgundy plump Sinbad the Sailor Davy Byrne’s soft faintly scented urine Rudy moody brooding sweets of sin Howth Head.
+## Target audience
 
-### Company intranet
+// TODO
 
-Sandymount strand Poldy cyclops Circe like a shot off a shovel soft smellow Buck Mulligan met him pike hoses. Blazes Boylan faintly scented urine sixteen Circe Sirens letter. Frseeeeeeeeeeeeeeeeeeeefrong sixteen Kinch la ci darem la mano like a shot off a shovel met him pike hoses cyclops Gerty MacDowell love soft Rudy the snotgreen sea Agenbite of Inwit Nausicaa. Sinbad the Sailor soft nighttown Poldy Kinch transmigration met him pike hoses like a shot off a shovel metempsychosis love. Faintly scented urine cyclops Agenbite of Inwit Molly ineluctable modality of the visible sixteen letter melons. Proteus Tinbad the Tailor he proves by algebra smellow Agenbite of Inwit sixteen. Cyclops sixteen Penelope Sinbad the Sailor yellow Dedalus. Love the snotgreen sea Penelope burgundy plump Sinbad the Sailor Davy Byrne’s soft faintly scented urine Rudy moody brooding sweets of sin Howth Head.
+## Resources
 
-### Public website
+- Try out capabilities of sensenet with the tutorial building a custom DMS. The tutorial is available for [MVC](/tutorials/mvc/getting-started), [React](/tutorials/react/getting-started) and [Aurelia](/tutorials/aurelia/getting-started). Choose one freely based on your needs and previous developer experiences.
 
-Sandymount strand Poldy cyclops Circe like a shot off a shovel soft smellow Buck Mulligan met him pike hoses. Blazes Boylan faintly scented urine sixteen Circe Sirens letter. Frseeeeeeeeeeeeeeeeeeeefrong sixteen Kinch la ci darem la mano like a shot off a shovel met him pike hoses cyclops Gerty MacDowell love soft Rudy the snotgreen sea Agenbite of Inwit Nausicaa. Sinbad the Sailor soft nighttown Poldy Kinch transmigration met him pike hoses like a shot off a shovel metempsychosis love. Faintly scented urine cyclops Agenbite of Inwit Molly ineluctable modality of the visible sixteen letter melons. Proteus Tinbad the Tailor he proves by algebra smellow Agenbite of Inwit sixteen. Cyclops sixteen Penelope Sinbad the Sailor yellow Dedalus. Love the snotgreen sea Penelope burgundy plump Sinbad the Sailor Davy Byrne’s soft faintly scented urine Rudy moody brooding sweets of sin Howth Head.
+- If you want to download the source code of sensenet you can do it on [Github](https://github.com/Sensenet/sensenet). There's also a [Sensenet organization](https://github.com/Sensenet) where all the Sensenet related tools, components, documentation and other resources are listed.
+Feel free to submit an issue or a pull request in the related Sensenet repo, we're eager to hear your thoughts, ideas and questions.
 
-### Mobile app
+- If you stucked somewhere and need help check the [existing questions](http://stackoverflow.com/questions/tagged/sensenet) with the tag sensenet or [ask your own questions](http://stackoverflow.com/questions/ask?tags=sensenet) and let the community help you.
 
-Sandymount strand Poldy cyclops Circe like a shot off a shovel soft smellow Buck Mulligan met him pike hoses. Blazes Boylan faintly scented urine sixteen Circe Sirens letter. Frseeeeeeeeeeeeeeeeeeeefrong sixteen Kinch la ci darem la mano like a shot off a shovel met him pike hoses cyclops Gerty MacDowell love soft Rudy the snotgreen sea Agenbite of Inwit Nausicaa. Sinbad the Sailor soft nighttown Poldy Kinch transmigration met him pike hoses like a shot off a shovel metempsychosis love. Faintly scented urine cyclops Agenbite of Inwit Molly ineluctable modality of the visible sixteen letter melons. Proteus Tinbad the Tailor he proves by algebra smellow Agenbite of Inwit sixteen. Cyclops sixteen Penelope Sinbad the Sailor yellow Dedalus. Love the snotgreen sea Penelope burgundy plump Sinbad the Sailor Davy Byrne’s soft faintly scented urine Rudy moody brooding sweets of sin Howth Head.
+- Learn the latest and greatest about sensenet through the stories of the development team on our [blog](/blog/). We share here our ’tips and tricks’, thoughts about implementing new technologies and about where we’re heading with the product.
+
+- Share your feedbacks or quick questions about sensenet components chatting with us on [Gitter](https://gitter.im/SenseNet/sensenet).
+
+- [sensenet docs](/docs/) is the best place to find the API documentation of the components.
+
+- For the latest news about sensenet, like us on [Facebook](https://www.facebook.com/sensenetcms/) and follow [@sensenet](https://twitter.com/sensenet) on Twitter.
+
+- Enterprise customers can submit issues or question directly to our core team through [support.sensenet.com](https://support.sensenet.com/).
+
+- [Awesome sensenet](https://github.com/SenseNet/awesome-sensenet) is a community-curated list of packages and resources.
