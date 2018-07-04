@@ -17,7 +17,7 @@
               {% else %}
                 {% assign class = 'link' %}
               {% endif %}
-              <li><a href='{{node.url}}' class='{{class}}'>{{node.title}}</a>
+              <li><a href='{{node.url}}' class='{{class}} menuparent'>{{node.title}}</a>
                 <ul class="submenu closed">
                   {% for guide in guides %}
                     {% assign guide_url_parts = guide.permalink | split: '/' %}
@@ -41,16 +41,23 @@
 
 <script>
   const active = document.querySelectorAll('.active.menuitem')
-  const activeLiParent = active[0].parentElement
-  const activeMenuParent = activeLiParent.parentElement
-  activeMenuParent.classList.remove('closed')
+  const activeLiParent = active[0] !== undefined ? active[0].parentElement : null
+  const activeMenuParent = activeLiParent ? activeLiParent.parentElement: null
+  if (activeMenuParent)
+    activeMenuParent.classList.remove('closed')
 
+  const submenuParents = document.querySelectorAll('.active.menuparent')
   const submenus = document.querySelectorAll('.submenu')
   const searchInput = document.getElementById('search-input')
   searchInput.addEventListener('keyup', function(){
     for(var i = 0; i < submenus.length; i++){
       if(!submenus[i].classList.contains('closed')){
         submenus[i].classList.add('closed')
+      }
+    }
+    for(var j = 0; j < submenuParents.length; j++){
+      if(submenuParents[j].classList.contains('active')){
+        submenuParents[j].classList.remove('active')
       }
     }
   })
