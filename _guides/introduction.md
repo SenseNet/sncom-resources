@@ -26,21 +26,21 @@ The sensenet <strong>API references</strong> are available at the [docs page](/d
 
 ## Resources
 
-- Try out capabilities of sensenet with the tutorial building a custom DMS. The tutorial is available for [MVC](/tutorials/mvc/getting-started), [React](/tutorials/react/getting-started) and [Aurelia](/tutorials/aurelia/getting-started). Choose one freely based on your needs and previous developer experiences.
+- Try out capabilities of sensenet with the tutorial building a custom DMS. The <strong>tutorial</strong> is available for [MVC](/tutorials/mvc/getting-started), [React](/tutorials/react/getting-started) and [Aurelia](/tutorials/aurelia/getting-started). Choose one freely based on your needs and previous developer experiences.
 
-- If you want to download the source code of sensenet you can do it on [Github](https://github.com/Sensenet/sensenet). There's also a [Sensenet organization](https://github.com/Sensenet) where all the Sensenet related tools, components, documentation and other resources are listed.
+- If you want to download the <strong>source code</strong> of sensenet you can do it on [Github](https://github.com/Sensenet/sensenet). There's also a [Sensenet organization](https://github.com/Sensenet) where all the Sensenet related tools, components, documentation and other resources are listed.
 Feel free to submit an issue or a pull request in the related Sensenet repo, we're eager to hear your thoughts, ideas and questions.
 
-- If you get stuck somewhere and need help check Stack Overflow for the [existing questions](http://stackoverflow.com/questions/tagged/sensenet) with the tag sensenet or [ask your own questions](http://stackoverflow.com/questions/ask?tags=sensenet) and let the community help you.
+- If you get stuck somewhere and need help check <strong>Stack Overflow</strong> for the [existing questions](http://stackoverflow.com/questions/tagged/sensenet) with the tag sensenet or [ask your own questions](http://stackoverflow.com/questions/ask?tags=sensenet) and let the community help you.
 
-- Learn the latest and greatest about sensenet through the stories of the development team on our [blog](/blog/). We share here our ’tips and tricks’, thoughts about implementing new technologies and about where we’re heading with the product.
+- Learn the latest and greatest about sensenet through the stories of the development team on our <strong>[blog](/blog/)</strong>. We share here our ’tips and tricks’, thoughts about implementing new technologies and about where we’re heading with the product.
 
-- Share your feedbacks or quick questions about sensenet components chatting with us on [Gitter](https://gitter.im/SenseNet/sensenet).
+- Share your feedbacks or <strong>quick questions</strong> about sensenet components chatting with us on [Gitter](https://gitter.im/SenseNet/sensenet).
 
-- [sensenet docs](/docs/) is the best place to find the API documentation of the components.
+- [sensenet docs](/docs/) is the best place to find the <strong>API documentation</strong> of the components.
 
-- For the latest news about sensenet, like us on [Facebook](https://www.facebook.com/sensenetcms/) and follow [@sensenet](https://twitter.com/sensenet) on Twitter.
+- For the <strong>latest news</strong> about sensenet, like us on [Facebook](https://www.facebook.com/sensenetcms/) and follow [@sensenet](https://twitter.com/sensenet) on Twitter.
 
-- Enterprise customers can submit issues or questions directly to our core team through [support.sensenet.com](https://support.sensenet.com/).
+- <strong>Enterprise customers</strong> can submit issues or questions directly to our core team through [support.sensenet.com](https://support.sensenet.com/).
 
 - [Awesome sensenet](https://github.com/SenseNet/awesome-sensenet) is a community-curated list of packages and resources.
