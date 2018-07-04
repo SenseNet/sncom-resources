@@ -31,7 +31,7 @@ The sensenet <strong>API references</strong> are available at the [docs page](/d
 - If you want to download the source code of sensenet you can do it on [Github](https://github.com/Sensenet/sensenet). There's also a [Sensenet organization](https://github.com/Sensenet) where all the Sensenet related tools, components, documentation and other resources are listed.
 Feel free to submit an issue or a pull request in the related Sensenet repo, we're eager to hear your thoughts, ideas and questions.
 
-- If you get stuck somewhere and need help check the [existing questions](http://stackoverflow.com/questions/tagged/sensenet) with the tag sensenet or [ask your own questions](http://stackoverflow.com/questions/ask?tags=sensenet) and let the community help you.
+- If you get stuck somewhere and need help check Stack Overflow for the [existing questions](http://stackoverflow.com/questions/tagged/sensenet) with the tag sensenet or [ask your own questions](http://stackoverflow.com/questions/ask?tags=sensenet) and let the community help you.
 
 - Learn the latest and greatest about sensenet through the stories of the development team on our [blog](/blog/). We share here our ’tips and tricks’, thoughts about implementing new technologies and about where we’re heading with the product.
 
@@ -41,6 +41,6 @@ Feel free to submit an issue or a pull request in the related Sensenet repo, we'
 
 - For the latest news about sensenet, like us on [Facebook](https://www.facebook.com/sensenetcms/) and follow [@sensenet](https://twitter.com/sensenet) on Twitter.
 
-- Enterprise customers can submit issues or question directly to our core team through [support.sensenet.com](https://support.sensenet.com/).
+- Enterprise customers can submit issues or questions directly to our core team through [support.sensenet.com](https://support.sensenet.com/).
 
 - [Awesome sensenet](https://github.com/SenseNet/awesome-sensenet) is a community-curated list of packages and resources.
