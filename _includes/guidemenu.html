@@ -18,13 +18,13 @@
                 {% assign class = 'link' %}
               {% endif %}
               <li><a href='{{node.url}}' class='{{class}}'>{{node.title}}</a>
-                <ul>
+                <ul class="submenu closed">
                   {% for guide in guides %}
                     {% assign guide_url_parts = guide.permalink | split: '/' %}
                     {% assign guide_url_parts_size = guide_url_parts | size %}
                     {% assign filename2 = guide_url_parts | last %}
                     {% if guide.permalink == page.url %}
-                      {% assign class = 'active' %}
+                      {% assign class = 'active menuitem' %}
                     {% else %}
                       {% assign class = 'link' %}
                     {% endif %}
@@ -38,3 +38,20 @@
         {% endfor %}
     </ul>
 </div>
+
+<script>
+  const active = document.querySelectorAll('.active.menuitem')
+  const activeLiParent = active[0].parentElement
+  const activeMenuParent = activeLiParent.parentElement
+  activeMenuParent.classList.remove('closed')
+
+  const submenus = document.querySelectorAll('.submenu')
+  const searchInput = document.getElementById('search-input')
+  searchInput.addEventListener('keyup', function(){
+    for(var i = 0; i < submenus.length; i++){
+      if(!submenus[i].classList.contains('closed')){
+        submenus[i].classList.add('closed')
+      }
+    }
+  })
+</script>

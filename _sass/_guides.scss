@@ -3,7 +3,8 @@
 }
 
 .guide-menu-side > div:first-of-type {
-    padding: 22px 0;
+    padding: 22px 0 10px;
+    border-bottom: solid 1px #ddd;
 }
 
 .guide-menu-side > div:first-of-type input {
@@ -156,4 +157,25 @@
 
 aside #results-container {
     padding: 10px 0 0 10px
+}
+
+.guide-menu-side .closed {
+    display: none;
+}
+
+.guide-menu-side .active + ul.closed {
+    display: block;
+}
+
+#results-container a {
+    font-family: 'Raleway Regular';
+    font-weight: normal;
+}
+
+.no-results {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-left: 22px;
+    font-size: 14px;
 }
