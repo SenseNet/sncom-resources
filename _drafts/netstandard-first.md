@@ -16,7 +16,7 @@ To offer at least parts of sensenet in .Net Standard format, we have to upgrade 
 
 This means that starting with **sensenet Services 7.2** the application project that uses sensenet packages has to be at least on .Net Framework 4.6.1 or later. This should not be a big deal as that version is relatively old.
 
-> That was the easy part.
+> **Important**: please note that there was a [type forwarding issue](https://github.com/dotnet/standard/issues/300) in .Net Framework 4.6.1 that breaks interop with a netstandard assembly if it contains certain methods in a class marked as Serialized. This means that although your projects may be on 4.6.1, on the target (executing) machine at least **.Net Framework 4.7.2** has to be installed.
 
 ## I'm confused, .Net Framework, Core or Standard?
 sensenet consists of many libraries. The goal is to offer these libraries to the broadest customer audience possible. The .Net Standard format lets both **.Net Framework** (4.6.1+) and **.Net Core** (2.0+) applications use our packages. This lets older projects get the new features while modern environments (for example a full cloud-ready build and deployment system) can also use the same code base.
