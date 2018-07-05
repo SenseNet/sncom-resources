@@ -18,16 +18,32 @@ This means that starting with **sensenet Services 7.2** the application project 
 
 > That was the easy part.
 
-## I'm confused, .Net Framework or Standard?
-sensenet consists of many libraries. The goal is to offer these libraries to the broadest customer audience possible. The .Net Standard format lets both **.Net Framework** (4.6.1+) and **.Net Core** (2.0+) applications use our packages. This lets older projects get the new features while modern environments (for example a full cloud-ready build system) can also use the same code base.
+## I'm confused, .Net Framework, Core or Standard?
+sensenet consists of many libraries. The goal is to offer these libraries to the broadest customer audience possible. The .Net Standard format lets both **.Net Framework** (4.6.1+) and **.Net Core** (2.0+) applications use our packages. This lets older projects get the new features while modern environments (for example a full cloud-ready build and deployment system) can also use the same code base.
 
-> We are not there yet.
+> But we are not there yet.
 
 ## Converting sensenet libraries
-There are some features or apis in sensenet that are **not available in .Net Standard** (of course in a future version of the standard there may be more apis available). For example EventLog access, MSMQ messaging and Workflow among them. Our approach is to replace these features with more modern solutions or separate them into their own components and make them available as a legacy option. There are other reasons too: for example as MSMQ is **not available in the cloud**, we will offer a different solution (RabbitMQ or Azure Service Bus) for messaging in cloud deployments.
+There are some features or APIs in sensenet that are **not available in .Net Standard** (of course in a future version of the standard there may be more APIs available but we can only work with what we have now): *EventLog* access, *MSMQ messaging* and *Workflow Foundation* among them. Our approach is to replace these features with more modern solutions or separate them into their own components and make them available as a legacy option. 
 
-This means we will convert our project one-by-one, starting from the bottom to the top. *SenseNet.Tools*, *Common* and *Search* libraries are already converted to netstandard, as you can see in the following diagram.
+There are other reasons for decomposing some features: as MSMQ is **not available in the cloud**, we will offer a different solution (based on *RabbitMQ* or *Azure Service Bus*) for messaging in cloud deployments.
+
+This means we will convert our projects one-by-one, starting from the bottom. *SenseNet.Tools*, *Common* and *Search* libraries are already converted to netstandard, as you can see in the following diagram.
 
 [ converted projects diagram ]
 
+As we move forward with this project, we will post updates on how many and what kind of issues we have left and which packages are converted to netstandard.
+
+## How does this affect my project?
+You should not notice much - at least at the beginning. When we release a new version, NuGet will take care of updating your dll references. 
+
+We try to convert or move features in the background, without changing the API if possible. When we remove and replace a dependency (e.g. *Enterprise Library* soon) you'll have the option to use either the old or the new technology (in this case a more modern, service-oriented logging module).
+
 ## Easier upgrades
+Ok, but does not this mean that I'll have to update sensenet packages too frequently and execute patches all day?
+
+> Fortunately not.
+
+Our components (e.g. Services, WebPages) have two parts: libraries and a database part (e.g. content type definitions, views, etc.). If *only the dll part changes* (as is the case when we refactor the code base in the background), you *do not have to execute an SnAdmin patch*, because the dll is still compatible with the content items in the database.
+
+Starting with sensenet 7.2, our components know the last supported version for their database part, so if there were no changes in the content repository, you can just **update the NuGet package in Visual Studio** and compile your application!
