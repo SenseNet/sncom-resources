@@ -8,15 +8,16 @@ index: 0
 
 ## What is sensenet
 
-sensenet is an open source content services platform written in .NET for developers and development companies. Enterprise grade security and permission system makes it a perfect core of any content management solution. With sensenet you can create one page apps using your favourite JS framework without steep learning curve. In addition to that, each and every content is accessible through REST API so you can integrate anything you like.
+sensenet is an open source content services platform written in .NET for developers and development companies. Its enterprise grade security and permission system, makes it a perfect core of any content management solution so you only need to focus on business logic.
+You can build single-page apps using your favourite JS framework without steep learning curve and access each and every content easily through OData REST API. Additionally , any 3rd party service can be integrated into sensenet so the possibilities are infinite.
 
 ## Use cases
 
 As a development platform with a capable content repository in it's core, sensenet could satisfy a wide variety of business needs.
-From company intranet to document management system, you can develop your own solution, focusing only on business logic and leave the rest to a stable system in the core of your solution. See below some examples which can be made with sensenet.
+From company intranet to mobile app, you can develop your own solution, focusing only on business logic and leave the rest to a stable system in its core. See below some examples which can be made with sensenet.
 
 ### Document Management
-sensenet has robust document management capabilities that enables you to get the most out of your digital work environment. For many companies, the focus of document management is on the storage and organization of documents. They want to be able to store documents in a secure and organized way that still allows content to be found easily. Learn about features and functions built into sensenet to make document management reliable and easy to use.
+sensenet has robust document management capabilities that enables you to get the most out of your digital work environment. For many companies, the focus of document management is on the storage and organization of documents. They want to be able to store documents in a secure and organized way that still allows content to be found easily. Learn about features and functions built for sensenet to make document management reliable and easy to use.
 
 - permission system
 - indexing and search
@@ -27,12 +28,12 @@ sensenet has robust document management capabilities that enables you to get the
 
 ### Company intranet
 
-Sandymount strand Poldy cyclops Circe like a shot off a shovel soft smellow Buck Mulligan met him pike hoses. Blazes Boylan faintly scented urine sixteen Circe Sirens letter. Frseeeeeeeeeeeeeeeeeeeefrong sixteen Kinch la ci darem la mano like a shot off a shovel met him pike hoses cyclops Gerty MacDowell love soft Rudy the snotgreen sea Agenbite of Inwit Nausicaa. Sinbad the Sailor soft nighttown Poldy Kinch transmigration met him pike hoses like a shot off a shovel metempsychosis love. Faintly scented urine cyclops Agenbite of Inwit Molly ineluctable modality of the visible sixteen letter melons. Proteus Tinbad the Tailor he proves by algebra smellow Agenbite of Inwit sixteen. Cyclops sixteen Penelope Sinbad the Sailor yellow Dedalus. Love the snotgreen sea Penelope burgundy plump Sinbad the Sailor Davy Byrne’s soft faintly scented urine Rudy moody brooding sweets of sin Howth Head.
+The main purpose of an intranet is to share company information and increase the collaboration among employees. sensenet, with its document management capability and enterprise grade permission system is ready to form the core of any collaborative workspace which can be tailor made to specific needs. Sharing documents, defining organizational groups and custom workflows are all ready for you.
 
 ### Public website
 
-Sandymount strand Poldy cyclops Circe like a shot off a shovel soft smellow Buck Mulligan met him pike hoses. Blazes Boylan faintly scented urine sixteen Circe Sirens letter. Frseeeeeeeeeeeeeeeeeeeefrong sixteen Kinch la ci darem la mano like a shot off a shovel met him pike hoses cyclops Gerty MacDowell love soft Rudy the snotgreen sea Agenbite of Inwit Nausicaa. Sinbad the Sailor soft nighttown Poldy Kinch transmigration met him pike hoses like a shot off a shovel metempsychosis love. Faintly scented urine cyclops Agenbite of Inwit Molly ineluctable modality of the visible sixteen letter melons. Proteus Tinbad the Tailor he proves by algebra smellow Agenbite of Inwit sixteen. Cyclops sixteen Penelope Sinbad the Sailor yellow Dedalus. Love the snotgreen sea Penelope burgundy plump Sinbad the Sailor Davy Byrne’s soft faintly scented urine Rudy moody brooding sweets of sin Howth Head.
+sensenet is also able to build public websites with it easily even by using JS frameworks. You can create single-page applications with little or no back-end related development, sensenet handles all the rest for you. All features, including document management, permission system and custom workflow are accessible, so you have much more possibility than using a simple CMS solution. You can also connect any 3rd party service to the system using APIs already available in sensenet.
 
 ### Mobile app
 
-Sandymount strand Poldy cyclops Circe like a shot off a shovel soft smellow Buck Mulligan met him pike hoses. Blazes Boylan faintly scented urine sixteen Circe Sirens letter. Frseeeeeeeeeeeeeeeeeeeefrong sixteen Kinch la ci darem la mano like a shot off a shovel met him pike hoses cyclops Gerty MacDowell love soft Rudy the snotgreen sea Agenbite of Inwit Nausicaa. Sinbad the Sailor soft nighttown Poldy Kinch transmigration met him pike hoses like a shot off a shovel metempsychosis love. Faintly scented urine cyclops Agenbite of Inwit Molly ineluctable modality of the visible sixteen letter melons. Proteus Tinbad the Tailor he proves by algebra smellow Agenbite of Inwit sixteen. Cyclops sixteen Penelope Sinbad the Sailor yellow Dedalus. Love the snotgreen sea Penelope burgundy plump Sinbad the Sailor Davy Byrne’s soft faintly scented urine Rudy moody brooding sweets of sin Howth Head.
+Thanks to multiple connection possibilities by APIs, mobile app development is also possible with sensenet. Build your app on your favourite platform and use senenet as a content repository behind your solution.
