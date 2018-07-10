@@ -8,13 +8,13 @@ index: 0
 
 ## What is sensenet
 
-sensenet is an open source content services platform written in .NET for developers and development companies. Its enterprise grade security and permission system, makes it a perfect core of any content management solution so you only need to focus on business logic.
-You can build single-page apps using your favourite JS framework without steep learning curve and access each and every content easily through OData REST API. Additionally , any 3rd party service can be integrated into sensenet so the possibilities are infinite.
+sensenet is an open source content services platform written in .NET for developers and development companies. Its enterprise grade security and permission system, makes it a perfect core of any content management solution, so you only need to focus on business logic.
+You can build single-page apps using your favourite JS framework without steep learning curve and access each and every content easily through OData REST API. Additionally, any 3rd party service can be integrated into sensenet, so the possibilities are infinite.
 
 ## Use cases
 
-As a development platform with a capable content repository in it's core, sensenet could satisfy a wide variety of business needs.
-From company intranet to mobile app, you can develop your own solution, focusing only on business logic and leave the rest to a stable system in its core. See below some examples which can be made with sensenet.
+As a development platform with a capable content repository, sensenet could satisfy a wide variety of business needs.
+From company intranet to mobile app, you can develop your own solution, focusing only on business logic and leave the rest to a stable system in its core. See below some examples of what can be achieved with sensenet.
 
 ### Document Management
 sensenet has robust document management capabilities that enables you to get the most out of your digital work environment. For many companies, the focus of document management is on the storage and organization of documents. They want to be able to store documents in a secure and organized way that still allows content to be found easily. Learn about features and functions built for sensenet to make document management reliable and easy to use.
@@ -32,7 +32,7 @@ The main purpose of an intranet is to share company information and increase the
 
 ### Public website
 
-sensenet is also able to build public websites with it easily even by using JS frameworks. You can create single-page applications with little or no back-end related development, sensenet handles all the rest for you. All features, including document management, permission system and custom workflow are accessible, so you have much more possibility than using a simple CMS solution. You can also connect any 3rd party service to the system using APIs already available in sensenet.
+With sensenet you are able to build public websites easily even by using JS frameworks. You can create single-page applications with little or no back-end related development, sensenet handles all the rest for you. All features, including document management, permission system and custom workflow are accessible, so you have much more possibility than using a simple CMS solution. You can also connect any 3rd party service to the system using APIs already available in sensenet.
 
 ### Mobile app
 
