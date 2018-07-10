@@ -8,7 +8,7 @@ index: 0
 
 ## What is sensenet
 
-sensenet is an open source content services platform written in .NET for developers and development companies. Its enterprise grade security and permission system, makes it a perfect core of any content management solution, so you only need to focus on business logic.
+sensenet is an open source content services platform written in .NET for developers and development companies. Its enterprise grade security and permission system makes it a perfect core of any content management solution, so you only need to focus on business logic.
 You can build single-page apps using your favourite JS framework without steep learning curve and access each and every content easily through OData REST API. Additionally, any 3rd party service can be integrated into sensenet, so the possibilities are infinite.
 
 ## Use cases
@@ -24,7 +24,7 @@ sensenet has robust document management capabilities that enables you to get the
 - version control
 - Microsoft Office integration
 - custom workflows
-- doucment preview
+- document preview
 
 ### Company intranet
 
@@ -36,4 +36,4 @@ With sensenet you are able to build public websites easily even by using JS fram
 
 ### Mobile app
 
-Thanks to multiple connection possibilities by APIs, mobile app development is also possible with sensenet. Build your app on your favourite platform and use senenet as a content repository behind your solution dealing with content requests, permissions and so on. 
+Thanks to multiple connection possibilities by APIs, mobile app development is also possible with sensenet. Build your app on your favourite platform and use sensenet as a content repository behind your solution dealing with content requests, permissions and so on. 
