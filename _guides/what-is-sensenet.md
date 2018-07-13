@@ -1,6 +1,6 @@
 ---
 title:  "What is sensenet"
-tags: [intro, concepts, use cases, dms, intranet, document management]
+tags: [intro, concepts, use cases, dms, intranet, document management, mobile app]
 description: Introduction to sensenet
 permalink: /guide/introduction/what-is-sensenet
 index: 0
