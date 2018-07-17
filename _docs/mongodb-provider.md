@@ -9,7 +9,7 @@ description: This article is about an external blob provider for MongoDB.
 
 # MongoDB blob provider
 
-By default **sensenet** stores binaries (files) in the database. In enterprise environments it is not a suitable solution for various reasons (licensing and storage among them), so we offer an option to store binaries in an external [Blob provider](/docs/blob-provider/) instead of the main [Content Repository](/docs/content-repository) database. This article is about an external blob provider that stores binaries in [MongoDB](https://www.mongodb.com) so that operators have more flexibility when installing and maintaining sensenet. 
+By default **sensenet** stores binaries (files) in the database. While this is a perfectly valid scenario, in enterprise environments in certain cases it might not be a suitable solution for various reasons (licensing and storage among them), so we offer an option to store binaries in an external [Blob provider](/docs/blob-provider/) instead of the main [Content Repository](/docs/content-repository) database. This article is about an external blob provider that stores binaries in [MongoDB](https://www.mongodb.com) so that operators have more flexibility when installing and maintaining sensenet. 
 
 Although [MongoDB](https://www.mongodb.com) is capable of storing metadata (usually that is what it is used for), we decided to use it as our binary storage in this blob provider. We chose it because it is more scalable and reliable than a simple file system (SMB) solution and is able to work better in a distributed environment.
 
