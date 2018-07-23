@@ -50,6 +50,7 @@ Cloud
 
 ## Free or commercial. Your choice.
 
+Freemium.
 Best of both worlds. Free as in beer, free as in speech. And commercial
 
 Community. Really free. Build a business. Sell your services. But: give back to the community.
