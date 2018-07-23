@@ -40,5 +40,9 @@ Thanks to multiple connection possibilities by APIs, mobile app development is a
 
 ## Can get it for free
 
+Community. Really free. Build a business. Sell your services. But: give back to the community.
+
+Enterprise. Why would you want it? You want to protect your code.
+
 ## You need devs
 
