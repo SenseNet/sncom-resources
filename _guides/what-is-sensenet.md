@@ -60,6 +60,12 @@ Your devs.
 
 Or hire us.
 
+Server side: .NET
+
+Frontend: JavaScript, TypeScript
+
+REST: All the rest.
+
 ## High level structural overview
 
 Components. Modular. publish our platform in small, separate components. Time to market quickly.
