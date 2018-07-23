@@ -62,10 +62,13 @@ Or hire us.
 
 ## High level structural overview
 
-Anko, Gyebi 
-DB
-CR
-security
+Anko: https://raw.githubusercontent.com/SenseNet/sn-resources/master/images/sn-components/sn-components_services.png,
+Gyebi: https://twitter.com/Gyeby
+https://community.sensenet.com/docs/sensenet-components/
+
+CR: DB + Blob + index
+security: auth, permissions
+REST
 client apis
 
 ## Convenient
