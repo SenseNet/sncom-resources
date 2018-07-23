@@ -67,8 +67,11 @@ Gyebi: https://twitter.com/Gyeby
 https://community.sensenet.com/docs/sensenet-components/
 
 CR: DB + Blob + index
+
 security: auth, permissions
+
 REST
+
 client apis
 
 ## Convenient
@@ -81,6 +84,8 @@ npm
 
 Follow changes
 patching easy
+
+Nothing stops you from experimenting with the source code: https://github.com/SenseNet
 
 
 ## Reach us
