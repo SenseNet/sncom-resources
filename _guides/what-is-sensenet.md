@@ -76,7 +76,7 @@ client apis
 
 ## Convenient
 
-Develop in the language you want
+Develop in the language you want. REST API
 
 Use packages
 nuget
