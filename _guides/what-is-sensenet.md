@@ -90,10 +90,12 @@ Nothing stops you from experimenting with the source code: https://github.com/Se
 
 ## Reach us
 
-get notified
-coderelease
+stack for qs
+github for issues
 
-stack
+get notified: coderelease
+
+Other channels:
 gitter
 twitter
 facebook
