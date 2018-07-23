@@ -22,7 +22,9 @@ The sensenet <strong>API references</strong> are available at the [docs page](/d
 
 ## Target audience
 
-// TODO
+This guide is for you if you want to understand how sensenet can meet your high-level needs, and how you can solve them. Get the big picture quickly, and then focus on the approaches you can take.
+
+You can safely skip the technical parts. You may have a technical or non-technical background, this guide is the best place for you to get an overview of sensenet that you can share as a common basis for discussion within your team. Read on to discover how sensenet can help you develop your own business application.
 
 ## Resources
 
