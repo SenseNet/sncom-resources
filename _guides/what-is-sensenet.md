@@ -50,7 +50,8 @@ Cloud
 
 ## Free or commercial. Your choice.
 
-Freemium.
+Freemium. No risk for you. Get to know it, play with it, even use for live projects if you wish. You get to know **everything** about sensenet before (if and at all) you pay for any service.
+
 Best of both worlds. Free as in beer, free as in speech. And commercial
 
 Community. Really free. Build a business. Sell your services. But: give back to the community.
@@ -59,7 +60,9 @@ You can contribute if you would like to change/add to it.
 
 Enterprise. Why would you want it? You want to protect your code. Want get protection against lawsuits.
 
-Company behind sensenet: Sense/Net Inc. Benefits.
+Company behind sensenet: Sense/Net Inc. Benefits. founded in 1995. A technology leader of .Net based document management platform.
+
+https://techcrunch.com/2012/11/04/should-your-startup-go-freemium/?guccounter=1
 
 ## You need devs
 
