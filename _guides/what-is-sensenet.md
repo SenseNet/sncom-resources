@@ -48,11 +48,17 @@ Thanks to multiple connection possibilities by APIs, mobile app development is a
 Cloud
 .Net Standard
 
-## Can get it for free
+## Free or commercial. Your choice.
+
+Best of both worlds. Free as in beer, free as in speech. And commercial
 
 Community. Really free. Build a business. Sell your services. But: give back to the community.
+You can check the code
+You can contribute if you would like to change/add to it.
 
-Enterprise. Why would you want it? You want to protect your code.
+Enterprise. Why would you want it? You want to protect your code. Want get protection against lawsuits.
+
+Company behind sensenet: Sense/Net Inc. Benefits.
 
 ## You need devs
 
