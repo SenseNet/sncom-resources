@@ -62,6 +62,8 @@ Or hire us.
 
 ## High level structural overview
 
+Components. Modular. publish our platform in small, separate components. Time to market quickly.
+
 Anko: https://raw.githubusercontent.com/SenseNet/sn-resources/master/images/sn-components/sn-components_services.png,
 Gyebi: https://twitter.com/Gyeby
 https://community.sensenet.com/docs/sensenet-components/
@@ -76,11 +78,11 @@ client apis
 
 ## Convenient
 
-Develop in the language you want. REST API
+Develop in the language you want. REST API. Language-independent.
 
 Use packages
-nuget
-npm
+nuget: in the .Net world that is the de-facto standard for delivering libraries.  nuget.org to publish the bits of our ECM platform
+npm. It is best if you install only the parts you need, so that you can keep maintenance and upgrade costs at minimum. This is why we publish many small packages containing only the minimal set of libraries and content.
 
 Follow changes
 patching easy
