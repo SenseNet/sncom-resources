@@ -38,6 +38,16 @@ With sensenet you are able to build public websites easily even by using JS fram
 
 Thanks to multiple connection possibilities by APIs, mobile app development is also possible with sensenet. Build your app on your favourite platform and use sensenet as a content repository behind your solution dealing with content requests, permissions and so on. 
 
+## Widespread
+
+300+ references. https://www.sensenet.com/references
+
+
+## Modern. Transitioning.
+
+Cloud
+.Net Standard
+
 ## Can get it for free
 
 Community. Really free. Build a business. Sell your services. But: give back to the community.
@@ -49,3 +59,33 @@ Enterprise. Why would you want it? You want to protect your code.
 Your devs.
 
 Or hire us.
+
+## High level structural overview
+
+Anko, Gyebi 
+DB
+CR
+security
+client apis
+
+## Convenient
+
+Develop in the language you want
+
+Use packages
+nuget
+npm
+
+Follow changes
+patching easy
+
+
+## Reach us
+
+get notified
+coderelease
+
+stack
+gitter
+twitter
+facebook
