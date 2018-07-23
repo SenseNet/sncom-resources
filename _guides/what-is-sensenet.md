@@ -37,3 +37,8 @@ With sensenet you are able to build public websites easily even by using JS fram
 ### Mobile app
 
 Thanks to multiple connection possibilities by APIs, mobile app development is also possible with sensenet. Build your app on your favourite platform and use sensenet as a content repository behind your solution dealing with content requests, permissions and so on. 
+
+## Can get it for free
+
+## You need devs
+
