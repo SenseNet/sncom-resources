@@ -64,6 +64,9 @@ Client SDKs
 
 Providers. Features can even be substituted with your own solution. This means, for example, that instead of sensenet's own search module you can develop your own query and index implementation.
 RabbitMQ prototype Create a messaging provider that is able to operate in the cloud. Or your own.
+https://community.sensenet.com/docs/sensenet-components/
+https://community.sensenet.com/blog/2017/09/27/new-sn7-components
+XXXXXXXXXX
 
 
 
