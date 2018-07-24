@@ -50,13 +50,40 @@ Headless CMS
 ECM
 CSP
 
+a development platform too
+
+Component structure:
+Core layer. Within this:
+* Services component. the core layer of sensene. all other packages are optional
+
+
+Feature packages like the Search, WorkSpaces, Workflow, Notifications module. Feature packages are not required. 
+
+
+Client SDKs
+
+Providers. Features can even be substituted with your own solution. This means, for example, that instead of sensenet's own search module you can develop your own query and index implementation.
+
+
+
 ## Widespread
 
 300+ references. https://www.sensenet.com/references
 
 ## Modern. Transitioning.
 
-React, Aurelia
+Frontend:React/Redux and Aurelia for sensenet field and view controls you can use in your applications
+
+React
+Simple, great support and community.
+componentized, testable (and tested), easy to deploy, accessible and should meet the industry standards
+
+Aurelia contain 
+“A framework should get out of my way”
+Quality and performance
+
+JWT for authentication
+
 Cloud
 .Net Standard
 
