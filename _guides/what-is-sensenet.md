@@ -63,6 +63,7 @@ Feature packages like the Search, WorkSpaces, Workflow, Notifications module. Fe
 Client SDKs
 
 Providers. Features can even be substituted with your own solution. This means, for example, that instead of sensenet's own search module you can develop your own query and index implementation.
+RabbitMQ prototype Create a messaging provider that is able to operate in the cloud. Or your own.
 
 
 
