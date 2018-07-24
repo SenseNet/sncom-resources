@@ -38,15 +38,31 @@ With sensenet you are able to build public websites easily even by using JS fram
 
 Thanks to multiple connection possibilities by APIs, mobile app development is also possible with sensenet. Build your app on your favourite platform and use sensenet as a content repository behind your solution dealing with content requests, permissions and so on. 
 
+## Everything is content
+
+The foundation of sensenet is the Content Repository, where documents, tasks, users, projects, even system configuration – everything – is a Content. It is the fundamental building block of the system that makes content management easy and powerful at the same time. All content items are organized into a huge content tree, so when managing and presenting content, applying features like versioning, approval or permissions, you can always think in subtrees and inheritance.
+
+Using content items everywhere unlocks a great deal of exceptional features that make your experience as a user more seamless, and your job as a developer a lot easier. Focus on the business problem – the platform handles the rest!
+
+## CSP
+
+Headless CMS
+ECM
+CSP
+
 ## Widespread
 
 300+ references. https://www.sensenet.com/references
 
-
 ## Modern. Transitioning.
 
+React, Aurelia
 Cloud
 .Net Standard
+
+you need devs
+ODATA REST API
+or anything of your choice
 
 ## Free or commercial. Your choice.
 
