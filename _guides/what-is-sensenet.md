@@ -62,7 +62,7 @@ Indexing absolutely needed, stored in the file system. Provided by... what, Serv
 Messaging also?
 
 
-*Feature packages* like the Search (search engine that works with the index ), WorkSpaces (predefined content types for workspaces and optional UI elements), Workflow (integrates the powerful Windows Workflow Foundation), Notifications (for users subscribed to content changes) or Task management (long-running background tasks) modules. Feature packages are not required. 
+*Extensions* like the Search (search engine that works with the index ), WorkSpaces (predefined content types for workspaces and optional UI elements), Workflow (integrates the powerful Windows Workflow Foundation), Notifications (for users subscribed to content changes) or Task management (long-running background tasks) modules. Feature packages are not required. 
 
 
 *Client SDKs*
