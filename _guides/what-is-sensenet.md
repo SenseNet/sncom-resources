@@ -85,7 +85,7 @@ XXXXXXXXXX
 
 300+ references. https://www.sensenet.com/references
 
-## Modern. Transitioning.
+## Modern. Transparent. Transitioning.
 
 Frontend:React/Redux and Aurelia for sensenet field and view controls you can use in your applications
 
@@ -105,6 +105,12 @@ Cloud
 you need devs
 ODATA REST API
 or anything of your choice
+
+CI tools: https://community.sensenet.com/blog/2017/10/11/CI-Tools-We-Use
+GitHub pull request status check tools, to know if the changeset can be merged safely. These tools automatize processes such as creating multiple sandbox environments, downloading the codebase, installing dependencies, building, running unit and integration tests, comparing code coverage results, performing static code analysis etc. Travis, Greenkeeper, Codecov, Codacy.
+
+You can check our source code. You can read our blog.
+
 
 ## Free or commercial. Your choice.
 
