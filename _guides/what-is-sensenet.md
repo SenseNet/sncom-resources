@@ -53,14 +53,25 @@ CSP
 a development platform too
 
 Component structure:
-Core layer. Within this:
-* Services component. the core layer of sensene. all other packages are optional
+*Core layer.* Within this:
+Services component. the core layer of sensene. all other packages are optional.
+Includes: the main content repository with some basic built-in content types and some tools for administrative tasks. No UI.
+
+Indexing absolutely needed, stored in the file system. Provided by... what, Services?
+
+Messaging also?
 
 
-Feature packages like the Search, WorkSpaces, Workflow, Notifications module. Feature packages are not required. 
+*Feature packages* like the Search (search engine that works with the index ), WorkSpaces (predefined content types for workspaces and optional UI elements), Workflow (integrates the powerful Windows Workflow Foundation), Notifications (for users subscribed to content changes) or Task management (long-running background tasks) modules. Feature packages are not required. 
 
 
-Client SDKs
+*Client SDKs*
+
+Manipulate the CR.
+Two ways: JavaScript (TypeScript) client API or .NET Client for sensenet that connects to the REST API.
+JS client scoped! JavaScript (TypeScript) providing a Javascript client API
+
+
 
 Providers. Features can even be substituted with your own solution. This means, for example, that instead of sensenet's own search module you can develop your own query and index implementation.
 RabbitMQ prototype Create a messaging provider that is able to operate in the cloud. Or your own.
