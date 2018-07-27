@@ -25,6 +25,9 @@ sensenet has robust document management capabilities that enables you to get the
 - Microsoft Office integration
 - custom workflows
 - document preview
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+- content types & templates
+- localization
 
 ### Company intranet
 
@@ -56,6 +59,7 @@ Component structure:
 *Core layer.* Within this:
 Services component. the core layer of sensene. all other packages are optional.
 Includes: the main content repository with some basic built-in content types and some tools for administrative tasks. No UI.
+Content types, content templates, 
 
 Indexing absolutely needed, stored in the file system. Provided by... what, Services?
 
@@ -77,7 +81,7 @@ Providers. Features can even be substituted with your own solution. This means, 
 RabbitMQ prototype Create a messaging provider that is able to operate in the cloud. Or your own.
 https://community.sensenet.com/docs/sensenet-components/
 https://community.sensenet.com/blog/2017/09/27/new-sn7-components
-XXXXXXXXXX
+
 
 
 
@@ -163,9 +167,12 @@ Develop in the language you want. REST API. Language-independent.
 Use packages
 nuget: in the .Net world that is the de-facto standard for delivering libraries.  nuget.org to publish the bits of our ECM platform
 npm. It is best if you install only the parts you need, so that you can keep maintenance and upgrade costs at minimum. This is why we publish many small packages containing only the minimal set of libraries and content.
+backend https://www.nuget.org/packages?q=sensenet
+frontend https://www.npmjs.com/search?q=sensenet
 
 Follow changes
-patching easy
+patching easy (Miklos blog entry)
+
 
 Nothing stops you from experimenting with the source code: https://github.com/SenseNet
 
