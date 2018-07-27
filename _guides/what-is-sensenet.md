@@ -196,3 +196,9 @@ Other channels:
 gitter
 twitter
 facebook
+
+
+## May add
+
+Oauth - google, fb 
+https://community.sensenet.com/blog/2017/12/20/first-oauth-implementation
