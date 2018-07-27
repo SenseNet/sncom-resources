@@ -25,7 +25,15 @@ sensenet has robust document management capabilities that enables you to get the
 - Microsoft Office integration
 - custom workflows
 - document preview
+
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+- permission system
+- indexing and search
+- collaboration
+- version control & approval
+- Microsoft Office integration
+- custom workflows
+- document preview
 - content types & templates
 - localization
 
