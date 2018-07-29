@@ -15,7 +15,7 @@ We've continued refactoring client side packages with [sn-redux](https://github.
 
 ![Clean-up](/img/posts/cleanup.jpg "Clean-up")
 
-As it was mentioned in one of our previous [posts](https://community.sensenet.com/blog/2018/02/21/scoped-packages), with creating scoped packages our main goal was to divide the code into smaller and more maintainable units. We've created *@sensenet* scope and publish our npm packages withing this. With sn-redux the plan was the same, so [@sensenet/redux](https://www.npmjs.com/package/@sensenet/redux) was born. From now on the package should be installed like this:
+As it was mentioned in one of our previous [posts](https://community.sensenet.com/blog/2018/02/21/scoped-packages), with creating scoped packages our main goal was to divide the code into smaller and more maintainable units. We've created *@sensenet* scope and publish our npm packages within this. With sn-redux the plan was the same, so [@sensenet/redux](https://www.npmjs.com/package/@sensenet/redux) was born. From now on the package should be installed like this:
 
 ```npm install --save @sensenet/redux```
 
