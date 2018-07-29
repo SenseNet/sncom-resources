@@ -81,7 +81,7 @@ Messaging also?
 
 Manipulate the CR.
 Two ways: JavaScript (TypeScript) client API or .NET Client for sensenet that connects to the REST API.
-JS client scoped! JavaScript (TypeScript) providing a Javascript client API. interacting with a Repository, authentication, querying and has the built-in content types bundled. https://www.npmjs.com/search?q=sensenet
+JS client scoped! JavaScript (TypeScript) providing a Javascript client API. interacting with a Repository, authentication, querying and has the built-in content types bundled. https://www.npmjs.com/search?q=sensenet. Small, lightweight packages. 
 
 
 
@@ -183,6 +183,9 @@ patching easy (Miklos blog entry)
 
 
 Nothing stops you from experimenting with the source code: https://github.com/SenseNet
+
+## Documented - in progress
+
 
 
 ## Reach us
