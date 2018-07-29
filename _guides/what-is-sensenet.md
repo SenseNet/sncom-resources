@@ -81,7 +81,7 @@ Messaging also?
 
 Manipulate the CR.
 Two ways: JavaScript (TypeScript) client API or .NET Client for sensenet that connects to the REST API.
-JS client scoped! JavaScript (TypeScript) providing a Javascript client API. interacting with a Repository, authentication, querying and has the built-in content types bundled. https://www.npmjs.com/search?q=sensenet. Small, lightweight packages. 
+JS client scoped! JavaScript (TypeScript) providing a Javascript client API. interacting with a Repository, authentication, querying and has the built-in content types bundled. https://www.npmjs.com/search?q=sensenet. Small, lightweight, more maintainable packages. 
 
 
 
@@ -167,6 +167,8 @@ security: auth, permissions
 REST
 
 client apis
+
+JSON Web Tokens. In SN7 you have the opportunity to use JSON Web Tokens to authenticate users.
 
 ## Convenient
 
