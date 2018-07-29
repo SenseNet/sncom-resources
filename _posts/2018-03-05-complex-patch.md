@@ -13,7 +13,7 @@ In most cases executing a [sensenet patch](/blog/2018/02/14/install-patch) is ea
 
 From time-to-time we have to change some parts of the API. Usually this happens because we need to clean up or clarify those parts or to make way for a new feature. If your custom solution used the previous API, this may require some manual work during patching.
 
-> Of course we always try to minimize the impact of these changes, extend our APIs silently. But in cases like the [information retrieval refactor](https://github.com/SenseNet/sensenet/issues/125) we could not avoid a few breaking changes. Sometimes the change does effect only a subset of our users, depending on whether you've used a certain API or not. 
+> Of course we always try to minimize the impact of these changes, extend our APIs silently. But in cases like the [information retrieval refactor](https://github.com/SenseNet/sensenet/issues/125) we could not avoid a few breaking changes. Sometimes the change does affect only a subset of our users, depending on whether you've used a certain API or not. 
 
 ## Optimistic approach
 
