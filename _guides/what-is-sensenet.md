@@ -188,7 +188,7 @@ Nothing stops you from experimenting with the source code: https://github.com/Se
 ## Documented - in progress
 
 Moving from wiki to community
-
+we constantly migrating articles from our wiki site to the new community site. In most cases some modification is needed, so we review and update all articles before posting them to community site.
 
 
 ## Reach us
