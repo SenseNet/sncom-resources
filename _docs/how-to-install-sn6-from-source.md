@@ -7,7 +7,7 @@ tags: install source sn6
 description: In this document we would like to guide you through the installation process of sensenet from a source package.
 ---
 
-Please note:** for new projects we recommend starting out with sensenet 7, using our [NuGet packages](https://community.sensenet.com/docs/install-sn-from-nuget/) (or [source code](https://github.com/SenseNet/sensenet)). For existing installations you can find custom upgrade instructions for your version on the [releases page](https://github.com/SenseNet/sensenet/releases).
+Please note: for new projects we recommend starting out with sensenet 7, using our [NuGet packages](https://community.sensenet.com/docs/install-sn-from-nuget/) (or [source code](https://github.com/SenseNet/sensenet)). For existing installations you can find custom upgrade instructions for your version on the [releases page](https://github.com/SenseNet/sensenet/releases).
 
 # How to install sensenet 6.5 from source package
 
