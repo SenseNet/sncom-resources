@@ -8,7 +8,7 @@ index: 0
 
 ## What is sensenet
 
-You can build single-page apps using your favourite JS framework without steep learning curve and access each and every content easily through OData REST API. Additionally, any 3rd party service can be integrated into sensenet, so the possibilities are infinite.
+sensenet is an open source content services platform written in .NET for developers and development companies. Its enterprise grade security and permission system makes it a perfect core of any content management solution, so you only need to focus on business logic. You can build single-page apps using your favourite JS framework without steep learning curve and access each and every content easily through OData REST API. Additionally, any 3rd party service can be integrated into sensenet, so the possibilities are infinite.
 
 ## Use cases
 
