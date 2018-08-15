@@ -1,51 +1,46 @@
 ---
 
-title:  "Docviewer"
+title:  "The new and improved Docviewer"
 author: CsabaPeter
 image: "../img/posts/road-to-netstandard-header.jpg"
-tags: [upgrade, standard, patch, framework]
+tags: [upgrade, UX, UI, design, research]
 
 ---
 
-There is a lot going on with .Net these days. First came the new era of .Net Core, then a new standard emerged that serves as a bridge between the old and the new platforms. We have to make sensenet available to as many customers as possible. This is why we started to unify our projects to support [.Net Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) that contains a lot more APIs than its predecessors.
+Sometimes there is a strong need to rethink an app from the ground up, because it has became too chunky and difficult to use with a lot of features that no one actually used. That's exactly what happened with Sense/Net's Docviewer, so as the newest addition to the product team as a UX designer my first task was to reimagine and redesign the app.
+In this article I'll guide you through the steps including user interviews, making wireframes to high fidelity prototypes, user testing, iterating and so on. 
 
 ---
 
-## A unified .Net platform
-To offer at least parts of sensenet in .Net Standard format, we have to upgrade all our libraries to **at least .Net Framework 4.6.1**, because that is the oldest version on the framework line that supports .Net Standard 2.0. This already happened in the last few days: we released a new version of our components containing the new libraries.
+## The first steps
+My work began with sitting down with the team and discussing what our main goal was (simplify the app and get rid of unused features). After that I started looking around for best practices like how other document viewer apps look like and what features they have. I used Adobe acrobat, Lumin, and Apple Preview as starting point. 
+Since we wanted an app with mostly viewing capabilities and a little bit of editing qualities Apple preview was the closest to our concept.
 
-This means that starting with **sensenet Services 7.2** the application project that uses sensenet packages has to be at least on .Net Framework 4.6.1 or later. This should not be a big deal as that version is relatively old.
+After clarifying the main path that we should take, I conducted a few user interviews (six to be exact) to find out what people mainly looknig for when they open a document viewer. After the interviews were done and evaluated each interviewee's answers I began to make the wireframes. After several versions there was a clear winner among the team and from there the prototyping began.
 
-> **Important**: please note that there was a [type forwarding issue](https://github.com/dotnet/standard/issues/300) in .Net Framework 4.6.1 that breaks interop with a netstandard assembly if it contains certain methods in a class marked as Serialized. This means that although your projects may be on 4.6.1, on the target (executing) machine at least **.Net Framework 4.7.2** has to be installed.
 
-## I'm confused, .Net Framework, Core or Standard?
-sensenet consists of many libraries. The goal is to offer these libraries to the broadest customer audience possible. The .Net Standard format lets both **.Net Framework** (4.6.1+) and **.Net Core** (2.0+) applications use our packages. This lets older projects get the new features while modern environments (for example a full cloud-ready build and deployment system) can also use the same code base.
+## Prototypes
+After the wireframing I made high fidelity prototypes in light and dark mode. For the high fidelity prototype I used Sketch and followed Material Design principles. I also made a click through prototype in InVision which you can try as well in the following link: [Docviewer] (https://projects.invisionapp.com/share/TGJZD5KNQZU#/screens)
 
-> But we are not there yet.
 
-## Converting sensenet libraries
-There are some features or APIs in sensenet that are **not available in .Net Standard** (of course in a future version of the standard there may be more APIs available but we can only work with what we have now): *EventLog* access, *MSMQ messaging* and *Workflow Foundation* among them. Our approach is to replace these features with more modern solutions or separate them into their own components and make them available as a legacy option. 
+## User testing
+When the click through prototype was finished I did a user testing session which included 5 people.
+I asked the participants to follow through these steps:
+1: Open the edit feature
+2: Open the left sidebar
+3: Go to gage 2 and 3 then go back to the top of the page
+4: Open the comment section
+5: Zoom in and out
+6: Rotate the page to the left and then back to it's original state
 
-There are other reasons for decomposing some features: as MSMQ is **not available in the cloud**, we will offer a different solution (based on *RabbitMQ* or *Azure Service Bus*) for messaging in cloud deployments.
 
-This means we will convert our projects one-by-one, starting from the bottom. *SenseNet.Tools*, *Common*, *Search* and a few other libraries are already converted to netstandard, as you can see in the following diagram.
+## Iteration
+After finishing the user tests I evaluated the answers and there was a few things that needed to be changed. First of all the left sidebar icon was very unfamiliar for most of the participoants and had a hard time finding it, so I had to find a more straight forward icon. Most participants liked the comment function and said it would benefit them. Also most of the participants didn't liked that the rotate buttons were on the bottom of the page, so I moved it to the top navbar.
 
-![Converting projects to netstandard](/img/posts/netstandard_diagram_01.png "sensenet netstandard libraries")
+## User testing part2
+I updated my design after the first set of user tests and I conducted a second round test with the same participants. The results were much better this time and eveyone made through the tests without any problem. The new sidebar icon solved the problem and putting the rotate buttons to the top navbar helped a lot as well. I also changed the order of the icons in the top navbar so the zoom icons were next to the rotate and sidebar, download, print and share buttons were next to each other.
 
-As we move forward with this project, we will post updates on how many and what kind of issues we have left and which packages are converted to netstandard.
+When I had the second round of user tests I sent the results and the updated screens to the team who are working hard to make the 1.0 version alive which will not include the comment function and the editing capabilities but those features will come as well very soon!
 
-## How does this affect my project?
-You should not notice much - at least at the beginning. When we release a new version, NuGet will take care of updating your dll references. 
+**Thank you fo reading my first article! More vill come in the future!**
 
-We try to convert or move features in the background, without changing the API if possible. When we remove and replace a dependency (e.g. *Enterprise Library* soon) you'll have the option to use either the old or the new technology (in this case a more modern, service-oriented logging module).
-
-## Easier upgrades
-Ok, but does not this mean that I'll have to update sensenet packages too frequently and execute patches all day?
-
-> Fortunately not.
-
-Our components (e.g. Services, WebPages) have two parts: libraries and a database part (e.g. content type definitions, views, etc.). If *only the dll part changes* (as is the case when we refactor the code base in the background), you *do not have to execute an SnAdmin patch*, because the dll is still compatible with the content items in the database.
-
-Starting with sensenet 7.2, our components know the last supported version for their database part, so if there were no changes in the content repository, you can just **update the NuGet package in Visual Studio** and compile your application!
-
-Photo by [rawpixel](https://unsplash.com/photos/FWOGqSKq_Cs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/standard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
