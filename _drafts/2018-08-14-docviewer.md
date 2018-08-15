@@ -21,7 +21,7 @@ After clarifying the main path that we should take, I conducted a few user inter
 ![Wireframes](/img/posts/Wireframe.png "Selected Wireframes")
 
 ## Prototypes
-After the wireframing I made high fidelity prototypes in light and dark mode. For the high fidelity prototype I used [Sketch](https://www.sketchapp.com/) and followed [Material Design](https://material.io/design/) principles. I also made a click through prototype in [InVision](https://www.invisionapp.com/) which you can try as well in the following link: [Docviewer] (https://projects.invisionapp.com/share/TGJZD5KNQZU#/screens)
+After the wireframing I made high fidelity prototypes in light and dark mode. For the high fidelity prototype I used [Sketch](https://www.sketchapp.com/) and followed [Material Design](https://material.io/design/) principles. I also made a click through prototype in [InVision](https://www.invisionapp.com/) which you can try as well in the following link: [Docviewer](https://projects.invisionapp.com/share/TGJZD5KNQZU#/screens)
 
 ![Prototype1](/img/posts/Docviewer-Active-Light.png "Prototype light")
 
