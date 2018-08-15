@@ -80,6 +80,8 @@ You do not have to delete any built-in system content of course, but if you have
 #### Backup everything
 Please make a backup of your **database** and **web folder** too. Not only because it makes sense, but because you will need *both old and new dlls* during the upgrade, as you'll see below.
 
+> It is also necessary to make a backup because we will **empty the audit log table (_LogEntries_) in the database during the upgrade**. If you need previous audit information, you will be able to restore it from the old database later.
+
 #### Get the new libraries
 In a sensenet 6 environment you have an old web project with many *manually referenced* libraries. To have a clean slate, please do the following:
 
