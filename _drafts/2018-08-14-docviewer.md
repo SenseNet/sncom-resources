@@ -2,7 +2,7 @@
 
 title:  "The new and improved Docviewer"
 author: CsabaPeter
-image: "../img/posts/road-to-netstandard-header.jpg"
+image: "C:\Users\petercs\Downloads\sensenet.github.io\img\posts\Docviewer_mockup.png"
 tags: [upgrade, UX, UI, design, research]
 
 ---
@@ -18,9 +18,13 @@ Since we wanted an app with mostly viewing capabilities and a little bit of edit
 
 After clarifying the main path that we should take, I conducted a few user interviews (six to be exact) to find out what people mainly looknig for when they open a document viewer. After the interviews were done and evaluated each interviewee's answers I began to make the wireframes. After several versions there was a clear winner among the team and from there the prototyping began.
 
+![Wireframes](C:\Users\petercs\Downloads\sensenet.github.io\img\posts\Wireframe.png "Selected Wireframes")
 
 ## Prototypes
 After the wireframing I made high fidelity prototypes in light and dark mode. For the high fidelity prototype I used Sketch and followed Material Design principles. I also made a click through prototype in InVision which you can try as well in the following link: [Docviewer] (https://projects.invisionapp.com/share/TGJZD5KNQZU#/screens)
+
+![Prototype1](C:\Users\petercs\Downloads\sensenet.github.io\img\posts\Docviewer-Active-Light.png "Prototype light")
+![Prototype2](C:\Users\petercs\Downloads\sensenet.github.io\img\posts\Docviewer-Active-Dark.png "Prototype dark")
 
 
 ## User testing
@@ -36,6 +40,8 @@ I asked the participants to follow through these steps:
 
 ## Iteration
 After finishing the user tests I evaluated the answers and there was a few things that needed to be changed. First of all the left sidebar icon was very unfamiliar for most of the participoants and had a hard time finding it, so I had to find a more straight forward icon. Most participants liked the comment function and said it would benefit them. Also most of the participants didn't liked that the rotate buttons were on the bottom of the page, so I moved it to the top navbar.
+
+![Iteration](C:\Users\petercs\Downloads\sensenet.github.io\img\posts\Docviewer_mockup.png "Iterated design")
 
 ## User testing part2
 I updated my design after the first set of user tests and I conducted a second round test with the same participants. The results were much better this time and eveyone made through the tests without any problem. The new sidebar icon solved the problem and putting the rotate buttons to the top navbar helped a lot as well. I also changed the order of the icons in the top navbar so the zoom icons were next to the rotate and sidebar, download, print and share buttons were next to each other.
