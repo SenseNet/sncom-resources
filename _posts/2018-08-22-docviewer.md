@@ -51,5 +51,5 @@ I updated my design after the first set of user tests and I conducted a second r
 
 When I had the second round of user tests I sent the results and the updated screens to the team who are working hard to make the 1.0 version alive which will not include the comment function and the editing capabilities but those features will come as well very soon!
 
-**Thank you fo reading my first article! More will come in the future!**
+**Thank you for reading my first article! More will come in the future!**
 
