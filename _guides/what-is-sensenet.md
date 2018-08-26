@@ -147,8 +147,6 @@ Any 3rd party service can be integrated into sensenet so the possibilities are i
 
 Since sensenet is open source, so if you feel your solution should be included in the project, you can change it or add to it. You are more than welcome to change the source code published on [GitHub](https://github.com/SenseNet) with a simple pull request.
 
-It is best if you install only the parts you need, so that you can keep maintenance and upgrade costs at minimum. This is why we publish many small packages containing only the minimal set of libraries and content. The .NET based packages can be found at https://www.nuget.org/profiles/sensenet, while actively developed and supported JS client packages can be found at https://npmjs.com/search?q=sensenet published with the @sensenet scope. You can easily install and upgrade the .NET packages with the NuGet, and the JS packages with the npm package manager.
-
 It is best if you install only the parts you need, so that you can keep maintenance and upgrade costs at minimum. This is why we publish many small packages containing only the minimal set of libraries and content. The .NET based packages published at [nuget.org]( https://www.nuget.org/profiles/sensenet), and the actively developed and supported JS client packages published with the @sensenet scope at [npmjs.com](https://npmjs.com/search?q=sensenet) can be easily installed and upgraded at your convenience with the NuGet and the npm package managers.
 
 ## Stable and Modern
