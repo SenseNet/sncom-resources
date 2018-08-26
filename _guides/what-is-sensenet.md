@@ -113,7 +113,7 @@ You also have options in how you would like to store binaries (SQL, MongoDB), wh
 
 The backend also provides toolsets ranging from dev and admin tasks as small as retrying an operation multiple times to a robust trace component, or for easing the upgrade process for your installed packages.
 
-### API's for Clients
+### APIs for Clients
 
 While there are many ways you can use sensenet, probably the most effective and rapid way to reach your goals is to install the central Content Repository with any optional components, and then build your solution around it by accessing and manipulating the content through our OData REST API either through other sensenet API’s, or directly. 
 
