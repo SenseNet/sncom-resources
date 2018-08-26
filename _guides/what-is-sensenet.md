@@ -73,7 +73,7 @@ For our JavaScript frontend you will need Node.js to run the components outside 
 
 Another option for the frontend is the C# .NET client API for building desktop applications.
 
-## Uye your programming language
+## Use your programming language
 
 We want sensenet to be available for a wide range of developers both at backend and frontend, by supporting modern and widespread platforms and frameworks. 
 
