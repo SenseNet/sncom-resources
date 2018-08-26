@@ -83,7 +83,7 @@ The Content Repository and other backend related components and tools are mostly
 
 ### JavaScript/TypeScript for the frontend
 
-Our frontend components are written in TypeScript, so you can code in JavaScript or TypeScript. We also heavily support modern JS frameworks like Aurelia and React with Redux.
+The frontend components for the web are written in TypeScript, so you can code in JavaScript or TypeScript. We also heavily support modern JS frameworks like Aurelia and React with Redux.
 
 ### Do I *have* to use .NET or JS in your project?
 
