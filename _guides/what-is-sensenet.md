@@ -149,7 +149,7 @@ It is best if you install only the parts you need, so that you can keep maintena
 
 ## Stable and Modern
 
-When planning your project, you need a stable but future proof technology that you can trust. You need a toolset that has a proven history and a clear future.
+When planning your project, you need a stable but future-proof technology that you can trust. You need a toolset that has a proven history and a clear future.
 
 sensenet is widespread and well-tried. The company behind sensenet is Sense/Net Inc., founded in 1995. We are a pioneer and technology leader of content services and document management platforms. sensenet is very successful in all verticals, including finance, public sector, energy and utilities, telco, aerospace and many others, with over [300 deployment](https://www.sensenet.com/references).
 
