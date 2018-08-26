@@ -93,13 +93,13 @@ Absolutely not. We have an OData REST API that you can use directly for manipula
 
 The backend gives you a solid and reliable base with readymade extensions on which you can rapidly build a UI and related functions the way you want to, using our frontend client components and related libraries.
 
-### Core .NET layer: contents
+### Core .NET backend: Content Repository
 
 You only [ -x-x- what about indexing? -x-x- ] have to install the [Services component](https://github.com/SenseNet/sensenet), and can start sending requests to your site. It will provide you a unified service layer for content, the central Content Repository. It offers features like storing and managing content and meta data, content type and template system, versioning, or trash functionality.
 
 Users can reach content through entry points like WebDAV, so they can map the repository as a remote drive, you can give them access through standard OData REST API from third party applications, or they can even open/edit files directly in Microsoft Office. Each content item is stored and can be moved within a tree structure that assigns a path to them. These paths can be used as links by the URL resolution of the site or sites set up in the Content Repository.
 
-### Extend the core with .NET components
+### Extended .NET backend: Features
 
 There are several backend components that extend the functionality of the Content Repository. The most important one is perhaps the indexing and search engine: sensenet requires a full and always up-to-date index of the repository content. You can use our current Lucene 2.9 component, or you can create your own query and index implementations.
 
@@ -113,21 +113,19 @@ You also have options in how you would like to store binaries (SQL, MongoDB), wh
 
 The backend also provides toolsets ranging from dev and admin tasks as small as retrying an operation multiple times to a robust trace component, or for easing the upgrade process for your installed packages.
 
-### REST API for Clients
+### API's for Clients
 
 While there are many ways you can use sensenet, probably the most effective and rapid way to reach your goals is to install the central Content Repository with any optional components, and then build your solution around it by accessing and manipulating the content through our OData REST API either through other sensenet API’s, or directly. 
 
 You have three options:
 
-*	**JavaScript/Typescript client API components** for browsers or mobile apps, with strong React/Redux and Aurelia support. Using the API instead of native JavaScript boosts your productivity and make client-server interaction a lot easier.
+*	**JavaScript/Typescript client API components** for browsers or mobile apps, with strong React/Redux and Aurelia support. Like the backend, the JS frontend also has a core client component for content manipulation. Though optional – as almost all components in sensenet – it is a good starting point for manipulating the Content Repository. Using the API instead of native JavaScript boosts your productivity and make client-server interaction a lot easier. With the JS client API you can easily create, load, modify, delete content, and execute custom actions. It also contains some predefined security and versioning related actions, response models, interfaces and abstracts.
 *	**C# .NET client API** for building desktop applications. It exposes a completely async API so that you can use it in a resource-friendly way
 *	**Direct access** to our OData REST API with any other language.
 
 The first two options let you work with sensenet by providing an API for the main content operations. They connect to the REST API, but hide the underlying requests. You can create or manage content, execute queries etc., instead of having to construct the requests yourself. Direct access gives more freedom, but more work to do as well.
 
-### JavaScript client API packages
-
-Like the backend, the JS frontend also has a core client component for content manipulation. Though optional – as almost all components in sensenet – it is a good starting point for manipulating the Content Repository. With the JS client API you can easily create, load, modify, delete content, and execute custom actions. It also contains some predefined security and versioning related actions, response models, interfaces and abstracts.
+### JavaScript client API extended
 
 We have several other components extending the content functionality of the client. With a separate component you can create typesafe client-side content queries with a fluent API that will be evaluated into sensenet core content queries. Another component gives you a library with content type and content schema definitions used by default in sensenet installations. A third one listens to completed or failed Content Repository events like creating, modifying, loading, deleting, moving or executing actions on content.
 
