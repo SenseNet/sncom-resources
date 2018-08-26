@@ -119,7 +119,7 @@ While there are many ways you can use sensenet, probably the most effective and 
 
 You have three options:
 
-*	**JavaScript/Typescript client API components** for browsers or mobile apps, with strong React/Redux and Aurelia support. Like the backend, the JS frontend also has a core client component for content manipulation. Though optional – as almost all components in sensenet – it is a good starting point for manipulating the Content Repository. Using the API instead of native JavaScript boosts your productivity and make client-server interaction a lot easier. With the JS client API you can easily create, load, modify, delete content, and execute custom actions. It also contains some predefined security and versioning related actions, response models, interfaces and abstracts.
+*	**JavaScript/Typescript client API** for browsers or mobile apps, with strong React/Redux and Aurelia support. Like the backend, the JS frontend also has a core client component for content manipulation. Though optional – as almost all components in sensenet – it is a good starting point for manipulating the Content Repository. Using the API instead of native JavaScript boosts your productivity and make client-server interaction a lot easier. With the JS client API you can easily create, load, modify, delete content, and execute custom actions. It also contains some predefined security and versioning related actions, response models, interfaces and abstracts.
 *	**C# .NET client API** for building desktop applications. It exposes a completely async API so that you can use it in a resource-friendly way
 *	**Direct access** to our OData REST API with any other language.
 
