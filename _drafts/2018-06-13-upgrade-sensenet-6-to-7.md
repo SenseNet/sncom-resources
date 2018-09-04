@@ -77,10 +77,25 @@ Let's see how you should approach the upgrade and go through the steps one after
 #### Cleanup before the process
 You do not have to delete any built-in system content of course, but if you have unused or unnecessary custom content or custom features, please consider removing them beforehand, it will make the upgrade process faster.
 
+#### SQL command timeout
+If you work in an environment where the performance of the SQL server is not optimal, it is advisable to raise the SQL command timeout from the default 120 seconds to a higher value. You can do this by setting the following value in the `web\Tools\SnAdminRuntime.exe.config` file (_appSettings_ section):
+
+```xml
+<add key="SqlCommandTimeout" value="600" />
+```
+
 #### Backup everything
 Please make a backup of your **database** and **web folder** too. Not only because it makes sense, but because you will need *both old and new dlls* during the upgrade, as you'll see below.
 
 > It is also necessary to make a backup because we will **empty the audit log table (_LogEntries_) in the database during the upgrade**. If you need previous audit information, you will be able to restore it from the old database later.
+
+#### Preview images
+During the patch we will delete unnecessary (empty) preview folders if there is any. This will not effect your preview feature in any way. After the patch you may further lessen the number of preview images using the new preview cleaner [SnAdmin tool](/docs/snadmin-tools) if you want to make your database smaller.
+
+#### Reindexing the repository
+During the patch we'll have to re-serialize index documents stored in the database. This does not mean re-creating the whole index, only index documents in the db.
+
+To make this as quick as possible, we will **skip indexing binaries** during this process and postpone extracting full text terms for later. When you start your site after the patch, we will start a slow background process for refreshing binary indexes. This **does not effect searchability** because the index in the file system (containing full index documents) is still available. This is only an under-the-hood operation that does not effect the usage of your site - although having multiple web nodes will make this background process finish faster.
 
 #### Get the new libraries
 In a sensenet 6 environment you have an old web project with many *manually referenced* libraries. To have a clean slate, please do the following:
