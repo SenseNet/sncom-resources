@@ -14,7 +14,7 @@ function getCookie(cname) {
     return "";
 }
 
-$(window).load( function () {
+$(window).on('load', function (){
 	var c = getCookie('openquestion');
 	if ( c == null || c == false) {
           setTimeout (function(){
@@ -29,5 +29,4 @@ $(window).load( function () {
 	$('.js-go_to_survey').on('click', function () {
 		$(this).closest('.js-slide_block').removeClass('open');
 	});
-	
 });
