@@ -111,7 +111,10 @@ In a sensenet 6 environment you have an old web project with many *manually refe
    - SenseNet.Notification.Portlets [![NuGet](https://img.shields.io/nuget/v/SenseNet.Notification.Portlets.svg)](https://www.nuget.org/packages/SenseNet.Notification.Portlets)
    - SenseNet.Preview.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.Preview.Install.svg)](https://www.nuget.org/packages/SenseNet.Preview.Install)
    - SenseNet.Preview.Aspose (for _Enterprise_ customers)
+   - SenseNet.SyncAD2Portal [![NuGet](https://img.shields.io/nuget/v/SenseNet.SyncAD2Portal.svg)](https://www.nuget.org/packages/SenseNet.SyncAD2Portal)
    - SenseNet.Compatibility pack [![NuGet](https://img.shields.io/nuget/v/SenseNet.Compatibility.svg)](https://www.nuget.org/packages/SenseNet.Compatibility)
+
+In case you have been using the *FILESTREAM* feature in sensenet 6, you'll also have to install and configure the [MS SQL FileStream blob provider](https://github.com/SenseNet/sn-blob-mssqlfs) package to be able to access binaries stored in a FileStream column.
 
 > You **do not** have to execute the SnAdmin packages inside them, only install the NuGet packages in Visual Studio! You only need the libraries for now, not a new database.
 
