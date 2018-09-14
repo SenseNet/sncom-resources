@@ -110,14 +110,23 @@ In a sensenet 6 environment you have an old web project with many *manually refe
    - SenseNet.Notification.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.Notification.Install.svg)](https://www.nuget.org/packages/SenseNet.Notification.Install)
    - SenseNet.Notification.Portlets [![NuGet](https://img.shields.io/nuget/v/SenseNet.Notification.Portlets.svg)](https://www.nuget.org/packages/SenseNet.Notification.Portlets)
    - SenseNet.Preview.Install [![NuGet](https://img.shields.io/nuget/v/SenseNet.Preview.Install.svg)](https://www.nuget.org/packages/SenseNet.Preview.Install)
-   - SenseNet.Preview.Aspose (for _Enterprise_ customers)
-   - SenseNet.SyncAD2Portal [![NuGet](https://img.shields.io/nuget/v/SenseNet.SyncAD2Portal.svg)](https://www.nuget.org/packages/SenseNet.SyncAD2Portal)
+   - SenseNet.Preview.Aspose (for _Enterprise_ customers)  
    - SenseNet.Compatibility pack [![NuGet](https://img.shields.io/nuget/v/SenseNet.Compatibility.svg)](https://www.nuget.org/packages/SenseNet.Compatibility)
-
-In case you have been using the *FILESTREAM* feature in sensenet 6, you'll also have to install and configure the [MS SQL FileStream blob provider](https://github.com/SenseNet/sn-blob-mssqlfs) package to be able to access binaries stored in a FileStream column.
 
 > You **do not** have to execute the SnAdmin packages inside them, only install the NuGet packages in Visual Studio! You only need the libraries for now, not a new database.
 
+##### FileStream
+In case you have been using the *FILESTREAM* feature in sensenet 6, you'll also have to install and configure the [MS SQL FileStream blob provider](https://github.com/SenseNet/sn-blob-mssqlfs) package to be able to access binaries stored in a FileStream column.
+
+##### Active Directory synchronization
+In case you want to use the [AD sync](https://community.sensenet.com/docs/adsync) tool in sensenet, please install the following package:
+ - SenseNet.SyncAD2Portal [![NuGet](https://img.shields.io/nuget/v/SenseNet.SyncAD2Portal.svg)](https://www.nuget.org/packages/SenseNet.SyncAD2Portal)
+
+If you need to connect to AD from sensenet (for example authenticating from AD), you'll need this package:
+- SenseNet.DirectoryServices [![NuGet](https://img.shields.io/nuget/v/SenseNet.DirectoryServices.svg)](https://www.nuget.org/packages/SenseNet.DirectoryServices)
+
+
+##### Other libraries
 If you have additional libraries (business logic in non-web projects), you should create new projects for every one of them too, and install the dll-only versions of the necessary sensenet NuGet packages. For example, if you need the main sensenet references in your library, you should install the `SenseNet.Services` package (and _not_ the SenseNet.Services._Install_ package, because that is needed only once, in the web project). If you need the Workflow dlls of sensenet, install the `SenseNet.Workflow` package - and so on.
 
 > You may have to upgrade the `Microsoft.Owin` and `Microsoft.Owin.Security` NuGet packages at this point to a more recent version. The patch assumes you have `3.0.1`, but later versions should also work.
