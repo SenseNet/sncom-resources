@@ -32,7 +32,7 @@ Both ways you are future proof: it will be easy to upgrade to our new releases, 
 
 *…"and what is the use of a book," thought Alice "without pictures or conversations?"*
 
-Besides classic web based file management functions we were serious about creating an ergonomic, intuitive, modern and appealing user interface. Additionally, since we have sensenet in the background, we could build on already existing, useful functions such as:
+Besides classic web based file management functions we were serious about creating an ergonomic, intuitive, modern and appealing user interface. Additionally, since we have sensenet in the background, we could build on already existing, useful functions.
 
 Checking content in or out:
 
