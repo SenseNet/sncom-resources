@@ -20,7 +20,7 @@ We began developing DMS – our document management solution –  as an MVC roug
 
 ## Use it, or build your own
 
-*… Alice had begun to think that very few things indeed were really impossible.*
+*"Why," said the Dodo, "the best way to explain it is to do it."*
 
 We also knew that that you will need reusable building blocks and tools as well, so in the meantime we created small, lightweight [frontend packages](https://community.sensenet.com/blog/2018/02/21/scoped-packages) that are optional, but considerably speed up frontend development with sensenet. DMS, on the other hand, has outgrown the original MVC, so it just seemed logical that we generalize many of its functions in our underlying packages.
 Now you can:
@@ -47,14 +47,17 @@ Creating and restoring major and minor versions:
 ![DMS - versions](/img/posts/dms-1-0-versions.png "DMS - versions")
 
 As an example, we also integrated our recently published standalone [document viewer](https://community.sensenet.com/blog/2018/08/22/docviewer) solution: 
- 
-And of course, you can also share folders or files:
 
 ![DMS - Document Viewer integrated](/img/posts/dms-1-0-document-viewer.png "DMS - Document Viewer integrated")
 
+And of course, you can also share folders or files:
+
+![DMS - sharing](/img/posts/dms-1-0-share.png "DMS - sharing")
+
+
 ## You can do it too
 
-*"Why," said the Dodo, "the best way to explain it is to do it."*
+*… Alice had begun to think that very few things indeed were really impossible.*
 
 This is what you need to build your solution:
 *	Install [backend packages](https://community.sensenet.com/docs/install-sn-from-nuget/) and make the most of sensenet’s [content repository](https://community.sensenet.com/docs/content-repository/) and any of its its optional extensions. Among others they already know about content operations such as create, upload, modify, delete, copy and move, handling metainfo and storing binaries, managing indexing and search, powerful and fast security, background task management for preview generation, and even versioning and approval and related functions, such as version history and restore.
