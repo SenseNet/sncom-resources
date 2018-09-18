@@ -34,25 +34,25 @@ Both ways you are future proof: it will be easy to upgrade to our new releases, 
 
 Besides classic web based file management functions we were serious about creating an ergonomic, intuitive, modern and appealing user interface. Additionally, since we have sensenet in the background, we could build on already existing, useful functions such as:
 
-… checking content in or out:
+Checking content in or out:
 
-![name](/img/posts/path.png "float text")
+![name](/img/posts/dms-1-0-checked-out.png "float text")
  
-… publishing, which can include approving or rejecting:
+Publishing, which can include approving or rejecting:
 
-![name](/img/posts/path.png "float text")
+![name](/img/posts/dms-1-0-approve-or-reject.png "float text")
 
-… creating and restoring major and minor versions:
+Creating and restoring major and minor versions:
 
-![name](/img/posts/path.png "float text")
+![name](/img/posts/dms-1-0-versions.png "float text")
 
 As an example, we also integrated our recently published standalone [document viewer](https://community.sensenet.com/blog/2018/08/22/docviewer) solution: 
  
 And of course, you can also share folders or files:
 
-![name](/img/posts/path.png "float text")
+![name](/img/posts/dms-1-0-document-viewer.png "float text")
 
-##You can do it too
+## You can do it too
 
 *"Why," said the Dodo, "the best way to explain it is to do it."
 
