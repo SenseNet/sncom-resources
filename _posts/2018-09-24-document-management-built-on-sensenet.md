@@ -36,21 +36,21 @@ Besides classic web based file management functions we were serious about creati
 
 Checking content in or out:
 
-![name](/img/posts/dms-1-0-checked-out.png "float text")
+![DMS - checking content in or out](/img/posts/dms-1-0-checked-out.png "DMS - checking content in or out")
  
 Publishing, which can include approving or rejecting:
 
-![name](/img/posts/dms-1-0-approve-or-reject.png "float text")
+![DMS - approve or reject](/img/posts/dms-1-0-approve-or-reject.png "DMS - approve or reject")
 
 Creating and restoring major and minor versions:
 
-![name](/img/posts/dms-1-0-versions.png "float text")
+![DMS - versions](/img/posts/dms-1-0-versions.png "DMS - versions")
 
 As an example, we also integrated our recently published standalone [document viewer](https://community.sensenet.com/blog/2018/08/22/docviewer) solution: 
  
 And of course, you can also share folders or files:
 
-![name](/img/posts/dms-1-0-document-viewer.png "float text")
+![DMS - Document Viewer integrated](/img/posts/dms-1-0-document-viewer.png "DMS - Document Viewer integrated")
 
 ## You can do it too
 
