@@ -54,7 +54,7 @@ And of course, you can also share folders or files:
 
 ## You can do it too
 
-*"Why," said the Dodo, "the best way to explain it is to do it."
+*"Why," said the Dodo, "the best way to explain it is to do it."*
 
 This is what you need to build your solution:
 *	Install [backend packages](https://community.sensenet.com/docs/install-sn-from-nuget/) and make the most of sensenet’s [content repository](https://community.sensenet.com/docs/content-repository/) and any of its its optional extensions. Among others they already know about content operations such as create, upload, modify, delete, copy and move, handling metainfo and storing binaries, managing indexing and search, powerful and fast security, background task management for preview generation, and even versioning and approval and related functions, such as version history and restore.
