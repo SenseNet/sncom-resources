@@ -32,13 +32,13 @@ Both ways you are future proof: it will be easy to upgrade to our new releases, 
 
 *…"and what is the use of a book," thought Alice "without pictures or conversations?"*
 
-Besides classic web based file management functions we were serious about creating an ergonomic, intuitive, modern and appealing user interface. Additionally, since we have sensenet in the background, we could build on already existing, useful functions.
+Besides classic web based file management functions we were serious about creating an ergonomic, intuitive, modern and appealing user interface. Additionally, since we have sensenet in the background, we built the UI on already existing, useful functions.
 
 Checking content in or out:
 
 ![DMS - checking content in or out](/img/posts/dms-1-0-checked-out.png "DMS - checking content in or out")
  
-Publishing, which can include approving or rejecting:
+Publishing, with optional approving or rejecting:
 
 ![DMS - approve or reject](/img/posts/dms-1-0-approve-or-reject.png "DMS - approve or reject")
 
