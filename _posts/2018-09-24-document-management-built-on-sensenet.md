@@ -62,6 +62,6 @@ And of course, you can also share folders or files:
 This is what you need to build your solution:
 *	Install [backend packages](https://community.sensenet.com/docs/install-sn-from-nuget/) and make the most of sensenet’s [content repository](https://community.sensenet.com/docs/content-repository/) and any of its its optional extensions. Among others they already know about content operations such as create, upload, modify, delete, copy and move, handling metainfo and storing binaries, managing indexing and search, powerful and fast security, background task management for preview generation, and even versioning and approval and related functions, such as version history and restore.
 *	Install the [frontend packages](https://community.sensenet.com/blog/2018/02/21/scoped-packages) you need.
-*	Use the JavaScript/Typescript client API the frontend provides to rapidly develop your project.
+*	Use the JavaScript/Typescript client API to rapidly develop your project.
 
 Remember, its [completely free](https://www.sensenet.com/product/licensing/sense-netlicensingguide).
