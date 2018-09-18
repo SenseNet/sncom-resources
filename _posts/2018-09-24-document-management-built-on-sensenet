@@ -6,14 +6,15 @@ image: "../img/posts/dms-1-0-ui.png"
 tags: [DMS, UX, javascript, client packages]
 
 ---
-******* intro here *********
+intro here
 ---
 
-Origin story
+## Origin story
 
 *“Begin at the beginning,” the King said, very gravely, “and go on till you come to the end: then stop.”*
 
 We began developing DMS – our document management solution –  as an MVC roughly about a year ago, this is why: sensenet is a headless content management platform (https://community.sensenet.com/blog/2017/07/05/what-is-a-headless-cms) where the backend does not care about how the content is displayed. If you are a frontend developer, this gives you freedom of choice in what tools you use and how you want to implement your solutions. To give you guidance, however, we also wanted to create an example implementation for a real-life business need. Feedback from partners and users indicated that a simple web based file management would be a good start. And then, DMS was born.
+
 Use it, or build your own
 … Alice had begun to think that very few things indeed were really impossible.
 We also knew that that you will need reusable building blocks and tools as well, so in the meantime we created small, lightweight frontend packages (https://community.sensenet.com/blog/2018/02/21/scoped-packages) that are optional, but considerably speed up frontend development with sensenet. DMS, on the other hand, has outgrown the original MVC, so it just seemed logical that we generalize many of its functions in our underlying packages.
@@ -25,16 +26,22 @@ The user experience
 …‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?’
 Besides classic web based file management functions we were serious about creating an ergonomic, intuitive, modern and appealing user interface. Additionally, since we have sensenet in the background, we could build on already existing, useful functions such as:
 … checking content in or out:
+
+![name](/img/posts/path.png "float text")
  
 … publishing, which can include approving or rejecting:
- 
+
+![name](/img/posts/path.png "float text")
+
 … creating and restoring major and minor versions:
- 
+
+![name](/img/posts/path.png "float text")
+
 As an example, we also integrated our recently published standalone document viewer (https://community.sensenet.com/blog/2018/08/22/docviewer) solution: 
  
 And of course, you can also share folders or files:
- 
 
+![name](/img/posts/path.png "float text")
 
 You can do it too
 'Why,' said the Dodo, 'the best way to explain it is to do it.'
