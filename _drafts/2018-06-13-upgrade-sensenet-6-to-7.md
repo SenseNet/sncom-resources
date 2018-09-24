@@ -77,6 +77,8 @@ Let's see how you should approach the upgrade and go through the steps one after
 #### Cleanup before the process
 You do not have to delete any built-in system content of course, but if you have unused or unnecessary custom content or custom features, please consider removing them beforehand, it will make the upgrade process faster.
 
+It is also advisable to compile your project in Visual Studio to see the warnings about sensenet APIs that were **obsolete for a long time in version 6**, because they may be removed in sensenet 7.
+
 #### SQL command timeout
 If you work in an environment where the performance of the SQL server is not optimal, it is advisable to raise the SQL command timeout from the default 120 seconds to a higher value. You can do this by setting the following value in the `web\Tools\SnAdminRuntime.exe.config` file (_appSettings_ section):
 
