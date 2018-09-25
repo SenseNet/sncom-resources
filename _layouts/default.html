@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-  
-    {% include question_slide.html %}
+<body>
 
-    {% include gtmcodes.html %}
+  {% include question_slide.html %}
 
-    {% include header.html %}
+  {% include gtmcodes.html %}
 
-    {{ content }}
-    
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5943a8719f8890cf"></script>  
+  {% include header.html %}
+
+  {{ content }}
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5943a8719f8890cf"></script>
   <script src="//www.eucookie.eu/public/gdpr-cookie-consent.js" type="text/javascript"></script>
   <script type="text/javascript" src="js/question.js"></script>
-  <script type="text/javascript" src="js/question_with_cookie.js"></script>
+  <script type="text/plain" src="js/question_with_cookie.js" data-cookie-if="preferences"></script>
   <script type="text/javascript">
-	var cookieConsent = new cookieConsent({
+    var cookieConsent = new cookieConsent({
       clientId: 'ae27828e-947f-4e65-9a63-da69a8c559c3'
-	});
-	cookieConsent.run();
+    });
+    cookieConsent.run();
   </script>
+</body>
 
-  </body>
-
-  {% include footer.html %}
+{% include footer.html %}
 
 </html>
