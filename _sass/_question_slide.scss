@@ -1,0 +1,113 @@
+.slide_block {
+    position: fixed;
+    background: #fff;
+    padding: 25px 30px 20px 31px;
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+    right: -270px;
+    top: 50%;
+    margin-top: -79px;
+    overflow: hidden;
+    width: 195px;
+    transition: all 0.2s ease;
+	z-index: 10;
+	color: #777;
+	box-shadow: -1px 2px 12px 0px rgba(0,0,0,.4);
+    height: 181px;
+	
+}
+
+.slide_block__body {
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slide_block__body p {
+	font-size: 18px;
+	text-align: center;
+	line-height: 19px;
+    margin: 21px 0 0 0;
+	line-height: 1.35em;
+}
+
+.slide_block__body a {
+    font-size: 13px;
+}
+
+.open.slide_block {
+    right: 0;
+    transition: all 0.2s ease;
+}
+
+.open.slide_block a {
+	display: block;
+    border-radius: 3px;
+    color: #fff;
+    line-height: 33px;
+    height: 33px;
+    text-transform: uppercase;
+    background-color: #13a5ad;
+    text-align: center;
+    letter-spacing: 1px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+.slide_block__close {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 6px;
+    left: 7px;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiCQcNAhbJpQ5hAAAAg0lEQVQ4y62Uyw2AIBBEHyY2QGvWaQNe6ICERmzAA57UEH47iZxIZgZ2Zz+Og5WNk/nx7FwQyES8gR7JhOcykxSsuaRijCVNtC/pIm1g+HcNTrMrCSb/PpLN7leSSMaCAp5EJpNa9MXywq8hiUmLtoqFE1tDbD6xvcUBkkdUXAJOXTM3mAN4Ve+isxUAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDktMDdUMTM6MDI6MjIrMDI6MDC7A589AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA5LTA3VDEzOjAyOjIyKzAyOjAwyl4ngQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=');
+	background-repeat: no-repeat;
+    background-position: center;
+	background-size: 10px;
+	cursor: pointer;
+    background-color: white;
+    border: 0;
+}
+
+@media (max-width: 759px) {
+	.slide_block {
+		margin-top: 0;
+        top: auto;
+        bottom: -300px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+		height: 80px;
+	}
+
+	.open.slide_block {
+		bottom: 0;
+	}
+	
+	.slide_block__body p {
+      text-align: left;
+      line-height: 19px;
+      margin: 0;
+      line-height: 33px;
+  }
+
+	.slide_block__body {
+      	flex-direction: row;
+  	}
+}
+
+@media (max-width: 580px) { 
+	.slide_block__body {
+      	flex-direction: column;
+  	}
+
+	.slide_block {
+		height: 150px;
+	}
+
+	.slide_block__body p {
+    	text-align: center;
+	}
+}
