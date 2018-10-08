@@ -12,7 +12,7 @@ It was a long time ago when we released the latest (and last) version of sensene
 ---
 
 ## Do I need to deal with the upgrade?
-Well, of course this concerns you only if you already have a sensenet 6 instance in production and you cannot afford loosing (recreating) the database. Even then please consider the options in this section carefully to make sure you have to start patching.
+Well, of course this concerns you only if you already have a sensenet 6 instance in production and you cannot afford recreating the database and exporting/importing your content items. Even then please consider the options in this section carefully to make sure you have to start patching.
 
 The differences between sensenet 6 and 7 are numerous, this is why it is important to decide whether you really have to do the upgrade. Because sometimes it is **a lot easier and faster** to simply spin up a new [sensenet 7 installation](/docs/install-sn-from-nuget), **export** your content from your sensenet 6 repository and **import** them to the new one. You'll end up with a cleaner, simpler and more lightweight application. Of course you cannot choose this if:
 
@@ -24,12 +24,12 @@ The differences between sensenet 6 and 7 are numerous, this is why it is importa
 Yes, there are some features that we could not take with us to the new platform - mostly because of technical reasons.
 
 ### Not available
-- **Tagging**: it was no way for us to keep this feature as it relied on a direct reference to the underlying Lucene indexing implementation and it would not be possible to replace the built-in search provider with a different one
-- **Captcha**: please use one of the common solutions available online
+- **Tagging**: it was no way for us to keep this feature as it relied on a direct reference to the underlying Lucene indexing implementation and it would not be possible to replace the built-in search provider with a different one.
+- **Captcha**: please use one of the common solutions available online.
 - **WebContentDemo** type: this content type has been retired. All instances will be converted to Articles during the upgrade, so no data will be lost, but if you have content items of this type *in the file system* (or source control), you have to convert them to articles before you can import them into sensenet 7.
 
 ### Available in a compatibility pack
-The compatibility pack is an API package that will be installed during the upgrade. It contains many retired APIs that will bring at least parts of removed features back. Sometimes they only let you access your data (e.g. tags), in other cases you will still be able to use the full feature.
+The [compatibility pack](https://github.com/SenseNet/sn-compatibility-pack) is an API package that will be installed during the upgrade. It contains many retired APIs that will bring at least parts of removed features back. Sometimes they only let you access your data (e.g. tags), in other cases you will still be able to use the full feature.
 
 - Wall
 - Journal
@@ -57,7 +57,7 @@ sensenet 7 however is a platform that you can **integrate into your application*
 
 This is why working with sensenet 7 is different in many ways from what you are used to with sensenet 6. For example:
 
-- we provide libraries and installers in **NuGet and npm packages** (instead of dlls to copy as in sensenet 6)
+- we provide libraries and installers as **NuGet and npm packages** (instead of dlls to copy as in sensenet 6)
 - our components are versioned and upgraded separately and more frequently as fixes and features are published
 - it is a lot easier to participate in the dev process by monitoring our repositories on [GitHub](https://github.com/SenseNet) and contributing to our source code
 
@@ -70,6 +70,8 @@ In sensenet 7 projects the UI is created using modern technologies (like a one-p
 Previously we encouraged creating separate command line tools if you needed to access the repository and modify content items. In sensenet 7 it is more advisable to make use of [SnAdmin](/docs/snadmin) as the packaging tool that can be extended by custom steps deployed in .Net libraries. We also offer built-in [SnAdmin tools](/docs/snadmin-tools) (that are really just built-in one-line wrapper packages around snadmin steps) for the same operations as before: importing/exporting content or re-indexing the repository.
 
 > So please do not deploy command line tools into the `web\Tools` folder anymore. Create SnAdmin custom steps instead, as this simplifies starting the repository and configuring the environment.
+
+Another possibility is to make use of the [.Net Client library](https://github.com/SenseNet/sn-client-dotnet) that will let you access the repository from a remote client without having to write raw http requests.
 
 ## The upgrade process
 Let's see how you should approach the upgrade and go through the steps one after the other.
@@ -137,7 +139,7 @@ If you have additional libraries (business logic in non-web projects), you shoul
 - copy your old code (classes, etc., everything) to the new project - note that the *name of the dll* the web project produces and the *namespaces* have to be the same as before! This is necessary for this new dll to be compatible with old elements in the database (e.g. pages, views).
 - add the additional NuGet packages needed by your custom code
 - update your code with the API changes in sensenet (if you encounter changes that you cannot resolve, please contact us or query the community resources for advice)
-- compile your new library and copy it to the `Customization\bin` subfolder of the **first package** (`sn-patch-6.5.4-7.1-part1.zip`).
+- compile your new library and copy it to the `Customization\bin` subfolder of the **first package** (`sn-patch-6.5.4-7-part1.zip`).
 
 > Yes, you'll have to **modify the package by adding your libraries**. This is the easiest way to make sure that no old code remains in the web folder and the new version of your code gets copied there at the right time.
 
@@ -153,7 +155,7 @@ You'll have to execute the two packages in the **old web folder**. The new web p
 - execute the patch using SnAdmin
 
 ```txt
-snadmin sn-patch-6.5.4-7.1-part1.zip
+snadmin sn-patch-6.5.4-7-part1.zip
 ```
 
 Please review the execution logs in the `web\Admin\log` folder to make sure everything looks fine.
@@ -167,10 +169,10 @@ Now the environment is ready for executing the second package.
 #### Execute the second package
 
 - if possible, create a backup of this state (even though the portal is not usable at this point, you cannot start it as it is in a half-state)
-- execute the second patch using SnAdmin
+- execute the second patch using SnAdmin (still in the old folder!)
 
 ```txt
-snadmin sn-patch-6.5.4-7.1-part2.zip
+snadmin sn-patch-6.5.4-7-part2.zip
 ```
 
 > Note that the patch **re-indexes** the whole content repository and in case of large databases this may take some time.
