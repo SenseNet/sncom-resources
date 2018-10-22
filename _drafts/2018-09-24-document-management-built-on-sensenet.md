@@ -18,9 +18,10 @@ We began developing DMS – our document management solution –  as an MVC roug
 
 We also knew that that you will need reusable building blocks and tools as well for your own solutions, so we created small, lightweight [frontend packages](https://community.sensenet.com/blog/2018/02/21/scoped-packages) that are optional, but considerably speed up frontend development with sensenet. DMS, on the other hand, has outgrown the original MVC, so it just seemed logical that we generalize many of its functions in our underlying packages.
 Now you can:
-*	Use DMS as is: Install SN7 backend packages, then add the DMS frontend package on top of it, and just use. It will take care of dependencies.
-*	Use the generalized packages: Install SN7 backend packages, then build your solution with the underlying building blocks we also used in DMS.
-Both ways you are future proof: it will be easy to upgrade to our new releases, and you will easily get support from the core team or from the community.
+*	Use DMS as is: Install SN7 backend packages, then add the DMS frontend package on top of it, and just use as a sample application. It will take care of dependencies.
+*	Use the generalized packages for development: This is the recommended method if you want to build your own production ready solution. Install SN7 backend packages, then build your application with the underlying building blocks we also used in DMS.
+
+Both ways you are future proof if you do not fork: it will be easy to upgrade to our new releases, and you can get support from the community or from the core development team.
 
 ## Looks and functions
 
