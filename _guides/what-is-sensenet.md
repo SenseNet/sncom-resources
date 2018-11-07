@@ -61,7 +61,7 @@ For the JavaScript frontend you will need Node.js to run the components outside 
 
 sensenet is robust, but modular. We publish many small packages with a minimal set of libraries and content. Installing only the parts you need also keeps maintenance and upgrade costs at minimum. Our [NuGet]( https://www.nuget.org/profiles/sensenet), and [npm](https://npmjs.com/search?q=sensenet) packages (the latter with the @sensenet scope) can be conveniently installed and upgraded with their package managers.
 
-## Development envirionment: APIs everywhere
+## Development environment: APIs everywhere
 
 The Content Repository and other backend related components and tools are mostly written for the .NET platform, transitioning towards .NET Standard 2.0. You can use our C# .NET client API for accessing the repository from any .Net application, let it be a server or a client app. It exposes a completely async API so that you can use it in a resource-friendly way.
 
@@ -69,9 +69,7 @@ The JavaScript/TypeScript frontend components are for web and mobile apps. Using
 
 You can also use OData REST API directly for manipulating content with your preferred language, avoiding both .NET and JS if you want. Just install the Content Repository and some optional background components, and develop the frontend in the language you prefer.
 
-## Features
-
-### The basics
+### Basic features
 
 After installing the [Services component](https://github.com/SenseNet/sensenet), you can start sending requests to your site. It will provide a unified service layer for content, the central Content Repository. Users can reach content through entry points like WebDAV, so they can map the repository as a remote drive, you can give them access from third party applications, or they can open/edit files directly in Microsoft Office.
 
@@ -93,7 +91,7 @@ You can work in React and Redux or Aurelia, and have access to a collection of M
 
 The document viewer component for sensenet lets your users view documents and images in any modern browser on PCs, tablets and mobile phones, with paging, zooming, rotation, commenting and other document management functions.
 
-## Build successful solutions
+## Be successful with sensenet
 
 sensenet gives you freedom in planning your project, and supports your decisions on the long run.
 
