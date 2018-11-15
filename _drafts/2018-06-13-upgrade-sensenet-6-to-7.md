@@ -62,7 +62,7 @@ This is why working with sensenet 7 is different in many ways from what you are 
 - it is a lot easier to participate in the dev process by monitoring our repositories on [GitHub](https://github.com/SenseNet) and contributing to our source code
 
 ### A new UI development approach 
-In sensenet 7 projects the UI is created using modern technologies (like a one-page application with React or ASP.NET MVC) instead of ASP.NET *WebForms* (and portlets and ascx controls) which is still available as a legacy technology but *should not be used in new projects* - please use one of our many [front-end libraries](/blog/2018/02/21/scoped-packages) that let you compose UI elements in a flexible way.
+In sensenet 7 projects the UI is created using modern technologies (like a single-page application with React or ASP.NET MVC) instead of ASP.NET *WebForms* (and portlets and ascx controls) which is still available as a legacy technology but *should not be used in new projects* - please use one of our many [front-end libraries](/blog/2018/02/21/scoped-packages) that let you compose UI elements in a flexible way.
 
 > After upgrading please consider replacing your existing UI gradually with a new one built on newer technologies.
 
