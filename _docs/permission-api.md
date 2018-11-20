@@ -1,16 +1,21 @@
-# Permission API
-## Overview
-**Sense/Net ECM** has a powerful but easy-to-use [Permission System](__TODO__) that is designed to be able to solve all permission-related business requirements from small businesses to large enterprises. For concepts and details please check the following articles:
-* [Permission System](__TODO__)
-* [How to set permissions on a content](__TODO__)
+---
+title: "Permission API"
+source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/permission-api.md'
+category: Development
+version: v7.0
+tags: [permission, security, api]
+description: "The permission API in sensenet lets developers manage and check permissions on content and change group memberships."
+---
 
-This article is for *developers* who want to know how to work with permissions using our *C## API*. If you want to work with permissions in Sense/Net ECM using our [OData REST API](__TODO__) please check [Built-in OData actions and functions](__TODO__) for permission-related methods.
-{{clear}} 
+# Permission API
+**sensenet** has a powerful but easy-to-use [Permission System](permission-system) that is designed to be able to solve all permission-related business requirements from small businesses to large enterprises.
+
+This article is for *developers* who want to know how to work with permissions using our *C# API*. If you want to work with permissions in sensenet using our [OData REST API](odata-rest-api) please check [Built-in OData actions and functions](built-in-odata-actions-and-functions) for permission-related methods.
 
 ## Security handler
-The *SecurityHandler* class is the main entry point for working with permissions. You can use it in two ways: there is a *static API* that you may use if you do not have a fully loaded [Content](__TODO__) in your hand, only an id of a content. And there is an *instance API*, when you have a content or a node. In that case you can access all the permission-related functions for *that particular content* the following way:
+The *SecurityHandler* class is the main entry point for working with permissions. You can use it in two ways: there is a *static API* that you may use if you do not have a fully loaded [Content](content) in your hand, only an id of a content. And there is an *instance API* for when you have a content or a node. In that case you can access all the permission-related functions for *that particular content* the following way:
 ```csharp
-var workspace = Node.LoadNode("/Root/Sites/Default_Site/workspaces/Document/MyDocumentWorkspace");
+var workspace = Node.LoadNode(wsPath);
 // check permissions for the current user
 if (workspace.Security.HasPermission(PermissionType.AddNew))
 {
@@ -20,7 +25,7 @@ if (workspace.Security.HasPermission(PermissionType.AddNew))
 The *Security* property above returns an instance of the *SecurityHandler* class (you get the same object on a content and its content handler node as well, they are the same).
 
 ## Security context for other users
-In cases when you want to check permissions for a different user than the one who is logged in, you have to create a *security context* for that other user. After that you will be able to use the permission API the same way as before:
+In case you want to check permissions for a different user than the one who is logged in, you have to create a *security context* for that other user. After that you will be able to use the permission API the same way as before:
 ```csharp
 // create a context for a different user
 var ctx = SecurityHandler.CreateSecurityContextFor(user1);
@@ -45,7 +50,7 @@ if (workspace.Security.HasPermission(PermissionType.Approve, PermissionType.AddN
 ```
 
 ## Editing permissions
-In **Sense/Net ECM** permissions are represented by ACLs (Access Control Lists). To modify the Access Control List specified for a Content, you should use the *SnAclEditor* object provided by *SecurityHandler*. For example to set permissions for a user on folders or files, you can use the following code:
+In sensenet permissions are represented by *ACLs* (*Access Control Lists*). To modify the Access Control List specified for a Content, you should use the *SnAclEditor* object provided by *SecurityHandler*. For example to set permissions for a user on folders or files, you can use the following code:
 
 ```csharp
 var folder1 = Node.Load<Folder>("/Root/Sites/Default_Site/MyFolder01");
@@ -70,7 +75,7 @@ var editor = SecurityHandler.CreateAclEditor(ctx);
 ```
 
 ## Membership API
-If you are working with users and groups in Sense/Net ECM, please edit group membership using the *Group* class and its methods. All the permission-related operations are done in the background automatically.
+If you are working with users and groups in sensenet, please edit group membership using the *Group* class and its methods. All the permission-related operations are done in the background automatically.
 ```csharp
 // these methods call Save internally, you do not have to save the group manually
 group1.AddMember(user1);
@@ -109,8 +114,9 @@ public sealed class MyMembershipExtender : MembershipExtenderBase
 ```
 
 ## Permission query API
-Sense/Net ECM offers a way for developers to query the permission storage in many different ways in case you want to create a custom UI for displaying an managing permissions. This may be also useful if you want to arrange and display content on the UI based on their accessibility (e.g. list documents or folders by certain accessibility levels). You'll find the methods below in the *SenseNet.ContentRepository.Security.PermissionQuery* class.
+sensenet offers a way for developers to query the permission storage in many ways in case you want to create a custom UI for displaying and managing permissions. This may be also useful if you want to arrange and display content on the UI based on their accessibility (e.g. list documents or folders by certain accessibility levels). You'll find the methods below in the *SenseNet.ContentRepository.Security.PermissionQuery* class.
 Please note that the methods in this class check whether the current user has the necessary *SeePermission* permission before returning the result.
+
 ```csharp
 // users and groups that have any explicit permissions on the given content or its subtree
 var result = PermissionQuery.GetRelatedIdentities(content, PermissionLevel.AllowedOrDenied, IdentityKind.All);
@@ -128,13 +134,6 @@ var result = PermissionQuery.GetRelatedIdentities(content, PermissionLevel.Allow
 // Returns all content in the requested content's direct child collection that have any permission setting
 // filtered by permission value, user or group, and a permission mask.
 var result = PermissionQuery.GetRelatedItemsOneLevel(content, PermissionLevel.AllowedOrDenied, group, permissionTypes);
-
 ```
->For more details about permission queries please visit the [Permission queries](__TODO__) article.
 
-## Related links
-* [Permission System](__TODO__)
-* [Permission queries](__TODO__)
-* [Security component](__TODO__)
-* [Permission Overview](__TODO__)
-
+> For more details about permission queries please visit the [Permission queries](__TODO__) article.
