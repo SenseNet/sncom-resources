@@ -1,14 +1,22 @@
-# Special and built-in groups and users
+---
+title: "Built-in groups and users"
+source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/built-in-groups-and-users.md'
+category: Concepts
+version: v7.0
+tags: [user, group, built-in]
+description: "Built-in groups and users are necessary for the basic security mechanisms to work in sensenet. In this article you can learn about their purposes and how the system builds on them."
+---
 
-## Overview
-**Sense/Net ECMS** has a flexible [Permission System](__TODO__) that allows you to control who can do what in your system. In this article you can learn about the special and built-in groups and users that Sense/Net ECMS offers by default.
+# Built-in groups and users
 
-In Sense/Net ECMS all users and almost all groups are stored in the */Root/IMS* folder (which stands for *Identity Management System*). In this article we list and describe all the built-in and special groups and users in the system.
+**sensenet** has a flexible [Permission System](permission-system) that allows you to control who can do what in your system. In this article you can learn about the special and built-in groups and users that sensenet offers by default.
+
+In sensenet all users and almost all groups are stored in the */Root/IMS* folder (which stands for *Identity Management System*). In this article we list and describe all the built-in and special groups and users in the system.
 
 >There is possible to create groups outside of the IMS folder. These are local groups created under workspaces - see [Workspace local groups|this article](__TODO__) for more details.
 
 ### Special users
-Sense/Net ECMS provides a couple of special users by default. These users are used by the system, please do not remove them. However their permissions can be freely changed, or in case of the bult-in Admin user, you may even disable the user itself.
+sensenet provides a couple of special users by default. These users are used by the system, please do not remove them. However their permissions can be freely changed, or in case of the built-in Admin user, you may even disable the user itself.
 
 #### Admin
 This user is the administrator in the system, but no permission are given to him directly, only through the *Administrators* group. You can log in as Admin the same way as with any other user. Please do not remove this user as it is used by the system - but you can freely disable it or remove its permissions if you want to use a different user for admin purposes.
@@ -24,7 +32,7 @@ This is a built-in special user created to support on-the-fly authentication fro
 Everybody is a visitor until logging in. Therefore you cannot log in as a Visitor user because it represents users who are not logged in. It has a couple of permission settings in the default structure for content that should be accessible for everybody (e.g. js or css files for the public website).
 
 ### Special groups
-There are a couple of 'special groups' in Sense/Net ECMS that we handle differently than regular groups. It is not possible to edit the list of members of a special group: it is managed by the system. You can define permissions for them the same way as for regular groups, and during permission evaluation these groups are treated the same way also. The following list contains a list of special groups.
+There are a couple of 'special groups' in sensenet that we handle differently than regular groups. It is not possible to edit the list of members of a special group: it is managed by the system. You can define permissions for them the same way as for regular groups, and during permission evaluation these groups are treated the same way also. The following list contains a list of special groups.
 
 #### Everyone
 This is the largest group in the system: every single user is considered as a member of the *Everyone* group, **except the Visitor user**. This behavior cannot be changed. Please set permissions for this group carefully, as every logged in user will have access to those content. Note that you *cannot set deny permissions* for the Everyone group, because it would make that content inaccessible for - well, for everyone, including you.
@@ -40,7 +48,7 @@ A good example of this is the *Profiles* folder: it has permission settings for 
 Or you may state that identified users can upload documents into a document library but only Owners can delete content. This means users can upload documents into the library and even see each others' documents, but everybody will be able to delete *only their own documents*.
 
 ### Built-in groups
-Built-in groups in Sense/Net ECMS are regular groups, meaning their membership can be freely modified. They are used in the default [Content Repository](__TODO__) structure extensively, but no hard-coded logic is built on them (except for the *Administrators* group, please do not delete that one). This means you can freely change or replace these groups with your own custom groups in your permission settings. The best practice however is that you build on them, using the suggested purpose in the following sections.
+Built-in groups in sensenet are regular groups, meaning their membership can be freely modified. They are used in the default [Content Repository](__TODO__) structure extensively, but no hard-coded logic is built on them (except for the *Administrators* group, please do not delete that one). This means you can freely change or replace these groups with your own custom groups in your permission settings. The best practice however is that you build on them, using the suggested purpose in the following sections.
 
 #### Administrators
 Administrators considered to be the most powerful users in the system. This may be true for some features but not necessarily for all content. In the default structure administrators have access to everything, but when you build your project and add your custom content, it is perfectly fine if you hide something from the Administrators group. For example you may remove their permissions from confidential documents completely.
