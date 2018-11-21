@@ -1,38 +1,51 @@
+---
+title: "Security Component"
+source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/security-component.md'
+category: Development
+version: v7.0
+tags: [permission, security, component]
+description: "This standalone security component are for developers who need a robust, enterprise-grade permission subsystem in their project, even if it is not based on sensenet."
+---
+
 # Security Component
 
-## Overview 
-**Sense/Net ECM** is a huge product that has complex subsystems and permission handling is definitely one of them. This is why we decided to implement it as a standalone component. The *Security Component* is an independent module that can be used even in 3rd party projects outside of Sense/Net ECM.
-This article is for *developers* who want to understand how the security component works and want to use it in their own projects. About licensing please contact us on [http://www.sensenet.com sensenet.com].
-{{warning|This article **does not describe the Sense/Net ECM permission API**. If you want to know how to make security-related calls when you are developing for Sense/Net ECM, please head over to the [[Permission API]] article.}}
+**sensenet** is a huge product that has complex subsystems and permission handling is definitely one of them. This is why we decided to implement it as a standalone component. The *Security Component* is an independent module that can be used even in 3rd party projects outside of sensenet.
 
-## Releases
-- Main repository: [![NuGet](https://img.shields.io/github/release/sensenet/sn-security.png)](https://github.com/SenseNet/sn-security/releases)
-- Security core: [![NuGet](https://img.shields.io/nuget/v/SenseNet.Security.png)](https://www.nuget.org/packages/SenseNet.Security)
-- EF data provider: [![NuGet](https://img.shields.io/nuget/v/SenseNet.Security.EF6SecurityStore.png)](https://www.nuget.org/packages/SenseNet.Security.EF6SecurityStore)
-- MSMQ message provider: [![NuGet](https://img.shields.io/nuget/v/SenseNet.Security.Messaging.Msmq.png)](https://www.nuget.org/packages/SenseNet.Security.Messaging.Msmq)
+This article is for *developers* who want to understand how the security component works and want to use it in their own projects.
 
-## Details
+> This article **does not describe the sensenet permission API**. If you want to know how to make security-related calls when you are developing for sensenet, please head over to the [Permission API](permission-api) article.
+
+To check out the source code of the component please visit its [main repository](https://github.com/SenseNet/sn-security) on GitHub.
+
+## Features
 The *Security Component* in itself is able to manage a fully featured permission system of an application. It does the following things:
-* **stores** the following items and relations:
-  * entities (ids arranged in a hierarchy)
-  * membership information (groups and their members' ids)
-  * permission entries (related to the entities above)
-* **evaluates permissions**: decides (using a super-fast algorithm) whether a certain identity has certain permissions for an entity - taking entity hierarchy and permission inheritance into account.
+
+- **stores** the following items and relations:
+   - entities (ids arranged in a hierarchy)
+   - membership information (groups and their members' ids)
+   - permission entries (related to the entities above)
+- **evaluates permissions**: decides (using a super-fast algorithm) whether a certain identity has certain permissions for an entity - taking entity hierarchy and permission inheritance into account.
 
 A client application that uses the component has to **keep the information stored in its repository and the security component consistent**: if a change happens in the entity tree structure (e.g. a new entity is added or an existing is moved) or membership structure (user-group relations), that change has to be made in the database of the *Security Component* too, using the API we describe in this article.
-{{clear}}
 
-### Libraries and usage
-The Security Component consists of a library containing the core functionality of the component and a few additional libraries for the data layer and messaging implementations that you may replace with your own custom solutions. You simply have to copy the necessary libraries to your applications directory.
+## Packages
+The Security Component consists of a main library containing the core functionality of the component and a few additional packages for the data layer and messaging implementations that you may replace with your own custom solutions.
 
-| Library                                | Description           | Usage  |
-| -------------------------------------- | --------------------- | ------ |
-| SenseNet.Security.dll                  | Core security library | Keep it in your application's binary folder. |
-| SenseNet.Security.EF6SecurityStore.dll | Default data provider implementation, built on *Entity Framework 6* and a SQL data layer. |   Optional to use, you may replace it with a custom implementation of the *Security Component's* data provider. |
-| SenseNet.Security.Messaging.Msmq.dll   | Default messaging provider implementation. | Optional to use, you may replace it with a custom implementation of the *Security Component's* messaging provider, or completely omit it if there is only a single app domain in your environment (e.g. no NLB). |
+- main Security library: [![Security core](https://img.shields.io/nuget/v/SenseNet.Security.svg)](https://www.nuget.org/packages/SenseNet.Security)
 
-### Initialization
+#### Providers
+These packages contain the default providers and may be replaced by your custom implementations.
+
+- EF6 data provider: [![EF data provider](https://img.shields.io/nuget/v/SenseNet.Security.EF6SecurityStore.svg)](https://www.nuget.org/packages/SenseNet.Security.EF6SecurityStore)
+- EF Core data provider: [![EFCore data provider](https://img.shields.io/nuget/v/SenseNet.Security.EFCSecurityStore.svg)](https://www.nuget.org/packages/SenseNet.Security.EFCSecurityStore)
+- RabbitMQ messaging provider [![RabbitMQ message provider](https://img.shields.io/nuget/v/SenseNet.Security.Messaging.RabbitMQ.svg)](https://www.nuget.org/packages/SenseNet.Security.Messaging.RabbitMQ)
+- MSMQ messaging provider [![MSMQ message provider](https://img.shields.io/nuget/v/SenseNet.Security.Messaging.Msmq.svg)](https://www.nuget.org/packages/SenseNet.Security.Messaging.Msmq)
+
+> You can completely omit messaging if there is only a single app domain in your environment (e.g. no NLB). In that case you do not need any of the messaging providers above.
+
+## Initialization
 At application start the security component should be initialized with the necessary providers and other options (the values below should be settings in the main application of course).
+
 ```csharp
 // instantiate providers
 var securityDataProvider = new EF6SecurityDataProvider(connectionString);
@@ -56,7 +69,7 @@ SecurityContext.StartTheSystem(new SecurityConfiguration
 messageProvider.Start(startTime);
 ```
 
-### Security context
+## Security context
 The component is built around the concept of the *security context* that represents the central object (basically the environment) for security operations. It contains the following elements:
 * the user to check permissions for
 * reference to shared objects 
@@ -64,13 +77,14 @@ The component is built around the concept of the *security context* that represe
   * data provider
   * message provider
 
-The context itself is not shared or static, a dedicated security context object should be created for different users. Of course it can be cached as necessary, e.g. for the lifetime of a request in an ASP.NET environment.
+The context itself is not shared or static, a dedicated security context object should be created for different users. Of course it can be cached as necessary, e.g. for the lifetime of a request in a web environment.
 >The *SecurityContext* class is virtual and you will need to create your custom context implementation that is derived from it, mostly because of one of the following reasons:
->* **make custom calls** (e.g. permission asserts) before calling the built-in methods: the security component itself **does not check permission-related permissions** (e.g. *See permissions* or *Set permissions*) when you call its methods. This is the responsibility of the implementing application. In fact, the security component does not know anything about the different types of permissions, they are justs bits for the component.
+>* **make custom calls** (e.g. permission asserts) before calling the built-in methods: the security component itself **does not check permission-related permissions** (e.g. *See permissions* or *Set permissions*) when you call its methods. This is the responsibility of the implementing application. In fact, the security component does not know anything about the different types of permissions, they are just bits for the component.
 >* **extend the API** with your custom methods.
 
-### Permission types
+## Permission types
 The security component does not know anything about the different types of permissions. There is a limited number of permissions the component can handle (the maximum is *64*) and it handles them only as bits. This means if you want to work with *named permissions* (like *Open*, *Save*, etc.), you'll have to inherit from the built-in *PermissionTypeBase* class and define your named permissions as properties.
+
 ```csharp
 public class PermissionType : PermissionTypeBase
 {
@@ -90,10 +104,10 @@ public class PermissionType : PermissionTypeBase
 ```
 >For more details please refer to the source code. It contains a sample implementation of a custom permission type class.
 
-### Owner
+## Owner
 Every entity has an owner that can be a *user* (in the future this may also be a group). For the security component this does not mean much, except for the evaluator algorithm: if the current user (that we are checking permissions for) is the owner of the entity, the component adds the *Owners* group id to its identity list (all the groups that the user is member of) on-the-fly during evaluation. If there are certain permissions defined for the Owners group, they will be taken into account during evaluation.
 
-### API
+## Security API
 In this section we list the main parts of the security API and provide a couple of examples for calling its methods. The examples below build on a previously created security context object.
 ```csharp
 var context = new SecurityContext(user);
@@ -112,6 +126,7 @@ if (context.HasSubtreePermission(entityId, PermissionType.Open, PermissionType.A
 
 ### Structure API
 The *Security Component* stores entity ids and knows the concept of the *entity tree*. The following methods can be used for extending and modifying this entity structure.
+
 ```csharp
 // main method for registering an entity in the security component
 context.CreateSecurityEntity(entityId, parentId, ownerId);
@@ -130,6 +145,7 @@ context.IsEntityExist(entityId);
 
 ### Membership API
 This part of the API mostly contains methods for adding/removing users to/from groups. A few examples:
+
 ```csharp
 context.AddMembersToSecurityGroup(groupId, userMembers, groupMembers);
 context.AddUserToSecurityGroups(userId, parentGroups);
@@ -145,10 +161,13 @@ Editing permissions is done through a single entry point: the *Acl editor*. This
 var editor = context.CreateAclEditor();
 editor.Allow(entityId1, identityId, localOnly, PermissionType.Save);
 editor.Deny(entityId2, identityId, localOnly, PermissionType.Delete);
+
 // save the changes
 editor.Apply();
 ```
+
 Break permission inheritance and a fluent API.
+
 ```csharp
 context.CreateAclEditor()
 	.BreakInheritance(entityId1)
@@ -159,6 +178,7 @@ context.CreateAclEditor()
 
 ### Permission query API
 Permission queries are designed to let developers search for permissions defined on certain entities or entities with certain permissions.
+
 ```csharp
 var identities = context.GetRelatedIdentities(entityId, PermissionLevel.AllowedOrDenied);
 var permissions = context.GetRelatedPermissions(entityId, PermissionLevel.AllowedOrDenied, explicit, identityId);
@@ -169,8 +189,9 @@ var entities = context.GetRelatedEntities(entityId, PermissionLevel.AllowedOrDen
 In this section we describe the replaceable providers in the security component that you may customize.
 
 #### Data provider
-The built-in data provider (*EF6SecurityDataProvider*) was created to work with SQL Server, it should be enough for most cases.
+The built-in data providers (for *EF6* and *EF Core*) were created to work with SQL Server, it should be enough for most cases.
 You may freely create your own data provider that supports the data platform you need. The *ISecurityDataProvider* interface describes all the elements you have to implement. Here are a few examples:
+
 ```csharp
 void InsertSecurityEntity(StoredSecurityEntity entity);
 void DeleteSecurityEntity(int entityId);
@@ -179,8 +200,4 @@ void WritePermissionEntries(IEnumerable<StoredAce> aces);
 ```
 
 #### Message provider
-You will only need to use messaging if you are working with multiple app domains - e.g. in an ASP.NET environment with multiple web servers. For these cases we provide a built-in messaging system that uses MSMQ for sending security-related messages (e.g. entity structure changes) to other app domains. In case you want to use a different messaging technology, we provide the *IMessageProvider* interface that describes the messaging-related methods (e.g. sending or receiving a message) you should implement. Please take a look at the built-in message provider for examples.
-
-## Related links
-* [Permission System](__TODO__)
-* [Permission API](__TODO__)
+You will only need to use messaging if you are working with multiple app domains - e.g. in a web environment with multiple web servers. For these cases we provide two built-in messaging systems (one for MSMQ and one for RabbitMQ) for sending security-related messages (e.g. entity structure changes) to other app domains. In case you want to use a different messaging technology, we provide the *IMessageProvider* interface that describes the messaging-related methods (e.g. sending or receiving a message) you should implement. Please take a look at the built-in message providers for examples.
