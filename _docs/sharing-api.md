@@ -82,3 +82,23 @@ The *CreatorId* property refers to the user who was logged in at the time the sh
 
 ### Sharing date
 The date when the sharing record was created.
+
+## Notification formatter
+Substituting parameters is also configurable by developers by implementing the _ISharingNotificationFormatter_ interface and configuring the provider.
+
+```csharp
+public class MySharingNotificationFormatter : ISharingNotificationFormatter
+{
+    public string FormatSubject(Node node, SharingData sharingData, string subject)
+    {
+        // default implementation: static subject
+        return subject;
+    }
+
+    public string FormatBody(Node node, SharingData sharingData, string siteUrl, string body)
+    {
+        // TODO: construct a url that points to the content,
+		// add optional parameters and format the body.
+    }
+}
+```
