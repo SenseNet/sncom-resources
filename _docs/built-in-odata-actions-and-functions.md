@@ -827,6 +827,52 @@ $.ajax({
 });
 ```
 
+### Sharing operations
+
+##### GetSharing
+Lists all sharing records on a content. If the user does not have permissions for the identities in the records (e.g. users or groups), they will see the id of the *Somebody* user.
+
+```js
+$.ajax({
+    url: "/OData.svc/workspaces/Project/pragueprojectworkspace('Documents')/GetSharing",
+    dataType: "json",
+    type: 'GET',
+    success: function () {
+        //...
+    }
+});
+```
+
+##### Share
+Share a content with somebody. See the [Sharing API](sharing-api) articles for details.
+
+```js
+$.ajax({
+    url: "/OData.svc/workspaces/Project/pragueprojectworkspace('Documents')/Share",
+    dataType: "json",
+    type: 'POST',
+    data: "models=[" + JSON.stringify({ 'token':'email@example.com', 'level': 'Open', 'mode': 'Private', 'sendNotification': true }) + "]",
+    success: function () {
+        //...
+    }
+});
+```
+
+##### RemoveSharing
+Delete a sharing record from a content and remove all related permission entries. The id is a sharing identifier of a sharing record returned by the methods above.
+
+```js
+$.ajax({
+    url: "/OData.svc/workspaces/Project/pragueprojectworkspace('Documents')/RemoveSharing",
+    dataType: "json",
+    type: 'POST',
+    data: "models=[" + JSON.stringify({ 'id':'1234-5678-91012' }) + "]",
+    success: function () {
+        //...
+    }
+});
+```
+
 ## OData functions
 
 > Please note that OData functions can be called with POST or GET request.

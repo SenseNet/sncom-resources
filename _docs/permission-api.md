@@ -138,3 +138,16 @@ var result = PermissionQuery.GetRelatedItemsOneLevel(content, PermissionLevel.Al
 ```
 
 > For more details about permission queries please visit the [Permission queries](permission-queries) article.
+
+## Security Entry types
+The [security component](security-component) knows the concept of *entry types*. A security entry is a piece of information that holds the identity and their permissions on an entity together. In most cases entries are of the *Normal* type and you do not have to bother with the concept. 
+
+All entry types are taken into account when the system evaluates permissions, but you can manage only a single type of entries at a time - for example the *Sharing* module handles sharing entries.
+
+Most permission API entry points let you specify the entry type you want to handle:
+
+```csharp
+var aclEditor = SnSecurityContext.Create().CreateAclEditor(EntryType.Sharing);
+```
+
+In this case we want to work with *Sharing* entries. Currently this is the only special entry type but in the future there may be more of them.
