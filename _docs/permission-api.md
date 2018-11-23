@@ -115,6 +115,7 @@ public sealed class MyMembershipExtender : MembershipExtenderBase
 
 ## Permission query API
 sensenet offers a way for developers to query the permission storage in many ways in case you want to create a custom UI for displaying and managing permissions. This may be also useful if you want to arrange and display content on the UI based on their accessibility (e.g. list documents or folders by certain accessibility levels). You'll find the methods below in the *SenseNet.ContentRepository.Security.PermissionQuery* class.
+
 Please note that the methods in this class check whether the current user has the necessary *SeePermission* permission before returning the result.
 
 ```csharp
@@ -136,4 +137,4 @@ var result = PermissionQuery.GetRelatedIdentities(content, PermissionLevel.Allow
 var result = PermissionQuery.GetRelatedItemsOneLevel(content, PermissionLevel.AllowedOrDenied, group, permissionTypes);
 ```
 
-> For more details about permission queries please visit the [Permission queries](__TODO__) article.
+> For more details about permission queries please visit the [Permission queries](permission-queries) article.
