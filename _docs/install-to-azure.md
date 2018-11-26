@@ -33,7 +33,7 @@ After connecting to your Azure SQL Server, you'll be able to start the migration
 
 To learn more about the topic, visit [this article](https://docs.microsoft.com/hu-hu/azure/sql-database/sql-database-migrate-your-sql-server-database).
 
-## Deploy a virtual machine for the Search service
+## Install a virtual machine for the Search service
 In a cloud environment sensenet needs a central index (instead of individual local indexes on all app domains). Because the characteristics of the **Lucene search engine** that sensenet uses this requires a **local file system storage**, so it needs to be on a virtual machine as of now.
 
 We assume you already have a VM in Azure or you can install a new one at this point dedicated for this search service (which is a good practice).
@@ -64,9 +64,19 @@ To work in the cloud sensenet needs a messaging infrastructure. This is necessar
 To have a [RabbitMQ service](https://www.rabbitmq.com) you may register one at their site (for smaller projects) or install RabbitMQ in your own environment for real enterprise projects.
 
 ## Install and configure cloud packages
+It is time to pull it all together. In this section we will install the necessary NuGet packages and configure the necessary providers and endpoints on both the web app and the search service.
 
 ### Centralized search engine
-### Messaging
+Please follow the steps in the above mentioned [search service article](https://github.com/SenseNet/sn-search-lucene29/blob/master/docs/search-service.md) to install the necessary NuGet package in your web application. 
 
-- [Main RabbitMQ messaging provider](https://github.com/SenseNet/sn-messaging-rabbitmq/blob/master/docs/messaging-rabbitmq.md)
-- [Security message provider for RabbitMQ](https://github.com/SenseNet/sn-security/blob/master/docs/security-messaging-rabbitmq.md)
+The NuGet package will insert the required entries into your web.config file, but please validate them nonetheless - and provide your own RabbitMQ service endpoint of course.
+
+> Please note that in this case the main message provider and the security message provider we install is different - we will use RabbitMQ for messaging, see below.
+
+### Messaging
+To let web app domains communicate with each other and the service be notified about security changes, we have to configure a cloud-compatible messaging providers (*main* and *security*).
+
+- [Main RabbitMQ messaging provider](https://github.com/SenseNet/sn-messaging-rabbitmq/blob/master/docs/messaging-rabbitmq.md) *(only in web.config, NOT the search service)*
+- [Security message provider for RabbitMQ](https://github.com/SenseNet/sn-security/blob/master/docs/security-messaging-rabbitmq.md) *(both web.config and search service config)*
+
+> **Important**: after installing the security provider package above, you will need to copy the provider dll (*SenseNet.Security.Messaging.RabbitMQ.dll*) to the service folder in your VM, so that the search service can load the configured security provider.
