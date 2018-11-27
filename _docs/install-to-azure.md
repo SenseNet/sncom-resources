@@ -3,8 +3,8 @@ title: "Install sensenet in Azure"
 source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/install-to-azure.md'
 category: Guides
 version: v7.0
-tags: [install, azure, services, sn7]
-description: This article is for developers about installing sensenet as part of an App Service in Azure.
+tags: [install, cloud, azure, app service, sn7]
+description: This article is for developers about installing sensenet in an Azure App Service project.
 ---
 
 # Install sensenet in Azure
@@ -12,7 +12,7 @@ description: This article is for developers about installing sensenet as part of
 In this article we provide a step-by-step description of installing sensenet in an [App Service](https://docs.microsoft.com/en-us/azure/app-service/) project in Microsoft Azure.
 
 ## Install sensenet locally
-As a prerequisite please install sensenet in Visual Studio into your application using our NuGet packages.
+As a prerequisite please install sensenet in Visual Studio using our NuGet packages.
 
 - [Install sensenet](install-sn-from-nuget)
 
@@ -23,7 +23,7 @@ In the following sections we will go through the steps necessary to move this in
 - messaging
 
 ## Deploy the database to the cloud
-We will deploy the database to an Azure SQL Server instance. The easiest way to do that is the following:
+We will deploy the database to an **Azure SQL Database**. The easiest way to do that is the following:
 
 1. open SQL Management Studio
 2. right click on the local database
@@ -34,11 +34,11 @@ After connecting to your Azure SQL Server, you'll be able to start the migration
 To learn more about the topic, visit [this article](https://docs.microsoft.com/hu-hu/azure/sql-database/sql-database-migrate-your-sql-server-database).
 
 ## Install a virtual machine for the Search service
-In a cloud environment sensenet needs a central index (instead of individual local indexes on all app domains). Because the characteristics of the **Lucene search engine** that sensenet uses this requires a **local file system storage**, so it needs to be on a virtual machine as of now.
+In a cloud environment sensenet needs a central index (instead of individual local indexes on all app domains). Because the characteristics of the **Lucene search engine** that sensenet uses this requires a **file system storage**, so it needs to be on a virtual machine as of now.
 
 We assume you already have a VM in Azure or you can install a new one at this point dedicated for this search service (which is a good practice).
 
-> In the future we plan to provide a pre-configured VM image for this purpose, but currently you have to install the service manually.
+> In the future we plan to provide easier ways for this (e.g. a pre-configured VM image), but currently you have to install the service manually.
 
 ## Deploy the local index to the VM
 ### Install the Search service
@@ -48,7 +48,9 @@ On the link above you'll find instructions on how to install the currently avail
 
 > The instructions above also contain information about a NuGet package to install in your web application in Visual Studio and configuring the providers - you may do that later (see the sections below).
 
-### Copy index directory
+Do not attempt to start the service yet - we will have to configure a few things before that.
+
+### Copy the index directory
 Please copy the new index directory from your new local sensenet installation to the service directory on the VM:
 
 - from *[local web]\App_Data\LocalIndex*
@@ -119,19 +121,41 @@ Please review all the connection strings: they have to point to the **new cloud 
 - the *SnAdminRuntime.exe.config* in the `web\Tools` folder of your application
 - the config file (*SenseNet.Search.Lucene29.Centralized.Service.exe*) of the search service on the VM.
 
+## Start the Search Service
+Please make sure you configured the following elements correctly in the service's config file:
+
+- service endpoint: url and port number
+- open port: the service will listen on a TCP port (by default), please make sure that it is accessible from outside
+- database connection string (*SecurityStorage*)
+- messaging service url
+
+At this point everything is configured on the service's side, you should be able to start it.
+
 ## Publish the application
 The last step is to publish your application to Azure. You can do that in Visual Studio if you follow the instructions here:
 
 - [Publish a Web app to Azure App Service](https://docs.microsoft.com/en-us/visualstudio/deployment/quickstart-deploy-to-azure?view=vs-2017)
 
-## Scaling up and monitoring
+## Scaling and monitoring
 After your application has started correctly, you can use the usual Azure features to work with it: 
 
 - you may increase the number of app domains (*Scale out* menu item on the App Service page)
 - you can monitor events and trace messages using *Application Insights*
+- you can even debug the app service in Visual Studio and monitor events there
+
+## Maintenance
+When we [release a patch](https://community.sensenet.com/blog/2018/02/14/install-patch) for one of the sensenet packages, in most cases you do not have to do anything unusual: just update the NuGet package(s) and you can re-publish your application.
+
+There are cases however when the patch contains **content or database changes** that need to be performed before you can use the new code. In these cases you have **stop your Azure application** entirely and execute the patch you downloaded from the components release page on GitHub. This is necessary because database changes during patching may interfere with your live site, this is why these patches need to be executed when the site is down.
+
+> In some cases there are even more [complex patches](https://community.sensenet.com/blog/2018/03/05/complex-patch), but that happens very rarely.
+
+You can also use [SnAdmin](https://community.sensenet.com/docs/snadmin/) the same way as in case of a local application (e.g. execute [SnAdmin tools](https://community.sensenet.com/docs/snadmin-tools/)), just make sure your `web\Tools\SnAdminRuntime.exe.config` file contains the same connection string, provider and service endpoint configuration as your web.config.
 
 ## Troubleshooting
 If you experience a really slow app start for the first time and an application timeout happens, please consider the following:
 
+- Check that the search service is running (Windows Services dialog).
+- Check that the service endpoint is accessible from outside (e.g. the port is open).
 - Check the log in the search service's `App_Data\DetailedLog` folder. If you see a constant activity there during startup, you may try to reindex the repository. If you configured your `SnAdminRuntime` tool correctly, you can simply perform an indexing operation by executing the `snadmin index` command from the command line (but make sure you switch OFF your Azure App Service before you do that).
 - Try to raise the search service timeout and message size values in your web.config (look for the `readerQuotas` and `maxBufferSize` keywords in the *WCF* binding documentation).
