@@ -56,15 +56,27 @@ Please copy the new index directory from your new local sensenet installation to
 
 > Make sure that the copied directory does not contain a `write.lock` file among the index files because that will prevent the service from starting correctly.
 
-## Register a RabbitMQ service
+## Register a messaging service
 To work in the cloud sensenet needs a messaging infrastructure. This is necessary for app domains to communicate with each other.
 
-> Currently we offer a messaging implementation for RabbitMQ, but it is easy to write a custom message provider for any of the well-known technologies.
+> Currently we offer a messaging implementation for [RabbitMQ](https://www.rabbitmq.com), but it is easy to write a custom message provider for any of the well-known technologies.
 
-To have a [RabbitMQ service](https://www.rabbitmq.com) you may register one at their site (for smaller projects) or install RabbitMQ in your own environment for real enterprise projects.
+To have a RabbitMQ service you may register one at their site (for smaller projects) or install RabbitMQ in your own environment for real enterprise projects.
+
+To use RabbitMQ configuration elements in sensenet, please do not forget to register the appropriate config section in your web.config file.
+
+```xml
+  <configSections>
+    <sectionGroup name="sensenet">
+        ...
+        <section name="rabbitmq" type="System.Configuration.NameValueFileSectionHandler" />
+        ...
+    </sectionGroup>
+  </configSections>  
+```
 
 ## Install and configure cloud packages
-It is time to pull it all together. In this section we will install the necessary NuGet packages and configure the necessary providers and endpoints on both the web app and the search service.
+It is time to connect all the separate components. In this section we will install the necessary NuGet packages and configure the providers and endpoints on both the web app and the search service.
 
 ### Centralized search engine
 Please follow the steps in the above mentioned [search service article](https://github.com/SenseNet/sn-search-lucene29/blob/master/docs/search-service.md) to install the necessary NuGet package in your web application. 
@@ -73,10 +85,53 @@ The NuGet package will insert the required entries into your web.config file, bu
 
 > Please note that in this case the main message provider and the security message provider we install is different - we will use RabbitMQ for messaging, see below.
 
+> **Important**: please make sure you configure the *WCF* binding in your config files correctly regarding security. For details please check the official documentation:
+> - [Security config](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding)
+> - [Securing Services and Clients](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/securing-services-and-clients)
+
+For **development purposes** you may switch off security check temporarily for your binding:
+
+```xml
+<binding name="NetTcpBinding_ISearchServiceContract" >
+    <security mode="None" />
+</binding>
+```
+
 ### Messaging
-To let web app domains communicate with each other and the service be notified about security changes, we have to configure a cloud-compatible messaging providers (*main* and *security*).
+To let web app domains communicate with each other and the service be notified about security changes, we have to configure the cloud-compatible messaging providers (both *main* and *security*).
 
 - [Main RabbitMQ messaging provider](https://github.com/SenseNet/sn-messaging-rabbitmq/blob/master/docs/messaging-rabbitmq.md) *(only in web.config, NOT the search service)*
 - [Security message provider for RabbitMQ](https://github.com/SenseNet/sn-security/blob/master/docs/security-messaging-rabbitmq.md) *(both web.config and search service config)*
 
-> **Important**: after installing the security provider package above, you will need to copy the provider dll (*SenseNet.Security.Messaging.RabbitMQ.dll*) to the service folder in your VM, so that the search service can load the configured security provider.
+> **Important**: after installing the security provider package above, you will need to **copy the provider dll** (*SenseNet.Security.Messaging.RabbitMQ.dll*) to the service folder in your VM, so that the search service can load the configured security provider.
+
+### Logging
+The default logger in sensenet currently writes to the Windows *Event Log*. This is correct in a local environment but in the cloud we need a more modern approach.
+
+Although there is a built-in logger that can write log entries to the file system, it is advisable to use an Azure-friendly logger that can write to [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/). Please install and configure the package described here:
+
+- [Azure Application Insights logger](https://github.com/SenseNet/sn-logging-applicationinsights)
+
+## Connection strings
+Please review all the connection strings: they have to point to the **new cloud database** we deployed earlier.
+
+- the *web.config* of your application
+- the *SnAdminRuntime.exe.config* in the `web\Tools` folder of your application
+- the config file (*SenseNet.Search.Lucene29.Centralized.Service.exe*) of the search service on the VM.
+
+## Publish the application
+The last step is to publish your application to Azure. You can do that in Visual Studio if you follow the instructions here:
+
+- [Publish a Web app to Azure App Service](https://docs.microsoft.com/en-us/visualstudio/deployment/quickstart-deploy-to-azure?view=vs-2017)
+
+## Scaling up and monitoring
+After your application has started correctly, you can use the usual Azure features to work with it: 
+
+- you may increase the number of app domains (*Scale out* menu item on the App Service page)
+- you can monitor events and trace messages using *Application Insights*
+
+## Troubleshooting
+If you experience a really slow app start for the first time and an application timeout happens, please consider the following:
+
+- Check the log in the search service's `App_Data\DetailedLog` folder. If you see a constant activity there during startup, you may try to reindex the repository. If you configured your `SnAdminRuntime` tool correctly, you can simply perform an indexing operation by executing the `snadmin index` command from the command line (but make sure you switch OFF your Azure App Service before you do that).
+- Try to raise the search service timeout and message size values in your web.config (look for the `readerQuotas` and `maxBufferSize` keywords in the *WCF* binding documentation).
