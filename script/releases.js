@@ -1,9 +1,8 @@
 const fs = require('fs')
 const request = require('request')
-const semver = require('semver')
-const token = '45bd0341f002cec847ea801a9f83cf476af2947f' //regenerate token every time before running get-releases script
+// const token = '6b7e2a9825b06d13db95a1398a61cc9dec37eebf' //regenerate token every time before running get-releases script
 
-const repos = ['sensenet', 'sn-client-js', 'sn-client-dotnet', 'sn-webpages', 'sn-client-cli']
+const repos = ['sensenet', 'sn-client-dotnet', 'sn-webpages', 'sn-security', 'sn-preview']
 const releaseArr = [];
 
 for (var i = 0; i < repos.length; i++) {
@@ -41,7 +40,7 @@ for (var i = 0; i < repos.length; i++) {
 
         return release
       })
-      .sort((a, b) => semver.compare(b.version, a.version))
+      .sort((a, b) => compare(b.version, a.version))
 
 
     const repoObj = getRepo(name);
@@ -57,4 +56,10 @@ function getRepo(name) {
   }
 }
 
-
+function compare(a,b) {
+  if (a < b)
+    return -1;
+  if (a > b)
+    return 1;
+  return 0;
+}
