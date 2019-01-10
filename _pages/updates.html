@@ -25,7 +25,7 @@ layout: default
         <h1>
           <a class="blog-index-link" href="{{ update.url | prepend: site.baseurl }}">{{ update.title }}</a>
         </h1>
-        <div class="who-when">
+        <div class="who-when" style="margin-bottom: 10px">
           <i class="fa fa-calendar"></i><time class="blog-index-time">{{ update.date | date: '%B %d, %Y' }}</time>
         </div>
           {{update.content}}
