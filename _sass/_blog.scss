@@ -3,14 +3,14 @@ ul.blog-index {
     padding: 0;
 }
 
-ul.blog-index li {
+ul.blog-index > li {
     list-style-type: none;
     border-bottom: solid 1px #eee;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
 
-ul.blog-index li h2 > a {
+ul.blog-index > li h2 > a {
     text-decoration: none;
     color: $h2-color;
 }

@@ -1,0 +1,37 @@
+---
+title: sensenet Updates
+permalink: /updates/
+layout: default
+---
+
+{% assign updates = site.updates | sort: 'date' | reverse %}
+
+<section class='page-section blog-post'>
+  <div class='container-narrow'>
+    <aside class="blog-menu-side">
+      <h3>Updates</h3>
+      <nav class="blog-menu">
+        <ul>
+          {% for update in updates %}
+          <li><a href="{{update.url}}">{{update.title}}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </aside>
+    <article class="blog-post">
+    <ul class="blog-index">
+      {% for update in updates limit:1 %}
+      <li class="blog-post">
+        <h1>
+          <a class="blog-index-link" href="{{ update.url | prepend: site.baseurl }}">{{ update.title }}</a>
+        </h1>
+        <div class="who-when">
+          <i class="fa fa-calendar"></i><time class="blog-index-time">{{ update.date | date: '%B %d, %Y' }}</time>
+        </div>
+          {{update.content}}
+      </li>
+      {% endfor %}
+    </ul>
+  </article>
+  </div>
+</section>
