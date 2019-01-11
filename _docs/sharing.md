@@ -53,7 +53,7 @@ What happens when something that is related to a shared content or a user change
 All sharing information and permissions related to them will be removed.
 
 #### A new user is created or an existing user gets an email address
-If there are *private* sharing records with this email and *no identity*, we will give explicit permissions for the new user on that content. This is to make sure that if a user registers to access a content that was shared with them privately, they get a seamless user experience.
+If there are *private* sharing records with this email address and *no identity*, we will give explicit permissions for the new user on that content. This is to make sure that if a user registers to access a content that was shared with them privately, they get a seamless user experience.
 
 #### A shared content is deleted to the Trash
 This is a special case when a content is not yet physically removed from the system, only deleted to the Trash. For existing users this won't change much, they will still be able to access the content the same way as any other content.
