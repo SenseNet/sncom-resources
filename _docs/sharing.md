@@ -61,7 +61,7 @@ This is a special case when a content is not yet physically removed from the sys
 For *public* sharing this is different: **visitors will no longer access those content items** - unless the documents are restored from the Trash. In that case the old public sharing links will still be working.
 
 ## Configuration
-You can switch ON or OFF the feature or customize the notification emails using the *Sharing* settings.
+You can switch ON or OFF notifications or customize the notification emails using the *Sharing* settings.
 
 ##### Sharing settings 
 
