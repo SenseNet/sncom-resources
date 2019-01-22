@@ -5,9 +5,7 @@ image: '../img/posts/monorepo/colorful-stack.jpg'
 tags: [monorepo, refactor, JavaScript, client packages]
 ---
 
-_Juggling a multimodule project over multiple repos is like trying to teach a newborn baby how to ride a bike. _
-
-[Babel](https://github.com/babel/babel/blob/master/doc/design/monorepo.md#why-is-babel-a-monorepo)
+_Juggling a multimodule project over multiple repos is like trying to teach a newborn baby how to ride a bike._ [Babel](https://github.com/babel/babel/blob/master/doc/design/monorepo.md#why-is-babel-a-monorepo)
 
 ---
 
@@ -16,7 +14,7 @@ _Juggling a multimodule project over multiple repos is like trying to teach a ne
 
 ## Some history about our client packages
 
-At first, we started with one package it was [sn-client-js](https://github.com/SenseNet/sn-client-js). As time goes by it grow bigger and we felt like we need to do something.
+At first, we started with one package [sn-client-js](https://github.com/SenseNet/sn-client-js). As time goes by it grow bigger and we felt like we need to do something.
 
 > We’ve started 2018 with a huge package refactor: we have divided our base sn-client-js package into several smaller ones and published them within a @sensenet scope.
 
@@ -24,9 +22,7 @@ You can read more about that in another blog post ➡️ [Scoped packages](/blog
 
 ## The problem
 
-Managing features that span many repositories started to be difficult after the decoupling.
-Staying on the same version of typescript, tslint etc.
-Using the same rules in the tsconfig and also in tslint.
+Managing features that span many repositories started to be difficult after the decoupling. Staying on the same version of typescript, using the same rules in the tsconfig. We had to do all those things in every repository.
 
 For example, we have a package called [@sensenet/client-utils](https://www.npmjs.com/package/@sensenet/client-utils) and I want to add a new helper function there.
 Let's say a debounce that I will use in another package.
@@ -35,7 +31,7 @@ Let's say a debounce that I will use in another package.
 
 1.  Create a branch from develop in the client-utils package
 2.  Create the debounce function
-3.  Review the code
+3.  Create a pull request and wait for the code review
 4.  Merge back to develop
 5.  Do a release
 6.  Do a package upgrade in the package I want to use the util function
@@ -47,26 +43,40 @@ I know, there shouldn't be a bug in the code that have been reviewed. Also we co
 
 > In revision control systems, a monorepo (syllabic abbreviation of monolithic repository) is a software development strategy where code for many projects are stored in the same repository.
 
-### The whole workflow can be simplified like this:
+**In a monorepo the whole workflow can be simplified like this:**
 
 1.  Create a branch from develop
 2.  Create the function
 3.  Build, test
 4.  Merge back when done
 
-So much easier and cleaner than before. No need copy anything, anywhere. No need to release a dev alpha or a minor version. You can see your changes in all the packages once you modified something. It not only made our life simpler but it gave us a productivity boost as well. Let's see how the transition went.
+So much easier and cleaner than before. No need to copy anything, anywhere. No need to release a dev alpha or a minor version. You can see your changes in all the packages once you modified something. It not only made our life simpler but it gave us a productivity boost as well. Let's see how the transition went.
 
 ![Patrick](/img/posts/monorepo/patrick-meme.jpg 'Get all the packages we extracted from one repository and put them together in a new one')
 
 ## Moving sensenet client packages to monorepo
 
-[PR](https://github.com/SenseNet/sn-client/pull/1)
+First thing first, we need a new reopsitory. We could also use one of the repos and put everything there, but it felt cleaner to start a new one. I have created a todo list in this [pull request](https://github.com/SenseNet/sn-client/pull/1) to track the progress and to see what is left. 
 
+We moved all the packages to the packages folder with lerna. _[Lerna](https://lernajs.io/) is a tool that optimizes the workflow around managing multi-package repositories with git and npm._ This way we could see the commit history in the new repository as well. We had to make sure that every package is able to build itslef. We faced with some problems here. Not every package was configured correctly. Some was missing dependencies that were needed for it to be able to build.
 
-### Here are the benefits we gained:
+After that we run the tests to make sure we didn't break anything. Because the repositories were not consistent in their configs, it failed. We had to temporarily suspend the linting to see the test results. With that said we realized that we should to make all repositories consistent. Fortunately there were no big errors.
+
+This is the list that we did to make the packages unified:
+  - Styling - Added .editorconfig, prettier and precommit hook with [lint-staged](https://github.com/okonet/lint-staged)
+  - Linting - Pointed the tslint.json files to the root tslint file and fixed the errors
+  - Build - Pointed the tsconfig.json files to the base tsconfig file
+  - Updated the package.json files to reflect the new changes (issue link, git url), removed common devdependencies
+  - Removed files that are not needed anymore in all the repositories (travis.yml, contributing.md, .vscode folder)
+
+When we finished with all this we had to make the ci work again, update the readmes, archive the old repositories and move all the issues to the new repository. The last step was to do a minor release from the packages. It was a piece of cake with the help of Lerna.
+
+### After all here are the benefits we gained:
 
 - **It is easier to coordinate changes across modules** - Because every package that depends on another linked together, you can see the changes in no time.
 - **Dependencies are now unified** - In a multiple repository environment where multiple projects depend on a third-party dependency, that dependency might be downloaded or built multiple times. In a monorepo the build can be easily optimized, as referenced dependencies all exist in the same codebase.
 - **Single lint, build, test and release process** - Monorepo can share their configs from top to bottom creating a consistent developer experience.
 
 ## Conclusion
+
+I think that moving to a monorepo will help us in the long run. Getting everything configured took time but it was only necessary for the future.
