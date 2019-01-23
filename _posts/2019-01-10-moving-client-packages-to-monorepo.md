@@ -10,11 +10,11 @@ _Juggling a multimodule project over multiple repos is like trying to teach a ne
 ---
 
 ## TL;DR
-*We moved all our javascript packages to [one reposity](https://github.com/SenseNet/sn-client).*
+*We moved all our javascript packages to [one repository](https://github.com/SenseNet/sn-client).*
 
 ## Some history about our client packages
 
-At first, we started with one package [sn-client-js](https://github.com/SenseNet/sn-client-js). As time goes by it grow bigger and we felt like we need to do something.
+At first, we started with one package [sn-client-js](https://github.com/SenseNet/sn-client-js). As time went by it grew bigger and we felt like we need to do something.
 
 > We’ve started 2018 with a huge package refactor: we have divided our base sn-client-js package into several smaller ones and published them within a @sensenet scope.
 
@@ -58,9 +58,9 @@ So much easier and cleaner than before. No need to copy anything, anywhere. No n
 
 First thing first, we need a new reopsitory. We could also use one of the repos and put everything there, but it felt cleaner to start a new one. I have created a todo list in this [pull request](https://github.com/SenseNet/sn-client/pull/1) to track the progress and to see what is left. 
 
-We moved all the packages to the packages folder with lerna. _[Lerna](https://lernajs.io/) is a tool that optimizes the workflow around managing multi-package repositories with git and npm._ This way we could see the commit history in the new repository as well. We had to make sure that every package is able to build itslef. We faced with some problems here. Not every package was configured correctly. Some was missing dependencies that were needed for it to be able to build.
+We moved all the packages to the packages folder with lerna. _[Lerna](https://lernajs.io/) is a tool that optimizes the workflow around managing multi-package repositories with git and npm._ This way we could see the commit history in the new repository as well. We had to make sure that every package is able to build itslef. We faced some problems here. Not every package was configured correctly. Some was missing dependencies that were needed for it to be able to build.
 
-After that we run the tests to make sure we didn't break anything. Because the repositories were not consistent in their configs, it failed. We had to temporarily suspend the linting to see the test results. With that said we realized that we should to make all repositories consistent. Fortunately there were no big errors.
+After that we run the tests to make sure we didn't break anything. Because the repositories were not consistent in their configs, it failed. We had to temporarily suspend the linting to see the test results. With that said we realized that we should make all repositories consistent. Fortunately there were no big errors.
 
 This is the list that we did to make the packages unified:
   - Styling - Added .editorconfig, prettier and precommit hook with [lint-staged](https://github.com/okonet/lint-staged)
