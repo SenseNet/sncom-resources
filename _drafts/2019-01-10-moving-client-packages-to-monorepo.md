@@ -56,9 +56,9 @@ So much easier and cleaner than before. No need to copy anything, anywhere. No n
 
 ## Moving sensenet client packages to monorepo
 
-First thing first, we need a new reopsitory. We could also use one of the repos and put everything there, but it felt cleaner to start a new one. I have created a todo list in this [pull request](https://github.com/SenseNet/sn-client/pull/1) to track the progress and to see what is left. 
+First thing first, we need a new repository. We could also use one of the repos and put everything there, but it felt cleaner to start a new one. I have created a todo list in this [pull request](https://github.com/SenseNet/sn-client/pull/1) to track the progress and to see what is left. 
 
-We moved all the packages to the packages folder with lerna. _[Lerna](https://lernajs.io/) is a tool that optimizes the workflow around managing multi-package repositories with git and npm._ This way we could see the commit history in the new repository as well. We had to make sure that every package is able to build itslef. We faced some problems here. Not every package was configured correctly. Some was missing dependencies that were needed for it to be able to build.
+We moved all the packages to the packages folder with Lerna. _[Lerna](https://lernajs.io/) is a tool that optimizes the workflow around managing multi-package repositories with git and npm._ This way we could see the commit history in the new repository as well. We had to make sure that every package is able to build itself. We faced some problems here. Not every package was configured correctly. Some was missing dependencies that were needed for it to be able to build.
 
 After that we run the tests to make sure we didn't break anything. Because the repositories were not consistent in their configs, it failed. We had to temporarily suspend the linting to see the test results. With that said we realized that we should make all repositories consistent. Fortunately there were no big errors.
 
@@ -73,9 +73,9 @@ When we finished with all this we had to make the ci work again, update the read
 
 ### After all here are the benefits we gained:
 
-- **It is easier to coordinate changes across modules** - Because every package that depends on another linked together, you can see the changes in no time.
+- **It is easier to coordinate changes across modules** - Because every package that depends on another is linked together, you can see the changes in no time.
 - **Dependencies are now unified** - In a multiple repository environment where multiple projects depend on a third-party dependency, that dependency might be downloaded or built multiple times. In a monorepo the build can be easily optimized, as referenced dependencies all exist in the same codebase.
-- **Single lint, build, test and release process** - Monorepo can share their configs from top to bottom creating a consistent developer experience.
+- **Single lint, build, test and release process** - Monorepos can share their configs from top to bottom creating a consistent developer experience.
 
 ## Conclusion
 
