@@ -30,7 +30,7 @@ Since it was our first sprint we heavily relied on Jake Knapp’s design sprint 
 
 On Monday we went through the problem we were facing which is how can we simplify the admin page so it can be used faster and easier. After we set the goal, got through the map, asked the experts (people in the company who are using the admin site on a daily basis). By the end of the day we indeed got an idea where we should put our focus on which was that we don’t need to show the whole tree structure all the time because people who use the admin page just didn’t need it.
 
-![Map with HMW notes](../img/posts/design-sprint/Map-with-HMW-notes.jpeg 'Map with HMW notes')
+![Map with HMW notes](/img/posts/design-sprint/Map-with-HMW-notes.jpeg 'Map with HMW notes')
 
 ### Tuesday
 
@@ -44,7 +44,7 @@ We have a bunch of solutions! **Yeeey!!** Now it was time to choose the best one
 
 *So no storyboard but a pretty solid plan on what we should do on Thursday.*
 
-![Lightning demo captures](../img/posts/design-sprint/Lightning-demo-captures.jpeg 'Lightning demo captures')
+![Lightning demo captures](/img/posts/design-sprint/Lightning-demo-captures.jpeg 'Lightning demo captures')
 
 ### Thursday
 
