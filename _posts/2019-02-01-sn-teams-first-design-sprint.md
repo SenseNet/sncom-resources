@@ -5,7 +5,7 @@ image: '../img/posts/design-sprint/sn-teams-first-design-sprint.jpeg'
 tags: [Design Sprint, UX, UX Design, Prototyping, Teamwork]
 ---
 
-Recently I got a new task which was to rework our admin UI. Our admin page is quite clunky and is hard to work around. The main navigation is the BFT (aka the big fucking tree) which can be overwhelming if you’re not familiar with the folder structure and can give you a hard time.
+Recently I got a new task which was to rework our admin UI.
 
 
 
@@ -13,7 +13,7 @@ Recently I got a new task which was to rework our admin UI. Our admin page is qu
 
 ## How it all begun
 
-Recently I got a new task which was to rework our admin UI. Our admin page is quite clunky and is hard to work around. The main navigation is the BFT (aka the big fucking tree) which can be overwhelming if you’re not familiar with the folder structure and can give you a hard time.
+Our admin page is quite clunky and is hard to work around. The main navigation is the BFT (aka the big fucking tree) which can be overwhelming if you’re not familiar with the folder structure and can give you a hard time.
 
 We decided that we should give it a new look and make it easier to navigate around the admin system so it will save time and will be a much pleasant experience to work with it. The only thing was… it’s pretty complex and as a designer I haven’t worked with it so I didn’t know the real depths of the admin system.
 
