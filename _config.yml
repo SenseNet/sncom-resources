@@ -19,9 +19,11 @@ plugins:
     - jekyll-sitemap
 collections:
     docs: {output: true, permalink: '/docs/:path/'}
+    updates: {output: true, permalink: '/updates/:year/:month/:day'}
 defaults:
     - {scope: {type: docs}, values: {layout: docs}}
     - {scope: {type: posts}, values: {layout: post, permalink: '/blog/:year/:month/:day/:title'}}
+    - {scope: {type: updates}, values: {layout: update, permalink: '/updates/:year/:month/:day' }}
 exclude:
     - node_modules
     - README.md
@@ -34,6 +36,7 @@ exclude:
 include:
     - _pages
     - _docs
+    - _updates
 twitter:
     username: sensenet
 logo: '/img/sensenet-logo.png'

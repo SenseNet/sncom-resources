@@ -4,28 +4,28 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 
   <meta content='#2f3241' name='theme-color' />
-  
+
   {% if page.title %}
-    <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:title" content="{{ page.title }}" />
   {% else %}
-    <meta name="twitter:title" content="{{ site.title }}" />
+  <meta name="twitter:title" content="{{ site.title }}" />
   {% endif %}
   {% if page.url %}
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
   {% endif %}
   {% if page.description %}
-    <meta name="twitter:description" content="{{ page.description }}" />
-    <meta property="og:description" content="{{ page.description }}" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+  <meta property="og:description" content="{{ page.description }}" />
   {% else %}
-    <meta name="twitter:description" content="{{ site.description }}" />
-    <meta property="og:description" content="{{ site.description }}" />
+  <meta name="twitter:description" content="{{ site.description }}" />
+  <meta property="og:description" content="{{ site.description }}" />
   {% endif %}
   {% if page.image %}
-    <meta name="twitter:image:src" content="{{ site.url }}{{ page.image }}" />
-    <meta property="og:image:url" content="{{ site.url }}{{ page.image }}" />
+  <meta name="twitter:image:src" content="{{ site.url }}{{ page.image }}" />
+  <meta property="og:image:url" content="{{ site.url }}{{ page.image }}" />
   {% else %}
-      <meta name="twitter:image:src" content="{{ site.url }}{{ site.logo }}" />
-    <meta property="og:image:url" content="{{ site.url }}{{ site.logo }}" />
+  <meta name="twitter:image:src" content="{{ site.url }}{{ site.logo }}" />
+  <meta property="og:image:url" content="{{ site.url }}{{ site.logo }}" />
   {% endif %}
 
   <link rel='shortcut icon' href='{{ site.baseurl }}/img/favicon.ico' />
@@ -45,7 +45,11 @@
   <script src="{{ site.baseurl }}/js/index.js"></script>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <script>
-      !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');
+    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');
+    function handleUpdateClick() {
+      var updateMenuItem = document.getElementById('ddMenu')
+      updateMenuItem.classList.contains('hidden') ? updateMenuItem.classList.remove('hidden') : updateMenuItem.classList.add('hidden')
+    }
   </script>
   {% seo %}
 </head>
