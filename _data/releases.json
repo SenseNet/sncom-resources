@@ -3,6 +3,25 @@
     "name": "sensenet",
     "releases": [
       {
+        "url": "https://api.github.com/repos/SenseNet/sensenet/releases/15092602",
+        "assets_url": "https://api.github.com/repos/SenseNet/sensenet/releases/15092602/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sensenet/releases/15092602/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sensenet/releases/tag/v7.5.1",
+        "id": 15092602,
+        "node_id": "MDc6UmVsZWFzZTE1MDkyNjAy",
+        "tag_name": "v7.5.1",
+        "target_commitish": "master",
+        "name": "sensenet Services 7.5.1",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2019-01-21T14:39:02Z",
+        "published_at": "2019-01-22T12:29:12Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sensenet/tarball/v7.5.1",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sensenet/zipball/v7.5.1",
+        "body": "There are bug fixes and new features as well in this release, please take a look at the following list of changes.\r\n\r\n> This release requires an upgrade patch to be executed if you already have a database. Download the patch from the assets list above.\r\n\r\n## Features\r\n- The backend part of the [Sharing](https://github.com/SenseNet/sensenet/issues/519) feature provides the API for managing private and public content sharing.\r\n\r\n## Bug fixes\r\n- [Add allowed child types](https://github.com/SenseNet/sensenet/issues/512) API works correctly.\r\n- Querying on a content's [reference field](https://github.com/SenseNet/sensenet/issues/515) (inner or nested query) works correctly through the OData API.\r\n- User [Avatar property](https://github.com/SenseNet/sensenet/issues/507) always contains the image url and it can be modified correctly.\r\n- Notify property changed event is [fired correctly](https://github.com/SenseNet/sensenet/issues/496) to avoid deviations between the node and content layers.\r\n- Indexing activity [deserialization errors](https://github.com/SenseNet/sensenet/issues/524) are written to the log only once, not every time the same error occurs.\r\n\r\n## Package changes to support .Net Standard\r\n- The legacy _Performance counters api_ [has been removed](https://github.com/SenseNet/sensenet/issues/434) from the core product in preparation for moving our packages to .Net Standard. The feature has been moved to the [Performance counters](https://github.com/SenseNet/sn-logging-performancecounters) repo and package.\r\n- We moved the [MSMQ Channel Provider](https://github.com/SenseNet/sensenet/issues/433) to a separate package because the MSMQ technology is not available in .Net Standard.\r\n- We rearranged default permissions for the [Identified and Everyone groups](https://github.com/SenseNet/sensenet/issues/485). This will make adding new users simpler because they will receive the necessary basic permissions automatically through the _Everyone_ group. These changes will affect **new projects only**, they are not included in the upgrade patch to avoid unwanted permission changes.\r\n- We removed the [System.Web reference](https://github.com/SenseNet/sensenet/issues/435) from the Storage library to be able to convert it to .Net Standard later.\r\n- We also removed the [IHttpHandler](https://github.com/SenseNet/sensenet/issues/550) interface from the repository project: Images are served through the regular binary provider from now on.\r\n- We removed the [separate Configuration dll](https://github.com/SenseNet/sensenet/pull/538) from the main package and moved all its classes to the Services library to make our library set more streamlined.\r\n\r\n## Installation\r\nTo get started please follow the instructions in the [Install sensenet from NuGet article](http://community.sensenet.com/docs/install-sn-from-nuget).",
+        "version": "7.5.1"
+      },
+      {
         "url": "https://api.github.com/repos/SenseNet/sensenet/releases/13869784",
         "assets_url": "https://api.github.com/repos/SenseNet/sensenet/releases/13869784/assets",
         "upload_url": "https://uploads.github.com/repos/SenseNet/sensenet/releases/13869784/assets{?name,label}",
@@ -430,6 +449,25 @@
   {
     "name": "sn-webpages",
     "releases": [
+      {
+        "url": "https://api.github.com/repos/SenseNet/sn-webpages/releases/15112451",
+        "assets_url": "https://api.github.com/repos/SenseNet/sn-webpages/releases/15112451/assets",
+        "upload_url": "https://uploads.github.com/repos/SenseNet/sn-webpages/releases/15112451/assets{?name,label}",
+        "html_url": "https://github.com/SenseNet/sn-webpages/releases/tag/v7.2.3",
+        "id": 15112451,
+        "node_id": "MDc6UmVsZWFzZTE1MTEyNDUx",
+        "tag_name": "v7.2.3",
+        "target_commitish": "master",
+        "name": "sensenet WebPages 7.2.3",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2019-01-21T14:57:20Z",
+        "published_at": "2019-01-22T14:58:43Z",
+        "tarball_url": "https://api.github.com/repos/SenseNet/sn-webpages/tarball/v7.2.3",
+        "zipball_url": "https://api.github.com/repos/SenseNet/sn-webpages/zipball/v7.2.3",
+        "body": "This minor release focuses on supporting the latest version of sensenet: v7.5.1.\r\n\r\n> This release does not require an upgrade patch if you already have the previous version installed: it is enough to update the packages in Visual Studio.\r\n\r\n## Installation\r\n>**Prerequisites**: you have to install [sensenet Services](https://github.com/SenseNet/sensenet) before you can install WebPages.\r\n\r\nYou can install the sensenet WebPages component in Visual Studio as a NuGet package. Please follow the steps in the the following article:\r\n\r\n- [Install WebPages from NuGet](https://github.com/SenseNet/sn-webpages/blob/master/docs/install-webpages-from-nuget.md)",
+        "version": "7.2.3"
+      },
       {
         "url": "https://api.github.com/repos/SenseNet/sn-webpages/releases/13299182",
         "assets_url": "https://api.github.com/repos/SenseNet/sn-webpages/releases/13299182/assets",
