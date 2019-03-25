@@ -8,7 +8,7 @@ tags: [DMS, UX, javascript, client packages]
 ---
 *“Begin at the beginning,” the King said, very gravely, “and go on till you come to the end: then stop.”*
 
-We began developing DMS – our document management solution –  as an MVC roughly about a year ago, this is why: sensenet is a [headless content management platform](https://community.sensenet.com/blog/2017/07/05/what-is-a-headless-cms) where the backend does not care about how the content is displayed. If you are a frontend developer, this gives you freedom of choice in what tools you use and how you want to implement your solutions. To give you guidance, however, we also wanted to create an example implementation for a real-life business need. Feedback from partners and users indicated that a simple web based file management would be a good start. And then, DMS was born.
+We began developing DMS – our document management solution –  as an MVP roughly about a year ago, this is why: sensenet is a [headless content management platform](https://community.sensenet.com/blog/2017/07/05/what-is-a-headless-cms) where the backend does not care about how the content is displayed. If you are a frontend developer, this gives you freedom of choice in what tools you use and how you want to implement your solutions. To give you guidance, however, we also wanted to create an example implementation for a real-life business need. Feedback from partners and users indicated that a simple web based file management would be a good start. And then, DMS was born.
 
 ---
 
@@ -16,7 +16,7 @@ We began developing DMS – our document management solution –  as an MVC roug
 
 *… Alice had begun to think that very few things indeed were really impossible.*
 
-We also knew that that you will need reusable building blocks and tools as well for your own solutions, so we created small, lightweight [frontend packages](https://community.sensenet.com/blog/2018/02/21/scoped-packages) that are optional, but considerably speed up frontend development with sensenet. DMS, on the other hand, has outgrown the original MVC, so it just seemed logical that we generalize many of its functions in our underlying packages.
+We also knew that that you will need reusable building blocks and tools as well for your own solutions, so we created small, lightweight [frontend packages](https://community.sensenet.com/blog/2018/02/21/scoped-packages) that are optional, but considerably speed up frontend development with sensenet. DMS, on the other hand, has outgrown the original MVP, so it just seemed logical that we generalize many of its functions in our underlying packages.
 Now you can:
 *	Use DMS as is: Install SN7 backend packages, then add the DMS frontend package on top of it, and just use as a sample application. It will take care of dependencies.
 *	Use the generalized packages for development: This is the recommended method if you want to build your own production ready solution. Install SN7 backend packages, then build your application with the underlying building blocks we also used in DMS.
