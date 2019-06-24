@@ -23,7 +23,7 @@ We tested this component with the `Microsoft.Azure.Storage.Blob` v9.4.2 client l
 
 To get started install the following NuGet package:
 
-[![NuGet](https://img.shields.io/nuget/v/SenseNet.AzureBlobStorage.svg)](https://www.nuget.org/packages/SenseNet.AzureBlobStorage)
+[![NuGet](https://img.shields.io/nuget/v/SenseNet.blobstorage.azure.svg)](https://www.nuget.org/packages/SenseNet.blobstorage.azure)
 
 ### Configuration
 In order to use Azure for blob storage you have to configure the new Azure blob provider. 
