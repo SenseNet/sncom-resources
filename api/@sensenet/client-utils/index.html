@@ -28,12 +28,12 @@
 					<img src="assets/images/sensenet-logo.png" alt="@sensenet/client-utils" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../community">Community</a>
-					<a class="site-header-nav-item " href="../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -90,10 +90,12 @@
 					<a href="https://www.npmjs.com/package/@sensenet/client-utils"><img src="https://img.shields.io/npm/dt/@sensenet/client-utils.svg?style=flat" alt="NPM downloads"></a>
 					<a href="https://github.com/sn-client-utils/LICENSE.txt"><img src="https://img.shields.io/github/license/SenseNet/sn-client-js.svg?style=flat" alt="License"></a>
 				<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat" alt="Commitizen friendly"></a></p>
+				<h2 id="installation">Installation</h2>
+				<pre><code class="language-shell">npm install @sensenet/client-utils</code></pre>
 				<h3 id="disposable">Disposable</h3>
 				<p>You can implement <em>disposable</em> resources and use them with a <em>using()</em> or <em>usingAsync()</em> syntax.
 				Example:</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">class</span> Resource <span class="hljs-keyword">implements</span> IDisposable{
+				<pre><code class="language-ts"><span class="hljs-keyword">class</span> Resource <span class="hljs-keyword">implements</span> IDisposable{
       dispose(){
           <span class="hljs-comment">// cleanup logics</span>
      }
@@ -105,12 +107,11 @@ using(<span class="hljs-keyword">new</span> Resource(), <span class="hljs-functi
 
 usingAsync(<span class="hljs-keyword">new</span> Resource(), <span class="hljs-keyword">async</span> (resource)=&gt;{
      <span class="hljs-comment">// do something with the resource, allows awaiting promises</span>
-})
-</code></pre>
+})</code></pre>
 				<h3 id="observablevalue-and-valueobservers">ObservableValue and ValueObservers</h3>
 				<p>You can track value changes using with this simple Observable implementation.</p>
 				<p>Example:</p>
-				<pre><code class="lang-ts">
+				<pre><code class="language-ts">
 <span class="hljs-keyword">const</span> observableValue = <span class="hljs-keyword">new</span> ObservableValue&lt;<span class="hljs-built_in">number</span>&gt;(<span class="hljs-number">0</span>);
 <span class="hljs-keyword">const</span> observer = observableValue.subscribe(<span class="hljs-function">(<span class="hljs-params">newValue</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Value changed:"</span>, newValue);
@@ -121,13 +122,12 @@ observableValue.setValue(<span class="hljs-built_in">Math</span>.random());
 <span class="hljs-comment">// if you want to dispose a single observer</span>
 observer.dispose();
 <span class="hljs-comment">// if you want to dispose the whole observableValue with all of its observers:</span>
-observableValue.dispose();
-</code></pre>
+observableValue.dispose();</code></pre>
 				<h3 id="pathhelper">PathHelper</h3>
 				<p>The class contains small helper methods for path transformation and manipulation.</p>
 				<h3 id="retrier">Retrier</h3>
 				<p>Retrier is a utility that can keep trying an operation until it succeeds, times out or reach a specified retry limit.</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> funcToRetry: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">Promise</span>&lt;<span class="hljs-built_in">boolean</span>&gt; = <span class="hljs-keyword">async</span> () =&gt; {
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> funcToRetry: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">Promise</span>&lt;<span class="hljs-built_in">boolean</span>&gt; = <span class="hljs-keyword">async</span> () =&gt; {
             <span class="hljs-keyword">const</span> hasSucceeded = <span class="hljs-literal">false</span>;
             <span class="hljs-comment">// ...</span>
             <span class="hljs-comment">// custom logic</span>
@@ -140,11 +140,10 @@ observableValue.dispose();
                 RetryIntervalMs: <span class="hljs-number">1</span>,
                 timeoutMs: <span class="hljs-number">1000</span>,
             })
-            .run();
-</code></pre>
+            .run();</code></pre>
 				<h3 id="trace">Trace</h3>
 				<p>Trace is an utility that can be used to track method calls, method returns and errors</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> methodTracer: IDisposable = Trace.method({
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> methodTracer: IDisposable = Trace.method({
     object: myObjectInstance,           <span class="hljs-comment">// You can define an object constructor for static methods as well</span>
     method: myObjectInstance.method,    <span class="hljs-comment">// The method to be tracked</span>
     isAsync: <span class="hljs-literal">true</span>,                      <span class="hljs-comment">// if you set to async, method finished will be *await*-ed</span>
@@ -160,8 +159,7 @@ observableValue.dispose();
 });
 
 <span class="hljs-comment">// if you want to stop receiving events</span>
-methodTracer.dispose();
-</code></pre>
+methodTracer.dispose();</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -169,6 +167,9 @@ methodTracer.dispose();
 				<ul>
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="modules/__global.html">__global</a>
 					</li>
 				</ul>
 			</nav>
@@ -193,28 +194,46 @@ methodTracer.dispose();
 						<a href="classes/valueobserver.html" class="tsd-kind-icon">Value<wbr>Observer</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/idisposable.html" class="tsd-kind-icon">IDisposable</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/imethodmapping.html" class="tsd-kind-icon">IMethod<wbr>Mapping</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/iobjecttrace.html" class="tsd-kind-icon">IObject<wbr>Trace</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/itracemethodcall.html" class="tsd-kind-icon">ITrace<wbr>Method<wbr>Call</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/itracemethoderror.html" class="tsd-kind-icon">ITrace<wbr>Method<wbr>Error</a>
+						<a href="interfaces/disposable.html" class="tsd-kind-icon">Disposable</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/itracemethodfinished.html" class="tsd-kind-icon">ITrace<wbr>Method<wbr>Finished</a>
+						<a href="interfaces/methodmapping.html" class="tsd-kind-icon">Method<wbr>Mapping</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/objecttrace.html" class="tsd-kind-icon">Object<wbr>Trace</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/itracemethodoptions.html" class="tsd-kind-icon">ITrace<wbr>Method<wbr>Options</a>
+						<a href="interfaces/tracemethodcall.html" class="tsd-kind-icon">Trace<wbr>Method<wbr>Call</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/tracemethoderror.html" class="tsd-kind-icon">Trace<wbr>Method<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/tracemethodfinished.html" class="tsd-kind-icon">Trace<wbr>Method<wbr>Finished</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/tracemethodoptions.html" class="tsd-kind-icon">Trace<wbr>Method<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#deeppartial" class="tsd-kind-icon">Deep<wbr>Partial</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="globals.html#valuechangecallback" class="tsd-kind-icon">Value<wbr>Change<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#debounce" class="tsd-kind-icon">debounce</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#deepmerge" class="tsd-kind-icon">deep<wbr>Merge</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#filterasync" class="tsd-kind-icon">filter<wbr>Async</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#sleepasync" class="tsd-kind-icon">sleep<wbr>Async</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#tonumber" class="tsd-kind-icon">to<wbr>Number</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="globals.html#using" class="tsd-kind-icon">using</a>

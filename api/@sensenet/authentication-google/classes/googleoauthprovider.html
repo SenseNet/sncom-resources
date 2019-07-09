@@ -28,12 +28,12 @@
 					<img src="../assets/images/sensenet-logo.png" alt="@sensenet/authentication-google" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../../community">Community</a>
-					<a class="site-header-nav-item " href="../../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -103,8 +103,7 @@ AddGoogleAuth(myRepository, {
  } <span class="hljs-keyword">catch</span> (error) {
     <span class="hljs-built_in">console</span>.warn(<span class="hljs-string">'Error during login'</span>, error);
  }
-}
-</code></pre>
+}</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -118,7 +117,7 @@ AddGoogleAuth(myRepository, {
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">IOauthProvider</span></li>
+					<li><span class="tsd-signature-type">OauthProvider</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -138,6 +137,7 @@ AddGoogleAuth(myRepository, {
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="googleoauthprovider.html#jwtservice" class="tsd-kind-icon">jwt<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="googleoauthprovider.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="googleoauthprovider.html#popup" class="tsd-kind-icon">popup</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="googleoauthprovider.html#windowinstance" class="tsd-kind-icon">window<wbr>Instance</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -161,13 +161,13 @@ AddGoogleAuth(myRepository, {
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Google<wbr>Oauth<wbr>Provider<span class="tsd-signature-symbol">(</span>jwtService<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JwtService</span>, options<span class="tsd-signature-symbol">: </span><a href="googleauthenticationoptions.html" class="tsd-signature-type">GoogleAuthenticationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="googleoauthprovider.html" class="tsd-signature-type">GoogleOauthProvider</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Google<wbr>Oauth<wbr>Provider<span class="tsd-signature-symbol">(</span>jwtService<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JwtService</span>, options<span class="tsd-signature-symbol">: </span><a href="googleauthenticationoptions.html" class="tsd-signature-type">GoogleAuthenticationOptions</a>, windowInstance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Window</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="googleoauthprovider.html" class="tsd-signature-type">GoogleOauthProvider</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-auth-google/blob/61ad201/src/GoogleOauthProvider.ts#L180">GoogleOauthProvider.ts:180</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-auth-google/src/GoogleOauthProvider.ts#L186">GoogleOauthProvider.ts:186</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -179,6 +179,9 @@ AddGoogleAuth(myRepository, {
 								</li>
 								<li>
 									<h5>options: <a href="googleauthenticationoptions.html" class="tsd-signature-type">GoogleAuthenticationOptions</a></h5>
+								</li>
+								<li>
+									<h5>windowInstance: <span class="tsd-signature-type">Window</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="googleoauthprovider.html" class="tsd-signature-type">GoogleOauthProvider</a></h4>
@@ -194,7 +197,7 @@ AddGoogleAuth(myRepository, {
 					<div class="tsd-signature tsd-kind-icon">iframe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLIFrameElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-auth-google/blob/61ad201/src/GoogleOauthProvider.ts#L97">GoogleOauthProvider.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-auth-google/src/GoogleOauthProvider.ts#L100">GoogleOauthProvider.ts:100</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -204,7 +207,7 @@ AddGoogleAuth(myRepository, {
 					<div class="tsd-signature tsd-kind-icon">jwt<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">JwtService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-auth-google/blob/61ad201/src/GoogleOauthProvider.ts#L187">GoogleOauthProvider.ts:187</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-auth-google/src/GoogleOauthProvider.ts#L194">GoogleOauthProvider.ts:194</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -214,7 +217,7 @@ AddGoogleAuth(myRepository, {
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="googleauthenticationoptions.html" class="tsd-signature-type">GoogleAuthenticationOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-auth-google/blob/61ad201/src/GoogleOauthProvider.ts#L187">GoogleOauthProvider.ts:187</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-auth-google/src/GoogleOauthProvider.ts#L195">GoogleOauthProvider.ts:195</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -224,7 +227,17 @@ AddGoogleAuth(myRepository, {
 					<div class="tsd-signature tsd-kind-icon">popup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Window</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-auth-google/blob/61ad201/src/GoogleOauthProvider.ts#L64">GoogleOauthProvider.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-auth-google/src/GoogleOauthProvider.ts#L62">GoogleOauthProvider.ts:62</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="windowinstance" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> window<wbr>Instance</h3>
+					<div class="tsd-signature tsd-kind-icon">window<wbr>Instance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Window</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-auth-google/src/GoogleOauthProvider.ts#L196">GoogleOauthProvider.ts:196</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -241,7 +254,7 @@ AddGoogleAuth(myRepository, {
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-auth-google/blob/61ad201/src/GoogleOauthProvider.ts#L36">GoogleOauthProvider.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-auth-google/src/GoogleOauthProvider.ts#L33">GoogleOauthProvider.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -263,7 +276,7 @@ AddGoogleAuth(myRepository, {
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-auth-google/blob/61ad201/src/GoogleOauthProvider.ts#L159">GoogleOauthProvider.ts:159</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-auth-google/src/GoogleOauthProvider.ts#L163">GoogleOauthProvider.ts:163</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -286,7 +299,7 @@ AddGoogleAuth(myRepository, {
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-auth-google/blob/61ad201/src/GoogleOauthProvider.ts#L173">GoogleOauthProvider.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-auth-google/src/GoogleOauthProvider.ts#L179">GoogleOauthProvider.ts:179</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -321,7 +334,7 @@ AddGoogleAuth(myRepository, {
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-auth-google/blob/61ad201/src/GoogleOauthProvider.ts#L144">GoogleOauthProvider.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-auth-google/src/GoogleOauthProvider.ts#L149">GoogleOauthProvider.ts:149</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -344,7 +357,7 @@ AddGoogleAuth(myRepository, {
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-auth-google/blob/61ad201/src/GoogleOauthProvider.ts#L71">GoogleOauthProvider.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-auth-google/src/GoogleOauthProvider.ts#L69">GoogleOauthProvider.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -376,7 +389,7 @@ AddGoogleAuth(myRepository, {
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-auth-google/blob/61ad201/src/GoogleOauthProvider.ts#L104">GoogleOauthProvider.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-auth-google/src/GoogleOauthProvider.ts#L107">GoogleOauthProvider.ts:107</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -408,7 +421,7 @@ AddGoogleAuth(myRepository, {
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-auth-google/blob/61ad201/src/GoogleOauthProvider.ts#L44">GoogleOauthProvider.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-auth-google/src/GoogleOauthProvider.ts#L41">GoogleOauthProvider.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -464,6 +477,9 @@ AddGoogleAuth(myRepository, {
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="googleoauthprovider.html#popup" class="tsd-kind-icon">popup</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="googleoauthprovider.html#windowinstance" class="tsd-kind-icon">window<wbr>Instance</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="googleoauthprovider.html#dispose" class="tsd-kind-icon">dispose</a>

@@ -28,12 +28,12 @@
 					<img src="../assets/images/sensenet-logo.png" alt="@sensenet/control-mapper" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../../community">Community</a>
-					<a class="site-header-nav-item " href="../../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -66,7 +66,7 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<h1>Class  ControlSchema  &lt;TControlBaseType,  TClientControlSettings  &gt;
+			<h1>Class  ControlSchema  &lt;TControlBaseType,  TFieldControlBaseType  &gt;
 			</h1>
 			<ul class="tsd-breadcrumb">
 				<li>
@@ -96,7 +96,7 @@
 						<h4>TControlBaseType</h4>
 					</li>
 					<li>
-						<h4>TClientControlSettings</h4>
+						<h4>TFieldControlBaseType</h4>
 					</li>
 				</ul>
 			</section>
@@ -128,42 +128,16 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="contenttypecontrol" class="tsd-anchor"></a>
 					<h3>content<wbr>Type<wbr>Control</h3>
-					<div class="tsd-signature tsd-kind-icon">content<wbr>Type<wbr>Control<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<div class="tsd-signature tsd-kind-icon">content<wbr>Type<wbr>Control<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TControlBaseType</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-control-mapper/blob/43df623/src/ControlSchema.ts#L10">ControlSchema.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-control-mapper/src/ControlSchema.ts#L11">ControlSchema.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The type of the content type control</p>
 						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter">
-								<h5>constructor<span class="tsd-signature-symbol">: </span>function</h5>
-								<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-type-literal tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon">new __type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TControlBaseType</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<aside class="tsd-sources">
-											<ul>
-												<li>Defined in <a href="https://github.com/SenseNet/sn-control-mapper/blob/43df623/src/ControlSchema.ts#L10">ControlSchema.ts:10</a></li>
-											</ul>
-										</aside>
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TControlBaseType</span></h4>
-									</li>
-							</ul>        </li>
-						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
@@ -172,7 +146,7 @@
 					<div class="tsd-signature tsd-kind-icon">field<wbr>Mappings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-control-mapper/blob/43df623/src/ControlSchema.ts#L18">ControlSchema.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-control-mapper/src/ControlSchema.ts#L19">ControlSchema.ts:19</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -187,7 +161,7 @@
 					<div class="tsd-signature tsd-kind-icon">schema<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Schema</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-control-mapper/blob/43df623/src/ControlSchema.ts#L14">ControlSchema.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-control-mapper/src/ControlSchema.ts#L15">ControlSchema.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

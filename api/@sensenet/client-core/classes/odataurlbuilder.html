@@ -28,12 +28,12 @@
 					<img src="../assets/images/sensenet-logo.png" alt="@sensenet/client-core" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../../community">Community</a>
-					<a class="site-header-nav-item " href="../../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -122,10 +122,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="odata_params" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> ODATA_<wbr>PARAMS</h3>
-					<div class="tsd-signature tsd-kind-icon">ODATA_<wbr>PARAMS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[&quot;select&quot;, &quot;expand&quot;, &quot;orderby&quot;, &quot;top&quot;, &quot;skip&quot;, &quot;filter&quot;, &quot;format&quot;, &quot;inlinecount&quot;]</span></div>
+					<div class="tsd-signature tsd-kind-icon">ODATA_<wbr>PARAMS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[&#x27;select&#x27;,&#x27;expand&#x27;,&#x27;orderby&#x27;,&#x27;top&#x27;,&#x27;skip&#x27;,&#x27;filter&#x27;,&#x27;format&#x27;,&#x27;inlinecount&#x27;,]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/ODataUrlBuilder.ts#L11">Repository/ODataUrlBuilder.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/ODataUrlBuilder.ts#L11">Repository/ODataUrlBuilder.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -141,13 +141,13 @@
 					<a name="buildurlparamstring" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> build<wbr>Url<wbr>Param<wbr>String</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">build<wbr>Url<wbr>Param<wbr>String&lt;T&gt;<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="repositoryconfiguration.html" class="tsd-signature-type">RepositoryConfiguration</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/iodataparams.html" class="tsd-signature-type">IODataParams</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">build<wbr>Url<wbr>Param<wbr>String&lt;T&gt;<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="repositoryconfiguration.html" class="tsd-signature-type">RepositoryConfiguration</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/odataparams.html" class="tsd-signature-type">ODataParams</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/ODataUrlBuilder.ts#L30">Repository/ODataUrlBuilder.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/ODataUrlBuilder.ts#L40">Repository/ODataUrlBuilder.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -171,7 +171,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/iodataparams.html" class="tsd-signature-type">IODataParams</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/odataparams.html" class="tsd-signature-type">ODataParams</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Represents an ODataOptions obejct based through the IODataOptions interface. Holds the possible url parameters as properties.</p>
 									</div>
@@ -192,7 +192,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/ODataUrlBuilder.ts#L12">Repository/ODataUrlBuilder.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/ODataUrlBuilder.ts#L21">Repository/ODataUrlBuilder.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>

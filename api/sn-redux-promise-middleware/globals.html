@@ -28,12 +28,12 @@
 					<img src="assets/images/sensenet-logo.png" alt="@sensenet/redux-promise-middleware" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../community">Community</a>
-					<a class="site-header-nav-item " href="../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -84,32 +84,28 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Variables</h3>
+							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable"><a href="globals.html#suffixes" class="tsd-kind-icon">suffixes</a></li>
+								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/promisemiddlewareaction.html" class="tsd-kind-icon">Promise<wbr>Middleware<wbr>Action</a></li>
+								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/promisemiddlewarefailedaction.html" class="tsd-kind-icon">Promise<wbr>Middleware<wbr>Failed<wbr>Action</a></li>
+								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/promisemiddlewaresucceededaction.html" class="tsd-kind-icon">Promise<wbr>Middleware<wbr>Succeeded<wbr>Action</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="globals.html#ispromise" class="tsd-kind-icon">is<wbr>Promise</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#ispromisemiddlewareaction" class="tsd-kind-icon">is<wbr>Promise<wbr>Middleware<wbr>Action</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#promisemiddleware" class="tsd-kind-icon">promise<wbr>Middleware</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section ">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal"><a href="globals.html#suffixes" class="tsd-kind-icon">suffixes</a></li>
+							</ul>
+						</section>
 					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable">
-					<a name="suffixes" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> suffixes</h3>
-					<div class="tsd-signature tsd-kind-icon">suffixes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[&#x27;LOADING&#x27;, &#x27;SUCCESS&#x27;, &#x27;FAILURE&#x27;]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-redux-promise-middleware/blob/90b9529/src/PromiseMiddleware.ts#L5">PromiseMiddleware.ts:5</a></li>
-						</ul>
-					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -124,7 +120,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux-promise-middleware/blob/90b9529/src/IsPromise.ts#L11">IsPromise.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-redux-promise-middleware/src/IsPromise.ts#L11">IsPromise.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -140,9 +136,51 @@
 										<div class="lead">
 											<p>The object that should be checked.
 											Usage example:</p>
-											<p>```
+											<p><code>`</code>
 											import { isPromise } from &#39;@sensenet/redux-promise-middleware&#39;</p>
 											<p>isPromise(myObject)</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="ispromisemiddlewareaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Promise<wbr>Middleware<wbr>Action</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Promise<wbr>Middleware<wbr>Action&lt;TApi, TReturns&gt;<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-redux-promise-middleware/src/IsPromiseMiddlewareAction.ts#L7">IsPromiseMiddlewareAction.ts:7</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Type guard method to determine if the current action is a Promise Middleware Action</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TApi</h4>
+								</li>
+								<li>
+									<h4>TReturns</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>action: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The action to be checked</p>
 										</div>
 									</div>
 								</li>
@@ -155,13 +193,13 @@
 					<a name="promisemiddleware" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> promise<wbr>Middleware</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">promise<wbr>Middleware<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">promise<wbr>Middleware<span class="tsd-signature-symbol">(</span>service<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TService</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-redux-promise-middleware/blob/90b9529/src/PromiseMiddleware.ts#L23">PromiseMiddleware.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-redux-promise-middleware/src/PromiseMiddleware.ts#L27">PromiseMiddleware.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -172,27 +210,55 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>resporitory of the application.
-											Usage example:</p>
-											<p>```
-												import { Repository } from &#39;@sensenet/client-core&#39;
-											import { promiseMiddleware } from &#39;@sensenet/redux-promise-middleware&#39;</p>
-											<p>const repository = new Repository({ repositoryUrl: &#39;<a href="https://mySensenetSite.com">https://mySensenetSite.com</a>&#39; }, async () =&gt; ({ ok: true } as any))
-												const store = createStore(
-												rootReducer,
-												persistedState,
-												applyMiddleware([promiseMiddleware(repository)]),
-											)</p>
-										</div>
-									</div>
+									<h5>service: <span class="tsd-signature-type">TService</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
 						</li>
 					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal">
+					<a name="suffixes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> suffixes</h3>
+					<div class="tsd-signature tsd-kind-icon">suffixes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-redux-promise-middleware/src/PromiseMiddleware.ts#L5">PromiseMiddleware.ts:5</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="suffixes.failure" class="tsd-anchor"></a>
+						<h3>failure</h3>
+						<div class="tsd-signature tsd-kind-icon">failure<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;FAILURE&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-redux-promise-middleware/src/PromiseMiddleware.ts#L8">PromiseMiddleware.ts:8</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="suffixes.loading" class="tsd-anchor"></a>
+						<h3>loading</h3>
+						<div class="tsd-signature tsd-kind-icon">loading<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;LOADING&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-redux-promise-middleware/src/PromiseMiddleware.ts#L6">PromiseMiddleware.ts:6</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="suffixes.success" class="tsd-anchor"></a>
+						<h3>success</h3>
+						<div class="tsd-signature tsd-kind-icon">success<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;SUCCESS&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-redux-promise-middleware/src/PromiseMiddleware.ts#L7">PromiseMiddleware.ts:7</a></li>
+							</ul>
+						</aside>
+					</section>
 				</section>
 			</section>
 		</div>
@@ -206,14 +272,26 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#suffixes" class="tsd-kind-icon">suffixes</a>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/promisemiddlewareaction.html" class="tsd-kind-icon">Promise<wbr>Middleware<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/promisemiddlewarefailedaction.html" class="tsd-kind-icon">Promise<wbr>Middleware<wbr>Failed<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/promisemiddlewaresucceededaction.html" class="tsd-kind-icon">Promise<wbr>Middleware<wbr>Succeeded<wbr>Action</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#ispromise" class="tsd-kind-icon">is<wbr>Promise</a>
 					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#ispromisemiddlewareaction" class="tsd-kind-icon">is<wbr>Promise<wbr>Middleware<wbr>Action</a>
+					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#promisemiddleware" class="tsd-kind-icon">promise<wbr>Middleware</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#suffixes" class="tsd-kind-icon">suffixes</a>
 					</li>
 				</ul>
 			</nav>

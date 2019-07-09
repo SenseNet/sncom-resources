@@ -28,12 +28,12 @@
 					<img src="../assets/images/sensenet-logo.png" alt="@sensenet/client-core" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../../community">Community</a>
-					<a class="site-header-nav-item " href="../../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -100,7 +100,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">IDisposable</span></li>
+					<li><span class="tsd-signature-type">Disposable</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -121,6 +121,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="repository.html#fetchmethod" class="tsd-kind-icon">fetch<wbr>Method</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="repository.html#schemas" class="tsd-kind-icon">schemas</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="repository.html#security" class="tsd-kind-icon">security</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="repository.html#upload" class="tsd-kind-icon">upload</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="repository.html#versioning" class="tsd-kind-icon">versioning</a></li>
 							</ul>
 						</section>
@@ -135,12 +136,18 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="repository.html#executeaction" class="tsd-kind-icon">execute<wbr>Action</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="repository.html#fetch" class="tsd-kind-icon">fetch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="repository.html#getactions" class="tsd-kind-icon">get<wbr>Actions</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="repository.html#getallowedchildtypes" class="tsd-kind-icon">get<wbr>Allowed<wbr>Child<wbr>Types</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="repository.html#geterrorfromresponse" class="tsd-kind-icon">get<wbr>Error<wbr>From<wbr>Response</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="repository.html#getexplicitallowedchildtypes" class="tsd-kind-icon">get<wbr>Explicit<wbr>Allowed<wbr>Child<wbr>Types</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="repository.html#getimplicitallowedchildtypes" class="tsd-kind-icon">get<wbr>Implicit<wbr>Allowed<wbr>Child<wbr>Types</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="repository.html#getwopidata" class="tsd-kind-icon">get<wbr>Wopi<wbr>Data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="repository.html#load" class="tsd-kind-icon">load</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="repository.html#loadcollection" class="tsd-kind-icon">load<wbr>Collection</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="repository.html#move" class="tsd-kind-icon">move</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="repository.html#patch" class="tsd-kind-icon">patch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="repository.html#post" class="tsd-kind-icon">post</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="repository.html#put" class="tsd-kind-icon">put</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="repository.html#reloadschema" class="tsd-kind-icon">reload<wbr>Schema</a></li>
 							</ul>
 						</section>
 					</div>
@@ -158,7 +165,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L262">Repository/Repository.ts:262</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L487">Repository/Repository.ts:487</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -183,10 +190,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="authentication" class="tsd-anchor"></a>
 					<h3>authentication</h3>
-					<div class="tsd-signature tsd-kind-icon">authentication<span class="tsd-signature-symbol">:</span> <a href="../interfaces/iauthenticationservice.html" class="tsd-signature-type">IAuthenticationService</a><span class="tsd-signature-symbol"> =&nbsp;new BypassAuthentication()</span></div>
+					<div class="tsd-signature tsd-kind-icon">authentication<span class="tsd-signature-symbol">:</span> <a href="../interfaces/authenticationservice.html" class="tsd-signature-type">AuthenticationService</a><span class="tsd-signature-symbol"> =&nbsp;new BypassAuthentication()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L31">Repository/Repository.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L65">Repository/Repository.ts:65</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -201,7 +208,7 @@
 					<div class="tsd-signature tsd-kind-icon">configuration<span class="tsd-signature-symbol">:</span> <a href="repositoryconfiguration.html" class="tsd-signature-type">RepositoryConfiguration</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L36">Repository/Repository.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L70">Repository/Repository.ts:70</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -216,7 +223,7 @@
 					<div class="tsd-signature tsd-kind-icon">fetch<wbr>Method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">fetch</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L266">Repository/Repository.ts:266</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L491">Repository/Repository.ts:491</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -226,7 +233,7 @@
 					<div class="tsd-signature tsd-kind-icon">schemas<span class="tsd-signature-symbol">:</span> <a href="schemastore.html" class="tsd-signature-type">SchemaStore</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L267">Repository/Repository.ts:267</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L492">Repository/Repository.ts:492</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -236,7 +243,7 @@
 					<div class="tsd-signature tsd-kind-icon">security<span class="tsd-signature-symbol">:</span> <a href="security.html" class="tsd-signature-type">Security</a><span class="tsd-signature-symbol"> =&nbsp;new Security(this)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L257">Repository/Repository.ts:257</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L463">Repository/Repository.ts:463</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -246,12 +253,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="upload" class="tsd-anchor"></a>
+					<h3>upload</h3>
+					<div class="tsd-signature tsd-kind-icon">upload<span class="tsd-signature-symbol">:</span> <a href="upload.html" class="tsd-signature-type">Upload</a><span class="tsd-signature-symbol"> =&nbsp;new Upload(this)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L473">Repository/Repository.ts:473</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Shortcut for upload related custom actions</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="versioning" class="tsd-anchor"></a>
 					<h3>versioning</h3>
 					<div class="tsd-signature tsd-kind-icon">versioning<span class="tsd-signature-symbol">:</span> <a href="versioning.html" class="tsd-signature-type">Versioning</a><span class="tsd-signature-symbol"> =&nbsp;new Versioning(this)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L262">Repository/Repository.ts:262</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L468">Repository/Repository.ts:468</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -273,7 +295,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L41">Repository/Repository.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L75">Repository/Repository.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -289,13 +311,13 @@
 					<a name="copy" class="tsd-anchor"></a>
 					<h3>copy</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/icopyoptions.html" class="tsd-signature-type">ICopyOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodatabatchresponse.html" class="tsd-signature-type">IODataBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/copyoptions.html" class="tsd-signature-type">CopyOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatabatchresponse.html" class="tsd-signature-type">ODataBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/content.html" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L202">Repository/Repository.ts:202</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L291">Repository/Repository.ts:291</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -306,13 +328,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/icopyoptions.html" class="tsd-signature-type">ICopyOptions</a></h5>
+									<h5>options: <a href="../interfaces/copyoptions.html" class="tsd-signature-type">CopyOptions</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Options for the Copy request</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodatabatchresponse.html" class="tsd-signature-type">IODataBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatabatchresponse.html" class="tsd-signature-type">ODataBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/content.html" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -326,7 +348,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L159">Repository/Repository.ts:159</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L246">Repository/Repository.ts:246</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -349,13 +371,13 @@
 					<a name="delete" class="tsd-anchor"></a>
 					<h3>delete</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/ideleteoptions.html" class="tsd-signature-type">IDeleteOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodatabatchresponse.html" class="tsd-signature-type">IODataBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/deleteoptions.html" class="tsd-signature-type">DeleteOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatabatchresponse.html" class="tsd-signature-type">ODataBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/content.html" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L170">Repository/Repository.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L257">Repository/Repository.ts:257</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -366,13 +388,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/ideleteoptions.html" class="tsd-signature-type">IDeleteOptions</a></h5>
+									<h5>options: <a href="../interfaces/deleteoptions.html" class="tsd-signature-type">DeleteOptions</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Options for the Delete request</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodatabatchresponse.html" class="tsd-signature-type">IODataBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatabatchresponse.html" class="tsd-signature-type">ODataBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/content.html" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -386,7 +408,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L24">Repository/Repository.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L58">Repository/Repository.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -402,13 +424,13 @@
 					<a name="executeaction" class="tsd-anchor"></a>
 					<h3>execute<wbr>Action</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">execute<wbr>Action&lt;TBodyType, TReturns&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/iactionoptions.html" class="tsd-signature-type">IActionOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TBodyType</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">execute<wbr>Action&lt;TBodyType, TReturns&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/actionoptions.html" class="tsd-signature-type">ActionOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TBodyType</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L238">Repository/Repository.ts:238</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L431">Repository/Repository.ts:431</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -428,7 +450,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/iactionoptions.html" class="tsd-signature-type">IActionOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TBodyType</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>options: <a href="../interfaces/actionoptions.html" class="tsd-signature-type">ActionOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TBodyType</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Options for the Custom Action</p>
 									</div>
@@ -448,7 +470,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L52">Repository/Repository.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L84">Repository/Repository.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -479,13 +501,13 @@
 					<a name="getactions" class="tsd-anchor"></a>
 					<h3>get<wbr>Actions</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Actions<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/igetactionoptions.html" class="tsd-signature-type">IGetActionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Actions<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/getactionoptions.html" class="tsd-signature-type">GetActionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L218">Repository/Repository.ts:218</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L308">Repository/Repository.ts:308</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -496,7 +518,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/igetactionoptions.html" class="tsd-signature-type">IGetActionOptions</a></h5>
+									<h5>options: <a href="../interfaces/getactionoptions.html" class="tsd-signature-type">GetActionOptions</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Options for fetching the Custom Actions</p>
 									</div>
@@ -506,17 +528,182 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<a name="load" class="tsd-anchor"></a>
-					<h3>load</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">load&lt;TContentType&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/iloadoptions.html" class="tsd-signature-type">ILoadOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodataresponse.html" class="tsd-signature-type">IODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getallowedchildtypes" class="tsd-anchor"></a>
+					<h3>get<wbr>Allowed<wbr>Child<wbr>Types</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Allowed<wbr>Child<wbr>Types<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/loadoptions.html" class="tsd-signature-type">LoadOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatacollectionresponse.html" class="tsd-signature-type">ODataCollectionResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L67">Repository/Repository.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L331">Repository/Repository.ts:331</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieves an aggregated list of content types the user can create as children below the given content</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="../interfaces/loadoptions.html" class="tsd-signature-type">LoadOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContentType</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatacollectionresponse.html" class="tsd-signature-type">ODataCollectionResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="geterrorfromresponse" class="tsd-anchor"></a>
+					<h3>get<wbr>Error<wbr>From<wbr>Response</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Error<wbr>From<wbr>Response<span class="tsd-signature-symbol">(</span>response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#extendederror" class="tsd-signature-type">ExtendedError</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L100">Repository/Repository.ts:100</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a more meaningful error object from a specific response</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>response: <span class="tsd-signature-type">Response</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Response object to extract the message</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#extendederror" class="tsd-signature-type">ExtendedError</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getexplicitallowedchildtypes" class="tsd-anchor"></a>
+					<h3>get<wbr>Explicit<wbr>Allowed<wbr>Child<wbr>Types</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Explicit<wbr>Allowed<wbr>Child<wbr>Types<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/loadoptions.html" class="tsd-signature-type">LoadOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatacollectionresponse.html" class="tsd-signature-type">ODataCollectionResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L386">Repository/Repository.ts:386</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieves a list of content types the user can create as children below the given content (allowed in the CTD)</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="../interfaces/loadoptions.html" class="tsd-signature-type">LoadOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContentType</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Options for fetching the AllowedChildTypes</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatacollectionresponse.html" class="tsd-signature-type">ODataCollectionResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getimplicitallowedchildtypes" class="tsd-anchor"></a>
+					<h3>get<wbr>Implicit<wbr>Allowed<wbr>Child<wbr>Types</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Implicit<wbr>Allowed<wbr>Child<wbr>Types<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/loadoptions.html" class="tsd-signature-type">LoadOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatacollectionresponse.html" class="tsd-signature-type">ODataCollectionResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L361">Repository/Repository.ts:361</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieves a list of content types the user can create as children below the given content (allowed on the content)</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="../interfaces/loadoptions.html" class="tsd-signature-type">LoadOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContentType</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Options for fetching the AllowedChildTypes</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatacollectionresponse.html" class="tsd-signature-type">ODataCollectionResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getwopidata" class="tsd-anchor"></a>
+					<h3>get<wbr>Wopi<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Wopi<wbr>Data<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatawopiresponse.html" class="tsd-signature-type">ODataWopiResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L410">Repository/Repository.ts:410</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns data for loading Office document for editing</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> action<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"edit"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"view"</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>id<wbr>OrPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> odata<wbr>Options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/odataparams.html" class="tsd-signature-type">ODataParams</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GenericContent</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> request<wbr>Init<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RequestInit</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatawopiresponse.html" class="tsd-signature-type">ODataWopiResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="load" class="tsd-anchor"></a>
+					<h3>load</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">load&lt;TContentType&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/loadoptions.html" class="tsd-signature-type">LoadOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odataresponse.html" class="tsd-signature-type">ODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L133">Repository/Repository.ts:133</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -528,19 +715,19 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>TContentType<span class="tsd-signature-symbol">: </span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a></h4>
+									<h4>TContentType<span class="tsd-signature-symbol">: </span><a href="../interfaces/content.html" class="tsd-signature-type">Content</a></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/iloadoptions.html" class="tsd-signature-type">ILoadOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>options: <a href="../interfaces/loadoptions.html" class="tsd-signature-type">LoadOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Options for the Load request</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodataresponse.html" class="tsd-signature-type">IODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odataresponse.html" class="tsd-signature-type">ODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -548,13 +735,13 @@
 					<a name="loadcollection" class="tsd-anchor"></a>
 					<h3>load<wbr>Collection</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>Collection&lt;TContentType&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/iloadcollectionoptions.html" class="tsd-signature-type">ILoadCollectionOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodatacollectionresponse.html" class="tsd-signature-type">IODataCollectionResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Collection&lt;TContentType&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/loadcollectionoptions.html" class="tsd-signature-type">LoadCollectionOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatacollectionresponse.html" class="tsd-signature-type">ODataCollectionResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L85">Repository/Repository.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L154">Repository/Repository.ts:154</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -565,19 +752,19 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>TContentType<span class="tsd-signature-symbol">: </span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a></h4>
+									<h4>TContentType<span class="tsd-signature-symbol">: </span><a href="../interfaces/content.html" class="tsd-signature-type">Content</a></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/iloadcollectionoptions.html" class="tsd-signature-type">ILoadCollectionOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>options: <a href="../interfaces/loadcollectionoptions.html" class="tsd-signature-type">LoadCollectionOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Options for the Load request</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodatacollectionresponse.html" class="tsd-signature-type">IODataCollectionResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatacollectionresponse.html" class="tsd-signature-type">ODataCollectionResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -585,13 +772,13 @@
 					<a name="move" class="tsd-anchor"></a>
 					<h3>move</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">move<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/imoveoptions.html" class="tsd-signature-type">IMoveOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodatabatchresponse.html" class="tsd-signature-type">IODataBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">move<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/moveoptions.html" class="tsd-signature-type">MoveOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatabatchresponse.html" class="tsd-signature-type">ODataBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/content.html" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L186">Repository/Repository.ts:186</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L274">Repository/Repository.ts:274</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -602,13 +789,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/imoveoptions.html" class="tsd-signature-type">IMoveOptions</a></h5>
+									<h5>options: <a href="../interfaces/moveoptions.html" class="tsd-signature-type">MoveOptions</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Options for the Move request</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodatabatchresponse.html" class="tsd-signature-type">IODataBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odatabatchresponse.html" class="tsd-signature-type">ODataBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/content.html" class="tsd-signature-type">Content</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -616,13 +803,13 @@
 					<a name="patch" class="tsd-anchor"></a>
 					<h3>patch</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">patch&lt;TContentType&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/ipatchoptions.html" class="tsd-signature-type">IPatchOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodataresponse.html" class="tsd-signature-type">IODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">patch&lt;TContentType&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/patchoptions.html" class="tsd-signature-type">PatchOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odataresponse.html" class="tsd-signature-type">ODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L125">Repository/Repository.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L206">Repository/Repository.ts:206</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -633,19 +820,19 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>TContentType<span class="tsd-signature-symbol">: </span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a></h4>
+									<h4>TContentType<span class="tsd-signature-symbol">: </span><a href="../interfaces/content.html" class="tsd-signature-type">Content</a></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/ipatchoptions.html" class="tsd-signature-type">IPatchOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>options: <a href="../interfaces/patchoptions.html" class="tsd-signature-type">PatchOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Options for the Patch request</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodataresponse.html" class="tsd-signature-type">IODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odataresponse.html" class="tsd-signature-type">ODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -653,13 +840,13 @@
 					<a name="post" class="tsd-anchor"></a>
 					<h3>post</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">post&lt;TContentType&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/ipostoptions.html" class="tsd-signature-type">IPostOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodataresponse.html" class="tsd-signature-type">IODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">post&lt;TContentType&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/postoptions.html" class="tsd-signature-type">PostOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odataresponse.html" class="tsd-signature-type">ODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L103">Repository/Repository.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L174">Repository/Repository.ts:174</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -670,19 +857,19 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>TContentType<span class="tsd-signature-symbol">: </span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a></h4>
+									<h4>TContentType<span class="tsd-signature-symbol">: </span><a href="../interfaces/content.html" class="tsd-signature-type">Content</a></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/ipostoptions.html" class="tsd-signature-type">IPostOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>options: <a href="../interfaces/postoptions.html" class="tsd-signature-type">PostOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Post request Options</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodataresponse.html" class="tsd-signature-type">IODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odataresponse.html" class="tsd-signature-type">ODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -690,13 +877,13 @@
 					<a name="put" class="tsd-anchor"></a>
 					<h3>put</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">put&lt;TContentType&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/iputoptions.html" class="tsd-signature-type">IPutOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodataresponse.html" class="tsd-signature-type">IODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">put&lt;TContentType&gt;<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/putoptions.html" class="tsd-signature-type">PutOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odataresponse.html" class="tsd-signature-type">ODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/Repository.ts#L144">Repository/Repository.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L228">Repository/Repository.ts:228</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -707,19 +894,42 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>TContentType<span class="tsd-signature-symbol">: </span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a></h4>
+									<h4>TContentType<span class="tsd-signature-symbol">: </span><a href="../interfaces/content.html" class="tsd-signature-type">Content</a></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/iputoptions.html" class="tsd-signature-type">IPutOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>options: <a href="../interfaces/putoptions.html" class="tsd-signature-type">PutOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Options for the Put request</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/iodataresponse.html" class="tsd-signature-type">IODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/odataresponse.html" class="tsd-signature-type">ODataResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContentType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="reloadschema" class="tsd-anchor"></a>
+					<h3>reload<wbr>Schema</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reload<wbr>Schema<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/Repository.ts#L479">Repository/Repository.ts:479</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reloads the content schemas from the sensenet backend</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A promise that will be resolved / rejected based on the action success</p>
 						</li>
 					</ul>
 				</section>
@@ -759,6 +969,9 @@
 								<a href="repository.html#security" class="tsd-kind-icon">security</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="repository.html#upload" class="tsd-kind-icon">upload</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="repository.html#versioning" class="tsd-kind-icon">versioning</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -785,6 +998,21 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="repository.html#getactions" class="tsd-kind-icon">get<wbr>Actions</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="repository.html#getallowedchildtypes" class="tsd-kind-icon">get<wbr>Allowed<wbr>Child<wbr>Types</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="repository.html#geterrorfromresponse" class="tsd-kind-icon">get<wbr>Error<wbr>From<wbr>Response</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="repository.html#getexplicitallowedchildtypes" class="tsd-kind-icon">get<wbr>Explicit<wbr>Allowed<wbr>Child<wbr>Types</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="repository.html#getimplicitallowedchildtypes" class="tsd-kind-icon">get<wbr>Implicit<wbr>Allowed<wbr>Child<wbr>Types</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="repository.html#getwopidata" class="tsd-kind-icon">get<wbr>Wopi<wbr>Data</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="repository.html#load" class="tsd-kind-icon">load</a>
 							</li>
@@ -802,6 +1030,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="repository.html#put" class="tsd-kind-icon">put</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="repository.html#reloadschema" class="tsd-kind-icon">reload<wbr>Schema</a>
 							</li>
 						</ul>
 					</li>

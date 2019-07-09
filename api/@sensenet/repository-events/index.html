@@ -28,12 +28,12 @@
 					<img src="assets/images/sensenet-logo.png" alt="@sensenet/repository-events" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../community">Community</a>
-					<a class="site-header-nav-item " href="../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -90,15 +90,16 @@
 					<a href="https://github.com/sn-repository-events/LICENSE.txt"><img src="https://img.shields.io/github/license/SenseNet/sn-client-js.svg?style=flat" alt="License"></a>
 				<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat" alt="Commitizen friendly"></a></p>
 				<p>This NPM package contains <em>event observables</em> that can be used for tracking sensenet repository events.</p>
-				<p>Usage example:</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> repository = <span class="hljs-keyword">new</span> Repository({});
+				<h2 id="installation">Installation</h2>
+				<pre><code class="language-shell">npm install @sensenet/repository-events</code></pre>
+				<h2 id="usage">Usage</h2>
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> repository = <span class="hljs-keyword">new</span> Repository({});
 <span class="hljs-keyword">const</span> eventHub = <span class="hljs-keyword">new</span> EventHub(repository);
 
 <span class="hljs-comment">// subscribe to a Content Created event</span>
 eventHub.onContentCreated.subscribe(<span class="hljs-function">(<span class="hljs-params">createdContent</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"New Content created:"</span>, createdContent);
-});
-</code></pre>
+});</code></pre>
 				<p>The available events are:</p>
 				<ul>
 					<li>onContentCreated</li>
@@ -129,37 +130,49 @@ eventHub.onContentCreated.subscribe(<span class="hljs-function">(<span class="hl
 						<a href="classes/eventhub.html" class="tsd-kind-icon">Event<wbr>Hub</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/icontentmovefailed.html" class="tsd-kind-icon">IContent<wbr>Move<wbr>Failed</a>
+						<a href="interfaces/contentcopied.html" class="tsd-kind-icon">Content<wbr>Copied</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/icontentmoved.html" class="tsd-kind-icon">IContent<wbr>Moved</a>
+						<a href="interfaces/contentcopyfailed.html" class="tsd-kind-icon">Content<wbr>Copy<wbr>Failed</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/icreatefailed.html" class="tsd-kind-icon">ICreate<wbr>Failed</a>
+						<a href="interfaces/contentmovefailed.html" class="tsd-kind-icon">Content<wbr>Move<wbr>Failed</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/icreated.html" class="tsd-kind-icon">ICreated</a>
+						<a href="interfaces/contentmoved.html" class="tsd-kind-icon">Content<wbr>Moved</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/createfailed.html" class="tsd-kind-icon">Create<wbr>Failed</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/created.html" class="tsd-kind-icon">Created</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/icustomactionexecuted.html" class="tsd-kind-icon">ICustom<wbr>Action<wbr>Executed</a>
+						<a href="interfaces/customactionexecuted.html" class="tsd-kind-icon">Custom<wbr>Action<wbr>Executed</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/icustomactionfailed.html" class="tsd-kind-icon">ICustom<wbr>Action<wbr>Failed</a>
+						<a href="interfaces/customactionfailed.html" class="tsd-kind-icon">Custom<wbr>Action<wbr>Failed</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ideletefailed.html" class="tsd-kind-icon">IDelete<wbr>Failed</a>
+						<a href="interfaces/deletefailed.html" class="tsd-kind-icon">Delete<wbr>Failed</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ideleted.html" class="tsd-kind-icon">IDeleted</a>
+						<a href="interfaces/deleted.html" class="tsd-kind-icon">Deleted</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/iloaded.html" class="tsd-kind-icon">ILoaded</a>
+						<a href="interfaces/loadcollectionfailed.html" class="tsd-kind-icon">Load<wbr>Collection<wbr>Failed</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/imodificationfailed.html" class="tsd-kind-icon">IModification<wbr>Failed</a>
+						<a href="interfaces/loadfailed.html" class="tsd-kind-icon">Load<wbr>Failed</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/imodified.html" class="tsd-kind-icon">IModified</a>
+						<a href="interfaces/loaded.html" class="tsd-kind-icon">Loaded</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/modificationfailed.html" class="tsd-kind-icon">Modification<wbr>Failed</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/modified.html" class="tsd-kind-icon">Modified</a>
 					</li>
 				</ul>
 			</nav>
