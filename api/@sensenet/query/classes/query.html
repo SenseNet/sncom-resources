@@ -28,12 +28,12 @@
 					<img src="../assets/images/sensenet-logo.png" alt="@sensenet/query" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../../community">Community</a>
-					<a class="site-header-nav-item " href="../../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -87,9 +87,8 @@
 					<div class="lead">
 						<p>Represents an instance of a Query expression.
 						Usage example:</p>
-						<pre><code class="lang-ts"><span class="hljs-keyword">const</span> query = <span class="hljs-keyword">new</span> Query(<span class="hljs-function"><span class="hljs-params">q</span> =&gt;</span> q.TypeIs(ContentTypes.Task).And.Equals(<span class="hljs-string">'DisplayName'</span>, <span class="hljs-string">'Test'</span>))
-<span class="hljs-built_in">console</span>.log(query.toString());   <span class="hljs-comment">// the content query expression</span>
-</code></pre>
+						<pre><code class="language-ts"><span class="hljs-keyword">const</span> query = <span class="hljs-keyword">new</span> Query(<span class="hljs-function"><span class="hljs-params">q</span> =&gt;</span> q.TypeIs(ContentTypes.Task).And.Equals(<span class="hljs-string">'DisplayName'</span>, <span class="hljs-string">'Test'</span>))
+<span class="hljs-built_in">console</span>.log(query.toString());   <span class="hljs-comment">// the content query expression</span></code></pre>
 					</div>
 				</div>
 			</section>
@@ -141,13 +140,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Query<span class="tsd-signature-symbol">(</span>build<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="query.html" class="tsd-signature-type">Query</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Query<span class="tsd-signature-symbol">(</span>build<span class="tsd-signature-symbol">: </span><a href="../globals.html#querybuilder" class="tsd-signature-type">QueryBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="query.html" class="tsd-signature-type">Query</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/Query.ts#L29">Query.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/Query.ts#L34">Query.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -158,30 +157,12 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>build: <span class="tsd-signature-type">function</span></h5>
+									<h5>build: <a href="../globals.html#querybuilder" class="tsd-signature-type">QueryBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>the Query Builder expression</p>
 										</div>
 									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="queryexpression.html" class="tsd-signature-type">QueryExpression</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="querysegment.html" class="tsd-signature-type">QuerySegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>first: <a href="queryexpression.html" class="tsd-signature-type">QueryExpression</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <a href="querysegment.html" class="tsd-signature-type">QuerySegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="query.html" class="tsd-signature-type">Query</a></h4>
@@ -197,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">segments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="querysegment.html" class="tsd-signature-type">QuerySegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/Query.ts#L13">Query.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/Query.ts#L18">Query.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -214,7 +195,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/Query.ts#L19">Query.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/Query.ts#L24">Query.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -245,7 +226,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/Query.ts#L27">Query.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/Query.ts#L32">Query.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -299,6 +280,9 @@
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="querysegment.html" class="tsd-kind-icon">Query<wbr>Segment</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../globals.html#querybuilder" class="tsd-kind-icon">Query<wbr>Builder</a>
 					</li>
 				</ul>
 			</nav>

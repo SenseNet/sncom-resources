@@ -28,12 +28,12 @@
 					<img src="../assets/images/sensenet-logo.png" alt="@sensenet/client-core" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../../community">Community</a>
-					<a class="site-header-nav-item " href="../../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -100,7 +100,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/iauthenticationservice.html" class="tsd-signature-type">IAuthenticationService</a></li>
+					<li><a href="../interfaces/authenticationservice.html" class="tsd-signature-type">AuthenticationService</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -133,9 +133,9 @@
 					<h3>current<wbr>User</h3>
 					<div class="tsd-signature tsd-kind-icon">current<wbr>User<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ObservableValue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new ObservableValue&lt;User&gt;(ConstantContent.VISITOR_USER)</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/iauthenticationservice.html">IAuthenticationService</a>.<a href="../interfaces/iauthenticationservice.html#currentuser">currentUser</a></p>
+						<p>Implementation of <a href="../interfaces/authenticationservice.html">AuthenticationService</a>.<a href="../interfaces/authenticationservice.html#currentuser">currentUser</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Authentication/BypassAuthentication.ts#L42">Authentication/BypassAuthentication.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Authentication/BypassAuthentication.ts#L40">Authentication/BypassAuthentication.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -149,9 +149,9 @@
 					<h3>state</h3>
 					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ObservableValue</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/loginstate.html" class="tsd-signature-type">LoginState</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new ObservableValue(LoginState.Unknown)</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/iauthenticationservice.html">IAuthenticationService</a>.<a href="../interfaces/iauthenticationservice.html#state">state</a></p>
+						<p>Implementation of <a href="../interfaces/authenticationservice.html">AuthenticationService</a>.<a href="../interfaces/authenticationservice.html#state">state</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Authentication/BypassAuthentication.ts#L14">Authentication/BypassAuthentication.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Authentication/BypassAuthentication.ts#L14">Authentication/BypassAuthentication.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -172,9 +172,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/iauthenticationservice.html">IAuthenticationService</a>.<a href="../interfaces/iauthenticationservice.html#checkforupdate">checkForUpdate</a></p>
+								<p>Implementation of <a href="../interfaces/authenticationservice.html">AuthenticationService</a>.<a href="../interfaces/authenticationservice.html#checkforupdate">checkForUpdate</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Authentication/BypassAuthentication.ts#L19">Authentication/BypassAuthentication.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Authentication/BypassAuthentication.ts#L19">Authentication/BypassAuthentication.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -196,7 +196,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Authentication/BypassAuthentication.ts#L47">Authentication/BypassAuthentication.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Authentication/BypassAuthentication.ts#L45">Authentication/BypassAuthentication.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -212,14 +212,13 @@
 					<a name="login" class="tsd-anchor"></a>
 					<h3>login</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">login<span class="tsd-signature-symbol">(</span>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">login<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/iauthenticationservice.html">IAuthenticationService</a>.<a href="../interfaces/iauthenticationservice.html#login">login</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Authentication/BypassAuthentication.ts#L28">Authentication/BypassAuthentication.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Authentication/BypassAuthentication.ts#L26">Authentication/BypassAuthentication.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -227,17 +226,6 @@
 									<p>Login method - not available for BypassAuthentication</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>username: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>password: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -251,9 +239,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/iauthenticationservice.html">IAuthenticationService</a>.<a href="../interfaces/iauthenticationservice.html#logout">logout</a></p>
+								<p>Implementation of <a href="../interfaces/authenticationservice.html">AuthenticationService</a>.<a href="../interfaces/authenticationservice.html#logout">logout</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Authentication/BypassAuthentication.ts#L35">Authentication/BypassAuthentication.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Authentication/BypassAuthentication.ts#L33">Authentication/BypassAuthentication.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

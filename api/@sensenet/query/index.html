@@ -28,12 +28,12 @@
 					<img src="assets/images/sensenet-logo.png" alt="@sensenet/query" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../community">Community</a>
-					<a class="site-header-nav-item " href="../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -90,9 +90,12 @@
 					<a href="https://www.npmjs.com/package/@sensenet/query"><img src="https://img.shields.io/npm/dt/@sensenet/query.svg?style=flat" alt="NPM downloads"></a>
 					<a href="https://github.com/sn-query/LICENSE.txt"><img src="https://img.shields.io/github/license/SenseNet/sn-query.svg?style=flat" alt="License"></a>
 				<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat" alt="Commitizen friendly"></a></p>
-				<p>The package allows you to create strongly typed content queries that will be evaluated into sensenet queries
-				Usage example:</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> query = <span class="hljs-keyword">new</span> Query(<span class="hljs-function">(<span class="hljs-params">q</span>) =&gt;</span>
+				<h2 id="installation">Installation</h2>
+				<pre><code class="language-shell">npm install @sensenet/query</code></pre>
+				<h2 id="usage">Usage</h2>
+				<p>The package allows you to create strongly typed content queries that will be evaluated into sensenet queries</p>
+				<p>Usage example:</p>
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> query = <span class="hljs-keyword">new</span> Query(<span class="hljs-function">(<span class="hljs-params">q</span>) =&gt;</span>
         q.typeIs&lt;Task&gt;(Task)   <span class="hljs-comment">// adds '+TypeIs:Task' and Typescript type cast</span>
             .and
             .equals(<span class="hljs-string">"DisplayName"</span>, <span class="hljs-string">"Unicorn"</span>)    <span class="hljs-comment">// adds +Title:Unicorn</span>
@@ -110,8 +113,7 @@
     );
 
 <span class="hljs-built_in">console</span>.log(query.toString());
-<span class="hljs-comment">// "TypeIs:Task AND DisplayName:'Unicorn' AND ModificationDate:{'2017-01-01T00\\:00\\:00' TO '2017-02-01T00\\:00\\:00'} OR (NOT(Approvable:'true') AND NOT(Description:'*alma*')) .SORT:'DisplayName' .TOP:5 .SKIP:10"</span>
-
+<span class="hljs-comment">// "TypeIs:Task AND DisplayName:'Unicorn' AND ModificationDate:{'2017-01-01T00\\:00\\:00' TO '2017-02-01T00\\:00\\:00'} OR (NOT(Approvable:'true') AND NOT(Description:'*alma*')) .SORT:DisplayName .TOP:5 .SKIP:10"</span>
 </code></pre>
 			</div>
 		</div>
@@ -136,6 +138,9 @@
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/querysegment.html" class="tsd-kind-icon">Query<wbr>Segment</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#querybuilder" class="tsd-kind-icon">Query<wbr>Builder</a>
 					</li>
 				</ul>
 			</nav>

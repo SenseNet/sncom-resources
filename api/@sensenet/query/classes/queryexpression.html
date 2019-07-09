@@ -28,12 +28,12 @@
 					<img src="../assets/images/sensenet-logo.png" alt="@sensenet/query" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../../community">Community</a>
-					<a class="site-header-nav-item " href="../../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -120,11 +120,13 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="queryexpression.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited tsd-is-private-protected">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="queryexpression.html#queryref" class="tsd-kind-icon">query<wbr>Ref</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="queryexpression.html#queryref" class="tsd-kind-icon">query<wbr>Ref</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="queryexpression.html#segmenttype" class="tsd-kind-icon">segment<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="queryexpression.html#stringvalue" class="tsd-kind-icon">string<wbr>Value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="queryexpression.html#subquery" class="tsd-kind-icon">sub<wbr>Query</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -132,6 +134,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="queryexpression.html#between" class="tsd-kind-icon">between</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="queryexpression.html#equals" class="tsd-kind-icon">equals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="queryexpression.html#equalsnested" class="tsd-kind-icon">equals<wbr>Nested</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="queryexpression.html#escapevalue" class="tsd-kind-icon">escape<wbr>Value</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-protected"><a href="queryexpression.html#finialize" class="tsd-kind-icon">finialize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="queryexpression.html#finializesegment" class="tsd-kind-icon">finialize<wbr>Segment</a></li>
@@ -141,6 +144,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="queryexpression.html#lessthan" class="tsd-kind-icon">less<wbr>Than</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="queryexpression.html#not" class="tsd-kind-icon">not</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="queryexpression.html#notequals" class="tsd-kind-icon">not<wbr>Equals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="queryexpression.html#notequalsnested" class="tsd-kind-icon">not<wbr>Equals<wbr>Nested</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="queryexpression.html#query" class="tsd-kind-icon">query</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="queryexpression.html#skip" class="tsd-kind-icon">skip</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="queryexpression.html#sort" class="tsd-kind-icon">sort</a></li>
@@ -167,7 +171,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="querysegment.html">QuerySegment</a>.<a href="querysegment.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QuerySegment.ts#L57">QuerySegment.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QuerySegment.ts#L64">QuerySegment.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -181,18 +185,34 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="queryref" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> query<wbr>Ref</h3>
+					<h3>query<wbr>Ref</h3>
 					<div class="tsd-signature tsd-kind-icon">query<wbr>Ref<span class="tsd-signature-symbol">:</span> <a href="query.html" class="tsd-signature-type">Query</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="querysegment.html">QuerySegment</a>.<a href="querysegment.html#queryref">queryRef</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QuerySegment.ts#L59">QuerySegment.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QuerySegment.ts#L66">QuerySegment.ts:66</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="segmenttype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> segment<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">segment<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="querysegment.html">QuerySegment</a>.<a href="querysegment.html#segmenttype">segmentType</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QuerySegment.ts#L10">QuerySegment.ts:10</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The type of the expression</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="stringvalue" class="tsd-anchor"></a>
@@ -201,12 +221,27 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="querysegment.html">QuerySegment</a>.<a href="querysegment.html#stringvalue">stringValue</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QuerySegment.ts#L20">QuerySegment.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QuerySegment.ts#L24">QuerySegment.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The String value of the current Query expression</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="subquery" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> sub<wbr>Query</h3>
+					<div class="tsd-signature tsd-kind-icon">sub<wbr>Query<span class="tsd-signature-symbol">:</span> <a href="query.html" class="tsd-signature-type">Query</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L12">QueryExpression.ts:12</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Represents an internal query instance. Used for sub-queries or NOT expressions</p>
 						</div>
 					</div>
 				</section>
@@ -217,13 +252,13 @@
 					<a name="between" class="tsd-anchor"></a>
 					<h3>between</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">between&lt;K&gt;<span class="tsd-signature-symbol">(</span>fieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, minValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TReturns[K]</span>, maxValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TReturns[K]</span>, minimumInclusive<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, maximumInclusive<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">between&lt;K, KValue&gt;<span class="tsd-signature-symbol">(</span>fieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, minValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KValue</span>, maxValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KValue</span>, minimumInclusive<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, maximumInclusive<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L94">QueryExpression.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L138">QueryExpression.ts:138</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -236,6 +271,9 @@
 								<li>
 									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof TReturns</span></h4>
 								</li>
+								<li>
+									<h4>KValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TReturns[K]</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></h4>
+								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -246,13 +284,13 @@
 									</div>
 								</li>
 								<li>
-									<h5>minValue: <span class="tsd-signature-type">TReturns[K]</span></h5>
+									<h5>minValue: <span class="tsd-signature-type">KValue</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The minimum allowed value</p>
 									</div>
 								</li>
 								<li>
-									<h5>maxValue: <span class="tsd-signature-type">TReturns[K]</span></h5>
+									<h5>maxValue: <span class="tsd-signature-type">KValue</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The maximum allowed value</p>
 									</div>
@@ -278,13 +316,13 @@
 					<a name="equals" class="tsd-anchor"></a>
 					<h3>equals</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">equals&lt;K&gt;<span class="tsd-signature-symbol">(</span>fieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"_Text"</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TReturns[K]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">equals&lt;K, KValue&gt;<span class="tsd-signature-symbol">(</span>fieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"_Text"</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KValue</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L69">QueryExpression.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L78">QueryExpression.ts:78</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -297,6 +335,9 @@
 								<li>
 									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof TReturns</span></h4>
 								</li>
+								<li>
+									<h4>KValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TReturns[K]</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></h4>
+								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -304,7 +345,57 @@
 									<h5>fieldName: <span class="tsd-signature-type">K</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"_Text"</span></h5>
 								</li>
 								<li>
-									<h5>value: <span class="tsd-signature-type">TReturns[K]</span></h5>
+									<h5>value: <span class="tsd-signature-type">KValue</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value that will be checked. You can use &#39;?&#39; and &#39;*&#39; wildcards</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The Next query operator (fluent)</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="equalsnested" class="tsd-anchor"></a>
+					<h3>equals<wbr>Nested</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">equals<wbr>Nested&lt;K&gt;<span class="tsd-signature-symbol">(</span>fieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"_Text"</span>, nestedFieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L110">QueryExpression.ts:110</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Field equality check on nested  field query expression (e.g. +FieldName:{{NestedFieldName:&#39;value&#39;}})</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof TReturns</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fieldName: <span class="tsd-signature-type">K</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"_Text"</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the Field to be checked</p>
+									</div>
+								</li>
+								<li>
+									<h5>nestedFieldName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the nested Field to be checked</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The value that will be checked. You can use &#39;?&#39; and &#39;*&#39; wildcards</p>
 									</div>
@@ -326,7 +417,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="querysegment.html">QuerySegment</a>.<a href="querysegment.html#escapevalue">escapeValue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QuerySegment.ts#L13">QuerySegment.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QuerySegment.ts#L17">QuerySegment.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -358,7 +449,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L150">QueryExpression.ts:150</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L210">QueryExpression.ts:210</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -387,7 +478,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="querysegment.html">QuerySegment</a>.<a href="querysegment.html#finializesegment">finializeSegment</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QuerySegment.ts#L66">QuerySegment.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QuerySegment.ts#L70">QuerySegment.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -403,13 +494,13 @@
 					<a name="greatherthan" class="tsd-anchor"></a>
 					<h3>greather<wbr>Than</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">greather<wbr>Than&lt;K&gt;<span class="tsd-signature-symbol">(</span>fieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, minValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TReturns[K]</span>, minimumInclusive<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">greather<wbr>Than&lt;K, KValue&gt;<span class="tsd-signature-symbol">(</span>fieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, minValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KValue</span>, minimumInclusive<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L111">QueryExpression.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L158">QueryExpression.ts:158</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -422,6 +513,9 @@
 								<li>
 									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof TReturns</span></h4>
 								</li>
+								<li>
+									<h4>KValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TReturns[K]</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></h4>
+								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -432,7 +526,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>minValue: <span class="tsd-signature-type">TReturns[K]</span></h5>
+									<h5>minValue: <span class="tsd-signature-type">KValue</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The minimum allowed value</p>
 									</div>
@@ -458,7 +552,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L36">QueryExpression.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L42">QueryExpression.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -490,7 +584,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L25">QueryExpression.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L30">QueryExpression.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -516,13 +610,13 @@
 					<a name="lessthan" class="tsd-anchor"></a>
 					<h3>less<wbr>Than</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">less<wbr>Than&lt;K&gt;<span class="tsd-signature-symbol">(</span>fieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, maxValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TReturns[K]</span>, maximumInclusive<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">less<wbr>Than&lt;K, KValue&gt;<span class="tsd-signature-symbol">(</span>fieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, maxValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KValue</span>, maximumInclusive<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L122">QueryExpression.ts:122</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L174">QueryExpression.ts:174</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -535,6 +629,9 @@
 								<li>
 									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof TReturns</span></h4>
 								</li>
+								<li>
+									<h4>KValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TReturns[K]</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></h4>
+								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -545,7 +642,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>maxValue: <span class="tsd-signature-type">TReturns[K]</span></h5>
+									<h5>maxValue: <span class="tsd-signature-type">KValue</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The maximum allowed value</p>
 									</div>
@@ -565,13 +662,13 @@
 					<a name="not" class="tsd-anchor"></a>
 					<h3>not</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">not<span class="tsd-signature-symbol">(</span>build<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">not<span class="tsd-signature-symbol">(</span>build<span class="tsd-signature-symbol">: </span><a href="query.html" class="tsd-signature-type">Query</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#querybuilder" class="tsd-signature-type">QueryBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L141">QueryExpression.ts:141</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L200">QueryExpression.ts:200</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -582,28 +679,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>build: <span class="tsd-signature-type">function</span></h5>
+									<h5>build: <a href="query.html" class="tsd-signature-type">Query</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#querybuilder" class="tsd-signature-type">QueryBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The Expression builder method</p>
 									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="queryexpression.html" class="tsd-signature-type">QueryExpression</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="querysegment.html" class="tsd-signature-type">QuerySegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>first: <a href="queryexpression.html" class="tsd-signature-type">QueryExpression</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <a href="querysegment.html" class="tsd-signature-type">QuerySegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -614,13 +693,13 @@
 					<a name="notequals" class="tsd-anchor"></a>
 					<h3>not<wbr>Equals</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">not<wbr>Equals&lt;K&gt;<span class="tsd-signature-symbol">(</span>fieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TReturns[K]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">not<wbr>Equals&lt;K, KValue&gt;<span class="tsd-signature-symbol">(</span>fieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KValue</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L81">QueryExpression.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L94">QueryExpression.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -633,6 +712,9 @@
 								<li>
 									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof TReturns</span></h4>
 								</li>
+								<li>
+									<h4>KValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TReturns[K]</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></h4>
+								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -640,7 +722,57 @@
 									<h5>fieldName: <span class="tsd-signature-type">K</span></h5>
 								</li>
 								<li>
-									<h5>value: <span class="tsd-signature-type">TReturns[K]</span></h5>
+									<h5>value: <span class="tsd-signature-type">KValue</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value that will be checked. You can use &#39;?&#39; and &#39;*&#39; wildcards</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The Next query operator (fluent)</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="notequalsnested" class="tsd-anchor"></a>
+					<h3>not<wbr>Equals<wbr>Nested</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">not<wbr>Equals<wbr>Nested&lt;K&gt;<span class="tsd-signature-symbol">(</span>fieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"_Text"</span>, nestedFieldName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L124">QueryExpression.ts:124</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Field equality check on nested field and NOT operator combination (e.g. +NOT(FieldName:{{NestedFieldName:&#39;value&#39;}}))</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">keyof TReturns</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fieldName: <span class="tsd-signature-type">K</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"_Text"</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the Field to be checked</p>
+									</div>
+								</li>
+								<li>
+									<h5>nestedFieldName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the nested Field to be checked</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The value that will be checked. You can use &#39;?&#39; and &#39;*&#39; wildcards</p>
 									</div>
@@ -655,13 +787,13 @@
 					<a name="query" class="tsd-anchor"></a>
 					<h3>query</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">(</span>build<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">(</span>build<span class="tsd-signature-symbol">: </span><a href="../globals.html#querybuilder" class="tsd-signature-type">QueryBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="query.html" class="tsd-signature-type">Query</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L131">QueryExpression.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L188">QueryExpression.ts:188</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -672,28 +804,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>build: <span class="tsd-signature-type">function</span></h5>
+									<h5>build: <a href="../globals.html#querybuilder" class="tsd-signature-type">QueryBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="query.html" class="tsd-signature-type">Query</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The Expression builder method</p>
 									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><a href="queryexpression.html" class="tsd-signature-type">QueryExpression</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="querysegment.html" class="tsd-signature-type">QuerySegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>first: <a href="queryexpression.html" class="tsd-signature-type">QueryExpression</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <a href="querysegment.html" class="tsd-signature-type">QuerySegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TReturns</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -711,7 +825,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="querysegment.html">QuerySegment</a>.<a href="querysegment.html#skip">skip</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QuerySegment.ts#L46">QuerySegment.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QuerySegment.ts#L52">QuerySegment.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -743,7 +857,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="querysegment.html">QuerySegment</a>.<a href="querysegment.html#sort">sort</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QuerySegment.ts#L27">QuerySegment.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QuerySegment.ts#L31">QuerySegment.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -786,7 +900,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L15">QueryExpression.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L19">QueryExpression.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -819,7 +933,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="querysegment.html">QuerySegment</a>.<a href="querysegment.html#tostring">toString</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QuerySegment.ts#L55">QuerySegment.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QuerySegment.ts#L62">QuerySegment.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -843,7 +957,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="querysegment.html">QuerySegment</a>.<a href="querysegment.html#top">top</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QuerySegment.ts#L36">QuerySegment.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QuerySegment.ts#L41">QuerySegment.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -868,13 +982,13 @@
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">type&lt;TNewType&gt;<span class="tsd-signature-symbol">(</span>newTypeAssertion<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNewType</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">type&lt;TNewType&gt;<span class="tsd-signature-symbol">(</span>newTypeAssertion<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNewType</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L48">QueryExpression.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L55">QueryExpression.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -891,10 +1005,12 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>newTypeAssertion: <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></h5>
+									<h5>newTypeAssertion: <span class="tsd-signature-type">object</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The path string or content that will be used as a root</p>
 									</div>
+									<ul class="tsd-parameters">
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="queryoperators.html" class="tsd-signature-type">QueryOperators</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNewType</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -912,7 +1028,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L58">QueryExpression.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-query/src/QueryExpression.ts#L66">QueryExpression.ts:66</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -934,27 +1050,6 @@
 										<p>The path string or content that will be used as a root</p>
 									</div>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>constructor<span class="tsd-signature-symbol">: </span>function</h5>
-											<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon">new __type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TNewType</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<aside class="tsd-sources">
-														<ul>
-															<li>Defined in <a href="https://github.com/SenseNet/sn-query/blob/a368a8a/src/QueryExpression.ts#L58">QueryExpression.ts:58</a></li>
-														</ul>
-													</aside>
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TNewType</span></h4>
-												</li>
-										</ul>        </li>
 									</ul>
 								</li>
 							</ul>
@@ -986,17 +1081,26 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
 								<a href="queryexpression.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="queryexpression.html#queryref" class="tsd-kind-icon">query<wbr>Ref</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="queryexpression.html#segmenttype" class="tsd-kind-icon">segment<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="queryexpression.html#stringvalue" class="tsd-kind-icon">string<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="queryexpression.html#subquery" class="tsd-kind-icon">sub<wbr>Query</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="queryexpression.html#between" class="tsd-kind-icon">between</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="queryexpression.html#equals" class="tsd-kind-icon">equals</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="queryexpression.html#equalsnested" class="tsd-kind-icon">equals<wbr>Nested</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="queryexpression.html#escapevalue" class="tsd-kind-icon">escape<wbr>Value</a>
@@ -1024,6 +1128,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="queryexpression.html#notequals" class="tsd-kind-icon">not<wbr>Equals</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="queryexpression.html#notequalsnested" class="tsd-kind-icon">not<wbr>Equals<wbr>Nested</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="queryexpression.html#query" class="tsd-kind-icon">query</a>
@@ -1058,6 +1165,9 @@
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="querysegment.html" class="tsd-kind-icon">Query<wbr>Segment</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../globals.html#querybuilder" class="tsd-kind-icon">Query<wbr>Builder</a>
 					</li>
 				</ul>
 			</nav>

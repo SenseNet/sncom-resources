@@ -28,12 +28,12 @@
 					<img src="assets/images/sensenet-logo.png" alt="@sensenet/default-content-types" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../community">Community</a>
-					<a class="site-header-nav-item " href="../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -82,6 +82,8 @@
 			<div class="tsd-panel tsd-typography">
 				<h1 id="sn-default-content-types">sn-default-content-types</h1>
 				<p>Default content type definitions for sensenet</p>
+				<h2 id="installation">Installation</h2>
+				<pre><code class="language-shell">npm install @sensenet/default-content-types</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -90,34 +92,328 @@
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_complextypes_.html">"<wbr>Complex<wbr>Types"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_defaultcontenttypes_.html">"<wbr>Default<wbr>Content<wbr>Types"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_defaultschemas_.html">"<wbr>Default<wbr>Schemas"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_enums_.html">"<wbr>Enums"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_fieldsettings_.html">"<wbr>Field<wbr>Settings"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_iactionmodel_.html">"IAction<wbr>Model"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_security_.html">"<wbr>Security"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_index_.html">"index"</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="enums/approvingmode.html" class="tsd-kind-icon">Approving<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/datetimemode.html" class="tsd-kind-icon">Date<wbr>Time<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/datetimeprecision.html" class="tsd-kind-icon">Date<wbr>Time<wbr>Precision</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/displaychoice.html" class="tsd-kind-icon">Display<wbr>Choice</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/enableautofilters.html" class="tsd-kind-icon">Enable<wbr>Autofilters</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/enablelifespanfilter.html" class="tsd-kind-icon">Enable<wbr>Lifespan<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/fieldvisibility.html" class="tsd-kind-icon">Field<wbr>Visibility</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/gender.html" class="tsd-kind-icon">Gender</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/groupattachments.html" class="tsd-kind-icon">Group<wbr>Attachments</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/identitykind.html" class="tsd-kind-icon">Identity<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/inheritableapprovingmode.html" class="tsd-kind-icon">Inheritable<wbr>Approving<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/inheritableversioningmode.html" class="tsd-kind-icon">Inheritable<wbr>Versioning<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/inheritance.html" class="tsd-kind-icon">Inheritance</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/language.html" class="tsd-kind-icon">Language</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/maritalstatus.html" class="tsd-kind-icon">Marital<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/memotype.html" class="tsd-kind-icon">Memo<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/outputmethod.html" class="tsd-kind-icon">Output<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/permissionlevel.html" class="tsd-kind-icon">Permission<wbr>Level</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/permissionvalues.html" class="tsd-kind-icon">Permission<wbr>Values</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/priority.html" class="tsd-kind-icon">Priority</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/querytype.html" class="tsd-kind-icon">Query<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/savingstate.html" class="tsd-kind-icon">Saving<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/status.html" class="tsd-kind-icon">Status</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/urlformat.html" class="tsd-kind-icon">Url<wbr>Format</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/versioningmode.html" class="tsd-kind-icon">Versioning<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/aspect.html" class="tsd-kind-icon">Aspect</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/binaryfieldsetting.html" class="tsd-kind-icon">Binary<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/booleanfieldsetting.html" class="tsd-kind-icon">Boolean<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/captchafieldsetting.html" class="tsd-kind-icon">Captcha<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/choicefieldsetting.html" class="tsd-kind-icon">Choice<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/choiceoption.html" class="tsd-kind-icon">Choice<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/colorfieldsetting.html" class="tsd-kind-icon">Color<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/contentlink.html" class="tsd-kind-icon">Content<wbr>Link</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/contentlist.html" class="tsd-kind-icon">Content<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/contenttype.html" class="tsd-kind-icon">Content<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/currencyfieldsetting.html" class="tsd-kind-icon">Currency<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/customlist.html" class="tsd-kind-icon">Custom<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/customlistitem.html" class="tsd-kind-icon">Custom<wbr>List<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/datetimefieldsetting.html" class="tsd-kind-icon">Date<wbr>Time<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/deferredobject.html" class="tsd-kind-icon">Deferred<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/deferreduriobject.html" class="tsd-kind-icon">Deferred<wbr>Uri<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/device.html" class="tsd-kind-icon">Device</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/documentlibrary.html" class="tsd-kind-icon">Document<wbr>Library</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/domain.html" class="tsd-kind-icon">Domain</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/domains.html" class="tsd-kind-icon">Domains</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/dynamicjsoncontent.html" class="tsd-kind-icon">Dynamic<wbr>Json<wbr>Content</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/email.html" class="tsd-kind-icon">Email</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/executablefile.html" class="tsd-kind-icon">Executable<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/fieldsetting.html" class="tsd-kind-icon">Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/file.html" class="tsd-kind-icon">File</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/folder.html" class="tsd-kind-icon">Folder</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/genericcontent.html" class="tsd-kind-icon">Generic<wbr>Content</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/group.html" class="tsd-kind-icon">Group</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/htmltemplate.html" class="tsd-kind-icon">Html<wbr>Template</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/image.html" class="tsd-kind-icon">Image</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/imagelibrary.html" class="tsd-kind-icon">Image<wbr>Library</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/indexingsettings.html" class="tsd-kind-icon">Indexing<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/integerfieldsetting.html" class="tsd-kind-icon">Integer<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/itemlist.html" class="tsd-kind-icon">Item<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/library.html" class="tsd-kind-icon">Library</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/listitem.html" class="tsd-kind-icon">List<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/loggingsettings.html" class="tsd-kind-icon">Logging<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/longtextfieldsetting.html" class="tsd-kind-icon">Long<wbr>Text<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/mediaobject.html" class="tsd-kind-icon">Media<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/mediaresourceobject.html" class="tsd-kind-icon">Media<wbr>Resource<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/memo.html" class="tsd-kind-icon">Memo</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/memolist.html" class="tsd-kind-icon">Memo<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/nullfieldsetting.html" class="tsd-kind-icon">Null<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/numberfieldsetting.html" class="tsd-kind-icon">Number<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/organizationalunit.html" class="tsd-kind-icon">Organizational<wbr>Unit</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/passwordfieldsetting.html" class="tsd-kind-icon">Password<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/permissionrequestbody.html" class="tsd-kind-icon">Permission<wbr>Request<wbr>Body</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/portalroot.html" class="tsd-kind-icon">Portal<wbr>Root</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/portalsettings.html" class="tsd-kind-icon">Portal<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/previewimage.html" class="tsd-kind-icon">Preview<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/profiledomain.html" class="tsd-kind-icon">Profile<wbr>Domain</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/profiles.html" class="tsd-kind-icon">Profiles</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/query.html" class="tsd-kind-icon">Query</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/ratingfieldsetting.html" class="tsd-kind-icon">Rating<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/referencefieldsetting.html" class="tsd-kind-icon">Reference<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/resource.html" class="tsd-kind-icon">Resource</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/resources.html" class="tsd-kind-icon">Resources</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/runtimecontentcontainer.html" class="tsd-kind-icon">Runtime<wbr>Content<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/schema.html" class="tsd-kind-icon">Schema</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/settings.html" class="tsd-kind-icon">Settings</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/shorttextfieldsetting.html" class="tsd-kind-icon">Short<wbr>Text<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/site.html" class="tsd-kind-icon">Site</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/sites.html" class="tsd-kind-icon">Sites</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/smartfolder.html" class="tsd-kind-icon">Smart<wbr>Folder</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/systemfile.html" class="tsd-kind-icon">System<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/systemfolder.html" class="tsd-kind-icon">System<wbr>Folder</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/task.html" class="tsd-kind-icon">Task</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/tasklist.html" class="tsd-kind-icon">Task<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/textfieldsetting.html" class="tsd-kind-icon">Text<wbr>Field<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/trashbag.html" class="tsd-kind-icon">Trash<wbr>Bag</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/trashbin.html" class="tsd-kind-icon">Trash<wbr>Bin</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/user.html" class="tsd-kind-icon">User</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/userprofile.html" class="tsd-kind-icon">User<wbr>Profile</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/workspace.html" class="tsd-kind-icon">Workspace</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/actionmodel.html" class="tsd-kind-icon">Action<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#binaryfield" class="tsd-kind-icon">Binary<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#contentlistreferencefield" class="tsd-kind-icon">Content<wbr>List<wbr>Reference<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#contentreferencefield" class="tsd-kind-icon">Content<wbr>Reference<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#texttype" class="tsd-kind-icon">Text<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#schemastore" class="tsd-kind-icon">Schema<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#isfieldsettingoftype" class="tsd-kind-icon">is<wbr>Field<wbr>Setting<wbr>OfType</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

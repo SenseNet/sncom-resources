@@ -28,12 +28,12 @@
 					<img src="../assets/images/sensenet-logo.png" alt="@sensenet/client-core" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../../community">Community</a>
-					<a class="site-header-nav-item " href="../../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -119,8 +119,10 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="repositoryconfiguration.html#odatatoken" class="tsd-kind-icon">o<wbr>Data<wbr>Token</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="repositoryconfiguration.html#repositoryurl" class="tsd-kind-icon">repository<wbr>Url</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="repositoryconfiguration.html#requiredselect" class="tsd-kind-icon">required<wbr>Select</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="repositoryconfiguration.html#schemas" class="tsd-kind-icon">schemas</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="repositoryconfiguration.html#sessionlifetime" class="tsd-kind-icon">session<wbr>Lifetime</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="repositoryconfiguration.html#default_service_token" class="tsd-kind-icon">DEFAULT_<wbr>SERVICE_<wbr>TOKEN</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="repositoryconfiguration.html#windowinstance" class="tsd-kind-icon">window<wbr>Instance</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -144,7 +146,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/RepositoryConfiguration.ts#L72">Repository/RepositoryConfiguration.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L78">Repository/RepositoryConfiguration.ts:78</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -166,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">chunk<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;10485760</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/RepositoryConfiguration.ts#L72">Repository/RepositoryConfiguration.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L73">Repository/RepositoryConfiguration.ts:73</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -178,10 +180,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="defaultexpand" class="tsd-anchor"></a>
 					<h3>default<wbr>Expand</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>Expand<span class="tsd-signature-symbol">:</span> <a href="../globals.html#odatafieldparameter" class="tsd-signature-type">ODataFieldParameter</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Expand<span class="tsd-signature-symbol">:</span> <a href="../globals.html#odatafieldparameter" class="tsd-signature-type">ODataFieldParameter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GenericContent</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/RepositoryConfiguration.ts#L62">Repository/RepositoryConfiguration.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L63">Repository/RepositoryConfiguration.ts:63</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -196,7 +198,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Inline<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"allpages"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"none"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;allpages&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/RepositoryConfiguration.ts#L57">Repository/RepositoryConfiguration.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L58">Repository/RepositoryConfiguration.ts:58</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -211,7 +213,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Metadata<span class="tsd-signature-symbol">:</span> <a href="../globals.html#odatametadatatype" class="tsd-signature-type">ODataMetadataType</a><span class="tsd-signature-symbol"> =&nbsp;&quot;no&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/RepositoryConfiguration.ts#L52">Repository/RepositoryConfiguration.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L53">Repository/RepositoryConfiguration.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -223,10 +225,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="defaultselect" class="tsd-anchor"></a>
 					<h3>default<wbr>Select</h3>
-					<div class="tsd-signature tsd-kind-icon">default<wbr>Select<span class="tsd-signature-symbol">:</span> <a href="../globals.html#odatafieldparameter" class="tsd-signature-type">ODataFieldParameter</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"all"</span><span class="tsd-signature-symbol"> =&nbsp;[&quot;DisplayName&quot;, &quot;Description&quot;, &quot;Icon&quot;]</span></div>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Select<span class="tsd-signature-symbol">:</span> <a href="../globals.html#odatafieldparameter" class="tsd-signature-type">ODataFieldParameter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GenericContent</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"all"</span><span class="tsd-signature-symbol"> =&nbsp;[&#x27;DisplayName&#x27;, &#x27;Description&#x27;, &#x27;Icon&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/RepositoryConfiguration.ts#L42">Repository/RepositoryConfiguration.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L43">Repository/RepositoryConfiguration.ts:43</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -241,7 +243,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Top<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;10000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/RepositoryConfiguration.ts#L67">Repository/RepositoryConfiguration.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L68">Repository/RepositoryConfiguration.ts:68</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -256,7 +258,7 @@
 					<div class="tsd-signature tsd-kind-icon">o<wbr>Data<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;RepositoryConfiguration.DEFAULT_SERVICE_TOKEN</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/RepositoryConfiguration.ts#L32">Repository/RepositoryConfiguration.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L33">Repository/RepositoryConfiguration.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -271,7 +273,7 @@
 					<div class="tsd-signature tsd-kind-icon">repository<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;RepositoryConfiguration.DEFAULT_BASE_URL</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/RepositoryConfiguration.ts#L27">Repository/RepositoryConfiguration.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L28">Repository/RepositoryConfiguration.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -283,10 +285,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="requiredselect" class="tsd-anchor"></a>
 					<h3>required<wbr>Select</h3>
-					<div class="tsd-signature tsd-kind-icon">required<wbr>Select<span class="tsd-signature-symbol">:</span> <a href="../globals.html#odatafieldparameter" class="tsd-signature-type">ODataFieldParameter</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/icontent.html" class="tsd-signature-type">IContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;[&quot;Id&quot;, &quot;Path&quot;, &quot;Name&quot;, &quot;Type&quot;]</span></div>
+					<div class="tsd-signature tsd-kind-icon">required<wbr>Select<span class="tsd-signature-symbol">:</span> <a href="../globals.html#odatafieldparameter" class="tsd-signature-type">ODataFieldParameter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GenericContent</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"all"</span><span class="tsd-signature-symbol"> =&nbsp;[&#x27;Id&#x27;, &#x27;Path&#x27;, &#x27;Name&#x27;, &#x27;Type&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/RepositoryConfiguration.ts#L47">Repository/RepositoryConfiguration.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L48">Repository/RepositoryConfiguration.ts:48</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -296,12 +298,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="schemas" class="tsd-anchor"></a>
+					<h3>schemas</h3>
+					<div class="tsd-signature tsd-kind-icon">schemas<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Schema</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;SchemaStore.map(s &#x3D;&gt; s)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L78">Repository/RepositoryConfiguration.ts:78</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An array of schemas</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="sessionlifetime" class="tsd-anchor"></a>
 					<h3>session<wbr>Lifetime</h3>
 					<div class="tsd-signature tsd-kind-icon">session<wbr>Lifetime<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"session"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"expiration"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;session&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/RepositoryConfiguration.ts#L37">Repository/RepositoryConfiguration.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L38">Repository/RepositoryConfiguration.ts:38</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -316,12 +333,27 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>SERVICE_<wbr>TOKEN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;odata.svc&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/RepositoryConfiguration.ts#L22">Repository/RepositoryConfiguration.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L23">Repository/RepositoryConfiguration.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The default Sense/Net OData Service token (odata.svc)</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="windowinstance" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagOptional">Optional</span> window<wbr>Instance</h3>
+					<div class="tsd-signature tsd-kind-icon">window<wbr>Instance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Window</span><span class="tsd-signature-symbol"> =&nbsp;typeof window &#x3D;&#x3D;&#x3D; &#x27;undefined&#x27; ? undefined : window</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L11">Repository/RepositoryConfiguration.ts:11</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A reference to the global window instance</p>
 						</div>
 					</div>
 				</section>
@@ -338,7 +370,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-core/blob/3849aee/src/Repository/RepositoryConfiguration.ts#L12">Repository/RepositoryConfiguration.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-core/src/Repository/RepositoryConfiguration.ts#L16">Repository/RepositoryConfiguration.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -398,10 +430,16 @@
 								<a href="repositoryconfiguration.html#requiredselect" class="tsd-kind-icon">required<wbr>Select</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="repositoryconfiguration.html#schemas" class="tsd-kind-icon">schemas</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="repositoryconfiguration.html#sessionlifetime" class="tsd-kind-icon">session<wbr>Lifetime</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="repositoryconfiguration.html#default_service_token" class="tsd-kind-icon">DEFAULT_<wbr>SERVICE_<wbr>TOKEN</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="repositoryconfiguration.html#windowinstance" class="tsd-kind-icon">window<wbr>Instance</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
 								<a href="repositoryconfiguration.html#default_base_url" class="tsd-kind-icon">DEFAULT_<wbr>BASE_<wbr>URL</a>

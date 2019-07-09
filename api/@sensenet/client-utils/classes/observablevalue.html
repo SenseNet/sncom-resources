@@ -28,12 +28,12 @@
 					<img src="../assets/images/sensenet-logo.png" alt="@sensenet/client-utils" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../../community">Community</a>
-					<a class="site-header-nav-item " href="../../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -89,7 +89,7 @@
 					</div>
 					<p>You can set and get its value with it&#39;s <em>setValue()</em> and <em>getValue()</em> methods and you can subscribe to value changes with <em>subscribe()</em></p>
 					<p>Usage example:</p>
-					<pre><code class="lang-ts"><span class="hljs-keyword">const</span> observableValue = <span class="hljs-keyword">new</span> ObservableValue&lt;<span class="hljs-built_in">number</span>&gt;(<span class="hljs-number">0</span>);
+					<pre><code class="language-ts"><span class="hljs-keyword">const</span> observableValue = <span class="hljs-keyword">new</span> ObservableValue&lt;<span class="hljs-built_in">number</span>&gt;(<span class="hljs-number">0</span>);
 <span class="hljs-keyword">const</span> observer = observableValue.subscribe(<span class="hljs-function">(<span class="hljs-params">newValue</span>) =&gt;</span> {
    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Value changed:"</span>, newValue);
 });
@@ -98,8 +98,7 @@ observableValue.setValue(<span class="hljs-built_in">Math</span>.random());
 <span class="hljs-comment">// if you want to dispose a single observer</span>
 observer.dispose();
 <span class="hljs-comment">// if you want to dispose the whole observableValue with all of its observers:</span>
-observableValue.dispose();
-</code></pre>
+observableValue.dispose();</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-type-parameters">
@@ -126,7 +125,7 @@ observableValue.dispose();
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/idisposable.html" class="tsd-signature-type">IDisposable</a></li>
+					<li><a href="../interfaces/disposable.html" class="tsd-signature-type">Disposable</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -172,12 +171,11 @@ observableValue.dispose();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-utils/blob/eccbbf8/src/ObservableValue.ts#L91">ObservableValue.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-utils/src/ObservableValue.ts#L91">ObservableValue.ts:91</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<dl class="tsd-comment-tags">
-									<dt>constructs</dt>
 									<dd><p>The ObservableValue object</p>
 									</dd>
 								</dl>
@@ -206,7 +204,7 @@ observableValue.dispose();
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-utils/blob/eccbbf8/src/ObservableValue.ts#L38">ObservableValue.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-utils/src/ObservableValue.ts#L38">ObservableValue.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -216,7 +214,7 @@ observableValue.dispose();
 					<div class="tsd-signature tsd-kind-icon">observers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="valueobserver.html" class="tsd-signature-type">ValueObserver</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/SenseNet/sn-client-utils/blob/eccbbf8/src/ObservableValue.ts#L37">ObservableValue.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-utils/src/ObservableValue.ts#L37">ObservableValue.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -233,7 +231,7 @@ observableValue.dispose();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-utils/blob/eccbbf8/src/ObservableValue.ts#L34">ObservableValue.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-utils/src/ObservableValue.ts#L34">ObservableValue.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -255,7 +253,7 @@ observableValue.dispose();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-utils/blob/eccbbf8/src/ObservableValue.ts#L89">ObservableValue.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-utils/src/ObservableValue.ts#L89">ObservableValue.ts:89</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -278,7 +276,7 @@ observableValue.dispose();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-utils/blob/eccbbf8/src/ObservableValue.ts#L68">ObservableValue.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-utils/src/ObservableValue.ts#L68">ObservableValue.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -301,7 +299,7 @@ observableValue.dispose();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-utils/blob/eccbbf8/src/ObservableValue.ts#L76">ObservableValue.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-utils/src/ObservableValue.ts#L76">ObservableValue.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -332,7 +330,7 @@ observableValue.dispose();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-utils/blob/eccbbf8/src/ObservableValue.ts#L46">ObservableValue.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-utils/src/ObservableValue.ts#L46">ObservableValue.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -370,7 +368,7 @@ observableValue.dispose();
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/SenseNet/sn-client-utils/blob/eccbbf8/src/ObservableValue.ts#L60">ObservableValue.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/SenseNet/sn-client/blob/8d79d823/packages/sn-client-utils/src/ObservableValue.ts#L60">ObservableValue.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -456,28 +454,46 @@ observableValue.dispose();
 						<a href="valueobserver.html" class="tsd-kind-icon">Value<wbr>Observer</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="../interfaces/idisposable.html" class="tsd-kind-icon">IDisposable</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/imethodmapping.html" class="tsd-kind-icon">IMethod<wbr>Mapping</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/iobjecttrace.html" class="tsd-kind-icon">IObject<wbr>Trace</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/itracemethodcall.html" class="tsd-kind-icon">ITrace<wbr>Method<wbr>Call</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/itracemethoderror.html" class="tsd-kind-icon">ITrace<wbr>Method<wbr>Error</a>
+						<a href="../interfaces/disposable.html" class="tsd-kind-icon">Disposable</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="../interfaces/itracemethodfinished.html" class="tsd-kind-icon">ITrace<wbr>Method<wbr>Finished</a>
+						<a href="../interfaces/methodmapping.html" class="tsd-kind-icon">Method<wbr>Mapping</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/objecttrace.html" class="tsd-kind-icon">Object<wbr>Trace</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="../interfaces/itracemethodoptions.html" class="tsd-kind-icon">ITrace<wbr>Method<wbr>Options</a>
+						<a href="../interfaces/tracemethodcall.html" class="tsd-kind-icon">Trace<wbr>Method<wbr>Call</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="../interfaces/tracemethoderror.html" class="tsd-kind-icon">Trace<wbr>Method<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="../interfaces/tracemethodfinished.html" class="tsd-kind-icon">Trace<wbr>Method<wbr>Finished</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="../interfaces/tracemethodoptions.html" class="tsd-kind-icon">Trace<wbr>Method<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../globals.html#deeppartial" class="tsd-kind-icon">Deep<wbr>Partial</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="../globals.html#valuechangecallback" class="tsd-kind-icon">Value<wbr>Change<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="../globals.html#debounce" class="tsd-kind-icon">debounce</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="../globals.html#deepmerge" class="tsd-kind-icon">deep<wbr>Merge</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="../globals.html#filterasync" class="tsd-kind-icon">filter<wbr>Async</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#sleepasync" class="tsd-kind-icon">sleep<wbr>Async</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#tonumber" class="tsd-kind-icon">to<wbr>Number</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="../globals.html#using" class="tsd-kind-icon">using</a>
