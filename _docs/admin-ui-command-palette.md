@@ -1,6 +1,6 @@
 ---
 title: "Command palette"
-source_url: "https://github.com/SenseNet/sensenet/blob/master/docs/content-naming.md"
+source_url: "https://github.com/SenseNet/sensenet/blob/master/docs/admin-ui-command-palette.md"
 category: Admin UI
 version: v7.0
 tags: [admin ui, odata, action, function, command palette, search, content query, custom actions]
