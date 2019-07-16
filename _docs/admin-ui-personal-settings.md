@@ -57,6 +57,8 @@ You can define a custom query with results using the Query widget. The `query` f
 
 The query widget has an additional mode that you can enable with the `countOnly` field - if you enable this, only the hit count will be displayed.
 
+![The default dashboard](/img/admin-ui-default-dashboard.png "The default dashboard")
+
 ## Repositories
 
 Your `repositories` are also stored in the personal settings with an `url` and the last user's `loginName`. You can also define a user-firendly `displayName` (that will be displayed as the repository's title instead of the URL) and you can also override the repository's default _dashboard_
