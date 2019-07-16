@@ -61,7 +61,7 @@ The query widget has an additional mode that you can enable with the `countOnly`
 
 ## Repositories
 
-Your `repositories` are also stored in the personal settings with an `url` and the last user's `loginName`. You can also define a user-firendly `displayName` (that will be displayed as the repository's title instead of the URL) and you can also override the repository's default _dashboard_
+Your `repositories` are also stored in the personal settings with an `url` and the last user's `loginName`. You can also define a user-friendly `displayName` (that will be displayed as the repository's title instead of the URL) and you can also override the repository's default _dashboard_
 
 ## Last used repository
 
