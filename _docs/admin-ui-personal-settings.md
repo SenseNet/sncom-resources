@@ -39,7 +39,7 @@ You can enable or disable the [command palette](/docs/admin-ui-command-palette/)
 
 ## Dashboards
 
-You can customize your dashboards here. The two available dashboards here are `globalDefault` (that will be displayed if you haven't entered into a repository) and `repositoryDefault` (this one can be overrided on a repository level). These fields can contain a list of widget settings. Each widget should have a `title`, a `widgetType` and some `settings` that depends on the type. They can also have a `minWidth` setting for the minimum width.
+You can customize your dashboards here. The two available dashboards here are `globalDefault` (that will be displayed if you haven't entered into a repository) and `repositoryDefault` (this one can be overwritten on a repository level). These fields can contain a list of widget settings. Each widget should have a `title`, a `widgetType` and some `settings` that depends on the type. They can also have a `minWidth` setting for the minimum width.
 
 You can use some string expressions that will be replaced with the corresponding values in the content or the title. These phrases are: `{currentUserName}`, `{currentRepositoryName}`, and `{currentRepositoryUrl}`
 
