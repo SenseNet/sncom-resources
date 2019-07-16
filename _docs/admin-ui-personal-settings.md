@@ -27,21 +27,25 @@ You can set up a `browseType` - it can be `explorer` (a tree with a content list
 
 ### Drawer
 
-You can enable or disable the drawer, change the drawer type (the options are: temporary, permanent or mini-variant) and define a list of preconfigured items to display.
+You can enable or disable the drawer, change the drawer type and define a list of preconfigured items to display. The drawer types are:
+
+- temporary, useful for mobile devices
+- permanent with icons and text
+- mini-variant whitch displays only the icon by default but can be expanded
 
 ### Command Palette
 
-You can enable or disable the [command palette](/docs/admin-ui-command-palette/) itself and define a `warpQuery` expression that will be added to any command palette query.
+You can enable or disable the [command palette](/docs/admin-ui-command-palette/) and define a `warpQuery` expression that will be added to any command palette query.
 
 ## Dashboards
 
-You can customize your dashboards here - There are settings for `globalDefault` (that will be displayed if you haven't entered into a repository) and for `repositoryDefault` (that can be overrided on a repository). These fields can contain a list of widget settings. Each widget should have a `title`, a `widgetType` and some `settings` that depends on the type. They can also have a `minWidth` setting for the minimum width.
+You can customize your dashboards here. The two available dashboards here are `globalDefault` (that will be displayed if you haven't entered into a repository) and `repositoryDefault` (this one can be overrided on a repository level). These fields can contain a list of widget settings. Each widget should have a `title`, a `widgetType` and some `settings` that depends on the type. They can also have a `minWidth` setting for the minimum width.
 
 You can use some string expressions that will be replaced with the corresponding values in the content or the title. These phrases are: `{currentUserName}`, `{currentRepositoryName}`, and `{currentRepositoryUrl}`
 
 ### Markdown widget
 
-This widtet type has only a `content` field in it's settings that is a _markdown content_, the widget will simply display it. You can also use HTML in markdown.
+This widtet type has only a `content` field in it's settings that is a _markdown content_, the widget will simply display it. You can also use HTML syntax in markdown.
 
 ### Updates widget
 
@@ -49,7 +53,9 @@ This widget will check the _current repository's_ version info and compares it w
 
 ### Query widget
 
-You can define a custom query
+You can define a custom query with results using the Query widget. The `query` field should contain a content query, you can define the `columns` and define some controls to be shown or hidden. The fields are: `showColumnNames` (this also enables ordering), `showOpenInSearch` and `showRefresh`.
+
+The query widget has an additional mode that you can enable with the `countOnly` field - if you enable this, only the hit count will be displayed.
 
 ## Repositories
 
@@ -57,20 +63,12 @@ Your `repositories` are also stored in the personal settings with an `url` and t
 
 ## Last used repository
 
-The last used repository's URL is also stored in your settings in the `lastRepository` field.
+The last used repository's URL is also stored in your settings in the `lastRepository` field. This field will be updated automatically when you switch between repositories.
 
-## language
+## Language
 
 You can select between the `default` (english) and `hungarian` language with the `language` field.
 
-## Event log size
+## Events and logging
 
-You can define the size of the event log with the `eventLogSize`. Only the last N entries will be saved.
-
-## logLevel
-
-You can define the entries to log with the `logLevel` field. Only the listed categories will be persisted in your event log.
-
-## Crash reports
-
-You can enable / disable sending crash reprts with `sendLogWithCrashReports`.
+You can define the size of the event log with the `eventLogSize`. Only the last N entries will be saved. There is another setting for the entries to persist in the log: the `logLevel` field. You can also enable / disable attaching the log when you send a crash report with the `sendLogWithCrashReports` field.
