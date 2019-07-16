@@ -54,6 +54,22 @@ layout: default
         </div>
 
         <div class="col-ms-12 col-lg-4">
+          <h2 class="docs-heading">
+            <a class="docs-title" href="{{ site.baseurl }}/docs/development/"
+              >Admin UI</a
+            >
+          </h2>
+          <ul class="docs-list">
+            {% for doc in docs %} {% if doc.category == 'Admin UI' %}
+            <li>
+              <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+              <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
+            </li>
+            {% endif %} {% endfor %}
+          </ul>
+        </div>
+        
+        <div class="col-ms-12 col-lg-4">
           <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/api/">API Reference</a></h2>
           <!-- <h3>SN Client JS</h3> -->
           <ul class="docs-list">
