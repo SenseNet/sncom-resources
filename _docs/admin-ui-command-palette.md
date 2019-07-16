@@ -23,11 +23,11 @@ You can navigate between the pages by simply typing a name of a page or the page
 
 You can open a page by simply clicking on it.
 
-## Searching by path
+## Search by path
 
 You can search content in the current repository (or the last used one) by starting to type it's path (It should start with '/Root'). You will get a with the suggestions and open content items by simply clicking on them.
 
-## Searching with a content query
+## Search with a content query
 
 You can write [content queries](https://community.sensenet.com/docs/content-query/) to search content. The expression should start with a **+** sign. You will get a list of suggestions and an option to open the current expression in the _Search_ view.
 
