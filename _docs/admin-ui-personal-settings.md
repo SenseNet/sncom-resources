@@ -35,7 +35,7 @@ You can enable or disable the drawer, change the drawer type and define a list o
 
 ### Command Palette
 
-You can enable or disable the [command palette](/docs/admin-ui-command-palette/) and define a `warpQuery` expression that will be added to any command palette query.
+You can enable or disable the [command palette](/docs/admin-ui-command-palette/) and define a `wrapQuery` expression that will be added to any command palette query.
 
 ## Dashboards
 
