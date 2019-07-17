@@ -10,7 +10,7 @@ hidden: true
 
 # 1000 content demo
 
-The 1000 content demo and test repository demonstrates a basic setup of sensenet allowing to try out the content repository. It provides a good insight into the content structure of a common project giving the opportunity to verify the functionality making a PoC upon it trying out the API and the admin surface. This setup is based on a daily build which means all the built-in demo content are reimported, the configurations are restored and the customer-created stuff are removed every day.
+The 1000 content demo and test repository demonstrates a basic setup of sensenet allowing to try out the content repository. It provides a good insight into the content structure of a common project giving the opportunity to verify the functionality making a proof of concept trying out the API and the admin surface. This enviroment is based on a daily build which means all the built-in demo content are reimported, the configurations are restored and the customer-created stuff are removed every day.
 
 <div class="docs-highlight">
     <i class="fa fa-info"></i>
@@ -56,21 +56,17 @@ This demo setup provides a large array of various types of content from demo use
     </li>
 </ul>
 
-The document libraries mainly contain Microsoft Office word, excel and powerpoint files, besides from pdf's and some simple text files. They're not only showing variety of types but also are written in different languages, so you're able to try out search capabitities with special characters and symbols as well.
+The document libraries mainly contain Microsoft Office word, excel and powerpoint files, besides from pdf's and some simple text files. They're not only showing variety of types but also are written in different languages, so you're able to check out search capabitities with special characters and symbols as well.
 
 Document preview generation is switched on in this repository and as it is configured in the built-in setting two images will be generated in one round. The first two pages of the demo files are automatically generated when the repository is created.
 
-At last but not least a few words about the metrics. 
+**Number of content**: There're 982 items excluding and 2375 including system content in the top level container names Content (/Root/Content). In the first case System Folders (e.g. local groups) and Preview images don't count.
 
-Exact number of content: with system content (system folder + previews), without system content.
-Size of the db: with system content and without
-Number of OData requests per developer in development time:
-Number of queries: in developer use cases, in end-user use cases
-Number of sql request: in developer use cases, in end-user use cases  
+**Size of the db**: x
 
 <div class="docs-highlight">
     <i class="fa fa-info"></i>
     <p>
-        As a next step you can continue <a href="/tutorials/explore-1000-content-demo-repository">exploring this repository</a> using its url on the login form on <a href="admin.sensenet.com">admin.sensenet.com</a> or you can digg a bit deeper with a proof of concept application connected to this repository and <a href="/tutorials/getting-started-with-sensenet-and-javascript">trying the APIs</a>. 
+        As a next step you can continue <a href="/tutorials/explore-1000-content-demo-repository">exploring this repository</a> using its url on the login form at <a href="admin.sensenet.com">admin.sensenet.com</a> or you can digg a bit deeper making a proof of concept application connected to this repository <a href="/tutorials/getting-started-with-sensenet-and-javascript">trying the APIs</a>. 
     </p>
 </div>
