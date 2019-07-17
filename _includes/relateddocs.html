@@ -9,7 +9,7 @@
         {% for tag in page.tags %} 
             {% for doc in site.docs %} 
                 {% assign doc_title = doc.title | replace: ' ', '' %}
-                {% if doc.tags contains tag and current_count < max_count %}
+                {% if doc.hidden != true and doc.tags contains tag and current_count < max_count %}
                     {% if page.title == doc.title %}
                     {% else %}
                         {% unless related contains doc_title %}

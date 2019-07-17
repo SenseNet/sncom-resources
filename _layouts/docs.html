@@ -40,7 +40,9 @@ layout: default
 <section class='page-section docs strong-headers'>
   <div class='container-narrow'>
     <aside class="blog-menu-side">
-      {% include relateddocs.html %}
+      {% if page.hidden != true  %}
+        {% include relateddocs.html %}
+      {% endif %}
     </aside>
     <ul class="docs-tags">
       {% for tag in page.tags %}
@@ -48,7 +50,7 @@ layout: default
       {% endfor %}
     </ul>
 
-    {{ content }} {% if page.category != 'ignore' %}
+    {{ content }} {% if page.category != 'ignore' and page.hidden != true %}
 
     {% include relateddocs.html %}
 

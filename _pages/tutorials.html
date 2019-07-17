@@ -23,7 +23,7 @@ layout: default
         <div class="col-ms-12 col-lg-4">
             <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/backend">MVC how-tos</a></h2>
             <ul class="docs-list">
-              {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'mvc' %}
+              {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'mvc' and hidden != true %}
               <li>
                 <a href="{{ site.baseurl }}{{ tutorial.url }}">{{ tutorial.title }}</a>
               </li>
@@ -31,7 +31,7 @@ layout: default
             </ul>
           <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/backend">Other backend dev how-tos</a></h2>
           <ul class="docs-list">
-            {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'backend' %}
+            {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'backend' and hidden != true %}
             <li>
               <a href="{{ site.baseurl }}{{ tutorial.url }}">{{ tutorial.title }}</a>
             </li>
@@ -42,7 +42,7 @@ layout: default
         <div class="col-ms-12 col-lg-4">
             <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/frontend">Reactjs how-tos</a></h2>
             <ul class="docs-list">
-              {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'reactjs' %}
+              {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'reactjs' and hidden != true %}
               <li>
                 <a href="{{ site.baseurl }}{{ tutorial.url }}">{{ tutorial.title }}</a>
               </li>
@@ -50,7 +50,7 @@ layout: default
             </ul>
             <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/frontend">Aurelia how-tos</a></h2>
             <ul class="docs-list">
-              {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'aurelia' %}
+              {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'aurelia' and hidden != true %}
               <li>
                 <a href="{{ site.baseurl }}{{ tutorial.url }}">{{ tutorial.title }}</a>
               </li>
@@ -62,7 +62,7 @@ layout: default
 
             <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/tutorials/frontend">Other frontend dev how-tos</a></h2>
             <ul class="docs-list">
-              {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'frontend' %}
+              {% for tutorial in docs %} {% if tutorial.category == 'Tutorials' and tutorial.tags contains 'frontend' and hidden != true %}
               <li>
                 <a href="{{ site.baseurl }}{{ tutorial.url }}">{{ tutorial.title }}</a>
               </li>
