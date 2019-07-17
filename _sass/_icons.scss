@@ -74,6 +74,20 @@
     content: "\f143";
 }
 
+.fa-info {
+    padding: 5px 10px;
+    color: #13a5ad;
+}
+
+.fa-check:before {
+    content: "\f00c"
+}
+
+.fa-info:before {
+    content: "\f129";
+    font-size: 40px;
+}
+
 .icon {
     font-family: $font-icons;
     display: block;

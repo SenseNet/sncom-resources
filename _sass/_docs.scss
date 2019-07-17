@@ -131,7 +131,9 @@ color: #fff;
     margin: 20px 0;
 }
 
-.docs-contact p{
+
+.docs-contact p,
+.docs-highlight p {
     margin: 0;
     font-size: 14px;
     line-height: 2;
@@ -273,6 +275,32 @@ blockquote {
 .taglist-container li a:hover {
     text-decoration: underline;
 }
+
+.docs-highlight {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 20px 0;
+    display: flex;
+}
+
+.docs-highlight p {
+    padding-right: 10px;
+    line-height: 1.5;
+}
+
+.doc-innerlist li {
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.doc-innerlist li:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+    color: #13a5ad;
+  }
 
 @media (max-width: 800px)
 { 

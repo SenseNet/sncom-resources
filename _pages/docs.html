@@ -22,8 +22,9 @@ layout: default
 
           <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/concepts/">Concepts</a></h2>
           <ul class="docs-list">
-            {% for doc in docs %} {% if doc.category == 'Concepts' %}
+            {% for doc in docs %} {% if doc.category == 'Concepts' and doc.hidden != true %}
             <li>
+              <span>{{doc.hidden}}</span>
               <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
               <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
             </li>
@@ -32,7 +33,7 @@ layout: default
           
           <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/guides/">Guides</a></h2>
           <ul class="docs-list">
-            {% for doc in docs %} {% if doc.category == 'Guides' %}
+            {% for doc in docs %} {% if doc.category == 'Guides' and doc.hidden != 'true' %}
             <li>
               <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
               <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
@@ -44,7 +45,7 @@ layout: default
         <div class="col-ms-12 col-lg-4">
           <h2 class="docs-heading"><a class="docs-title" href="{{ site.baseurl }}/docs/development/">Development</a></h2>
           <ul class="docs-list">
-            {% for doc in docs %} {% if doc.category == 'Development' %}
+            {% for doc in docs %} {% if doc.category == 'Development' and doc.hidden != 'true' %}
             <li>
               <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
               <!-- <span class="excerpt">{{ doc.content | strip_html | truncatewords: 50 }}</span> -->
