@@ -19,8 +19,8 @@ The *content repository* in this case is created, hosted and supported by us, yo
 <div class="docs-highlight">
     <i class="fa fa-info"></i>
     <p>
-        Are you a freshly registered sn content repository owner? Let us help you exploring the new home of your content with <a href="/docs/explore-your-repository" title="Create and explore your sensenet repository"><strong>this tutorial</strong></a>.
-        If you have not decided to register yet, you should definitely check out our <a href="/docs/demo/1000-content-demo" title="Explore 1000 content demo repository"><strong>demo</strong></a> repository, filled with various demo content.
+        Are you a freshly registered sn content repository owner? Let us help you exploring the new home of your content with <a href="/docs/create-and-explore-your-repository" title="Create and explore your sensenet repository"><strong>this tutorial</strong></a>.
+        If you have not decided to register yet, you should definitely check out our <a href="/docs/demo/1000-content-demo" title="1000 content demo repository"><strong>demo</strong></a> repository, filled with various demo content.
     </p>
 </div>
 
@@ -33,6 +33,6 @@ The admin surface is a client that is built up on sensenet and uses the same Res
 <div class="docs-highlight">
     <i class="fa fa-info"></i>
     <p>
-        Take the next step with getting familiar with <a href="/docs/content-management-through-rest-api"><strong>Content management through REST API</strong></a> or do one of the <a href="/tutorials"><strong>tutorials</strong></a> and create your first client app built upon sensenet.
+        Take the next step with getting familiar with <a href="/docs/concepts/content-management-through-rest-api"><strong>Content management through REST API</strong></a> or do one of the <a href="/docs/tutorials"><strong>tutorials</strong></a> and create your first client app built upon sensenet.
     </p>
 </div>

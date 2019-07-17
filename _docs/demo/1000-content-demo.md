@@ -10,7 +10,7 @@ hidden: true
 
 # 1000 content demo
 
-The 1000 content demo and test repository demonstrates a basic setup of sensenet allowing to try out the content repository. It provides a good insight into the content structure of a common project giving the opportunity to verify the functionality making a proof of concept trying out the API and the admin surface. This enviroment is based on a daily build which means all the built-in demo content are reimported, the configurations are restored and the customer-created stuff are removed every day.
+The 1000 content demo and test repository demonstrates a basic setup and content structure sensenet allowing to try out the content repository. It provides a good insight into the content structure of a common project giving the opportunity to verify the functionality making a proof of concept trying out the API and the admin surface. This enviroment is based on a daily build which means all the built-in demo content are reimported, the configurations are restored and the customer-created stuff are removed every day.
 
 <div class="docs-highlight">
     <i class="fa fa-info"></i>
@@ -67,6 +67,6 @@ Document preview generation is switched on in this repository and as it is confi
 <div class="docs-highlight">
     <i class="fa fa-info"></i>
     <p>
-        As a next step you can continue <a href="/tutorials/explore-1000-content-demo-repository">exploring this repository</a> using its url on the login form at <a href="admin.sensenet.com">admin.sensenet.com</a> or you can digg a bit deeper making a proof of concept application connected to this repository <a href="/tutorials/getting-started-with-sensenet-and-javascript">trying the APIs</a>. 
+        As a next step you can continue <a href="/docs/tutorials/explore-1000-content-demo-repository">exploring this repository</a> using its url on the login form at <a href="admin.sensenet.com">admin.sensenet.com</a> or you can digg a bit deeper making a proof of concept application connected to this repository <a href="/docs/tutorials/explore-1000-content-demo-repository#try-the-api">trying the APIs</a>. 
     </p>
 </div>
