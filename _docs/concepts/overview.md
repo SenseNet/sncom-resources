@@ -24,7 +24,7 @@ The *content repository* in this case is created, hosted and supported by us, yo
     </p>
 </div>
 
-[admin.sensenet.com](https://admin.sensenet.com) is a single page application built upon sensenet as well using the same Rest API and helps you with common content management tasks. It is a common administration interface for different types of user tasks providing tools from simple content editing tasks till content type editing or system configurations. Since in sensenet everything is a content, all types of content could be managed on a unified user interface helping you feel familiar with every part of the system immediately.
+[admin.sensenet.com](https://admin.sensenet.com) is a single page application built on the top of sensenet using the same Rest API and helps you with common content management tasks. It is a common administration interface for different types of user jobs providing tools from simple content editing tasks till content type editing or system configurations. Since everything is a content in sensenet, all types of content could be managed on a unified user interface helping you feel familiar with every part of the system immediately.
 
 ![admin.sensenet.com](/img/admin-ui-light.png "admin.sensenet.com")
 
