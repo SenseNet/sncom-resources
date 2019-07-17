@@ -28,12 +28,12 @@
 					<img src="assets/images/sensenet-logo.png" alt="@sensenet/client-core" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../community">Community</a>
-					<a class="site-header-nav-item " href="../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -92,12 +92,15 @@
 				<p>This component lets you work with the <a href="https://github.com/SenseNet">sensenet</a> Content Repository (create or manage content, execute queries, etc.) by providing a JavaScript client API for the main content operations.
 				The library connects to a sensenet&#39;s <a href="https://community.sensenet.com/docs/odata-rest-api/">REST API</a>, but hides the underlying HTTP requests. You can work with simple load or create Content operations in JavaScript, instead of having to construct ajax requests yourself.</p>
 				<blockquote>
-					<p>Tested with the following Sense/Net Services version: </p>
-					<p><a href="https://github.com/SenseNet/sensenet/releases/tag/v7.0.0"><img src="https://img.shields.io/badge/sensenet-7.0.0%20tested-green.svg" alt="Sense/Net Services"></a></p>
+					<p>Tested with the following <strong>sensenet services</strong> version: </p>
+					<p><a href="https://github.com/SenseNet/sensenet/releases/tag/v7.1.3"><img src="https://img.shields.io/badge/sensenet-7.1.3%20tested-green.svg" alt="Sense/Net Services"></a></p>
 				</blockquote>
+				<h2 id="installation">Installation</h2>
+				<pre><code class="language-shell">npm install @sensenet/client-core</code></pre>
+				<h2 id="usage">Usage</h2>
 				<h3 id="creating-a-repository-instance">Creating a Repository instance</h3>
 				<p>Your main entry point in this library is the Repository object. You can create an Instance by the following way:</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> { Repository } <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/client-core'</span>;
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Repository } <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/client-core'</span>;
 
 <span class="hljs-keyword">const</span> repository = <span class="hljs-keyword">new</span> Repository({
     repositoryUrl: <span class="hljs-string">"https://my-sensenet-site.com"</span>,
@@ -109,8 +112,7 @@
     defaultInlineCount: <span class="hljs-string">"allpages"</span>,
     defaultExpand: [],
     defaultTop: <span class="hljs-number">1000</span>,
-});
-</code></pre>
+});</code></pre>
 				<ul>
 					<li><strong>repositoryURL</strong>: The component will communicate with your repositoy using the following url. This will fall back to your <em>window.location.href</em>, if not specified. To enable your external app to send request against your sensenet portal change your <code>Portal.settings</code>. For further information about cross-origin resource sharing in sensenet check <a href="community.sensenet.com/docs/cors/">this</a>
 					article.</li>
@@ -125,7 +127,7 @@
 				</ul>
 				<h3 id="loading-content">Loading content</h3>
 				<p>You can load a specified content by its full path or Id by the following way:</p>
-				<pre><code class="lang-ts">
+				<pre><code class="language-ts">
 <span class="hljs-keyword">import</span> { User } <span class="hljs-keyword">from</span> <span class="hljs-string">"@sensenet/default-content-types"</span>;
 
 <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> repository.load&lt;User&gt;({
@@ -135,11 +137,10 @@
         select: <span class="hljs-string">"all"</span>,
     },
 });
-<span class="hljs-built_in">console</span>.log(user);    <span class="hljs-comment">// {d: { /*(...retrieved user data)*/ }}</span>
-</code></pre>
+<span class="hljs-built_in">console</span>.log(user);    <span class="hljs-comment">// {d: { /*(...retrieved user data)*/ }}</span></code></pre>
 				<p>You can also load a content reference by providing a full reference path (e.g.: <code>/Root/IMS/BuiltIn/Portal/(&#39;Visitor&#39;)/CreatedBy</code>)</p>
 				<p>If you want to load a content collection (children, query results or one-to-many references ) you can do it with the following method:</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> portalUsers = <span class="hljs-keyword">await</span> repository.loadCollection&lt;User&gt;({
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> portalUsers = <span class="hljs-keyword">await</span> repository.loadCollection&lt;User&gt;({
     path: <span class="hljs-string">"/Root/IMS/BuiltIn/Portal"</span>,
     oDataOptions: {
         query: <span class="hljs-string">"TypeIs:User"</span>,
@@ -148,11 +149,10 @@
 });
 
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Count: "</span>, portalUsers.d.__count);
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Users: "</span>, portalUsers.d.results);
-</code></pre>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Users: "</span>, portalUsers.d.results);</code></pre>
 				<h3 id="creating-and-modifying-content">Creating and modifying content</h3>
 				<p>You can execute specific POST, PATCH and PUT OData requests on the Repository instance:</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> createdUser = <span class="hljs-keyword">await</span> repository.post&lt;User&gt;({
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> createdUser = <span class="hljs-keyword">await</span> repository.post&lt;User&gt;({
     parentPath: <span class="hljs-string">"Root/Parent"</span>,
     contentType: <span class="hljs-string">"User"</span>,
     content: {
@@ -167,11 +167,10 @@
     content: {
         Locked: <span class="hljs-literal">true</span>,
     },
-});
-</code></pre>
+});</code></pre>
 				<h3 id="delete-move-copy-batch-actions">Delete, move, copy batch actions</h3>
 				<p>You can execute these batch actions right on the Repository instance:</p>
-				<pre><code class="lang-ts"><span class="hljs-comment">// you can use move in the similar way</span>
+				<pre><code class="language-ts"><span class="hljs-comment">// you can use move in the similar way</span>
 <span class="hljs-keyword">const</span> copyResult = <span class="hljs-keyword">await</span> repository.copy({
     idOrPath: [<span class="hljs-number">45</span>, <span class="hljs-string">"Root/Path/To/Content"</span>],
     targetPath: <span class="hljs-string">"Root/Target/Path"</span>,
@@ -180,11 +179,10 @@
 <span class="hljs-keyword">const</span> deleteResult = <span class="hljs-keyword">await</span> repository.delete({
     idOrPath: <span class="hljs-string">"Root/Path/To/Content/To/Delete"</span>,
     permanent: <span class="hljs-literal">true</span>,
-});
-</code></pre>
+});</code></pre>
 				<h3 id="executing-custom-actions">Executing custom actions</h3>
 				<p>You can define and execute your custom OData actions by the following way:</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">interface</span> ICustomActionBodyType { Name: <span class="hljs-built_in">string</span>; Value: <span class="hljs-built_in">string</span>; }
+				<pre><code class="language-ts"><span class="hljs-keyword">interface</span> ICustomActionBodyType { Name: <span class="hljs-built_in">string</span>; Value: <span class="hljs-built_in">string</span>; }
 <span class="hljs-keyword">interface</span> ICustomActionReturnType { Result: <span class="hljs-built_in">any</span>; }
 <span class="hljs-keyword">const</span> actionResult = <span class="hljs-keyword">await</span> repository.executeAction&lt;ICustomActionBodyType, ICustomActionReturnType&gt;({
     idOrPath: <span class="hljs-string">"Path/to/content"</span>,
@@ -195,8 +193,7 @@
         Value: <span class="hljs-string">"Bar"</span>,
     },
 });
-<span class="hljs-built_in">console</span>.log(actionResult.Result);
-</code></pre>
+<span class="hljs-built_in">console</span>.log(actionResult.Result);</code></pre>
 				<h3 id="shortcuts-for-built-in-odata-actions">Shortcuts for built-in Odata actions</h3>
 				<p>You can use built-in actions in the <code>repository.security</code> and in the <code>repository.versioning</code> namespaces on repository instances.</p>
 			</div>
@@ -221,6 +218,9 @@
 						<a href="classes/constantcontent.html" class="tsd-kind-icon">Constant<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/formsauthenticationservice.html" class="tsd-kind-icon">Forms<wbr>Authentication<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/odataurlbuilder.html" class="tsd-kind-icon">OData<wbr>Url<wbr>Builder</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -242,112 +242,142 @@
 						<a href="classes/versioning.html" class="tsd-kind-icon">Versioning</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iactionoptions.html" class="tsd-kind-icon">IAction<wbr>Options</a>
+						<a href="interfaces/actionoptions.html" class="tsd-kind-icon">Action<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/iauthenticationservice.html" class="tsd-kind-icon">IAuthentication<wbr>Service</a>
+						<a href="interfaces/authenticationservice.html" class="tsd-kind-icon">Authentication<wbr>Service</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/icontent.html" class="tsd-kind-icon">IContent</a>
+						<a href="interfaces/content.html" class="tsd-kind-icon">Content</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/icopyoptions.html" class="tsd-kind-icon">ICopy<wbr>Options</a>
+						<a href="interfaces/copyoptions.html" class="tsd-kind-icon">Copy<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ideleteoptions.html" class="tsd-kind-icon">IDelete<wbr>Options</a>
+						<a href="interfaces/deleteoptions.html" class="tsd-kind-icon">Delete<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/igetactionoptions.html" class="tsd-kind-icon">IGet<wbr>Action<wbr>Options</a>
+						<a href="interfaces/getactionoptions.html" class="tsd-kind-icon">Get<wbr>Action<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/igetallowedusersoptions.html" class="tsd-kind-icon">IGet<wbr>Allowed<wbr>Users<wbr>Options</a>
+						<a href="interfaces/getallowedusersoptions.html" class="tsd-kind-icon">Get<wbr>Allowed<wbr>Users<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/igetparentgroupsoptions.html" class="tsd-kind-icon">IGet<wbr>Parent<wbr>Groups<wbr>Options</a>
+						<a href="interfaces/getparentgroupsoptions.html" class="tsd-kind-icon">Get<wbr>Parent<wbr>Groups<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/igetrelatedidentities.html" class="tsd-kind-icon">IGet<wbr>Related<wbr>Identities</a>
+						<a href="interfaces/getrelatedidentities.html" class="tsd-kind-icon">Get<wbr>Related<wbr>Identities</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/igetrelatedidentitiesbypermissions.html" class="tsd-kind-icon">IGet<wbr>Related<wbr>Identities<wbr>ByPermissions</a>
+						<a href="interfaces/getrelatedidentitiesbypermissions.html" class="tsd-kind-icon">Get<wbr>Related<wbr>Identities<wbr>ByPermissions</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/igetrelateditemsonelevel.html" class="tsd-kind-icon">IGet<wbr>Related<wbr>Items<wbr>One<wbr>Level</a>
+						<a href="interfaces/getrelateditemsonelevel.html" class="tsd-kind-icon">Get<wbr>Related<wbr>Items<wbr>One<wbr>Level</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/igetrelateditemsoptions.html" class="tsd-kind-icon">IGet<wbr>Related<wbr>Items<wbr>Options</a>
+						<a href="interfaces/getrelateditemsoptions.html" class="tsd-kind-icon">Get<wbr>Related<wbr>Items<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/igetrelatedpermissionsoptions.html" class="tsd-kind-icon">IGet<wbr>Related<wbr>Permissions<wbr>Options</a>
+						<a href="interfaces/getrelatedpermissionsoptions.html" class="tsd-kind-icon">Get<wbr>Related<wbr>Permissions<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iloadcollectionoptions.html" class="tsd-kind-icon">ILoad<wbr>Collection<wbr>Options</a>
+						<a href="interfaces/loadcollectionoptions.html" class="tsd-kind-icon">Load<wbr>Collection<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iloadoptions.html" class="tsd-kind-icon">ILoad<wbr>Options</a>
+						<a href="interfaces/loadoptions.html" class="tsd-kind-icon">Load<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/imetadata.html" class="tsd-kind-icon">IMetadata</a>
+						<a href="interfaces/metadata.html" class="tsd-kind-icon">Metadata</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/imetadataaction.html" class="tsd-kind-icon">IMetadata<wbr>Action</a>
+						<a href="interfaces/metadataaction.html" class="tsd-kind-icon">Metadata<wbr>Action</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/imoveoptions.html" class="tsd-kind-icon">IMove<wbr>Options</a>
+						<a href="interfaces/moveoptions.html" class="tsd-kind-icon">Move<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iodatabatchresponse.html" class="tsd-kind-icon">IOData<wbr>Batch<wbr>Response</a>
+						<a href="interfaces/odatabatchresponse.html" class="tsd-kind-icon">OData<wbr>Batch<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iodatacollectionresponse.html" class="tsd-kind-icon">IOData<wbr>Collection<wbr>Response</a>
+						<a href="interfaces/odatacollectionresponse.html" class="tsd-kind-icon">OData<wbr>Collection<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iodataparams.html" class="tsd-kind-icon">IOData<wbr>Params</a>
+						<a href="interfaces/odataparams.html" class="tsd-kind-icon">OData<wbr>Params</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iodatarequestoptions.html" class="tsd-kind-icon">IOData<wbr>Request<wbr>Options</a>
+						<a href="interfaces/odatarequestoptions.html" class="tsd-kind-icon">OData<wbr>Request<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iodataresponse.html" class="tsd-kind-icon">IOData<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/ipatchoptions.html" class="tsd-kind-icon">IPatch<wbr>Options</a>
+						<a href="interfaces/odataresponse.html" class="tsd-kind-icon">OData<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ipermissionentry.html" class="tsd-kind-icon">IPermission<wbr>Entry</a>
+						<a href="interfaces/odatawopiresponse.html" class="tsd-kind-icon">OData<wbr>Wopi<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/patchoptions.html" class="tsd-kind-icon">Patch<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ipermissionidentity.html" class="tsd-kind-icon">IPermission<wbr>Identity</a>
+						<a href="interfaces/permissionentry.html" class="tsd-kind-icon">Permission<wbr>Entry</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ipermissionresponsemodel.html" class="tsd-kind-icon">IPermission<wbr>Response<wbr>Model</a>
+						<a href="interfaces/permissionidentity.html" class="tsd-kind-icon">Permission<wbr>Identity</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ipermissionvalue.html" class="tsd-kind-icon">IPermission<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/ipostoptions.html" class="tsd-kind-icon">IPost<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iputoptions.html" class="tsd-kind-icon">IPut<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iuploadfileoptions.html" class="tsd-kind-icon">IUpload<wbr>File<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iuploadfromeventoptions.html" class="tsd-kind-icon">IUpload<wbr>From<wbr>Event<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iuploadoptions.html" class="tsd-kind-icon">IUpload<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iuploadprogressinfo.html" class="tsd-kind-icon">IUpload<wbr>Progress<wbr>Info</a>
+						<a href="interfaces/permissionresponsemodel.html" class="tsd-kind-icon">Permission<wbr>Response<wbr>Model</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/iuploadresponse.html" class="tsd-kind-icon">IUpload<wbr>Response</a>
+						<a href="interfaces/permissionvalue.html" class="tsd-kind-icon">Permission<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/iuploadtextoptions.html" class="tsd-kind-icon">IUpload<wbr>Text<wbr>Options</a>
+						<a href="interfaces/postoptions.html" class="tsd-kind-icon">Post<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/putoptions.html" class="tsd-kind-icon">Put<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/uploadfileoptions.html" class="tsd-kind-icon">Upload<wbr>File<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/uploadfromeventoptions.html" class="tsd-kind-icon">Upload<wbr>From<wbr>Event<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/uploadfromfilelistoptions.html" class="tsd-kind-icon">Upload<wbr>From<wbr>File<wbr>List<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/uploadoptions.html" class="tsd-kind-icon">Upload<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/uploadprogressinfo.html" class="tsd-kind-icon">Upload<wbr>Progress<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/uploadresponse.html" class="tsd-kind-icon">Upload<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/uploadtextoptions.html" class="tsd-kind-icon">Upload<wbr>Text<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/webkitdirectoryentry.html" class="tsd-kind-icon">Web<wbr>Kit<wbr>Directory<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/webkitdirectoryreader.html" class="tsd-kind-icon">Web<wbr>Kit<wbr>Directory<wbr>Reader</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/webkitentry.html" class="tsd-kind-icon">Web<wbr>Kit<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/webkitfileentry.html" class="tsd-kind-icon">Web<wbr>Kit<wbr>File<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/webkitfilesystem.html" class="tsd-kind-icon">Web<wbr>Kit<wbr>File<wbr>System</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/withodataoptions.html" class="tsd-kind-icon">With<wbr>Odata<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/withrequestinit.html" class="tsd-kind-icon">With<wbr>Request<wbr>Init</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#extendederror" class="tsd-kind-icon">Extended<wbr>Error</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="globals.html#odatafieldparameter" class="tsd-kind-icon">OData<wbr>Field<wbr>Parameter</a>
@@ -363,6 +393,18 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="globals.html#odataorderparameter" class="tsd-kind-icon">OData<wbr>Order<wbr>Parameter</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#webkitentriescallback" class="tsd-kind-icon">Web<wbr>Kit<wbr>Entries<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#webkiterrorcallback" class="tsd-kind-icon">Web<wbr>Kit<wbr>Error<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#webkitfilecallback" class="tsd-kind-icon">Web<wbr>Kit<wbr>File<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isextendederror" class="tsd-kind-icon">is<wbr>Extended<wbr>Error</a>
 					</li>
 				</ul>
 			</nav>

@@ -28,12 +28,12 @@
 					<img src="assets/images/sensenet-logo.png" alt="@sensenet/control-mapper" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../community">Community</a>
-					<a class="site-header-nav-item " href="../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -90,8 +90,10 @@
 					<a href="https://github.com/sn-control-mapper/LICENSE.txt"><img src="https://img.shields.io/github/license/SenseNet/sn-client-js.svg?style=flat" alt="License"></a>
 				<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat" alt="Commitizen friendly"></a></p>
 				<p>This NPM package contains a control mapping tool for sensenet. This can be used for specifying relations between sensenet schemas and specified UI controls at content and field level and can be used for automatized form generation.</p>
-				<p>Usage example:</p>
-				<pre><code class="lang-ts">
+				<h2 id="installation">Installation</h2>
+				<pre><code class="language-shell">npm install @sensenet/control-mapper</code></pre>
+				<h2 id="usage">Usage</h2>
+				<pre><code class="language-ts">
 <span class="hljs-keyword">import</span> { Repository } <span class="hljs-keyword">from</span> <span class="hljs-string">"@sensenet/client-core"</span>;
 <span class="hljs-keyword">import</span> { ControlMapper } <span class="hljs-keyword">from</span> <span class="hljs-string">"@sensenet/control-mapper"</span>;
 
@@ -102,8 +104,7 @@
                                  ExampleDefaultControl,
                                  ExampleDefaultFieldControl)
         .setupFieldSettingDefault(NumberFieldSetting, <span class="hljs-function">(<span class="hljs-params">setting</span>) =&gt;</span> MyNumberFieldImplementation)
-        .setupFieldSettingDefault(PasswordFieldSetting, <span class="hljs-function">(<span class="hljs-params">setting</span>) =&gt;</span> MyPasswordFieldImplementation);
-</code></pre>
+        .setupFieldSettingDefault(PasswordFieldSetting, <span class="hljs-function">(<span class="hljs-params">setting</span>) =&gt;</span> MyPasswordFieldImplementation);</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

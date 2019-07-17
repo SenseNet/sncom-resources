@@ -28,12 +28,12 @@
 					<img src="assets/images/sensenet-logo.png" alt="@sensenet/authentication-jwt" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../community">Community</a>
-					<a class="site-header-nav-item " href="../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -90,27 +90,26 @@
 					<a href="https://github.com/sn-authentication-jwt/LICENSE.txt"><img src="https://img.shields.io/github/license/SenseNet/sn-authentication-jwt.svg?style=flat" alt="License"></a>
 				<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat" alt="Commitizen friendly"></a></p>
 				<p>This NPM package contains a client-side JWT authentication service implementation for <a href="https://github.com/SenseNet/sensenet">sensenet</a>.</p>
-				<h3 id="setup-and-usage">Setup and usage</h3>
+				<h2 id="installation">Installation</h2>
+				<pre><code class="language-shell">npm install @sensenet/authentication-jwt</code></pre>
+				<h2 id="setup-and-usage">Setup and usage</h2>
 				<p>You can use JWT authentication with a <a href="https://community.sensenet.com/docs/web-token-authentication/">preconfigured</a> sensenet &gt;7.0.0 backend.</p>
 				<p>Service setup:</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> repository = <span class="hljs-keyword">new</span> Repository();
-<span class="hljs-keyword">const</span> jwtService = <span class="hljs-keyword">new</span> JwtService(repository);
-</code></pre>
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> repository = <span class="hljs-keyword">new</span> Repository();
+<span class="hljs-keyword">const</span> jwtService = <span class="hljs-keyword">new</span> JwtService(repository);</code></pre>
 				<h3 id="login-logout-">Login / logout:</h3>
 				<p>You can log in and out using the following API endpoints:</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">const</span> loginSuccess = <span class="hljs-keyword">await</span> repository.authentication.login(<span class="hljs-string">"username"</span>, <span class="hljs-string">"password"</span>);
-<span class="hljs-keyword">const</span> logoutSuccess = <span class="hljs-keyword">await</span> repository.authentication.logout();
-</code></pre>
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> loginSuccess = <span class="hljs-keyword">await</span> repository.authentication.login(<span class="hljs-string">"username"</span>, <span class="hljs-string">"password"</span>);
+<span class="hljs-keyword">const</span> logoutSuccess = <span class="hljs-keyword">await</span> repository.authentication.logout();</code></pre>
 				<h3 id="state-and-user-changes">State and user changes</h3>
 				<p>You can subscribe to authentication state and current user changes using the following two observable values:</p>
-				<pre><code class="lang-ts">jwtService.currentUser.subscribe(<span class="hljs-function">(<span class="hljs-params">newUser</span>) =&gt;</span> {
+				<pre><code class="language-ts">jwtService.currentUser.subscribe(<span class="hljs-function">(<span class="hljs-params">newUser</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"User changed. New user: "</span>, newUser.LoginName);
 });
 
 jwtService.state.subscribe(<span class="hljs-function">(<span class="hljs-params">newState</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Authentication state changed to"</span>, newState);
-});
-</code></pre>
+});</code></pre>
 				<h3 id="authenticated-requests">Authenticated requests</h3>
 				<p>Please note that if you want to send custom <em>authenticated</em> requests to the content repository, always use the <code>repository.fetch(...)</code> method. This ensures that your access token will be renewed if needed and your authentication state will consistent.</p>
 			</div>
@@ -141,16 +140,16 @@ jwtService.state.subscribe(<span class="hljs-function">(<span class="hljs-params
 						<a href="classes/tokenstore.html" class="tsd-kind-icon">Token<wbr>Store</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/iloginresponse.html" class="tsd-kind-icon">ILogin<wbr>Response</a>
+						<a href="interfaces/loginresponse.html" class="tsd-kind-icon">Login<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ioauthprovider.html" class="tsd-kind-icon">IOauth<wbr>Provider</a>
+						<a href="interfaces/oauthprovider.html" class="tsd-kind-icon">Oauth<wbr>Provider</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/irefreshresponse.html" class="tsd-kind-icon">IRefresh<wbr>Response</a>
+						<a href="interfaces/refreshresponse.html" class="tsd-kind-icon">Refresh<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/itokenpayload.html" class="tsd-kind-icon">IToken<wbr>Payload</a>
+						<a href="interfaces/tokenpayload.html" class="tsd-kind-icon">Token<wbr>Payload</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#tokentype" class="tsd-kind-icon">Token<wbr>Type</a>

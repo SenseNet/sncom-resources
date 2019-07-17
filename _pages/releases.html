@@ -1,0 +1,37 @@
+---
+title: sensenet Updates
+permalink: /releases/
+layout: default
+---
+
+{% assign releases = site.releases | sort: 'date' | reverse %}
+
+<section class='page-section blog-post'>
+  <div class='container-narrow'>
+    <aside class="blog-menu-side">
+      <h3>Updates</h3>
+      <nav class="blog-menu">
+        <ul>
+          {% for release in releases %}
+          <li><a href="{{release.url}}">{{release.title}}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </aside>
+    <article class="blog-post">
+    <ul class="blog-index">
+      {% for release in releases limit:1 %}
+      <li class="blog-post">
+        <h1>
+          <a class="blog-index-link" href="{{ release.url | prepend: site.baseurl }}">{{ release.title }}</a>
+        </h1>
+        <div class="who-when" style="margin-bottom: 10px">
+          <i class="fa fa-calendar"></i><time class="blog-index-time">{{ update.date | date: '%B %d, %Y' }}</time>
+        </div>
+          {{release.content}}
+      </li>
+      {% endfor %}
+    </ul>
+  </article>
+  </div>
+</section>

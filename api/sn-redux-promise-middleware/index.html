@@ -28,12 +28,12 @@
 					<img src="assets/images/sensenet-logo.png" alt="@sensenet/redux-promise-middleware" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../community">Community</a>
-					<a class="site-header-nav-item " href="../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -99,7 +99,7 @@
 				<h2 id="install">Install</h2>
 				<p><code>npm i redux-promise-middleware -s</code></p>
 				<h2 id="setup">Setup</h2>
-				<pre><code class="lang-Typescript"><span class="hljs-keyword">import</span> { Repository } <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/client-core'</span>
+				<pre><code class="language-Typescript"><span class="hljs-keyword">import</span> { Repository } <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/client-core'</span>
 <span class="hljs-keyword">import</span> promiseMiddleware <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/redux-promise-middleware'</span>
 
 <span class="hljs-keyword">const</span> repository = <span class="hljs-keyword">new</span> Repository({ repositoryUrl: <span class="hljs-string">'https://mySensenetSite.com'</span> }, <span class="hljs-keyword">async</span> () =&gt; ({ ok: <span class="hljs-literal">true</span> } <span class="hljs-keyword">as</span> <span class="hljs-built_in">any</span>))
@@ -110,8 +110,7 @@
     rootReducer,
     persistedState,
     applyMiddleware([promiseMiddleware(repository)]),
-)
-</code></pre>
+)</code></pre>
 				<h2 id="use">Use</h2>
 				<p>About how to use it with Actions check <a href="https://github.com/SenseNet/sn-redux">sn-redux</a> docs.</p>
 			</div>
@@ -126,14 +125,26 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#suffixes" class="tsd-kind-icon">suffixes</a>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/promisemiddlewareaction.html" class="tsd-kind-icon">Promise<wbr>Middleware<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/promisemiddlewarefailedaction.html" class="tsd-kind-icon">Promise<wbr>Middleware<wbr>Failed<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/promisemiddlewaresucceededaction.html" class="tsd-kind-icon">Promise<wbr>Middleware<wbr>Succeeded<wbr>Action</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#ispromise" class="tsd-kind-icon">is<wbr>Promise</a>
 					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#ispromisemiddlewareaction" class="tsd-kind-icon">is<wbr>Promise<wbr>Middleware<wbr>Action</a>
+					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#promisemiddleware" class="tsd-kind-icon">promise<wbr>Middleware</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#suffixes" class="tsd-kind-icon">suffixes</a>
 					</li>
 				</ul>
 			</nav>

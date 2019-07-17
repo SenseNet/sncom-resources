@@ -28,12 +28,12 @@
 					<img src="assets/images/sensenet-logo.png" alt="@sensenet/authentication-google" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item active" href="../../docs">Docs</a>
-					<a class="site-header-nav-item " href="../../tutorials">Tutorials</a>
-					<a class="site-header-nav-item " href="../../blog">Blog</a>
-					<a class="site-header-nav-item " href="../../community">Community</a>
-					<a class="site-header-nav-item " href="../../releases">Releases</a>
-					<a class="site-header-nav-item " href="../../contact">Contact</a>
+					<a class="site-header-nav-item active" href="../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../tutorials">Tutorials</a>
+					<a class="site-header-nav-item " href="../../../../blog">Blog</a>
+					<a class="site-header-nav-item " href="../../../../community">Community</a>
+					<a class="site-header-nav-item " href="../../../../releases">Releases</a>
+					<a class="site-header-nav-item " href="../../../../contact">Contact</a>
 					<a class="site-header-nav-item" href="https://github.com/SenseNet/sensenet" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
@@ -88,6 +88,8 @@
 					<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat" alt="Commitizen friendly"></a>
 				<a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/SenseNet/sn-client-auth-google.svg" alt="Greenkeeper badge"></a></p>
 				<p>This package contains a client-side Google Oauth2 authentication provider for sensenet.</p>
+				<h2 id="installation">Installation</h2>
+				<pre><code class="language-shell">npm install @sensenet/authentication-google</code></pre>
 				<h2 id="usage">Usage</h2>
 				<h3 id="prerequisites">Prerequisites</h3>
 				<ul>
@@ -97,26 +99,24 @@
 				</ul>
 				<h3 id="setup">Setup</h3>
 				<p>You can set up the Provider after creating your repository singleton with the <strong>addGoogleAuth</strong> method</p>
-				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> { Repository } <span class="hljs-keyword">from</span> <span class="hljs-string">"@sensenet/client-core"</span>;
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Repository } <span class="hljs-keyword">from</span> <span class="hljs-string">"@sensenet/client-core"</span>;
 <span class="hljs-keyword">import</span> { JwtService } <span class="hljs-keyword">from</span> <span class="hljs-string">"@sensenet/authentication-jwt"</span>;
 <span class="hljs-keyword">import</span> { addGoogleAuth } <span class="hljs-keyword">from</span> <span class="hljs-string">'@sensenet/authentication-google'</span>;
 
 <span class="hljs-keyword">const</span> repo = <span class="hljs-keyword">new</span> Repository();
 <span class="hljs-keyword">const</span> jwt = <span class="hljs-keyword">new</span> JwtService(repo);
-<span class="hljs-keyword">const</span> googleOauthProvider = addGoogleAuth(jwt, {clientId: <span class="hljs-string">""</span>});
-</code></pre>
+<span class="hljs-keyword">const</span> googleOauthProvider = addGoogleAuth(jwt, {clientId: <span class="hljs-string">""</span>});</code></pre>
 				<h3 id="login">Login</h3>
 				<p>In your login component, you can use the following snippet. If you don&#39;t provide an <em>id_token</em> from an external component, the package will try to retrieve it using a popup window (in that case you have to enable popups and add a callback pointing to your window&#39;s origin)</p>
-				<pre><code class="lang-ts"><span class="hljs-comment">// an example login method with an optional idToken:</span>
+				<pre><code class="language-ts"><span class="hljs-comment">// an example login method with an optional idToken:</span>
 <span class="hljs-keyword">async</span> Login(idToken?: <span class="hljs-built_in">string</span>){
  <span class="hljs-keyword">try</span> {
-     <span class="hljs-keyword">await</span> googleOauthProvider.Login(idToken);
+     <span class="hljs-keyword">await</span> googleOauthProvider.login(idToken);
      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Logged in'</span>);
  } <span class="hljs-keyword">catch</span> (error) {
     <span class="hljs-built_in">console</span>.warn(<span class="hljs-string">'Error during login'</span>, error);
  }
-}
-</code></pre>
+}</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
