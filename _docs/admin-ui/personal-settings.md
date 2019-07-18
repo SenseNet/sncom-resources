@@ -58,4 +58,3 @@ You can select between the `default` (english) and `hungarian` language with the
 You can define the size of the event log with the `eventLogSize`. Only the last N entries will be saved. There is another setting for the entries to persist in the log: the `logLevel` field. You can also enable / disable attaching the log when you send a crash report with the `sendLogWithCrashReports` field.
 
 ![Changing the theme in the personal settings](/img/admin-ui-personal-setting-theme.gif "Changing the theme in the personal settings")
-admin-ui-personal-setting-theme
