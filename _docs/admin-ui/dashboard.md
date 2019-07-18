@@ -27,4 +27,8 @@ The query widget has an additional mode that you can enable with the `countOnly`
 
 This one will check the _current repository's_ version info and compares it with the latest component versions published to [nuget.org](https://nuget.org). It will notify you when updates are available.
 
+## The default dashboard
+
+You can check the default repository dashboard as an example. It contains some generic information about the package versions, some stats about the users, documents and recent updates using the Query widget. It contains also links to useful docs and a contact info - they are created with the Markdown widget.
+
 ![The default dashboard](/img/admin-ui-default-dashboard.png "The default dashboard")
