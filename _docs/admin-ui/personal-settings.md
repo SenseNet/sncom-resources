@@ -1,6 +1,6 @@
 ---
 title: "Personal settings"
-source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/docs/admin-ui-personal-settings.md"
+source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/docs/admin-ui/personal-settings.md"
 category: Admin UI
 version: v7.0
 tags: [admin ui, personal settings, settings, dashboard]
@@ -35,11 +35,11 @@ You can enable or disable the drawer, change the drawer type and define a list o
 
 ### Command Palette
 
-You can enable or disable the [command palette](/docs/admin-ui-command-palette/) and define a `wrapQuery` expression that will be added to any command palette query.
+You can enable or disable the [command palette](/docs/admin/ui-command-palette/) and define a `wrapQuery` expression that will be added to any command palette query.
 
 ## Dashboard
 
-You can customize your ``globalDefault`and`repositoryDefault` [dashboards](/docs/admin-ui-dashboard/) here.
+You can customize your ``globalDefault`and`repositoryDefault` [dashboards](/docs/admin/ui-dashboard/) here.
 
 ## Repositories
 

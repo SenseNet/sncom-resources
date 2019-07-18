@@ -1,6 +1,6 @@
 ---
 title: "Command palette"
-source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/docs/admin-ui-command-palette.md"
+source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/docs/admin-ui/command-palette.md"
 category: Admin UI
 version: v7.0
 tags:
@@ -39,7 +39,7 @@ You can search content in the current repository (or the last used one) by start
 
 ## Search with a content query
 
-You can write [content queries](https://community.sensenet.com/docs/content-query/) to search content. The expression should start with a **+** sign. You will get a list of suggestions and an option to open the current expression in the _Search_ view.
+You can write [content queries](/docs/content-query/) to search content. The expression should start with a **+** sign. You will get a list of suggestions and an option to open the current expression in the _Search_ view.
 
 ![Displaying search results](/img/admin-ui-command-palette.png "Displaying search results")
 

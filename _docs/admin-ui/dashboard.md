@@ -1,6 +1,6 @@
 ---
 title: "Dashboard customization"
-source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/docs/admin-ui-dashboard.md"
+source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/docs/admin-ui/dashboard.md"
 category: Admin UI
 version: v7.0
 tags: [admin ui, dashboard, personal settings]
@@ -9,7 +9,7 @@ description: A quick overview about the available dashboard settings
 
 # Dashboard customizations
 
-You can create or edit custom dashboards in your [personal settings](/docs/admin-ui-personal-settings/)'s `dashboards` field. The two available options are `globalDefault` (that will be displayed if you haven't entered into a repository) and `repositoryDefault` (this one can be overwritten on a repository level). These fields can contain a list of widget settings. Each widget should have a `title`, a `widgetType` and some `settings` that depends on the type. They can also have a `minWidth` property for the minimum width.
+You can create or edit custom dashboards in your [personal settings](/docs/admin-ui/personal-settings/)'s `dashboards` field. The two available options are `globalDefault` (that will be displayed if you haven't entered into a repository) and `repositoryDefault` (this one can be overwritten on a repository level). These fields can contain a list of widget settings. Each widget should have a `title`, a `widgetType` and some `settings` that depends on the type. They can also have a `minWidth` property for the minimum width.
 
 You can use some string expressions that will be replaced with the corresponding values in the content or the title. These phrases are: `{currentUserName}`, `{currentRepositoryName}`, and `{currentRepositoryUrl}`
 
