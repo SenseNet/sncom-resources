@@ -235,7 +235,7 @@ blockquote {
 
 .docs table {
     border-collapse: collapse;
-    margin: 0 auto;
+    // margin: 0 auto;
 }
 
 .docs table, .docs th, .docs td {
@@ -243,7 +243,9 @@ blockquote {
 }
 
 .docs table td {
-    padding: 5px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .docs img {
