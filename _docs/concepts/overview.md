@@ -33,6 +33,6 @@ The admin surface is a client that is built up on sensenet and uses the same Res
 <div class="docs-highlight">
     <i class="fa fa-info"></i>
     <p>
-        Take the next step with getting familiar with <a href="/docs/concepts/content-management-through-rest-api"><strong>Content management through REST API</strong></a> or do one of the <a href="/docs/tutorials"><strong>tutorials</strong></a> and create your first client app built upon sensenet.
+        Take the next step getting familiar with <a href="/docs/concepts/content-management-through-rest-api"><strong>Content management through REST API</strong></a> or do one of the <a href="/docs/tutorials"><strong>tutorials</strong></a> and create your first client app built upon sensenet.
     </p>
 </div>
