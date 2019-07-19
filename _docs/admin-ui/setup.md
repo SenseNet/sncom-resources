@@ -11,7 +11,9 @@ description: A quick overview about configuration files and managing them on the
 
 In general settings are created for administrators or editors to let them customize the behavior of a certain feature. Settings are stored as content in the Content Repository. The advantage of this is that changing a setting does not involve site restart and you can manage values in one central place instead of synchronizing them across web servers.
 
-// TODO: screenshot and text about the ui and how to use it
+![Setup dashboard](/img/setup-dashboard.png "Setup dashboard on the admin surface")
+
+As settings are simple text files, they can be edited in the admin surface's text editor. When you modify a settings file, the framework takes care of refreshing the values in the cache, so your features will automatically get the new values.
 
 ## Portal.settings {#portal-settings}
 
