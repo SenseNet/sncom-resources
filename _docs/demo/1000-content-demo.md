@@ -85,6 +85,6 @@ Document preview generation is switched on in this repository and as it is confi
 <div class="docs-highlight">
     <i class="fa fa-info"></i>
     <p>
-        As a next step continue <a href="/docs/tutorials/explore-1000-content-demo-repository">exploring this repository</a> through the <a href="admin.sensenet.com">admin surface</a> or you can digg a bit deeper <a href="/docs/tutorials/explore-1000-content-demo-repository#try-the-api">trying the APIs</a>. 
+        As a next step continue <a href="/docs/tutorials/explore-1000-content-demo-repository">exploring this repository</a> through the admin surface or you can digg a bit deeper <a href="/docs/tutorials/explore-1000-content-demo-repository#try-the-api">trying the APIs</a>. 
     </p>
 </div>
