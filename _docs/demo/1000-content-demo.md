@@ -10,7 +10,7 @@ hidden: true
 
 # 1000 content demo
 
-The 1000 content demo and test repository demonstrates a basic setup and content structure sensenet allowing to try out the content repository. It provides a good insight into the content structure of a common project giving the opportunity to verify the functionality making a proof of concept trying out the API and the admin surface. This enviroment is based on a daily build which means all the built-in demo content are reimported, the configurations are restored and the customer-created stuff are removed every day.
+The 1000 content demo and test repository demonstrates a basic setup of sensenet with a bunch of example content allowing to try out its capabilities. It provides a good insight into the content structure of a common project giving the opportunity to verify the functionality with making a proof of concept trying out the API and the admin surface. This enviroment is based on a daily build which means all the built-in demo content are reimported, the configurations are restored and the customer-created stuff are removed every day.
 
 <div class="docs-highlight">
     <i class="fa fa-info"></i>
@@ -62,11 +62,26 @@ Document preview generation is switched on in this repository and as it is confi
 
 **Number of content**: There're 982 items excluding and 2375 including system content in the top level container names Content (/Root/Content). In the first case System Folders (e.g. local groups) and Preview images don't count.
 
-**Size of the db**: x
+**Size of the db**: This demo enviroment gives us an insight into the possible storage level usage of a repository as well:
+
+| Whole database |   |
+| -------------- | - |
+| Db size [ALLOCATED] | 37 200 MB (33Gb db + 4Gb log) |
+| Db size [USED] | 18 420 MB |
+| Files table | 2 551 MB |
+| Versions table| 15 816 MB |
+
+
+| In the Content subtree (size, binary+indexdoc) |   |
+| ---------------------------------------------- | - |
+| All | 17 936 MB |
+| Docs| 17 575 MB |
+| Preview images | 361 MB |
+
 
 <div class="docs-highlight">
     <i class="fa fa-info"></i>
     <p>
-        As a next step you can continue <a href="/docs/tutorials/explore-1000-content-demo-repository">exploring this repository</a> using its url on the login form at <a href="admin.sensenet.com">admin.sensenet.com</a> or you can digg a bit deeper making a proof of concept application connected to this repository <a href="/docs/tutorials/explore-1000-content-demo-repository#try-the-api">trying the APIs</a>. 
+        As a next step continue <a href="/docs/tutorials/explore-1000-content-demo-repository">exploring this repository</a> through the <a href="admin.sensenet.com">admin surface</a> or you can digg a bit deeper <a href="/docs/tutorials/explore-1000-content-demo-repository#try-the-api">trying the APIs</a>. 
     </p>
 </div>
