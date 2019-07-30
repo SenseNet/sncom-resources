@@ -64,19 +64,22 @@ Document preview generation is switched on in this repository and as it is confi
 
 **Size of the db**: This demo enviroment gives us an insight into the possible storage level usage of a repository as well:
 
-| Whole database |   |
+#### Whole database
+
+|                |   |
 | -------------- | - |
-| Db size [ALLOCATED] | 37 200 MB (33Gb db + 4Gb log) |
-| Db size [USED] | 18 420 MB |
-| Files table | 2 551 MB |
-| Versions table| 15 816 MB |
+| **Db size** [ALLOCATED] | 37 200 MB (33Gb db + 4Gb log) |
+| **Db size** [USED] | 18 420 MB |
+| **Files table** | 2 551 MB |
+| **Versions table** | 15 816 MB |
 
+#### In the Content subtree (size, binary+indexdoc)
 
-| In the Content subtree (size, binary+indexdoc) |   |
+|  |   |
 | ---------------------------------------------- | - |
-| All | 17 936 MB |
-| Docs| 17 575 MB |
-| Preview images | 361 MB |
+| **All** | 17 936 MB |
+| **Docs** | 17 575 MB |
+| **Preview images** | 361 MB |
 
 
 <div class="docs-highlight">
