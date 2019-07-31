@@ -85,6 +85,6 @@ Document preview generation is switched on in this repository and as it is confi
 <div class="docs-highlight">
     <i class="fa fa-info"></i>
     <p>
-        As a next step continue exploring this demo repository</a> without registration <a href="/docs/tutorials/explore-1000-content-demo-repository/#adminui">on the admin surface</a> or through <a href="/docs/tutorials/explore-1000-content-demo-repository/#try-the-api">API calls</a>.
+        As a next step continue exploring this demo repository without registration <a href="/docs/tutorials/explore-1000-content-demo-repository/#adminui">on the admin surface</a> or through <a href="/docs/tutorials/explore-1000-content-demo-repository/#try-the-api">API calls</a>.
     </p>
 </div>
