@@ -9,7 +9,7 @@ description: This article describes the concept of our blob storage and the cust
 
 # Blob provider
 
-In **sensenet** all files are stored in the main [Content Repository](/docs/content-repository.md) database by default. All binaries, along with their metadata. In larger projects this can lead to a huge database, which requires a *large data storage* and sometimes additional *server licences*. To aid this scenario sensenet allows you to **store binaries outside of the database**, in an external storage. This article describes the concept of our blob storage and the customization options. Available blob providers for the *Enterprise Edition*:
+In **sensenet** all files are stored in the main [Content Repository](/docs/content-repository) database by default. All binaries, along with their metadata. In larger projects this can lead to a huge database, which requires a *large data storage* and sometimes additional *server licences*. To aid this scenario sensenet allows you to **store binaries outside of the database**, in an external storage. This article describes the concept of our blob storage and the customization options. Available blob providers for the *Enterprise Edition*:
 
 -   [MongoDB blob provider](/docs/mongodb-provider)
 -   [Azure blob provider](/docs/azureblob-provider) *(soon to be released)*
