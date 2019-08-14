@@ -29,8 +29,7 @@ layout: default
 <script>
   $(function(){
     var url = window.location.href;
-    var tag = url.split('#')[1];
-    
-    $('#' + tag.replace(' ', '-')).show();
+    var tag = url.split('#')[1].replace('+','-');
+    $('#' + tag).show();
   })
 </script>
