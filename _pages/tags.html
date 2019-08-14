@@ -6,7 +6,7 @@ layout: default
 
 {% assign tags =  site.docs | map: 'tags' | join: ','  | split: ',' | uniq %}
 {% for tag in tags %}
-  <div style="display: none" id="{{ tag }}">
+  <div style="display: none" id="{{ tag | url_encode }}">
     <div class='subtron'>
     <div class='container-narrow tags'>
       <h1>Tags/ {{ tag }}</h1>
