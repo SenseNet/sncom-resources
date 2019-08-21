@@ -99,7 +99,7 @@ You can also customize the list of allowed http headers for CORS requests (for e
 
 ```json
 {
-   AllowedHeaders: [ "X-Authentication-Type",
+   "AllowedHeaders": [ "X-Authentication-Type",
             "X-Refresh-Data", "X-Access-Data",
             "X-Requested-With", "Authorization", "Content-Type" ]
 }
