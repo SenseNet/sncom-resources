@@ -60,7 +60,7 @@ The document libraries mainly contain Microsoft Office word, excel and powerpoin
 
 Document preview generation is switched on in this repository and as it is configured in the built-in setting two preview images will be generated in one round. The first two pages of the demo files are automatically generated when the repository is created.
 
-**Number of content**: There're 982 items excluding and 2375 including system content in the top level container names Content (/Root/Content). In the first case System Folders (e.g. local groups) and Preview images don't count.
+**Number of content**: There're 982 items excluding and 2375 including system content in the top level container named Content (/Root/Content). In the first case System Folders (e.g. local groups) and Preview images don't count.
 
 **Size of the db**: This demo enviroment gives us an insight into the possible storage needs of a repository as well:
 
