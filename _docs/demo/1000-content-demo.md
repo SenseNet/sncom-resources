@@ -23,7 +23,7 @@ This demo setup provides a large array of various types of content from demo use
 
 <ul class="doc-innerlist">
     <li>
-        <strong>3 demo users</strong> for testing the possible user tasks and jobs. Business Cat is an admin user with full access, Developer Dog is developer user who has control only over the content types, the settings and can see the version info and Editor Manatee is a content editor who can manage the non-system content items, build or save custom search querys.
+        <strong>3 demo users</strong> for testing the possible user tasks and jobs. Business Cat is an admin user with full access, Developer Dog is developer user who has control only over the content types, the settings and can see the version info and Editor Manatee is a content editor who can manage the non-system content items, build or save custom search queries.
     </li>
     <li>
         <strong>3 demo groups</strong> to demonstrate possible roles: one for admins, one for developers and one for editors. Each group has one member of the above users.
