@@ -149,7 +149,7 @@ To add a new text extractor or override an existing one you will need to configu
 
 ```json
 {
-	TextExtractors: {
+	"TextExtractors": {
 		"pdf": "MyNamespace.PdfTextExtractor",
 		"docx": "MyNamespace.DocxTextExtractor"
 	}
