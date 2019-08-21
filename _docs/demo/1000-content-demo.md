@@ -58,7 +58,7 @@ This demo setup provides a large array of various types of content from demo use
 
 The document libraries mainly contain Microsoft Office word, excel and powerpoint files, pdf's and some simple text files. They're not only showing variety of types but also are written in different languages, so you're able to check out search capabitities with special characters and symbols as well.
 
-Document preview generation is switched on in this repository and as it is configured in the built-in setting two preview images will be generated in one round. The first two pages of the demo files are automatically generated when the repository is created.
+Document preview generation is switched on in this repository and as it is configured in the built-in setting, two preview images will be generated in one round. The first two pages of the demo files are automatically generated when the repository is created.
 
 **Number of content**: There're 982 items excluding and 2375 including system content in the top level container named Content (/Root/Content). In the first case System Folders (e.g. local groups) and Preview images don't count.
 
