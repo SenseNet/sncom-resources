@@ -14,7 +14,7 @@ sensenet is a content services platform mainly for developers and development co
 
 ![SNaaS Overview](/img/overview.png "Overview of the sensenet as a service model")
 
-The *content repository* in this case is created, hosted and supported by sensenet, you don't have to bother neither with the installation process nor with the later upgrades, just to complete a few-click registration. After getting the url of your content repository instance you can start exploring the capabilities of sensenet immediately. Go to [https://www.sensenet.com/sign-up/](https://www.sensenet.com/sign-up/) and create your repository free.
+The *content repository* in this case is created, hosted and supported by sensenet, you don't have to bother neither with the installation process nor with the later upgrades, just complete a few-click registration and you're good to go. After getting the url of your content repository instance you can start exploring the capabilities of sensenet immediately. Go to [https://www.sensenet.com/sign-up/](https://www.sensenet.com/sign-up/) and create your repository for free.
 
 <div class="docs-highlight">
     <i class="fa fa-info"></i>
