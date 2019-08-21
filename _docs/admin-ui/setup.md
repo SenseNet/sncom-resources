@@ -89,7 +89,7 @@ If you need to, you may customize the list of allowed methods (http verbs) on yo
 
 ```json
 {
-   AllowedMethods: [ "GET", "POST", "PATCH", "DELETE", "MERGE", "PUT" ]
+   "AllowedMethods": [ "GET", "POST", "PATCH", "DELETE", "MERGE", "PUT" ]
 }
 ```
 
