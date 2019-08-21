@@ -49,6 +49,6 @@ With sensenet services layer, you do not need a UI to manage content at all, bec
 <div class="docs-highlight">
     <i class="fa fa-info"></i>
     <p>
-        Take the next step become familiar with <a href="/docs/concepts/content-management-through-rest-api"><strong>Content management through REST API</strong></a> or complete one of the <a href="/docs/tutorials"><strong>tutorials</strong></a> and create your first client app built upon sensenet.
+        Take the next step to become familiar with <a href="/docs/concepts/content-management-through-rest-api"><strong>Content management through REST API</strong></a> or complete one of the <a href="/docs/tutorials"><strong>tutorials</strong></a> and create your first client app built upon sensenet.
     </p>
 </div>
