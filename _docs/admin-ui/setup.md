@@ -89,7 +89,7 @@ If you need to, you may customize the list of allowed methods (http verbs) on yo
 
 ```json
 {
-   AllowedMethods: [ "GET", "POST", "PATCH", "DELETE", "MERGE", "PUT" ]
+   "AllowedMethods": [ "GET", "POST", "PATCH", "DELETE", "MERGE", "PUT" ]
 }
 ```
 
@@ -99,7 +99,7 @@ You can also customize the list of allowed http headers for CORS requests (for e
 
 ```json
 {
-   AllowedHeaders: [ "X-Authentication-Type",
+   "AllowedHeaders": [ "X-Authentication-Type",
             "X-Refresh-Data", "X-Access-Data",
             "X-Requested-With", "Authorization", "Content-Type" ]
 }
@@ -149,7 +149,7 @@ To add a new text extractor or override an existing one you will need to configu
 
 ```json
 {
-	TextExtractors: {
+	"TextExtractors": {
 		"pdf": "MyNamespace.PdfTextExtractor",
 		"docx": "MyNamespace.DocxTextExtractor"
 	}

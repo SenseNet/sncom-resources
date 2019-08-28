@@ -46,7 +46,7 @@ layout: default
     </aside>
     <ul class="docs-tags">
       {% for tag in page.tags %}
-      <li class="docs-tag"><i class="fa fa-tag"></i><a href="/tags#{{ tag }}">{{ tag }}</a></li>
+      <li class="docs-tag"><i class="fa fa-tag"></i><a href="/tags#{{ tag | url_encode }}">{{ tag }}</a></li>
       {% endfor %}
     </ul>
 
