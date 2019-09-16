@@ -1,46 +1,32 @@
 ---
-title: August 2019
+title: September 2019
 ---
 
 Another 4 weeks went by, here are the changes we made 👇🏻
 
 ## Admin-ui
-
-The first major version of the new admin surface is out with this release. 🥳 
-It is (and will be) available on [admin.sensenet.com](https://admin.sensenet.com). Feel free to try it out and send us feedback. 🙋‍
-
-## Monorepo
-
-- material-ui is upgraded to the latest
-- all the package readme files are now unified, texts are polished and the badges are updated
+ - Fine-tuned the default dashboard content 🛠
+ - Breadcrumbs refactor - We've replaced our own breadcrumb implementation with the built-in [Material Breadcumbs](https://material-ui.com/components/breadcrumbs/) 🍞
+ - Configurable permissions for the custom drawer items
 
 ## Packages
 
-### @sensenet/client-core@2.2.0
-- ODataBuilder URI component returns now an encoded url 👀
+### @sensenet/client-utils@
+ - fixed the filterAsync() return type (from T[] to Promise<T[]>)
 
-### @sensenet/sn-app@1.0.0
-- settings are connected to settings docs
-- favicon is added and set
-- login form is now using the material-ui validation and error messages
-- login form is redesingned: future buttons and links are added, colors are updated, etc. ✨
-- info dialog shows the fields with the browse view instead of a hardcoded field list
-- drawer is refactored and can be now customized in many ways
-- a close button is added to the document viewer
+### @sensenet/client-core@
 
-### @sensenet/default-content-types@2.0.0
+### @sensenet/default-content-types@
 - enum values are coming back as enum arrays from the server
 
-### @sensenet/controls-react@3.1.0
+### @sensenet/controls-react@
 - content load in reference grid can give back results array or one content
 - reference grid is fixed when no allowed child types are present
 
-### @sensenet/document-viewer-react@1.2.0
+### @sensenet/document-viewer-react@
 - fix opening file from search dropdown
 - document viewer can be closed by hitting 'esc' 💆‍
 - fix document paging
 
-### @sensenet/react-component-docs@2.4.1
-- fix document viewer example to work with both id and path
  
-You can find the release [here](https://github.com/SenseNet/sn-client/releases/tag/2019-08-21)
+You can find the release [here](https://github.com/SenseNet/sn-client/releases/tag/2019-09-18)
