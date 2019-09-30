@@ -20,7 +20,7 @@ This year we want to take it to the next level and increase participation in our
 ## How to participate
 
 - Register for the event on the [Hacktoberfest website](https://hacktoberfest.digitalocean.com/register).
-- Share your contact details with us via [this form] so we will know where to send your t-shirt when Hacktoberfest ends.
+- Share your contact details with us via [this form](https://www.sensenet.com/Hacktoberfest2019) so we will know where to send your t-shirt when Hacktoberfest ends.
 - Make at least one pull-request in one of the repositories under the Sense/Net organization. Note that contributions don’t have to come in the form of code. Improving documentation is also a great place to start.
 
 Since we keep and manage our backlog on github, you can run through the possible tasks easy. Not just the source code but all the documentation and even this blog post is stored under one of our public github repositories so feel free to discover them. Any contributions are welcome no contribution is too small. To make the process smoother we marked couple of our already existing issues with the ```hacktoberfest``` label. Exploring [the list of these labelled issues](https://github.com/search?q=org%3Asensenet+label%3A%22hacktoberfest%22&type=Issues&label=hacktoberfest&utf8=%E2%9C%93) could be a good starting point.
