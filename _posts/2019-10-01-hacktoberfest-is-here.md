@@ -15,8 +15,6 @@ Open source and community are key for us since the beginning of product developm
   <img src="../img/posts/hacktoberfest2019.png">
 </p>
 
-# Hacktoberfest 2019 is here
-
 Open source and community are key for us since the beginning of product development at Sense/Net. Our company is very committed to support the movement with helping developers expanding their skill set and make the community bigger and bigger, not just around sensenet, but globally.
 
 This year we want to take it to the next level and increase participation in our project by encouraging developers to contribute. The first 100 participants who makes a pull request to any of the repositories under the Sense/Net organization on GitHub between October 1 and October 31 will receive a sensenet #hacktoberfest limited edition T-shirt.
