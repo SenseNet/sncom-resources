@@ -29,7 +29,7 @@ If you'd like to know more about sensenet components, check [here][36459043].
 #### Measure *all the things*
 The team wanted to know if we were developing the right features for the right set of people. We needed better channels for communication and lots of data. Right now we aggregate a fair amount of [GitHub][bebd2231] statistics with [NuGet][80c6156c], [npm][ffdb2e87], [Twitter][0c3b4e3a], [Facebook][b175e3d7] and Google Analytics data so we can have a clearer picture of our "community health". The next step is product-related usage statistics: it is crucial to know how people use our product and how can we create better user experiences.
 
-  [bebd2231]: https://github.com/SenseNet/sensenet "sensenet Github"
+  [bebd2231]: https://github.com/SenseNet/sensenet "sensenet GitHub"
   [80c6156c]: nuget.org/profiles/sensenet "sensenet Nuget"
   [ffdb2e87]: https://www.npmjs.com/org/sensenet "sensenet on npm"
   [0c3b4e3a]: https://twitter.com/sensenet "Twitter"

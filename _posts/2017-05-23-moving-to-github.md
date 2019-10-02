@@ -5,7 +5,7 @@ image: "/img/posts/tw_sn_github.png"
 tags: [git, github, stack overflow, codeplex, gitter, community, blog]
 ---
 
-We moved. To **Github**, with our code and management tools… and our documentation **and** this blog(!); and to Stack Overflow with your questions and our answers.
+We moved. To **GitHub**, with our code and management tools… and our documentation **and** this blog(!); and to Stack Overflow with your questions and our answers.
 
 ---
 

@@ -107,7 +107,7 @@ export class App {
     config.map([
       { route: ['', 'welcome'], name: 'welcome',      moduleId: PLATFORM.moduleName('./welcome'),     title: 'Welcome',      settings: { show: true, roles: [] },                 nav: true},
       { route: 'login',         name: 'login',        moduleId: PLATFORM.moduleName('./login'),       title: 'Log in',       settings: { show: true, roles: [ROLE_VISITOR_ONLY] },nav: true},
-      { route: 'users',         name: 'users',        moduleId: PLATFORM.moduleName('./users'),       title: 'Github Users', settings: { show: true, roles: [ROLE_LOGGED_IN] },   nav: true},
+      { route: 'users',         name: 'users',        moduleId: PLATFORM.moduleName('./users'),       title: 'GitHub Users', settings: { show: true, roles: [ROLE_LOGGED_IN] },   nav: true},
       { route: 'child-router',  name: 'child-router', moduleId: PLATFORM.moduleName('./child-router'),title: 'Child Router', settings: { show: true, roles: [] },   nav: true},
     ]);
 
@@ -235,7 +235,7 @@ After running ``npm run start`` your application should be available by default 
   configureRouter(config: RouterConfiguration, router: Router) {
     config.map([
       { route: ['', 'welcome'], name: 'welcome',      moduleId: PLATFORM.moduleName('./welcome'),      settings: {roles: []}, nav: true, title: 'Welcome' },
-      { route: 'users',         name: 'users',        moduleId: PLATFORM.moduleName('./users'),        settings: {roles: []}, nav: true, title: 'Github Users' },
+      { route: 'users',         name: 'users',        moduleId: PLATFORM.moduleName('./users'),        settings: {roles: []}, nav: true, title: 'GitHub Users' },
       { route: 'child-router',  name: 'child-router', moduleId: PLATFORM.moduleName('./child-router'), settings: {roles: []}, nav: true, title: 'Child Router' }
     ]);
     this.router = router;
