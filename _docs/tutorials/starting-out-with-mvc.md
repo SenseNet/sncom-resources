@@ -32,19 +32,19 @@ All the sensenet Content-related operations (like content Save or Load) are perf
 ## Prerequisites
 You will need a basic MVC project to begin with and install one or more sensenet components. 
 
-> For the purpose of this guide you will need the basic **sensenet Services** package and also the [WebPages](https://community.sensenet.com/docs/install-webpages-from-nuget/) component, because it will let you sign in easily and monitor the created content items.
+> For the purpose of this guide you will need the basic **sensenet Services** package, because it will let you sign in easily and monitor the created content items.
 
 There are two options here:
 
-- Install [sensenet Services from NuGet](https://community.sensenet.com/docs/install-sn-from-nuget) and also the [WebPages](https://community.sensenet.com/docs/install-webpages-from-nuget/) component: this way you will create a brand new MVC application, pull in the necessary packages from NuGet and make a few modifications manually.
-- Or you can copy one of the prebuilt [sensenet project templates](https://github.com/SenseNet/sn-vs-projecttemplates). Those templates contain the **same NuGet packages**, they just save you the time of manually installing them. Our suggestion is to start with the one that contains the [Services and WebPages](https://github.com/SenseNet/sn-vs-projecttemplates/tree/master/src/SnWebApplicationWithWebPages) packages. The steps in this case:
+- Install [sensenet Services from NuGet](https://community.sensenet.com/docs/install-sn-from-nuget) component: this way you will create a brand new MVC application, pull in the necessary packages from NuGet and make a few modifications manually.
+- Or you can copy one of the prebuilt [sensenet project templates](https://github.com/SenseNet/sn-vs-projecttemplates). Those templates contain the **same NuGet packages**, they just save you the time of manually installing them.The steps in this case:
      1. copy the template
      2. build the solution
      3. execute the **same install commands** as at the end of the install guides above. These commands will create a database for you and import the necessary content items (please take a look at the install guides above for more details). In case you chose the two main packages, this means the following commands:
 
         ```
         snadmin install-services
-        snadmin install-webpages
+   
         ```
 
 After the steps above, you will have an MVC application with sensenet 7.0 integrated. The remaining part of this article is about how to add a basic CRUD functionality for content items in Visual Studio.
