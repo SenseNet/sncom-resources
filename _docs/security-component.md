@@ -136,7 +136,7 @@ context.MoveEntity(entityId, targetId);
 context.DeleteEntity(entityId);
 // modify the owner of the entity
 context.ModifyEntityOwner(entityId, ownerId);
-// check if the entity inherits permissions from it's parent
+// check if the entity inherits permissions from its parent
 context.IsEntityInherited(entityId);
 // Check if the entity actually exists. If it cannot be found, this method
 // performs a callback to the host application for the entity if necessary.

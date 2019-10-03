@@ -155,7 +155,7 @@ You can not manage members directly from Word but you can still see who is avail
 
 Tasks are also important content of a workspace. You have full control on managing tasks in the current workspace within Office.
 
-You can set a task completed by clicking the checkbox next to it's title. An empty check box means that it's state is **Pending**. A checked task refers to a **Completed** task. In any other cases, you'll see a filled checkbox. Depending on the status of the task an icon is placed next to the checkbox to visualize it's state.
+You can set a task completed by clicking the checkbox next to its title. An empty check box means that its state is **Pending**. A checked task refers to a **Completed** task. In any other cases, you'll see a filled checkbox. Depending on the status of the task an icon is placed next to the checkbox to visualize its state.
 
 In the following table you can find the proper mappings between the fields of Task Content Type and Office's properties:
 
