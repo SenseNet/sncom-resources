@@ -16,7 +16,7 @@ First of all you need a sensenet instance. You can create your own from GitHub o
 
 ## Use our starter
 
-To make things easier, we created a boilerplate app. It contains an example Hello World React SPA with sensenet repository login, written in Typescript. It is a template repository that you can find here [sn-react-typescript-boilerplate](https://github.com/SenseNet/sn-react-typescript-boilerplate). _If you don't know how to use a template repository check this [article](https://help.github.com/en/articles/creating-a-repository-from-a-template)_.
+To make things easier, we created a boilerplate app. It contains an example Hello World React SPA with sensenet repository login, written in Typescript. It is a template repository that you can find here [sn-react-typescript-boilerplate](https://github.com/SenseNet/sn-client/tree/master/examples/sn-react-typescript-boilerplate). _If you don't know how to use a template repository check this [article](https://help.github.com/en/articles/creating-a-repository-from-a-template)_.
 
 ## Install and start
  
