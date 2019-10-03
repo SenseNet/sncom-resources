@@ -93,7 +93,7 @@ To use this newly created action codebehind you need to do the following:
 
 - Find the related application: _/Root/Sites/Default_Site/NewsDemo/(apps)/Article/Edit_
 - Make sure that it is in the `ListItem` scenario: the Scenario property of the application should contain the ListItem name (this is necessary only to make sure that the action will show up in this particular action menu).
-- Set the **Action type name** property of the application to the prevously created `ArticleEditAction` class name. This way when the system loads the Edit application, it will know what action class is connected to it.
+- Set the **Action type name** property of the application to the previously created `ArticleEditAction` class name. This way when the system loads the Edit application, it will know what action class is connected to it.
 
 Now check the http://localhost/NewsDemo. The _Manage Content_ action menus will contain the Edit action but it will be disabled because of our initialization logic.
 
@@ -167,7 +167,7 @@ The JavaScript code for the action should take this value into account and redir
 In this sample we do not use any predefined application as in the previous section. To provide a simple client action you need to create a content of the type _Application_. Please follow the steps below:
 
 - Navigate to _/Root/Sites/Default_Site/NewsDemo/(apps)/Article_
-- Create an _Application_ with the folowing properties
+- Create an _Application_ with the following properties
     - **Name**: Hello
     - **Scenario**: ListItem
     - **ActionTypeName**: HelloClientAction

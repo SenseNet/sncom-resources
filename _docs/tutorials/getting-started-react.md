@@ -20,7 +20,7 @@ To make things easier, we created a boilerplate app. It contains an example Hell
 
 ## Install and start
  
-After cloning the generated repository run `yarn install` to install the dependecies and when it is finished start the application with `yarn start` command. You will see a login screen where you can type your username, password and repository url. You can log in with `!!USERNAME` and `!!PASSWORD`.
+After cloning the generated repository run `yarn install` to install the dependencies and when it is finished start the application with `yarn start` command. You will see a login screen where you can type your username, password and repository url. You can log in with `!!USERNAME` and `!!PASSWORD`.
 
 ![login screen](/img/posts/login-screen.png)
 
