@@ -72,7 +72,7 @@ To avoid CORS issues, we will redirect OData and Session Management requests fro
 
 ### Using the Repository as an injectable service
 
-To interact with a sensenet Repository, you have to use a *Repository* instance. There are predefined Repository configurations in the *sn-client-js* (like the default ``SnRepository`` that we will use, or ``Mocks.MockRepository`` for testing). If you want to write your components in a decoupled and testable way it's be a good idea to inject the *base* repository class, called ``Repository.BaseRepository`` into them.
+To interact with a sensenet Repository, you have to use a *Repository* instance. There are predefined Repository configurations in the *sn-client-js* (like the default ``SnRepository`` that we will use, or ``Mocks.MockRepository`` for testing). If you want to write your components in a decoupled and testable way it's a good idea to inject the *base* repository class, called ``Repository.BaseRepository`` into them.
 Next we have to configure Aurelia's DI to inject the right Repository.BaseRepository implementation at runtime. Open ``./src/main.ts`` file, and insert the following code before ``aurelia.start()``
 
 ```ts

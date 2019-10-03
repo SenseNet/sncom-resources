@@ -15,7 +15,7 @@ You can use some string expressions that will be replaced with the corresponding
 
 ## Markdown widget
 
-This widget type has only a `content` field in it's settings that is a _markdown content_, the widget will simply display it. You can also use HTML syntax in markdown.
+This widget type has only a `content` field in its settings that is a _markdown content_, the widget will simply display it. You can also use HTML syntax in markdown.
 
 ## Query widget
 

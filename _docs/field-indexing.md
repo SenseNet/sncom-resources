@@ -157,7 +157,7 @@ The following is a list of the properties that are indexed regardless of Field i
 - **AllText**: the concatenated text extract of Content Field values. Format of a text extract of a Field is defined by the type of IndexHandler (ie.: HyperLinkIndexHandler returns the hyperlink's href, target, text and title attributes' concatenation). This technical Field is analyzed by *StandardAnalyzer*, and query texts are interpreted as queries in this Field when no query Field is selected.
 - **Path**: (node.Path) path of the Content.
 - **ParentId**: (node.ParentId) id of the parent Content of the Content.
-- **IsLastDraft**: value indicating that Content is last public version and it's status is public (node.IsLastPublicVersion && node.Version.Status == VersionStatus.Approved).
+- **IsLastDraft**: value indicating that Content is the last public version and its status is public (node.IsLastPublicVersion && node.Version.Status == VersionStatus.Approved).
 - **IsLastPublic**: (node.IsLatestVersion) value indicating that the Content is the last version (version ID equals to the last minor version ID).
 
 ## for Developers

@@ -42,13 +42,13 @@ This method provides an extra line of defense for keeping mission critical conte
 
 ### Public visibility
 
-Vistors in general are only allowed to view last public versions of a content. This is controlled by the *Open minor* permissions: a user that does not possess the open minor permission for a content will only see the last public version of a content, and will never see any changes that correspond to a draft version or that are not yet approved.
+Vistors in general are only allowed to view the last public versions of a content. This is controlled by the *Open minor* permissions: a user who does not possess the open minor permission for a content will only see the last public version of a content, and will never see any changes that correspond to a draft version or that are not yet approved.
 The other important thing here to bear in mind is that if a document gets rejected it does not mean that the document is not visible for the public. It only means that the last version that was rejected will not be visible to the public. So for example:
 1. Set approval on a document library to true.
-2. Upload a document - it's state will be pending for approval (you can check it out on versions tab): only users with open minor permissions will be able to see it.
-3. Send it to approval using the approval workflow. If the approver rejects it, it still not be visible for the public - or users that have no open minor permissions. If the approver approves it, it will be visible for the public.
-4. Edit the document and make some modifications. It's state will be pending for approval once again. Users with no open minor permissions are able to see the document but not the latest modifications: that is they see the last public version, and not the one that is pending for approval.
-5. Send the document for approval. If the approver rejects it: users without open minor permission will still not be able to view the modifications that have been rejected: only the last public version. If the approver approves the document: users without open minor permissions will finally be able to see the modifications as well, because at the moment of approval the last (yet pending) version became the last public version.
+2. Upload a document - its state will be pending for approval (you can check it out on the versions tab): only users with open minor permissions will be able to see it.
+3. Send it to approval using the approval workflow. If the approver rejects it, it still won't be visible to the public - or users that have no open minor permissions. If the approver approves it, it will be visible to the public.
+4. Edit the document and make some modifications. Its state will be pending for approval once again. Users with no open minor permissions are able to see the document but not the latest modifications: that is they see the last public version, and not the one that is pending for approval.
+5. Send the document for approval. If the approver rejects it: users without open minor permission will still not be able to view the modifications that have been rejected: only the last public version will be visible. If the approver approves the document: users without open minor permissions will finally be able to see the modifications as well, because at the moment of approval the last (yet pending) version becomes the last public version.
 
 ### Content states
 

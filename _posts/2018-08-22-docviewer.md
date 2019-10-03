@@ -36,11 +36,11 @@ I asked the participants to follow through these steps:
 3: Go to page 2 and 3 then go back to the top of the page
 4: Open the comment section
 5: Zoom in and out
-6: Rotate the page to the left and then back to it's original state
+6: Rotate the page to the left and then back to its original state
 
 
 ## Iteration
-After finishing the user tests I evaluated the answers and there was a few things that needed to be changed. First of all the left sidebar icon was very unfamiliar for most of the participants and had a hard time finding it, so I had to find a more straightforward icon. Most participants liked the comment function and said it would benefit them. Also most of the participants didn't liked that the rotate buttons were on the bottom of the page, so I moved it to the top navbar.
+After finishing the user tests I evaluated the answers and there were a few things that needed to be changed. First of all, the left sidebar icon was very unfamiliar for most of the participants and they had a hard time finding it, so I had to find a more straightforward icon. Most participants liked the comment function and said it would benefit them. Also, most of the participants didn't like that the rotate buttons were on the bottom of the page, so I moved them to the top navbar.
 
 ![Iteration](/img/posts/Docviewer_mockup.png "Iterated design")
 
