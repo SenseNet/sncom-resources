@@ -9,7 +9,7 @@ description: sensenet provides a way to access your content via WebDAV, allowing
 
 # WebDAV
 
-sensenet provides a way to access your content via WebDAV, allowing Microsoft Office, Windows Explorer, Total Commander, Visual Studio, etc to open and edit content residing in a sensenet [Content Repository](/docs/content-repository). The Content Repository can be even mapped as a drive. Office documents can be opened directly from the portal surface with WebDAV. When a document opened via WebDAV is saved, it is automatically versioned, permissions are automatically checked, etc. Drag and drop move and copy also works.
+sensenet provides a way to access your content via WebDAV, allowing Microsoft Office, Windows Explorer, Total Commander, Visual Studio, etc to open and edit content residing in a sensenet [Content Repository](/docs/content-repository). The Content Repository can be even mapped as a drive. Office documents can be opened directly from the portal surface with WebDAV. When a document opened via WebDAV is saved, it is automatically versioned, permissions are automatically checked, etc. Drag and drop, move and copy also works.
 
 ### Installation
 
@@ -20,7 +20,7 @@ WebDAV automatically works in sensenet, but there are a few things you may have 
 sensenet supports the following authentication schemes with WebDAV:
 
 - **Windows authentication**
-  Set up both your sensenet site content to use *Windows* authentication, and your IIS web site to allow Windows authentication. Make sure your AD user is present in the Content Repository under the appropriate domain. You will be able to access your fodlers and files in the Content Repository using your AD user and password.
+  Set up both your sensenet site content to use *Windows* authentication, and your IIS web site to allow Windows authentication. Make sure your AD user is present in the Content Repository under the appropriate domain. You will be able to access your folders and files in the Content Repository using your AD user and password.
 
 - **Basic authentication**
   Set up your sensenet Site to use *Forms* authentication, and your IIS web site to allow *Anonymous* authentication only (do not allow Windows in IIS and allowing Basic is not necessary). You will be able to access the Content Repository using your portal user and password. Please note that operations that use Basic authentication over a non-SSL HTTP connection are disabled by default by your operating system. To enable WebDAV for non-SSL sites with Basic authentication refer to the following article:  [http://support.microsoft.com/kb/2123563](http://support.microsoft.com/kb/2123563).
@@ -61,7 +61,7 @@ From here onwards you can use this drive to manage your [Content Repository](/do
 
 ### Uploading different file types
 
-The sensenet [Content Repository](/docs/content-repository) has much more features than a simple file system. It can distinguish between different file types for example. An image for example in a regular file system is a simple file with .png or .jpg extension, an image in the sensenet Content Repository however is a content of *Image* type, which is derived from the *File* type. Therefore when using the Content Repository via WebDAV it is desired to connect files with different extensions to the appropriate [Content Type](/docs/content-type). This is done using the same setting that is used by the upload function on the ui:
+The sensenet [Content Repository](/docs/content-repository) has much more features than a simple file system. It can distinguish between different file types for example, an image in a regular file system is a simple file with .png or .jpg extension, an image in the sensenet Content Repository however is a content of *Image* type, which is derived from the *File* type. Therefore when using the Content Repository via WebDAV it is desired to connect files with different extensions to the appropriate [Content Type](/docs/content-type). This is done using the same setting that is used by the upload function on the ui:
 
 ```json
 UploadFileExtensions: {

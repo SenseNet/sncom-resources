@@ -19,7 +19,7 @@ Choice field as a dropdownlist can be used just the same as a common html select
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/fields/Checkboxes.png" style="margin: 20px auto" />
 
-The chosen option is indexed in the fulltext index by all its localized values and texts (so you can search by either value or text) and indexed in field index by its value. If you want to sort list items by a choice field, they will be ordered by the selected options value and the items with extravalue will be at the end of the list.
+The chosen option is indexed in the fulltext index by all its localized values and texts (so you can search by either value or text) and indexed in field index by its value. If you want to sort list items by a choice field, they will be ordered by the selected options value and the items with extra value will be at the end of the list.
 
 ## Enum options
 
