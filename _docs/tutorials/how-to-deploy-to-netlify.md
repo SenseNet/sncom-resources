@@ -21,7 +21,7 @@ There are two ways you can host your site.
 
 ## Git Repository Setup
 
-We recommend you to use our GitHub template that you can find here [sn-react-typescript-boilerplate](https://github.com/SenseNet/sn-client/tree/master/examples/sn-react-typescript-boilerplate). _If you don't know how to use a template repository check this [article](https://help.github.com/en/articles/creating-a-repository-from-a-template)_.
+We recommend you to use our starter template that you can find here [sn-react-typescript-boilerplate](https://github.com/SenseNet/sn-client/tree/master/examples/sn-react-typescript-boilerplate). _If you don't know how to use a template repository check this [article](https://help.github.com/en/articles/creating-a-repository-from-a-template)_.
 
 After you have your own git repository:
 
