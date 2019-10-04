@@ -20,7 +20,7 @@ Changes are updated with *batch synchronization* meaning that all changes are sy
 
 Some other Active Directory related features include the following:
 
-- **eDir to Portal sync**: Novel eDir users can be synchronised to the portal as well.
+- **eDir to Portal sync**: Novel eDir users can be synchronized to the portal as well.
 - **Forms authentication from AD**: portal users can be authenticated against an AD on login regardless of login type (NTLM or Forms).
 
 By setting up Active Directory synchronization users gain the following advantages:
