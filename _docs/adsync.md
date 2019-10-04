@@ -154,7 +154,7 @@ The following xml is a simple example for setting up forms authentication from A
 ```
 
 ### Logging and Error Handling
-Every initiated action is logged in the system. Should an error occur during an action the execution will not hang instead the error is logged and the execution proceeds to the next action. Every single action and error is timestamped. In case of Portal to AD sync there is a possibility to redo/retry an unsuccessfully executed action.
+Every initiated action is logged in the system. Should an error occur during an action, the execution will not hang. Instead the error is logged and the execution proceeds to the next action. Every single action and error is timestamped. In case of Portal to AD sync there is a possibility to redo/retry an unsuccessfully executed action.
 
 ##### AD to Portal log
 A log file with a time stamp in its name is created next to the executor every time a synchronization is performed.

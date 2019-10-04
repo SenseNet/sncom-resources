@@ -9,7 +9,7 @@ description: in the sensenet Content Repository it is possible to define restric
 
 # Allowed Child Types
 
-The sensenet [Content Repository](/docs/content-repository) stores different [Content Types](/docs/content-type). One of the major differences between a file system and the Content Repository, is that in a file system you can store any tpye (file or folder) anywhere, whereas in the sensenet Content Repository it is possible to define restrictions on what Content Types the different containers can contain. This allows portal builders to create a much more precisely defined [Content](/docs/content) structure and provide the users a better user experience when creating new content under different places in the Content Repository.
+The sensenet [Content Repository](/docs/content-repository) stores different [Content Types](/docs/content-type). One of the major differences between a file system and the Content Repository, is that in a file system you can store any type (file or folder) anywhere, whereas in the sensenet Content Repository it is possible to define restrictions on what Content Types the different containers can contain. This allows portal builders to create a much more precisely defined [Content](/docs/content) structure and provide the users a better user experience when creating new content under different places in the Content Repository.
 
 You can configure Allowed Child Types in the Content Type Definition of the different types. For example a MemoList can only contain Memos, a Document Library can only contain Folders and Files, etc. These settings can be overridden on the specific Content, for example you can modify any of your Document Libraries to contain Images, too. There are also some special types that behave differently: a Folder for example can never define child types, it will always inherit its parent settings. A SystemFolder will allow every type by default and can be created anywhere in the repository.
 
@@ -55,7 +55,7 @@ The allowed child types definition on a content (whether it comes from CTD or fr
 
 ## Permissions for creating a type
 
-A Content Type in the new menu will only show up if the user has See permissions on the Content Type node. For example to create a new Car anywhere you need to have **See** permissions on the */Root/System/Schema/ContentTypes/GenericContent/ListItem/Car* content.
+A Content Type in the new menu will only show up if the user has to see permissions on the Content Type node. For example to create a new Car anywhere you need to have **See** permissions on the */Root/System/Schema/ContentTypes/GenericContent/ListItem/Car* content.
 
 ## Content allowing all types
 
@@ -75,7 +75,7 @@ A Folder or a Page always inherits these settings from its parent Content. You c
 
 ## Special type: SystemFolder
 
-A SystemFolder can be created anywhere in the Content Repository, regardless of its parent content's allowed child types settings, if the user is granted see permissions on the SystemFolder Content Type. This ensures that developers can create (apps) SystemFolders and other system-used SystemFolders without having to modify the allowed child types of the individual content. An (apps) folder (containing [Applications](/docs/application)) can basically be created anywhere in the Content Repository and this applies to SystemFolders in general. Also, a SystemFolder does not specify any allowed types by default, so all types are allowed under a new SystemFolder. Allowed types however can be configured for a SystemFolder instance.
+A SystemFolder can be created anywhere in the Content Repository, regardless of its parent content's allowed child types settings, if the user is granted to see permissions on the SystemFolder Content Type. This ensures that developers can create (apps) SystemFolders and other system-used SystemFolders without having to modify the allowed child types of the individual content. An (apps) folder (containing [Applications](/docs/application)) can basically be created anywhere in the Content Repository and this applies to SystemFolders in general. Also, a SystemFolder does not specify any allowed types by default, so all types are allowed under a new SystemFolder. Allowed types however can be configured for a SystemFolder instance.
 
 ## for Developers
 

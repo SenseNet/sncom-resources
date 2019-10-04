@@ -29,9 +29,9 @@ You can set up a `browseType` - it can be `explorer` (a tree with a content list
 
 You can enable or disable the drawer, change the drawer type and define a list of preconfigured items to display. The drawer types are:
 
-- temporary, useful for mobile devices.
-- permanent with icons and text.
-- mini-variant whitch displays only the icon by default but can be expanded.
+- temporary, useful for mobile devices
+- permanent with icons and text
+- mini-variant which displays only the icon by default but can be expanded
 
 ### Command Palette
 
