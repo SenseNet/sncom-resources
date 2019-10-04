@@ -39,7 +39,7 @@ You can enable or disable the [command palette](/docs/admin/ui-command-palette/)
 
 ## Dashboard
 
-You can customize your ``globalDefault`and`repositoryDefault` [dashboards](/docs/admin/ui-dashboard/) here.
+You can customize your `globalDefault`and`repositoryDefault` [dashboards](/docs/admin/ui-dashboard/) here.
 
 ## Repositories
 

@@ -24,7 +24,7 @@ The whole reframing process was based on focusing on our visitors, to offer them
 
 ## You are the protagonist of the story
 
-We want to make you the hero of our story. Who are you? - at first this is what we needed to define. Only then could we possibly create the storyline of yours inside our one. We defined the sketch lines that can determine the characteristics of our visitors:
+We want to make you the hero of our story. Who are you? - At first this is what we needed to define. Only then could we possibly create the storyline of yours inside our one. We defined the sketch lines that can determine the characteristics of our visitors:
 
 -   The name of the protagonist and their slogan.
 -   Their motivation.
@@ -37,7 +37,7 @@ We want to make you the hero of our story. Who are you? - at first this is what 
 
 ![developer](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/developer-sidious.png "developer")
 
-...who is looking for a super modern coding platform to build up-to-date business solutions. Who wants to find a well-designed architecture and enterprise-grade technical details even under the hood. Who wants to hand over great and long-lasting IT solutions to their customers.
+...who is looking for a super modern coding platform to build up-to-date business solutions. Who wants to find a well-designed architecture and enterprise-grade technical details even under the hood. Who wants to hand-over great and long-lasting IT solutions to their customers.
 
 > _Our hero is the **Partner...**_
 
@@ -48,7 +48,7 @@ We want to make you the hero of our story. Who are you? - at first this is what 
 > _Our hero is the **Customer...**_
 
 ![customer](http://download.sensenet.com/BlogPostImages/sensenetcomRedesign/manager-lea.png "customer")
-...who wants to buy an all-in-one solution for their company. Who wants to find all details about buying and running a SenseNet solution. Who wants to make sure that they get an easy-to-maintain IT solution.
+...who wants to buy an all-in-one solution for their company. Who wants to find all details about buying and running a sensenet solution. Who wants to make sure that they get an easy-to-maintain IT solution.
 
 ## Visual and structural narrative in the Information Architecture
 
