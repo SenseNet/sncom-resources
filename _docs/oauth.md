@@ -20,7 +20,7 @@ When new users come to the site, they will be able to sign in by clicking the Go
 - The client **receives a token from the service**. 
 - The client sends the token to the sensenet server, where the appropriate **OAuth provider verifies the token**.
 - If the token has been verified, we load or create the corresponding *User* content in the Content Repository. User content items are connected to the 3rd party service by storing the unique user identifier in a provider-specific separate field (e.g. *GoogleUserId*).
-- sensenet asssembles a [JWT token](https://community.sensenet.com/docs/web-token-authentication) for the client and consideres the user as correctly signed in.
+- sensenet asssembles a [JWT token](https://community.sensenet.com/docs/web-token-authentication) for the client and considers the user as correctly signed in.
 
 From that point on the user will be able to use the application as a regular user.
 
@@ -34,7 +34,7 @@ You can specify where new users are created and their content type using the *OA
 }
 ```
 
-New users are created under the domain above separated into organizational units named by the provider.
+New users are created under the domain above separated into organizationaprl units named by the provider.
 
 ## OAuth providers
 A sensenet OAuth provider is a small plugin that is designed to verify a token using a particular service. Out of the box we offer the following OAuth provider for sensenet:
