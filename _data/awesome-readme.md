@@ -33,7 +33,7 @@ A collection of awesome sensenet ECM packages, tools, resources and shiny things
 - [SN Client .NET](https://github.com/SenseNet/sn-client-dotnet) - A .Net client for sensenet ECM that makes it easy to use the REST API of the Content Repository.
 - [SN Client JS](https://github.com/SenseNet/sn-client-js) - A JavaScript client for sensenet ECM that makes it easy to use the REST API of the Content Repository.
 - [SN Client CLI](https://github.com/SenseNet/sn-client-cli) - Command line tool for the sensenet Platform's Client Library
-- [SN Redux](https://github.com/SenseNet/sn-redux) - A set of redux actions, reducers and redux-ovbservable epics for sensenet ECM.
+- [SN Redux](https://github.com/SenseNet/sn-redux) - A set of redux actions, reducers and redux-observable epics for sensenet ECM.
 - [SN Controls Aurelia](https://github.com/SenseNet/sn-controls-aurelia) - Aurelia controls for sensenet ECM
 - [SN Controls React](https://github.com/SenseNet/sn-controls-react) - React controls for sensenet ECM
 
@@ -44,7 +44,7 @@ A collection of awesome sensenet ECM packages, tools, resources and shiny things
 - [SenseNet Project Installer](https://github.com/VargaJoe/SenseNet-Project-Installer) - Dev project installer for sensenet ECMS.
 - [SenseNet Subtree Lucene Fixer](https://github.com/VargaJoe/SenseNet-SubTree-Lucene-Fixer) - Custom ContentCollection view to compare repository content structure and lucene index structure of a subtree, and try to fix any differences.
 - [SenseNet Preview Cleaner](https://github.com/VargaJoe/SenseNet-Preview-Cleaner) - Tool cleaning preview images.
-- [RepoSync](https://github.com/marosvolgyiz/RepoSync) -  A framework to let you syncronize sensenet content between sensenet ECM and other systems.
+- [RepoSync](https://github.com/marosvolgyiz/RepoSync) -  A framework to let you synchronize sensenet content between sensenet ECM and other systems.
 
 ## Documentation
 
