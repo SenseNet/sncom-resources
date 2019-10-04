@@ -68,7 +68,7 @@ A package can have one of the following types:
 ### Versioning
 One of the most important features of this packaging infrastructure is version tracking. Packages will be the subject of a **prerequisite check**:
 
-1. Version numbers in subsequent packages must be greater than in preceeding ones.
+1. Version numbers in subsequent packages must be greater than in preceding ones.
 2. Every dependent component's version must be within the specified boundaries.
 
 Choosing he right version number is the component developer's responsibility.
