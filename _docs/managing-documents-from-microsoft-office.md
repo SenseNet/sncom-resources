@@ -30,7 +30,7 @@ This feature is fully compatible with Microsoft Office 2013, 2010 and 2007.
 sensenet supports the following authentication schemes with Office integration:
 
 - **Windows authentication**
-  Set up both your sensenet site content to use *Windows* authentication, and your IIS web site to allow Windows authentication. Make sure your AD user is present in the Content Repository under the appropriate domain. You will be able to access your fodlers and files in the Content Repository using your AD user and password.
+  Set up both your sensenet site content to use *Windows* authentication, and your IIS web site to allow Windows authentication. Make sure your AD user is present in the Content Repository under the appropriate domain. You will be able to access your folders and files in the Content Repository using your AD user and password.
 
 - **Basic authentication**
   Set up your sensenet Site to use *Forms* authentication, and your IIS web site to allow *Anonymous* authentication only (do not allow Windows in IIS and allowing Basic is not necessary). You will be able to access the Content Repository using your portal user and password. Please note that operations that use Basic authentication over a non-SSL HTTP connection are disabled by default by your operating system. To enable WebDAV for non-SSL sites with Basic authentication refer to the following article:  [http://support.microsoft.com/kb/2123563](http://support.microsoft.com/kb/2123563).
