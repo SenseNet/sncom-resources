@@ -47,4 +47,4 @@ You can write [content queries](/docs/content-query/) to search content. The exp
 
 You can execute custom actions on the **active** (last clicked) content. You should open the command palette with the **CTRL+SHIFT+P** keyboard combo or start with a **>** character. The available suggestions will be based on the available content actions.
 
-If the action accepts parameters, you can provide them in JSON format. You will get also some help with code completition by pressing **CTRL+SPACE**. If the action has a JSON response, you can also preview it.
+If the action accepts parameters, you can provide them in JSON format. You will also get some help with code completion by pressing **CTRL+SPACE**. If the action has a JSON response, you can also preview it.
