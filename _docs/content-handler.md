@@ -153,7 +153,7 @@ The following xml is the [Content Type Definition](/docs/ctd) of the *Domain* [C
 <?xml version="1.0" encoding="utf-8"?>
 <ContentType name="Domain" parentType="Folder" handler="SenseNet.ContentRepository.Domain" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
   <DisplayName>Domain</DisplayName>
-  <Description>A centrally-managed group of users and/or computers. sensenet has a built-in domain (BuiltIn), but you can syncronyze external LDAP directories as well.</Description>
+  <Description>A centrally-managed group of users and/or computers. sensenet has a built-in domain (BuiltIn), but you can synchronize external LDAP directories as well.</Description>
   <Icon>Domain</Icon>
   <Fields>
     <Field name="Name" type="ShortText">
