@@ -19,13 +19,13 @@ Content are stored in the [Content Repository](/docs/content-repository) - the s
 
 ### How should I imagine a Content?
 
-Every Content is built up of [Fields](/docs/field) (a user Content for example has a name field and password field). Different types of content can be created by defining a different set of fields. The type of the the Content is called the [Content Type](/docs/content-type) and defines the set of fields a Content possesses and also the behavior of the Content. The set of fields the type defines is reusable, meaning different types can be created by deriving from already defined types and the newly created type will obtain the fields of its parent type. For example: a File Content has - among a couple others - a name Field for storing the name of the file and a binary Field for storing the binary data of the file, and an Image Content (whose type is a child type of the File Content Type) also have a name (for the name of the image) and a binary Field (for the image pixel data) and a couple of other fields, too - that a simple File does not contain: Keywords (for making the image searchable), DateTaken (for storing the info of when the picture was taken in case it is a photo), etc.
+Every Content is built up of [Fields](/docs/field) (a user Content for example has a name field and password field). Different types of content can be created by defining a different set of fields. The type of the Content is called the [Content Type](/docs/content-type) and defines the set of fields a Content possesses and also the behavior of the Content. The set of fields the type defines is reusable, meaning different types can be created by deriving from already defined types and the newly created type will obtain the fields of its parent type. For example: a File Content has - among a couple others - a name Field for storing the name of the file and a binary Field for storing the binary data of the file, and an Image Content (whose type is a child type of the File Content Type) also have a name (for the name of the image) and a binary Field (for the image pixel data) and a couple of other fields, too - that a simple File does not contain: Keywords (for making the image searchable), DateTaken (for storing the info of when the picture was taken in case it is a photo), etc.
 
 ### How does a content look like?
 
 A single Content can be presented in many forms:
 
-You can visually see the content when they are enlisted in a list or in a tree, for example in [Content Explorer](/docs/content-explorer), the administrative surface of the portal.
+You can visually see the content when they are enlisted in a list or in a tree, for example in Content Explorer, the administrative surface of the portal.
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/content1.png" alt="Content tree" style="margin: 20px auto" />
 
@@ -33,7 +33,7 @@ Also, the individual content can be edited, in this case mostly you will be pres
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/content2.png" alt="Content fields" style="margin: 20px auto" />
 
-Besides, the content can be presented in any visual form with the aid of [Content Views](/docs/content-view) or [XSLT Renderers](/docs/xslt-renderer).
+Besides, the content can be presented in any visual form with the aid of Content Views or XSLT Renderers.
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/content3.png" alt="Content view" style="margin: 20px auto" />
 
@@ -41,7 +41,7 @@ The way a content looks like mainly depends on the scenario it is used in (a fol
 
 ### How can I store / browse my data in the portal?
 
-The [Content Explorer](/docs/content-explorer) administrative surface of the portal provides a handful of tools to manage content. You can create new content of the defined [Content Types](/docs/content-type) and fill their fields with data, you can define new Content Types of any kind, you can copy, move, delete, rename content and upload / download files into / from the Content Repository. It is also possible to Import large amount of data from the file system into the Content Repository (and also to [Export](/docs/export) them from the Content Repository into the file system).
+The Content Explorer administrative surface of the portal provides a handful of tools to manage content. You can create new content of the defined [Content Types](/docs/content-type) and fill their fields with data, you can define new Content Types of any kind, you can copy, move, delete, rename content and upload / download files into / from the Content Repository. It is also possible to Import large amount of data from the file system into the Content Repository (and also to [Export](/docs/export) them from the Content Repository into the file system).
 
 >Starting with sensenet 7.0, export and import functionality is done using the [SnAdmin tools](/docs/snadmin-tools) that are available in the core package. You can also create a custom export/import tool using the [.Net client library](https://github.com/SenseNet/sn-client-dotnet).
 
@@ -52,7 +52,7 @@ In case you have only the core [Services](https://github.com/SenseNet/sensenet) 
 
 Content can be referenced most easily via a url built from the site url and the path of the Content. For example you can request the content under _/Root/YourContents/FooterContent_ with the *http://example.com/Root/YourContents/FooterContent* url. In this case the content will be displayed using its *Browse* view. To edit the content the *action=Edit* url parameter can be used: typing *http://example.com/Root/YourContents/FooterContent?action=Edit* will show the Content in Edit mode and thus the content's fields can be edited right away. The mechanism that allows Content to be requested via their Content Repository paths and an action parameter is defined by the Smart Application Model. The [Smart Application Model](/docs/smart-application-model) makes it possible to create custom actions for the Content. You can check the most common available actions on a content in Content Explorer - they are listed at the top part of the page. To view a content in Content Explorer you can
 
-- open Content Explorer via the [Portal Remote Control](/docs/prc) (PRC) and navigate to the content, or
+- open Content Explorer via the Portal Remote Control (PRC) and navigate to the content, or
 - request the Content in the browser with its url http://localhost/Root/YourContents/FooterContent, open PRC (top right corner of any sensenet page) and enter Content Explorer from there
 
 ## Examples/Tutorials
