@@ -1,20 +1,20 @@
 ---
 title:  "Trash"
 tags: [content, content repository, trash, purge, delete]
-description: Trash Bin is a temporary storage for content that have been deleted. It is a central place for deleted documents where you can browse, restore or delete content permanently.
+description: Trash bin is a temporary storage for contents that have been deleted. It is a central place for deleted documents, where you can browse, restore or delete content permanently.
 permalink: /guide/content-repository/trash
 index: 7
 ---
 
 ## Trash
 
-When you delete a document or a folder and the trash feature is enabled (in the default install, it is), it will not be deleted permanently. You can find it in the Trash Bin, and you can restore it.
+When you delete a document or a folder and the trash feature is enabled (in the default install, it is) that particular folder/document will not be deleted permanently. You can find it in the trash bin and you can restore it.
 
-The Trash Bin is a central place for deleted documents where you can browse, restore or delete content permanently. It is possible to provide a local (workspace-level) trash for users too. See the portal builder article below for more information.
+The trash bin is a central place for deleted documents where you can browse, restore or delete content permanently. It is possible to provide a local (workspace-level) trash for users too. See the portal builder article below for more information.
 
 The size of the trash and the time frame while the contents can be recovered from the trash is set by the administrator. Trash feature can be switched on or off globally.
 
-When you delete something into the trash than the content will be wrapped into a special container called the Trash Bag, and will be moved to a central place called the Trash Bin. The path of the trash in the repository is */Root/Trash*.
+When you delete something into the trash then the content will be wrapped into a special container called the trash bag and will be moved to a central place called the trash bin. The path of the trash in the repository is */Root/Trash*.
 
 ### Delete operation capabilities
 
