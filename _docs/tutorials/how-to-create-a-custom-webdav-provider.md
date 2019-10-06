@@ -38,7 +38,7 @@ If you want to restrict the list of folders and files that your users see in Win
 
 In your custom class you can decide to override one or more of the methods mentioned above. In the assert methods you should throw an exception if you want to deny a certain operation.
 
-> Please note that the assert methods are ment to prevent users from doing something. The WebDav protocol does not allow us to provide a meaningful error message to the user, so this is what we can do: stop the operation with throwing an exception.
+> Please note that the assert methods are meant to prevent users from doing something. The WebDav protocol does not allow us to provide a meaningful error message to the user, so this is what we can do: stop the operation with throwing an exception.
 
 #### Deployment
 

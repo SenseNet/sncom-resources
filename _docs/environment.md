@@ -13,7 +13,7 @@ This paper describes how to prepare an environment for the sensenet Benchmark To
 ## Using MS SQL Server with external MongoDb BLOB storage
 
 
-#### Prerequisits:  
+#### Prerequisites:  
  - [sensenet Service 7.0.0 NuGet package](https://www.nuget.org/packages/SenseNet.Services/7.0.0-beta2 "SenseNet.Services")  
  - [Enterprise Mongo Package](http://community.sensenet.com/docs/mongodb-provider "MongoDB blob provider")
 
@@ -105,7 +105,7 @@ and copy your site file structure into the newly made \[site folder 1\]:
 ## Using MS SQL Server with external Azure BLOB storage
 
 
-#### Prerequisits:  
+#### Prerequisites:  
  - [sensenet Service 7.0.0 NuGet package](https://www.nuget.org/packages/SenseNet.Services/7.0.0-beta2 "SenseNet.Services")  
  - [Enterprise Azure Blob Package](http://community.sensenet.com/docs/azureblob-provider/ "Azure blob provider")
 

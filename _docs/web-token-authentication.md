@@ -58,7 +58,7 @@ _Steps of a token refresh process from the clients' point of view:_
 2. Receive a new access token
 3. Access content using the access token
 
-All the communication are sent through SSL (https). The used cookies are all HtmlOnly and Secure. There are two types of communication: header marked and uri marked (without header mark). Either of them can be choosen freely by a client developer. However the two could be mixed, but we advice to choose one and stick to it.
+All the communication are sent through SSL (https). The used cookies are all HtmlOnly and Secure. There are two types of communication: header marked and uri marked (without header mark). Either of them can be chosen freely by a client developer. However the two could be mixed, but we advice to choose one and stick to it.
 
 <div style="text-align: center;">
   <img src="/docs/img/jwt/jwt-protocol.png" alt="web token authentication protocol" width="600" border="0" />
@@ -227,7 +227,7 @@ The first one is a technical like header that you do not have to care about. The
 **_nbf_**: `not before` identifies the time before that the token can not be accepted  
 **_name_**: `name` identifies the name of the user whom the token was issued to
 
-The `iss, sub, aud` claims can be configured and remains the same unless you change them in the web.config. The other claims dinamically change on new token creation.
+The `iss, sub, aud` claims can be configured and remains the same unless you change them in the web.config. The other claims dynamically change on new token creation.
 
 ## Considerations for client developers ##
 

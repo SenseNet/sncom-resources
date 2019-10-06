@@ -149,7 +149,7 @@ List of available links in the Workspace.
 
 ##### Members
 
-You can not manage members directly from Word but you can still see who is available (and who is online in MSN). Members are defined by explicit permission settings on the workspace content. This means that you can add new members by adding permissions to users on the workspace (add them explicitely if you want them to be displayed on the members tab even if they are already contained in any of the groups having permissions on the workspace).
+You can not manage members directly from Word but you can still see who is available (and who is online in MSN). Members are defined by explicit permission settings on the workspace content. This means that you can add new members by adding permissions to users on the workspace (add them explicitly if you want them to be displayed on the members tab even if they are already contained in any of the groups having permissions on the workspace).
 
 ##### Tasks
 

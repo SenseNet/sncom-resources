@@ -7,7 +7,7 @@ tags: [reactjs, redux, javascript, typescript, getting started]
 
 ---
 
-sensenet's new version is full of possibilites. One of them is the capability of being the base of your single-page-application with its Content Repository. If you are familiar with Reactjs, Redux or Aureliajs, sensenet can offer you even more with its toolkits, prebuilt control packs and many many more. In the following post we try to guide you with a step-by-step tutorial creating your first basic single page app with sensenet, Reactjs and Redux.
+sensenet's new version is full of possibilities. One of them is the capability of being the base of your single-page-application with its Content Repository. If you are familiar with Reactjs, Redux or Aureliajs, sensenet can offer you even more with its toolkits, prebuilt control packs and many many more. In the following post we try to guide you with a step-by-step tutorial creating your first basic single page app with sensenet, Reactjs and Redux.
 
 ---
 
@@ -90,7 +90,7 @@ registerServiceWorker();
 
 ## sensenet state tree with Redux
 
-To manage our application's state we use [Redux](https://redux.js.org/) and to make your life even more easy to work on this stack, we've created [sn-redux](https://github.com/SenseNet/sn-redux) that is a set of redux actions, reducers and redux-ovbservable epics for sensenet. In sn-redux we've implemented the main sensenet content operations so all you have to do is dispatch them and get everything from the state tree through predefined reducers. If you're intrested - and why would you not - how sensenet's redux store is built up, check [Diving deeper into sensenet's Redux store](https://community.sensenet.com/blog/2017/09/20/refactoring-sensenet-redux-store). 
+To manage our application's state we use [Redux](https://redux.js.org/) and to make your life even more easy to work on this stack, we've created [sn-redux](https://github.com/SenseNet/sn-redux) that is a set of redux actions, reducers and redux-ovbservable epics for sensenet. In sn-redux we've implemented the main sensenet content operations so all you have to do is dispatch them and get everything from the state tree through predefined reducers. If you're interested - and why would you not - how sensenet's redux store is built up, check [Diving deeper into sensenet's Redux store](https://community.sensenet.com/blog/2017/09/20/refactoring-sensenet-redux-store). 
 
 To create and configure your application's state container:
 

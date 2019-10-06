@@ -14,7 +14,7 @@ Possible actions:
  - memorizing data from the response as a variable, 
  - waiting for a couple of seconds
  
-At the beginnig of the line there is a *control character or word* that defines the purpose of that line. Empty lines and lines starting with an unrecognized control word will be skipped.
+At the beginning of the line there is a *control character or word* that defines the purpose of that line. Empty lines and lines starting with an unrecognized control word will be skipped.
 
 ### Comment
 If the line starts with a semicolon character (;) the line will be skipped.
@@ -35,7 +35,7 @@ at the top of the profile file but this is not mandatory. The declaration has th
 2. **Name**: One word after the keyword separated by a space.
 3. **Definition**: this is a valid content query (in CQL).
 
-It is strongly recommended to use AND / OR logical operators in the content query instead of usual Lucene occurences (empty / + / -) because the definition query will be URL encoded and the '+' character means space (0x20) in the URL.
+It is strongly recommended to use AND / OR logical operators in the content query instead of usual Lucene occurrences (empty / + / -) because the definition query will be URL encoded and the '+' character means space (0x20) in the URL.
 
 #### Usage
 
@@ -86,7 +86,7 @@ The profile execution will be suspended for a time. Parameter value is defined i
 ```text
 WAIT: 2000
 ```
-This causes a 2 seconds asynchron pause.
+This causes a 2 seconds asynchronous pause.
 
 ### REQ
 Describes a web request. Two parameters are allowed: *http verb* and *url**

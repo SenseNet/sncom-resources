@@ -13,7 +13,7 @@ Since the purpose of this study was to improve navigation amongst Portlets, we d
 
 ## Good IA to good navigation
 
-Navigation inbetween Portlets built upon the structure of Portlet systematization. Structural elements of navigation, are Portlets as nodes. Users will find them in a portlet-picker, displayed by tree-view. That offers the visible structure to navigate trough to find a Portlet. Thus, the logical structure must be designed first, to enable easy navigation among Portlet-Categories. So, as the main points of determining the good architecture we took into consideration the followings:
+Navigation in between Portlets built upon the structure of Portlet systematization. Structural elements of navigation, are Portlets as nodes. Users will find them in a portlet-picker, displayed by tree-view. That offers the visible structure to navigate through to find a Portlet. Thus, the logical structure must be designed first, to enable easy navigation among Portlet-Categories. So, as the main points of determining the good architecture we took into consideration the following:
 
 -   asking users to test, who updating websites the most often
 -   providing a system, that supports earlier versions of Sense/Net as well
@@ -25,7 +25,7 @@ Because of the number and location of participants, we used a remote, computer-b
 
 We applied Open Card Sort method, to learn about participants grouping conception, and enable them to create new Categories besides the predefined ones, in case they see the need. For learning the necessity of new Portlets, users are allowed to create new Cards in the test, as well.
 
-Based on the nature of the research we determined the test-conditions by the followings:
+Based on the nature of the research we determined the test-conditions by the following:
 
 -   We ran Card Sorting with 83 cards (all Portlets we have in Sense/Net) and open to take up new ones, or exclude unnecessary ones, if deemed necessary
 -   The order of Cards are randomized

@@ -113,7 +113,7 @@ We've focused on keeping this library straightforward and easy-to-use, hopefully
 
 ## sn-redux 3.4.0
 
-[sn-redux](https://github.com/SenseNet/sn-redux) always keeps an eye on [sn-client-js](https://github.com/SenseNet/sn-client-js), we're working mostly in paralell and this is how it happened this time. Learn how the new features were added and what and how you can achieve with them.
+[sn-redux](https://github.com/SenseNet/sn-redux) always keeps an eye on [sn-client-js](https://github.com/SenseNet/sn-client-js), we're working mostly in parallel and this is how it happened this time. Learn how the new features were added and what and how you can achieve with them.
 
 ### Upload
 

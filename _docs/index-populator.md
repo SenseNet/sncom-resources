@@ -22,7 +22,7 @@ The tool has three optional parameters:
 
 - **SOURCE**: sensenet Content Repository path as the root. Default: "/Root".
 - **INDEX**: Location of Lucene index directory. Default: depends on the configuration (web.config/app.config).
-- **ASM**: FileSystem directory containig the required assemblies. Default: location of IndexPopulator.exe.
+- **ASM**: FileSystem directory containing the required assemblies. Default: location of IndexPopulator.exe.
 - **NOBACKUP**: Disables the backup of the new index to the database.
 
 ```diff

@@ -24,7 +24,7 @@ This architecture means a web application with custom code added on the **server
 
 ![Dashboard](https://raw.githubusercontent.com/SenseNet/sensenet.github.io/master/img/posts/mvc-sample-dashboard.PNG)
 
-When completing this short excercise, please try to focus on the sensenet-related parts - for example the way we search for content items and load them from the Content Repository, the way we create and modify content. We tried to keep everything else minimal so you can focus on the new stuff and not on the usual MVC-related parts.
+When completing this short exercise, please try to focus on the sensenet-related parts - for example the way we search for content items and load them from the Content Repository, the way we create and modify content. We tried to keep everything else minimal so you can focus on the new stuff and not on the usual MVC-related parts.
 
 #### Security out of the box
 All the sensenet Content-related operations (like content Save or Load) are performed using the **permissions of the currently logged in user** - except when switching to the administrator for technical purposes, as we explain below. This means that the user will not be able to create or delete anything that he or she does not have permissions for.

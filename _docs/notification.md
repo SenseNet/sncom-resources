@@ -13,14 +13,14 @@ Notification is a feature for users who want to be informed about Content change
 
 These Content changes can be any kind of change like making a new Content, editing, deleting, renaming, copying or moving an existing Content. The subscriber will receive emails about these Content changes. For these emails *custom templates* can be set that may contain dynamic parameters, filled with content field values. 
 
-Subscribers can edit their own subscriptions, but do not have access to others'. Only *user administrators* can view, edit, delete, activate or deactive notifications for the users they have access to (see details below).
+Subscribers can edit their own subscriptions, but do not have access to others'. Only *user administrators* can view, edit, delete, activate or deactivate notifications for the users they have access to (see details below).
 
 > Notification is turned on by default. To turn off this feature you have to disable it in the application configuration file. For details, see the [Configuration](#Configuration) section below.
 
 > Users will be able to subscribe only if they have an **email address** in the system. If their email address changes, all their notifications will be sent to their new email address from than on.
 
 ## Subscribing to content changes
-Notifications can be set up for any Content in the system easily in any list or library or in Content Explorer. You have to click the dropdown action menu on a Content to get the list of avalaible actions and select the ''Set Notification'' action. You also have access to workspace notification settings in the top right corner of your workspace dashboard (Workspace actions menu).
+Notifications can be set up for any Content in the system easily in any list or library or in Content Explorer. You have to click the dropdown action menu on a Content to get the list of available actions and select the ''Set Notification'' action. You also have access to workspace notification settings in the top right corner of your workspace dashboard (Workspace actions menu).
 
 ![Set notification](https://github.com/SenseNet/sn-notification/raw/master/docs/images/notification-add.png "Set notification")
 
@@ -41,7 +41,7 @@ In the list view you can even delete notifications by clicking on the ''Delete''
 <a name="Configuration"></a>
 ## Configuration
 #### Prerequisites
-This feature requires a mail server to be cofigured in web.config. Please make sure that you added this fragment filled with the address and optionally access credentials to your mail server.
+This feature requires a mail server to be configured in web.config. Please make sure that you added this fragment filled with the address and optionally access credentials to your mail server.
 
 ```xml
 <system.net>
@@ -103,7 +103,7 @@ The setting is the time of starting daily event collecting and sending mails. Va
 <add key="Daily" value="01:00"/>
 ```
 #### Weekly
-The setting consists of two terms: a day of week and a time: ''[DayOfWeek][space][Time]''. Day of week is one of the followings: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday. Time setting is the same as in the "Daily" case. Example:
+The setting consists of two terms: a day of week and a time: ''[DayOfWeek][space][Time]''. Day of week is one of the following: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday. Time setting is the same as in the "Daily" case. Example:
 
 ```xml
 <add key="Weekly" value="Monday 01:00"/>
@@ -147,7 +147,7 @@ Under the notification section you will find five settings regarding to the noti
 
 - **NotificationSenderAddress**: this email address will be set as the sender address in notification messages.
 - **RetryCount**: if an error interrupts the message sending process (e.g. *TransactionFailed*) the system will wait for a while (defined in *RetryDelay* below), then tries to send the message again. RetryCount specifies the maximum number of these iterations.
-- **RetryDelay**: time interval between two message sending attempts (in millisenconds).
+- **RetryDelay**: time interval between two message sending attempts (in milliseconds).
 - **TakeCount**: number of messages that will be retrieved from the message queue in each sending iteration.
 - **MessageEncoding**: codepage name that will be used in messages (e.g. iso-8859-2, utf-8).
 

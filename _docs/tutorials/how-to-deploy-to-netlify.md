@@ -27,7 +27,7 @@ After you have your own git repository:
 
 1. Log in to [netlify](https://netlify.com)
 2. Add a new project
-3. Choose continous deployment with GitHub - this will take you to GitHub to authorize netlify
+3. Choose continuous deployment with GitHub - this will take you to GitHub to authorize netlify
 4. You should see your repositories listed, choose your newly created git repository
 5. Set the build command to `yarn run build` and the Publish Directory to `bundle`
 6. You are all set 🎉

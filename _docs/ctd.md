@@ -234,7 +234,7 @@ The following elements make up the general structure of the xml:
 - **DisplayName**: the displayed user friendly name of the type
 - **Description**: the short description of the type
 - **Icon**: icon of the type. Icons reside in the /Root/Global/images/icons folder. An icon is referred with its name here.
-- **Preview**: whether the system needs to generate preview images for this type of content. Currently this works only for file types. This setting is not inheritable, you should set it explicitely in every CTD where you want to have preview images. Possible values are *yes/no* or *true/false*.
+- **Preview**: whether the system needs to generate preview images for this type of content. Currently this works only for file types. This setting is not inheritable, you should set it explicitly in every CTD where you want to have preview images. Possible values are *yes/no* or *true/false*.
 - **AllowIndexing**: whether the instances of this type should be indexed or not. Possible values are *yes/no* or *true/false*. The default is true. If set to false, the index will be smaller, but nobody will be able to find the items of this type using content query. They will still be accessible through a direct request of course. In the default installation preview images are not indexed, for example.
 - **AppInfo**: custom text or xml fragment for CTD extensibility
 - **AllowIncrementalNaming**: boolean property for allowing the incremental name suffix generation during content creation when a Content with the same name already exists. Default is false - in this case an error message is shown when saving the Content with an existing name. See [Content naming](content-naming.md#Incremental-naming) for details.

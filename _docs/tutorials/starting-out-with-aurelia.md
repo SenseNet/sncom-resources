@@ -9,7 +9,7 @@ description: Step-by-step tutorial to create a single page application with sens
 
 # Getting started with sensenet using Aurelia Framework
 
-There was a lot of development in the frontent frameworks ecosystem over the last couple of years - and you can use a wide range of them with the latest version of *sensenet*. The following step by step tutorial will guide you how to put it all together - this time with [Aurelia](http://aurelia.io/) and [Typescript](https://www.typescriptlang.org/).
+There was a lot of development in the frontend frameworks ecosystem over the last couple of years - and you can use a wide range of them with the latest version of *sensenet*. The following step by step tutorial will guide you how to put it all together - this time with [Aurelia](http://aurelia.io/) and [Typescript](https://www.typescriptlang.org/).
 
 ## Prerequisites
 
@@ -187,7 +187,7 @@ If you start the project now with ```au start``` and open the page, you will see
 
 ### Creating a basic login and logout form
 
-Now we know the user and the login state, we can improve the element template a bit. We will display the followings:
+Now we know the user and the login state, we can improve the element template a bit. We will display the following:
  - If the *loginState* is **Unauthenticated** the user will get a login form with username and password fields
  - If the state is **Authenticated**, a welcome message and a Logout button
  - If the login state is **Pending**, well... a message for now and you can replace it with your favourite loader later :)
@@ -253,7 +253,7 @@ Open **./src/app.html** and add the new component:
 ```
 Now open **./src/app.ts** and subscribe to the login state just like we did it in the Login component. At this time we don't need to *unsubscribe* because *app* is our main component - it will be attached right after Aurelia's bootstrap process and will be detached on window close.
 
-Update the *app.ts* file with the followings:
+Update the *app.ts* file with the following:
 
 ```ts
 import { Repository, LoginState } from "@sensenet/client-core";
