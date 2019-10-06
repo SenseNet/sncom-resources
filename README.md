@@ -1,3 +1,12 @@
-# sensenet.github.io
+# [sensenet.github.io](https://community.sensenet.com/)
 
-Source code for the community website of sensenet developers. It's made with Jekyll, hosted on GitHub Pages.
+This repository is the source code for the community website of sensenet developers. It's made with Jekyll, hosted on GitHub Pages.
+
+## Contributing to this project
+
+Anyone and everyone is welcome to contribute. Please take a moment to
+review the [guidelines for contributing](CONTRIBUTING.md).
+
+* [Bug reports](CONTRIBUTING.md#bugs)
+* [Feature requests](CONTRIBUTING.md#features)
+* [Pull requests](CONTRIBUTING.md#pull-requests)
