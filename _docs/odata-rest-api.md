@@ -450,7 +450,7 @@ Additionally, you may expand the following special fields as well:
 
 #### $expand and $select
 
-It is possible to specify the list of fields the response should contain (see $select option for more info). This works with expanded properties as well: you may specify wich fields of the expanded content should be added to the response by providing a 'field name chain', separated by slashes (e.g. _$select=CreatedBy/DisplayName_).
+It is possible to specify the list of fields the response should contain (see $select option for more info). This works with expanded properties as well: you may specify which fields of the expanded content should be added to the response by providing a 'field name chain', separated by slashes (e.g. _$select=CreatedBy/DisplayName_).
 
 If you do not provide a $select option in the request, all the field values will be returned of the requested and the expanded content as well. You do not have to select the property that you want to expand.
 
@@ -750,7 +750,7 @@ The content type of the new entity will be the first allowed content type of the
 
 HTTP method: **POST**
 
-This verb enables you to cretae a content by a Content Template creating an `EventList` under a workspace with the name Calendar and fill its Index field with 2. Other field values will be filled by the default values in 'CalendarTemplate3' ContentTemplate. See the `__ContentTemplate` parameter:
+This verb enables you to create a content by a Content Template creating an `EventList` under a workspace with the name Calendar and fill its Index field with 2. Other field values will be filled by the default values in 'CalendarTemplate3' ContentTemplate. See the `__ContentTemplate` parameter:
 
 ```js
 $.ajax({

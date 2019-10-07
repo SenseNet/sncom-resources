@@ -42,7 +42,7 @@ This method provides an extra line of defense for keeping mission critical conte
 
 ### Public visibility
 
-Vistors in general are only allowed to view the last public versions of a content. This is controlled by the *Open minor* permissions: a user who does not possess the open minor permission for a content will only see the last public version of a content, and will never see any changes that correspond to a draft version or that are not yet approved.
+Visitors in general are only allowed to view the last public versions of a content. This is controlled by the *Open minor* permissions: a user who does not possess the open minor permission for a content will only see the last public version of a content, and will never see any changes that correspond to a draft version or that are not yet approved.
 The other important thing here to bear in mind is that if a document gets rejected it does not mean that the document is not visible for the public. It only means that the last version that was rejected will not be visible to the public. So for example:
 1. Set approval on a document library to true.
 2. Upload a document - its state will be pending for approval (you can check it out on the versions tab): only users with open minor permissions will be able to see it.

@@ -41,7 +41,7 @@ Actions are basically unlimited in number, builders can create [Applications](/d
 
 Some action links do not navigate the current page to an application defined for the specified [Content](/docs/content), but rather process data in the background and return or navigate to a custom page. An action link can run custom JavaScript code on the client side. A good example for this is the _Copy selected..._ action link that when initialized from a list in [Content Explorer](/docs/content-explorer) it pops up a Content Picker where the destination folder can be selected, and the actual copy operation only takes place after the destination has been selected.
 
-The type of rendered Action is controlled by the application it referes to. The [Application's](application) `ActionTypeName` property defines the type (.Net class) of action to be rendered. 
+The type of rendered Action is controlled by the application it refers to. The [Application's](application) `ActionTypeName` property defines the type (.Net class) of action to be rendered. 
 
 ### OData actions
 

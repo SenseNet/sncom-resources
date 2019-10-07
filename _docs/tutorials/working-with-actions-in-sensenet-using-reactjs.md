@@ -39,7 +39,7 @@ Then you are able to reach all the actions that are defined in sn-redux's Action
 
 ### 1. Beautify the app a bit
 
-If you've completed the previous tutorial too and want to try out actions in the same app you might be interested in make it a bit more useable and prettier with a few small things. Adding material-ui and using its predefined ui components helps us to create the content list more readable and usable without unnecessary custom configurations and styling. So install material-ui:
+If you've completed the previous tutorial too and want to try out actions in the same app you might be interested in make it a bit more usable and prettier with a few small things. Adding material-ui and using its predefined ui components helps us to create the content list more readable and usable without unnecessary custom configurations and styling. So install material-ui:
 
 ```
 npm install --save material-ui@next material-ui-icons
@@ -426,7 +426,7 @@ Then set ```message``` property as the value of the *message* attribute of the S
 />
 ```
 
-Our last task now is to connect the snackbar opening when a content is deleted sucessfully. We have to add a statement into the components ```componentDidUpdate``` where we can compare the previous and the actual values of the component props so that when the message text is changed the ```snackbarOpen``` property's value in the state is set to *true*. Since the value of the Snackbars *open* attribute is set to get its value from the component state's ```snackbarOpen```, it will display in the exact time, when the message is ready so when the content is succesfully deleted.
+Our last task now is to connect the snackbar opening when a content is deleted successfully. We have to add a statement into the components ```componentDidUpdate``` where we can compare the previous and the actual values of the component props so that when the message text is changed the ```snackbarOpen``` property's value in the state is set to *true*. Since the value of the Snackbars *open* attribute is set to get its value from the component state's ```snackbarOpen```, it will display in the exact time, when the message is ready so when the content is successfully deleted.
 
 <div style='text-align: center'>
 <img src="/img/posts/deleteContentMessage.gif" alt="Content is successfully deleted" title="Content is successfully deleted" />

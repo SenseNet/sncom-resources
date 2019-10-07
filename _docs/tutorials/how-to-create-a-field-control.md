@@ -220,4 +220,4 @@ In [Content Explorer](/docs/content-explorer) go to /Root/Sites/Default_Site, an
 <img src="/docs/img/Howtocreateafieldcontrol.png" width="600" border="0" />
 </div>
 
-It does not look very neet, but it is functioning and creating a new design for it should not be a big deal.
+It does not look very neat, but it is functioning and creating a new design for it should not be a big deal.

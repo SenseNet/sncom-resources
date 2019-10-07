@@ -79,7 +79,7 @@ The sensenet Content Repository is built upon a metadata system with pre-defined
 
 ### Metadata indexing for fast search and filtering
 
-Content in the SNCR are indexed using the [Lucene](http://lucene.apache.org/lucene.net/) indexing and search library. The text of binary documents (Micosoft Word, Excel, Adobe PDF, etc) is extracted and can also be searched in SNCR. Lucene provides extremely fast query results even on big (over 10 million content) repositories.
+Content in the SNCR are indexed using the [Lucene](http://lucene.apache.org/lucene.net/) indexing and search library. The text of binary documents (Microsoft Word, Excel, Adobe PDF, etc) is extracted and can also be searched in SNCR. Lucene provides extremely fast query results even on big (over 10 million content) repositories.
 
 ### Content access and url resolution
 

@@ -89,7 +89,7 @@ Our Aurelia control package has been refactored. The main change here is that it
 
 The main change is that the Content API itself has been removed. Most of its responsibilities has been taken by the Repository - in the most cases this means that e.g. ``myContent.checkout();`` has been moved to ``repository.versioning.checkOut(myContent.Id);``.
 
-Another breaking chage is that in the future content creation and updates will be possible only on *repository instances* via the exposed **post/patch/put** methods. That means that ``myContent.save()`` will be changed to ``repository.patch({idOrPath: myContent.Id, content: myContent})``.
+Another breaking change is that in the future content creation and updates will be possible only on *repository instances* via the exposed **post/patch/put** methods. That means that ``myContent.save()`` will be changed to ``repository.patch({idOrPath: myContent.Id, content: myContent})``.
 
 ### Promises, fetch and disposables
 
@@ -164,7 +164,7 @@ const googleAuthProvider: GoogleOauthProvider = addGoogleAuth(jwtService, {
 
 There are some major changes when it comes to content loading. The first one is that the packages use *promises*, as mentioned above, so from now on the operations can be *awaited*.
 
-The second one is that we've eliminated many unneccessary data transformations, so you can work with the plain serialized data object from the response itself. This also means that you cannot use "instanceof"-type checks on these object, you can use the "Type" property at runtime and *generics* in TypeScript during development.
+The second one is that we've eliminated many unnecessary data transformations, so you can work with the plain serialized data object from the response itself. This also means that you cannot use "instanceof"-type checks on these object, you can use the "Type" property at runtime and *generics* in TypeScript during development.
 
 There are two methods - load and loadCollection - that can be used for loading single contents / one-to-one references and collections / one-to-many references.
 

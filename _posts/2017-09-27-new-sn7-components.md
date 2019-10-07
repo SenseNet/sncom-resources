@@ -87,7 +87,7 @@ Notifications lets your users subscribe to content changes in the Repository. Th
 
 Current NuGet package: [![NuGet](https://img.shields.io/nuget/v/SenseNet.TaskManagement.Core.svg)](https://www.nuget.org/packages/SenseNet.TaskManagement.Core)
 
-Task manager is a component you need to install completely separately. It's for managing long-running background tasks, such as preview generation. But don't let us set limits for your creativity, the task manager is a powerful tool to run a bunch of tasks in the background on a seperate machine. 
+Task manager is a component you need to install completely separately. It's for managing long-running background tasks, such as preview generation. But don't let us set limits for your creativity, the task manager is a powerful tool to run a bunch of tasks in the background on a separate machine. 
 
 Make sure you read the documentation for Task Management and discover it's full power.
 

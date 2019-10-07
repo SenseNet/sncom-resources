@@ -48,7 +48,7 @@ Field handlers define the underlying logic of the Field including validation aga
 
 ## Indexing
 
-For every Content the Field values can be indexed so that when searching for a value the corresponding Content will appear in the result set. It is also possible to search in Fields by explicitely defining the Field to search for in a query. The portal uses the [Lucene search engine](/docs/http://lucene.apache.org/lucene.net/) by default for indexing the Content Repository and to provide a fast mechanism for returning query results. You can read more about Field indexing [here](/docs/field-indexing).
+For every Content the Field values can be indexed so that when searching for a value the corresponding Content will appear in the result set. It is also possible to search in Fields by explicitly defining the Field to search for in a query. The portal uses the [Lucene search engine](/docs/http://lucene.apache.org/lucene.net/) by default for indexing the Content Repository and to provide a fast mechanism for returning query results. You can read more about Field indexing [here](/docs/field-indexing).
 
 ## Deleting a field
 

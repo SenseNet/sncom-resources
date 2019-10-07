@@ -23,7 +23,7 @@ These features are called by system methods and can be customized by developers 
 
 ## Built-in naming providers
 
-We offer the following predefiend naming providers. You may choose either one of them or create a custom one based on their behavior (and source code :)).
+We offer the following predefined naming providers. You may choose either one of them or create a custom one based on their behavior (and source code :)).
 
 ## CharReplacementContentNamingProvider
 

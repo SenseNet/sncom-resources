@@ -85,7 +85,7 @@ aurelia.container.registerSingleton(Repository.BaseRepository, () => new Reposit
 
 ### Authenticate the routing and updating the navbar
 We can continue with [authenticating our routing](http://aurelia.io/hub.html#/doc/article/aurelia/framework/latest/securing-your-app/2). It's a common scenario to make frontend routes only available to registered users, and that's we're gonna do now. 
-Our root component can be found at *./src/app.ts*, we will configure the routing there. We will make our existing **users** and **child-router** routes availale only for logged in users, create a Pipeline Step for checking login states and add a new route called **login**.
+Our root component can be found at *./src/app.ts*, we will configure the routing there. We will make our existing **users** and **child-router** routes available only for logged in users, create a Pipeline Step for checking login states and add a new route called **login**.
 
 ```ts
 import { Aurelia, autoinject } from 'aurelia-framework';

@@ -20,7 +20,7 @@ In the current version of Sense/Net, the picker is based on several different th
 As I mentioned before, the main purpose of rewriting the picker was to provide developers a plugin with comprehensive configurability so that they can use the same picker plugin for picking Content, Users, Portlets or anything else.
 
 -   **views**: in this parameter you can list the name of the views that you want provide to list content in the picker. Now, you’re able to choose list or thumbnail view or both, which means if you use both views you can switch between them on the UI. Later, the picker will allow developers to add their custom views also.
--   **searcheable**: with this parameter you can switch search functionality on and off.
+-   **searchable**: with this parameter you can switch search functionality on and off.
 -   **expandable**: if you want to enable users to add new Content through the picker, set this parameter to true. In addition, with this parameter on, you can specify which type of content can be added on the picker UI.
 -   **allowMultipleSelection**: if you used Sense/Net picker before you’ll be familiar with this parameter which allows you to put users to select multiple content or not.
 -   **treeOnly**: by setting this parameter to true only the tree will be displayed in the picker
@@ -28,7 +28,7 @@ As I mentioned before, the main purpose of rewriting the picker was to provide d
 -   **callbacks**: in the callbacks section of the configuration you can define your own functionality related to the picker callback e.g. opening, closing or errors.
 -   **templates**: in this section you can define your own HTML templates for the parts of the picker e.g. header, footer, gridrow etc.
 -   **buttons**: in this section you can list the buttons that you want to display and use on the picker with their text, css classes and the functions you want to call when the button is clicked
--   **selectionroot**: this parameter is also a legacy one which was also provided in the previous picker. You can list here the selection root paths that will be displayed and can be choosen on the picker UI to change the picker trees root.
+-   **selectionroot**: this parameter is also a legacy one which was also provided in the previous picker. You can list here the selection root paths that will be displayed and can be chosen on the picker UI to change the picker trees root.
 
 ## Sample
 
