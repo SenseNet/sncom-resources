@@ -15,7 +15,7 @@ The Boolean Field is used for storing a boolean value (true or false).
 ## Field Handler
 
 - handler: SenseNet.ContentRepository.Fields.BooleanField
-- short name: **Boolean**
+- short name: **Boolean**.\
 Usage in CTD:
 
 ```xml
@@ -33,7 +33,7 @@ Usage in CTD:
 
 There are no specific properties defined for this Field Control besides the common properties.
 
->For a complete list of common Field Setting configuration properties see [CTD Field definition](./Content-Type-Definition#Field_definition).
+> For a complete list of common Field Setting configuration properties see [CTD Field definition](./Content-Type-Definition#Field_definition).
 
 ## Example/Tutorials
 
