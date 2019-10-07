@@ -36,7 +36,7 @@ All NotificationConfig content has the following fields:
 ### NotificationConfig default operation
 The following applies to the email sending procedure when an event is affected by a *NotificationConfig* content:
 
-- emails about content that are in a subtree thet does not contain a notification config are generated with the [default templates](/docs/notification)
+- emails about content that are in a subtree that does not contain a notification config are generated with the [default templates](/docs/notification)
 - NotificationConfig content at lower levels override those on upper levels
 - the Subject and the Body of the emails are specified by the corresponding Fields of the NotificationConfig content. The provided *{FieldName}* templates are replaced with their corresponding Field data.
 - the Sender of the emails is set to the SenderAddress specified by the NotificationConfig content (if not empty)
