@@ -1,7 +1,7 @@
 ---
 
 title: Boolean Field
-source_url: https://github.com/SenseNet/sensenet.github.io/tree/master/_docs/boolean_field.md
+source_url: https://github.com/SenseNet/sensenet.github.io/tree/master/_docs/boolean-field.md
 category: Development
 version: v7.0.0
 tags: [boolean, field, field control]
