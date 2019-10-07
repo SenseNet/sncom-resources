@@ -1,8 +1,8 @@
 ---
 title:  "Binary Field"
 source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/binary-field.md'
-category: Concepts
-version: v6.0
+category: Development
+version: v7.0.0
 tags: [fields, binary]
 description: Binary Field is used for storing binary data. This is the most important Field defined on the File Content Type.
 ---
