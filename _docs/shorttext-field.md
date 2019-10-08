@@ -65,6 +65,4 @@ The above example configures the ShortText Field so that:
 - Field value is editable (not read-only)
 - Field can contain only letters and numbers
 
-## Related Links
-- [Field](/docs/field)
-- [ShortText Field Control](/docs/shorttext-fieldcontrol)
+

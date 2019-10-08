@@ -84,8 +84,3 @@ The above example configures the Reference Field so that:
 - content can only be referenced from under _/Root/System_ and _/Root/Sites_
 - by default _/Root/System/SystemPlugins_ and _/Root/System/Schema_ is referenced
 
-## Related Links
-- [Field](/docs/field)
-- [ReferenceGrid Field Control]()
-- [Node for developers](/docs/node-for-developers)
-- [ContentPicker]()
