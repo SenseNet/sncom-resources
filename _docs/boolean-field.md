@@ -55,11 +55,3 @@ The above example configures the Reference Field so that:
 - display name will be _Requires registration_
 - the field will be _hidden_ in browse mode and it will be under the _advanced fields_ in edit and new mode when the Content is displayed with [Generic Content View](./Generic-Content-View).
 
-## Related links
-
-- [Field](./Field)
-- [Boolean Field Control](./Boolean-Field-Control)
-
-## References
-
-[Category:](./Category) [Fields](./Field)
