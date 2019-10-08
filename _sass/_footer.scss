@@ -6,6 +6,13 @@ footer {
     margin-top: 50px;
 }
 
+footer .container-narrow {
+    @media screen and (max-width: 1100px) and (min-width: 800px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
 footer .footer-logo {
     position: absolute;
     left: 50%;
