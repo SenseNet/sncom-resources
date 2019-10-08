@@ -1,6 +1,6 @@
 ---
-title: "Integer Field"
-source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/integer-field.md'
+title: "Number Field"
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/number-field.md'
 category: Development
 version: v7.0.0
 tags: [number, field]
@@ -62,12 +62,3 @@ The above example configures the Number field so that:
 - the minimal value has to be at least 1
 - the maximal value can be set up to 99.5 (remark that the Min and MaxValue can be defined by decimal number)
 - the data is displayed with 4 decimal numbers
-
-## Related links
-
-- [Field](/field)
-- [Number Field Control](/number-field-control)
-
-# References
-
-[Category](/special:categories): [Field](/category:fields)
