@@ -9,17 +9,17 @@ description: An overview the version information available for the running insta
 
 # Verison Info
 
-Version Info provides information on the currently running instance of SenseNet.
+Version Info provides information on the currently running instance of sensenet.
 
 ![Version Info](/img/setup-dashboard.png "Version information page")
 
 ## Admin UI
 
-The Admin UI section contains information regarding the SenseNet client.
+The Admin UI section contains information regarding the sensenet client.
 
-**Application version**: Running version of the SenseNet client.
+**Application version**: Running version of the sensenet client.
 
-**Branch name**: SenseNet client Github branch in use. Clicking on the branch will
+**Branch name**: sensenet client Github branch in use. Clicking on the branch will
 direct users to the Github client repository.
 
 **Commit Hash**: Latest commit for the current branch. Clicking on the hash
@@ -27,20 +27,20 @@ will direct users to the file diff for the commit.
 
 ## Components
 
-Several SenseNet components are utilized with the SenseNet installation. This
+Several sensenet components are utilized with the sensenet installation. This
 section describes the components in use and the respective versions.
 
 ## Installed packages
 
-Similar to the Components section, the installed packages detail all SenseNet
+Similar to the Components section, the installed packages detail all sensenet
 packages installed, versions, and package descriptions for the installed
-version of SenseNet.
+version of sensenet.
 
 ## Assemblies
 
-When SenseNet is compiled, additional assemblies are linked for use. These
+When sensenet is compiled, additional assemblies are linked for use. These
 assemblies can be standard .NET libraries, open-source libraries (e.g. nuget),
-or locally built libraries (e.g. SenseNet).
+or locally built libraries (e.g. sensenet).
 
 All information regarding included assemblies is detailed in this section.
 
