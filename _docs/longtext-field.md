@@ -1,6 +1,6 @@
 ---
-title: "Integer Field"
-source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/integer-field.md'
+title: "LongText Field"
+source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/longtext-field.md'
 category: Development
 version: v7.0.0
 tags: [longtext, field]
@@ -73,7 +73,3 @@ The above example configures the LongText Field so that:
 
 - [Field](/field)
 - [longText Field Control](/longtext-field-control)
-
-# References
-
-[Category](/special:categories): [Field](/category:fields)
