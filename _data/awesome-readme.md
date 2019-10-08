@@ -1,10 +1,22 @@
-# Awesome sensenet! [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+<a href ="http://sensenet.com">
+    <img src="/img/sensenet-logo.png" align="right" width="90">
+</a>
 
-[<img src="sensenetlogo.png" align="right" width="90">](http://sensenet.com)
+<h1 align="center">  
+  Awesome SenseNet!
+</h1> 
 
-A collection of awesome sensenet ECM packages, tools, resources and shiny things. :sparkles:
+<p align="center">
+  <a href="https://github.com/sindresorhus/awesome">
+    <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg?master-branch" alt="Awesome SenseNet">
+  </a> 
+  <a href="https://badge.fury.io/nu/%40sensenet%2Fsensenet.github.io">
+    <img src="https://badge.fury.io/nu/%40sensenet%2Fsensenet.github.io.svg?master-branch" alt="Awesome SenseNet">
+  </a> 
+</p>
 
-<br />
+<p align="center">A collection of awesome sensenet ECM packages, tools, resources and shiny things. :sparkles:
+</p>
 
 ## Contents
 
@@ -14,6 +26,7 @@ A collection of awesome sensenet ECM packages, tools, resources and shiny things
 - [Documentation](#documentation)
 - [Examples](#examples)
 - [Community](#community)
+- [Other](#other)
 
 ## Main Project
 
