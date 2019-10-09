@@ -21,7 +21,7 @@ Usage in CTD:
 ```xml
    <Field name="IsSystemContent" type="Boolean">
    ...
-   </Field
+   </Field>
 
 ```
 
