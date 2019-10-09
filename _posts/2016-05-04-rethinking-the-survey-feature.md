@@ -21,7 +21,7 @@ To make the UI ready for this, the following items need to be added or upgraded 
 
 ## Creating a new Survey
 
-![Add new survey](http://download.sensenet.com/BlogPostImages/SurveyEditor/add-new-survey.png "Add new survey")
+![Add new survey](https://download.sensenet.com/BlogPostImages/SurveyEditor/add-new-survey.png "Add new survey")
 
 After having opened the Survey creator app, one can easily create a new Survey by setting the parameters on a graphic UI:
 
@@ -32,7 +32,7 @@ After having opened the Survey creator app, one can easily create a new Survey b
 -   Good bye message (not only plain text but links or even html could be added here)
 -   Adding Sections
 
-![Add new section](http://download.sensenet.com/BlogPostImages/SurveyEditor/add-new-section.png "Add new section")
+![Add new section](https://download.sensenet.com/BlogPostImages/SurveyEditor/add-new-section.png "Add new section")
 
 Added sections can be configured by the following parameters:
 
@@ -42,11 +42,11 @@ Added sections can be configured by the following parameters:
 -   Deleting Sections
 -   Set the order of Sections by Drag&amp;Drop them
 
-![Add new question](http://download.sensenet.com/BlogPostImages/SurveyEditor/add-new-question.png "Add new question")
+![Add new question](https://download.sensenet.com/BlogPostImages/SurveyEditor/add-new-question.png "Add new question")
 
 In each section multiple questions can be included of different predefined types - e.g. Number, Short answer or Date and time.
 
-![Edit question](http://download.sensenet.com/BlogPostImages/SurveyEditor/edit-question.png "Edit question")
+![Edit question](https://download.sensenet.com/BlogPostImages/SurveyEditor/edit-question.png "Edit question")
 
 After having added a question there is a bunch of possibilities to be configured:
 
@@ -61,7 +61,7 @@ Questions can be reordered by drag&amp;drop, and you can check how your question
 
 After a survey is assembled and saved, it is ready to be filled.
 
-![Complete a survey](http://download.sensenet.com/BlogPostImages/SurveyEditor/complete-survey.png "Complete a survey")
+![Complete a survey](https://download.sensenet.com/BlogPostImages/SurveyEditor/complete-survey.png "Complete a survey")
 
 Sections and Questions are shown in the Survey editor via a preview, which is rendered by the very same layout as they appear in the upshot Survey.
 
