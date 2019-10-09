@@ -17,7 +17,7 @@ From now on you can make use of our brand-new permission visualization tool, whi
 
 The Permission Overview is a useful tool when you have the task to figure out which parts of the system are accessible by a certain user and the structure of those permissions. It is also useful when you need to make adjustments on the permission structure and want to know what will happen if you change something.
 
-![Permission overview tool to visualize the permission structureand inheritance](http://download.sensenet.com/BlogPostImages/PermissionOverview/overview.png "Permission overview tool to visualize the permission structureand inheritance")
+![Permission overview tool to visualize the permission structureand inheritance](https://download.sensenet.com/BlogPostImages/PermissionOverview/overview.png "Permission overview tool to visualize the permission structureand inheritance")
 
 ## Usage
 
