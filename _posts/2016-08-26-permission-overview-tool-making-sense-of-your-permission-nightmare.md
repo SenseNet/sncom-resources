@@ -11,7 +11,7 @@ Have you ever wanted to know the permissions of a certain user, not just for a s
 
 From now on you can make use of our brand-new permission visualization tool, which provides an overview on any user’s permission structure over all contents through the Content Repository. With the use of a tree view, the tool will display the permission structure of all built-in permission types in the whole repository or in a chosen subtree. Each permission type is represented by an icon as it follows:
 
-![Permission types in the content repository](http://download.sensenet.com/BlogPostImages/PermissionOverview/permissiontypes.png "Permission types in the content repository")
+![Permission types in the content repository](https://download.sensenet.com/BlogPostImages/PermissionOverview/permissiontypes.png "Permission types in the content repository")
 
 ## What is it for?
 
@@ -37,13 +37,13 @@ It is an easy-to-use tool where all data is nicely organized to aid the most com
 
 In this mode you’ll see inherited and explicit permissions indicated by the permission type icons above.
 
-![Current leve permission structure of a content](http://download.sensenet.com/BlogPostImages/PermissionOverview/PragueCurrentlevelPermissions.png "Current leve permission structure of a content")
+![Current leve permission structure of a content](https://download.sensenet.com/BlogPostImages/PermissionOverview/PragueCurrentlevelPermissions.png "Current leve permission structure of a content")
 
 ## Permissions in subtree
 
 The second one is a handy view to help find permission settings in the subtree and avoid unnecessary searching in subtree-branches that are not relevant to the selected user.
 
-![Permission settings &quot;in subtree&quot; of a content](http://download.sensenet.com/BlogPostImages/PermissionOverview/PragueSubtreePermissions.png "Permission settings &quot;in subtree&quot; of a content")
+![Permission settings &quot;in subtree&quot; of a content](https://download.sensenet.com/BlogPostImages/PermissionOverview/PragueSubtreePermissions.png "Permission settings &quot;in subtree&quot; of a content")
 
 ## Notations
 
@@ -57,19 +57,19 @@ The legend on the top right corner helps you understand the notations the tool u
 -   Explicitly denied: indicates that the permission is explicitly denied on the content (deny is always stronger than the allow on the specific permission-type)
 -   Implicitly denied: indicates inherited deny.
 
-![Legend to the permission overview](http://download.sensenet.com/BlogPostImages/PermissionOverview/overviewWithLegend.png "Legend to the permission overview")
+![Legend to the permission overview](https://download.sensenet.com/BlogPostImages/PermissionOverview/overviewWithLegend.png "Legend to the permission overview")
 
 ## Permission matrix
 
 When a content in the tree is selected, the permission matrix of the selected content will be displayed under the tree on a separate panel. This table shows the permission inheritance from the parent chain and explicit permission settings on the selected content. It also displays the group inheritance of the permission set related to the selected user. This view is outstanding when the group inheritance of certain permissions needs to be investigated.
 
-![The permission matrix of a selected content](http://download.sensenet.com/BlogPostImages/PermissionOverview/selectedPermissionMatrix.png "The permission matrix of a selected content")
+![The permission matrix of a selected content](https://download.sensenet.com/BlogPostImages/PermissionOverview/selectedPermissionMatrix.png "The permission matrix of a selected content")
 
 ## Where to find it
 
 The tool is placed in the “System” folder, but it is also available from the Root Console:
 
-![Find permission overview in the content explorer!](http://download.sensenet.com/BlogPostImages/PermissionOverview/contentExplorer.png "Find permission overview in the content explorer!")
+![Find permission overview in the content explorer!](https://download.sensenet.com/BlogPostImages/PermissionOverview/contentExplorer.png "Find permission overview in the content explorer!")
 
 We really hope, that you guys, will find it a pretty useful tool, and we'd love to know your opinion. Feel free to give us a feedback!
 
