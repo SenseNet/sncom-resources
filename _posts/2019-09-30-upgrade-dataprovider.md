@@ -11,8 +11,6 @@ The data structure of sensenet has been more or less the same for many years. We
 
 ---
 
-> This feature is coming soon with the next release of sensenet, **version 7.7**.
-
 ## Do I need to deal with the upgrade?
 If you create a new project or work in a development environment where you re-build your database frequently, you do not have to deal with the upgrade: just get the latest sensenet packages from nuget, install the new db and you're done.
 
