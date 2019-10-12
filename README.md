@@ -1,4 +1,4 @@
-# sensenet.github.io
+# [sensenet.github.io](https://community.sensenet.com)
 
 Source code for the community website of sensenet developers. It's made with Jekyll, hosted on GitHub Pages.
 
