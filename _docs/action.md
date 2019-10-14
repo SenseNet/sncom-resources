@@ -108,6 +108,6 @@ In our example, the applications for Posts and Topics are distributed as such:
   - **Lock** - /Root/Sites/MySite/Forum/(apps)/ForumTopic/Lock
   - **Move** - /Root/(apps)/GenericContent/Move
 
-  You simply enter the `ForumAdmin` keyword in the *Scenario* field of all the applications above. Now the appropriate actions will be displayed for moderators when they open the admin console. Note however, that you placed the **Delete** action for GenericContent in the Scenario, which means it will also display for Topics. To hide it, you simply need to deny the Delete permission on Topics for the moderator group. This way, the Delete action on Topics will become unaccessible, and will not show up in the menu.
+  You simply enter the `ForumAdmin` keyword in the *Scenario* field of all the applications above. Now the appropriate actions will be displayed for moderators when they open the admin console. Note however, that you placed the **Delete** action for GenericContent in the Scenario, which means it will also display for Topics. To hide it, you simply need to deny the Delete permission on Topics for the moderator group. This way, the Delete action on Topics will become inaccessible, and will not show up in the menu.
 
   This also helps make your system more secure. Simply not showing a command in a menu does not offer real protection. To deny a certain action for a group of users, the preferred way is to use [User rights management](user-rights-management).
