@@ -3,6 +3,8 @@ email: snteam@sensenet.com
 description: 'sensenet Community Website'
 twitter:
     username: sensenet
+facebook:
+    facebook: sensenetcms
 github_username: SenseNet
 author: SenseNet
 future: true
@@ -45,6 +47,7 @@ social:
     name: Sense/Net
     links:
         - https://twitter.com/sensenet
+        - https://www.facebook.com/sensenetcms
         - https://www.linkedin.com/company/sense-net-inc
         - https://plus.google.com/+Sensenet
         - https://github.com/SenseNet
