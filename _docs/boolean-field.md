@@ -4,13 +4,14 @@ title: Boolean Field
 source_url: https://github.com/SenseNet/sensenet.github.io/tree/master/_docs/boolean-field.md
 category: Development
 version: v7.0.0
-tags: [boolean, field, field control]
+tags: [boolean, field, field control,Boolean logics,boolean switches]
 
 ---
 
 # Boolean Field
 
-The Boolean Field is used for storing a boolean value (true or false).
+The Boolean Field is used for storing a boolean value (true or false) and boolean corresponds to switches in form of binary 
+i.e. 1 correspons True and 0 corresponds to False .
 
 ## Field Handler
 
@@ -27,7 +28,7 @@ Usage in CTD:
 
 ## Supported Field Controls
 
-[Boolean Field Control](./Boolean-Field-Control): a simple Checkbox control where the user can select the value to be true or false.
+[Boolean Field Control](./Boolean-Field-Control): a simple Checkbox control where the user can select the value to be true or false or we toggle the boolean value true or false.
 
 ## Configuration
 
@@ -50,8 +51,8 @@ Fully featured example:
     </Field>
 ```
 
-The above example configures the Reference Field so that:
+>The above example configures the Reference Field so that:
 
-- display name will be _Requires registration_
-- the field will be _hidden_ in browse mode and it will be under the _advanced fields_ in edit and new mode when the Content is displayed with [Generic Content View](./Generic-Content-View).
+- display name will be **Requires registration**
+- the field will be **hidden in browse mode** and it will be under the _advanced fields_** in edit and new mode when the Content is    displayed with [Generic Content View](./Generic-Content-View).
 
