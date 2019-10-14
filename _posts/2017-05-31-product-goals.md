@@ -33,7 +33,6 @@ The team wanted to know if we were developing the right features for the right s
   [80c6156c]: nuget.org/profiles/sensenet "sensenet Nuget"
   [ffdb2e87]: https://www.npmjs.com/org/sensenet "sensenet on npm"
   [0c3b4e3a]: https://twitter.com/sensenet "Twitter"
-  [b175e3d7]: https://www.facebook.com/sensenetcms/ "sensenet on Facebook"
 
 Follow us on [Twitter][0c3b4e3a], like us on [Facebook][b175e3d7], or [clone the repository][bebd2231] and we'll need to check on our stats. We'll hate that (not really, so please, be a good champ).
 
