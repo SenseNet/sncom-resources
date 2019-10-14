@@ -66,7 +66,7 @@
 
   function removeTitleFromHtml(html) {
     var ind = html.indexOf('/h1') + 4;
-    if (html.indexOf('<h1>') === 0) {
+    if (html.includes('<h1>')) {
       html = html.substr(ind);
     }
     return html;
