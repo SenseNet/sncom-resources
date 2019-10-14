@@ -78,7 +78,7 @@
 - [Community site](http://community.sensenet.com)
 - [sensenet Blog](http://community.sensenet.com/blog/)
 - [Stack Overflow](http://stackoverflow.com/questions/tagged/sensenet)
-- [Facebook](https://www.facebook.com/sensenetcms)
+- [Facebook](https://www.facebook.com/sensenetcsp)
 - [Twitter](https://twitter.com/sensenet)
 - [Gitter](https://gitter.im/SenseNet)
 
