@@ -8,7 +8,9 @@ sensenet Community Website https://community.sensenet.com
  - [_drafts](_drafts)   ==> Here all are the draft post are stored to be edited in future and published 
  - [_includes](_includes)  ==> This is something like unique folder where our Files like footer, hearder are stored
  - [_pages](_pages)   ==> This includes some published pages at our Website https://community.sensenet.com
- - [_updates](_updates)   ==> Similar to the docs forder this folder contains Pages that strore updates for our products and website Extremly helpfull to check for changes
+ - [_updates](_updates)   ==> folder contains the changelogs of the sn-client mono repos. And there's another folder names
+  - [_releases](_releases)  ==> contains the changelogs of the backend nuget package's release notes.
+ 
 
 
 ## Components
