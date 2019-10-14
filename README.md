@@ -1,7 +1,15 @@
 # sensenet Community website
 
-Our Community website to have documentation of all services provided by our organization
+Our Community website that has complete documentation of all the services provided by our organization.
 sensenet Community Website https://community.sensenet.com
+
+## File Structure Related to Website
+ - [_docs](_docs) ==> This folder Contains all Documentation pages published documentation that can be found on our Community website.
+ - [_drafts](_drafts)   ==> Here all are the draft post are stored to be edited in future and published 
+ - [_includes](_includes)  ==> This is something like unique folder where our Files like footer, hearder are stored
+ - [_pages](_pages)   ==> This includes some published pages at our Website https://community.sensenet.com
+ - [_updates](_updates)   ==> Similar to the docs forder this folder contains Pages that strore updates for our products and website Extremly helpfull to check for changes
+
 
 ## Components
 
