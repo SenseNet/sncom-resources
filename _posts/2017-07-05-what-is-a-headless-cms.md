@@ -9,7 +9,7 @@ The term 'headless cms' has been rising in popularity for a while now. But why t
 
 ---
 ## What is a headless CMS?
-First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress or Drupal are usually included in this category. At monolithic cms's the modal layer is tightly coupled with the view, and the creators of the platform provide you with a templating engine with which you can implement your frontend. So in this model you'd have:
+First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress or Drupal are usually included in this category. At monolithic cms's the modal layer is tightly coupled with the view, and the creators of the platform provide you with a templating engine with which you can implement your frontend. So in this model, you'd have:
 
 - a Database at the "bottom", where you store your content
 - an App, with a UI that lets you [Create, Read, Update and Delete][25358749] this content

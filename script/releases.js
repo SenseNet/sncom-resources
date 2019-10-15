@@ -26,7 +26,7 @@ for (var i = 0; i < repos.length; i++) {
     const releases = body
       .filter(release => !release.draft)
       .map(release => {
-        if (release.tag_name.indexOf('v') === 0)
+        if (release.tag_name.includes('v'))
           release.version = release.tag_name.substring(1)
         else
           release.version = release.tag_name;
