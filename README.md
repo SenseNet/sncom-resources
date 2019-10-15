@@ -22,7 +22,7 @@ sensenet Community Website https://community.sensenet.com
 
 ## Built With
 
-* [Jekyll](https://jekyllrb.com/) - The web framework used
+* [Jekyll](https://jekyllrb.com/) - The web framework used is jekyl. Jekyll is a simple and static site generator that is used for personal, project, or organizational sites. This is written in Ruby by Tom Preston-Werner, GitHub's co-founder, it is also distributed under the open source MIT License.
 
 ## Contributing
 
