@@ -11,7 +11,7 @@ We have already left the halfway point for Hacktoberfest 2019, but it's still no
 
 ---
 
-## How It's Going So Far
+## How It's Going So Far 🚀
 
 Being the middle of october is a great opportunity take look back and see how far we get together and also to see what else could we achieve in the next few weeks.
 
