@@ -7,7 +7,7 @@ tags: [hacktoberfest, community, progress]
 
 ---
 
-We have already left the halfway point for Hacktoberfest 2019, but it's still not too late to jump in and get your extra swag! 👕 Help us to grow community around sensenet making a pull request in on of our repositories and join those who already are part of the celebration! 🎃
+We have already left the halfway point for Hacktoberfest 2019, but it's still not too late to jump in and get your extra swag! 👕 Help us to grow community around sensenet making a pull request in one of our repositories and join those who are already part of the celebration! 🎃
 
 ---
 
