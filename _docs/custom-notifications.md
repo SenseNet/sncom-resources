@@ -11,7 +11,7 @@ description: sensenet provides an easy-to-use Notification feature to allow user
 # Custom notifications
 sensenet provides an easy-to-use [Notification](/docs/notification) feature to allow users to subscribe to different events and receive mail messages about changes in the [Content Repository](/docs/content-repository). 
 
-The process of mail generation can be fine tuned using *NotificationConfig* files.
+The mail generation process can be fine tuned using *NotificationConfig* files.
 
 When an event occurs in the Content Repository, an email message is sent to all subscribers, immediately or in a digest message - depending on the frequency settings of the subscription. These email messages can be customized by placing a content of *NotificationConfig* content type under a system folder of the name *(config)*, at the desired place in the Content Repository. Resolution of these configurations pretty much works the same way as resolving applications in the [Smart Application Model](/docs/smart-application-model). Here is an example structure for placing NotificationConfig content in the Content Repository:
 
@@ -22,9 +22,9 @@ When an event occurs in the Content Repository, an email message is sent to all 
        - (config)
          - NotificationConfig
 
-This way every email about changes below the *Default_Site* will be controlled by the NotificationConfig content placed in the (config) system folder. The **name** of the configuration content **must be NotificationConfig**.
+This way every email about changes below the *Default_Site* will be controlled by the *NotificationConfig* content placed in the (config) system folder. The **name** of the configuration content **must be NotificationConfig**.
 
-> A NotificationConfig content can control the outlook of separate emails and therefore it currently *does not support digest mode emails*. Any email about a change under a path controlled by a custom NotificationConfig content will be sent separately, even if the subscription is for digest emails.
+> A NotificationConfig content can control the outlook of separate emails and therefore it currently *does not support digest mode emails*. Any email about a change under a path controlled by a custom *NotificationConfig* content will be sent separately, even if the subscription is for digest emails.
 
 ### NotificationConfig fields
 All NotificationConfig content has the following fields:
@@ -38,9 +38,9 @@ The following applies to the email sending procedure when an event is affected b
 
 - emails about content that are in a subtree thet does not contain a notification config are generated with the [default templates](/docs/notification)
 - NotificationConfig content at lower levels override those on upper levels
-- the Subject and the Body of the emails are specified by the corresponding Fields of the NotificationConfig content. The provided *{FieldName}* templates are replaced with their corresponding Field data.
-- the Sender of the emails is set to the SenderAddress specified by the NotificationConfig content (if not empty)
-- emails about the changes of NotificationConfig files are not sent.
+- the Subject and the Body of the emails are specified by the corresponding Fields of the *NotificationConfig* content. The provided *{FieldName}* templates are replaced with their corresponding Field data.
+- the Sender of the emails is set to the SenderAddress specified by the *NotificationConfig* content (if not empty)
+- emails about the changes of *NotificationConfig* files are not sent.
 
 ### Template resolution
 You can use any dynamic property in a template that can be cast to a string, for example:
@@ -64,11 +64,11 @@ You can create custom Notification configurations by creating a custom [Content 
 - **GetSubject**: creates a subject for the email message. The changed/created content is passed as a parameter.
 - **GetBody**: creates a body for the email message.
 - **GetSenderAddress**: creates a sender address for the email message.
-- **IsNotificationAllowedForContent**: you can define whether an email message is to be sent for the provided content or not. The default implementation simply checks if the context is the NotificationConfig content itself and in that case it returns false - you can specify a complex decision logic here if necessary.
+- **IsNotificationAllowedForContent**: you can define whether an email message is to be sent for the provided content or not. The default implementation simply checks if the context is the *NotificationConfig* content itself and in that case it returns false - you can specify a complex decision logic here if necessary.
 
 You can use the *ReplacePropertyValues* base method to use the built-in template resolution procedure.
 
-See the example section below on how to create a custom NotificationConfig type and handler.
+See the example section below on how to create a custom *NotificationConfig* type and handler.
 
 ## Examples/Tutorials
 ### Customizing subject and body
@@ -92,7 +92,7 @@ This way the emails sent about News Articles will have a customized subject and 
 ### Differentiating by Content Type
 The following example shows how to send customized notifications on content in the Content Repository (in this example content that can be commented and liked by users). Since Comments and Likes are also content in the Content Repository, notifications are also sent to users who have subscribed when they are created. These emails should look somewhat different from other emails.
 
-- **1:** create a new [Content Handler](/docs/content-handler) inheriting from NotificationConfig. Create new strongly typed properties for defining the templates for subjects and bodies for Likes and Comments. Override the *GetSubject*, *GetBody* and *IsNotificationAllowedForContent* methods:
+- **1:** create a new [Content Handler](/docs/content-handler) inheriting from *NotificationConfig*. Create new strongly typed properties for defining the templates for subjects and bodies for Likes and Comments. Override the *GetSubject*, *GetBody* and *IsNotificationAllowedForContent* methods:
 
 ```csharp
 using System;
