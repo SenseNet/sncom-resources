@@ -2,7 +2,7 @@
 
 title: "Hacktoberfest halftime show"
 author: [herflis]
-image: "../img/posts/hacktoberfest-halftime.jpg"
+image: "/img/posts/hacktoberfest-halftime.jpg"
 tags: [hacktoberfest, community, progress]
 
 ---
