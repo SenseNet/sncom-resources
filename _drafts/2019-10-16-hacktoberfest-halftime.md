@@ -13,7 +13,7 @@ We have already left the halfway point for Hacktoberfest 2019, but it's still no
 
 ## How It's Going So Far 🚀
 
-Being the middle of october is a great opportunity take look back and see how far we get together and also to see what else could we achieve in the next few weeks.
+Being the middle of october is a great opportunity to take a look back and see how far we get together and also to see what else could we achieve in the next few weeks.
 
 As you probably know sensenet rewards the first 100 contributors with an extra swag (limited edition sensenet hacktoberfest t-shirt and) if they join us in celebration by registering [here on this form](https://sensenet.com/Hacktoberfest2019). 170 of you applied to participate so far, but don't worry, not all of them did meet the other requirement up to now. Although almost 250 pull requests was made by you in the last two weeks, 25 more t-shirts are left to reward some of you with them. 🎁 
 
