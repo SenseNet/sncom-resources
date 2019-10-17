@@ -40,7 +40,7 @@ The Content Repository is basically a tree structure of the various stored conte
 - **Root** - this is the root of the tree structure. If you click on it in [Content Explorer](/docs/content-explorer) you will get a link summary page where the most common administrative functions are listed ([Root Console](/docs/root-console))
   - **(apps)** - top level _(apps)_ folder containing the global applications for various [Content Types](/docs/content-types)
   - **ContentTemplates** - folder containing [Content Templates](/docs/content-templates): pre-defined default values and structures for [Content Types](/docs/content-types)
-  - **Global** - the global resources of the portal. Requested skin resources will fall back to these Content if not defined in the current skin
+  - **Global** - the global resources of the portal. Requested skin resources will fall back to these contents if not defined in the current skin
     - **celltemplates**
     - **contentviews**
     - **fieldcontroltemplates**
