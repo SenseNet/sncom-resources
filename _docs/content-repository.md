@@ -9,7 +9,7 @@ description: A content repository is a store of digital content with an associat
 
 # Content Repository
 
-A content repository is a store of digital content with an associated set of data management, search and access methods allowing application-independent access to the content rather like a digital library, but with the ability to store and modify content in addition to searching and retrieving. The sensenet Content Repository (SNCR) forms the technical underpinning of sensenet. It gives structure to unstructured content as the logical storage facility. It is the container of content (individual blocks of information) that also provides the service layer to manipulate (add, copy, move, delete, etc.) it.
+A content repository is a store of digital content with an associated set of data management, search and access methods allowing application-independent access to the content rather like a digital library, but with the ability to store and modify content in addition to searching and retrieving. The sensenet Content Repository (SNCR) creates the technical underpinning of sensenet. It gives a structure to the unstructured content as the logical storage facility. It is the container of content (individual blocks of information) that also provides the service layer to manipulate (add, copy, move, delete, etc.) it.
 
 ### Managing Content
 
@@ -40,7 +40,7 @@ The Content Repository is basically a tree structure of the various stored conte
 - **Root** - this is the root of the tree structure. If you click on it in [Content Explorer](/docs/content-explorer) you will get a link summary page where the most common administrative functions are listed ([Root Console](/docs/root-console))
   - **(apps)** - top level _(apps)_ folder containing the global applications for various [Content Types](/docs/content-types)
   - **ContentTemplates** - folder containing [Content Templates](/docs/content-templates): pre-defined default values and structures for [Content Types](/docs/content-types)
-  - **Global** - the global resources of the portal. Requested skin resources will fall back to these Content if not defined in the current skin
+  - **Global** - the global resources of the portal. Requested skin resources will fall back to these contents if not defined in the current skin
     - **celltemplates**
     - **contentviews**
     - **fieldcontroltemplates**
@@ -75,7 +75,7 @@ The Content Repository is basically a tree structure of the various stored conte
 
 ### Content Repository and the type system
 
-The sensenet Content Repository is built upon a metadata system with pre-defined base types and type inheritance support. Content stored in SNCR can have different types, but content can be one type at any one time. A content type defines the properties (fields) and behavior of content. [Content type definitions](/docs/ctd) are also stored as content in the repository. They are located in the _/Root/System/Schema/ContentTypes_ folder. To sum it up, the SNCR relies on the type system that - from the storage perspective - defines the reusable set of fields for each content type. You can also add extra fields to a certain content (apart from the fields in its type) through [aspects](/docs/aspect).
+The sensenet Content Repository is built upon a metadata system with pre-defined base types and type inheritance support. Content stored in SNCR can have different types, but content can be of one type only at any one time. A content type defines the properties (fields) and behavior of content. [Content type definitions](/docs/ctd) are also stored as content in the repository. They are located in the _/Root/System/Schema/ContentTypes_ folder. To sum it up, the SNCR relies on the type system that - from the storage perspective - defines the reusable set of fields for each content type. You can also add extra fields to a certain content (apart from the fields in its type) through [aspects](/docs/aspect).
 
 ### Metadata indexing for fast search and filtering
 
