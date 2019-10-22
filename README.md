@@ -22,7 +22,7 @@ sensenet Community Website https://community.sensenet.com
 
 ## Built With
 
-* [Jekyll](https://jekyllrb.com/) - The web framework used
+* [Jekyll](https://jekyllrb.com/) - This web framework is used
 
 ## Contributing
 
