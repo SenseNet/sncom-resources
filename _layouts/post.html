@@ -10,7 +10,7 @@
       <nav class="blog-menu">
         <ul>
           {% for post in site.posts limit:10 %}
-          <li><a href="{{post.url}}">{{post.title}}</a></li>
+          <li><b><a href="{{post.url}}">{{post.title}}</a></b></li>
           {% endfor %}
         </ul>
       </nav>
@@ -37,7 +37,7 @@
 
       <ul class="docs-tags">
       {% for tag in page.tags %}
-      <li class="docs-tag"><i class="fa fa-tag"></i><a href="/blogtags#{{ tag }}">{{ tag }}</a></li>
+      <li class="docs-tag"><b><i class="fa fa-tag"></i><a href="/blogtags#{{ tag }}">{{ tag }}</a></b></li>
       {% endfor %}
     </ul>
 
