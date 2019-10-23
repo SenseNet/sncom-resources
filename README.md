@@ -10,7 +10,9 @@ sensenet Community Website https://community.sensenet.com
  - [_pages](_pages)   ==> This includes some published pages at our Website https://community.sensenet.com
  - [_updates](_updates)   ==> folder contains the changelogs of the sn-client mono repos. And there's another folder names
   - [_releases](_releases)  ==> contains the changelogs of the backend nuget package's release notes.
- 
+  - [_sass](_sass)  ==> contains the sass source files for different functionality in pages and extending the css.
+ - [fonts](fonts)  ==>  It contains the download font resources from different libraries .
+ - [img](img)  ==> contains the images used in website.
 
 
 ## Components
