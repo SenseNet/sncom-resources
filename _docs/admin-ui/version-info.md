@@ -1,6 +1,6 @@
 ---
 title: "Version Info"
-source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/docs/admin-ui/version-info.md"
+source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/admin-ui/version-info.md"
 category: Admin UI
 version: v7.0
 tags: [admin ui, version, settings]
