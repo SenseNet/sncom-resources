@@ -1,6 +1,6 @@
 ---
 title: "Setup"
-source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/docs/admin-ui/configs.md"
+source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/admin-ui/configs.md"
 category: Admin UI
 version: v7.0
 tags: [admin ui, setup, config, settings, cache]
