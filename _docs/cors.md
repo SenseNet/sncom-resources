@@ -8,7 +8,7 @@ description: In this article operators and developers may learn about CORS setti
 ---
 
 # Cross-origin resource sharing
-[Cross-origin resource sharing](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) (CORS) is a technique that allows client-side web developers to access resources from a *different domain*. Shared JavaScript files or images are good examples for this. However cross-origin requests can also be used by hackers and malicious sites to access confidential information if a site is not protected against [Cross Site Request Forgery](http://hu.wikipedia.org/wiki/Cross-site_request_forgery) (CSRF) attacks. This is why browsers apply strict rules for these operations to prevent hackers from accessing the portal from external sites.
+[Cross-origin resource sharing](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) (CORS) is a technique that allows client-side web developers to access resources from a *different domain*. Shared JavaScript files or images are good examples for this. However cross-origin requests can also be used by hackers and malicious sites to access confidential information if a site is not protected against [Cross Site Request Forgery](https://en.wikipedia.org/wiki/Cross-site_request_forgery) (CSRF) attacks. This is why browsers apply strict rules for these operations to prevent hackers from accessing the portal from external sites.
 
 > **sensenet** supports CORS OData requests from **version 6.4** and CORS file download requests from **version 6.5.3**. In this article operators and developers may learn about CORS settings and how we prevent cross-domain attacks.}}
 
@@ -95,7 +95,7 @@ You can also customize the list of allowed http headers for CORS requests (for e
 ```
 
 ## Preflight request
-If the client-side JavaScript code tries to make a cross-domain AJAX request with any http method *other than GET* or *POST* (e.g. DELETE or PATCH), a *preflight request* is made to the server using the OPTIONS method to check whether it is allowed to send a CORS request for that particular resource.
+If the client-side JavaScript code tries to make a cross-domain AJAX request with any http method *other than GET* or *POST* (e.g. DELETE or PATCH) or a non-simple POST request ([_See **Simple Requests**_](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)), a *preflight request* is made to the server using the OPTIONS method to check whether it is allowed to send a CORS request for that particular resource.
 
 ## Authentication
 Of course cross-domain requests are still need to be authenticated. CSRF attacks are designed to make cross-domain calls in the name of a user who is already logged in to the targeted site (e.g. on a different browser tab). Otherwise the whole mechanism described above does not apply because the malicious request will not even reach the point when it would make some damage.
