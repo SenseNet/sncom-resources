@@ -1,6 +1,6 @@
 ---
 title: "Command palette"
-source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/docs/admin-ui/command-palette.md"
+source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/admin-ui/command-palette.md"
 category: Admin UI
 version: v7.0
 tags:
