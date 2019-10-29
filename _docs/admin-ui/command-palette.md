@@ -19,7 +19,7 @@ description: This article gives a brief overview about the usage of the Command 
 
 # Command Palette
 
-The Command Palette is a flexible tool that allows you to execute operations like navigation, searching or custom actions by simply searching and selecting them. You can activate it with the **>\_** icon, the **CTRL+P** or **CTRL+SHIT+P** (custom action mode),
+The Command Palette is a flexible tool that allows you to execute operations like navigation, searching or custom actions by simply searching and selecting them. You can activate it with the **>\_** icon, the **CTRL+P** or **CTRL+SHIT+P** (custom action mode).
 
 ## Navigation between pages
 
