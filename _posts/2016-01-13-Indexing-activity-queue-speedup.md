@@ -5,7 +5,7 @@ image: "/img/posts/speed.jpg"
 tags: [enterprise content management, indexing, speedup]
 ---
 
-In Sense/Net ECM we rely heavily on our Lucene indexing and search engine: every content modification involves re-indexing the data. This means our indexing subsystem sometimes must handle a really heavy load when many users create or modify content at the same time.
+In sensenet we rely heavily on our Lucene indexing and search engine: every content modification involves re-indexing the data. This means our indexing subsystem sometimes must handle a really heavy load when many users create or modify content at the same time.
 In an environment where there are multiple web servers (both generating new indexing activities as users work) things tend to get more complicated and vulnerable to concurrency errors. Indeed we found out that there was a possibility of executing indexing activities in a reversed order.
 
 ---
@@ -29,11 +29,11 @@ Imagine an office with a couple of windows and many customers arriving in a shor
 
 [![IAQ - administration]({{ site.url }}/img/posts/indexing1.png "IAQ - administration")](../../image.axd?picture)
 
-The example above is not perfect as in Sense/Net ECM the number of windows will vary based on the number of available threads, but you get the idea.
+The example above is not perfect as in sensenet the number of windows will vary based on the number of available threads, but you get the idea.
 
 ## Work in progress
 
-We are currently in the middle of rewriting our activity queue to fulfill the requirements above. We created a prototype for the algorithm outside of Sense/Net ECM that we can use to test common use cases. Here is an example.
+We are currently in the middle of rewriting our activity queue to fulfill the requirements above. We created a prototype for the algorithm outside of sensenet that we can use to test common use cases. Here is an example.
 
 
 -   there are a couple of tree operations on the same content (move, rename, delete). This results in the **A1-A4** activities you see below. In the diagrams we illustrated this with the same '/R/A' path for the sake of simplicity; the point is these activities should be executed in a serialized way, one after the other.

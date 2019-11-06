@@ -15,7 +15,7 @@
   </a> 
 </p>
 
-<p align="center">A collection of awesome sensenet ECM packages, tools, resources and shiny things. :sparkles:
+<p align="center">A collection of awesome sensenet packages, tools, resources and shiny things. :sparkles:
 </p>
 
 ## Contents
@@ -35,29 +35,29 @@
 
 ## Components
 
-- [SN Installer](https://github.com/SenseNet/sn-installer) - A desktop application for installing sensenet ECM from scratch, or executing upgrade packages. 
-- [SN Admin](https://github.com/SenseNet/sn-admin) - Upgrade and package executor tool for sensenet ECM.
-- [SN Tools](https://github.com/SenseNet/sn-tools) - General .Net tools that can be used even in sensenet ECM-independent projects.
+- [SN Installer](https://github.com/SenseNet/sn-installer) - A desktop application for installing sensenet from scratch, or executing upgrade packages. 
+- [SN Admin](https://github.com/SenseNet/sn-admin) - Upgrade and package executor tool for sensenet.
+- [SN Tools](https://github.com/SenseNet/sn-tools) - General .Net tools that can be used even in sensenet-independent projects.
 - [SN Taskmanager](https://github.com/SenseNet/sn-taskmanagement) - A standalone .Net component for managing long-running background tasks in any application.
 - [SN Security](https://github.com/SenseNet/sn-security) - A powerful .Net component for managing permission entries in content repositories.
-- [SN Webpages](https://github.com/SenseNet/sn-webpages) - UI layer for the sensenet ECM platform built using ASP.NET pages, webparts and controls.
-- [SN Workflow](https://github.com/SenseNet/sn-workflow) - Workflow component for the sensenet ECM platform, based on Windows Workflow Foundation 4.5
-- [SN Workspaces](https://github.com/SenseNet/sn-workspaces) - Workspace-related content for the sensenet ECM platform.
-- [SN Client .NET](https://github.com/SenseNet/sn-client-dotnet) - A .Net client for sensenet ECM that makes it easy to use the REST API of the Content Repository.
-- [SN Client JS](https://github.com/SenseNet/sn-client-js) - A JavaScript client for sensenet ECM that makes it easy to use the REST API of the Content Repository.
+- [SN Webpages](https://github.com/SenseNet/sn-webpages) - UI layer for the sensenet platform built using ASP.NET pages, webparts and controls.
+- [SN Workflow](https://github.com/SenseNet/sn-workflow) - Workflow component for the sensenet platform, based on Windows Workflow Foundation 4.5
+- [SN Workspaces](https://github.com/SenseNet/sn-workspaces) - Workspace-related content for the sensenet platform.
+- [SN Client .NET](https://github.com/SenseNet/sn-client-dotnet) - A .Net client for sensenet that makes it easy to use the REST API of the Content Repository.
+- [SN Client JS](https://github.com/SenseNet/sn-client-js) - A JavaScript client for sensenet that makes it easy to use the REST API of the Content Repository.
 - [SN Client CLI](https://github.com/SenseNet/sn-client-cli) - Command line tool for the sensenet Platform's Client Library
-- [SN Redux](https://github.com/SenseNet/sn-redux) - A set of redux actions, reducers and redux-observable epics for sensenet ECM.
-- [SN Controls Aurelia](https://github.com/SenseNet/sn-controls-aurelia) - Aurelia controls for sensenet ECM
-- [SN Controls React](https://github.com/SenseNet/sn-controls-react) - React controls for sensenet ECM
+- [SN Redux](https://github.com/SenseNet/sn-redux) - A set of redux actions, reducers and redux-observable epics for sensenet.
+- [SN Controls Aurelia](https://github.com/SenseNet/sn-controls-aurelia) - Aurelia controls for sensenet
+- [SN Controls React](https://github.com/SenseNet/sn-controls-react) - React controls for sensenet
 
 ## Tools
 
-- [SN Benchmark](https://github.com/SenseNet/sn-benchmark) - A benchmark tool to measure the performance of a sensenet ECM instance across changes.
-- [SenseNet Filesize Report Generator](https://github.com/marosvolgyiz/SenseNet-File-Size-Report-Generator) - This is a tool which generates reports about the file sizes in the SenseNet ECM.
-- [SenseNet Project Installer](https://github.com/VargaJoe/SenseNet-Project-Installer) - Dev project installer for sensenet ECMS.
+- [SN Benchmark](https://github.com/SenseNet/sn-benchmark) - A benchmark tool to measure the performance of a sensenet instance across changes.
+- [SenseNet Filesize Report Generator](https://github.com/marosvolgyiz/SenseNet-File-Size-Report-Generator) - This is a tool which generates reports about the file sizes in the sensenet.
+- [SenseNet Project Installer](https://github.com/VargaJoe/SenseNet-Project-Installer) - Dev project installer for sensenetS.
 - [SenseNet Subtree Lucene Fixer](https://github.com/VargaJoe/SenseNet-SubTree-Lucene-Fixer) - Custom ContentCollection view to compare repository content structure and lucene index structure of a subtree, and try to fix any differences.
 - [SenseNet Preview Cleaner](https://github.com/VargaJoe/SenseNet-Preview-Cleaner) - Tool cleaning preview images.
-- [RepoSync](https://github.com/marosvolgyiz/RepoSync) -  A framework to let you synchronize sensenet content between sensenet ECM and other systems.
+- [RepoSync](https://github.com/marosvolgyiz/RepoSync) -  A framework to let you synchronize sensenet content between sensenet and other systems.
 
 ## Documentation
 
@@ -67,11 +67,11 @@
 
 ## Examples
 
-- [Todo App with React, Redux and sensenet ECM](https://github.com/SenseNet/sn-react-redux-todo-app)
-- [Todo App with Angular, Redux and sensenet ECM](https://github.com/blaskodaniel/sn-angular-redux-todo-app)
-- [Todo App with Angular2, Redux and sensenet ECM](https://github.com/SenseNet/sn-angular2-redux-todo-app)
-- [Todo App with Aurelia, Redux and sensenet ECM](https://github.com/B3zo0/sn7-aurelia-redux-todo-app)
-- [Todo App with Vue, Redux and sensenet ECM](https://github.com/SenseNet/sn-vue-redux-todo-app)
+- [Todo App with React, Redux and sensenet](https://github.com/SenseNet/sn-react-redux-todo-app)
+- [Todo App with Angular, Redux and sensenet](https://github.com/blaskodaniel/sn-angular-redux-todo-app)
+- [Todo App with Angular2, Redux and sensenet](https://github.com/SenseNet/sn-angular2-redux-todo-app)
+- [Todo App with Aurelia, Redux and sensenet](https://github.com/B3zo0/sn7-aurelia-redux-todo-app)
+- [Todo App with Vue, Redux and sensenet](https://github.com/SenseNet/sn-vue-redux-todo-app)
 
 ## Community
 
@@ -84,5 +84,5 @@
 
 ## Other
 
-- [sensenet.github.io](https://github.com/SenseNet/sensenet.github.io) - Source code for the community website of sensenet ECM developers. It's made with Jekyll, hosted on GitHub Pages.
-- [SN Resources](https://github.com/SenseNet/sn-resources) - The place of sensenet ECM related downloadable resources.
+- [sensenet.github.io](https://github.com/SenseNet/sensenet.github.io) - Source code for the community website of sensenet developers. It's made with Jekyll, hosted on GitHub Pages.
+- [SN Resources](https://github.com/SenseNet/sn-resources) - The place of sensenet related downloadable resources.
