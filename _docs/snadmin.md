@@ -122,7 +122,7 @@ If the package execution is not repeatable (e.g. because it contains complicated
 >**A smart package**: It is advisable that you design your package in a way that it can be executed more than once. E.g. use existence checks in SQL scripts and config file modifications.
 
 There are three optional elements for this purpose in the head of the manifest:
-* **SuccessMessage** element (optional): the element's inner text is displayed when the package execution was successfull.
+* **SuccessMessage** element (optional): the element's inner text is displayed when the package execution was successful.
 * **WarningMessage** element (optional): the element's inner text is displayed when the package execution is terminated by a Terminate step and its Reason property is Warning.
 * **ErrorMessage** element (optional): the element's inner text is displayed when the package execution is completed with an error.
 
@@ -377,7 +377,7 @@ SnAdmin[.exe] <package> [<target>] [LOGLEVEL:<loglevel>] [-HELP|-?] [-SCHEMA] [F
     - **Silent**: No feedback at all.
 - **FORCEDREINSTALL:true**: in case you install the core layer ([sensenet Services](https://github.com/SenseNet/sensenet)) and the db already exists, you can instruct SnAdmin to skip initial component check and proceed with the db creation (note that there is *no dash* in front of this parameter!).
 - **-HELP** or **-?**: Prints out all loaded assemblies and available step types and their parameters.
-- **-SCHEMA**: Generates the SenseNetPackage.xsd XML schema for the pakage and saves it to the &lt;WebSite>/Admin/bin directory. This schema can be used for code completion in the Visual Studio. The schema is instantly generated based on all available steps and their parameters and annotations.
+- **-SCHEMA**: Generates the SenseNetPackage.xsd XML schema for the package and saves it to the &lt;WebSite>/Admin/bin directory. This schema can be used for code completion in the Visual Studio. The schema is instantly generated based on all available steps and their parameters and annotations.
 - **-WAIT**: Starts the SnAdmin.exe and waits for user interaction. This parameter is used for debugging sessions. The developer can attach the SnAdmin or SnAdminRuntime process, presses the &lt;enter> and the process runs away.
 
 ### Execution examples
@@ -419,7 +419,7 @@ This function returns a JSON object that contains all packaging information: ins
 >If you have the [WebPages](https://github.com/SenseNet/sn-webpages) component installed, you get a page that displays this information in a human readable format.
 
 ### Package execution result
-In most cases packages are executed successfully, but sometimes the execution fails - maybe because there was a conflict in the Content Repository or an unexpected exception occured during execution. We register the result of every package execution to let administrators keep track of what happened. The possible outcomes are the following:
+In most cases packages are executed successfully, but sometimes the execution fails - maybe because there was a conflict in the Content Repository or an unexpected exception occurred during execution. We register the result of every package execution to let administrators keep track of what happened. The possible outcomes are the following:
 
 - *Successful*: the package executed correctly
 - *Faulty*: there was an error during execution (see the *ExecutionError* property below for details)
@@ -430,7 +430,7 @@ If the execution was not successful, you must correct the possible errors and ex
 ## Package variables
 In the manifest file there is a possibility to use variables to pass information between steps. **Variables are phase-level** entities, accessible across all steps in that phase. One step may fill a variable that is used by another step.
 
-A variable is identified by its name, that always starts with an **@** sign. You can create a variable by simply assiging it a value, there is no 'declaration' needed.
+A variable is identified by its name, that always starts with an **@** sign. You can create a variable by simply assigning it a value, there is no 'declaration' needed.
 
 An example for renaming a file based on a condition, using a variable:
 

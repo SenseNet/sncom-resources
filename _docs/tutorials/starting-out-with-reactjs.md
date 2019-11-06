@@ -62,7 +62,7 @@ sensenet 7 has a JavaScript library that lets you work with its Content Reposito
 npm install --save @sensenet/client-core
 ```
 
- > If you are interested more in client repostory and how to take advantage of sensenet client packages check the [API references](https://community.sensenet.com/api/).
+ > If you are interested more in client repository and how to take advantage of sensenet client packages check the [API references](https://community.sensenet.com/api/).
 
 Import it into your React application's ```index.tsx``` as a dependency and create a new ```SnRepository``` with the url of your sensenet instance
 
@@ -87,7 +87,7 @@ registerServiceWorker();
 
 ## sensenet state tree with Redux
 
-To manage our application's state we use [Redux](https://redux.js.org/) and to make your life even more easy to work on this stack, we've created [sn-redux](https://github.com/SenseNet/sn-redux) that is a set of redux actions, reducers and redux-ovbservable epics for sensenet. In sn-redux we've implemented the main sensenet content operations so all you have to do is dispatch them and get everything from the state tree through predefined reducers. If you're intrested - and why would you not - how sensenet EMC's redux store is built up, check [Diving deeper into sensenet's Redux store](https://community.sensenet.com/blog/2017/09/20/refactoring-sensenet-redux-store). 
+To manage our application's state we use [Redux](https://redux.js.org/) and to make your life even more easy to work on this stack, we've created [sn-redux](https://github.com/SenseNet/sn-redux) that is a set of redux actions, reducers and redux-observable epics for sensenet. In sn-redux we've implemented the main sensenet content operations so all you have to do is dispatch them and get everything from the state tree through predefined reducers. If you're interested - and why would you not - how sensenet EMC's redux store is built up, check [Diving deeper into sensenet's Redux store](https://community.sensenet.com/blog/2017/09/20/refactoring-sensenet-redux-store). 
 
 To create and configure your application's state container:
 
@@ -123,7 +123,7 @@ const storeOptions = {
 const store = Store.createSensenetStore(storeOptions);
 ```
 
-> There're some configuration changes that should be made in the ```tsconfig.json```. First add the following intto the compilereOptions ```"types": ["jest","node"]```. This is needed because create-react-app uses [jest](https://facebook.github.io/jest/) for testing but some of the dependencies like sn-redux using [mocha](https://mochajs.org/), both have a variable named ```describe``` and it causes a conflict in the build process. Another thing to change is to set ```noImplicitAny``` and ```strictNullChecks``` to false in the tsconfig.json and set ```no-any``` to false in ```tslin.json```.
+> There're some configuration changes that should be made in the ```tsconfig.json```. First add the following into the compilerOptions ```"types": ["jest","node"]```. This is needed because create-react-app uses [jest](https://facebook.github.io/jest/) for testing but some of the dependencies like sn-redux using [mocha](https://mochajs.org/), both have a variable named ```describe``` and it causes a conflict in the build process. Another thing to change is to set ```noImplicitAny``` and ```strictNullChecks``` to false in the tsconfig.json and set ```no-any``` to false in ```tslin.json```.
 
 Now if you restart the application and check the dev toolbar you can see, that the Redux store of your application is initialized and some basic actions are already dispatched on it. We built redux-logger in [sn-redux](https://github.com/SenseNet/sn-redux), so you can check the state tree in depth before and after every action.
 

@@ -100,7 +100,7 @@ public class ManageArticlesScenario : GenericScenario
 }
 ```
 
-If you build your code and check the Internal news page again, an _Add_ action will apear in the menu that you can use to add Articles to this Section.
+If you build your code and check the Internal news page again, an _Add_ action will appear in the menu that you can use to add Articles to this Section.
 
 <div style="text-align: center;">
 <img src="/docs/img/scenario/scenario-with-add.png" alt="Scenario with Add" border="0" />
@@ -184,7 +184,7 @@ To add a parameter you only need to modify the action menu control statement we 
 <sn:ActionMenu ID="ArticlesMenu" runat="server" ContextInfoID="myContext" Text="Manage articles" Scenario="ManageArticles" ScenarioParameters="Extended=true"></sn:ActionMenu>
 ```
 
-After you added the parameter abouve you should see the _Copy to_ action in the action menu on the Internal news page.
+After you added the parameter above you should see the _Copy to_ action in the action menu on the Internal news page.
 
 <div style="text-align: center;">
 <img src="/docs/img/scenario/scenario-with-parameter.png" alt="Scenario with parameter" border="0" />

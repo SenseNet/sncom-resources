@@ -11,7 +11,7 @@ description: The field control class is responsible for the data flow between us
 
 > Although this feature is supported in sensenet 7, it is built on the old Web Forms technology that you **should not use for new projects**. We encourage you to use a more modern UI solution using our [client-side packages](https://www.npmjs.com/org/sensenet).
 
-**Field Contols** are the main building blocks of [Content views](/docs/content-view). They generate the HTML controls responsible for the input or output of the displayed [Content](/docs/content)'s fields. Field controls are implemented as ASP.NET controls, they can be used in the ascx source of the content views.
+**Field Controls** are the main building blocks of [Content views](/docs/content-view). They generate the HTML controls responsible for the input or output of the displayed [Content](/docs/content)'s fields. Field controls are implemented as ASP.NET controls, they can be used in the ascx source of the content views.
 
 The field control class is responsible for the data flow between user interface and appropriate Field of the viewed Content.
 

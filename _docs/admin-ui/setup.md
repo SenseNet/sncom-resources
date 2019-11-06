@@ -1,6 +1,6 @@
 ---
 title: "Setup"
-source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/docs/admin-ui/configs.md"
+source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/admin-ui/configs.md"
 category: Admin UI
 version: v7.0
 tags: [admin ui, setup, config, settings, cache]
@@ -111,7 +111,7 @@ When users register or login using one of the configured OAuth providers (like G
 
 | name | type | description |
 | ---- | ---- | ----------- |
-| UserType | string | Name of the ```ContentType``` with wich the user should be created. |
+| UserType | string | Name of the ```ContentType``` with which the user should be created. |
 | Domain   | string | Name of the ```Domain``` where the user should be created. |
 
 ## DocumentPreview.settings {#documentpreview-settings}
@@ -163,6 +163,6 @@ You can switch ON or OFF notifications or customize the notification emails here
 | name | type | description |
 | ---- | ---- | ----------- |
 | NotificationEnabled | boolean | Switch notifications ON or OFF. |
-| NotificationSender | string | Sender's email adress in notification emails. |
+| NotificationSender | string | Sender's email address in notification emails. |
 | NotificationMailSubjectKey | string | Subject of the notificaton emails. |
 | NotificationMailBodyKey | string | Body of the notification email. |

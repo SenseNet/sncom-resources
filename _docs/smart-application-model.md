@@ -101,7 +101,7 @@ Similarly to Pages (that require the [WebPages](https://github.com/SenseNet/sn-w
 
 ## Application binding
 
-The **Smart Applicaton Model** goes further than just providing a friendly URL scheme. The real power lies in the complex logic that binds applications to content.
+The **Smart Application Model** goes further than just providing a friendly URL scheme. The real power lies in the complex logic that binds applications to content.
 
 In sensenet everything is content and this includes the applications themselves. This means that the applications are located in the [Content Repository](/docs/content-repository) either as `Portlet Pages` or placeholder content items for logic (like HTTP Handlers) located in a DLL file.
 
@@ -125,7 +125,7 @@ Like an operating system, sensenet also has types. The first layer of the bindin
 
 In fact, it goes one step further, as sensenet types have *inheritance*. Therefore, if an application isn't found for the type in question, the system will check each of its ancestor types, until a registered app is found.
 
-To registed an application for a specific `Content Type`, you need to place it into a folder named after the type under an _(apps)_ folder. Therefore, the path of a **Browse** application registered for the `HtmlContent` type may look something like this:
+To registered an application for a specific `Content Type`, you need to place it into a folder named after the type under an _(apps)_ folder. Therefore, the path of a **Browse** application registered for the `HtmlContent` type may look something like this:
 
 - _{ parent path }_/(apps)/**HtmlContent/Browse**
 

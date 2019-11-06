@@ -6,7 +6,7 @@ tags: [goals, community, roadmap, redesign, statistics, roadmap]
 ---
 ### Everybody needs goals ###
 
-Us, too. In fact we need better goals, than *"making more money"* or *"creating better stuff"*. So last year we decided to be [SMART][bb699076] about it and set high-level product goals for ourselves and for our community. After all, we want to be the best ECM development platform for a large community of developers. But how do we get there?
+Us, too. In fact we need better goals, than *"making more money"* or *"creating better stuff"*. So last year we decided to be [SMART][bb699076] about it and set high-level product goals for ourselves and for our community. After all, we want to be the best CSP development platform for a large community of developers. But how do we get there?
 
 ---
 
@@ -33,11 +33,11 @@ The team wanted to know if we were developing the right features for the right s
   [80c6156c]: nuget.org/profiles/sensenet "sensenet Nuget"
   [ffdb2e87]: https://www.npmjs.com/org/sensenet "sensenet on npm"
   [0c3b4e3a]: https://twitter.com/sensenet "Twitter"
-  [b175e3d7]: https://www.facebook.com/sensenetcms/ "sensenet on Facebook"
+  [b175e3d7]: https://www.facebook.com/sensenetcsp/ "sensenet on Facebook"
 
 Follow us on [Twitter][0c3b4e3a], like us on [Facebook][b175e3d7], or [clone the repository][bebd2231] and we'll need to check on our stats. We'll hate that (not really, so please, be a good champ).
 
-#### Become a more accessible ECMS development platform
+#### Become a more accessible CMS development platform
 Developers like to use tools that make their lives easier. The team is determined to deliver a product that is modular, easy to understand, well documented and augmented with tools that make you [feel like flying][2fc61619] when creating a company intranet for a client. This can only be done if we have a community of developers who can tell us what they think. Why don't **you** tell us, what you think? Hop on [gitter][71fe2b44] and say hi. [Try out][f482c883] sensenet and share your thoughts!
 
   [71fe2b44]: https://gitter.im/SenseNet/sensenet "Sensenet Gitter Channel"

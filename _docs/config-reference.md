@@ -604,7 +604,7 @@ Message retention time in seconds. Every message has a retention time: if it exp
 ### MsmqChannelQueueName
 [sensenet / SenseNet.Configuration.Messaging](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Messaging.cs "See on github")
 
-Message queue paths for every web node and tool that will connect to the Content Repository. First queue path should be local incoming queue, consequtive queue names are paths of outgoing queues. Queue paths are separated with ';'.
+Message queue paths for every web node and tool that will connect to the Content Repository. First queue path should be local incoming queue, consecutive queue names are paths of outgoing queues. Queue paths are separated with ';'.
 [Details](http://wiki.sensenet.com/Communication_between_appdomains "See detailed information.")
 
 ----

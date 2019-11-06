@@ -78,7 +78,7 @@ Let us demonstrate how easy you can add the above to your app through the steps 
         ...
     ```
 
-3. Create your custom button or link component, import ```Actions``` from [sn-redux](https://github.com/SenseNet/sn-redux) and now you're able to access the ```UserLoginGoogle``` function and you can dispatch it in the event handler where it is neeeded.
+3. Create your custom button or link component, import ```Actions``` from [sn-redux](https://github.com/SenseNet/sn-redux) and now you're able to access the ```UserLoginGoogle``` function and you can dispatch it in the event handler where it is needed.
 
     ```ts
         ...

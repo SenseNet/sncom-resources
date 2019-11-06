@@ -32,7 +32,7 @@ The most relevant parameter is the served requests. It is a very noisy graph but
 
 ![alt text](https://raw.githubusercontent.com/sensenet/sensenet.github.io/master/_docs/img/benchmark/2-req-sec.png "served requests closeup")
 
-End point detection with rulers: draw a line over the estimated average of the growing phase, and another one over the constant phase. The intersection of the two line is the measuring endpoint. This point signs the limit of the tested system. After this point the benchmark sofware can increase the load only in vain.
+End point detection with rulers: draw a line over the estimated average of the growing phase, and another one over the constant phase. The intersection of the two line is the measuring endpoint. This point signs the limit of the tested system. After this point the benchmark software can increase the load only in vain.
 
 ![alt text](https://raw.githubusercontent.com/sensenet/sensenet.github.io/master/_docs/img/benchmark/3-req-sec-lines.png "endpoint recognition")
 

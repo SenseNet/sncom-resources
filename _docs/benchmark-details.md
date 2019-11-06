@@ -167,7 +167,7 @@ On the chart the horizontal lines are the speed category limits. You can see the
 
 (On the right side there is a break in all lines that is caused by an extra line in the table. This line is the benchmark result that is written where one of the average values reaches the defined limit. You can delete the line and the break disappears.)
 
-![Benchmark diagram 2](img/Benchmark_Image.png "Benchmark diagram 2")
+![Benchmark diagram 2](/img/posts/Becnhmark-02.png "Benchmark diagram 2")
 
 Usually there is a point during the benchmark when average request times start to grow significantly. That point is way before reaching the defined speed limit (the flat line on the chart above), but that is the purpose of this benchmark: we are looking for the optimal set of profiles that can be served by the portal without performance loss. So in the example above the maximum number of profiles (in this hardware environment) is determined by the red arrows. 
 

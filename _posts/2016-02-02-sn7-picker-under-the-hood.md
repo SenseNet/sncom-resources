@@ -20,7 +20,7 @@ In the current version of Sense/Net, the picker is based on several different th
 As I mentioned before, the main purpose of rewriting the picker was to provide developers a plugin with comprehensive configurability so that they can use the same picker plugin for picking Content, Users, Portlets or anything else.
 
 -   **views**: in this parameter you can list the name of the views that you want provide to list content in the picker. Now, you’re able to choose list or thumbnail view or both, which means if you use both views you can switch between them on the UI. Later, the picker will allow developers to add their custom views also.
--   **searcheable**: with this parameter you can switch search functionality on and off.
+-   **searchable**: with this parameter you can switch search functionality on and off.
 -   **expandable**: if you want to enable users to add new Content through the picker, set this parameter to true. In addition, with this parameter on, you can specify which type of content can be added on the picker UI.
 -   **allowMultipleSelection**: if you used Sense/Net picker before you’ll be familiar with this parameter which allows you to put users to select multiple content or not.
 -   **treeOnly**: by setting this parameter to true only the tree will be displayed in the picker
@@ -28,7 +28,7 @@ As I mentioned before, the main purpose of rewriting the picker was to provide d
 -   **callbacks**: in the callbacks section of the configuration you can define your own functionality related to the picker callback e.g. opening, closing or errors.
 -   **templates**: in this section you can define your own HTML templates for the parts of the picker e.g. header, footer, gridrow etc.
 -   **buttons**: in this section you can list the buttons that you want to display and use on the picker with their text, css classes and the functions you want to call when the button is clicked
--   **selectionroot**: this parameter is also a legacy one which was also provided in the previous picker. You can list here the selection root paths that will be displayed and can be choosen on the picker UI to change the picker trees root.
+-   **selectionroot**: this parameter is also a legacy one which was also provided in the previous picker. You can list here the selection root paths that will be displayed and can be chosen on the picker UI to change the picker trees root.
 
 ## Sample
 
@@ -147,7 +147,7 @@ As I mentioned before, the main purpose of rewriting the picker was to provide d
 
 As you could have read in [previous blog posts](https://blog.sensenet.com/admin/post/2015/11/27/skin-system-revamp-in-sn7.aspx "previous blog posts"), we’re working hard to make everything skinnable in SN7. With the new picker you’ll be able to define your own modal window which allows you to use Bootstrap’s or Foundation’s modal widget. You can set your modal object as the $modal parameter of the picker plugin and use its open and close actions on picker callbacks. With the templates and buttons section you can add the framework related classes and markup to the parts of the picker to make it styleable with bootstrap or foundation or other ui libraries.
 
-![Foundation grid on tablet](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletfoundationgrid.png "Foundation grid on tablet")
+![Foundation grid on tablet](https://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletfoundationgrid.png "Foundation grid on tablet")
 
 
 
@@ -155,7 +155,7 @@ As you could have read in [previous blog posts](https://blog.sensenet.com/admin/
 
 As long as we build in KendoUI plugins into the picker, we’re able to use its templating in them. This allows you to customize the markup of a grid row or a thumbnail item through plugins ’templates’ config section. For now, there’re some limitations related to these templates because the grid and the thumbnail view uses and displays a limited number of Fields. Later, we will allow you to list the fields that you want to display and then you will be able to add fully custom templates with KendoUI’s templating syntax. Now you’re only able to add some additional classes and change the markup in a way you keep the Kendo variables.
 
-![Bootstrap grid on tablet](http://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletbootstrapthumb.png "Bootstrap grid on tablet")
+![Bootstrap grid on tablet](https://download.sensenet.com/BlogPostImages/SN7CopyPicker/tabletbootstrapthumb.png "Bootstrap grid on tablet")
 
 
 

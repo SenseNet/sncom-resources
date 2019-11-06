@@ -7,7 +7,7 @@ tags: [refactor, redux, actions, reducers, rxjs, observable, promise, middleware
 
 ---
 
-We've continued refactoring client side packages with [sn-redux](https://github.com/SenseNet/sn-redux). As in the case of the [sn-client-js related new scoped packages](https://community.sensenet.com/blog/2018/02/21/scoped-packages), the changes were about removing dependence on rxjs, improving the API, review other dependencies and making the necessary clean-ups. Followings will sum up all the changes, the why's and how's including a list of the possible migration steps if you used a pervious version of sn-redux before.
+We've continued refactoring client side packages with [sn-redux](https://github.com/SenseNet/sn-redux). As in the case of the [sn-client-js related new scoped packages](https://community.sensenet.com/blog/2018/02/21/scoped-packages), the changes were about removing dependence on rxjs, improving the API, review other dependencies and making the necessary clean-ups. Following will sum up all the changes, the why's and how's including a list of the possible migration steps if you used a previous version of sn-redux before.
 
 ---
 

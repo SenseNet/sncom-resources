@@ -25,7 +25,7 @@ The following conditions indicate that your sensenet have to be upgraded with th
 + you have an installed sensenet 7.0.0 site
 + you want an **in place upgrade**, which means you want to get the latest version **without dropping the database**.
 
-> If one of these criterias is not fit for your situation you will not need to install this patch. In a development and test environment where you **reinstall and reindex the whole database** every time, you can use the updated NuGet packages and continue working.
+> If one of these criteria is not fit for your situation you will not need to install this patch. In a development and test environment where you **reinstall and reindex the whole database** every time, you can use the updated NuGet packages and continue working.
 
 ### Where can you find it?
 You can find the patch on the [release page](https://github.com/SenseNet/sensenet/releases)'s Assets paragraph, where you can download it from.

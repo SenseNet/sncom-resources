@@ -21,13 +21,13 @@ There are two ways you can host your site.
 
 ## Git Repository Setup
 
-We recommend you to use our GitHub template that you can find here [sn-react-typescript-boilerplate](https://github.com/SenseNet/sn-react-typescript-boilerplate). _If you don't know how to use a template repository check this [article](https://help.github.com/en/articles/creating-a-repository-from-a-template)_.
+We recommend you to use our starter template that you can find here [sn-react-typescript-boilerplate](https://github.com/SenseNet/sn-client/tree/master/examples/sn-react-typescript-boilerplate).
 
 After you have your own git repository:
 
 1. Log in to [netlify](https://netlify.com)
 2. Add a new project
-3. Choose continous deployment with GitHub - this will take you to GitHub to authorize netlify
+3. Choose continuous deployment with GitHub - this will take you to GitHub to authorize netlify
 4. You should see your repositories listed, choose your newly created git repository
 5. Set the build command to `yarn run build` and the Publish Directory to `bundle`
 6. You are all set 🎉

@@ -14,12 +14,12 @@ To be honest we had a Redux store before, it was the basis of couple of Todo app
 
 Btw [sn-redux](https://github.com/SenseNet/sn-redux) is a set of [Redux](http://redux.js.org/) actions, reducers and [redux-observable](https://redux-observable.js.org/) epics which means you get a package with 
 - an optimized state tree with normalized data, 
-- actions that can be dispatched related to the basic content, user and permission managment features of sensenet,
+- actions that can be dispatched related to the basic content, user and permission management features of sensenet,
 - reducers to define state changes required by the above mentioned actions,
 - epics to handle the sensenet OData actions and functions,
 - and of course you can complete it with your actions, reducers and epics if you implement a custom feature.
 
-Old version of sn-redux contained only things that can be used in a simple todo app. So there were only a few things available for creating a task, set it to *done*, delete it, etc. We knew that it shold be restructured if we want to use it as a base of a content and feature heavier application.
+Old version of sn-redux contained only things that can be used in a simple todo app. So there were only a few things available for creating a task, set it to *done*, delete it, etc. We knew that it should be restructured if we want to use it as a base of a content and feature heavier application.
 
 First of all we've checked what sort of solutions were made with sensenet in the past and what could we provide at this level to help to accomplish them. We came to the conclusion that the most important things related to an application built upon sensenet are the context, the content items by permissions, basic document management features, content manipulation and user information. So these things became the key parts of the new Redux store in [sn-redux](https://github.com/SenseNet/sn-redux).
 
@@ -35,8 +35,8 @@ As you can see there are four reducers at the top level of sensenet: *children*,
 
 ![current content](/img/posts/currentcontent-store.png)
 
-In the **children** part you can access the current content's children in normalized form. For normalizing data we used [normalizr](https://github.com/paularmstrong/normalizr) which helps to structure (sometimes deeply) nested JSON objects which came as a response of an OData request. This works based on a schema definition with entities (in this case fetched content items) and a given param (in this case Id) that holds their unique identifier. So before data is added to the state tree it's normalized: there's an array with name *ids* that holds the items' ids and an object, *entities* that contains the Content items by their ids. Each content in the entities Object has an id that matches the key from the ids Array. This way manipulating (listing, selecting, deleting, etc) Content is much simplier. 
-Some of the OData params are listed here too, so that it can be accessed later which Fields were selected, how items were ordered, if a filter was used, etc. It is also avalible here if the items are currently fetching or not, or if there was an error during the fetching process.
+In the **children** part you can access the current content's children in normalized form. For normalizing data we used [normalizr](https://github.com/paularmstrong/normalizr) which helps to structure (sometimes deeply) nested JSON objects which came as a response of an OData request. This works based on a schema definition with entities (in this case fetched content items) and a given param (in this case Id) that holds their unique identifier. So before data is added to the state tree it's normalized: there's an array with name *ids* that holds the items' ids and an object, *entities* that contains the Content items by their ids. Each content in the entities Object has an id that matches the key from the ids Array. This way manipulating (listing, selecting, deleting, etc) Content is much simpler. 
+Some of the OData params are listed here too, so that it can be accessed later which Fields were selected, how items were ordered, if a filter was used, etc. It is also available here if the items are currently fetching or not, or if there was an error during the fetching process.
 
 ![children](/img/posts/children-store.png)
 

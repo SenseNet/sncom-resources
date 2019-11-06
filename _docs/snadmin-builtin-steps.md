@@ -391,7 +391,7 @@ It is important to take care of namespaces when editing xml files. You can provi
 
 Appends the given xml fragment (from the *Source* property) as a child (or children) under the xml elements determined by the Xpath property. The target xml can be in the file system (usually a .config file) or in the Content Repository (a field value of a content).
 
-The default property model does not work in this step by design (because the source is an xml fragment itself), so you will need to provide the *Source* tag explicitely as shown below. The Source value cannot appear as an xml attribute either.
+The default property model does not work in this step by design (because the source is an xml fragment itself), so you will need to provide the *Source* tag explicitly as shown below. The Source value cannot appear as an xml attribute either.
 
 >If the target is a content, please make sure that a **StartRepository** step precedes this one to make sure that the repository is started.
 
@@ -1152,7 +1152,7 @@ Populates the index of the whole content tree, or a subtree, provided by the Pat
 - Default property: `Path`
 - Additional properties: Recursive, OutputLimit
 
-Checks the index integrity by comparation the index and database. This step needs running repository. All parameters are optional and their meanings are the following:
+Checks the index integrity by comparison the index and database. This step needs running repository. All parameters are optional and their meanings are the following:
 - **Path**: Defines the integrity check's scope if there is. If empty, the whole repository tree will be checked.
 - **Recursive**: Defines whether check only one content or the whole tree or subtree. Default: true.
 - **OutputLimit**: Limits the output line count. 0 means all lines. Default: 1000. If this limit is reached the “...truncated...” will be displayed.

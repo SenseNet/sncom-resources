@@ -5,19 +5,19 @@ image: "/img/posts/howtoinvolveyouremployees.jpg"
 tags: [digital workplace, change management, employees, involvement]
 ---
 
-By the second half of 2017 an enterprise that predestinates itself to be successful shall pay a growing attention not only to making profit, but also to the changing needs of their stakeholders, including their employees. The concept of a digital workplace is not only about a new ergonomic working environment, but it also encompasses a new way of thinking – both of which are, by themselves, beneficial not only to the enterprise, but also to its stakeholders.
+By the second half of 2017, an enterprise that predestinates itself to be successful shall pay growing attention not only to making profit, but also to the changing needs of their stakeholders, including their employees. The concept of a digital workplace is not only about a new ergonomic working environment, but it also encompasses a new way of thinking – both of which are, by themselves, beneficial not only to the enterprise, but also to its stakeholders.
 
 ---
 
 ![new way of thinking](/img/posts/rethinking.jpg)
 
-Yet, however good the digital workplace might sound, it could be difficult for the people to accept the changes, especially when it requires a lot of effort from the single employees as well as from the different teams or groups as a whole. Employees may find the new concept to be too frustrating and stressful on them, especially when they are already overwhelmed with their professional work. As a leader of this transition it may be useful to let employees understand the benefits the digital workplace (or even a simplier document management system) would bring to them, in the hope that if they understand the need for this change, if they understand that digital workplace is not just another unnecessary bureaucratic burden, and if they feel that it is designed to make their work easier, they shall more readily and more willingly embrace the changes.
+Yet, however good the digital workplace might sound, it could be difficult for the people to accept the changes, especially when it requires a lot of effort from the single employees as well as from the different teams or groups as a whole. Employees may find the new concept to be too frustrating and stressful on them, especially when they are already overwhelmed with their professional work. As a leader of this transition it may be useful to let employees understand the benefits the digital workplace (or even a simpler document management system) would bring to them, in the hope that if they understand the need for this change, if they understand that digital workplace is not just another unnecessary bureaucratic burden, and if they feel that it is designed to make their work easier, they shall more readily and more willingly embrace the changes.
 
 To this we need to understand the motivation of our employees, so that we could be able to act upon them, and thus to help the workforce adapt to the changes imposed by the digital workplace project. The whole organization shall be supportive and understanding of the employees’ needs and requirements as well, as this attitude creates an atmosphere of permanent satisfaction and improvement. Employees also have to understand that progress is needed in order to respond to the rapidly growing demands of the market. The shift to digital workplace is the interest of the employees themselves, provided it is important to them that they – we – have enough customers and orders, and thus do not have to be laid off.
 
 It seems necessary to figure out what our colleagues feel to be beneficial for them. So, to gain insight into the motivation of the employees, it is worth asking them about their feelings.
 
-A good way of this assessment can be via surveys or interviews, and then constructing a portfolio from the responses.
+A good way of this assessment can be via surveys or interviews and then constructing a portfolio from the responses.
 Some of the questions we might ask are as follows:
 - What motivates them to work in general?
 - What motivates them to the adoption of the digital workplace?
@@ -41,4 +41,4 @@ Another way of motivating the stakeholders to use the digital workplace more wil
 
 When we know how to accommodate the needs of the stakeholders and we actually do it, it is easier to motivate them to the adoption of the digital workplace. The idea is that the more motivated employees are, the more smoothly deployment of the digital workplace will run. As a result, every stakeholder shall be more satisfied and motivated, and thus the entire work process should run more coherently. The continuous workflow is definitely more profitable for the enterprise as a whole, as well as – directly and indirectly – to the employees themselves.
 
-Digital workplace vendors bring tons of experience about solution deployment but company leaders must do their own homework to prepare real users for the changes. Employees’ engagement is a cruicial part of successful project delivery. As always: do not underestimate the power of your users :)
+Digital workplace vendors bring tons of experience about solution deployment but company leaders must do their own homework to prepare real users for the changes. Employees’ engagement is a crucial part of successful project delivery. As always: do not underestimate the power of your users :)

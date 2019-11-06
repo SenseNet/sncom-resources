@@ -40,7 +40,7 @@
   if (searchTerm) {
     //document.getElementById('search-box').setAttribute("value", searchTerm);
     document.getElementById('result-search-box').setAttribute("value", searchTerm);
-    // Initalize lunr with the fields it will be searching on. I've given title
+    // Initialize lunr with the fields it will be searching on. I've given title
     // a boost of 10 to indicate matches on this field are more important.
     var idx = lunr(function () {
       this.field('title')
@@ -66,7 +66,7 @@
 
   function removeTitleFromHtml(html) {
     var ind = html.indexOf('/h1') + 4;
-    if (html.indexOf('<h1>') === 0) {
+    if (html.includes('<h1>')) {
       html = html.substr(ind);
     }
     return html;

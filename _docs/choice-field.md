@@ -1,8 +1,8 @@
 ---
 title:  "Choice Field"
 source_url: 'https://github.com/SenseNet/sensenet/blob/master/docs/choice-field.md'
-category: Concepts
-version: v6.0
+category: Development
+version: v7.0.0
 tags: [fields, choice, select, checkbox, radiobutton]
 description: Choice Field is a multi-purpose field used to allow the user to choose one or more options. It can be rendered as a select tag, radio buttons, or checkboxes.
 ---
@@ -11,11 +11,15 @@ description: Choice Field is a multi-purpose field used to allow the user to cho
 
 Choice Field is a multi-purpose field used to allow the user to choose one or more options. It can be rendered as a select tag, radio buttons, or checkboxes.
 
-Choice field as a dropdownlist can be used just the same as a common html select. The options could have the standard properties like selected, disabled, label and value. Value and label properties and the text of the option could be localized.
+Choice field as a dropdownlist can be used just the same as a common html select. The options could have the standard properties like selected, disabled, label and value. Value and label properties and the text of the option could be [localized](/docs/how-to-internationalize-content-type-definition#localize-the-CTD).
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/fields/Select.png" style="margin: 20px auto" />
 
+Choice field as a radiobuttongroup can be used as a list of common html radiobuttons. If you wanna customize them with css feel free to use [InputMachinator.js](https://github.com/SenseNet/input-machinator). 
+
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/fields/Radiobuttongroup.png" style="margin: 20px auto" />
+
+Choice field as a checboxgroup can be used as a list of common html checkboxes. If you wanna customize them with css feel free to use our [InputMachinator.js](https://github.com/SenseNet/input-machinator). 
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/fields/Checkboxes.png" style="margin: 20px auto" />
 
@@ -31,7 +35,7 @@ Besides providing the values manually, the choice field can also be built up usi
 </Options>
 ```
 
-In that case, you do not have to modify the CTD to localize the options of the field.
+In that case, you do not have to modify the CTD to [localized](/docs/how-to-internationalize-content-type-definition#localize-the-CTD) the options of the field.
 
 ## Field handler
 

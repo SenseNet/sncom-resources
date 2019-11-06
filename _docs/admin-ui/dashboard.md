@@ -1,6 +1,6 @@
 ---
 title: "Dashboard customization"
-source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/docs/admin-ui/dashboard.md"
+source_url: "https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/admin-ui/dashboard.md"
 category: Admin UI
 version: v7.0
 tags: [admin ui, dashboard, personal settings]

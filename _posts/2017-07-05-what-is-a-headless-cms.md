@@ -9,7 +9,7 @@ The term 'headless cms' has been rising in popularity for a while now. But why t
 
 ---
 ## What is a headless CMS?
-First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress or Drupal are usually included in this category. At monolithic cms's the modal layer is tightly coupled with the view, and the creators of the platform provide you with a templating engine with which you can implement your frontend. So in this model you'd have:
+First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress or Drupal are usually included in this category. At monolithic cms's the modal layer is tightly coupled with the view, and the creators of the platform provide you with a templating engine with which you can implement your frontend. So in this model, you'd have:
 
 - a Database at the "bottom", where you store your content
 - an App, with a UI that lets you [Create, Read, Update and Delete][25358749] this content
@@ -22,8 +22,8 @@ First, it's worth mentioning how traditional "monolithic" cms's work. Wordpress 
  Thus, the 'E' in ECM is for **Enterprise**.
 
   [ed1adc41]: https://www.sensenet.com/product "sensenet Product features"
-  [a19fba28]: http://community.sensenet.com/docs/versioning-and-approval "Versioning and approval"
-  [206457f6]: http://community.sensenet.com/docs/workspace "Workspaces in sensenet"
+  [a19fba28]: https://community.sensenet.com/docs/versioning-and-approval "Versioning and approval"
+  [206457f6]: https://community.sensenet.com/docs/workspace "Workspaces in sensenet"
 
 This is why you could do something like this in [sensenet 6.x][9f950a61], or using [sn-webpages 7.x][46ac6b1f]:
 
@@ -55,7 +55,7 @@ This is why you could do something like this in [sensenet 6.x][9f950a61], or usi
 </p>
 
   [46ac6b1f]: https://github.com/SenseNet/sn-webpages "Sn-webpages"
-  [9f950a61]: http://community.sensenet.com/docs/how-to-install-sn6/ "Install sensenet 6.5"
+  [9f950a61]: https://community.sensenet.com/docs/how-to-install-sn6/ "Install sensenet 6.5"
 
 In a headless CMS (or ECMS for that matter), though, the backend does not care about how the content is displayed. It just returns with the data needed for the frontend through a RESTful API.
 
@@ -65,12 +65,12 @@ In a headless CMS (or ECMS for that matter), though, the backend does not care a
 </p>
 
 ## So is sensenet a headless or a coupled CMS?
-![Why not both?](http://i.imgur.com/KgXtawP.gif "Why not both?")
+![Why not both?](https://i.imgur.com/KgXtawP.gif "Why not both?")
 
 As mentioned earlier, using sn-webpages, you can have a full-featured ECMS solution, complete with a built-in UI. We are also working on a **new** UI, using [React][b3358601] and [Aurelia][b56bd31b] while fully utilizing [sensenet's OData layer][71579091], which provides a complete, flexible and extendable [RESTful API][f9c00a93].
 
-  [71579091]: http://community.sensenet.com/docs/built-in-odata-actions-and-functions/ "Built-in OData actions and functions"
-  [f9c00a93]: http://community.sensenet.com/docs/odata-rest-api/ "OData REST API"
+  [71579091]: https://community.sensenet.com/docs/built-in-odata-actions-and-functions/ "Built-in OData actions and functions"
+  [f9c00a93]: https://community.sensenet.com/docs/odata-rest-api/ "OData REST API"
   [b3358601]: https://github.com/SenseNet/sn-controls-react "React controls for sensenet"
   [b56bd31b]: https://github.com/SenseNet/sn-controls-aurelia "Aurelia controls for sensenet"
 

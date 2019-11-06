@@ -63,7 +63,7 @@ public class HasPermissionAction : ActionBase
 }
 ```
 
-The properties above describe te action in the following way:
+The properties above describe the action in the following way:
 
 - **IsHtmlOperation**: returns _true_ here if the action is related to a regular application that has a regular HTML output too. Default value is _true_.
 - **IsODataOperation**: returns _true_ here if you plan to publish this action through OData. Default value is _false_.
