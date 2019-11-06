@@ -311,7 +311,7 @@ Below you can see an extract of the *Car* Content Type Definition:
 <ContentType name="Car" parentType="ListItem" handler="SenseNet.ContentRepository.GenericContent" 
 xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
   <DisplayName>Car</DisplayName>
-  <Description>Car is a leaf content type to demonstrate the ECMS features of sensenet</Description>
+  <Description>Car is a leaf content type to demonstrate the Content Management features of sensenet</Description>
   <Icon>Car</Icon>
   <Fields>
     <Field name='Make' type='ShortText'>

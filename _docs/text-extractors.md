@@ -9,7 +9,7 @@ description: This article was written for developers who want to understand the 
 
 # Text extractors
 
-In an enterprise-grade ECM solution one of the most important features is indexing documents to let users search for (and find) uploaded files. sensenet is able to index not only metadata of documents (like creation date or author) but the **binary content** itself. The latter is called text extracting. This article was written for developers who want to understand the mechanism behind binary indexing and want to create a custom text extractor for a particular file type.
+In an enterprise-grade Content Management solution one of the most important features is indexing documents to let users search for (and find) uploaded files. sensenet is able to index not only metadata of documents (like creation date or author) but the **binary content** itself. The latter is called text extracting. This article was written for developers who want to understand the mechanism behind binary indexing and want to create a custom text extractor for a particular file type.
 
 ## Text extractors
 

@@ -13,7 +13,7 @@ This article is **for developers** about installing the core layer, [sensenet Se
 > **TLDR**: jump to the [Install packages](#InstallPackage) section to get started right away!
 
 ## Why NuGet?
-In the last couple of years [NuGet](https://nuget.org) became the industry standard for delivering (mostly open source) libraries and projects. In our case, we take this even further by letting you install a full ECMS right from *Visual Studio*. This is not a common scenario, so we have to approach it carefully (the upgrade process is still under development).
+In the last couple of years [NuGet](https://nuget.org) became the industry standard for delivering (mostly open source) libraries and projects. In our case, we take this even further by letting you install a full CMS right from *Visual Studio*. This is not a common scenario, so we have to approach it carefully (the upgrade process is still under development).
 
 ## Why so many packages?
 sensenet is a huge product consisting of many smaller components (take a look at this curated collection of built-in and 3rd party [components and plugins](https://github.com/SenseNet/awesome-sensenet)) that are not needed by everybody. It is best if you install only the parts you need, so that you can keep maintenance and upgrade costs at minimum. This is why we publish many small packages containing only the minimal set of libraries and content.
