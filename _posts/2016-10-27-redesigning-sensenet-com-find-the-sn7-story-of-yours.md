@@ -6,12 +6,12 @@ tags: [sensenet.com, ux, design, ui, persona]
 ---
 
 We've been working on restructuring sensenet as a product for a while; now it's time to change the way we connect with people. 
-The next milestone on our roadmap is to redesign our website in order to make it more streamlined and transparent for you. Our most important aim with the redesign is to provide you all the information you might need when looking for the open source, .NET based ecms that would fit your business needs and still provide a pleasant user experience.
+The next milestone on our roadmap is to redesign our website in order to make it more streamlined and transparent for you. Our most important aim with the redesign is to provide you all the information you might need when looking for the open source, .NET based cms that would fit your business needs and still provide a pleasant user experience.
 
 ---
 
 Hello again! We've been working on restructuring sensenet as a product for a while; now it's time to change the way we connect with people. 
-The next milestone on our roadmap is to redesign our website in order to make it more streamlined and transparent for you. Our most important aim with the redesign is to provide you all the information you might need when looking for the open source, .NET based ecms that would fit your business needs and still provide a pleasant user experience.
+The next milestone on our roadmap is to redesign our website in order to make it more streamlined and transparent for you. Our most important aim with the redesign is to provide you all the information you might need when looking for the open source, .NET based cms that would fit your business needs and still provide a pleasant user experience.
 
 ![sn users' stories](https://download.sensenet.com/BlogPostImages/sensenetcomRedesign/snuserstory.png "sn users' stories")
 

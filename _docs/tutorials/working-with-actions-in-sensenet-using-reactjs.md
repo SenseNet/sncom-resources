@@ -4,7 +4,7 @@ category: Tutorials
 index: 1
 version: v7.0
 tags: [reactjs, redux, action, actions, javascript, typescript, getting started, step by step]
-description: Step-by-step tutorial about adding actions to an app with sensenet ECM, Reactjs and Redux.
+description: Step-by-step tutorial about adding actions to an app with sensenet, Reactjs and Redux.
 ---
 
 # Working with built-in Actions in sensenet using React and Redux
