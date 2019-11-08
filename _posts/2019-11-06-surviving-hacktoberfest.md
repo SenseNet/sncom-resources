@@ -33,6 +33,6 @@ Let’s look at the results in numbers. Over 250 of you have registered through 
   <img src="/img/posts/worth-it.jpg">
 </p>
 
-In a typical month there’re 25 pull requests overall made in the repositories of our [GitHub organization](https://github.com/SenseNet). This is not a huge number, but we’re a small team, so you can imagine how big it is for us, that you’ve made 287 extra pull requests in this month. 😲 These pull requests were made by more than 200 new contributors, which is pretty awesome. We are very sorry that we cannot reward every one of you, we will surely figure out something to level up next year in this thing as well.
+In a typical month there’re 25 pull requests overall made in the repositories of our [GitHub organization](https://github.com/SenseNet). This is not a huge number, but we’re a small team, so you can imagine how big it is for us, that you’ve made **287 extra pull requests** in this month. 😲 These pull requests were made by **more than 200 new contributors**, which is pretty awesome. We are very sorry that we cannot reward every one of you, we will surely figure out something to level up next year in this thing as well.
 
 Although Hacktoberfest 2019 is over, we are looking forward to hearing from you anytime. All your feedback and help is important to us, any ideas, fixes and questions are welcome.
