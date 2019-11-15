@@ -42,7 +42,7 @@ This is why we decided to publish two types of packages for our components:
 ![sensenet Services](https://github.com/SenseNet/sn-resources/raw/master/images/sn-components/sn-components_services.png "sensenet Services")
 
 Watch our video tutorial where one of our developers guide you through the whole process.
-<iframe style="margin:auto;width:100%" width="560" height="315" src="https://www.youtube.com/embed/640NYCFRuLk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+<iframe style="margin:auto;width:100%" width="560" height="315" src="https://youtu.be/ZrtiJRg5fSk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 
 ### Create a web project and pull in the package(s)
 
