@@ -19,7 +19,7 @@ The Open Data Protocol (OData) is a Web protocol for querying and updating data 
 There are two built-in tools for accessing content in the Content Repository through the REST api, so that you do not have to construct OData requests manually. Please check the following projects, they offer an easy-to-learn client API to access sensenet:
 
 - [JavaScript client SDK](https://github.com/SenseNet/sn-client-js.md)
-- [.Net client library](https://github.com/SenseNet/sn-client-dotnet/blob/master/README.md)
+- [.Net client library](https://github.com/SenseNet/sn-client-dotnet)
 
 ## OData specific requests
 
