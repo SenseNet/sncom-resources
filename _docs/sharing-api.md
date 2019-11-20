@@ -8,7 +8,7 @@ description: "The sharing API lets developers manage content sharing information
 ---
 
 # Sharing API
-sensenet has a generic [Sharing](sharing) feature that lets users share content (individual documents or a whole subtree like a workspace) with other - both publicly or privately.
+sensenet has a generic [Sharing](/sharing) feature that lets users share content (individual documents or a whole subtree like a workspace) with other - both publicly or privately.
 
 To learn more about the concepts of sharing please visit the link above. This article is for *developers* about how to manage sharing from .Net code.
 
