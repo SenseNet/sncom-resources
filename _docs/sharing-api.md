@@ -12,7 +12,7 @@ sensenet has a generic [Sharing](sharing) feature that lets users share content 
 
 To learn more about the concepts of sharing please visit the link above. This article is for *developers* about how to manage sharing from .Net code.
 
-> To see the available sharing OData actions for the client side please visit the [Built-in OData actions and functions](built-in-odata-actions-and-functions) article.
+> To see the available sharing OData actions for the client side please visit the [Built-in OData actions and functions](/built-in-odata-actions-and-functions) article.
 
 ## Storage
 Sharing information consists of two things:
