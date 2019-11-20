@@ -8,11 +8,11 @@ description: "The sharing API lets developers manage content sharing information
 ---
 
 # Sharing API
-sensenet has a generic [Sharing](/sharing) feature that lets users share content (individual documents or a whole subtree like a workspace) with other - both publicly or privately.
+sensenet has a generic [Sharing](/docs/sharing) feature that lets users share content (individual documents or a whole subtree like a workspace) with other - both publicly or privately.
 
 To learn more about the concepts of sharing please visit the link above. This article is for *developers* about how to manage sharing from .Net code.
 
-> To see the available sharing OData actions for the client side please visit the [Built-in OData actions and functions](/built-in-odata-actions-and-functions) article.
+> To see the available sharing OData actions for the client side please visit the [Built-in OData actions and functions](/docs/built-in-odata-actions-and-functions) article.
 
 ## Storage
 Sharing information consists of two things:
