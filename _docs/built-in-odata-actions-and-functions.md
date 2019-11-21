@@ -897,6 +897,23 @@ Action details:
 "http://example.com/OData.svc/workspaces/Project/budapestprojectworkspace('Document_Library')/GetQueries?onlyPublic=false"
 ```
 
+### Get permissions
+
+Gets permissions for the requested content. *If no identity is given, all the permission entries will be returned.*
+
+- name: **GetPermissions**
+- parameters:
+   - `identity` (string; optional): path of the identity whose permissions must be returned (user, group or organizational unit)
+- required permissions to call this action: See permissions.
+
+#### Example
+
+Get permissions for the local Members group:
+
+```js
+http://example.com/OData.svc/workspaces/Project('budapestprojectworkspace')/GetPermissions?identity=/Root/Sites/Default_Site/workspaces/Project/budapestprojectworkspace/Groups/Members
+```
+
 ### Has permission
 
 Gets if the given user (or if it is not given than the current user) has the specified permissions for the requested content.
