@@ -108,7 +108,9 @@ Item types with settings:
 ```
 
 - Query - this works like a smart folder, shows a list of query result
-
+  - term - is a [content query](/docs/content-query)
+  - columns - array of columns to display. These are the name of the fields on the content
+  
 ```json
 {
   "itemType": "Query",
