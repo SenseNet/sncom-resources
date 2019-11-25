@@ -27,7 +27,7 @@ You can set up a `browseType` - it can be `explorer` (a tree with a content list
 
 ### Drawer
 
-You can enable or disable the drawer, change the drawer type and define a list of preconfigured items to display. The drawer types are:
+You can enable or disable the [drawer](/docs/admin-ui/drawer-customization-in-general/), change the drawer type and define a list of preconfigured items to display. The drawer types are:
 
 - temporary, useful for mobile devices
 - permanent with icons and text
@@ -35,11 +35,11 @@ You can enable or disable the drawer, change the drawer type and define a list o
 
 ### Command Palette
 
-You can enable or disable the [command palette](/docs/admin/ui-command-palette/) and define a `wrapQuery` expression that will be added to any command palette query.
+You can enable or disable the [command palette](/docs/admin-ui/command-palette/) and define a `wrapQuery` expression that will be added to any command palette query.
 
 ## Dashboard
 
-You can customize your `globalDefault`and`repositoryDefault` [dashboards](/docs/admin/ui-dashboard/) here.
+You can customize your `globalDefault`and`repositoryDefault` [dashboards](/docs/admin-ui/dashboard/) here.
 
 ## Repositories
 
