@@ -12,7 +12,7 @@ The Drawer component is the left side navigation menu. It lets you access the [p
 
 ## Customization
 
-You can customize the drawer with in the [personal settings](/docs/admin-ui/personal-settings). You can set drawer options for multiple devices. For example mobile, tablet, desktop and in general for default. There are 3 main options:
+You can customize the drawer within the [personal settings](/docs/admin-ui/personal-settings). You can set drawer options for multiple devices. For example mobile, tablet, desktop and in general for default. There are 3 main options:
 
 1. [enabled](#enabled) - boolean value (it can be `true` or `false`)
 2. [type](#type) - string value (`"mini-variant"`, `"permanent"`, `"temporary"`)
@@ -39,7 +39,7 @@ Example setting:
 
 There are 3 possible values for choosing the type of the drawer:
 
-**mini-variant** - This can be opened and closed as it is shown above. _This is currently the default setting for desktop mode_
+**mini-variant** - This can be opened and closed as it is shown below. _This is currently the default setting for desktop mode_
 
 ![drawer mini-variant](/img/drawer-mini-variant.png "Drawer mini-variant"){:height="600px"}
 
@@ -55,7 +55,7 @@ There are 3 possible values for choosing the type of the drawer:
 
 Every drawer item has 3 properties, `settings`, `itemType`, `permissions`.
 
-The `settings` property changes for item types, there are items that doesn't have settings at all.
+The `settings` property changes for item types, there are items that don't have settings at all.
 
 The `itemType` is a predefined string you can see the possible values with pressing **CTRL+SPACE** in the editor.
 
