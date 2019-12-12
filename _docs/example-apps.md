@@ -19,6 +19,8 @@ All the following apps are built with the [sn-react-boilerplate](https://github.
 - prettier and eslint 💅
 - husky lint & prettier precommit hook ⚓
 
+Each example app requires a login for example into one of our demo repositories (username: businesscat, password: businesscat, respositoryurl: https://dev.demo.sensenet.com)
+
 ## Image gallery
 This single page application shows how to build a simple photo gallery app with React connected to a sensenet content repository.
 
