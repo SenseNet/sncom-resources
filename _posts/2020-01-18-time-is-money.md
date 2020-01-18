@@ -2,7 +2,7 @@
 
 title: "Time is money: Performance improvements in sensenet"
 author: [pusztaienike]
-image: "../img/posts/time_is_money.png"
+image: "../img/posts/time_is_money.jpg"
 tags: [hacktoberfest, community, github]
 
 ---
@@ -36,7 +36,7 @@ And finally, we could reduce the resources size from ~57.3MB to ~8.1 MB with dep
 In the future, we would like to follow the changes what we can easily do with [RelativeCiAgent](https://relative-ci.com/). When we merge something to our develop branch RelativeCiAgent gets us a really transparent report of our bundle size.
 
 <p align="center">
-<img src="../img/posts/relativeCiAgentReport.png">
+<img src="/img/posts/relativeCiAgentReport.png">
 </p>
 
 I really like when I have to do nothing, RelativeCiAgent do the 'dirty job' instead of me. 😁
@@ -48,7 +48,7 @@ We can also check the size during development as well. We just added a new line 
 After generating the stats.js can make this file more transparent with [webpack-visualizer](https://chrisbateman.github.io/webpack-visualizer/)
 
 <p align="center">
-<img src="../img/posts/webpack_visualizer.gif">
+<img src="/img/posts/webpack_visualizer.gif">
 </p>
 
 ## Quality is not an act, it is a habit. [550](https://github.com/SenseNet/sn-client/pull/550)
@@ -56,7 +56,7 @@ After generating the stats.js can make this file more transparent with [webpack-
 For improving the quality of our pages, we run [Lighthouse](https://developers.google.com/web/tools/lighthouse) on our landing page. It was interesting to see what did we miss during development. Okay these problems were small ones, but you know: "Many a little makes a mickle!"<br/>
 
 <p align="center">
-<img src="../img/posts/lighthouse_before.png">
+<img src="/img/posts/lighthouse_before.png">
 </p>
 
 Our main problem was that we used a gif file as a loading item, and it was full screen sized, so huge. We decided to change it to a built-in loader from material-ui. We also fixed some small bugs, like:
@@ -67,7 +67,7 @@ Our main problem was that we used a gif file as a loading item, and it was full 
 
 Our final result was the following after the fixes:
 <p align="center">
-<img src="../img/posts/lighthouse_after.png">
+<img src="/img/posts/lighthouse_after.png">
 </p>
 
 We were so prod of it. 😉 
@@ -79,5 +79,5 @@ Our goal is to create a useful, and usable interface for every user, even though
 So you know: "Time is money..", and we really appreciate your time.
 
 <p align="center">
-<img src="../img/posts/infinity_and_beyond.jpg">
+<img src="/img/posts/infinity_and_beyond.jpg">
 </p>
