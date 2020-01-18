@@ -24,16 +24,16 @@ The size of resources was ~57.3 MB and we had two opportunity for reduce:
 1. We would use the [create-react-app](https://github.com/facebook/create-react-app) and its standard webpack configuration<br/>
 2. We would create our own webpack config(s).<br/>
 
-Because we use monaco editor and so many decorations in our code it is hard the match with create-react-app rules, so we have chosen the second option and divided our webpack configuration into 3 parts:
+Because we use monaco editor and so many decorations in our code it is hard the match with create-react-app rules, so we have chosen the second option and divided our webpack configuration to 3 parts:
 
 - one is for development purposes (webpack.dev.js)
 - one is for production code (webpack.prod.js)
 - and the remain is for both, commonly used settings (webpack.common.js)
 
 We tried to follow the suggestions of create-react-app in this way as well.
-And finally, we could reduce the resources size from ~57.3MB to ~8.1 MB with deploying 'real' production code with all its advantages like tree-shaking and source map removal. The transferred data became ~4.3 MB from ~12.7 MB so I declare with all confidence that it is worth the effort.
+Finally, we could reduce the resources size from ~57.3MB to ~8.1 MB with deploying 'real' production code with all its advantages like tree-shaking and source map removal. The transferred data became ~4.3 MB from ~12.7 MB so I declare with all confidence that it is worth the effort.
 
-In the future, we would like to follow the changes what we can easily do with [RelativeCiAgent](https://relative-ci.com/). When we merge something to our develop branch RelativeCiAgent gets us a really transparent report of our bundle size.
+In the future, we would like to follow the changes what we can easily do with [RelativeCiAgent](https://relative-ci.com/). When we merge something to our develop branch RelativeCiAgent provides us a really transparent report of our bundle size.
 
 <p align="center">
 <img src="/img/posts/relativeCiAgentReport.png">
@@ -70,7 +70,7 @@ Our final result was the following after the fixes:
 <img src="/img/posts/lighthouse_after.png">
 </p>
 
-We were so prod of it. 😉 
+We were so proud of it. 😉 
 
 ## What's Next?
 
