@@ -18,11 +18,11 @@ In this article you can learn how to review and change the current permission se
 ### Displaying the Permissions page
 To display the current permission settings for a content go to the permissions page by selecting the **Set permissions** menu item in the list actions menu or one of the list item drop-down menus.
 
-![Go to the Permissions page](img/howto-set-permissions/select.png "Go to the Permissions page")
+![Go to the Permissions page](/img/howto-set-permissions/select.png "Go to the Permissions page")
 
 After clicking the Set permissions menu item you will see a page displaying all the permissions for the content. Identities (groups and individual users) are listed here. By opening an identity entry you can see all the permissions that are set for that identity. Some of them may be inherited (like the See and Open permission that are inherited from the site content), others are explicitly set.
 
-![Permissions page](img/howto-set-permissions/opened.png "Permissions page")
+![Permissions page](/img/howto-set-permissions/opened.png "Permissions page")
 
 ### Adding a new permission entry
 You can add new entries to the permission list of this content by clicking on the **Add new security entry** button on the top of the page. You can search for users or groups here. In the image below you can see that we found and selected the *Editors* group.
@@ -31,7 +31,7 @@ You can add new entries to the permission list of this content by clicking on th
 
 When you click on the **Add** button, a new security entry will be added to the top of the page. All permission entries will be undefined. You can allow or deny here the permissions you want by checking the appropriate checkboxes. In this case we gave **Allow** permission for the Editors group for the following permissions: *See, Open, Save, AddNew, Delete* and *RunApplication*. By using the *Toggle all* checkboxes above the allow and deny columns, you can change permission entries faster.
 
-![Fill permission settings](img/howto-set-permissions/fillnew.png "Fill permission settings")
+![Fill permission settings](/img/howto-set-permissions/fillnew.png "Fill permission settings")
 
 Clicking on the **Save** button will finalize the settings and you will be redirected to the original page.
 
@@ -47,7 +47,7 @@ After you broke the permission inheritance, you are able to edit the permission 
 ### Removing a permission entry
 If you want to completely remove an identity from the list you have to clear all the allow and deny check boxes for that identity. You can do it quickly by using the *Toggle all* check boxes above the columns.
 
-![Remove permission entry](img/howto-set-permissions/remove.png "Remove permission entry")
+![Remove permission entry](/img/howto-set-permissions/remove.png "Remove permission entry")
 
 When you press the **Save** button, the changes will take effect and you will be redirected to the original page.
 
