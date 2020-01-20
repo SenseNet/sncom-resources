@@ -27,7 +27,7 @@ After clicking the Set permissions menu item you will see a page displaying all 
 ### Adding a new permission entry
 You can add new entries to the permission list of this content by clicking on the **Add new security entry** button on the top of the page. You can search for users or groups here. In the image below you can see that we found and selected the *Editors* group.
 
-![Add new permission entry](img/howto-set-permissions/search.png "Add new permission entry")
+![Add new permission entry](/img/howto-set-permissions/search.png "Add new permission entry")
 
 When you click on the **Add** button, a new security entry will be added to the top of the page. All permission entries will be undefined. You can allow or deny here the permissions you want by checking the appropriate checkboxes. In this case we gave **Allow** permission for the Editors group for the following permissions: *See, Open, Save, AddNew, Delete* and *RunApplication*. By using the *Toggle all* checkboxes above the allow and deny columns, you can change permission entries faster.
 
