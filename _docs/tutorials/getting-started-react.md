@@ -11,7 +11,7 @@ description: This tutorial show you how to use sensenet with Reactjs.
 
 ## Prerequisites
 
-First of all you need a sensenet instance. You can create your own from GitHub or register at `!!LINK_LATER`.
+First of all you need a sensenet instance. You can create your own from GitHub or register at [sensenet.com](https://sensenet.com/tryit).
 
 ## Use our starter
 
