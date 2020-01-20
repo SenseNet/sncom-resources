@@ -2,7 +2,7 @@
 title: "How to set permissions on a content"
 source_url: 'https://github.com/SenseNet/sensenet.github.io/blob/master/_docs/how-to-set-permissions-on-a-content.md'
 category: Guides
-version: v7.0
+version: v6.0
 tags: [permission, security]
 description: "sensenet has a powerful permission system that lets you control content accessibility on many levels and makes working with users and groups easy."
 ---
@@ -55,5 +55,3 @@ When you press the **Save** button, the changes will take effect and you will be
 Every content has an Owner. When permissions are evaluated (for example during querying) we take the [Owners special group](built-in-groups-and-users) into account - if that group has certain permissions and the current user is the owner, they will get that permission.
 
 Ownership can be changed here as well. On the following screenshot you can see the button in the header that will open a content picker for the user who will be the owner of the content from now on.
-
-![Change ownership](img/howto-set-permissions/owner.png "Change ownership")
