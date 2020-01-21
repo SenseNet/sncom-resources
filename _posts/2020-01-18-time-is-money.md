@@ -3,15 +3,15 @@
 title: "Time is money: Performance improvements in sensenet"
 author: [pusztaienike]
 image: "../img/posts/time_is_money.jpg"
-tags: [hacktoberfest, community, github]
+tags: [performance, webpack, bundling, bundle, accessibility, lighthouse]
 
 ---
 
 How long will you wait for a website to load before you give up and go somewhere else? <br/><br/> Five seconds? <br/><br/> Ten seconds? <br/>
 <br/>
-Apparently, nearly half of us won't wait even three seconds.
-In our busy world, every minute is a waste of time that we spend with waiting.
-Of course, we know that, so we are about improving performance to avoid wasting your time.
+Apparently, nearly half of us wouldn't wait three seconds.
+In our busy world every minute is a waste of time if we should spend it with waiting.
+Of course we know that, and we are about to constantly improve performance to not waste your time.
 
 ---
 
@@ -39,7 +39,7 @@ In the future, we would like to follow the changes what we can easily do with [R
 <img src="/img/posts/relativeCiAgentReport.png">
 </p>
 
-I really like when I have to do nothing, RelativeCiAgent do the 'dirty job' instead of me. 😁
+I really like it when I have nothing to do, RelativeCiAgent do the 'dirty work' for me. 😁
 Thank you for the authors and all the contributors!
 
 We can also check the size during development as well. We just added a new line for the package.json:<br/>
@@ -53,28 +53,28 @@ After generating the stats.js can make this file more transparent with [webpack-
 
 ## Quality is not an act, it is a habit. [550](https://github.com/SenseNet/sn-client/pull/550)
 
-For improving the quality of our pages, we run [Lighthouse](https://developers.google.com/web/tools/lighthouse) on our landing page. It was interesting to see what did we miss during development. Okay these problems were small ones, but you know: "Many a little makes a mickle!"<br/>
+For improving the quality of our app, we run [Lighthouse](https://developers.google.com/web/tools/lighthouse) on the admin surface's landing page. It was interesting to see what we missed during development. Okay these problems were small ones, but you know: "Many a little makes a mickle!"<br/>
 
 <p align="center">
 <img src="/img/posts/lighthouse_before.png">
 </p>
 
-Our main problem was that we used a gif file as a loading item, and it was full screen sized, so huge. We decided to change it to a built-in loader from material-ui. We also fixed some small bugs, like:
-- Buttons do not have an accessible name
-- Image elements do not have alt attributes
-- <html> element does not have a [lang] attribute
-- Document does not have a meta description etc.
+Our main problem was that we used a gif file as a progress indicator, and it was full screen sized, a huge one. We decided to change it to one of the built-in loaders in material-ui. We also fixed some small bugs, like:
+- Accessible name of `Button` elements,
+- `alt` attributes of `Image` elements,
+- `[lang]` attribute of the `<html>` element,
+- missing `meta` tags on the document (meta description etc.).
 
-Our final result was the following after the fixes:
+Our final results after the fixes were the following:
 <p align="center">
 <img src="/img/posts/lighthouse_after.png">
 </p>
 
-We were so proud of it. 😉 
+We were pretty proud of it. 😉 
 
 ## What's Next?
 
-Our goal is to create a useful, and usable interface for every user, even though you have a slow internet connection. It is a continuous operation, we cannot say that 'We are done'. We would like to be better, and come up with new ideas. We only optimize our app to desktop, in our short-term plan we would like to do it for mobile as well.
+Our goal is to make the user interface a useful and usable for every user, including those who have a slow internet connection. It is a continuous operation, we cannot say that 'We are done with it'. We would like to be better and come up with new ideas. For now we optimize our app for desktop only, but in our short-term plan we would like to do more for mobile as well.
 
 So you know: "Time is money..", and we really appreciate your time.
 
