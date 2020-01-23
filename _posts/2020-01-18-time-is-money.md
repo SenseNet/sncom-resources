@@ -24,7 +24,7 @@ The size of resources was ~57.3 MB and we had two opportunity for reduce:
 1. We would use the [create-react-app](https://github.com/facebook/create-react-app) and its standard webpack configuration<br/>
 2. We would create our own webpack config(s).<br/>
 
-Because we use monaco editor and so many decorations in our code it is hard the match with create-react-app rules, so we have chosen the second option and divided our webpack configuration to 3 parts:
+Because we use monaco editor and decorators in our code it is hard to match with create-react-app rules, so we have chosen the second option and divided our webpack configuration to 3 parts:
 
 - one is for development purposes (webpack.dev.js)
 - one is for production code (webpack.prod.js)
