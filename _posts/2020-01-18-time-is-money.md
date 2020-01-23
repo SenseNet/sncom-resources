@@ -51,7 +51,7 @@ After generating the `stats.json`. We can make this file more transparent with [
 <img src="/img/posts/webpack_visualizer.gif">
 </p>
 
-## Quality is not an act, it is a habit. [550](https://github.com/SenseNet/sn-client/pull/550)
+## Quality is not an act, it is a habit. [#550](https://github.com/SenseNet/sn-client/pull/550)
 
 For improving the quality of our app, we run [Lighthouse](https://developers.google.com/web/tools/lighthouse) on the admin surface's landing page. It was interesting to see what we missed during development. Okay these problems were small ones, but you know: "Many a little makes a mickle!"<br/>
 
