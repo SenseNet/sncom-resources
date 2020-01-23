@@ -74,7 +74,7 @@ We were pretty proud of it. 😉
 
 ## What's Next?
 
-Our goal is to make the user interface a useful and usable for every user, including those who have a slow internet connection. It is a continuous operation, we cannot say that 'We are done with it'. We would like to be better and come up with new ideas. For now we optimize our app for desktop only, but in our short-term plan we would like to do more for mobile as well.
+Our goal is to make the user interface useful and usable for every user, including those who have a slow internet connection. It is a continuous operation, we cannot say that 'We are done with it'. We would like to be better and come up with new ideas. For now we optimize our app for desktop only, but in our short-term plan we would like to do more for mobile as well.
 
 So you know: "Time is money..", and we really appreciate your time.
 
