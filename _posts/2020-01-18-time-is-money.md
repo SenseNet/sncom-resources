@@ -45,7 +45,7 @@ Thank you for the authors and all the contributors!
 We can also check the size during development as well. We just added a new line for the package.json:<br/>
 `"build:stats": "webpack --config webpack.prod.js --profile --json > stats.json"`<br/>
 
-After generating the stats.js can make this file more transparent with [webpack-visualizer](https://chrisbateman.github.io/webpack-visualizer/)
+After generating the `stats.json`. We can make this file more transparent with [webpack-visualizer](https://chrisbateman.github.io/webpack-visualizer/)
 
 <p align="center">
 <img src="/img/posts/webpack_visualizer.gif">
