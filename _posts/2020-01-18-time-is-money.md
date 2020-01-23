@@ -1,6 +1,6 @@
 ---
 
-title: "Time is money: Performance improvements in sensenet"
+title: "Time is money: Performance improvements in admin ui"
 author: [pusztaienike]
 image: "../img/posts/time_is_money.jpg"
 tags: [performance, webpack, bundling, bundle, accessibility, lighthouse]
@@ -15,7 +15,9 @@ Of course we know that, and we are about to constantly improve performance to no
 
 ---
 
-## Divide it like Moses 🌊 [532](https://github.com/SenseNet/sn-client/pull/532)
+## Divide it like Moses 🌊 
+
+Check this pull reqest here: [#532](https://github.com/SenseNet/sn-client/pull/532)
 
 As you already know we use webpack for module bundling in sensenet. Till that time, we did not care too much about the bundle size,
 but our app is growing and growing so we had to change our mind and take some steps forward.<br/>
@@ -51,7 +53,9 @@ After generating the `stats.json`. We can make this file more transparent with [
 <img src="/img/posts/webpack_visualizer.gif">
 </p>
 
-## Quality is not an act, it is a habit. [#550](https://github.com/SenseNet/sn-client/pull/550)
+## Quality is not an act, it is a habit.
+
+Check this pull reqest here: [#550](https://github.com/SenseNet/sn-client/pull/550)
 
 For improving the quality of our app, we run [Lighthouse](https://developers.google.com/web/tools/lighthouse) on the admin surface's landing page. It was interesting to see what we missed during development. Okay these problems were small ones, but you know: "Many a little makes a mickle!"<br/>
 
