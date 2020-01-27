@@ -17,7 +17,7 @@ In this case the URL must satisfy a strict rule: the service path followed by `/
 
 ## Get a single content by Path
 
-Service path followed by the site relative path of the parent and an entity name wrapped by aposthrophes and parentheses.
+In this case the URL is the service path followed by the site relative path of the parent and an entity name wrapped by aposthrophes and parentheses.
 
 [comment]: # (Example here - REST, .NET, JavaScript, Reactjs)
 
@@ -49,7 +49,7 @@ This returns with the following response:
 
 ## Accessing binary stream
 
-Binary data (value of a binary field) is represented by an [OData Named Resource Stream Value](https://www.odata.org/documentation/odata-version-3-0/json-verbose-format/) stream value. The `media_src` and `content_type` properties are filled with proper values, while the `edit_media` and `media_etag` properties are not supported. Check out the "Binary" property of the following response as an example:
+Binary data (value of a binary field) is represented by an [OData Named Resource Stream Value](https://www.odata.org/documentation/odata-version-3-0/json-verbose-format/) stream value. The `media_src` and `content_type` properties are filled with proper values, while the `edit_media` and `media_etag` properties are not supported. Check the "Binary" property of the following response as an example:
 
 ```json
 {

@@ -1,3 +1,3 @@
 ```
-http://www.example.com/OData.svc/Root/Content('Example')
+https://dev.demo.sensenet.com/OData.svc/Root/Content('IT')
 ```

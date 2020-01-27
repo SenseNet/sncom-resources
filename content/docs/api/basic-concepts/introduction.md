@@ -15,13 +15,13 @@ The requested resource can be any content in the repository (since everything is
 
 An OData HTTP request sent to the sensenet Content Repository contains the following parts:
 
-- protocol (http or https)
+- protocol (`http` or `https`)
 - host (a site URL)
 - the `OData.svc` service name
-- the path (or id) of the requested resource
+- the `Path` (or `Id`) of the requested resource
 - optional parameters
 
-```http://www.example.com/OData.svc/[CONTENTPATH]```
+```https:/example.com/OData.svc/[CONTENTPATH]```
 
 ## Query options
 
@@ -29,16 +29,16 @@ Query options are query string parameters a client may specify to control the am
 
 | option |     |
 | ------ | --- |
-| [$select]() | specifies that a response from the service should return a subset of properties |
-| [$expand]() | allows you to identify related entries with a single URI such that a graph of entries could be retrieved with a single HTTP request (e.g. by creator user) |
-| [$orderby]() | allows you sort results by one or more properties, forward or reverse direction |
-| [$top]() | identifies a subset selecting only the first N items of the set |
-| [$skip]() | identifies a subset that is defined by seeking N entries into the collection and selecting only the remaining ones |
-| [$filter]() | identifeis a subset determined by selecting only the entries that satisfy the predicate expression specified by the query option |
-| [$format]() | specifies that a response to the request MUST use the media type specified by the query option (Atom and xml formats are not implemented yet in sensenet) |
-| [$inlinecount]() | controls the `__count` property that can be found every collection response |
-| [query]() | helps to get filtered collection of entities with sensenet Content Query |
-| [metadata]() | controls the metadata content in output entities |
+| [$select](/select-expand#select) | specifies that a response from the service should return a subset of properties |
+| [$expand](/select-expand#expand) | allows you to identify related entries with a single URI such that a graph of entries could be retrieved with a single HTTP request (e.g. by creator user) |
+| [$orderby](/ordering-paging/) | allows you sort results by one or more properties, forward or reverse direction |
+| [$top](/ordering-paging/) | identifies a subset selecting only the first N items of the set |
+| [$skip](/ordering-paging/) | identifies a subset that is defined by seeking N entries into the collection and selecting only the remaining ones |
+| [$filter](/search-filter/) | identifeis a subset determined by selecting only the entries that satisfy the predicate expression specified by the query option |
+| $format | specifies that a response to the request MUST use the media type specified by the query option (Atom and xml formats are not implemented yet in sensenet) |
+| [$inlinecount](/collection#inlinecount) | controls the `__count` property that can be found every collection response |
+| [query](/search-filter/) | helps to get filtered collection of entities with sensenet Content Query |
+| [metadata](/metadata/) | controls the metadata content in output entities |
 
 ## Accessibility
 
@@ -68,17 +68,17 @@ sensenet currently supports only the [OData Verbose JSON response format](https:
           "type": "Image",
           ...
         },
-        "DisplayName": "(apps)",
-        "Path": "/Root/Sites/Default_Site/workspaces/(apps)",
+        "DisplayName": "bagas-haryo-1415756-unsplash.jpg",
+        "Path": "/Root/Content/IT/ImageLibrary/bagas-haryo-1415756-unsplash.jpg",
         "Index": 5
       },
       {
         "__metadata": {
-          "uri": "/OData.svc/workspaces('Document')",
-          "type": "DocumentWorkspaceFolder"
+          "uri": "/odata.svc/Root/Content/IT/ImageLibrary('Sample-folder')",
+          "type": "Folder"
         },
-        "DisplayName": "Document Workspaces",
-        "Path": "/Root/Sites/Default_Site/workspaces/Document",
+        "DisplayName": "Sample folder",
+        "Path": "/Root/Content/IT/ImageLibrary/Sample-folder",
         "Index": 2
       },
     ...
