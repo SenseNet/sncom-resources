@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/query/reference"
 title: "Query by content relationship"
 index: 5
 ---

@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/query/id-path"
 title: "Query by Id or Path"
 index: 1
 ---

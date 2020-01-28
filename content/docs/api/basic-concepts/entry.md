@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/basic-concepts/entry"
 title: "Entry"
 index: 1
 ---

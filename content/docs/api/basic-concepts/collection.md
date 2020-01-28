@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/basic-concepts/collection"
 title: "Collection"
 index: 2
 ---

@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/query/date"
 title: "Query by date"
 index: 4
 ---

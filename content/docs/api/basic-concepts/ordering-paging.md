@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/basic-concepts/ordering-paging"
 title: "Ordering and paging"
 index: 4
 ---

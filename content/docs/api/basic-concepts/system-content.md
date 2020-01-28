@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/basic-concepts/system-content"
 title: "System content"
 index: 8
 ---

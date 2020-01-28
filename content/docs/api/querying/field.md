@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/query/field"
 title: "Query by a field"
 index: 2
 ---
