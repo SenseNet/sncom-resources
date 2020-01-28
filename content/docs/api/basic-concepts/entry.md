@@ -6,19 +6,19 @@ index: 1
 
 # Get a single content
 
-The requested resource can be any content in the repository that is permitted for the current user. The resource may be addressed with a content's Path or Id. It returns with one entity and all its properties.
+The requested resource can be any content in the repository that is permitted for the current user. The resource may be addressed with a content's Path or Id. It returns one entity and all its properties.
 
-If the requested resource is not found, the server returns with a 404 Error status code.
+If the requested resource is not found, the server returns a 404 Error status code.
 
 ## Get a single content by Id
 
-In this case the URL must satisfy a strict rule: the service path followed by `/content` (insensitive) and content Id wrapped by parenthesis without any whitespace.
+In this case the URL must satisfy a strict rule: the service path followed by `/content` (case insensitive) and content Id wrapped in parentheses without whitespaces.
 
 [comment]: # (Example here - REST, .NET, JavaScript, Reactjs)
 
 ## Get a single content by Path
 
-In this case the URL is the service path followed by the site relative path of the parent and an entity name wrapped by aposthrophes and parentheses.
+In this case the URL is the service path followed by the path of the parent and an entity name wrapped by aposthrophes and parentheses.
 
 [comment]: # (Example here - REST, .NET, JavaScript, Reactjs)
 
@@ -28,7 +28,7 @@ Any property of a content entity can be addressed in the following way:
 
 [comment]: # (Example here - REST, .NET, JavaScript, Reactjs)
 
-This returns with the following response:
+This returns the following response:
 
 ```json
 {
