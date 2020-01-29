@@ -6,13 +6,13 @@ index: 2
 
 # Get children of a content
 
-The requested (parent) resource can be any content in the repository that is permitted for the current user. The resource may be addressed with a content's Path. It returns with a list of entities and all their properties.
+The requested (parent) resource can be any content in the repository that is permitted for the current user. The resource may be addressed with a content's Path. It returns a list of child entities and all their properties.
 
-If the requested (parent) resource is not found, the server returns with a 404 Error status code.
+If the requested (parent) resource is not found, the server returns a 404 Error status code.
 
 ## Addressing children of a content (collection)
 
-Service path followed by the site relative path of the container returns child content of the requested parent as a collection.
+Service path followed by the path of the container returns child content of the requested parent as a collection.
 
 [comment]: # (Example here - REST, .NET, JavaScript, Reactjs)
 
@@ -22,7 +22,7 @@ Returns the count of items in the requested collection. The value depends on oth
 
 [comment]: # (Example here - REST, .NET, JavaScript, Reactjs)
 
-This returns with a raw integer value.
+This returns a raw integer value.
 
 ## [$inlinecount query option](#inlinecount)
 
