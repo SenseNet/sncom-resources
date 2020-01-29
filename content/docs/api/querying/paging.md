@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/query/paging"
 title: "Paging"
 index: 9
 ---

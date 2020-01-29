@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/query/ordering"
 title: "Ordering"
 index: 8
 ---

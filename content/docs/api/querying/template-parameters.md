@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/query/template-parameters"
 title: "Template parameters"
 index: 11
 ---

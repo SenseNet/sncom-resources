@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/content-management/upload"
 title: "Upload"
 index: 4
 ---

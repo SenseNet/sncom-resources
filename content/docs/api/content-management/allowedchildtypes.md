@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/content-management/allowedchildtypes"
 title: "Allowed childtypes"
 index: 6
 ---

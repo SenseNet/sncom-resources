@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/query/introduction"
 title: "How to query the API"
 index: 0
 ---

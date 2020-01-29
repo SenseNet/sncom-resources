@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/content-management/copy-move"
 title: "Copy or move"
 index: 5
 ---

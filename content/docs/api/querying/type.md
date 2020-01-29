@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/query/type"
 title: "Query by Type"
 index: 3
 ---

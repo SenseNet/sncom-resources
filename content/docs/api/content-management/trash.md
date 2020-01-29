@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/content-management/trash"
 title: "Trash"
 index: 7
 ---

@@ -1,4 +1,5 @@
 ---
+path: "/api-docs/content-management/delete"
 title: "Delete"
 index: 3
 ---
