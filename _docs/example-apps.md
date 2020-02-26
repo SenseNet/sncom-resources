@@ -62,3 +62,9 @@ Example app for user search with sensenet.
 
 - [Try it out](https://sn-react-usersearch.netlify.com/)
 - [View on GitHub](https://github.com/SenseNet/sn-client/tree/master/examples/sn-react-usersearch)
+
+## DMS demo
+Example app with react and redux presenting document management capabilities.
+
+- [Try it out](https://sn-react-dms.netlify.com/)
+- [View on GitHub](https://github.com/SenseNet/sn-client/tree/develop/examples/sn-dms-demo)
