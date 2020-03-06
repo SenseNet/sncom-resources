@@ -7,7 +7,7 @@ tags: [javascript, typescript, frontend development, redux, roadmap]
 
 ---
 
-Busy weeks behind us at the frontend division of the sensenet team. New features on the backend and our in-progress [DMS MVP](http://dms.demo.sensenet.com) generated tons of tasks and gave us many improvement points. But now we've released all these new stuff, so we can lay back a bit and sum up what's done. Join us in checking-out the latests and maybe you'll catch a bit about the upcomings.
+Busy weeks behind us at the frontend division of the sensenet team. New features on the backend and our in-progress [DMS MVP](https://sn-react-dms.netlify.com/) generated tons of tasks and gave us many improvement points. But now we've released all these new stuff, so we can lay back a bit and sum up what's done. Join us in checking-out the latests and maybe you'll catch a bit about the upcomings.
 
 ---
 

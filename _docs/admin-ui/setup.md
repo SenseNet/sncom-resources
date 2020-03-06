@@ -77,9 +77,7 @@ It is a whitelist that contains the trusted 3rd party domains that may send CORS
 "AllowedOriginDomains": [
     "localhost",
     "*.sensenet.com",
-    "*.netlify.com",
-    "sn-dms-demo-dev.netlify.com",
-    "dms.demo.sensenet.com"
+    "*.netlify.com"
   ]
 ```
 
