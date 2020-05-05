@@ -1,6 +1,6 @@
 ﻿---
 title: 'Moving sensenet client packages to monorepo'
-author: B3zo0
+author: zoltanbedi
 image: '../img/posts/monorepo/colorful-stack.jpg'
 tags: [monorepo, refactor, JavaScript, client packages]
 ---
