@@ -42,6 +42,6 @@ In sensenet there are three predefined local groups with three different permiss
 | Manage Lists and Workspaces  | ![ok]  |         |          |
 |||||
 
-[ok]: img/workspace-local-groups/ico-ok.gif
+[ok]: https://community.sensenet.com/docs/img/workspace-local-groups/Ico-ok.gif
 
 > Please note that the local groups listed above have nothing to do with the global *Owners* group or the *Visitor* user. Please visit [this article](built-in-groups-and-users) for details about global built-in groups and users.
