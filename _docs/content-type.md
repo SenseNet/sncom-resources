@@ -29,6 +29,6 @@ Let's examine one of the built-in Content Types: the *User*. Log in as an Admini
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/ctd/ctd-in-contentexplorer.png" style="margin: 20px auto" />
 
-You can edit the [Content Type Definition](ctd) of the User Content Type by clicking on the Edit link.
+You can edit the [Content Type Definition](/docs/ctd) of the User Content Type by clicking on the Edit link.
 
 <img src="https://raw.githubusercontent.com/SenseNet/sensenet/master/docs/images/ctd/ctd-xml.png" style="margin: 20px auto" />
