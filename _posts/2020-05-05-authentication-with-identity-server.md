@@ -22,14 +22,14 @@ Quoting from [https://oauth.net/2/](https://oauth.net/2/)
 Quoting from [https://openid.net/connect/](https://openid.net/connect/)
 > OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0 protocol. It allows Clients to verify the identity of the End-User based on the authentication performed by an Authorization Server, as well as to obtain basic profile information about the End-User in an interoperable and REST-like manner.
 
-Ok, so IdentityServer4 is implementing the industry-standard protocol for authorization. That sounds awesome. We don't have to implement hacky/non-standard ways to implement authorization, IdentityServer4 handles that for us.
+Ok, so IdentityServer4 is implementing the industry-standard protocol for authorization. That sounds awesome. We don't have to implement hacky/non-standard ways to implement authorization, IdentityServer4 does most of the work for us.
 
-## How can I authenticate to sensenet from your SPA then?
+## How can I authenticate to sensenet from a SPA then?
 
-The easiest way is to use our newly created React component library for handling authentication through a provider ([@sensenet/authentication-oidc-react](https://www.npmjs.com/package/@sensenet/authentication-oidc-react)). It uses [oidc-client](https://www.npmjs.com/package/oidc-client) under the hood. If you are using another framework or just vanilla js, your best bet is this lib.
+The easiest way is to use our newly created React component library for handling authentication through a provider ([@sensenet/authentication-oidc-react](https://www.npmjs.com/package/@sensenet/authentication-oidc-react)). It uses [oidc-client](https://www.npmjs.com/package/oidc-client) under the hood. If you are using another framework or just vanilla js, this lib is your best bet.
 
 - Add @sensenet/authentication-oidc-react to your react app either with `yarn add @sensenet/authentication-oidc-react` or with `npm install @sensenet/authentication-oidc-react`
-- Add a configuration file like this 
+- Add a configuration file like this:
 
 ```typescript
 import { UserManagerSettings } from '@sensenet/authentication-oidc-react'
@@ -104,7 +104,7 @@ export const RepositoryProvider = ({ children }: PropsWithChildren<{}>) => {
 - That is it! 🎉 You can now authenticate with your user.
 
 
-### What if I don't know the authority url in the configuration?
+### What if I don't know the authority url?
 
 You can get the authority and client_id config from the service with this action `https://my-service.sensenet.com/odata.svc/('Root')/GetClientRequestParameters?clientType=adminui`
 
