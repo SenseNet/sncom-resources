@@ -7,8 +7,8 @@ tags: [authentication]
 
 ---
 
-We have changed to authentication for sensenet 7 to IdentityServer4. 
-Here are the things you need to know when you use it in an single page application.
+We have changed the authentication mechanism for sensenet 7 to use IdentityServer4. 
+Here are the things you need to know when you use it in a single page application.
 
 ---
 
