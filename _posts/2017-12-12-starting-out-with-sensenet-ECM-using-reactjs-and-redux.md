@@ -367,6 +367,6 @@ After restarting the project you can see that you have a not too stylish but wor
 
 ## Other examples
 
-If you are interested in more examples, we've created several todo apps not only with [Reactjs](https://github.com/SenseNet/sn-react-redux-todo-app), but with [Angularjs](https://github.com/SenseNet/sn-angular2-redux-todo-app), [Aureliajs](https://github.com/B3zo0/sn7-aurelia-redux-todo-app) and [Vuejs](https://github.com/SenseNet/sn-vue-redux-todo-app) too, and we are currently working on a [DMS MVP with Reactjs and Redux upon sensenet](https://sn-react-dms.netlify.com/).
+If you are interested in more examples, we've created several todo apps not only with [Reactjs](https://github.com/SenseNet/sn-react-redux-todo-app), but with [Angularjs](https://github.com/SenseNet/sn-angular2-redux-todo-app), [Aureliajs](https://github.com/zoltanbedi/sn7-aurelia-redux-todo-app) and [Vuejs](https://github.com/SenseNet/sn-vue-redux-todo-app) too, and we are currently working on a [DMS MVP with Reactjs and Redux upon sensenet](https://sn-react-dms.netlify.com/).
 
 We are open and want to build a great community around sensenet so your opinion is super important to us. Please try, review and comment our work and help us make the world a better place! 😻
