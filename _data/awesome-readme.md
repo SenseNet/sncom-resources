@@ -70,7 +70,7 @@
 - [Todo App with React, Redux and sensenet](https://github.com/SenseNet/sn-react-redux-todo-app)
 - [Todo App with Angular, Redux and sensenet](https://github.com/blaskodaniel/sn-angular-redux-todo-app)
 - [Todo App with Angular2, Redux and sensenet](https://github.com/SenseNet/sn-angular2-redux-todo-app)
-- [Todo App with Aurelia, Redux and sensenet](https://github.com/B3zo0/sn7-aurelia-redux-todo-app)
+- [Todo App with Aurelia, Redux and sensenet](https://github.com/zoltanbedi/sn7-aurelia-redux-todo-app)
 - [Todo App with Vue, Redux and sensenet](https://github.com/SenseNet/sn-vue-redux-todo-app)
 
 ## Community
