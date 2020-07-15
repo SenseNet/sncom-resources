@@ -3,7 +3,7 @@
 title: "Rebirth of sensenet docs"
 author: [herflis]
 image: "../img/posts/docs-sensenet-com.jpg"
-tags: [performance, webpack, bundling, bundle, accessibility, lighthouse]
+tags: [documentation, docs, gatsby, community]
 
 ---
 
