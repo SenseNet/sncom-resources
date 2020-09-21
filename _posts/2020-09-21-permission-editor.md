@@ -74,7 +74,7 @@ If you would like to share your content (content can be almost anything, cause i
 
 **Assign new permission**
 
-If u would like to add permission for someon who has no permisisons at all on this content you can do it with assign new permission button. Select the user who needs the rights and turn on/off the switchers 😉
+If you would like to add permission for someone who has no permisison at all on this content you can do it with assign new permission button. Select the user who needs the rights and turn on/off the switchers 😉
 
 <p align="center">
 <img src="/img/posts/permission_assign_new.gif">
@@ -92,7 +92,7 @@ On permission view we mark these local-only entries with an icon.
 
 **Force relations**
 
-Some of the built-in permissions requires to allow other permission(s). E.g: If you would like to set Preview permission to an entry it requires to have See permission as well. You don't need to handle these relations cause it is automatic on the background. Setting the Preview permission will set See permission as well.
+Some of the built-in permissions requires to allow other permission(s). E.g: If you would like to set Preview permission to an entry it requires to have See permission as well. You don't need to handle these relations cause it is automatic in the background. Setting the Preview permission will set See permission as well.
 
 <p align="center">
 <img src="/img/posts/permission_force_relations.gif">
