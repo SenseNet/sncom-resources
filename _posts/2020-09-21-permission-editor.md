@@ -102,6 +102,9 @@ Some of the built-in permissions requires to allow other permission(s). E.g: If 
 ## Must read 📚🔖
 
 More details about our permission system:
+
 [Document level Permissions](https://docs.sensenet.com/concepts/user-and-permission-management/02-document-level-permissions)
+
 [Role based Permissions](https://docs.sensenet.com/concepts/user-and-permission-management/03-role-based-permissions)
+
 [Custom Roles and Permissions](https://docs.sensenet.com/concepts/user-and-permission-management/04-custom-roles-and-permissions)
