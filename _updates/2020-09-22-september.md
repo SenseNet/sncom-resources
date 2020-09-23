@@ -35,7 +35,7 @@ Hacktoberfest 2020 and the SNaaS beta period are upon us and this year we connec
 - Upload chunksize is set to 1MB preventing upload issues
 [910](https://github.com/SenseNet/sn-client/pull/910)
 
-- Grid displaying issue in Safari browser are fixed
+- Grid issues in Safari browser are fixed
 [897](https://github.com/SenseNet/sn-client/pull/897)
 
 - Document viewer display proper error messages when preview generation is failed
