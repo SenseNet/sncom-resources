@@ -10,7 +10,7 @@ description: SnBenchmark is a command line tool that measures the performance of
 
 ## The tool
 <a name="TheTool"></a>
-**SnBenchmark** is a *command line tool* that measures the performance of a sensenet instance and helps you determine real-life capabilities of your site. It requires a running portal, but no modifications are required on the portal side. The tool accesses the site through its *REST API* (or more specifically the [sensenet Client library](http://wiki.sensenet.com/Client_library) built on top of it). As it is written using an *asynchronous* architecture, it does not consume too great amount of resources on the client.
+**SnBenchmark** is a *command line tool* that measures the performance of a sensenet instance and helps you determine real-life capabilities of your site. It requires a running portal, but no modifications are required on the portal side. The tool accesses the site through its *REST API* (or more specifically the sensenet Client library built on top of it). As it is written using an *asynchronous* architecture, it does not consume too great amount of resources on the client.
 
 The result of a benchmark execution will be a *csv file* containing request/response times and other collected data that you can use to visualize the behavior of your site under different loads. See an example later in this document.
 
@@ -31,7 +31,7 @@ As a result, the tool generates a csv file (see below) and provides the last ave
 
 ## Profiles
 <a name="Profiles"></a>
-Benchmark profiles are defined using a simple script language. A profile is a *text file* that consists of lines describing simple actions, like loading a content or performing an [OData action](http://wiki.sensenet.com/OData_REST_API).
+Benchmark profiles are defined using a simple script language. A profile is a *text file* that consists of lines describing simple actions, like loading a content or performing an [OData action](https://docs.sensenet.com/api-docs/basic-concepts).
 
 We provide a basic set of profiles that we use measuring the core product, but you can create **custom profiles** that better represent your user base.
 

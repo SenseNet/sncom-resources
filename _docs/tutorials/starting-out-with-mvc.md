@@ -179,7 +179,7 @@ namespace SnWebApplication.Models
 }
 ```
 
-> Note that we expose **two Task model lists** here as properties. One of them (My tasks) is implemented using the [LINQ to sensenet](http://wiki.sensenet.com/LINQ_to_Sense/Net) technique, the other one executes a simple [Content Query](http://wiki.sensenet.com/Content_Query_syntax) for task content items. The result is very similar in the background, you may choose either of them when searching for content items.
+> Note that we expose **two Task model lists** here as properties. One of them (My tasks) is implemented using the LINQ to sensenet technique, the other one executes a simple [Content Query](https://docs.sensenet.com/concepts/basics/041-content-query) for task content items. The result is very similar in the background, you may choose either of them when searching for content items.
 
 ## Dashboard controller
 The next step is to create a controller for serving the UI the necessary views. Create a new empty controller named *DashboardController* in Visual Studio (*Controllers* folder) and fill it with the following code:

@@ -57,4 +57,4 @@ You can contact us or follow us through :<p>
 [twitter]: https://twitter.com/sensenet
 [insta]: https://www.instagram.com/sensenetinside/
 [gitter]: https://gitter.im/SenseNet/sensenet
-[sensenet]: https://www.sensenet.com/contact
+[sensenet]: https://www.sensenet.com/contact-us

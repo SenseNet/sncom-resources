@@ -43,7 +43,7 @@ And voila, your app is running in the browser :)
 
 ## Connect to sensenet
  
-To let your app communicate with the sensenet instance you have to allow its domain as the origin of [CORS](http://wiki.sensenet.com/Cross-origin_resource_sharing) requests. The easiest way to do this if you open the Content Explorer and add your apps url to the ```AllowedOriginDomains``` list in the Portal settings file (*/Root/System/Settings/Portal.settings*)
+To let your app communicate with the sensenet instance you have to allow its domain as the origin of [CORS](https://docs.sensenet.com/guides/setup#portal.settings) requests. The easiest way to do this if you open the Content Explorer and add your apps url to the ```AllowedOriginDomains``` list in the Portal settings file (*/Root/System/Settings/Portal.settings*)
 
 ```xml
 ...

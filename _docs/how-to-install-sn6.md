@@ -82,7 +82,7 @@ In the following sections, we'll provide solutions for the most common errors yo
 
 ### Cannot connect to SNCR ###
 
-Check the `web.config` file: look for the SQL connection string and see what user name and password was added there during the install process (it should not be the `sa` user but a custom account like _sensenet6_). This user should have access to the database that is also added to the connection string. Here's a [forum topic](http://forum.sensenet.com/viewtopic.php?f=3&t=7279&p=10803&hilit=404&sid=c79596c733ccd9b721b9566ecbe71faf#p10803) that might be helpful.
+Check the `web.config` file: look for the SQL connection string and see what user name and password was added there during the install process (it should not be the `sa` user but a custom account like _sensenet6_). This user should have access to the database that is also added to the connection string. 
 
 ### 'Deploy' menu item does not appear in IIS ###
 

@@ -150,4 +150,4 @@ Since ```ContentTypes``` and ```Schemas``` as auto-generated classes are bundled
 #### CTD improvements 
 Sensenet's Content Type Definitions are awesome but they need a facelift from time to time. This time it means some major improvements like adding solutions for field grouping, ordering and some changes around Icon property to handle font-icon libraries like [Material icons](https://material.io/icons/) or [Font awesome](http://fontawesome.io/)
 #### Localization
-String resources were enable on the client-side through [sensenet's built-in bundling and dependency handling mechanism](http://wiki.sensenet.com/How_to_internationalize_javascripts). Since we build separate applications with communicating through OData We have to figure out how localized string resources can be distributed from sensenet to the client.
+String resources were enable on the client-side through sensenet's built-in bundling and dependency handling mechanism. Since we build separate applications with communicating through OData We have to figure out how localized string resources can be distributed from sensenet to the client.

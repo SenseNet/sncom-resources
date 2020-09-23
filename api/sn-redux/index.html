@@ -148,7 +148,7 @@ store.dispatch(Actions.deleteContent(<span class="hljs-string">'/workspaces/MyWo
 <span class="hljs-keyword">const</span> store = Store.createSensenetStore(options)
 
 </code></pre>
-				<p>To enable your external app to send request against your sensenet portal change your <code>Portal.settings</code>. For further information about cross-origin resource sharing in sensenet check <a href="http://wiki.sensenet.com/Cross-origin_resource_sharing#Origin_check">this</a> article.</p>
+				<p>To enable your external app to send request against your sensenet portal change your <code>Portal.settings</code>. For further information about cross-origin resource sharing in sensenet check <a href="https://docs.sensenet.com/guides/setup#portal.settings">this</a> article.</p>
 				<p>Check your sensenet portal&#39;s web.config and if the <code>ODataServiceToken</code> is set, you can pass to your Repository as a config value on client side.</p>
 				<pre><code class="lang-ts"><span class="hljs-keyword">let</span> repository = <span class="hljs-keyword">new</span> Repository.SnRepository({
   RepositoryUrl: <span class="hljs-string">'http://path-to-your-portal.com'</span>,
