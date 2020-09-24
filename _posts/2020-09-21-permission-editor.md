@@ -11,7 +11,7 @@ tags: [sensenet, permission]
 
 ---
 
-In the IT world you often handle secure data, which you don't want to share with the whole universe. But how can you hide those from the outsiders? What if you would like to share those only with your group? And another data with another group? 
+In the IT world you often handle sensitive data, which you don't want to share with the whole universe. But how you can hide those contents from outsiders? What if you would like to share those things only with a specific group of users? Or other data with another group? 
 
 Of course there is a simple solution for that: permission system. Almost every software has permissions which handle what u can see & do.
 
