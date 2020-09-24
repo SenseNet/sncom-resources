@@ -15,7 +15,7 @@ In the IT world you often handle sensitive data, which you don't want to share w
 
 Of course there is a common solution for that: permission system. Almost every software has permissions which handle what users can see or do.
 
-I think most of u use some kind of social media. Think about searching for someone and that by default you cannot see her/his photos, but after you apply a friend request everything changes.
+I think most of us use some kind of social media. Think about searching for someone and that by default you cannot see her/his photos, but after you apply a friend request everything changes.
 And what about your company data? Unless you are the boss, I am sure that your company has data for which you do not have sufficient permissions.
 
 Permissions are everywhere. And of course sensenet has its own permission system as well. On the new admin surface 
