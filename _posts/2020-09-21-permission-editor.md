@@ -23,7 +23,7 @@ handling permissions was only possible with coding and running commands. Till no
 
 ## Customize it as you want 🔧🔨
 
-sensenet has a lot of built-in permissions but there are some reserved ones that you are free to use in case you have special needs ([custom permissions](https://docs.sensenet.com/concepts/user-and-permission-management/04-custom-roles-and-permissions#permissions)). You can also group these permissions for the permission editor dialog as you want. The related settings file is available under Setup menu / Permission.settings.
+sensenet has a lot of built-in permissions but there are some reserved ones that you are free to use in case you have special needs ([custom permissions](https://docs.sensenet.com/concepts/user-and-permission-management/04-custom-roles-and-permissions#permissions)). You can also group these permissions for the permission editor. The related settings file is available under Setup menu / Permission.settings.
 
 The default settings are the following:
 
