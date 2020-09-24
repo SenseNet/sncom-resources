@@ -68,7 +68,7 @@ Changes only apply on clicking Submit button so for your comfort there is also a
 
 **Make content public/private**
 
-If you would like to share your content (content can be almost anything, cause in sensenet everything is a content) with somebody e.g. from another company who has no authority to your repository you can do it easily by clicking on "Make content public" button. If you change your mind reverting this is easy as it was to set.
+If you would like to share your content (content can be almost anything, cause in sensenet everything is a content) with visitors who are not users in your repository you can do it easily by clicking on "Make content public" button. If you change your mind reverting this is easy as it was to set. This thing come in handy when you build a public website and most of your repository data is shared with all the visitors.
 
 <p align="center">
 <img src="/img/posts/permission_make_public.gif">
