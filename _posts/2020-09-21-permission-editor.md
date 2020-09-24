@@ -13,7 +13,7 @@ tags: [sensenet, permission]
 
 In the IT world you often handle sensitive data, which you don't want to share with the whole universe. But how you can hide those contents from outsiders? What if you would like to share those things only with a specific group of users? Or other data with another group? 
 
-Of course there is a simple solution for that: permission system. Almost every software has permissions which handle what u can see & do.
+Of course there is a common solution for that: permission system. Almost every software has permissions which handle what users can see or do.
 
 I think most of us use any social network. You may search for a person and you cannot see her/his photos, after you apply a friend request everything change.
 You see more than ever. Or what about your company? If you are not the boss I am sure that your company has datas which you do not have the sufficient permission.
