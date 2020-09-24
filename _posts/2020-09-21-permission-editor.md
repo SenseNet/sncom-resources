@@ -57,7 +57,8 @@ Select a content from your repository, right-click on it and select 'Set permiss
 
 On the dialog use the switches to enable/disable a permission. There are also group level switches, so you can easily enable/disable all the permissions in the selected group...and there is the king of kings: Full access 👑 with which you can turn all permissions on/off.
 
-Some permissions are disabled because they are inherited and you cannot override them. The changes only apply on clicking Submit button so for your comfort there is also a reset button to restore the unsaved changes.
+When you open the dialog some permissions are disabled because they are inherited from a parent and you cannot override them. 
+Changes only apply on clicking Submit button so for your comfort there is also a reset button to restore the unsaved changes.
 
 <p align="center">
 <img src="/img/posts/permission_how_to_use.gif">
