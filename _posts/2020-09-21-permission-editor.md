@@ -75,7 +75,7 @@ If you would like to share your content (content can be almost anything, cause i
 
 **Assign new permission**
 
-If you would like to add permission for someone who has no permisison at all on this content you can do it with assign new permission button. Select the user who needs the rights and turn on/off the switchers 😉
+If you would like to grant permission for someone on a content who has no permission setting at all, you can do it using the _Assign new permission_ button. Search for and select the user or group to whom you want to set permissions and turn on/off the switchers. 😉
 
 <p align="center">
 <img src="/img/posts/permission_assign_new.gif">
