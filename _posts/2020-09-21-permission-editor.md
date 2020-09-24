@@ -102,7 +102,7 @@ Some of the built-in permissions requires to allow other permission(s). E.g: If 
 
 ## Must read 📚🔖
 
-More details about sensenet's permission system:
+More details about sensenet permission system:
 
 [Document level Permissions](https://docs.sensenet.com/concepts/user-and-permission-management/02-document-level-permissions)
 
