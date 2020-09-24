@@ -1,6 +1,6 @@
 ---
 
-title: "Permission editor in admin ui"
+title: "Permission editor on the admin ui"
 author: [pusztaienike]
 image: "../img/posts/permission_editor.jpg"
 tags: [sensenet, permission]
