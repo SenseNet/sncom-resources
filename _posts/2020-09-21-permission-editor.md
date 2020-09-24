@@ -83,7 +83,7 @@ If you would like to grant permission for someone on a content who has no permis
 
 **Local only**
 
-One of the big advantages of sensenet content repository tree is inheritance that is applied on permissions as well. However, there are cases when you do not want child contents to inherit permissions. For example you want to allow certain users to see a content (e.g. a Content List) but you do not want them to be able to see contents that are inside this container. To avoid permission inheritance, mark permission entries as 'local-only'.
+One of the big advantages of sensenet content repository tree is inheritance which is applied on permissions as well. However, there are cases when you do not want child contents to inherit permissions. For example you want to allow certain users to see a content (e.g. a Content List) but you do not want them to be able to see contents that are inside this container. To avoid permission inheritance, mark permission entries as 'local-only'.
 On the permission view these local-only entries are marked with an icon.
 
 <p align="center">
