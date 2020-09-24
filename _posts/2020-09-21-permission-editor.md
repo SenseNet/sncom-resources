@@ -53,7 +53,7 @@ On the permission editor dialog you can see the groups and permissions based on 
 
 ## How to use it? 🎮
 
-Select a content from your repository, right-click on it and select 'Set permissions' from the dropdown. On the permission view you can check the permission entries (users or groups) which are inherited or set directly on the current content. Selecting an entry makes the permission editor dialog open.
+Select a content from your repository, right-click on it and select 'Set permissions' from the dropdown. On the permission view you can check the permission entries (users or groups) which are inherited or set directly on the current content. Selecting an entry opens the permission editor dialog.
 
 On the dialog use the switchers to enable/disable a permission. There are also group level switchers, so you can easily enable/disable all the permissions in the selected group...and there is the king of kings: Full access 👑 with which you can turn all permissions on/off.
 
