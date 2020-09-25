@@ -4,6 +4,7 @@
 Disallow: /_docs/*
 Disallow: /_drafts/*
 Disallow: /_posts/*
+Disallow:/docs/*
 
 User-agent: *
 Sitemap: {{ site.url }}/sitemap.xml
