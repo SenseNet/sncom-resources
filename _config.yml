@@ -18,7 +18,6 @@ plugins:
     - algoliasearch-jekyll
     - jekyll-sitemap
 collections:
-    docs: {output: true, permalink: '/docs/:path/'}
     updates: {output: true, permalink: '/updates/:year/:month/:day'}
     releases: {output: true, permalink: '/releases/:year/:month/:day'}
 defaults:
