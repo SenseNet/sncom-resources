@@ -10,13 +10,12 @@ Our Community website that has complete documentation of all the services provid
 <b>sensenet Community Website</b> : https://community.sensenet.com 
 
 
-## File Structure Related to Website
- - [_docs](_docs) ==> This folder Contains all Documentation pages published documentation that can be found on our Community website.
+## File Structure Related to 
  - [_drafts](_drafts)   ==> Here all are the draft post are stored to be edited in future and published 
  - [_includes](_includes)  ==> This is something like unique folder where our Files like footer, header are stored
  - [_pages](_pages)   ==> This includes some published pages at our Website https://community.sensenet.com
  - [_updates](_updates)   ==> folder contains the changelogs of the sn-client mono repos. And there's another folder names
-  - [_releases](_releases)  ==> contains the changelogs of the backend nuget package's release notes.
+ - [_releases](_releases)  ==> contains the changelogs of the backend nuget package's release notes.
  
 
 
