@@ -33,6 +33,7 @@ exclude:
     - Gemfile.lock
     - package.json
     - script
+    - _docs
 include:
     - _pages
     - _updates
