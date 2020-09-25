@@ -1,6 +1,6 @@
 <nav class="site-header-nav">
     {% capture first_segment %}{{ page.url | remove_first: "/" | split: "/" | first }}{% endcapture %}
-    <a class="site-header-nav-item {% if first_segment == 'docs' %}active{% endif %}" href="https://docs.sensenet.com">Docs</a>
+    <a class="site-header-nav-item" href="https://docs.sensenet.com">Docs</a>
     <a class="site-header-nav-item {% if first_segment == 'tutorials' %}active{% endif %}" href="{{ site.baseurl }}/tutorials/">Tutorials</a>
     <a class="site-header-nav-item {% if first_segment == 'blog' %}active{% endif %}" href="{{ site.baseurl }}/blog/">Blog</a>
     <a class="site-header-nav-item {% if first_segment == 'community' %}active{% endif %}" href="{{ site.baseurl }}/community/">Community</a>
