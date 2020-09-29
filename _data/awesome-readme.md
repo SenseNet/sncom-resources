@@ -61,26 +61,20 @@
 
 ## Documentation
 
-- [SenseNet Wiki](http://wiki.sensenet.com)
-- [SN Client JS API References](http://www.sensenet.com/documentation/sn-client-js/index.html)
-- [SN Redux API References](http://www.sensenet.com/documentation/sn-redux/index.html)
+- [SenseNet Docs](https://docs.sensenet.com)
 
 ## Examples
 
-- [Todo App with React, Redux and sensenet](https://github.com/SenseNet/sn-react-redux-todo-app)
-- [Todo App with Angular, Redux and sensenet](https://github.com/blaskodaniel/sn-angular-redux-todo-app)
-- [Todo App with Angular2, Redux and sensenet](https://github.com/SenseNet/sn-angular2-redux-todo-app)
-- [Todo App with Aurelia, Redux and sensenet](https://github.com/zoltanbedi/sn7-aurelia-redux-todo-app)
-- [Todo App with Vue, Redux and sensenet](https://github.com/SenseNet/sn-vue-redux-todo-app)
+- [React example apps](https://docs.sensenet.com/example-apps/)
 
 ## Community
 
-- [Community site](http://community.sensenet.com)
-- [sensenet Blog](http://community.sensenet.com/blog/)
-- [Stack Overflow](http://stackoverflow.com/questions/tagged/sensenet)
+- [Community site](https://community.sensenet.com)
+- [sensenet Blog](https://sensenet.com/blog/)
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/sensenet)
 - [Facebook](https://www.facebook.com/sensenetcsp)
 - [Twitter](https://twitter.com/sensenet)
-- [Gitter](https://gitter.im/SenseNet)
+- [Gitter](https://gitter.im/SenseNet/SNaaS)
 
 ## Other
 

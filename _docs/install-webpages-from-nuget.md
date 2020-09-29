@@ -86,7 +86,7 @@ Execute the **install-webpages** command with the [SnAdmin](https://github.com/S
 If there were no errors, you are good to go! Hit F5 in Visual Studio and start experimenting with sensenet WebPages!
 
 ## After installing sensenet WebPages
-After you installed this component, you will be able to log in on the main page and browse, edit or create content on the admin UI ([Content Explorer](http://wiki.sensenet.com/Content_Explorer)).
+After you installed this component, you will be able to log in on the main page and browse, edit or create content on the admin UI (Content Explorer).
 
 About how to log in and enter Content Explorer, follow this URL:
 

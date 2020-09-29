@@ -275,7 +275,6 @@ Defines the character used to replace invalid characters..
 [sensenet / SenseNet.Configuration.Cryptography](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Cryptography.cs "See on github")
 
 Thumbprint value of the matched webserver certificate.
-[Details](http://wiki.sensenet.com/Cryptographic_API "See detailed information.")
 
 ----
 ## **sensenet/data** section
@@ -322,7 +321,6 @@ These keys also work in the configuration/detailedLogger section due to compatib
 [sn-tools / SenseNet.Diagnostics.SnTrace](https://github.com/SenseNet/sn-tools/blob/master/src/SenseNet.Tools/Diagnostics/SnTrace.cs "See on github")
 
 Size of the allocated line buffer.
-[Details](http://wiki.sensenet.com/Detailed_logger "See detailed information.")
 
 **Default value:** 10000
 
@@ -331,7 +329,6 @@ Size of the allocated line buffer.
 [sn-tools / SenseNet.Diagnostics.SnTrace](https://github.com/SenseNet/sn-tools/blob/master/src/SenseNet.Tools/Diagnostics/SnTrace.cs "See on github")
 
 Frequency of writing information about the state of the detailed logger to the log.
-[Details](http://wiki.sensenet.com/Detailed_logger "See detailed information.")
 
 **Default value:** 1000
 
@@ -339,7 +336,7 @@ Frequency of writing information about the state of the detailed logger to the l
 ### MaxWritesInOneFile
 [sn-tools / SenseNet.Diagnostics.SnTrace](https://github.com/SenseNet/sn-tools/blob/master/src/SenseNet.Tools/Diagnostics/SnTrace.cs "See on github")
 
-Number of writes into a single file. If the writer reaches this value, a new log file will be created.[Details](http://wiki.sensenet.com/Detailed_logger "See detailed information.")
+Number of writes into a single file. If the writer reaches this value, a new log file will be created.
 
 **Default value:** 100
 
@@ -347,15 +344,13 @@ Number of writes into a single file. If the writer reaches this value, a new log
 ### WriteToFileDelay
 [sn-tools / SenseNet.Diagnostics.SnTrace](https://github.com/SenseNet/sn-tools/blob/master/src/SenseNet.Tools/Diagnostics/SnTrace.cs "See on github")
 
-Time between end of previous and start of next writing in milliseconds. [Details](http://wiki.sensenet.com/Detailed_logger "See detailed information.")
+Time between end of previous and start of next writing in milliseconds.
 
 **Default value:** 1000
 
 ----
 ## **sensenet/exceptionStatusCodes** section
 Here you can specify which HTTP status and substatus codes belong to which type of exception. As the key you can set the full name of the exception (for instance: System.Security.SecurityException) or you can set an Exception-family as well (for example: System.Exception.SystemException). In the second case all the exceptions belong to SystemException will be handled. As the value you can set the three digit HTTP status code or, in case of using IIS, use the XXX.X format to specify substatus codes as well.
-
-[Details](http://wiki.sensenet.com/Error_Handling "See detailed information.")
 
 ----
 ## **sensenet/identityManagement** section
@@ -369,7 +364,6 @@ Here you can specify which HTTP status and substatus codes belong to which type 
 [sensenet / SenseNet.Configuration.IdentityManagement](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/IdentityManagement.cs "See on github")
 
 When you created a User a User Profile is also created with it, if this key value is true.
-[Details](http://wiki.sensenet.com/User_Profile "See detailed information.")
 
 **Default value:** false
 
@@ -454,14 +448,12 @@ When you created a User a User Profile is also created with it, if this key valu
 [sensenet / SenseNet.Configuration.Logging](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Logging.cs "See on github")
 
 You can define your custom counters with a semicolon separated counter-name list.
-[Details](http://wiki.sensenet.com/Performance_Counters "See detailed information.")
 
 ----
 ### PerformanceCountersEnabled
 [sensenet / SenseNet.Configuration.Logging](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Logging.cs "See on github")
 
 Switches on or off all built-in and custom performance counters.
-[Details](http://wiki.sensenet.com/Performance_Counters "See detailed information.")
 
 **Default value:** false
 
@@ -536,7 +528,6 @@ Switches on or off all built-in and custom performance counters.
 [sensenet / SenseNet.Configuration.Messaging](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Messaging.cs "See on github")
 
 Cluster channel monitor heartbeat interval in seconds.
-[Details](http://wiki.sensenet.com/Communication_between_appdomains "See detailed information.")
 
 **Default value:** 60
 
@@ -547,7 +538,6 @@ Cluster channel monitor heartbeat interval in seconds.
 [sensenet / SenseNet.Configuration.Messaging](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Messaging.cs "See on github")
 
 Timeout limit for receiving response for channel monitor test messages in seconds.
-[Details](http://wiki.sensenet.com/Communication_between_appdomains "See detailed information.")
 
 **Default value:** 10
 
@@ -558,7 +548,6 @@ Timeout limit for receiving response for channel monitor test messages in second
 [sensenet / SenseNet.Configuration.Messaging](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Messaging.cs "See on github")
 
 Number of unprocessed incoming messages that re-enable incoming request handling if it was delayed due to high unprocessed message count.
-[Details](http://wiki.sensenet.com/Communication_between_appdomains "See detailed information.")
 
 **Default value:** 500
 
@@ -567,7 +556,6 @@ Number of unprocessed incoming messages that re-enable incoming request handling
 [sensenet / SenseNet.Configuration.Messaging](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Messaging.cs "See on github")
 
 Number of unprocessed incoming messages that trigger a delay of incoming request handling.
-[Details](http://wiki.sensenet.com/Communication_between_appdomains "See detailed information.")
 
 **Default value:** 1000
 
@@ -576,7 +564,6 @@ Number of unprocessed incoming messages that trigger a delay of incoming request
 [sensenet / SenseNet.Configuration.Messaging](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Messaging.cs "See on github")
 
 Number of threads processing/executing tasks of incoming messages.
-[Details](http://wiki.sensenet.com/Communication_between_appdomains "See detailed information.")
 
 **Default value:** 5
 
@@ -585,7 +572,6 @@ Number of threads processing/executing tasks of incoming messages.
 [sensenet / SenseNet.Configuration.Messaging](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Messaging.cs "See on github")
 
 Number of messages one processor thread is allowed to process in a row.
-[Details](http://wiki.sensenet.com/Communication_between_appdomains "See detailed information.")
 
 **Default value:** 100
 
@@ -594,7 +580,6 @@ Number of messages one processor thread is allowed to process in a row.
 [sensenet / SenseNet.Configuration.Messaging](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Messaging.cs "See on github")
 
 Message retention time in seconds. Every message has a retention time: if it expires, the message is deleted from the queue, thus ensuring that the channel cannot get filled.
-[Details](http://wiki.sensenet.com/Communication_between_appdomains "See detailed information.")
 
 **Default value:** 10
 
@@ -605,14 +590,12 @@ Message retention time in seconds. Every message has a retention time: if it exp
 [sensenet / SenseNet.Configuration.Messaging](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Messaging.cs "See on github")
 
 Message queue paths for every web node and tool that will connect to the Content Repository. First queue path should be local incoming queue, consecutive queue names are paths of outgoing queues. Queue paths are separated with ';'.
-[Details](http://wiki.sensenet.com/Communication_between_appdomains "See detailed information.")
 
 ----
 ### MsmqIndexDocumentSizeLimit
 [sensenet / SenseNet.Configuration.Messaging](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Messaging.cs "See on github")
 
 Size of index documents that can be sent over MSMQ. Larger index documents will be retrieved from database.
-[Details](http://wiki.sensenet.com/Communication_between_appdomains "See detailed information.")
 
 **Default value:** 200000
 
@@ -621,7 +604,6 @@ Size of index documents that can be sent over MSMQ. Larger index documents will 
 [sensenet / SenseNet.Configuration.Messaging](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Messaging.cs "See on github")
 
 Defines the time interval between closing and starting the channels (in seconds).
-[Details](http://wiki.sensenet.com/Communication_between_appdomains "See detailed information.")
 
 **Default value:** 1
 
@@ -770,7 +752,6 @@ Defines the time interval between closing and starting the channels (in seconds)
 [sensenet / SenseNet.Configuration.Providers](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Providers.cs "See on github")
 
 Fully qualified class name of the customized MembershipExtenderBase for extending a users's membership.
-[Details](http://wiki.sensenet.com/Permission_API "See detailed information.")
 
 **Default value:** SenseNet.ContentRepository.Storage.Security.DefaultMembershipExtender
 
@@ -779,7 +760,6 @@ Fully qualified class name of the customized MembershipExtenderBase for extendin
 [sensenet / SenseNet.Configuration.Providers](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Providers.cs "See on github")
 
 Fully qualified name of the old PasswordHashProvider that allows the old-way password checking only in the migration period.
-[Details](http://wiki.sensenet.com/Password_hash_provider "See detailed information.")
 
 **Default value:** SenseNet.ContentRepository.Storage.Security.Sha256PasswordHashProviderWithoutSalt
 
@@ -788,7 +768,6 @@ Fully qualified name of the old PasswordHashProvider that allows the old-way pas
 [sensenet / SenseNet.Configuration.Providers](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Providers.cs "See on github")
 
 Fully qualified name of the PasswordHashProvider if it is not the default.
-[Details](http://wiki.sensenet.com/Password_hash_provider "See detailed information.")
 
 **Default value:** SenseNet.ContentRepository.Storage.Security.SenseNetPasswordHashProvider
 
@@ -962,7 +941,6 @@ Fully qualified name of the PasswordHashProvider if it is not the default.
 [sensenet / SenseNet.Configuration.Security](https://github.com/SenseNet/sensenet/blob/master/src/Storage/Configuration/Security.cs "See on github")
 
 Master switch of the password hash migration.
-[Details](http://wiki.sensenet.com/Password_hash_provider "See detailed information.")
 
 **Default value:** false
 

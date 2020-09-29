@@ -17,7 +17,7 @@ This article contains information for developers and portal builders about the s
 
 The API has a native **C#** implementation and a **Rest API** counterpart. The methods are the same, only the parameter types are different to make it more convenient for the actual use case. The C# API class name is: *PermissionQuery* in the *SenseNet.ContentRepository.Security* namespace. The C# methods and OData operations can be found below in this article.
 
-> **Please note** that the current permission query API is very specific to certain permission queries. In the future there will be a lot more flexible API based on LINQ for developers to query security information directly from inner structures. Until then please take a look at the [original Permission queries wiki article](http://wiki.sensenet.com/Permission_queries) for diagrams and examples on the old API.
+> **Please note** that the current permission query API is very specific to certain permission queries. In the future there will be a lot more flexible API based on LINQ for developers to query security information directly from inner structures. Until then please take a look at the [original Permission queries wiki article](https://docs.sensenet.com/api-docs/permissions/02-permissions-queries) for diagrams and examples on the old API.
 
 ## Concepts
 Using this API developers can display a complex structure that represents the permission settings in a subtree. The displayed structure depends on the concept that you choose. There are two concepts that are determined by the parameter *explicitOnly*:
@@ -28,6 +28,6 @@ Using this API developers can display a complex structure that represents the pe
 > Currently only the **explicit list** concept is implemented.
 
 ## Security query API
-To see the currently available methods and responses along with sample diagrams, please head over to the [original Permission queries wiki article](http://wiki.sensenet.com/Permission_queries).
+To see the currently available methods and responses along with sample diagrams, please head over to the [original Permission queries docs](https://docs.sensenet.com/api-docs/permissions/02-permissions-queries).
 
 > A new security query api is coming soon.

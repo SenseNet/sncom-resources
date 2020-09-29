@@ -11,7 +11,7 @@ description: sensenet is a web application but it is a lot more complex than a s
 **sensenet** is a web application but it is a lot more complex than a simple web CMS. 
 **Patching, upgrading or executing batch operations** on the core product (or a custom solution built on it) is one of the most important tasks of developers and operators. This article introduces **SnAdmin** that is the tool that operators will use for these tasks in sensenet. You can use this tool to execute patches, perform upgrades or simply import a few content. It can be considered as a **framework** also that is extendible by third party developers to [perform custom tasks](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-create-custom-step).
 
-> This article focuses on features that are available in SnAdmin **version 1.4+**, that is published alongside sensenet 7.0+. To read about previous SnAdmin versions that work with sensenet 6.5, please [follow this link](http://wiki.sensenet.com/SnAdmin).
+> This article focuses on features that are available in SnAdmin **version 1.4+**, that is published alongside sensenet 7.0+. 
 
 SnAdmin also offers a growing number of [built-in tools](https://github.com/SenseNet/sensenet/blob/master/docs/snadmin-tools) that will let you perform common operations like importing content items. 
 
@@ -38,7 +38,7 @@ To learn more about package execution, jump to the [package execution details](#
 ## SnAdmin and sensenet instance
 During package execution the **web application must be stopped** because SnAdmin may modify the file structure under the web folder, may change the assembly set or execute database scripts (with schema modification).
 
-The package execution process can also use [Content Repository](http://wiki.sensenet.com/Content_Repository) services: SnAdmin can start and stop the Content Repository one or more times during the install process and the steps can manage content freely. In this case the SnAdmin tool is the host process.
+The package execution process can also use [Content Repository](https://docs.sensenet.com/concepts/basics/02-content-tree) services: SnAdmin can start and stop the Content Repository one or more times during the install process and the steps can manage content freely. In this case the SnAdmin tool is the host process.
 
 There is no way to undo a faulty execution so creating a backup is a must. To prevent execution errors in production environment, testing the package on test servers is also recommended.
 
@@ -74,9 +74,6 @@ One of the most important features of this packaging infrastructure is version t
 Choosing he right version number is the component developer's responsibility.
  It is strongly recommended to use a consistent versioning style. General guidelines:
 * [Software versioning](https://en.wikipedia.org/wiki/Software_versioning)
-
-You can check the current version information of installed components using the following OData function:
-* [Get VersionInfo](http://wiki.sensenet.com/Built-in_OData_actions_and_functions#Get_VersionInfo_-_from_version_6.3.1)
 
 ### Package contents
 A package is a zip file thats behavior and contents is described in a single **manifest file** in the package root. It is an XML file containing the metadata for executing the package, as described below. All other material in the package (e.g. dlls and content files) should be in subfolders.
@@ -295,8 +292,7 @@ You will have to reference these folders in your manifest file at the appropriat
 In this section you will learn how to use the SnAdmin tool to execute a package, what is happening in the background and how to monitor and troubleshoot the process.
 
 ### SnAdmin directory structure
-In this section we describe the recommended directory structure of the SnAdmin tool in the file system. For details about the full structure of the web folder, please visit the following article:
-- [Web folder structure](http://wiki.sensenet.com/Web_folder_structure)
+In this section we describe the recommended directory structure of the SnAdmin tool in the file system. 
 
 The SnAdmin feature resides *inside* the web folder in a subfolder called *Admin*.
 

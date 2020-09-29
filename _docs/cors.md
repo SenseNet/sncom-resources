@@ -51,7 +51,7 @@ In case of cross-domain requests all modern browsers send the *Origin* header to
 > Unlike the old *Referer* header that contains the whole url, the *Origin* header contains only the domain and **it cannot be modified after the browser has sent the request**, meaning it is reliable.
 
 ## Settings
-You can manage CORS-related settings in the following [Settings](http://wiki.sensenet.com/Settings) content in the [Content Repository](/docs/content-repository)
+You can manage CORS-related settings in the following [Settings](https://docs.sensenet.com/guides/setup) content in the [Content Repository](/docs/content-repository)
 - */Root/System/Settings/Portal.settings*
 
 ### Allowed origin domains

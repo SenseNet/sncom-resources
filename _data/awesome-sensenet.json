@@ -126,53 +126,13 @@
     "category": "tools"
   },
   {
-    "name": "SenseNet Wiki",
-    "href": "http://wiki.sensenet.com",
-    "category": "documentation"
-  },
-  {
-    "name": "SN Client JS API References",
-    "href": "http://www.sensenet.com/documentation/sn-client-js/index.html",
-    "category": "documentation"
-  },
-  {
-    "name": "SN Redux API References",
-    "href": "http://www.sensenet.com/documentation/sn-redux/index.html",
-    "category": "documentation"
-  },
-  {
-    "name": "Todo App with React, Redux and sensenet",
-    "href": "https://github.com/SenseNet/sn-react-redux-todo-app",
-    "category": "examples"
-  },
-  {
-    "name": "Todo App with Angular, Redux and sensenet",
-    "href": "https://github.com/blaskodaniel/sn-angular-redux-todo-app",
-    "category": "examples"
-  },
-  {
-    "name": "Todo App with Angular2, Redux and sensenet",
-    "href": "https://github.com/SenseNet/sn-angular2-redux-todo-app",
-    "category": "examples"
-  },
-  {
-    "name": "Todo App with Aurelia, Redux and sensenet",
-    "href": "https://github.com/zoltanbedi/sn7-aurelia-redux-todo-app",
-    "category": "examples"
-  },
-  {
-    "name": "Todo App with Vue, Redux and sensenet",
-    "href": "https://github.com/SenseNet/sn-vue-redux-todo-app",
-    "category": "examples"
-  },
-  {
     "name": "Community site",
-    "href": "http://community.sensenet.com",
+    "href": "https://community.sensenet.com",
     "category": "community"
   },
   {
     "name": "sensenet Blog",
-    "href": "http://community.sensenet.com/blog/",
+    "href": "https:/sensenet.com/blog/",
     "category": "community"
   },
   {
@@ -192,7 +152,7 @@
   },
   {
     "name": "Gitter",
-    "href": "https://gitter.im/SenseNet",
+    "href": "https://gitter.im/SenseNet/SNaaS",
     "category": "community"
   },
   {
