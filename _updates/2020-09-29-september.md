@@ -36,8 +36,8 @@ Hacktoberfest 2020 and the SNaaS beta period are upon us and this year we connec
 
 - Deletion of items from the Allowed Child Types input has been fixed. [#823](https://github.com/SenseNet/sn-client/issues/823)
 
-### @sensenet/authentication-oidc-react@2.0.0
-- AuthenticationProvider's component parameters changed from ReactNode to functions which returns a ReactNode. This way we can push down values from the context to these components. Read more: [link](https://reactjs.org/docs/render-props.html) ❗❗🔥
+### @sensenet/authentication-oidc-react@2.0.0 ❗❗🔥
+- AuthenticationProvider's component parameters changed from ReactNode to functions which returns a ReactNode. This way we can push down values from the context to these components. Read more: [link](https://reactjs.org/docs/render-props.html)
 
 ### @sensenet/client-core@3.4.0
 
