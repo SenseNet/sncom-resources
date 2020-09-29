@@ -35,9 +35,9 @@ exclude:
     - Gemfile.lock
     - package.json
     - script
+    - _docs
 include:
     - _pages
-    - _docs
     - _updates
     - _releases
 twitter:
