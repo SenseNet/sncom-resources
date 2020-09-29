@@ -8,6 +8,8 @@ Hacktoberfest 2020 and the SNaaS beta period are upon us and this year we connec
 
 ### admin-ui@1.11.0
 
+- Our biggest feature in this release is the permission editor for the admin-ui. Enikő has written a detailed [post](https://medium.com/sensenet/permission-editor-on-the-admin-ui-ce21d3112648) about it.
+
 - User and Group types' browse view is fixed by hiding the unnecessary role related fields. [#785](https://github.com/sensenet/sn-client/issues/785)
 
 - Possibility of inserting  images and links are added to the rich text editor [#842](https://github.com/SenseNet/sn-client/pull/842)
