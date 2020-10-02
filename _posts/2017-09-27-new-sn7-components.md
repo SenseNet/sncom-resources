@@ -3,6 +3,7 @@ title: "Entering the new era - The componentized SN7"
 author: borsi 
 image: "/img/posts/components.jpg"
 tags: [sn7, components, componentization]
+redirect_to: https://www.sensenet.com/blog/2017-09-27-new-sn7-components
 ---
 
 It's been a long one year, but we're nearing the end of the componentization project for sensenet. If you tried to keep up with the progress, what you could see, was a bunch of git repositories, NuGet and npm packages popping up now and again, but you may not be sure what each of them really does. You might be thinking "Okay, you tore the whole thing to pieces, but how the hell does it all fit together?" Fear not.

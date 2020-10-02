@@ -3,6 +3,7 @@ title: What is a headless cms anyway?
 author: borsi
 image: "/img/posts/headless-cover.jpg"
 tags: [enterprise content management, headless cms, api, restful]
+redirect_to: https://www.sensenet.com/blog/2017-07-05-what-is-a-headless-cms
 ---
 
 The term 'headless cms' has been rising in popularity for a while now. But why the hype and what is it all about?

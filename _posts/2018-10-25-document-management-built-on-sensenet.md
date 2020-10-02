@@ -4,6 +4,7 @@ title:  "Document Management built on sensenet"
 author: kultsar
 image: "../img/posts/dms-1-0-ui.png"
 tags: [DMS, UX, javascript, client packages]
+redirect_to: https://www.sensenet.com/blog/2018-10-25-document-management-built-on-sensenet
 
 ---
 *“Begin at the beginning,” the King said, very gravely, “and go on till you come to the end: then stop.”*

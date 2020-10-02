@@ -3,6 +3,7 @@ title:  "How to introduce a digital workplace project in your company?"
 author: balazskeszei
 image: "/img/posts/intro_dwp.jpg"
 tags: [digital workplace, change management, benefits]
+redirect_to: https://www.sensenet.com/blog/2017-07-27-how-to-introduce-a-digital-workplace-project
 ---
 
 The term of Digital Workplace is not a new expression but still many people use it differently. I like the definition of [Gartner](http://www.gartner.com/it-glossary/digital-workplace/) the most: "The Digital Workplace enables new, more effective ways of working; raises employee engagement and agility; and exploits consumer-oriented styles and technologies." Anyway if a company starts to support their employees with more and more connected productivity tools that leads to a Digital Workplace project. However, employees may find the process a bit embarrassing, and they might feel frustrated by the need to change their work environment. This is why project leaders (together with supportive vendors) have to introduce the digital workplace concept in such a way that helps them understand how beneficial this transition could be to them. That is why employees shall understand the many benefits they will gain by embracing the changes.

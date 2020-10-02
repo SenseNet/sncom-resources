@@ -3,6 +3,7 @@ title:  "Pack your things, Susan, we are moving - sensenet is on GitHub now."
 author: borsi
 image: "/img/posts/tw_sn_github.png"
 tags: [git, github, stack overflow, codeplex, gitter, community, blog]
+redirect_to: https://www.sensenet.com/blog/2017-05-23-moving-to-github
 ---
 
 We moved. To **GitHub**, with our code and management tools… and our documentation **and** this blog(!); and to Stack Overflow with your questions and our answers.

@@ -4,6 +4,7 @@ title: "Introducing the new data provider"
 author: [tusmester]
 image: "../img/posts/upgrade-dataprovider.png"
 tags: [data provider, upgrade, patch, sn7]
+redirect_to: https://www.sensenet.com/blog/2019-09-30-upgrade-dataprovider
 
 ---
 

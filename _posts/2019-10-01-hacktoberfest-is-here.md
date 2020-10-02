@@ -4,6 +4,7 @@ title: "Hacktoberfest 2019 is here"
 author: [herflis]
 image: "../img/posts/hacktoberfest2019.png"
 tags: [open source, hacktoberfest, community]
+redirect_to: https://www.sensenet.com/blog/2019-10-01-hacktoberfest-is-here
 
 ---
 

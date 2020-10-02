@@ -4,6 +4,7 @@ title:  "The new and improved Docviewer"
 author: CsabaPeter
 image: "../img/posts/Docviewer_mockup.png"
 tags: [upgrade, UX, UI, design, research]
+redirect_to: https://www.sensenet.com/blog/2018-08-22-docviewer
 
 ---
 

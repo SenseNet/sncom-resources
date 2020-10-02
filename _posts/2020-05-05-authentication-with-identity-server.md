@@ -4,6 +4,7 @@ title: "Authentication to sensenet with IdentityServer4"
 author: [zoltanbedi]
 image: "../img/posts/lock-is.jpg"
 tags: [authentication]
+redirect_to: https://www.sensenet.com/blog/2020-05-05-authentication-with-identity-server
 
 ---
 

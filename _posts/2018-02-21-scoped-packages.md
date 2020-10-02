@@ -4,6 +4,7 @@ title: "Scoped packages"
 author: gallayl
 image: "../img/posts/scoped-packages.jpg"
 tags: [npm, node, typescript, javascript, client packages, odata, immutable]
+redirect_to: https://www.sensenet.com/blog/2018-02-21-scoped-packages
 
 ---
 

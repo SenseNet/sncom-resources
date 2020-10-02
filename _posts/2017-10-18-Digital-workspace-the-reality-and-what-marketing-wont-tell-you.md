@@ -3,6 +3,7 @@ title: "Digital workplace: the reality and what marketing won't tell you"
 author: balazskeszei
 image: "../img/posts/what-marketing-wont-tellyou-cover.jpg"
 tags: [digital workplace, change management, employees, involvement]
+redirect_to: https://www.sensenet.com/blog/2017-10-18-Digital-workspace-the-reality-and-what-marketing-wont-tell-you
 ---
 
 Our consumer habits and everyday way of life went through significant changes during the last several decades. The most prominent development happened in the field of IT. Services provided by the industry no longer influence only free time activities. Different software, enabling work on-the-go developed for end users are widely used by multinational corporations and small businesses as well.

@@ -4,6 +4,7 @@ title: "Rebirth of sensenet docs"
 author: [herflis]
 image: "../img/posts/docs-sensenet-com.jpg"
 tags: [documentation, docs, gatsby, community]
+redirect_to: https://www.sensenet.com/blog/2020-07-15-modernizing-sensenet-docs
 
 ---
 

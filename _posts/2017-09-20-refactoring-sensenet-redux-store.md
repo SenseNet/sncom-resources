@@ -3,6 +3,7 @@ title: "Diving deeper into sensenet's Redux store"
 author: herflis
 image: "/img/posts/sn_plus_redux.png"
 tags: [Redux, sensenet, JavaScript, TypeScript, React]
+redirect_to: https://www.sensenet.com/blog/2017-09-20-refactoring-sensenet-redux-store
 ---
 
 As you may already know [sensenet](https://sensenet.com)'s UI is being fully rebuilt on a new stack including [Redux](http://redux.js.org/). Since sensenet is also a development platform with the possibility of building your own app upon its Redux store and actions, let me guide you through the current version of the state tree showing you how we organized data so far.

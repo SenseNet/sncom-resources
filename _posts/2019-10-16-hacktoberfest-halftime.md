@@ -4,6 +4,7 @@ title: "Hacktoberfest halftime show"
 author: [herflis]
 image: "/img/posts/hacktoberfest-halftime.jpg"
 tags: [hacktoberfest, community, progress]
+redirect_to: https://www.sensenet.com/blog/2019-10-16-hacktoberfest-halftime
 
 ---
 

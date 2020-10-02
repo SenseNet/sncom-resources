@@ -4,6 +4,7 @@ title: "Autumn happenings in sensenet frontend-ville"
 author: [gallayl, herflis]
 image: "../img/posts/frontend-ville.jpg"
 tags: [javascript, typescript, frontend development, redux, roadmap]
+redirect_to: https://www.sensenet.com/blog/2017-11-29-sn-frontend-releases-in-november
 
 ---
 

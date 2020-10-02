@@ -4,6 +4,7 @@ title: "Surviving Hacktoberfest"
 author: [herflis]
 image: "../img/posts/hacktoberfest.png"
 tags: [hacktoberfest, community, github]
+redirect_to: https://www.sensenet.com/blog/2019-11-06-surviving-hacktoberfest
 
 ---
 

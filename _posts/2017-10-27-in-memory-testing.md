@@ -4,6 +4,7 @@ title: "In-memory testing in sensenet"
 author: tusmester
 image: "../img/posts/inmemory_testing.jpg"
 tags: [test, database]
+redirect_to: https://www.sensenet.com/blog/2017-10-27-in-memory-testing
 
 ---
 

@@ -4,6 +4,7 @@ title:  "Refactoring sensenet's redux library"
 author: herflis
 image: "../img/posts/snredux-refactor.jpeg"
 tags: [refactor, redux, actions, reducers, rxjs, observable, promise, middleware]
+redirect_to: https://www.sensenet.com/blog/2018-04-18-refactoring-snredux
 
 ---
 

@@ -4,6 +4,7 @@ title: "Permission editor on the admin ui"
 author: [pusztaienike]
 image: "../img/posts/permission_editor.jpg"
 tags: [sensenet, permission]
+redirect_to: https://www.sensenet.com/blog/2020-09-21-permission-editor
 
 ---
 

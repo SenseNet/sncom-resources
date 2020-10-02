@@ -4,6 +4,7 @@ title: "Time is money: Performance improvements in admin ui"
 author: [pusztaienike]
 image: "../img/posts/time_is_money.jpg"
 tags: [performance, webpack, bundling, bundle, accessibility, lighthouse]
+redirect_to: https://www.sensenet.com/blog/2020-01-18-time-is-money
 
 ---
 

@@ -3,6 +3,7 @@ title: 'Moving sensenet client packages to monorepo'
 author: zoltanbedi
 image: '../img/posts/monorepo/colorful-stack.jpg'
 tags: [monorepo, refactor, JavaScript, client packages]
+redirect_to: https://www.sensenet.com/blog/2019-01-10-moving-client-packages-to-monorepo
 ---
 
 _Juggling a multimodule project over multiple repos is like trying to teach a newborn baby how to ride a bike._ [Babel](https://github.com/babel/babel/blob/master/doc/design/monorepo.md#why-is-babel-a-monorepo)

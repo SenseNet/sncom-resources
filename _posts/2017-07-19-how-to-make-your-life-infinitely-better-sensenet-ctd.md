@@ -3,6 +3,7 @@ title:  "How to make your life infinitely better - sensenet CTD's"
 author: herflis
 image: "/img/posts/amusement.jpg"
 tags: [content, content type, content type definition, CTD, aspect, content list, expando fields, document management]
+redirect_to: https://www.sensenet.com/blog/2017-07-19-how-to-make-your-life-infinitely-better-sensenet-ctd
 ---
 
 Dynamic Content Type system sounds amazing, but what does it actually mean? This post tries to clarify the basics and show you how can you take advantage of sensenet's Content Repository as the new home of your custom company data.

@@ -4,6 +4,7 @@ title:  "A road to .Net Standard"
 author: tusmester
 image: "../img/posts/road-to-netstandard-header.jpg"
 tags: [upgrade, standard, patch, framework]
+redirect_to: https://www.sensenet.com/blog/2018-07-09-netstandard-first
 
 ---
 

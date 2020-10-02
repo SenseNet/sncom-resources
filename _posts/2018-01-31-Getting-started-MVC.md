@@ -4,6 +4,7 @@ title: "Getting started with sensenet using MVC"
 author: tusmester
 image: "../img/posts/getting-started-with-mvc.jpg"
 tags: [mvc, visual studio, nuget, getting started, controller, view, backend]
+redirect_to: https://www.sensenet.com/blog/2018-01-31-Getting-started-MVC
 
 ---
 

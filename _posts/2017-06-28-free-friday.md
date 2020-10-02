@@ -3,6 +3,7 @@ title:  "Free friday for all - Chapters in Sense/Net"
 author: borsi
 image: '/img/posts/team-work.jpg'
 tags: [community, developers, communication, company culture, freefriday]
+redirect_to: https://www.sensenet.com/blog/2017-06-28-free-friday
 ---
 
 In their [2004 IPO letter][64bbc0a2], founders Larry Page and Sergey Brin highlighted their idea of the famous "Google 20%". A lot of time has passed since then and the legend faded too: is it really 20% of their time, or is it more like "Google 120%"?

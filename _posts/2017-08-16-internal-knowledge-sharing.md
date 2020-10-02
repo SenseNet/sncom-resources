@@ -3,6 +3,7 @@ title: "Internal knowledge sharing - is it the base of the company brain?"
 author: balazskeszei
 image: "../img/posts/knowledge.jpg"
 tags: [enterprise content management, knowledge sharing, information management]
+redirect_to: https://www.sensenet.com/blog/2017-08-16-internal-knowledge-sharing
 ---
 
 Why is it important to document information? The answer is fairly simple: documented company knowledge is easily transmitted, multiplied or updated, and it can be stored securely. Yet, many people still think that the constant documenting slows down creative work, thus decreases productivity. This is however a mistaken thought and as such it does not show forward thinking.

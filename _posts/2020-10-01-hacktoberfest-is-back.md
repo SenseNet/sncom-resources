@@ -4,6 +4,7 @@ title: "Hacktoberfest is back!"
 author: [molnarm84, huszerlbence]
 image: "../img/posts/hacktoberfest2020.png"
 tags: [hacktoberfest, hacktoberfest2020, community, github, open source]
+redirect_to: https://www.sensenet.com/blog/2020-10-01-hacktoberfest-is-back
 
 ---
 

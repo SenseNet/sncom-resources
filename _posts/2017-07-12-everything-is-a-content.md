@@ -3,6 +3,7 @@ title:  "Everything is a Content"
 author: tusmester
 image: '/img/posts/everything-is-a-content.jpg'
 tags: [content, tree, metadata]
+redirect_to: https://www.sensenet.com/blog/2017-07-12-everything-is-a-content
 ---
 
 The foundation of sensenet is the Content Repository, where documents, tasks, users, projects – everything is a Content. It is the fundamental building block of the system that makes content management easy and powerful at the same time.

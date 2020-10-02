@@ -3,6 +3,7 @@ title: "CI Tools we use"
 author: gallayl
 image: "/img/posts/ci_tools_wrench.jpg"
 tags: [CI, Continuous integration, NPM, Travis, CodeCov, Deployment]
+redirect_to: https://www.sensenet.com/blog/2017-10-11-CI-Tools-We-Use
 ---
 
 CI means you have to merge small changes continuously instead of working with large diffs at the end of the development cycle. If you want to be sure that your merge won't be causing any trouble there are several tasks to do - like creating a sandbox, building and testing on multiple environments, comparing code coverage results, etc... That's a soul grinding work for a developer - and should be automatized.

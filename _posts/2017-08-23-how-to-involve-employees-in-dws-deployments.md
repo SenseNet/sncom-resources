@@ -3,6 +3,7 @@ title: "How to involve your employees in digital workplace deployments?"
 author: balazskeszei
 image: "/img/posts/howtoinvolveyouremployees.jpg"
 tags: [digital workplace, change management, employees, involvement]
+redirect_to: https://www.sensenet.com/blog/2017-08-23-how-to-involve-employees-in-dws-deployments
 ---
 
 By the second half of 2017, an enterprise that predestinates itself to be successful shall pay growing attention not only to making profit, but also to the changing needs of their stakeholders, including their employees. The concept of a digital workplace is not only about a new ergonomic working environment, but it also encompasses a new way of thinking – both of which are, by themselves, beneficial not only to the enterprise, but also to its stakeholders.

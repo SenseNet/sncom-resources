@@ -3,6 +3,7 @@ title:  "Product goals for 2017"
 author: borsi
 image: "/img/posts/goals.jpg"
 tags: [goals, community, roadmap, redesign, statistics, roadmap]
+redirect_to: https://www.sensenet.com/blog/2017-05-31-product-goals
 ---
 ### Everybody needs goals ###
 

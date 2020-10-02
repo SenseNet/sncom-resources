@@ -3,6 +3,7 @@ title:  "We gave 10% freetime to our developers, this is what we've learned so f
 author: borsi
 image: "/img/posts/jump.jpg"
 tags: [company culture, freefriday, community, developers, communication, postmortem]
+redirect_to: https://www.sensenet.com/blog/2017-09-13-freefriday-aftermath
 ---
 
 Six months have passed since we started our *very own* 'Sense/Net 10%' program, where any employee could assemble a team and work on a precious side-project in 10 percent of their time. We had our project closing TGIF presentation last Friday where every team talked about their experiences - and you wouldn't believe what happened next!
