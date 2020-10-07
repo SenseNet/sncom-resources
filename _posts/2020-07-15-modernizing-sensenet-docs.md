@@ -8,9 +8,10 @@ redirect_to: https://www.sensenet.com/blog/2020-07-15-modernizing-sensenet-docs
 
 ---
 
-As we started working on SNaaS it became clear pretty soon, that the developer documentation needs radical changes both structurally and in appearance. The product is intended mainly for developers, so the time has come to serve this main target group not only with the software but also with sufficient and quality content.
+As we started working on SNaaS it became clear pretty soon, that the developer documentation needs radical changes both structurally and in appearance. 
 
 ---
+The product is intended mainly for developers, so the time has come to serve this main target group not only with the software but also with sufficient and quality content.
 
 # Previously on sensenet docs
 
