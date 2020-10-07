@@ -8,13 +8,11 @@ redirect_to: https://www.sensenet.com/blog/2020-01-18-time-is-money
 
 ---
 
-How long will you wait for a website to load before you give up and go somewhere else? <br/><br/> Five seconds? <br/><br/> Ten seconds? <br/>
-<br/>
-Apparently, nearly half of us wouldn't wait three seconds.
-In our busy world every minute is a waste of time if we should spend it with waiting.
-Of course we know that, and we are about to constantly improve performance to not waste your time.
+How long will you wait for a website to load before you give up and go somewhere else? Five seconds? Ten seconds? Apparently, nearly half of us wouldn't wait three seconds.
 
 ---
+
+In our busy world every minute is a waste of time if we should spend it with waiting. Of course we know that, and we are about to constantly improve performance to not waste your time.
 
 ## Divide it like Moses 🌊 
 
