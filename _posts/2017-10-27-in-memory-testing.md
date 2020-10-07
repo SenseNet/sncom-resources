@@ -8,9 +8,11 @@ redirect_to: https://www.sensenet.com/blog/2017-10-27-in-memory-testing
 
 ---
 
-In the previous version of sensenet we had many tests, 1400+. They covered most of the codebase, but unfortunately only some of them were real unit tests. Most of them were integration tests, involving multiple layers of the product, and as such, in many cases they required a fully installed sensenet database in place.
+In the previous version of sensenet we had many tests, 1400+. They covered most of the codebase, but unfortunately only some of them were real unit tests.
 
 ---
+
+Most of them were integration tests, involving multiple layers of the product, and as such, in many cases they required a fully installed sensenet database in place.
 
 That is not how a modern test environment should work because of many reasons, mainly speed, maintainability, flexibility.
 
