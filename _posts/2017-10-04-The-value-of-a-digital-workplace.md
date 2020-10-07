@@ -6,9 +6,11 @@ tags: [digital workplace, employees, productivity, teamwork, collaboration]
 redirect_to: https://www.sensenet.com/blog/2017-10-04-The-value-of-a-digital-workplace
 ---
 
-Digital workplace (the modern intranet) is a phenomenon that has been lingering around for some time, yet many enterprises are still hesitant to move to digital – especially if the main focus is on the financial aspect. Although IT personnel might be convinced of the necessity to keep up with technology and embrace the 21st Century, C-level decision makers might not always share their view and might be reluctant to vote for a costly change. To tell the truth, there are a number of other factors that cannot be expressed in sheer numbers that would bring invaluable benefit to board, investors, staff and clients as well.
- 
+Digital workplace (the modern intranet) is a phenomenon that has been lingering around for some time, yet many enterprises are still hesitant to move to digital – especially if the main focus is on the financial aspect. 
+
 ---
+
+Although IT personnel might be convinced of the necessity to keep up with technology and embrace the 21st Century, C-level decision makers might not always share their view and might be reluctant to vote for a costly change. To tell the truth, there are a number of other factors that cannot be expressed in sheer numbers that would bring invaluable benefit to board, investors, staff and clients as well.
 
 Here are some of the hidden benefits.
 
