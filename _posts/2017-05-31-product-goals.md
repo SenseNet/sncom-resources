@@ -5,11 +5,11 @@ image: "/img/posts/goals.jpg"
 tags: [goals, community, roadmap, redesign, statistics, roadmap]
 redirect_to: https://www.sensenet.com/blog/2017-05-31-product-goals
 ---
-### Everybody needs goals ###
 
-Us, too. In fact we need better goals, than *"making more money"* or *"creating better stuff"*. So last year we decided to be [SMART][bb699076] about it and set high-level product goals for ourselves and for our community. After all, we want to be the best CSP development platform for a large community of developers. But how do we get there?
+Everybody needs goals, us too. In fact we need better goals, than *"making more money"* or *"creating better stuff"*. So last year we decided to be [SMART][bb699076] about it and set high-level product goals for ourselves and for our community.
 
 ---
+After all, we want to be the best CSP development platform for a large community of developers. But how do we get there?
 
 ![Smart goals](/img/posts/SMART-goals.png "Smart goals")
 
