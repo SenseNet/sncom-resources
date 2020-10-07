@@ -8,9 +8,10 @@ redirect_to: https://www.sensenet.com/blog/2018-02-21-scoped-packages
 
 ---
 
-We've started 2018 with a huge package refactor: we have divided our base *sn-client-js* package into several smaller ones and published them within a *@sensenet* scope. We've refactored a lot of code to simplify our API, improve working with immutable objects and also did a strict review on our dependencies. I will summarize the reasons, the improvements and what has been changed.
+We've started 2018 with a huge package refactor: we have divided our base *sn-client-js* package into several smaller ones and published them within a *@sensenet* scope.
 
 ---
+We've refactored a lot of code to simplify our API, improve working with immutable objects and also did a strict review on our dependencies. I will summarize the reasons, the improvements and what has been changed.
 
 ## Why?
 
