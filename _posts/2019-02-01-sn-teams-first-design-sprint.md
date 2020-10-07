@@ -1,14 +1,13 @@
-﻿---
+---
 title: 'SN Team’s first “design” sprint'
 author: CsabaPeter
 image: '../img/posts/design-sprint/sn-teams-first-design-sprint.jpeg'
 tags: [Design Sprint, UX, UX Design, Prototyping, Teamwork]
 redirect_to: https://www.sensenet.com/blog/2019-02-01-sn-teams-first-design-sprint
+
 ---
 
 Recently I got a new task which was to rework our admin UI.
-
-
 
 ---
 
