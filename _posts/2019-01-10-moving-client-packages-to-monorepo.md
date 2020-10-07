@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'Moving sensenet client packages to monorepo'
 author: zoltanbedi
 image: '../img/posts/monorepo/colorful-stack.jpg'
