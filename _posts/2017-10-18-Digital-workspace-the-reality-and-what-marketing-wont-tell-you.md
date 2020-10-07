@@ -6,12 +6,13 @@ tags: [digital workplace, change management, employees, involvement]
 redirect_to: https://www.sensenet.com/blog/2017-10-18-Digital-workspace-the-reality-and-what-marketing-wont-tell-you
 ---
 
-Our consumer habits and everyday way of life went through significant changes during the last several decades. The most prominent development happened in the field of IT. Services provided by the industry no longer influence only free time activities. Different software, enabling work on-the-go developed for end users are widely used by multinational corporations and small businesses as well.
+Our consumer habits and everyday way of life went through significant changes during the last several decades. The most prominent development happened in the field of IT. 
 
 ---
 
 ## What is a digital workplace?
 
+Services provided by the industry no longer influence only free time activities. Different software, enabling work on-the-go developed for end users are widely used by multinational corporations and small businesses as well.
 The [digital workplace](https://www.sensenet.com/for-customers/use-cases/digital-workplace) does not exist in physical form - it is central workspace to which the members can connect to from any part of the world. This is usually the result of several workstations connected through servers, however the work group members can access the network even by using their home computers or smart phones. Thus the digital workplace primarily consists of people, hardware, software and online work processes. 
 
 ## Benefits of going digital
