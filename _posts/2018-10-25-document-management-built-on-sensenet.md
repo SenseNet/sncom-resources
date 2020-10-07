@@ -7,11 +7,11 @@ tags: [DMS, UX, javascript, client packages]
 redirect_to: https://www.sensenet.com/blog/2018-10-25-document-management-built-on-sensenet
 
 ---
+
 *“Begin at the beginning,” the King said, very gravely, “and go on till you come to the end: then stop.”*
 
-We began developing DMS – our document management solution –  as an MVP roughly about a year ago, this is why: sensenet is a [headless content management platform](https://community.sensenet.com/blog/2017/07/05/what-is-a-headless-cms) where the backend does not care about how the content is displayed. If you are a frontend developer, this gives you freedom of choice in what tools you use and how you want to implement your solutions. To give you guidance, however, we also wanted to create an example implementation for a real-life business need. Feedback from partners and users indicated that a simple web based file management would be a good start. And then, DMS was born.
-
 ---
+We began developing DMS – our document management solution –  as an MVP roughly about a year ago, this is why: sensenet is a [headless content management platform](https://community.sensenet.com/blog/2017/07/05/what-is-a-headless-cms) where the backend does not care about how the content is displayed. If you are a frontend developer, this gives you freedom of choice in what tools you use and how you want to implement your solutions. To give you guidance, however, we also wanted to create an example implementation for a real-life business need. Feedback from partners and users indicated that a simple web based file management would be a good start. And then, DMS was born.
 
 ## Use it, or build your own
 
