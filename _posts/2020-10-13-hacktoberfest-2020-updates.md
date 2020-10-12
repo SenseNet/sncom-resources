@@ -19,6 +19,7 @@ To complete the challenge you have to register a free sensenet repository ([see 
 So far we have twentyish repo registration (which is quite good) but the progress on the [hacktoberfest board](https://github.com/orgs/SenseNet/projects/7) could be better.
 
 ## So what kind of issues we prepared for this year's celebration?
+
 <p align="center">
 <img alt="github board" src="/img/posts/github_board.png">
 </p>
@@ -33,6 +34,6 @@ Your efforts will be rewarded by a limited-edition sensenet hacktoberfest socks.
 <img alt="super swag" src="/img/posts/super-swag.jpg">
 </p>
 
-Come celebrate with us, improve your JS skills and earn your super swag!
+Come [celebrate with us](https://hacktoberfest.sensenet.com), improve your JS skills and earn your super swag!
 
 
