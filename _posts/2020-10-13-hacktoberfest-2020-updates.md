@@ -30,7 +30,7 @@ We are also here to help, so if you're stuck, drop us a message on [Gitter](http
 
 Your efforts will be rewarded by a limited-edition sensenet hacktoberfest socks. We can share a sneak peek from the work in progress and we will share the final design very soon so stay tuned.
 <p align="center">
-<img alt="super swag" src="/img/posts/super_swag.png">
+<img alt="super swag" src="/img/posts/super-swag.jpg">
 </p>
 
 Come celebrate with us, improve your JS skills and earn your super swag!
