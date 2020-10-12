@@ -8,9 +8,11 @@ redirect_to: https://www.sensenet.com/blog/2019-11-06-surviving-hacktoberfest
 
 ---
 
-[Hacktoberfest](https://hacktoberfest.digitalocean.com/) was a popular event among our product developers in the last couple of years. Since we’re open source, it was obvious to us to join and celebrate it in our ways, giving to the community what we are good at. But this year we decided to leave our comfort zone and take part as a company as well. Let’s see how we loved and hated this year’s October, how we overcome obstacles, what we’ve learned and what we can and will do better next year.
+[Hacktoberfest](https://hacktoberfest.digitalocean.com/) was a popular event among our product developers in the last couple of years. Since we’re open source, it was obvious to us to join and celebrate it in our ways, giving to the community what we are good at.
 
 ---
+
+But this year we decided to leave our comfort zone and take part as a company as well. Let’s see how we loved and hated this year’s October, how we overcome obstacles, what we’ve learned and what we can and will do better next year.
 
 ## The first one is always the hardest, they say
 

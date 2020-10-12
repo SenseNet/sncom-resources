@@ -8,9 +8,11 @@ redirect_to: https://www.sensenet.com/blog/2019-09-30-upgrade-dataprovider
 
 ---
 
-The data structure of sensenet has been more or less the same for many years. We added more and more features and the API became huge and was very hard to maintain, not to mention custom implementations for other data platforms. We decided to refactor our data layer to make it simpler and extendable at the same time. The goal is to make it possible for 3rd party developers to create custom implementations for any platform and let us use modern development approaches - like asynchronous data handling.
+The data structure of sensenet has been more or less the same for many years. We added more and more features and the API became huge and was very hard to maintain, not to mention custom implementations for other data platforms.
 
 ---
+
+We decided to refactor our data layer to make it simpler and extendable at the same time. The goal is to make it possible for 3rd party developers to create custom implementations for any platform and let us use modern development approaches - like asynchronous data handling.
 
 ## Do I need to deal with the upgrade?
 If you create a new project or work in a development environment where you re-build your database frequently, you do not have to deal with the upgrade: just get the latest sensenet packages from nuget, install the new db and you're done.

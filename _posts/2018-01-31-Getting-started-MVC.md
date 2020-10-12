@@ -8,9 +8,10 @@ redirect_to: https://www.sensenet.com/blog/2018-01-31-Getting-started-MVC
 
 ---
 
-When you build a site with sensenet, you have many options when it comes to choosing a technology. This post walks you through a few easy steps to create your first **Asp.Net MVC** app with sensenet 7.0. It is a part of a series about the different client and server-side technologies and architectures when designing your first app.
+When you build a site with sensenet, you have many options when it comes to choosing a technology. This post walks you through a few easy steps to create your first **Asp.Net MVC** app with sensenet 7.0.
 
 ---
+It is a part of a series about the different client and server-side technologies and architectures when designing your first app.
 
 This post will help you create your first **Asp.Net MVC** app with sensenet 7.0. For other possibilities please take a look at the following articles:
 

@@ -8,10 +8,11 @@ redirect_to: https://www.sensenet.com/blog/2018-08-22-docviewer
 
 ---
 
-Sometimes there is a strong need to rethink an app from the ground up, because it has became too chunky and difficult to use with a lot of features that no one actually used. That's exactly what happened with sensenet's Docviewer, so as the newest addition to the product team as a UX designer my first task was to reimagine and redesign the app.
-In this article I'll guide you through the steps including user interviews, making wireframes to high fidelity prototypes, user testing, iterating and so on. 
+Sometimes there is a strong need to rethink an app from the ground up, because it has became too chunky and difficult to use with a lot of features that no one actually used. 
 
 ---
+That's exactly what happened with sensenet's Docviewer, so as the newest addition to the product team as a UX designer my first task was to reimagine and redesign the app.
+In this article I'll guide you through the steps including user interviews, making wireframes to high fidelity prototypes, user testing, iterating and so on. 
 
 ## The first steps
 My work began with sitting down with the team and discussing what our main goal was (simplify the app and get rid of unused features). After that I started looking around for best practices like how other document viewer apps look like and what features they have. I used [Adobe Acrobat](https://acrobat.adobe.com/hu/hu/acrobat/pdf-reader.html), [Lumin](https://www.luminpdf.com/), and [Apple Preview](https://www.apple.com/lae/ios/ios-12-preview/) as starting point. 

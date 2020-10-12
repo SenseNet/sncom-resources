@@ -8,7 +8,7 @@ redirect_to: https://www.sensenet.com/blog/2019-10-01-hacktoberfest-is-here
 
 ---
 
-Open source and community are key for us since the beginning of product development at Sense/Net. Our company is very committed to support the movement with helping developers expanding their skill set and make the community bigger and bigger, not just around sensenet, but globally.
+Open source and community are key for us since the beginning of product development. We are committed to support the movement with helping developers expanding their skill set and make the community bigger, not just around sensenet, but globally.
 
 ---
 
