@@ -8,7 +8,7 @@ redirect_to: https://www.sensenet.com/blog/2017-11-29-sn-frontend-releases-in-no
 
 ---
 
-Busy weeks behind us at the frontend division of the sensenet team. New features on the backend and our in-progress [DMS MVP](https://sn-react-dms.netlify.com/) generated tons of tasks and gave us many improvement points. But now we've released all these new stuff, so we can lay back a bit and sum up what's done. Join us in checking-out the latests and maybe you'll catch a bit about the upcomings.
+Busy weeks behind us at the frontend division. New features on the backend and our in-progress DMS MVP generated tons of tasks and gave us many improvement points. We've released all these new stuff, so we can lay back a bit and sum up what's done.
 
 ---
 

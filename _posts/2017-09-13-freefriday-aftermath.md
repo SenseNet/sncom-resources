@@ -6,9 +6,11 @@ tags: [company culture, freefriday, community, developers, communication, postmo
 redirect_to: https://www.sensenet.com/blog/2017-09-13-freefriday-aftermath
 ---
 
-Six months have passed since we started our *very own* 'Sense/Net 10%' program, where any employee could assemble a team and work on a precious side-project in 10 percent of their time. We had our project closing TGIF presentation last Friday where every team talked about their experiences - and you wouldn't believe what happened next!
+Six months have passed since we started our *very own* 'Sense/Net 10%' program, where any employee could assemble a team and work on a precious side-project in 10 percent of their time. 
 
 ---
+
+We had our project closing TGIF presentation last Friday where every team talked about their experiences - and you wouldn't believe what happened next!
 
 Setting aside the subtle clickbait at the end of the intro, we learned *a ton* in these past six months. Just to recap, these were our goals when [we started out](http://community.sensenet.com/blog/2017/06/28/free-friday): 
 

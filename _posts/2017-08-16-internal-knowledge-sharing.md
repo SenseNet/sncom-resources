@@ -6,9 +6,11 @@ tags: [enterprise content management, knowledge sharing, information management]
 redirect_to: https://www.sensenet.com/blog/2017-08-16-internal-knowledge-sharing
 ---
 
-Why is it important to document information? The answer is fairly simple: documented company knowledge is easily transmitted, multiplied or updated, and it can be stored securely. Yet, many people still think that the constant documenting slows down creative work, thus decreases productivity. This is however a mistaken thought and as such it does not show forward thinking.
+Why is it important to document information? The answer is fairly simple: documented company knowledge is easily transmitted, multiplied or updated, and it can be stored securely. 
 
 ---
+
+Yet, many people still think that the constant documenting slows down creative work, thus decreases productivity. This is however a mistaken thought and as such it does not show forward thinking.
 
 From the 80’s flexibility and innovation are the building blocks of companies. It is especially true for small and medium-sized businesses as in these areas they can be competitive with multinational corporations with million dollar budgets. The basis of innovation is the development of 'traditional knowledge', the striving to acquire and distribute 'new knowledge'. Reaching this is impossible without appropriate company content handling.
 
