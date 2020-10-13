@@ -4,7 +4,7 @@ title: "Hacktoberfest update!"
 author: [molnarm84, huszerlbence]
 image: "../img/posts/hacktoberfest2020_update.png"
 tags: [hacktoberfest, hacktoberfest2020, community, github, open source, JS, JavaScript, Cypress, end-to-end tests]
-redirect_to: https://www.sensenet.com/blog/hacktoberfest_2020_updates
+redirect_to: https://www.sensenet.com/blog/2020-10-13-hacktoberfest_2020_updates
 
 ---
 
@@ -35,5 +35,4 @@ Your efforts will be rewarded by a limited-edition sensenet hacktoberfest socks.
 </p>
 
 Come [celebrate with us](https://hacktoberfest.sensenet.com), improve your JS skills and earn your super swag!
-
 
