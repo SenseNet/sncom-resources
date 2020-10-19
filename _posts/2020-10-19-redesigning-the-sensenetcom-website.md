@@ -4,7 +4,7 @@ title: "Redesigning the sensenet.com website "
 author: [CsabaPeter]
 image: "../img/posts/sncom_redesign.png"
 tags: [redesign, ux, research, website, webdesign]
-redirect_to: https://www.sensenet.com/blog/2020-10-12-redesigning-the-sensenetcom-website
+redirect_to: https://www.sensenet.com/blog/2020-10-19-redesigning-the-sensenetcom-website
 
 ---
 
