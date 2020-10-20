@@ -45,7 +45,7 @@ static async Task Main(string[] args)
 
 > **Important**: In this tutorial we assume that all the content items you are working with are **public** (accessible for visitors). You can make content (for example files or whole folders) public on the admin UI: on the **Set permissions** page hit the Make content public button.
 >
-> To access private content, please check out how to add [authentication]() to your client application.
+> To access private content, please check out how to add [authentication](how-to-authenticate-dotnet) to your client application.
 
 ## Load and iterate through a content collection
 First we want to load all child items in an existing folder.
