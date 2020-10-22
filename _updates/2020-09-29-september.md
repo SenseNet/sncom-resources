@@ -6,7 +6,7 @@ title: September 2020
 
 Hacktoberfest 2020 and the SNaaS beta period are upon us and this year we connect these two things making October fun, challenging and useful for both of us. We always put a lot of effort on avoiding bugs and testing a lot, but it's still good to stop for a while and review each and every feature, to make sure we're ready to start SNaaS beta in October. So we intended September to test and fix as many bugs as we can besides to finish some of the missing core features like setting permissions. Let's see what we did so far.
 
-### admin-ui@1.11.0
+### admin-ui@1.12.0
 
 - Our biggest feature in this release is the permission editor for the admin-ui. Enikő has written a detailed [post](https://medium.com/sensenet/permission-editor-on-the-admin-ui-ce21d3112648) about it.
 
