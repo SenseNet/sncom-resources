@@ -30,11 +30,13 @@ You can contact us or follow us through :<p>
  <b>Social Media</b>
  - [Facebook][fb]
  - [Twitter][twitter]
+ - [LinkedIn][linkedin]
  - [Gitter][gitter] <p>
   
- <b>Contact</b> [SenseNet][sensenet]
+**[Contact us]**[sensenet]
 
 [fb]: https://www.facebook.com/sensenetcsp/
 [twitter]: https://twitter.com/sensenet
+[linkedin]: https://www.linkedin.com/company/sense-net-inc
 [gitter]: https://gitter.im/SenseNet/sensenet
 [sensenet]: https://www.sensenet.com/contact-us
