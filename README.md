@@ -33,7 +33,7 @@ You can contact us or follow us through :<p>
  - [LinkedIn][linkedin]
  - [Gitter][gitter] <p>
   
-**[Contact us]**[sensenet]
+**[Contact us][sensenet]**
 
 [fb]: https://www.facebook.com/sensenetcsp/
 [twitter]: https://twitter.com/sensenet
