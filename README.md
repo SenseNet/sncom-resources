@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Blogposts and updates
+# Blog posts and updates
 
 This is a dedicated repo to store all our blog posts and updates (frontend, backend).
 
