@@ -31,4 +31,5 @@ We contacted all the winners for further details, the production will start in t
 # See you next year
 
 Again, thanks for all the contributors. Keep using your repositories and for any feedback, our ears are wide open (:.
+
 Sign up for our [newsletter](http://eepurl.com/gbh42T), where you will not only receive the latest sensenet product news, but also be the first to know about our Hacktoberfest **2021 celebration** and other community related giveaways.
