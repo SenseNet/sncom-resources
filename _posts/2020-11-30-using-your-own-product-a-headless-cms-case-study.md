@@ -24,7 +24,7 @@ The long and the short of it is that we started the project with content, workin
 
 At the launch we had 25+ custom content types and 500+ contents and they were created not only to vary metadata (fields) but also for handling security issues. Based on the tree-based content structure we could separate content branches for developers and editors based on their different permissions levels. This way they could work simultaneously on the project without distrupting each other’s work. 
 
-As with any company, collaborative work is a key for us and with using a content-based solution as a base of our website redesign project we also learn how fast we can working together. As the model and the sctructure was ready, both the content editors and the developers could start working on their part: editors produced the content, developers could setup and build the single page application using sensenet's super-flexible REST API.
+As for any company, collaborative work is a key for us and with using a content-based solution as a base of our website redesign project we also learn how fast we can working together. As the model and the sctructure was ready, both the content editors and the developers could start working on their part: editors produced the content, developers could setup and build the single page application using sensenet's super-flexible REST API.
 
 <p align="center">
 <img src="/img/posts/rte.png">
