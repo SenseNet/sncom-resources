@@ -26,9 +26,17 @@ At the launch we had 25+ custom content types and 500+ contents and they were cr
 
 As with any company, collaborative work is a key for us and with using a content-based solution as a base of our website redesign project we also learn how fast we can working together. As the model and the sctructure was ready, both the content editors and the developers could start working on their part: editors produced the content, developers could setup and build the single page application using sensenet's super-flexible REST API.
 
+<p align="center">
+<img src="/img/posts/rte.png">
+</p>
+
 # One content, multiple platforms
 
 Want to multiply the number of readers of your content without the headache of mutiply them per platform and device? Use a headless cms, use sensenet! 😊 We've built up both website and mobile version of our website's, our blog and even our in-house adminitration system on contents (articles, files, blog posts) that are shared acrossed this solutions without having to multiply them. An endless wealth of possibilities, isn't it? If we figure out someday, that we want a mobile app, we can built it upon the same repository, with the same contents using the same API
+
+<p align="center">
+<img src="/img/posts/sncom-mockup.png">
+</p>
 
 # SNaaS for the future
 
