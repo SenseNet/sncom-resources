@@ -12,7 +12,7 @@ Eat your own dogfood they said. It'll be fun they said...
 
 ---
 
-If you followed us, you could have read it a million times already, we are about to launch sensenet in SaaS model - which is a huge change from selling a traditional (E)CMS - to serve our customers with a cloud-based, headless CMS. These changes not only affected our sales and development processes but also our communication and at the same time it made necessary to update our public website. Nothing is simpler, since the product we develop is perfect for creating public websites (among many other things). The old website was built with the previous version of the product which was a complex ECMS, so the time was perfect not only to redesign the site and update every content, but to test the new model in this specific scenario.
+If you followed us, you could have read it a million times already, we are about to launch sensenet in SaaS model - which is a huge change from selling a traditional (E)CMS - to serve our customers with a cloud-based, headless CMS. These changes not only affected our sales and development processes but also our communication and at the same time it made necessary to update our public website. Easiest thing ever, since the product we develop is perfect for creating public websites (among many other things). The old website was built with the previous version of the product which was a complex ECMS, so the time was perfect not only to redesign the site and update every content, but to test the new model in this specific scenario.
 
 # One repository to rulem them all
 
