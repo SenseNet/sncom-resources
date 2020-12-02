@@ -1,6 +1,6 @@
 ---
 
-title: "Using your own product - a headless cms case study"
+title: "Using your own product - a headless CMS case study"
 author: [herflis]
 image: "../img/posts/dogfood.jpg"
 tags: [website, headless cms, case study, project]
@@ -32,7 +32,7 @@ As for any company, collaborative work is a key for us and by using a content-ba
 
 # One content, multiple platforms
 
-Want to multiply the number of readers of your content without the headache of mutiply them per platform and device? Use a headless cms, use sensenet! 😊 We've built up both desktop and mobile version of our website, our blog and even our in-house adminitration system on contents (articles, files, blog posts) shared across these solutions without having to multiply them. An endless wealth of possibilities, isn't it? If we figure out someday, that we want a mobile app, we can build it upon the same repository, with the same contents using the same API.
+Want to multiply the number of readers of your content without the headache of multiply them per platform and device? Use a headless CMS, use sensenet! 😊 We've built up both desktop and mobile version of our website, our blog and even our in-house administration system on contents (articles, files, blog posts) shared across these solutions without having to multiply them. An endless wealth of possibilities, isn't it? If we figure out someday, that we want a mobile app, we can build it upon the same repository, with the same contents using the same API.
 
 <p align="center">
 <img src="/img/posts/sncom-mockup.png">
@@ -40,11 +40,11 @@ Want to multiply the number of readers of your content without the headache of m
 
 # SNaaS for the future
 
-Our previous website - made with the old product - was built using a lot of old technologies both server and client-side. These technologies were decent and modern back in the day, but as time goes on, every technology, framework and library gets older, loses its support and makes old projects unsustainable. If we stick to traditional CMS' then this usually means that the project needs to be rebuilt from scratch from content to user interface. We have run into this problem many times, but we won’t any more. sensenet as a headless cms gives us the freedom of changing the ui, adding new features or integrate it with anything wihout having to touch the repository and the backend. sensenet's REST API is future-proof and while we hope that [Next.js](https://nextjs.org/) (chosen as the basis for our website) will stay supported and popular for a long time, we only have to replace the UI if the time comes.
+Our previous website - made with the old product - was built using a lot of old technologies both server and client-side. These technologies were decent and modern back in the day, but as time goes on, every technology, framework and library gets older, loses its support and makes old projects unsustainable. If we stick to traditional CMS' then this usually means that the project needs to be rebuilt from scratch from content to user interface. We have run into this problem many times, but we won’t any more. sensenet as a headless CMS gives us the freedom of changing the ui, adding new features or integrate it with anything without having to touch the repository and the backend. sensenet's REST API is future-proof and while we hope that [Next.js](https://nextjs.org/) (chosen as the basis for our website) will stay supported and popular for a long time, we only have to replace the UI if the time comes.
 
 # Sum up: Why we chose sensenet? (and not because it is our solution🙂)
 
-- **short deadline**: the whole project (including ux and ui designing phase) had to be completed in a month and a half,
+- **short deadline**: the whole project (including UX and UI designing phase) had to be completed in a month and a half,
 - **productivity**: developers and content editors could work simultaneously
 - **multi-platform**: a content should be created only once, but can be published in multiple forms
 - **gentle learning curve**: developers can choose their preferred technology to connect with sensenet
