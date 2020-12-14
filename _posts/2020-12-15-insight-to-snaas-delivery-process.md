@@ -8,11 +8,11 @@ redirect_to: https://www.sensenet.com/blog/2020-12-15-insight-to-snaas-delivery-
 
 ---
 
-We constantly working on new features, fixes and other awesomeness. Let’s see how these new things get to the customers.
+We are constantly working on new features, fixes and other awesomeness. Let’s see how these new things get to customers.
 
 ---
 
-At sensenet, we are working on making the product and our services better with fixes, improvements and new features everyday. Since we wanted to provide a predictable and reliable service in addition to being constantly updated and improved we had to work out a process to make the updates fairly frequent and seamless yet valuable. Following article details our delivery system.
+At sensenet, we are working on making the product and our services better with fixes, improvements and new features every day. Since we wanted to provide a predictable and reliable service in addition to being constantly updated and improved we had to work out a process to make the updates fairly frequent and seamless yet valuable. The following article details our delivery system.
 
 # Different skill sets, one common goal
 
@@ -28,15 +28,15 @@ We're using GitHub not only for versioning and publishing the product source cod
 
 # Review and test
 
-Before customers get the fixes and the new features the changes are checked several times on multiple environments. During the development automate daily builds provide the possibility of internal testing in staging and pre-production environments. This way we can be sure that when we get to the release all the pieces are working together as they should.
+Before customers get the fixes and the new features the changes are checked several times on multiple environments. During development automated daily builds provide the possibility of internal testing in staging and pre-production environments. This way we can be sure that when we get to the release all the pieces are working together as they should.
 
-New things are not only reviewed by multiple developers but also tested with automated unit and integration tests and they can only be merged when all the checks were successful. After that the change gets to another test phase which means it becomes published to our test environments. If a change proves reliable during the test phase, it will be included to the next release. We have multiple isolated environments for all the phases (development, test, demo, etc.), see in the next section how and when they are updated.
+New things are not only reviewed by multiple developers but also tested with automated unit and integration tests and they can only be merged when all the checks were successful. After that the change gets to another test phase which means it becomes published to our test environments. If a change proves reliable during the test phase, it will be included in the next release. We have multiple isolated environments for all the phases (development, test, demo, etc.), see in the next section how and when they are updated.
 
 # Releases and the patch day
 
-We publish new releases in every forth week. Since we have to create new packages for multiple platforms and multiple services at once, we decided to go along with this regularity, because for now it serves product development and customers the best. This way we can be sure, that things we release from our hands are both well for SNaaS customers and for the open source community.
+We publish new releases in every four weeks. Since we have to create new packages for multiple platforms and multiple services at once, we decided to go along with this regularity, because for now it serves product development and customers the best. This way we can be sure that things we release from our hands both work well for SNaaS customers and for the open source community.
 
-We update the production environments (customer repositories, central system, etc.) in every forth monday. So you can  safely plan with both fixes and new features. We always share detailed change logs per packages/components, so you can be sure you won’t miss anything.
+We update the production environments (customer repositories, central system, etc.) in every fourth monday. So you can  safely plan with both fixes and new features. We always share detailed change logs per packages/components, so you can be sure you won’t miss anything.
 
 [Backend updates](https://www.sensenet.com/backend-updates) ⚙
 
