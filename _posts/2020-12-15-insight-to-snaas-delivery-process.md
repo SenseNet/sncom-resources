@@ -30,13 +30,13 @@ We're using GitHub not only for versioning and publishing the product source cod
 
 Before customers get the fixes and the new features the changes are checked several times on multiple environments. During development automated daily builds provide the possibility of internal testing in staging and pre-production environments. This way we can be sure that when we get to the release all the pieces are working together as they should.
 
-New things are not only reviewed by multiple developers but also tested with automated unit and integration tests and they can only be merged when all the checks were successful. After that the change gets to another test phase which means it becomes published to our test environments. If a change proves reliable during the test phase, it will be included in the next release. We have multiple isolated environments for all the phases (development, test, demo, etc.), see in the next section how and when they are updated.
+New things are not only reviewed by multiple developers but also tested with automated unit and integration tests and they can only be merged when all the checks were successful. After that the change gets to another test phase which means it becomes published to our test environments. If a change proves reliable during the test phase, it will be included in the next release. We have multiple isolated environments for all the phases (development, test, demo, etc.). In the next section you can see how and when they are updated.
 
 # Releases and the patch day
 
-We publish new releases in every four weeks. Since we have to create new packages for multiple platforms and multiple services at once, we decided to go along with this regularity, because for now it serves product development and customers the best. This way we can be sure that things we release from our hands both work well for SNaaS customers and for the open source community.
+We publish new releases in every four weeks. Since we have to create new packages for multiple platforms and multiple services at once, we decided to go along with this regularity, because for now it serves product development and customers the best. This way we can be sure that things we release from our hands work well both for SNaaS customers and for the open source community.
 
-We update the production environments (customer repositories, central system, etc.) in every fourth monday. So you can  safely plan with both fixes and new features. We always share detailed change logs per packages/components, so you can be sure you won’t miss anything.
+We update the production environments (customer repositories, central system, etc.) in every fourth monday, which means it is easy to plan with both fixes and new features. We always share detailed change logs per packages/components, so you can be sure you won’t miss anything.
 
 [Backend updates](https://www.sensenet.com/backend-updates) ⚙
 
@@ -44,7 +44,7 @@ We update the production environments (customer repositories, central system, et
 
 # Everything is isolated
 
-Operating cloud-base content management services requires high-quality security regulations and standards. These thing are extreme important for us too. Individual repositories are totally isolated, which means both database and service layer are separated per repository. This way we can meet today's standards in data security, isolation, scalability and backup, this gives us the advantages in terms of both security issues and updates.
+Operating cloud-base content management services requires high-quality security regulations and standards. These thing are extremely important for us too. Individual repositories are totally isolated, which means both database and service layer are separated per repository. This way we can meet today's standards in data security, isolation, scalability and backup, giving us the advantages in terms of security issues and updates.
 
 <p align="center">
 <img src="/img/posts/separation.jpg">
@@ -52,6 +52,6 @@ Operating cloud-base content management services requires high-quality security 
 
 # Whats next
 
-Next year will mostly be about optimizing and automating release, install and deployment processes. So there is still a long way to perfection, but the path is clear. Come and join us in our journey, request a free sensenet repository, try the most flexible and versatile headless CMS!
+Next year will mostly be about optimizing and automating release, install and deployment processes. So there is still a long way to perfection, but the path is clear. Come and join us in our journey, [request a free sensenet repository](https://is.sensenet.com/Account/Registration?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dspa%26redirect_uri%3Dhttps%253A%252F%252Fprofile.sensenet.com%252Fauthentication%252Fcallback%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520sensenet%26state%3D022ed1044fb34dc5aea99fe62069a6df%26code_challenge%3DYmvfTX0N9-Wj6bKfndXk-q7ZVyldVoc1DSLkRQRtgFo%26code_challenge_method%3DS256%26response_mode%3Dquery%26snrepo%3Dhttps%253A%252F%252Fsnover.service.sensenet.com), try the most flexible and versatile headless CMS!
 
 See you in SNaaS! 🚀🎉
