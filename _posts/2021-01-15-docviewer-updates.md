@@ -58,7 +58,7 @@ For those who have been using sensenet for a long time, it may not be new, but i
 
 **Redaction** 🔳
 
-Sometimes when you are working with sensitive information 🗝️ in documents you don’t want to share them with everyone, only users having the appropriate privileges. But what if you would like to share the other parts of the document? This is the case when you need to apply redaction.
+Sometimes when you are working with sensitive information 🗝️ in documents you don’t want to share them with everyone, only users having the appropriate privileges. What if you would like to share the document except the sensitive information? This is the case when you need to apply redaction.
 With this feature you can hide parts of your doc with a black rectangles. Opening a document without redaction is only possible if the user has permission for it, otherwise the page will be full with black squares. 🙈
 
 <p align="center">
