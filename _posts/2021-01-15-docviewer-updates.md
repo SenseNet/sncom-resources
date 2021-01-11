@@ -50,7 +50,7 @@ If you use typescript you can also see the possible classes what you can overwri
 <img src="/img/posts/docviewer/overwrite_styles.png">
 </p>
 
-Our designer is constantly coming up with new solutions, the style is constantly changing, we can never consider it ready. 🎡
+Since our designer always come up with new solutions and the style is constantly changing, we can never consider it done. 🎡
 
 # New features 🎉
 
