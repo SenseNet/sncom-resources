@@ -20,7 +20,7 @@ Not only the code has become simpler but also features. For example, rotating pa
 
 We've put a great emphasis on improving performance as well. Sometimes we can achieve significant results by making small changes, such as taking advantage of the opportunities provided by our framework: replacing useEffect with [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo). 🚀
 
-Which is also important during these kind of full review is finding and fixing bugs in the software. Of course, during the re-rolling of this function, we also encountered many cases where a different solution had to be applied than we originally invented. 🐛
+Finding and fixing bugs in the software is also important in case of a full review like this. Of course, during the re-rolling of this function, we also encountered many cases where a different solution had to be applied than we originally planned. 🐛
 
 The point is that we tried to look at the possibilities from the user's point of view and we were trying to make this feature user friendly.👭
 
