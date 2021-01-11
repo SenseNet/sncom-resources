@@ -18,7 +18,7 @@ The main goal was to simplify the code of the document viewer. There were some m
 
 Not only the code has become simpler but also features. For example, rotating pages is only a form of visual representation, so it is unnecessary to store this information, it can be reproduced anytime. SearchBar widget become redundant too, because all browsers can search on page, so we removed this from selectable widgets. ✂️
 
-We also put a lot of emphasis on improving performance as well. Sometimes we can also achieve significant results by making small changes such as taking advantage of the opportunities provided by our framework: replacing useEffect with [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo). 🚀
+We've put a great emphasis on improving performance as well. Sometimes we can achieve significant results by making small changes, such as taking advantage of the opportunities provided by our framework: replacing useEffect with [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo). 🚀
 
 Which is also important during these kind of full review is finding and fixing bugs in the software. Of course, during the re-rolling of this function, we also encountered many cases where a different solution had to be applied than we originally invented. 🐛
 
