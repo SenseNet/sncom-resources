@@ -16,7 +16,7 @@ The basic purpose of code refactoring is to make the code more efficient and mai
 
 The main goal was to simplify the code of the document viewer. There were some magic numbers, unnecessary props, useEffects that runs many times, so we had to go deep to rethink the logic. After planning we had to try to rebuild the function based on the existing code. Although we basically try to avoid code repetition, sometimes it is even necessary to break down existing logic according to its function. As a result, Thumbnails and PageList became two separate components for example. ✏️
 
-Not only has the code become simpler but also features as well. For example rotating pages is only a form of visual representation, so it is unnecessary to store this information, it can be reproduced at any time. SearchBar widget become redundant too, because all browsers can search on page, so we removed this from selectable widgets. ✂️
+Not only the code has become simpler but also features. For example, rotating pages is only a form of visual representation, so it is unnecessary to store this information, it can be reproduced anytime. SearchBar widget become redundant too, because all browsers can search on page, so we removed this from selectable widgets. ✂️
 
 We also put a lot of emphasis on improving performance as well. Sometimes we can also achieve significant results by making small changes such as taking advantage of the opportunities provided by our framework: replacing useEffect with [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo). 🚀
 
