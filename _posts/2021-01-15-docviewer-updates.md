@@ -14,7 +14,7 @@ The basic purpose of code refactoring is to make the code more efficient and mai
 
 # Logic ✏️✂️🚀🐛👭
 
-The main goal was to simplify the code of the document viewer. There were some magic numbers, unnecessary props, useEffects that runs many times, so we had to go deep to rethink the logic. After planning, we had to rebuild the function based on the existing code. Although we try to avoid code repetition, sometimes it is even necessary to break down existing logic according to its function. As a result, Thumbnails and PageList became two separate components, for example. ✏️
+The main goal was to simplify the code. There were some magic numbers, unnecessary props, useEffects that run many times, so we had to go deep to rethink the logic. After planning, we had to rebuild functions based on the existing code. Although we try to avoid code repetition, sometimes it is even necessary to break down existing logic according to its function. As a result, Thumbnails and PageList became two separate components, for example. ✏️
 
 Not only the code has become simpler but also features. For example, rotating pages is only a form of visual representation, so it is unnecessary to store this information, it can be reproduced anytime. SearchBar widget become redundant too, because all browsers can search on page, so we removed this from selectable widgets. ✂️
 
