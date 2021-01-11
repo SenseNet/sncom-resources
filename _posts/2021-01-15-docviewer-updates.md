@@ -26,7 +26,7 @@ The point is that we tried to look at the possibilities from the user's point of
 
 # Style 🎨
 
-We are also spreading another new option to users, which is overwriting styles from a higher level. It is very important that the user who uses our service can shape it for her/his own needs. So far there have been relatively few opportunities for it, but we are changing that now:
+We will release another new option to users, which is overwriting styles from a higher level. It is very important to enable users to shape our solution for their own needs. So far there have been relatively few opportunities for it, but we are changing that now:
 
 You can define you style on your own and you can pass it to the component itself, like:
 
