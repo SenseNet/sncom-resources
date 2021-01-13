@@ -3,7 +3,7 @@ title: "Insight to SNaaS delivery process"
 author: [pusztaienike]
 image: "../img/posts/docviewer_refactor.jpg"
 tags: [refactor, document viewer, saas, docviewer, document]
-redirect_to: https://www.sensenet.com/blog/2020-01-15-docviewer_updates
+redirect_to: https://www.sensenet.com/blog/2020-01-13-docviewer_updates
 ---
 
 🌇 “Cities grow, cities evolve, cities have parts that simply die while other parts flourish; each city has to be renewed in order to meet the needs of its populace…” 🌆 -Grady Booch
