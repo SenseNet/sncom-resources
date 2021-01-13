@@ -1,5 +1,5 @@
 ---
-title: "Docviewer updates"
+title: "Document Viewer updates"
 author: [pusztaienike]
 image: "../img/posts/docviewer_refactor.jpg"
 tags: [refactor, document viewer, saas, docviewer, document]
