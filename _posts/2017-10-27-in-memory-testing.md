@@ -22,7 +22,7 @@ In the core repository (that contains the main component, [sensenet Services](ht
 
 After that we started investigating the possibility of writing new unit tests for modules that needed the repository - but without actually starting it. We realised that it would require a thremendous amount of refactoring to make the codebase 100% unit test friendly with classes that support dependency injection in a natural way. It would take too much time and break so many existing apis that it was not an option.
 
-![Testing an ECM product](/img/posts/inmemory_database.jpg)
+![Testing an ECM product](/img/posts/inmemory_database.jpg, 'Testing an ECM product')
 
 ## A whole database in memory
 In sensenet you cannot load a content or execute a query without a running index and an accessible database - and this is somewhat important in case of a system that is designed around content and queries :).

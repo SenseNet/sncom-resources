@@ -27,7 +27,7 @@ A digital workplace can reduce the costs of healthcare, the savings created thus
 
 Many well-known companies worldwide, like Google, Microsoft or the British London Capital Group also enjoy the advantages provided by the digital workplace.
 
-![Improvement](/img/posts/what-marketing-wont-tellyou-improvement.jpg)
+![Improvement](/img/posts/what-marketing-wont-tellyou-improvement.jpg, 'improvement')
 
 ## Are there areas where it cannot be applied?
 
@@ -35,7 +35,7 @@ The dark side of the digital workplace is not related to being compatible with c
 
 According to Miller, if anybody can work from anywhere at any time the work is going to take up more and more of our everyday life, as we see work as less of a burden. This can easily lead to the development of workaholism which can have severe symptoms. When using digital workplace application, it is necessary to pay attention to leave ourselves enough free time for recreation. We should not neglect our friends and family.
 
-![Workaholic](/img/posts/what-marketing-wont-tellyou-workaholic.jpg)
+![Workaholic](/img/posts/what-marketing-wont-tellyou-workaholic.jpg, 'workaholic')
 
 ## How is it more effective: a distinct body of systems or one system that solves everything?
 

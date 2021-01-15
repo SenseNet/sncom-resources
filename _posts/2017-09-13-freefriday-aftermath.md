@@ -28,7 +28,7 @@ Yes... well, sort of. We started this little experiment with three very differen
 
 - and finally, 1 project, that is almost complete 
 
-  ![Show me the data](/img/posts/data-on-my-desk-asap.gif)
+  ![Show me the data](/img/posts/data-on-my-desk-asap.gif, 'data on my desk')
 
 ## What went well?
 
@@ -60,13 +60,13 @@ We needed everyone to be on board so Friday afternoons won't be interfered with,
 
 And even though management was truly fully on board, developers sometimes decided to do their daily work instead, because they felt it was necessary (Hey, we have these responsible guys here. Good on us!). With wonky governance and sometimes-absent team members, there were Friday afternoons when people naturally defaulted back to business as usual.
 
-![This is why we can't have nice things](/img/posts/whatevs.gif)
+![This is why we can't have nice things](/img/posts/whatevs.gif, 'whatevs')
 
 ### Communication is hard
 
 If you've ever tried to form your fancy project idea into a digestible format for a very diverse set of people, when even *you* don't know, what you really want, then you know what I'm talking about. Developers could really experience what it's like to be in a stakeholder or leadership position. 
 
-![Can we talk](/img/posts/canwetalk.gif)
+![Can we talk](/img/posts/canwetalk.gif, 'can we talk')
 
 But it'll never work flawlessly for the first try. 
 
@@ -76,7 +76,7 @@ When I asked "Should we have another iteration of Free Friday?", the unanimous a
 
 In the past two weeks people were already asking me, when can they start new projects. I've received pretty good project ideas too! So developers are enthusiastic, which is great.
 
-![Reset the clock!](/img/posts/reset_the_clock.gif)
+![Reset the clock!](/img/posts/reset_the_clock.gif, 'reset the clock')
 
 The next round is starting in **two weeks** and in the meantime, people can think up new project ideas. 
 

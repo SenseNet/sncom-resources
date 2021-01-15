@@ -10,7 +10,7 @@ By the second half of 2017, an enterprise that predestinates itself to be succes
 
 ---
 
-![new way of thinking](/img/posts/rethinking.jpg)
+![new way of thinking](/img/posts/rethinking.jpg, 'rethinking')
 
 The concept of a digital workplace is not only about a new ergonomic working environment, but it also encompasses a new way of thinking – both of which are, by themselves, beneficial not only to the enterprise, but also to its stakeholders.
 Yet, however good the digital workplace might sound, it could be difficult for the people to accept the changes, especially when it requires a lot of effort from the single employees as well as from the different teams or groups as a whole. Employees may find the new concept to be too frustrating and stressful on them, especially when they are already overwhelmed with their professional work. As a leader of this transition it may be useful to let employees understand the benefits the digital workplace (or even a simpler document management system) would bring to them, in the hope that if they understand the need for this change, if they understand that digital workplace is not just another unnecessary bureaucratic burden, and if they feel that it is designed to make their work easier, they shall more readily and more willingly embrace the changes.
@@ -29,7 +29,7 @@ Some of the questions we might ask are as follows:
 - Do they prefer long or short tasks?
 - How do they handle interruptions?
 
-![ask questions](/img/posts/magnifying-glass.jpg)
+![ask questions](/img/posts/magnifying-glass.jpg, 'magnifying glass')
 
 Sometimes different people may need different applications. The digital workplace may be better received if it accommodates to this need as well.
 

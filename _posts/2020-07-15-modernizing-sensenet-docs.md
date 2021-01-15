@@ -49,7 +49,7 @@ While you are discovering a new technology and its documentation effective searc
 The top-level menus are completely designed by the above-mentioned surveys results. *Concepts* containing sensenet basics not only for developers. *Tutorials* and *Example Apps* help you start with sensenet offering you source code as step by step guides and downloadable GitHub projects. *Admin-ui Guides* is a place for useful manuals for the admin surface. In the *Integrations* menu you would reach the demonstration of current integrations and some help on how to integrate sensenet with anything. Last, but not least at the *API Docs* you can find collection of references, code snippets and examples in sort everything you need to complete a project.
 
 <p align="center">
-<img alt="docs.senseent.com API Docs" src="/img/posts/docs/api-docs.png">
+<img alt="docs.sensenet.com API Docs" src="/img/posts/docs/api-docs.png">
 </p>
 
 Just like the software, its documentation is open and stored on GitHub. Any suggestion, question and contribution is welcome, if you have any feedback for us, we will be happy to hear it on [GitHub](https://github.com/SenseNet/docs.sensenet.com) or via [chat](https://gitter.im/SenseNet/sensenet).

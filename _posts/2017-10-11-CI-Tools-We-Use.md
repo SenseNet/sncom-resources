@@ -10,7 +10,7 @@ CI means you have to merge small changes continuously instead of working with la
  
 ---
 
-![ci_tools_k2](/img/posts/ci_tools_k2.gif)
+![ci_tools_k2](/img/posts/ci_tools_k2.gif, 'ci tools')
 
 
 ### Before you dive in
