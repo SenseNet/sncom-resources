@@ -16,7 +16,7 @@ From the 80’s flexibility and innovation are the building blocks of companies.
 
 Organizing and managing ever-growing structured and unstructured data and transfer of corporate knowledge is impossible, if the important information, the software used by the company and the colleagues themselves are not connected.
 
-![document information](/img/posts/knowledgebase.jpg)
+![document information](/img/posts/knowledgebase.jpg, 'knowlegdebase')
 
 ## In what form does it happen?
 Knowledge, that is useful from the viewpoint of innovative processes, can come from several sources. Information necessary for operation is usually provided by the leadership. The company can however get valuable knowledge from its consumers, employees or from information derived from the behavior of the competition.
@@ -29,7 +29,7 @@ The format of the material you work with does not matter. Whether it is an elect
 
 Your only task is to assign employees to different authorities, lists or libraries and they can easily access knowledge relevant to them.
 
-![educate new employees](/img/posts/learn.jpg)
+![educate new employees](/img/posts/learn.jpg, 'learn')
 
 ## How is this supported by a well-organized IT system
 In most companies - probably in yours as well - archiving and organizing documents is one of the biggest problems. In our example **sensenet** handles problems related to storing, security settings, title management, version control, software integration, sharing and formatting at the same time. The data stored this way can also be retrieved easily thanks to the metadata indexing capabilities.

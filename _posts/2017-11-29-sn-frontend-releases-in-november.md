@@ -140,7 +140,7 @@ Since the needed provider was ready both on the backend and in sn-client-js it w
 
 ## What's next?
 
-![Got stuff to do, can't talk now](/img/posts/busy.gif)
+![Got stuff to do, can't talk now](/img/posts/busy.gif, `Got stuff to do, can't talk now`)
 
 Let's see in a few words what is in our backlog for the winter:
 

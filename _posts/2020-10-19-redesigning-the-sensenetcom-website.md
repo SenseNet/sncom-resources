@@ -21,7 +21,7 @@ This time I didn’t had to do the research alone because Blackhole Media (a mar
 Later, we had the chance to work together in person as well, but we kept using Miro throughout the whole design process. 
 
 <p align="center">
-<img src="/img/posts/miro-board.png">
+<img src="/img/posts/miro-board.png" alt="miro board">
 </p>
 
 ## Wireframing 
@@ -33,7 +33,7 @@ During the design of the low-fidelity wireframes the sales team and Blackhole Me
 The next step from here was the high-fidelity wireframe with the finished copy and this time I made a clickable prototype as well. I choose to do a first round of user testing after I got finished with the high-fidelity wireframe because we wanted to make sure that if there’s any issue with the design we should find out as soon as possible and make it right in the early stages. 
 
 <p align="center">
-<img src="/img/posts/low-fidelity-wireframe.png">
+<img src="/img/posts/low-fidelity-wireframe.png" alt="low fidelity wireframe">
 </p>
 
 ## User testing 
@@ -48,4 +48,4 @@ For the final design the team choose the colors and photos that we will be using
 
 I had a lot of fun during this project although it had a very tight schedule, we made it working thanks to all the people who participated and helped to make it happen. 
 
-You can check the site at www.sensenet.com 
+You can check the site at [sensenet.com](https://sensenet.com) 

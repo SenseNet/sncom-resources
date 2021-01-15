@@ -25,7 +25,7 @@ This MVC sample application will be a very simple CRUD app: it will display a da
 
 This architecture means a web application with custom code added on the **server side in C# and cshtml**. For a Javascript single page application example please visit one of the links above.
 
-![Dashboard](https://raw.githubusercontent.com/SenseNet/sensenet.github.io/master/img/posts/mvc-sample-dashboard.PNG)
+![Dashboard](https://raw.githubusercontent.com/SenseNet/sensenet.github.io/master/img/posts/mvc-sample-dashboard.PNG, 'Dashboard')
 
 When completing this short exercise, please try to focus on the sensenet-related parts - for example the way we search for content items and load them from the Content Repository, the way we create and modify content. We tried to keep everything else minimal so you can focus on the new stuff and not on the usual MVC-related parts.
 
@@ -54,7 +54,7 @@ After the steps above, you will have an MVC application with sensenet 7.0 integr
 
 > It is important to make sure when working with a sensenet web application that you shut down the application properly when you update the server code. This means stopping the IIS Express site so that sensenet can release the index write lock correctly - otherwise you would have to delete that file manually when you start the app next time.
 
-![IISExpress sites](https://raw.githubusercontent.com/SenseNet/sensenet.github.io/master/img/posts/mvc-sample-iisexpress.PNG)
+![IISExpress sites](https://raw.githubusercontent.com/SenseNet/sensenet.github.io/master/img/posts/mvc-sample-iisexpress.PNG,'IISExpress sites')
 
 ## Authentication
 To demonstrate a use case for different users, this sample is designed to display Tasks for the current user and (in a different list) tasks for others. Asp.Net MVC authentication however is *not the scope of this guide*, so we will use the old built-in WebForms-based UI for signing in and possibly create new users for testing purposes.
@@ -576,7 +576,7 @@ The Create action receives a task view model filled with the data from the clien
 
 The new task's fields are filled from the model and the new content is saved into the Content Repository. All **database operations**, **indexing** and **security checks** will happen under the hood, you do not have to do anything else, just fill the fields and call the Save method.
 
-![Create a task](https://raw.githubusercontent.com/SenseNet/sensenet.github.io/master/img/posts/mvc-sample-create.PNG)
+![Create a task](https://raw.githubusercontent.com/SenseNet/sensenet.github.io/master/img/posts/mvc-sample-create.PNG, 'Create task')
 
 The *DeletePost* method (note that we had to name it differently to avoid a name collision) is simple: it deletes the content with the provided id - it does not even have to load it from the db.
 

@@ -23,7 +23,7 @@ sensenet is designed and developed by a cross-functional team, which means we ha
 We're using GitHub not only for versioning and publishing the product source code and the documentation, but also for supporting our teamwork and transparency of our processes toward the customers and the community. Our team is working in a scrumish way along sprints, milestones, releases, epics and issues, and taking advantages of GitHub and [ZenHub](https://www.zenhub.com/) we can share everything with you. The product roadmap, the team backlog and everything we're working on is available, so you can not only follow but also influence the product development process. A bug's lifecycle from detecting it till publishing the fix to the production environment can be easily followed. 
 
 <p align="center">
-<img src="/img/posts/bug.jpg">
+<img src="/img/posts/bug.jpg" alt="bug">
 </p>
 
 # Review and test
@@ -47,7 +47,7 @@ We update the production environments (customer repositories, central system, et
 Operating cloud-base content management services requires high-quality security regulations and standards. These thing are extremely important for us too. Individual repositories are totally isolated, which means both database and service layer are separated per repository. This way we can meet today's standards in data security, isolation, scalability and backup, giving us the advantages in terms of security issues and updates.
 
 <p align="center">
-<img src="/img/posts/separation.jpg">
+<img src="/img/posts/separation.jpg" alt="separation">
 </p>
 
 # Whats next

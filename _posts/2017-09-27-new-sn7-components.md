@@ -47,7 +47,7 @@ But no UI, whatsoever. You can access the Content Repository inside Services thr
 
 *Everything that makes your life better. Content types, we built for you. Prepackaged business logic in breadcrumbs, with mayo.* 
 
-![Put it all together!](/img/posts/wrenches.jpg)
+![Put it all together!](/img/posts/wrenches.jpg, 'wrenches')
 
 [**SenseNet/WebPages**](https://github.com/SenseNet/sn-webpages)
 

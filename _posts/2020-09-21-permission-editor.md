@@ -49,7 +49,7 @@ The default settings are the following:
 On the permission editor dialog you can see the groups and permissions based on these settings. 
 
 <p align="center">
-<img src="/img/posts/permission_groups.png">
+<img src="/img/posts/permission_groups.png" alt="permission groups">
 </p>
 
 ## How to use it? 🎮
@@ -62,7 +62,7 @@ When you open the dialog some permissions are disabled because they are inherite
 Changes only apply on clicking Submit button so for your comfort there is also a reset button to restore the unsaved changes.
 
 <p align="center">
-<img src="/img/posts/permission_how_to_use.gif">
+<img src="/img/posts/permission_how_to_use.gif" alt="how to use permissions">
 </p>
 
 ## Additional features 💄👓👜
@@ -72,7 +72,7 @@ Changes only apply on clicking Submit button so for your comfort there is also a
 If you would like to share your content (content can be almost anything, cause in sensenet everything is a content) with visitors who are not users in your repository you can do it easily by clicking on "Make content public" button. If you change your mind reverting this is easy as it was to set. This thing come in handy when you build a public website and most of your repository data is shared with all the visitors.
 
 <p align="center">
-<img src="/img/posts/permission_make_public.gif">
+<img src="/img/posts/permission_make_public.gif" alt="make a content public">
 </p>
 
 **Assign new permission**
@@ -80,7 +80,7 @@ If you would like to share your content (content can be almost anything, cause i
 If you would like to grant permission for someone on a content who has no permission setting at all, you can do it using the _Assign new permission_ button. Search for and select the user or group to whom you want to set permissions and turn on/off the switches. 😉
 
 <p align="center">
-<img src="/img/posts/permission_assign_new.gif">
+<img src="/img/posts/permission_assign_new.gif" alt="assign new permission">
 </p>
 
 **Local only**
@@ -89,7 +89,7 @@ One of the big advantages of sensenet content repository tree is inheritance whi
 On the permission view these local-only entries are marked with an icon.
 
 <p align="center">
-<img src="/img/posts/permission_local_only.gif">
+<img src="/img/posts/permission_local_only.gif" alt="local only permissions">
 </p>
 
 
@@ -98,7 +98,7 @@ On the permission view these local-only entries are marked with an icon.
 Some of the built-in permissions requires to allow other permission(s). E.g: If you would like to set Preview permission to an entry it requires to have See permission as well. You don't need to handle these relations cause it is automatic in the background. Setting the Preview permission will set See permission as well.
 
 <p align="center">
-<img src="/img/posts/permission_force_relations.gif">
+<img src="/img/posts/permission_force_relations.gif" alt="force relations">
 </p>
 
 

@@ -37,7 +37,7 @@ Finally, we could reduce the resources size from ~57.3MB to ~8.1 MB with deployi
 In the future, we would like to follow the changes what we can easily do with [RelativeCiAgent](https://relative-ci.com/). When we merge something to our develop branch RelativeCiAgent provides us a really transparent report of our bundle size.
 
 <p align="center">
-<img src="/img/posts/relativeCiAgentReport.png">
+<img src="/img/posts/relativeCiAgentReport.png" alt="relativeCI agent report">
 </p>
 
 I really like it when I have nothing to do, RelativeCiAgent do the 'dirty work' for me. 😁
@@ -49,7 +49,7 @@ We can also check the size during development as well. We just added a new line 
 After generating the `stats.json`. We can make this file more transparent with [webpack-visualizer](https://chrisbateman.github.io/webpack-visualizer/)
 
 <p align="center">
-<img src="/img/posts/webpack_visualizer.gif">
+<img src="/img/posts/webpack_visualizer.gif" alt="webpack visualizer">
 </p>
 
 ## Quality is not an act, it is a habit.
@@ -59,7 +59,7 @@ Check this pull request here: [#550](https://github.com/SenseNet/sn-client/pull/
 For improving the quality of our app, we run [Lighthouse](https://developers.google.com/web/tools/lighthouse) on the admin surface's landing page. It was interesting to see what we missed during development. Okay these problems were small ones, but you know: "Many a little makes a mickle!"<br/>
 
 <p align="center">
-<img src="/img/posts/lighthouse_before.png">
+<img src="/img/posts/lighthouse_before.png" alt="lighthouse before">
 </p>
 
 Our main problem was that we used a gif file as a progress indicator, and it was full screen sized, a huge one. We decided to change it to one of the built-in loaders in material-ui. We also fixed some small bugs, like:
@@ -70,7 +70,7 @@ Our main problem was that we used a gif file as a progress indicator, and it was
 
 Our final results after the fixes were the following:
 <p align="center">
-<img src="/img/posts/lighthouse_after.png">
+<img src="/img/posts/lighthouse_after.png" alt="lighthouse after">
 </p>
 
 We were pretty proud of it. 😉 
@@ -82,5 +82,5 @@ Our goal is to make the user interface useful and usable for every user, includi
 So you know: "Time is money..", and we really appreciate your time.
 
 <p align="center">
-<img src="/img/posts/infinity_and_beyond.jpg">
+<img src="/img/posts/infinity_and_beyond.jpg" alt="infinity and beyond">
 </p>
