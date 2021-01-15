@@ -1,5 +1,6 @@
 ---
 title: September 2019
+description: sensenet frontend updates of September 2019
 ---
 
 Another 4 weeks went by, here are the changes we made 👇🏻

@@ -1,5 +1,6 @@
 ---
 title: September 2020
+description: sensenet frontend updates of September 2020
 ---
 
 ## Bug hunting season!💦🐜🐛
