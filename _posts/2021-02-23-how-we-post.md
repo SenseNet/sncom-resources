@@ -6,7 +6,7 @@ tags: [social media, medium, saas, github, loomly, blog, headless cms]
 redirect_to: https://www.sensenet.com/blog/how-we-post
 ---
 
-??????
+Did you know that this post is born as a .md file and made it's way to our blog with a help of an automated sync tool? Cool, isn't it!?
 
 ---
 
