@@ -15,7 +15,7 @@ Now, we have two posts per month published in every two weeks. Since we are work
 
 For that purpose we are using GitHub (like the pros). As a non-developer we struggled a bit at the beginning but once we get used to it, this makes our life easier. Every blogpost (like the source code of sensenet) lives on GitHub in a dedicated repository so we can edit them right from the browser, keep track of any changes made and also review and comment it.
 
-When the review is finished and every proposed modifications are made, the PR gets merged into the master branch. The blog itself is part of our public website powered by [sensenet](https://sensenet.com/tryit) so we needed a tool to sync content from GitHub to the sensenet repo behind sensenet.com.
+When the review is finished and all the proposed changes has been made, the PR gets merged into the master branch. The blog itself is part of our public website powered by [sensenet](https://sensenet.com/tryit) so we needed a tool to sync content from GitHub to the sensenet repo behind sensenet.com.
 The process is triggered when a merge is made into the dedicated GitHub repo's master branch then the new post becomes visible on [sensenet.com/blog](https://www.sensenet.com/blog) in all its beauty.
 
 To let everyone know about the new content, we share it on social media ([Twitter](https://twitter.com/sensenet), [Facebook](https://www.facebook.com/sensenetcsp), [LinkedIn](https://www.linkedin.com/company/sense-net-inc)) and post it on [Medium](https://medium.com/sensenet).
