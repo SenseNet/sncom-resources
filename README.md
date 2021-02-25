@@ -5,8 +5,8 @@ This repo contains resources required for different parts of our public website 
 
 ## File structure
  - [_posts](_posts) - This is where all blogposts are stored. Content is synced automatically to a sensenet repo and displayed on our [blog](https://www.sensenet.com/blog)
- - [_updates](_updates) - frontend release notes - https://www.sensenet.com/frontend-updates
- - [_releases](_releases) - backend release notes - https://www.sensenet.com/backend-updates
+ - [_updates](_updates) - frontend release notes - [https://www.sensenet.com/frontend-updates](https://www.sensenet.com/frontend-updates)
+ - [_releases](_releases) - backend release notes - [https://www.sensenet.com/backend-updates](https://www.sensenet.com/backend-updates)
  - [img](img) - image reosurce folder for every content in the repository
  - [archived/posts](archived/posts) - archived blogposts which are no longer visible on our blog page
  
