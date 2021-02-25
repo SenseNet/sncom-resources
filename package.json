@@ -1,40 +1,22 @@
 {
-  "name": "sensenet.github.io",
+  "name": "sncom-resources",
   "version": "1.0.0",
-  "description": "Sense/Net Community Website",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "git-cz",
-    "releases": "node script/releases.js",
-    "awesome": "node script/awesome.js",
-    "contributors": "node script/contributors.js",
-    "latestblogposts": "node script/latestblogposts.js",
-    "start": "bundle exec jekyll serve --incremental"
-  },
+  "description": "sensenet.com website resources",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SenseNet/sensenet.github.io.git"
+    "url": "git+https://github.com/SenseNet/sncom-resources.git"
   },
   "keywords": [
     "sensenet",
-    "cms",
-    "csp",
-    "community"
+    "headless cms",
+    "headless csp",
+    "blogpost",
+    "release notes"
   ],
   "author": "Sense/Net <snteam@sensenet.com> (http://sensenet.com/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SenseNet/sensenet.github.io/issues"
+    "url": "https://github.com/SenseNet/sncom-resources/issues"
   },
-  "homepage": "https://community.sensenet.com/",
-  "devDependencies": {
-    "commitizen": "2.9.6",
-    "cz-conventional-changelog": "2.0.0",
-    "require-dir": "^0.3.1",
-    "semver": "^5.3.0"
-  },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
-  }
+  "homepage": "https://sensenet.com/",
 }
