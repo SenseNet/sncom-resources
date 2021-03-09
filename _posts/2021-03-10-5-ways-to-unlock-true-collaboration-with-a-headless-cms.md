@@ -28,7 +28,7 @@ With sensenet you can invite your teammates or customers to share content with t
 
 ## 3. Preview comments
 
-[Document preview feature](https://docs.sensenet.com/concepts/document-previews) of sensenet is a useful teamwork tool in itself letting you upload your docs and share them with people who don't have the tools to open them. To make it more powerful we have added the possibility to comment any part of the preview images. So this way you could even discuss the design plans with the customer, moving the whole project and all the related content to the same hub.
+[Document preview feature](https://docs.sensenet.com/concepts/document-previews) of sensenet is a useful teamwork tool in itself letting you upload your docs and share them with people who don't have the tools to open them. To make it more powerful we have added the possibility to comment any part of the preview images. This way you could even discuss the design plans with the customer, moving the whole project and all the related content to the same hub.
 
 <p align="center">
 <img src="/img/posts/collaboration/docviewer.png" alt="Preview comments">
