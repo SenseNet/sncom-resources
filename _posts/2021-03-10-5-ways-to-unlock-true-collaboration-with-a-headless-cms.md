@@ -12,7 +12,7 @@ Working on a project in a cross-functional team can be full of pitfalls. I have 
 
 ## 1. Versioning and Approval
 
-Basic building blocks of a collaborative content management process are the different states of content aka. [versions in terms of sensenet](https://docs.sensenet.com/concepts/collaboration/01-versioning). The whole lifecycle of a content from the first draft till the final public version can be tracked using version numbers. Only one setting on a container to switch on versioning and approval and your team will be able to follow if a content should be reviewed, corrected or approved both on the admin surface or with the API.
+Basic building blocks of a collaborative content management process are the different states of content aka. [versions in terms of sensenet](https://docs.sensenet.com/concepts/collaboration/01-versioning). The whole lifecycle of a content from the first draft till the final public version can be tracked using version numbers.  Set versioning and approval on a container and your team will be able to follow if a content should be reviewed, corrected or approved both on the admin surface and with the API.
 
 <p align="center">
 <img src="/img/posts/collaboration/approval.png" alt="Versioning and approval flow">
