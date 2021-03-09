@@ -36,7 +36,7 @@ With sensenet you can invite your teammates or customers to share content with t
 
 ## 4. Office Online editing
 
-Why you would use different tools for each work phase when you can write, review, discuss and correct docs directly in the browser? [Office Online editing](https://docs.sensenet.com/concepts/collaboration/03-office-online-editing) is integrated to sensenet making it possible to collaborate on documents as you are used to on your own desktop computer or in google docs. 
+Why would you use different tools for each work phase when you can write, review, discuss and correct docs directly in the browser? [Office Online editing](https://docs.sensenet.com/concepts/collaboration/03-office-online-editing) is integrated to sensenet making it possible to collaborate on documents as you are used to on your own desktop computer or in google docs. 
 
 <p align="center">
 <img src="/img/posts/collaboration/office_online.png" alt="Office online editing">
