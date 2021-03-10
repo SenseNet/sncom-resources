@@ -20,7 +20,7 @@ Basic building blocks of a collaborative content management process are the diff
 
 ## 2. Sharing
 
-With sensenet you can invite your teammates or customers to share content with them, no matter how far they are from you at the moment. Registered users or groups can join you to work on the same content on various levels (view, edit) and you can share link of a content with external users let them review it or even work together without them having to register. Work together remotely like pros, give your projects a collaborative boost with [content sharing](https://docs.sensenet.com/concepts/collaboration/06-sharing)!
+With sensenet you can invite your teammates or customers to share content with them, no matter how far they are from you at the moment. Registered users or groups can join you to work on the same content on various levels (view, edit) and you can share link of a content with external users let them, review it or even work together without them having to register. Work together remotely like pros, give your projects a collaborative boost with [content sharing](https://docs.sensenet.com/concepts/collaboration/06-sharing)!
 
 <p align="center">
 <img src="/img/posts/collaboration/sharing.png" alt="Sharing">
