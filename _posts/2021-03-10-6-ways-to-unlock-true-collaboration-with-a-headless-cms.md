@@ -1,7 +1,7 @@
 ---
 title: "6 ways to unlock true collaboration with a headless cms"
 author: [herflis]
-image: "../img/posts/teamwork.png"
+image: "../img/posts/teamwork.jpg"
 tags: [productivity, teamwork, collaboration, saas, headless cms]
 redirect_to: https://www.sensenet.com/blog/how-we-post
 ---
