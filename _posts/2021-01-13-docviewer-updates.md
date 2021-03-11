@@ -12,7 +12,7 @@ redirect_to: https://www.sensenet.com/blog/2020-01-13-docviewer_updates
 
 The basic purpose of code refactoring is to make the code more efficient and maintainable. Of course we are about to keep our code up-to-date and optimize its performance so we thought that it is time to clean a lot of complicated lines of code in the document viewer. ♻️
 
-# Logic ✏️✂️🚀🐛👭
+## Logic ✏️✂️🚀🐛👭
 
 The main goal was to simplify the code. There were some magic numbers, unnecessary props, useEffects that run many times, so we had to go deep to rethink the logic. After planning, we had to rebuild functions based on the existing code. Although we try to avoid code repetition, sometimes it is even necessary to break down existing logic according to its function. As a result, Thumbnails and PageList became two separate components, for example. ✏️
 
@@ -24,7 +24,7 @@ Finding and fixing bugs in the software is also important in case of a full revi
 
 The point is that we tried to look at the possibilities from the user's point of view and we were trying to make this feature user friendly.👭
 
-# Style 🎨
+## Style 🎨
 
 We will release another new option to users, which is overwriting styles from a higher level. It is very important to enable users to shape our solution for their own needs. So far there have been relatively few opportunities for it, but we are changing that now:
 
@@ -52,7 +52,7 @@ If you use typescript you can also see the possible classes what you can overwri
 
 Since our designer always come up with new solutions and the style is constantly changing, we can never consider it done. 🎡
 
-# New features 🎉
+## New features 🎉
 
 For those who have been using sensenet for a long time, it may not be new, but if you have just joined, you may come across the keywords redaction, highlight and annotation for the first time.
 
@@ -93,7 +93,7 @@ The operation of these three shapes is basically the same with some small differ
 <img src="/img/posts/docviewer/right-click.png" alt="right click">
 </p>
 
-# What's next 📅
+## What's next 📅
 
 In the upcoming releases we will make these updates public, don't forget to check out the [changelog](https://www.sensenet.com/frontend-updates)!
 
