@@ -19,7 +19,7 @@ This was a special year for us since we launched 🚀, along with Hacktoberfest,
 In the first week we had many registrations and contributors started to work on the dedicated issues. In the coming weeks the buzz chilled down, mainly because of stricter event rules and because of the fact that this year we wanted real contributions in the form of end-to-end tests written in cypress.
 Now, let's see the exact numbers.
 
-# Stats
+## Stats
 
 **resolved issues: 20**
 
@@ -27,12 +27,12 @@ Now, let's see the exact numbers.
 
 Since we launched SNaaS in BETA along with Hacktoberfest, as part of the challenge, contributors had to register to the service and claim a free repository. During October we had 36 new repo registrations altogether. These repositories can be used in the future as part of our developer plan or upgraded if your project requires so (see our plans [here](https://www.sensenet.com/pricing)).
 
-# Swag
+## Swag
 
 This year we made limited edition super socks 🧦 (not the usual t-shirt) for the winners and a 10% coupon for SNaaS business plan.
 We contacted all the winners with further details, the production will start in the next few weeks and you will get your swag as soon as possible.
 
-# See you next year
+## See you next year
 
 Again, thanks for all the contributors🙏. Keep using your repositories and feel free to give us feedback, our ears are wide open. (:
 
