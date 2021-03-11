@@ -25,7 +25,7 @@ Now, let's see the exact numbers.
 
 **winners: 13** (special thanks for those who resolved more than one issue)
 
-Since we launched SNaaS in BETA along with Hacktoberfest, as part of the challenge, contributors had to register to the service and claim a free repository. During October we had 36 new repo registrations altogether. These repositories can be used in the future as part of our developer plan or upgraded if your project requires so (see our plans [here](https://www.sensenet.com/pricing)).
+Since we launched SNaaS in BETA along with Hacktoberfest, as part of the challenge, contributors had to register to the service and claim a free repository. During October we had 36 new repo registrations altogether. These repositories can be used in the future as part of our developer plan or upgraded if your project requires so ([check our plans](https://www.sensenet.com/pricing)).
 
 ## Swag
 
