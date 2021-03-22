@@ -6,7 +6,7 @@ tags: [productivity, teamwork, collaboration, saas, headless cms, sensenet]
 redirect_to: https://www.sensenet.com/blog/sncom-design_sprint
 ---
 
-With the launch of our new SaaS model we went ...
+6 people, 4 days, ∞ coffees and the result is 1 prototype and lot of feedbacks and new ideas by the end of the week. This was our design sprint in a nutshell.
 
 ---
 
@@ -24,7 +24,6 @@ We have some early birds registered to the BETA but we still need more feedback 
 
 ## Process
 
-
 All of us rescheduled our meetings and cleaned up our agenda to focus only on this task. This was a virtual event (you know why) so everyone joined via Teams and worked in Miro which is perfect for this kind of collaboration. Thanks to our colleague 👏🏼 everything was ready and prepared by the first morning so we just had to join and start working together.
 
 In a design sprint (at least how we did it) there was some special roles. We had a Decider who makes the important decisions (with bigger voting power in each question), and a Facilitator who leads the the whole event.
@@ -33,9 +32,4 @@ We went through several phases of collecting ideas in a specific topic, voting a
 
 ## Results
 
-6 people, 4 days, ∞ coffees and the result is 1 prototype and lot of feedbacks and new ideas by the end of the week.
-
-
-## What's next
-
-
+Feedbacks from the user interviews led us to identify some patterns and from that we were able to create a handful of tasks. We prioritized these and we already see that some of the topics will need additional design sprints and we are looking forward to do so since it's quite effective, inspiring and it changed our daily routine which all can lead to great results.🥳🎈⭐
