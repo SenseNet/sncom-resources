@@ -27,7 +27,9 @@ We have some early birds registered to the BETA but we still need more feedback 
 
 All of us rescheduled our meetings and cleaned up our agenda to focus only on this task. This was a virtual event (you know why) so everyone joined via Teams and worked in Miro which is perfect for this kind of collaboration. Thanks to our colleague 👏🏼 everything was ready and prepared by the first morning so we just had to join and start working together.
 
+In a design sprint (at least how we did it) there was some special roles. We had a Decider who makes the important decisions (with bigger voting power in each question), and a Facilitator who leads the the whole event.
 
+We went through several phases of collecting ideas in a specific topic, voting and getting closer to our target and by Thursday, we had a prototype to user test on Friday with 5 enthusiastic volunteers👏.
 
 ## Results
 
