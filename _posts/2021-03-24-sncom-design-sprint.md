@@ -14,10 +14,6 @@ redirect_to: https://www.sensenet.com/blog/sncom-design_sprint
 
 We launched our new website in October 2020 because we came out with our SaaS model (called sensenet as a service) currently in BETA. This new site with fresh content for the new era allowed us to lead visitors to register to the service. Back then we must to act fast since we wanted to get the whole thing ready for Hactoberfest, for this reason some processes was not detailed enough. Since last year we gathered some stats about the usage and interaction with our site and we thought that some thing can and should be improved.
 
-<p align="center">
-<img src="/img/posts/designsprint_roots.jpg" alt="tree roots">
-</p>
-
 ## Goal
 
 We have some early birds registered to the BETA but we still need more feedback in this phase so our goal is to convince more people to give SNaaS a try. Since this is a much bigger task to fit into a simple 1,5 hours meeting, a design sprint seemed as a perfect solution to accomplish this challenge. Our objective was to start from square one and go through the whole process and fine-tune the journey of a customer.
