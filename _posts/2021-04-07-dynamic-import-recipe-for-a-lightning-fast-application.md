@@ -1,4 +1,16 @@
-In this article we will delve into the dynamic import of JavaScript modules and the lazy loading of React components. We will examine through a real example how they work and how we can make our web application faster by reducing our initial bundle size. It is common to use TypeScript for its static type system. We often need types from our dependencies, but it can ruin our hardly achieved code splitting if we don't pay attention. I will show you a fairly new syntax to avoid it.
+---
+title: "Dynamic import - recipe for a lightning fast application"
+author: [taki9]
+image: "../img/posts/citylights.jpg"
+tags: [saas, headless cms, import, javascript, react, typescript]
+redirect_to: https://www.sensenet.com/blog/2021-04-07-dynamic-import-recipe-for-a-lightning-fast-application
+---
+
+In this article we will delve into the dynamic import of JavaScript modules and the lazy loading of React components. 
+
+---
+
+We will examine through a real example how they work and how we can make our web application faster by reducing our initial bundle size. It is common to use TypeScript for its static type system. We often need types from our dependencies, but if we don't pay attention it can ruin our hardly achieved code splitting. I will show you a fairly new syntax to avoid it.
 
 ## Dynamic import
 
