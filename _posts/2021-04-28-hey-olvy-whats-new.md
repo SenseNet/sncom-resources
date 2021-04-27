@@ -19,6 +19,7 @@ Content creation is also top prior so we write documentation, tutorials, blogpos
 We found a promising tool on [producthunt](https://www.producthunt.com/). The app is called [Olvy](https://olvy.co/) and it was #1 product of the day (back in 27 February) that's how we found it.
 
 We've added it first to the [admin ui](https://docs.sensenet.com/guides/getting-started) - a central place to manage sensenet repositories in the SNaaS model - to share useful information with our users, such as release notes, new and upcoming features.
+
 We were so amazed by this new solution that we've included it to each surface we have.
 
 <p align="center">
