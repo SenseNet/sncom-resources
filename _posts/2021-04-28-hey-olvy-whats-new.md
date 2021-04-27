@@ -18,18 +18,15 @@ Content creation is also top prior so we write documentation, tutorials, blogpos
 
 We found a promising tool on [producthunt](https://www.producthunt.com/). The app is called [Olvy](https://olvy.co/) and it was #1 product of the day (back in 27 February) that's how we found it.
 
-We've added it first to the [admin ui](https://docs.sensenet.com/guides/getting-started) - a central place to manage sensenet repositories in the SNaaS model - to share useful information with our users, such as release notes, new and upcoming features.
-
-Here we would like to mention that this is not a paid promotion, we only want to write about our experience with this service. We paid full price for Olvy altough we took advantage of the early bird discount.🐣😊
-
-## Integration
-
-The integration part was quite easy, we just had to add a small code snippet into the admin ui and tag a button with the appropriate id, that's it.
-We were so amazed by this new solution that we've included it to each surface we have.
+We've added it first to the [admin ui](https://docs.sensenet.com/guides/getting-started) - a central place to manage sensenet repositories in the SNaaS model - to share useful information with our users, such as release notes, new and upcoming features. We were so amazed by this new solution that we've included it to each surface we have.
 
 <p align="center">
 <img src="/img/posts/olvy/bellvariations.png" alt="olvy integration">
 </p>
+
+Here we would like to mention that this is not a paid promotion, we only want to write about our experience with this service. We paid full price for Olvy altough we took advantage of the early bird discount.🐣😊
+
+The integration part was quite easy, we just had to add a small code snippet into the admin ui and tag a button with the appropriate id, that's it.
 
 ## How it works?
 
