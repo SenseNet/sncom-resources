@@ -29,7 +29,7 @@ We were so amazed by this new solution that we've included it to each site.
 
 ## What we share
 
-First of all it is the ideal place for us to share info about our new releases like new features, fixed bugs and so on (both forntend and backend). In addition to release notes we also share our blogposts and other news around sensenet.
+First of all it is the ideal place for us to share info about our new releases like new features, fixed bugs and so on (both frontend and backend). In addition to release notes we also share our blogposts and other news around sensenet.
 
 Olvy has even more features like [standalone page](https://sensenet.olvy.co/) for releases, feedback (which we plan to use in the future), scheduled releases and many more.
 
