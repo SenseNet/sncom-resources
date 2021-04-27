@@ -6,7 +6,7 @@ tags: [saas, headless cms, releases, javascript, react, typescript, olvy]
 redirect_to: https://www.sensenet.com/blog/2021-04-28-hey-olvy-whats-new
 ---
 
-
+These days we are getting familiar with producthunt as we want to launch our new SaaS model there. By chance we found a great tool which saved us some dev hours. Here's our experience.
 
 ---
 
@@ -43,5 +43,3 @@ Users see new updates as a colored badge whenewer you want (see variations above
 Olvy has even more features like [standalone page](https://sensenet.olvy.co/) for releases and more to discover in the future.
 
 For us this is the ideal solution to share info about our new releases like new features, fixed bugs and so on (both frontend and backend).
-
-
