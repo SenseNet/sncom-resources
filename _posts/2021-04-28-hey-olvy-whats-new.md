@@ -10,32 +10,39 @@ redirect_to: https://www.sensenet.com/blog/2021-04-28-hey-olvy-whats-new
 
 ---
 
-## How to deliver releases and updates
+## Delivering release notes and updates
 
-Since we are working on our new SaaS model we are thinking how could we improve each and every part of the service. Admin-ui, which is a central place to manage sensenet repositories in the (SNaaS model), needed a section with useful information for our users, such as release notes, new and upcoming features.
+Since we are working on our new SaaS model we are constantly thinking how could we improve each and every part of the service. For this reason we made a [design sprint](https://www.sensenet.com/blog/2021-03-24-sncom-design-sprint) to better understand the user journey and we are currently working hard to make our demo experience more seamless.
 
-We were thinking what could be the best way to deliver these infos to our users then we found a promising tool on [producthunt](https://www.producthunt.com/). The app is called Olvy and it was #1 product of the day (back in 27 February) that's how we found it.
+Content creation is also top prior so we write documentation, tutorials, blogposts and so on. But how can we deliver these new stuff to our users the most effective way?
 
-Here we would like to mention that this is not a paid promotion (we paid full price for Olvy altough we took advantage of the early bird discount), we just share our experience with this service.
+We found a promising tool on [producthunt](https://www.producthunt.com/). The app is called [Olvy](https://olvy.co/) and it was #1 product of the day (back in 27 February) that's how we found it.
+
+We've added it first to the [admin ui](https://docs.sensenet.com/guides/getting-started) - a central place to manage sensenet repositories in the SNaaS model - to share useful information with our users, such as release notes, new and upcoming features.
+
+Here we would like to mention that this is not a paid promotion, we only want to write about our experience with this service. We paid full price for Olvy altough we took advantage of the early bird discount.🐣😊
 
 ## Integration
 
 The integration part was quite easy, we just had to add a small code snippet into the admin ui and tag a button with the appropriate id, that's it.
-We were so amazed by this new solution that we've included it to each site.
+We were so amazed by this new solution that we've included it to each surface we have.
 
 <p align="center">
 <img src="/img/posts/olvy/bellvariations.png" alt="olvy integration">
 </p>
 
-## What we share
+## How it works?
 
-First of all it is the ideal place for us to share info about our new releases like new features, fixed bugs and so on (both frontend and backend). In addition to release notes we also share our blogposts and other news around sensenet.
+Olvy has a simple user interface which can be used by anyone (sales, marketing, devs) to share content in no time. You can build your post in a rich text editor, attach featured link and image to it (so it will be more appealing). Set scheduled publish and/or expiration date to make your life a bit easier.
 
-Olvy has even more features like [standalone page](https://sensenet.olvy.co/) for releases, feedback (which we plan to use in the future), scheduled releases and many more.
+Users see new updates as a colored badge whenewer you want (see variations above) and by clicking on the button a sidebar reveals containing all previous "releases". It is possible to get comments and reactions as feedback from your users.
 
 <p align="center">
 <img src="/img/posts/olvy/olvy-ui.png" alt="olvy user interface">
 </p>
 
+Olvy has even more features like [standalone page](https://sensenet.olvy.co/) for releases and more to discover in the future.
+
+For us this is the ideal solution to share info about our new releases like new features, fixed bugs and so on (both frontend and backend).
 
 
