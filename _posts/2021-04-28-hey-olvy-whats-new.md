@@ -6,7 +6,7 @@ tags: [saas, headless cms, releases, javascript, react, typescript, olvy]
 redirect_to: https://www.sensenet.com/blog/2021-04-28-hey-olvy-whats-new
 ---
 
-These days we are getting familiar with producthunt as we want to launch our new SaaS model there. By chance we found a great tool which saved us some dev hours. Here's our experience.
+We are getting familiar with producthunt recently as we want to launch our new SaaS model there. By chance we came accross a great tool which saved us some dev hours. Here's our experience.
 
 ---
 
@@ -14,13 +14,13 @@ These days we are getting familiar with producthunt as we want to launch our new
 
 Since we are working on our new SaaS model we are constantly thinking how could we improve each and every part of the service. For this reason we made a [design sprint](https://www.sensenet.com/blog/2021-03-24-sncom-design-sprint) to better understand the user journey and we are currently working hard to make our demo experience more seamless.
 
-Content creation is also top prior so we write documentation, tutorials, blogposts and so on. But how can we deliver these new stuff to our users the most effective way?
+Content creation is also top priority, so we write documentation, tutorials, blogposts and so on. But how can we share these new stuff with our users more effectively?
 
 We found a promising tool on [producthunt](https://www.producthunt.com/). The app is called [Olvy](https://olvy.co/) and it was #1 product of the day (back in 27 February) that's how we found it.
 
 We've added it first to the [admin ui](https://docs.sensenet.com/guides/getting-started) - a central place to manage sensenet repositories in the SNaaS model - to share useful information with our users, such as release notes, new and upcoming features.
 
-We were so amazed by this new solution that we've included it to each surface we have.
+We were so amazed by this new solution that we've included it to each public websites and apps we have.
 
 <p align="center">
 <img src="/img/posts/olvy/bellvariations.png" alt="olvy integration">
