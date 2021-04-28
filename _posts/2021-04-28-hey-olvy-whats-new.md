@@ -44,4 +44,4 @@ Users see new updates as a colored badge whenewer you want (see variations above
 
 Olvy has even more features like [standalone page](https://sensenet.olvy.co/) for releases and more to discover in the future.
 
-For us this is the ideal solution to share info about our new releases like new features, fixed bugs and so on (both frontend and backend). As mentioned above, you can still reach our releases on our website and GitHub as well, but now you'll be notified about any news around sensenet immediately once you visit our public websites or apps.
+For us this is the ideal solution to share info about our new releases like new features, fixed bugs and so on (both frontend and backend). As mentioned above, you can still reach our releases [on our website](https://www.sensenet.com/backend-updates) and [GitHub](https://github.com/SenseNet/sn-client/releases) as well, but now you'll be notified about any news around sensenet immediately once you visit our public websites or apps.
