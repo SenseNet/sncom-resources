@@ -16,6 +16,8 @@ Since we are working on our new SaaS model we are constantly thinking how could 
 
 Content creation is also top priority, so we write documentation, tutorials, blogposts and so on. But how can we share these new stuff with our users more effectively?
 
+Until recently we pubslished our release notes on GitHub and we also generated two pages from them ([frontend updates](https://www.sensenet.com/frontend-updates), [backend updates](https://www.sensenet.com/backend-updates)) to be easily accessible from our website. This method was good enough to start with (and still exists) but we seeked for a more elegant (and useful) solution.
+
 We found a promising tool on [producthunt](https://www.producthunt.com/). The app is called [Olvy](https://olvy.co/) and it was #1 product of the day (back in 27 February) that's how we found it.
 
 We've added it first to the [admin ui](https://docs.sensenet.com/guides/getting-started) - a central place to manage sensenet repositories in the SNaaS model - to share useful information with our users, such as release notes, new and upcoming features.
@@ -42,4 +44,4 @@ Users see new updates as a colored badge whenewer you want (see variations above
 
 Olvy has even more features like [standalone page](https://sensenet.olvy.co/) for releases and more to discover in the future.
 
-For us this is the ideal solution to share info about our new releases like new features, fixed bugs and so on (both frontend and backend).
+For us this is the ideal solution to share info about our new releases like new features, fixed bugs and so on (both frontend and backend). As mentioned above, you can still reach our releases on our website and GitHub as well, but now you'll be notified about any news around sensenet immediately once you visit our public websites or apps.
