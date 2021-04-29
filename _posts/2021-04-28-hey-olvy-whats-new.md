@@ -6,7 +6,7 @@ tags: [saas, headless cms, releases, javascript, react, typescript, olvy]
 redirect_to: https://www.sensenet.com/blog/2021-04-28-hey-olvy-whats-new
 ---
 
-We are getting familiar with producthunt recently as we want to launch our new SaaS model there. By chance we came accross a great tool which saved us some dev hours. Here's our experience.
+We are getting familiar with producthunt recently as we want to launch our new SaaS model there. By chance we came across a great tool which saved us some dev hours. Here's our experience.
 
 ---
 
