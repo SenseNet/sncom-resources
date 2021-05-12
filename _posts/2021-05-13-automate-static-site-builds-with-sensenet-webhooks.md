@@ -27,13 +27,13 @@ Once you've setup a static site that pulls in your content during the build proc
 First, go to your static site on Netlify and create a build hook for sensenet (it can be found under Site > Site settings > Build & Deploy > Build hooks). This will be the url that builds up the connection between your repository and the static site.
 
 <p align="center">
-<img src="/img/posts/netlify-build-hook.jpg" alt="Netlify build hook">
+<img src="/img/posts/netlify-build-hook.png" alt="Netlify build hook">
 </p>
 
 Then create a new webhook through sensenet admin ui (Settings > Webhooks) choosing Netlify template:
 
 <p align="center">
-<img src="/img/posts/netlify-webhook-template.jpg" alt="Netlify build hook">
+<img src="/img/posts/netlify-webhook-template.png" alt="Netlify build hook">
 </p>
 
 There are two required fields on the form to fill out: *Name* and *Netlify build hook URL* (the url you've created above at Netlify Build and Deploy page). You can leave all other fields at default (you can change them at any time later) and that's it.
@@ -45,5 +45,5 @@ By default, this webhook will:
 - Triggered on all available events (Create, Modify, Delete, Checkout, Draft, Approve, Pending, Reject)
 
 <p align="center">
-<img src="/img/posts/new-netlify-webhook.jpg" alt="Netlify build hook">
+<img src="/img/posts/new-netlify-webhook.png" alt="Netlify build hook">
 </p>
