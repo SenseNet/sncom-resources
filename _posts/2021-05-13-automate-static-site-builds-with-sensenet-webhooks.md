@@ -38,6 +38,10 @@ Then create a new webhook through sensenet admin ui (Settings > Webhooks) choosi
 
 There are two required fields on the form to fill out: *Name* and *Netlify build hook URL* (the url you've created above at Netlify Build and Deploy page). You can leave all other fields at default (you can change them at any time later) and that's it.
 
+<p align="center">
+<img src="/img/posts/excited.gif" alt="excited">
+</p>
+
 By default, this webhook will:
 
 - Trigger a Netlify build
