@@ -20,27 +20,23 @@ Webhooks can not only notify your app about what's happening in your content rep
 
 ## Triggering static site builds
 
-Once you've setup a static site that pulls in your content during the build process, you're ready to configure webhooks that will be triggered when you are working with content in your repository. The next example teach you how to setup webhooks to trigger builds and deployments of static sites on Netlify, but this is just an example. sensenet of course provides you various other options for Heroku fans, Travis CI users and Gatsby Cloud subscribers among others. Check currently available templates [here](https://docs.sensenet.com/integrations/webhook). Webhook templates help you create webhooks subscription for specific external services with just a few steps, by filling only a few required fields.
+Once you've setup a static site that pulls in your content during the build process, you're ready to configure webhooks that will be triggered when you are working with content in your repository. The next example teach you how to setup webhooks to trigger builds and deployments of static sites on Netlify, but this is just an example. sensenet of course provides you various other options for Heroku fans, Travis CI users and Gatsby Cloud subscribers among others. Check currently available templates [here](https://docs.sensenet.com/integrations/webhook). Webhook templates help you create webhooks subscription for specific external services with just a few steps, by filling only a few required fields. Following example will teach you how to configure a webhook to trigger a Netlify build with a few steps.
 
 ## Configuring a Netlify build hook
 
-First, go to your static site on Netlify and create a build hook for sensenet (it can be found under Site > Site settings > Build & Deploy > Build hooks). This will be the url that builds up the connection between your repository and the static site.
+First, go to your static site on Netlify and create a build hook for sensenet (it can be found under *Site > Site settings > Build & Deploy > Build hooks*). This will be the url that builds up the connection between your repository and the static site.
 
 <p align="center">
 <img src="/img/posts/netlify-build-hook.png" alt="Netlify build hook">
 </p>
 
-Then create a new webhook through sensenet admin ui (Settings > Webhooks) choosing Netlify template:
+Then create a new webhook through sensenet admin ui (*Settings > Webhooks*) choosing Netlify template:
 
 <p align="center">
 <img src="/img/posts/netlify-webhook-template.png" alt="Netlify build hook">
 </p>
 
-There are two required fields on the form to fill out: *Name* and *Netlify build hook URL* (the url you've created above at Netlify Build and Deploy page). You can leave all other fields at default (you can change them at any time later) and that's it.
-
-<p align="center">
-<img src="/img/posts/excited.gif" alt="excited">
-</p>
+There are two required fields on the form to fill out: *Name* and *Netlify build hook URL* (the url you've created above at Netlify *Build and Deploy* page). You can leave all other fields at default (you can change them at any time later) and that's it.
 
 By default, this webhook will:
 
@@ -51,3 +47,7 @@ By default, this webhook will:
 <p align="center">
 <img src="/img/posts/new-netlify-webhook.png" alt="Netlify build hook">
 </p>
+
+From now on, if a file is uploaded to the content repository your Netlify site gets built and deployed automatically. Many other webhook templates make it easier to work with external services and sensenet, and of course you have the freedom to configure a webhook as needed for your own project. 
+
+If you don’t have a sensenet repository, now is a great time to [sign up](https://profile.sensenet.com/?redirectToLogin)! 
