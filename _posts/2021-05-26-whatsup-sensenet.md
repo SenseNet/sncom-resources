@@ -6,7 +6,7 @@ tags: [webhooks, integration, build, deployment, netlify, gatsby, travis ci]
 redirect_to: https://www.sensenet.com/blog/2021-05-26-whatsup-sensenet
 ---
 
-
+No registration, one click logins, and getting the big picture! This is what we call demo experience. 🦄🌈
 
 ---
 
@@ -22,7 +22,7 @@ We always had a demo for this purpose but we've never been happy with it. After 
 
 Once this was clear to us we started to gather ideas to understand and make the journey of a user more seamless. We already had every piece for that (website, try it page, example apps, demo repo) however the whole thing did not came together as a smooth experience.
 
-During an evaluation it is crucial the have the most possible information and to have a complex image of the solution by the the of the day.
+During an evaluation it is crucial to get the most possible information and to have a complex image of the solution by the the of the day.
 
 The concept was to logically connect the [example apps](https://docs.sensenet.com/example-apps) to our demo repository and by this, to demonstrate how a simple app works with sensenet.🤔
 
@@ -32,11 +32,11 @@ Since the demo repository already contained every content used by our example ap
 <img src="/img/posts/linksNbuttons_exampleapp.png" alt="example app link and button">
 </p>
 
-We also revamped the whole [example apps page](https://docs.sensenet.com/example-apps) on docs site to be more structured and added some extra information explaning the logic behind these apps.
+We also revamped the whole [example apps](https://docs.sensenet.com/example-apps) page on [docs site](https://docs.sensenet.com/) to be more structured and added some extra information explaning the logic behind these apps.
 
 As a final step we simplified the access to each part of the experience:
 - Example apps can be reached with automatic sign-in, removing every additional steps from the process
-- The demo repository became more accessible as well, since everyone can get in through the admin ui with a single click.
+- Demo repository became more accessible as well, since everyone can get in through the admin ui with a single click.
 
 The final solution is what we call the [demo experience](https://www.sensenet.com/tryit), and we hope that everyone can get a taste of sensenet more easily (without registration 😉😎). Try it and share your thoughts!
 
