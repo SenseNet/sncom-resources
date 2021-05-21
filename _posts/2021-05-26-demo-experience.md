@@ -1,9 +1,9 @@
 ---
-title: "Automate static site builds with sensenet webhooks"
+title: "Presenting the new demo experience"
 author: [molnarm84, huszerlbence]
-image: "../img/posts/??????"
-tags: [webhooks, integration, build, deployment, netlify, gatsby, travis ci]
-redirect_to: https://www.sensenet.com/blog/2021-05-26-whatsup-sensenet
+image: "../img/posts/demo_experience_cover.png"
+tags: [demo, example apps, build, react, netlify, customer journey, content management]
+redirect_to: https://www.sensenet.com/blog/2021-05-26-demo-experience
 ---
 
 No registration, one click logins, and getting the big picture! This is what we call demo experience. 🦄🌈
