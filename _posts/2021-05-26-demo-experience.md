@@ -32,7 +32,7 @@ Since the demo repository already contained every content used by our example ap
 <img src="/img/posts/linksNbuttons_exampleapp.png" alt="example app link and button">
 </p>
 
-We also revamped the whole [example apps](https://docs.sensenet.com/example-apps) page on [docs site](https://docs.sensenet.com/) to be more structured and added some extra information explaning the logic behind these apps.
+We also revamped the whole [example apps](https://docs.sensenet.com/example-apps) page on [docs site](https://docs.sensenet.com/) to be more structured and added some extra information explaining the logic behind these apps.
 
 As a final step we simplified the access to each part of the experience:
 - Example apps can be reached with automatic sign-in, removing every additional steps from the process
