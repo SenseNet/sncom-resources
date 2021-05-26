@@ -52,6 +52,6 @@ Operating cloud-base content management services requires high-quality security 
 
 ## What's next
 
-Next year will mostly be about optimizing and automating release, install and deployment processes. So there is still a long way to perfection, but the path is clear. Come and join us in our journey, [request a free sensenet repository](https://is.sensenet.com/Account/Registration?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dspa%26redirect_uri%3Dhttps%253A%252F%252Fprofile.sensenet.com%252Fauthentication%252Fcallback%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520sensenet%26state%3D022ed1044fb34dc5aea99fe62069a6df%26code_challenge%3DYmvfTX0N9-Wj6bKfndXk-q7ZVyldVoc1DSLkRQRtgFo%26code_challenge_method%3DS256%26response_mode%3Dquery%26snrepo%3Dhttps%253A%252F%252Fsnover.service.sensenet.com), try the most flexible and versatile headless CMS!
+Next year will mostly be about optimizing and automating release, install and deployment processes. So there is still a long way to perfection, but the path is clear. Come and join us in our journey, [request a free sensenet repository](https://profile.sensenet.com/?redirectToLogin), try the most flexible and versatile headless CMS!
 
 See you in SNaaS! 🚀🎉

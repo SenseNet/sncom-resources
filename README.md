@@ -24,7 +24,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ## Contact
 
-Try sensenet for free [without registration](https://www.sensenet.com/tryit) or get your own repo [here](https://is.sensenet.com/Account/Registration?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dspa%26redirect_uri%3Dhttps%253A%252F%252Fprofile.sensenet.com%252Fauthentication%252Fcallback%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520sensenet%26state%3D9862b5d62fcf46e89e7dcacdef09cd63%26code_challenge%3D19ptdK2jFNi1D4VJ4jSNvdqE2zplhmIwa3ujGb1fGUk%26code_challenge_method%3DS256%26response_mode%3Dquery%26snrepo%3Dhttps%253A%252F%252Fsnover.service.sensenet.com)!
+Try sensenet for free [without registration](https://www.sensenet.com/tryit) or get your own repo [here](https://profile.sensenet.com/?redirectToLogin)!
 
 Follow us and get the latest updates:
  - [Twitter](https://twitter.com/sensenet)

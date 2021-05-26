@@ -39,7 +39,7 @@ export const repositoryUrl = 'https://my-service.sensenet.com/' // This is the r
 
 export const configuration: UserManagerSettings = {
   automaticSilentRenew: true, // Access tokens only valid for a period of time with this set to true it will be renewed 1 minute before expiration
-  client_id: 'spa', // For SPA's use the client_id 'spa'
+  client_id: '', //clientId of your repository
   redirect_uri: `${window.location.origin}/authentication/callback`, // This is the url it will return with the access token
   response_type: 'code', // This value tells OAuth2 what should be in the response, we want the access token
   post_logout_redirect_uri: `${window.location.origin}/`, // This is the url the server will redirect after logout
